@@ -1,6 +1,10 @@
+<div align="center">
+<FONT FACE="verdana, arial">
 <h1>NewsSearch is dope</h1>
 <%= form_tag("/search", method: "get") do %>
-  <%= label_tag(:q, "Search for:") %>
-  <%= text_field_tag(:q) %>
-  <%= submit_tag("Search") %>
+<%= label_tag(:q, "Search for:") %>
+  <%= text_field_tag(:q, "", :size=>"100") %>
+  <%= submit_tag("search") %>
 <% end %>
+  </FONT>
+</div>

@@ -1,8 +1,12 @@
 <div align="center">
-	<h1>NewsSearch is dope</h1>
-	<%= form_tag("/search", method: "get") do %>
-	  <%= label_tag(:q, "Search for:") %>
-	  <%= text_field_tag(:q) %>
-	  <%= submit_tag("Search") %>
-	<% end %>
+  <p>The Dopest Search Engine</p>
+  <!--<%= image_tag("NewsSearch.jpg", :alt => "NewsSearch Logo") %>-->
+  <%= image_tag("NewsSearch.jpg", :width => 700, :height => 150) %>
+  <%= form_tag("/search", method: "get") do %>
+      <div class="field">
+        <!--<%= label_tag(:q, "Search for:") %>-->
+        <%= text_field_tag(:q, "", :size => "100") %>
+        <%= submit_tag("Search") %>
+      </div>
+  <% end %>
 </div>

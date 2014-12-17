@@ -13,3 +13,41 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.field input {
+    color: black;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 6px;
+    border: 2px solid #999;
+    border-radius: 1px;
+}
+
+h1 {
+    color: rgb(129, 189, 181);
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 75px;
+
+    position: relative;
+    top: 200px;
+}
+
+p {
+    color: rgb(75, 75, 75);
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+
+    position: relative;
+    bottom: -237.5px;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-align: left;
+}

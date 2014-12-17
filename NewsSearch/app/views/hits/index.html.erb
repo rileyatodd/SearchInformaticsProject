@@ -1,4 +1,4 @@
-<h1>Results for <%= params[:q] %></h1>
+<h2>Results for <%= session[:q] %></h2>
 <ol>
 	<% if (!@hits or @hits.size == 0) %>
 		<p>No results for this query. Pick a better one next time.</p>

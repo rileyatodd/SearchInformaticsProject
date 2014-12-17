@@ -32,6 +32,7 @@ class ApplicationController < ActionController::Base
     $docindex = load_docindex($path_to_docindex)
     Hit.all.map(&:destroy)
 		query = params[:q]
+    session[:q] = query
 		$hits = retrieve($path_to_docindex, $path_to_invindex, $path_to_stopwords, query)
     if ($hits and $hits.size > 0)
       for hit in $hits 

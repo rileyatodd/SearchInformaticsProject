@@ -15,11 +15,11 @@
  */
 
 body {
-    background-color: rgb(30, 38, 42);
+    background-color: rgb(255, 255, 255);
 }
 
 .field input {
-    color: #999;
+    color: black;
     font-weight: bold;
     font-size: 13px;
     padding: 6px;
@@ -38,8 +38,7 @@ h1 {
 }
 
 p {
-    /*	color: rgb(148,153,156);*/
-    color: rgb(255, 255, 255);
+    color: rgb(75, 75, 75);
     text-align: center;
     font-family: sans-serif;
     font-size: 20px;

@@ -18,10 +18,19 @@ body {
     background-color: rgb(30, 38, 42);
 }
 
+.field input {
+    color: #999;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 6px;
+    border: 2px solid #999;
+    border-radius: 1px;
+}
+
 h1 {
     color: rgb(129, 189, 181);
     text-align: center;
-    font-family: Avenir, sans-serif;
+    font-family: sans-serif;
     font-size: 75px;
 
     position: relative;
@@ -32,11 +41,11 @@ p {
     /*	color: rgb(148,153,156);*/
     color: rgb(255, 255, 255);
     text-align: center;
-    font-family: Avenir, sans-serif;
+    font-family: sans-serif;
     font-size: 20px;
 
     position: relative;
-    bottom: -135px;
+    bottom: -237.5px;
 }
 
 a {

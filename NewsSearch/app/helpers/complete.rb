@@ -118,6 +118,7 @@ def best_complete(stem, hash)
     puts item[0] + "\t\t" + item[1].to_s + "\n"
   end
   puts "---"
+  return most_likely_completions
 end
 
 

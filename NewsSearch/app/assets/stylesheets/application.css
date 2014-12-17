@@ -13,3 +13,33 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+    background-color: rgb(30, 38, 42);
+}
+
+h1 {
+    color: rgb(129, 189, 181);
+    text-align: center;
+    font-family: Avenir, sans-serif;
+    font-size: 75px;
+
+    position: relative;
+    top: 200px;
+}
+
+p {
+    /*	color: rgb(148,153,156);*/
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: Avenir, sans-serif;
+    font-size: 20px;
+
+    position: relative;
+    bottom: -135px;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-align: left;
+}

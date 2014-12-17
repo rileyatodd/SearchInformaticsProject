@@ -1,8 +1,7 @@
-require 'a3'
-require 'analyze'
+require 'indexer'
 require 'complete'
 require 'crawler'
-require 'retrieve'
+require 'retriever'
 
 module WelcomeHelper
 end

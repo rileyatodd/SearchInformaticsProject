@@ -1,0 +1,17 @@
+<h1>Results for <%= params[:q] %></h1>
+<ol>
+	<% if (!@hits or @hits.size == 0) %>
+		<p>No results for this query. Pick a better one next time.</p>
+	<% end %>
+	<% for hit in @hits do %>
+		<li>
+			<a href=<%= hit.url %>><%= hit.url %></a><br>
+			<ul>
+				<li>PageRank: <%= hit.pagerank %> </li>
+				<li>SpamScore: <%= hit.spamscore %> </li>
+				<li>TFIDF: <%= hit.tfidf %> </li>
+				<li>Combined Score: <%= hit.pagerank * hit.tfidf %> </li>
+			</ul>
+		</li>
+	<% end %>
+</ol>

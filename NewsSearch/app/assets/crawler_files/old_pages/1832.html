@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<!-- hearst/article/article_header.tpl -->
+<html>
+    <head><!-- eid:article.5953779 --><!--[if IE 8]>
+        <meta http-equiv="x-ua-compatible" content="IE=7">
+<![endif]-->
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UAcHUF9ACQcHVVRV"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(5),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(f){"stack"in f&&(t(1),t(4),"addEventListener"in window&&t(2),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(3),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:8,2:5,3:9,4:7,5:20,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],4:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(2);t("loader").features.stn=!0,t(1),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:6,2:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:20,2:21,ee:"QJf3ax",gos:"7eSDFh"}],6:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:21,2:20,ee:"QJf3ax"}],7:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:21,2:20,ee:"QJf3ax"}],8:[function(t,e){function n(t,e,n){var r=t[0];"string"==typeof r&&(r=new Function(r)),t[0]=o(r,"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:21,2:20,ee:"QJf3ax"}],9:[function(t,e){function n(){c.inPlace(this,d,"fn-")}function r(t,e){c.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}var i=t("ee").create(),a=t(1),s=t(2),c=s(i),f=s(a),u=window.XMLHttpRequest,d=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=i,window.XMLHttpRequest=function(t){var e=new u(t);try{i.emit("new-xhr",[],e),f.inPlace(e,["addEventListener","removeEventListener"],"-",function(t,e){return e}),e.addEventListener("readystatechange",n,!1)}catch(r){try{i.emit("internal-error",[r])}catch(o){}}return e},window.XMLHttpRequest.prototype=u.prototype,c.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),i.on("send-xhr-start",r),i.on("open-xhr-start",r)},{1:5,2:21,ee:"QJf3ax"}],10:[function(t){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=e(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(n.cat=d.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r,this.startTime])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=e(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",[e])}catch(r){}}};for(var u=0;c>u;u++)n.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:11,3:9,4:5,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],11:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){p.proto="https"===d.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=c.createElement("script");e.src=p.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,c=s.document,f="addEventListener",u="attachEvent",d=(""+location).split("?")[0],p=e.exports={offset:i(),origin:d,features:{}};c[f]?(c[f]("DOMContentLoaded",o,!1),s[f]("load",n,!1)):(c[u]("onreadystatechange",r),s[u]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],20:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],21:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s,t))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:20,ee:"QJf3ax"}]},{},["G9z0Bl",3,10,4]);</script>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <!-- generated at 2014-12-15 19:49:57 on prodWCM4 running vr6.2.1.0 -->
+        <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, width = device-width">
+        <link rel="stylesheet" type="text/css" href="/external/css/global.article_global.r6.2.1.0.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="/external/css/global.article_local.r6.2.1.0.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="/external/css/global.ie8.r6.2.1.0.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="/external/css/global.article_print.r6.2.1.0.css" media="all" />
+        
+        <script type="text/javascript" src="/js/jquery-1.8.1.min.js"></script>
+        <script type="text/javascript" src="/external/js/global.header.r6.2.1.0.js"></script>
+
+        <!-- hearst/common/omniture.tpl -->
+<script type="text/javascript">
+	// <![CDATA[
+	// document.domain = "hearstnp.com";
+	var requestTime = new Date(1418694597 * 1000);
+
+								
+					
+					
+		
+		// bizobject variables
+		var omni_channelPath = "Lifestyle :: Life Passages :: Milestones";
+				var omni_title = "Kingwood amputee, family return home for the holidays";
+				var omni_bizObjectId = "5953779";
+		var omni_className = "article";
+		var omni_publicationDate = "2014-12-12 23:57:00";
+		var omni_sourceSite="chron";
+
+        			// article specific variables
+			var omni_authorName = "BY CLAUDIA FELDMAN";
+			var omni_authorTitle = "";
+			var omni_pageNumber = "1";
+			var omni_breakingNewsFlag = "";
+			var omni_localNewsFlag = "1";
+			var omni_premiumStatus = "isPremium";
+			var omni_premiumEndDate = "2037-01-01 06:00:00";
+            var omni_originalSource = "HC";
+        	        
+        var omni_paywallSite = "1";
+
+    	// ]]>
+</script>
+<!--[if IE 6]><script type="text/javascript" src="/js/hdn/utils/DD_belatedPNG_0.0.8a-min.js"></script><![endif]-->
+<!-- e hearst/common/omniture.tpl -->
+
+        <script type="text/javascript" id="adPositionManagerScriptTag" src="http://aps.hearstnp.com/Scripts/loadAds.js"></script>
+
+
+    <!--[if lt IE 9]>
+        <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
+        <title>Kingwood amputee, family return home for the holidays - Houston Chronicle</title>
+        <link rel="SHORTCUT ICON" href="/favicon.ico?v=2" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon-precomposed.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72-precomposed.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png"/>
+        <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144-precomposed.png"/>
+
+    <link rel="canonical" href="http://www.houstonchronicle.com/lifestyle/passages/milestones/article/Amputee-Katy-Hayes-is-home-for-the-holidays-5953779.php" />
+
+    
+            <meta name="description" content="Katy Hayes wriggled into her new myoelectric arms and let the decoration - a wooden star her kids made - dangle from her plastic fingertips.  [...] the gold star hung from the tree just so.  Hayes and her family are back home in Kingwood after spending 2½ years in Boston where she waited unsuccessfully for a double arm transplant.  Hayes was in a drug-induced coma and near death when doctors told her husband the only way to save her life was to wheel her back into surgery and remove her arms and legs.  At that moment,&quot; Al Hayes remembered, &quot;I would have amputated my own limbs, I would have put a bullet in my head, I would have done anything short of hurting my children to help Katy walk away.  Al Hayes, a musician and music teacher, struggled to juggle his work with area bands and caring for his wife and their two youngest kids.  (Amber, Katy Hayes' daughter from a previous marriage, was in college in Texas.) Early on, Katy Hayes spent hours watching ghost stories on TV; she found it hard to control the children or help her husband.  &quot;A donor must be an immunologic match, but we also consider limb size, gender, color, blood-vessel status, prior injuries&quot; plus the routine criteria for all organ donations.  With the myoelectric arms, she will be able to hold a cup of coffee, get in and out of bed and help herself in the bathroom." />
+    
+    
+            <meta name="author.name" content="By Claudia Feldman" />
+        <meta name="author.title" content="" />
+        <meta name="date.release" content="2014/12/12" />
+        <meta name="time.release" content="17:57" />
+        <meta name="publisher" content="Houston Chronicle" />
+        <meta name="sections" content="Lifestyle,Passages,Milestones" />
+        <meta name="subject" content="children,music,marriage,people,medical specialisation,elementary schools,accident (general)" />
+        <meta name="news_keywords" content="children,music,marriage,people,medical specialisation,elementary schools,accident (general)" />
+                
+        
+    <meta property="og:title" content="Kingwood amputee, family return home for the holidays" />
+            <meta property="og:description" content="Katy Hayes wriggled into her new myoelectric arms and let the decoration - a wooden star her kids made - dangle from her plastic fingertips.  [...] the gold star hung from the tree just so.  Hayes and her family are back home in Kingwood after spending 2½ years in Boston where she waited unsuccessfully for a double arm transplant.  Hayes was in a drug-induced coma and near death when doctors told her husband the only way to save her life was to wheel her back into surgery and remove her arms and legs.  At that moment,&quot; Al Hayes remembered, &quot;I would have amputated my own limbs, I would have put a bullet in my head, I would have done anything short of hurting my children to help Katy walk away.  Al Hayes, a musician and music teacher, struggled to juggle his work with area bands and caring for his wife and their two youngest kids.  (Amber, Katy Hayes' daughter from a previous marriage, was in college in Texas.) Early on, Katy Hayes spent hours watching ghost stories on TV; she found it hard to control the children or help her husband.  &quot;A donor must be an immunologic match, but we also consider limb size, gender, color, blood-vessel status, prior injuries&quot; plus the routine criteria for all organ donations.  With the myoelectric arms, she will be able to hold a cup of coffee, get in and out of bed and help herself in the bathroom." />
+                        <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://www.houstonchronicle.com/lifestyle/passages/milestones/article/Amputee-Katy-Hayes-is-home-for-the-holidays-5953779.php" />
+    <meta property="og:image" content="http://ww3.hdnux.com/photos/33/55/54/7265078/3/rawImage.jpg" />
+    <meta property="og:site_name" content="Houston Chronicle" />
+        <!-- Twitter card metadata  -->
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@houstonchron" />
+        <meta name="twitter:creator" content="@ClaudiaFeldman" />
+    
+<!-- /business/templates/hearst/home/header_fbpage.tpl-->
+
+
+                <meta property="fb:app_id" content="653292111352579"/>
+    
+<!-- e /business/templates/hearst/home/header_fbpage.tpl--><!-- templates/hearst/home/viafouraHeadMeta.tpl -->
+<meta property="vf:unique_id" content="premiumchron-article-5953779" />
+<!-- e templates/hearst/home/viafouraHeadMeta.tpl -->        <script type="text/javascript" async src="http://launch.newsinc.com/js/embed.js" id="_nw2e-js"></script>
+        <script type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<!-- CSS/JS Hotfix freeform -->
+
+<!-- hearst/item/standalone.tpl -->
+<!-- mid:freeform.13324 -->
+<script type="text/javascript">
+    // turn off/on media and freeform objects from gallery [CPREM-1953]
+    HDN.skipGalleryMediaObjects = true;
+    HDN.skipGalleryFreeformObjects = true;
+</script>
+
+<style>
+/* CPREM-1909 */
+.digital_pass_promo a {font-size: 16px;}
+
+.hc_opinion .alertbox {
+    background: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+/*CPREM-2096*/
+.prem-exclusive .content h4.kicker,
+.prem-exclusive .content h4.kicker .byline {
+	color: #aaa;
+	font-size: 10px;
+	line-height:1em;
+	font-family: "HoustonDeck", serif;
+	margin-bottom:8px;
+}
+</style>
+	
+<style type="text/css">
+/*CPREM-2192 */
+@media screen and (min-width: 1280px){
+.prem_homepage_2 .digital_pass_promo {
+margin: -24px 0 20px 0;
+}
+}
+
+/* Inline perfect pixel fix*/
+.fixed-asset.perfectPixel{ height:250px;}
+
+</style>
+
+
+<!-- Bing Webmaster Tools verification -->
+<meta name="msvalidate.01" content="9451CA04ABC9D1D5C6419C73B4C4F7B7" />
+    </head>
+    <body id="home">
+    <!-- ux/chron/tmpl/article_omniture.php -->
+
+<!-- Adobe TagManager: Houston Premium -->
+<script type="text/javascript">//<![CDATA[
+var amc=amc||{};if(!amc.on){amc.on=amc.call=function(){}};
+document.write("<scr"+"ipt type=\"text/javascript\" src=\"//www.adobetag.com/d1/v2/ZDEtaGVhcnN0LTMwNzctMzk4My0=/amc.js\"></sc"+"ript>");
+//]]></script>
+<!-- End Adobe TagManager -->
+
+<!-- e ux/chron/tmpl/article_omniture.php -->        <div id="container" class="article_page">
+            <div id="header">                 <!-- ux/premiumchron/templates/hearst/common/admin_bar.tpl -->
+<div class="header-top">
+  <div class="lock1200">
+    <ul class="ht-links">
+      <li class="ht-link-item ht-branding"><a href="http://chron.com/" target="_blank"><img src="/img/utils/spacer.png"></a></li>
+      <li class="ht-link-item"><a href="http://chron.com/cars/" target="_blank">Autos</a></li>
+      <li class="ht-link-item"><a href="http://chron.com/jobs/" target="_blank">Jobs</a></li>    
+      <li class="ht-link-item"><a href="http://chron.com/homes/" target="_blank">Real Estate</a></li>
+      <li class="ht-weather">
+        <span>
+          <a class="weather-ico" href="http://weather.chron.com/US/TX/Houston.html" target="_blank"></a>
+          <a class="ht-temp" href="http://weather.chron.com/US/TX/Houston.html" target="_blank"></a>
+        </span>
+      </li>
+    </ul>
+
+    <!-- ux/hearst/widgets/paywallLogin/main.tpl -->
+
+<ul class="ht-right-links signed-in" style="display:none">
+    <li class="ht-ed"><a href="/e-edition/">eNewspaper</a></li>
+    <li class="ht-user">
+        <a id="adminlink" class="ht-expand">Account</a>
+        <div class="hst-admin">
+            <div id="acctAdmin">
+                <ul class="form-list">
+                    <li><a href="https://myaccount.houstonchronicle.com/Login.aspx" class="admin-profile" target="_blank">Edit Your Profile</a></li>
+                    <li><a href="https://myaccount.houstonchronicle.com/Login.aspx" class="admin-sub" target="_blank">Manage Your Subscription</a></li>
+                </ul>
+                <input class="btn-submit" type="button" onclick="edbTokens.logout()" value="Sign Out">
+            </div>
+        </div><!-- /hst-admin -->
+    </li>
+</ul>
+<ul class="ht-right-links signed-out">
+    <li class="ht-ed"><a href="/e-edition/">eNewspaper</a></li>
+    <li class="ht-saved">
+        <span><a href="https://myaccount.houstonchronicle.com/dssSubscribe.aspx?z=00000&amp;pid=114,176&amp;return=http://www.houstonchronicle.com/lifestyle/passages/milestones/article/Amputee-Katy-Hayes-is-home-for-the-holidays-5953779.php?cmpid=albtfp">Subscribe</a></span>
+    </li>
+    <li class="ht-user">
+        <span><a id="adminlink" class="ht-expand">Sign In</a></span>
+        <div class="hst-admin">
+            <div class="intro">
+                <form action="https://myaccount.houstonchronicle.com/dssmatch.aspx" method="get" id="activate">
+                    <a onclick="document.getElementById('activate').submit();">
+                        <h3>First time signing in to HoustonChronicle.com?</h3>
+                        <input type="hidden" name="return" value="http://www.houstonchronicle.com/lifestyle/passages/milestones/article/Amputee-Katy-Hayes-is-home-for-the-holidays-5953779.php?cmpid=albtfp"/>
+                        <p><span>Click here</span> to confirm your subscription &amp; sign in information.</p>
+                    </a>
+                    <input type="hidden"  name="commit" value="Activate Account" />
+                </form>
+            </div>
+            <div id="signIn">
+                <form action="https://edb.houstonchronicle.com/WCMPaywall/GetTokensByEmail" method="post" name="aw-login">
+                    <fieldset>
+                        <ul class="form-list">
+                            <li><input class="form-input email-aw useremail" id="aw-email" name="EmailAddress" type="email" autocapitalize="off" onfocus="if(this.value == 'Email Address') { this.value = ''; }" onkeypress="javascript: if (window.event.keyCode === 35) { return false; }" value="" /></li>
+                            <li id="pw-li"><input class="form-input password-aw" id="password" name="Password" type="password" value="" /></li>
+                            <li>
+                                <div id="checkremem" class="checkbox-rm checked">
+                                    <input id="remember_me" name="RememberMe" checked="true" type="checkbox" value="1">
+                                    <label for="remember_me">Stay signed in</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <input type="hidden" value="header" name="SignInError" />
+                    <input class="btn-submit" name="commit" type="submit" value="Sign In">
+                    <p class="forgot"><a href="https://myaccount.houstonchronicle.com/ForgotPassword.aspx" target="_blank">Forgot Your Password?</a></p>
+                </form>
+                <div class="signin-dis">By logging in, you agree to the <a href="/terms_of_use/" target="_blank">Terms and Conditions</a> and <a href="/privacy_policy/" target="_blank">Privacy Policy</a>.</div>
+            </div>
+        </div><!-- /hst-admin -->
+    </li>
+</ul>
+<script>
+    $('.email-aw').watermark('Email Address');
+    $('.password-aw').watermark('Password');
+
+    $.ajax({
+        url: "/validateEdb/article-5953779/",
+        async: false
+    }).done(function(premiumAllowed) {
+        premiumAllowed = +premiumAllowed;
+        if (edbTokens.productToken == null || !premiumAllowed) {
+            $('ul.signed-in').remove();
+            $('ul.signed-out').show();
+            if ( edbTokens.errorMessage && edbTokens.signInError=='header' ){
+                $('#signIn').prepend('<div class="error-wrap error-back-light" style="display: block; "><span class="error-text error-text-light">'+
+                edbTokens.errorMessage+
+                '</span><img src="/img/utils/error_light.png"/></div>');
+                if(edbTokens.emailForPrompt){
+                    $("input.useremail").val(edbTokens.emailForPrompt);
+                }
+            }
+        } else {
+            $('ul.signed-out').remove();
+            $('ul.signed-in').show();
+        }
+    });
+</script>
+
+<!-- e ux/hearst/widgets/paywallLogin/main.tpl -->
+
+
+
+  </div>
+</div>
+<!-- e ux/premiumchron/templates/hearst/common/admin_bar.tpl -->
+                <div class="lock1200">                     <div class="header-branding">
+                        <a class="logo-link" href="/"><img class="print-only" src="/img/modules/siteheader/logos/logo_section_medium.png" /></a>
+                        <h1 class="section-title"><a class="color-link" href="/lifestyle/passages/milestones/">Milestones</a></h1>
+                    </div>
+
+
+    
+
+    <!-- business/templates/hearst/home/HNavigation.tpl -->
+<!-- hearst/home/navigation.tpl -->
+	<!-- ux/premiumchron/templates/hearst/home/navigation_main.tpl -->
+
+
+
+  
+
+
+
+<div class="header-nav">
+  <div class="wide-sections horizontal-menu">
+    <ul id="wide-nav" class="sections-list">
+
+            
+                        
+          
+                      <li id="Ho-link" class="nav-item first"><a href="/">Home</a></li> 
+          
+                            
+          
+                      <li id="Lo-link" class="nav-item  " data-url="/local/"><a href="javascript:void(0);">Local</a></li>
+          
+                            
+          
+                      <li id="US-link" class="nav-item  " data-url="/us-world/"><a href="javascript:void(0);">US & World</a></li>
+          
+                            
+          
+                      <li id="Sp-link" class="nav-item  " data-url="/sports/"><a href="javascript:void(0);">Sports</a></li>
+          
+                            
+          
+                      <li id="Bu-link" class="nav-item  " data-url="/business/"><a href="javascript:void(0);">Business</a></li>
+          
+                            
+          
+                      <li id="Op-link" class="nav-item  " data-url="/opinion/"><a href="javascript:void(0);">Opinion</a></li>
+          
+                            
+          
+                      <li id="Ar-link" class="nav-item  " data-url="/entertainment/"><a href="javascript:void(0);">Arts & Entertainment</a></li>
+          
+                            
+          
+                      <li id="Li-link" class="nav-item current currentsection " data-url="/lifestyle/"><a href="javascript:void(0);">Lifestyle</a></li>
+          
+                            
+          
+                      <li id="In-link" class="nav-item last  " data-url="/insider/"><a href="javascript:void(0);">Insider</a></li>
+          
+                              <li class="search"><a href="javascript:void(0);"><div class="search-open"></div></a></li>
+    </ul>
+    <ul class="search-menu">
+      <li class="nav-item"><a class="menu-collapsed-horizontal" href="javascript:toggleSearch();">Sections</a></li>
+      <li class="search search-icon"><a href="javascript:toggleSearch();"><div class="search-close"></div></a></li>
+      <li class="search search-input">
+        <form action="/results/" method="get">
+          <input type="hidden" name="controllerName" value="search" />
+          <input type="hidden" name="action" value="search" />
+          <input type="hidden" name="searchindex" value="property" />
+          <input type="hidden" name="view" value="premium" />
+          <input type="hidden" name="sort" value="date" />
+          <fieldset>
+            
+            <input class="form-input" id="search" name="query" type="text" onfocus="if(this.value == 'Search') { this.value = ''; }" value="Search">
+            <input class="btn-dark search-btn" value="Search" name="search" type="submit" />
+            
+          </fieldset>
+        </form>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="narrow-sections horizontal-menu">
+    <ul class="sections-list">
+      <li class="nav-item"><a id="sections-link" class="menu-collapsed" href="javascript:void(0);">Sections</a></li>
+      <li class="nav-item search">
+        <div class="search-narrow">
+          <form action="/results/" method="get">
+            <input type="hidden" name="controllerName" value="search" />
+            <input type="hidden" name="action" value="search" />
+            <input type="hidden" name="searchindex" value="property" />
+            <input type="hidden" name="view" value="premium" />
+            <input type="hidden" name="sort" value="date" />
+            <fieldset>
+              
+              <input class="form-input" id="search" name="query" type="text" onfocus="if(this.value == 'Search') { this.value = ''; }" value="Search" />
+              
+         </fieldset>
+          </form>
+          <a href="javascript:void(0);"><div class="search-close"></div></a>
+        </div>
+        <a href="javascript:void(0);"><div class="toggle-btn search-open"></div></a>
+      </li>
+    </ul>
+  </div>
+
+  <div id="sections-menu">
+    <div class="narrow-sections nav-links">
+      <ul class="sections-list">
+                                                        <li id="Ho-link" class="nav-item first"><a href="/">Home</a></li> 
+                                                            <li id="Lo-link" class="nav-item" data-url="/local/"><a href="javascript:toggle_narrow_subsection('Lo');">Local</a></li>
+                                                            <li id="US-link" class="nav-item" data-url="/us-world/"><a href="javascript:toggle_narrow_subsection('US');">US & World</a></li>
+                                                            <li id="Sp-link" class="nav-item" data-url="/sports/"><a href="javascript:toggle_narrow_subsection('Sp');">Sports</a></li>
+                                                            <li id="Bu-link" class="nav-item" data-url="/business/"><a href="javascript:toggle_narrow_subsection('Bu');">Business</a></li>
+                                                            <li id="Op-link" class="nav-item" data-url="/opinion/"><a href="javascript:toggle_narrow_subsection('Op');">Opinion</a></li>
+                                                            <li id="Ar-link" class="nav-item" data-url="/entertainment/"><a href="javascript:toggle_narrow_subsection('Ar');">Arts & Entertainment</a></li>
+                                                            <li id="Li-link" class="nav-item" data-url="/lifestyle/"><a href="javascript:toggle_narrow_subsection('Li');">Lifestyle</a></li>
+                                                            <li id="In-link" class="nav-item last" data-url="/insider/"><a href="javascript:toggle_narrow_subsection('In');">Insider</a></li>
+                                    </ul>
+    </div>
+
+                                                          <div id="Lo" class="nav-links nav-pulldown">
+            <ul class="subsections-list">
+                                                            <li class="nav-item current first"><a href='/local/houston/'>Houston</a></li>
+                                                                                        <li class="nav-item current"><a href='/local/politics-policy/'>Politics & Policy</a></li>
+                                                                                        <li class="nav-item current"><a href='/local/education/'>Education</a></li>
+                                                                                        <li class="nav-item current"><a href='/local/elections/'>Election 2014</a></li>
+                                                                                        <li class="nav-item current"><a href='/local/investigations/'>HC Investigations</a></li>
+                                                                                        <li class="nav-item current"><a href='/local/mostread/'>Most-read Stories</a></li>
+                                                                                        <li class="nav-item current"><a href='/local/specialsections/'>Special Sections</a></li>
+                                                                                        <li class="nav-item current last"><a href='http://www.legacy.com/obituaries/houstonchronicle/' target='_blank' class='externallink' >Obituaries</a></li>
+                                                      </ul>
+          </div>
+                                        <div id="US" class="nav-links nav-pulldown">
+            <ul class="subsections-list">
+                                                            <li class="nav-item current first"><a href='/us-world/us/'>US News</a></li>
+                                                                                        <li class="nav-item current"><a href='/us-world/world/'>World News</a></li>
+                                                                                        <li class="nav-item current"><a href='/us-world/space/'>Space</a></li>
+                                                                                        <li class="nav-item current"><a href='/us-world/science-environment/'>Science & Environment</a></li>
+                                                                                        <li class="nav-item current"><a href='/us-world/politics-policy/'>Politics & Policy</a></li>
+                                                                                        <li class="nav-item current"><a href='http://www.usaweekend.com/content/ebook/tx_houston' target='_blank' class='externallink' >USA Weekend</a></li>
+                                                                                        <li class="nav-item current last"><a href='http://video.houstonchronicle.com/' target='_blank' class='externallink' >Video</a></li>
+                                                      </ul>
+          </div>
+                                        <div id="Sp" class="nav-links nav-pulldown">
+            <ul class="subsections-list">
+                                                            <li class="nav-item current first"><a href='/sports/texans/'>Texans</a></li>
+                                                                                        <li class="nav-item current"><a href='/sports/astros/'>Astros</a></li>
+                                                                                        <li class="nav-item current"><a href='/sports/rockets/'>Rockets</a></li>
+                                                                                        <li class="nav-item current"><a href='/sports/dynamo/'>Dynamo & Dash</a></li>
+                                                                                        <li class="nav-item current"><a href='/sports/college-sports/'>College Sports</a></li>
+                                                                                        <li class="nav-item current"><a href='/sports/hs-sports/'>HS Sports</a></li>
+                                                                                        <li class="nav-item current"><a href='/sports/outdoors/'>Outdoors</a></li>
+                                                                                        <li class="nav-item current"><a href='/sports/more-sports/'>More Sports</a></li>
+                                                                                        <li class="nav-item current last"><a href='http://seatgeek.com/houston-texas-sports-tickets' target='_blank' class='externallink' >Buy Tickets</a></li>
+                                                      </ul>
+          </div>
+                                        <div id="Bu" class="nav-links nav-pulldown">
+            <ul class="subsections-list">
+                                                            <li class="nav-item current first"><a href='/business/energy/'>Energy</a></li>
+                                                                                        <li class="nav-item current"><a href='/business/real-estate/'>Real Estate</a></li>
+                                                                                        <li class="nav-item current"><a href='/business/real-estate/deal-of-the-week/'>Deal of the Week</a></li>
+                                                                                        <li class="nav-item current"><a href='/business/medical/'>Medical</a></li>
+                                                                                        <li class="nav-item current"><a href='/business/retail/'>Retail</a></li>
+                                                                                        <li class="nav-item current"><a href='/business/technology/'>Technology</a></li>
+                                                                                        <li class="nav-item current"><a href='/business/personal-finance/'>Personal Finance</a></li>
+                                                                                        <li class="nav-item current"><a href='/business/top-workplaces/'>Top Workplaces</a></li>
+                                                                                        <li class="nav-item current"><a href='/business/chron-100/'>Chronicle 100</a></li>
+                                                                                        <li class="nav-item current last"><a href='/business/bloomberg/'>Bloomberg</a></li>
+                                                      </ul>
+          </div>
+                                        <div id="Op" class="nav-links nav-pulldown">
+            <ul class="subsections-list">
+                                                            <li class="nav-item current first"><a href='/opinion/editorials/'>Editorials</a></li>
+                                                                                        <li class="nav-item current"><a href='/opinion/outlook/'>Outlook</a></li>
+                                                                                        <li class="nav-item current"><a href='/opinion/letters/'>Letters to the Editor</a></li>
+                                                                                        <li class="nav-item current"><a href='/opinion/recommendations/'>Recommendations</a></li>
+                                                                                        <li class="nav-item current"><a href='/opinion/columnists/'>Columnists</a></li>
+                                                                                        <li class="nav-item current last"><a href='/opinion/corrections/'>Corrections</a></li>
+                                                      </ul>
+          </div>
+                                        <div id="Ar" class="nav-links nav-pulldown">
+            <ul class="subsections-list">
+                                                            <li class="nav-item current first"><a href='/entertainment/restaurants-bars/'>Restaurants & Bars</a></li>
+                                                                                        <li class="nav-item current"><a href='/entertainment/top-100-restaurants/'>Top 100 Restaurants</a></li>
+                                                                                        <li class="nav-item current"><a href='/entertainment/music/'>Music</a></li>
+                                                                                        <li class="nav-item current"><a href='/entertainment/movies/'>Movies & TV</a></li>
+                                                                                        <li class="nav-item current"><a href='/entertainment/books/'>Books</a></li>
+                                                                                        <li class="nav-item current"><a href='/entertainment/arts-theater/'>Arts & Theater</a></li>
+                                                                                        <li class="nav-item current"><a href='http://www.chron.com/life/horoscopes/' target='_blank' class='externallink' >Horoscopes</a></li>
+                                                                                        <li class="nav-item current"><a href='http://www.chron.com/entertainment/comics-games/' target='_blank' class='externallink' >Comics & Games</a></li>
+                                                                                        <li class="nav-item current last"><a href='/entertainment/restaurants-bars/barbecue/'>Barbecue</a></li>
+                                                      </ul>
+          </div>
+                                        <div id="Li" class="nav-links nav-pulldown">
+            <ul class="subsections-list">
+                                                            <li class="nav-item current first"><a href='/lifestyle/escapes/'>Escapes</a></li>
+                                                                                        <li class="nav-item current"><a href='/lifestyle/style/'>Style</a></li>
+                                                                                        <li class="nav-item current"><a href='/lifestyle/food/'>Food & Cooking</a></li>
+                                                                                        <li class="nav-item current"><a href='/lifestyle/food/recipes/'>Recipes</a></li>
+                                                                                        <li class="nav-item current"><a href='/lifestyle/wine/'>Wine</a></li>
+                                                                                        <li class="nav-item current"><a href='/lifestyle/society/'>Society</a></li>
+                                                                                        <li class="nav-item current"><a href='/lifestyle/gardening/'>Gardening</a></li>
+                                                                                        <li class="nav-item current"><a href='/lifestyle/pethousepets/'>Pethouse Pets</a></li>
+                                                                                        <li class="nav-item current"><a href='/lifestyle/houston-belief/'>Houston Belief</a></li>
+                                                                                        <li class="nav-item current"><a href='/lifestyle/health/'>Health</a></li>
+                                                                                        <li class="nav-item current last"><a href='/lifestyle/passages/'>Passages</a></li>
+                                                      </ul>
+          </div>
+                                        <div id="In" class="nav-links nav-pulldown">
+            <ul class="subsections-list">
+                                                            <li class="nav-item current first"><a href='/archive/search/'>Archives</a></li>
+                                                                                        <li class="nav-item current"><a href='/entertainment/restaurants-bars/barbecue/'>Barbecue</a></li>
+                                                                                        <li class="nav-item current"><a href='/local/gray-matters/'>Gray Matters</a></li>
+                                                                                        <li class="nav-item current"><a href='/sports/insider/'>Inside Houston Sports</a></li>
+                                                                                        <li class="nav-item current"><a href='/business/outside-the-boardroom/'>Outside the Boardroom</a></li>
+                                                                                        <li class="nav-item current"><a href='/politics/texas-take/'>Texas Take</a></li>
+                                                                                        <li class="nav-item current"><a href='/local/mostread/'>Most Read</a></li>
+                                                                                        <li class="nav-item current"><a href='/local/todayspaper/'>Today's Paper</a></li>
+                                                                                        <li class="nav-item current last"><a href='http://www.houstonchronicle.com/e-edition/' target='_blank' class='externallink' >eNewspaper</a></li>
+                                                      </ul>
+          </div>
+                    </div>
+  <!-- triple rule -->
+  <div class="solo_triple"></div>
+</div>
+
+</div> </div> <!--e /ux/chron/templates/hearst/home/navigation_main.tpl -->
+<!-- e hearst/home/navigation.tpl -->
+<!-- e business/templates/hearst/home/HNavigation.tpl --><!-- end hearst/article/types/article_header.tpl -->
+
+
+
+    <!-- design/article/premium_story_page.tpl -->
+    
+    <div id="content">
+    <div class="article-wrap">
+        <!-- ux/premiumchron/templates/hearst/article/premium_share_alertbox.tpl -->
+
+
+<!-- e ux/premiumchron/templates/hearst/article/premium_share_alertbox.tpl -->
+        <div class="zone zone-1">
+            <div class="article-body">
+        <!-- article/types/premium_story_header.tpl -->
+<div class="article-head">
+    <h3 class="section-name">Milestones</h3>
+    <h2 class="headline">Kingwood amputee, family return home for the holidays</h2>
+        <!-- hearst/common/author_name.tpl -->
+<p class="byline">By <a href="/author/claudia-feldman/">Claudia Feldman</a></p>
+<!-- e hearst/common/author_name.tpl -->
+    
+    <span class="datestamp">
+        <span class="published">December 12, 2014</span>
+            <span class="updated updated">Updated: December 15, 2014 12:05am</span>
+        </span>
+</div> <!-- /article-head -->
+
+<!-- end premium_story_header.tpl -->
+        <div class="article-share">
+        <!-- ux hearst/article/prem_article_share.tpl -->
+
+<div class="social-links " social-url="http%3A%2F%2Fwww.houstonchronicle.com%2Flifestyle%2Fpassages%2Fmilestones%2Farticle%2FAmputee-Katy-Hayes-is-home-for-the-holidays-5953779.php%3Ft%3D09335eaf52%26cmpid%3D" social-hashId="" social-blurb="%20Katy%20Hayes%20wriggled%20into%20her%20new%20myoelectric%20arms%20and%20let%20the%20decoration%20-%20a%20wooden%20star%20her%20kids%20made%20-%20dangle%20from%20her%20plastic%20fingertips.%20%20%5B...%5D%20the%20gold%20star%20hung%20from%20the%20tree%20just%20so.%20%20Hayes%20and%20her%20family%20are%20back%20home%20in%20Kingwood%20after%20spending%202%C2%BD%20years%20in%20Boston%20where%20she%20waited%20unsuccessfully%20for%20a%20double%20arm%20transplant.%20%20Hayes%20was%20in%20a%20drug-induced%20coma%20and%20near%20death%20when%20doctors%20told%20her%20husband%20the%20only%20way%20to%20save%20her%20life%20was%20to%20wheel%20her%20back%20into%20surgery%20and%20remove%20her%20arms%20and%20legs.%20%20At%20that%20moment%2C%22%20Al%20Hayes%20remembered%2C%20%22I%20would%20have%20amputated%20my%20own%20limbs%2C%20I%20would%20have%20put%20a%20bullet%20in%20my%20head%2C%20I%20would%20have%20done%20anything%20short%20of%20hurting%20my%20children%20to%20help%20Katy%20walk%20away.%20%20Al%20Hayes%2C%20a%20musician%20and%20music%20teacher%2C%20struggled%20to%20juggle%20his%20work%20with%20area%20bands%20and%20caring%20for%20his%20wife%20and%20their%20two%20youngest%20kids.%20%20%28Amber%2C%20Katy%20Hayes%27%20daughter%20from%20a%20previous%20marriage%2C%20was%20in%20college%20in%20Texas.%29%20Early%20on%2C%20Katy%20Hayes%20spent%20hours%20watching%20ghost%20stories%20on%20TV%3B%20she%20found%20it%20hard%20to%20control%20the%20children%20or%20help%20her%20husband.%20%20%22A%20donor%20must%20be%20an%20immunologic%20match%2C%20but%20we%20also%20consider%20limb%20size%2C%20gender%2C%20color%2C%20blood-vessel%20status%2C%20prior%20injuries%22%20plus%20the%20routine%20criteria%20for%20all%20organ%20donations.%20%20With%20the%20myoelectric%20arms%2C%20she%20will%20be%20able%20to%20hold%20a%20cup%20of%20coffee%2C%20get%20in%20and%20out%20of%20bed%20and%20help%20herself%20in%20the%20bathroom.%20" media-url="http%3A%2F%2Fww3.hdnux.com%2Fphotos%2F33%2F55%2F54%2F7265078%2F3%2FrawImage.jpg" social-title="Kingwood%20amputee%2C%20family%20return%20home%20for%20the%20holidays">
+    <ul class="right">
+        <li class="socialIcon print">
+            <a class="hdn-analytics" href="javascript:hst_print();">
+                <span class="hdn-analytics-data">print_article|article-5953779|article-share-redesign|7</span>
+                <span class="icon"></span>
+            </a>
+        </li>
+        <li class="socialIcon comments">
+            <a class="hdn-analytics" href="#comments">
+                <span class="hdn-analytics-data">comments_jump|article-5953779|article-share-redesign|1</span>
+                <span class="icon"></span>
+            </a>
+            <div class="viafoura">
+                <span class="vf-counter vf-widget" data-widget="counter"></span>
+            </div>
+        </li>
+    </ul>
+    <ul class="left">
+        <li class="socialIcon email" share-id="email">
+            <a class="hdn-analytics"
+                href=""
+                onclick="return false;">
+                <span class="hdn-analytics-data">email_share|article-5953779|article-share-redesign|1</span>
+                <span class="icon"></span>
+            </a>
+        </li>
+        <li class="socialIcon facebook" share-id="facebook">
+            <a class="hdn-analytics"
+                href=""
+                onclick="return false;">
+                <span class="hdn-analytics-data">facebook_share|article-5953779|article-share-redesign|2</span>
+                <span class="icon"></span>
+            </a>
+        </li>
+        <li class="socialIcon twitter" share-id="twitter">
+            <a class="hdn-analytics"
+                href=""
+                onclick="return false;">
+                <span class="hdn-analytics-data">twitter_share|article-5953779|article-share-redesign|3</span>
+                <span class="icon"></span>
+            </a>
+        </li>
+        <li class="socialIcon pinterest" share-id="pinterest">
+            <a class="hdn-analytics"
+                href=""
+                onclick="return false;">
+                <span class="hdn-analytics-data">pinterest_share|article-5953779|article-share-redesign|4</span>
+                <span class="icon"></span>
+            </a>
+        </li>
+        <li class="socialIcon reddit" share-id="reddit">
+            <a class="hdn-analytics"
+                href=""
+                onclick="return false;">
+                <span class="hdn-analytics-data">reddit_share|article-5953779|article-share-redesign|5</span>
+                <span class="icon"></span>
+            </a>
+        </li>
+        <li class="socialIcon google" share-id="google">
+            <a class="hdn-analytics"
+                href=""
+                onclick="return false;">
+                <span class="hdn-analytics-data">google_share|article-5953779|article-share-redesign|6</span>
+                <span class="icon"></span>
+            </a>
+        </li>
+            </ul>
+</div>
+<!-- e ux hearst/article/prem_article_share.tpl -->
+        </div>
+        <!-- article/types/premium_story.tpl -->
+
+    
+
+
+
+
+
+<div class="article-text">
+
+<!-- hearst/article/types/premium_story_body.tpl -->
+
+<a name="asset-photo-7265078"></a><div class="asset_photo asset-photo " data-config-asset-position="6"><!-- photo float --><img id="premiumchron-photo-7265078" src="http://ww3.hdnux.com/photos/33/55/54/7265078/3/920x1240.jpg" alt="Four year-old Arielle Hayes hugs her mother Katy Hayes at their home in Kingwood. Photo: Billy Smith II, Staff / © 2014 Houston Chronicle" /><div class="asset_info_container asset-info-container"><!-- design/gallery/caption_redesign.tpl -->
+					<span class="credit">
+											Photo: Billy Smith II, Staff
+									</span>
+			
+<!-- e design/gallery/caption_redesign.tpl --><!-- ux hearst/article/prem_article_share.tpl -->
+
+<div class="social-links " social-url="http%3A%2F%2Fwww.houstonchronicle.com%2Flifestyle%2Fpassages%2Fmilestones%2Farticle%2FAmputee-Katy-Hayes-is-home-for-the-holidays-5953779.php%3Ft%3D09335eaf52%26cmpid%3D" social-hashId="%23asset-photo-7265078" social-blurb="Four%20year-old%20Arielle%20Hayes%20hugs%20her%20mother%20Katy%20Hayes%20at%20their%20home%20in%20Kingwood." media-url="http%3A%2F%2Fww3.hdnux.com%2Fphotos%2F33%2F55%2F54%2F7265078%2F3%2F960x960.jpg" social-title="Kingwood%20amputee%2C%20family%20return%20home%20for%20the%20holidays">
+    <ul class="right">
+        <li class="socialIcon print">
+            <a class="hdn-analytics" href="javascript:hst_print();">
+                <span class="hdn-analytics-data">print_article_embed|photo-7265078|article-5953779|7</span>
+                <span class="icon"></span>
+            </a>
+        </li>
+        <li class="socialIcon comments">
+            <a class="hdn-analytics" href="#comments">
+                <span class="hdn-analytics-data">comments_jump_embed|photo-7265078|article-5953779|1</span>
+                <span class="icon"></span>
+            </a>
+            <div class="viafoura">
+                <span class="vf-counter vf-widget" data-widget="counter"></span>
+            </div>
+        </li>
+    </ul>
+    <ul class="left hidden">
+        <li class="socialIcon email" share-id="email">
+            <a class="hdn-analytics"
+                href=""
+                onclick="return false;">
+                <span class="hdn-analytics-data">email_share_embed|photo-7265078|article-5953779|1</span>
+                <span class="icon"></span>
+            </a>
+        </li>
+        <li class="socialIcon facebook" share-id="facebook">
+            <a class="hdn-analytics"
+                href=""
+                onclick="return false;">
+                <span class="hdn-analytics-data">facebook_share_embed|photo-7265078|article-5953779|2</span>
+                <span class="icon"></span>
+            </a>
+        </li>
+        <li class="socialIcon twitter" share-id="twitter">
+            <a class="hdn-analytics"
+                href=""
+                onclick="return false;">
+                <span class="hdn-analytics-data">twitter_share_embed|photo-7265078|article-5953779|3</span>
+                <span class="icon"></span>
+            </a>
+        </li>
+        <li class="socialIcon pinterest" share-id="pinterest">
+            <a class="hdn-analytics"
+                href=""
+                onclick="return false;">
+                <span class="hdn-analytics-data">pinterest_share_embed|photo-7265078|article-5953779|4</span>
+                <span class="icon"></span>
+            </a>
+        </li>
+        <li class="socialIcon reddit" share-id="reddit">
+            <a class="hdn-analytics"
+                href=""
+                onclick="return false;">
+                <span class="hdn-analytics-data">reddit_share_embed|photo-7265078|article-5953779|5</span>
+                <span class="icon"></span>
+            </a>
+        </li>
+        <li class="socialIcon google" share-id="google">
+            <a class="hdn-analytics"
+                href=""
+                onclick="return false;">
+                <span class="hdn-analytics-data">google_share_embed|photo-7265078|article-5953779|6</span>
+                <span class="icon"></span>
+            </a>
+        </li>
+            </ul>
+</div>
+<!-- e ux hearst/article/prem_article_share.tpl --><div class="share-toggle"><span class="icon"></span></div></div><!-- /asset_info_container --><!-- design/gallery/caption_redesign.tpl -->
+				<div class="caption ">
+                        									Four year-old Arielle Hayes hugs her mother Katy Hayes at their home in Kingwood.
+			
+		</div>
+		<div class="caption-truncated" style="display:none;">Four year-old Arielle Hayes hugs her mother Katy Hayes at their...</div>
+	
+<!-- e design/gallery/caption_redesign.tpl --></div><!-- /photo float --><p>Katy Hayes wriggled into her new myoelectric arms and let the decoration - a wooden star her kids made - dangle from her plastic fingertips.</p>
+
+<!-- e premium_hearst/article/types/premium_story_body.tpl -->
+
+</div>
+ 	<!-- templates/hearst/common/premium_login.tpl -->
+
+
+<div class="pw-content signin_form_container">
+    <div class="subscrib_msg hello">
+        <p class="bold-italic">
+            To continue reading this story, you will need to be a digital subscriber to HoustonChronicle.com.
+        </p>
+    </div>
+    <div class="pw-blocks pw-block-3 pw-block-last">
+        <div id="article-signin" class="form-wrap">
+            <h2 id="signInHeader">SIGN IN</h2>
+
+            <form class="main_signin_form_submitter" action="https://edb.houstonchronicle.com/WCMPaywall/GetTokensByEmail" method="post">
+                <ul class="form-list credential_section">
+                    <li class="input-wrap txt-input first">
+                        <input class="form-input email-pw useremail" id="email" name="EmailAddress" type="text" onfocus="if(this.value == 'Email Address') { this.value = ''; }" value="" />
+                    </li>
+                    <li class="input-wrap txt-input">
+                        <input class="form-input password-pw" id="password" name="Password" type="password" value="" />
+                    </li>
+                    <li class="input-wrap primary_signin_btn" >
+                        <input type="hidden" value="article" name="SignInError" />
+                        <input class="btn-dark log_sign_in_btn" name="commit" type="submit" value="Sign In">
+                    </li>
+                </ul>
+                <ul class="form-list secondary">
+                    <li class="input-wrap first">
+                        <div id="article-check" class="checkbox checked">
+                            <input id="article_remember_me" name="RememberMe" checked="true" type="checkbox" value="1" />
+                            <label for="remember_me">Stay signed in</label>
+                        </div>
+                    </li>
+                    <li class="input-wrap  primary_forgot_pass">
+                        <div class="forgotPass_wrap">
+                            <span><a class="forgotPass" href="https://myaccount.houstonchronicle.com/ForgotPassword.aspx" target='_blank'>Forgot Your Password?</a></span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="gray_line_wrapper">
+                    <div class="gray_line"></div>
+                </div>
+                <ul class="mobile_mode form-list secondary ">
+                    <li class="input-wrap mobile_mode_a">
+                        <input class="btn-dark" name="commit" type="submit" value="Sign In">
+                    </li>
+                    <li class="input-wrap mobile_mode_b">
+                        <div class="forgotPass_wrap">
+                            <span><a class="forgotPass" href="https://myaccount.houstonchronicle.com/ForgotPassword.aspx" target='_blank'>Forgot Your Password?</a></span>
+                        </div>
+                    </li>
+                </ul>
+            </form>
+
+            <!-- Already a subscriber  -->
+
+            <div class="activate_account_section">
+                <form action="https://myaccount.houstonchronicle.com/dssmatch.aspx" method="get">
+                    <ul class="activate_account_items">
+                        <li class="activate_item">
+
+                            Houston Chronicle subscribers have FREE access to all premium digital products.
+
+                        </li>
+                        <li class="activate_item">
+                            <input type="hidden" name="return" value="http://www.houstonchronicle.com/lifestyle/passages/milestones/article/Amputee-Katy-Hayes-is-home-for-the-holidays-5953779.php?cmpid=albtfp"/>
+                            <input class="btn-dark" name="commit" type="submit" value="Activate Account" />
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <!-- End of already a subscriber section -->
+            <p class="signin-dis signin_blurb ">By logging in, you agree to the <a href="/terms_of_use/">Terms and Conditions</a> and <a href="/privacy_policy/">Privacy Policy</a>.</p>
+            <script type="text/javascript">
+                $('.email-pw').watermark('Email Address');
+                $('.password-pw').watermark('Password');
+                if ( edbTokens.errorMessage && edbTokens.signInError=='article' ){
+                    window.location.hash = 'article-signin'; // set hashtag anchor to jump to article sign in
+                    $('#article-signin form.main_signin_form_submitter').prepend('<div class="error-wrap error-back-dark" style="display:block;"><ul><li class="form_err_text"><span class="error-text error-text-dark">'+
+                            edbTokens.errorMessage+
+                            '</span></li><li class="form_err_icon"><img src="/img/utils/error_dark.png"></li></ul></div>');
+                    if(edbTokens.emailForPrompt){
+                        $('input.useremail').val(edbTokens.emailForPrompt);
+                    }
+                }
+            </script>
+            
+        </div>
+    </div>
+    <div class="signin_item pw-block-2">
+        <div class="form-wrap">
+            <ul class="subscribe_banner_section" >
+                <li class="subscribe_item item_a">
+                    <div class="offer_blurb">Get your <span class="blurb_highlight">All Digital Pass</span> to Houston insider news and analysis</div>
+                </li>
+                <li class="subscribe_item item_b">
+                    <div class="subscribe_btn_wrap">
+                        <div class="subscribe_btn">
+                        	                        	<a href="https://myaccount.houstonchronicle.com/dssSubscribe.aspx?z=00000&amp;pid=114,176&amp;return=http://www.houstonchronicle.com/lifestyle/passages/milestones/article/Amputee-Katy-Hayes-is-home-for-the-holidays-5953779.php?cmpid=albtfp">SUBSCRIBE</a>
+                        	                        </div>
+                        <div class="subscribe_btn_icon"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div><!-- /.pw-content signin_form_container -->
+<!-- e templates/hearst/common/premium_login.tpl -->
+	    			<div class="solo_single narrow-only" style="margin:0"></div>
+
+<!-- e /hearst/article/types/premium_story.tpl -->
+          
+            	
+<!-- hearst/article/premium_author_module.tpl --> 
+<div class="author-wrap">
+        	<div class="authorinfo noborder last">
+    			        	<img src="http://ww3.hdnux.com/photos/21/63/72/4669118/3/premium_author_module.jpg" alt="Claudia Feldman" />
+	        			<h2 class="name">
+				<a href="/author/claudia-feldman/">Claudia Feldman</a>
+			</h2>
+			<p class="title">Reporter, Houston Chronicle</p>
+		</div>
+    </div>
+<!-- hearst/article/premium_author_module.tpl -->				     
+                
+            </div>
+        </div>
+        <!-- END Article Body-->
+        <!-- /zone 1-->
+        <div class="zone zone-3">
+        </div>
+    </div>
+    <div class="zone zone-5">
+        <!-- src/business/widgets/hearst/collection/widget.tpl -->
+                         <div class="hide-rss-link hdnce-e hdnce-collection-19498-premium_article_featured_articles"><!-- collections/premium_article_featured_articles.tpl -->
+<!-- collection.premium_article_featured_articles.19498 -->
+<div class="collection article-sections">
+        <div class="column-outer-wrap">
+                                                                <div class="column-wrap ">
+                                                        <div class="column odd firstcolumn">
+                                                                                                                                                                            <div class="header">
+                                                        <h4 class="kicker-link"><a   href="/sports/columnists/solomon/">Jerome Solomon</a></h4>
+                                                </div>
+                                                                                                                          <!-- common/display_image.tpl -->
+  <a class="without_u " href="/sports/columnists/solomon/article/Texans-season-lost-when-team-mishandled-QB-5957105.php"><img src="http://ww4.hdnux.com/photos/33/57/17/7271379/31/premium_article_featured_articles.jpg" alt="Houston Texans quarterback Tom Savage (3) is sacked by Indianapolis Colts defensive end Ricky Jean Francois (99) during the second quarter of an NFL football game at Lucas Oil Stadium on Sunday, Dec. 14, 2014, in Indianapolis. ( Brett Coomer / Houston Chronicle )" border="0" /></a>
+  <!-- e display_image.tpl -->
+                                        <h2 class="headline"><a   href="/sports/columnists/solomon/article/Texans-season-lost-when-team-mishandled-QB-5957105.php">Solomon: Texans' season lost when team mishandled QB situation</a></h2>
+                                </div>
+                                                                                                <div class="column even ">
+                                                                                                                                                                            <div class="header">
+                                                        <h4 class="kicker-link"><a   href="/neighborhood/woodlands/">The Woodlands</a></h4>
+                                                </div>
+                                                                                                                          <!-- common/display_image.tpl -->
+  <a class="without_u " href="/neighborhood/woodlands/news/article/More-trails-coming-to-greenway-dividing-5957081.php"><img src="http://ww3.hdnux.com/photos/33/57/25/7271806/3/premium_article_featured_articles.jpg" alt="Stephanie Prosser, a conservation lands biologist at Bayou Land Conservancy, walks the trails of the Spring Creek Greenway last week." border="0" /></a>
+  <!-- e display_image.tpl -->
+                                        <h2 class="headline"><a   href="/neighborhood/woodlands/news/article/More-trails-coming-to-greenway-dividing-5957081.php">More trails coming to greenway dividing counties</a></h2>
+                                </div>
+                                                </div>
+                                                                                        <div class="column-wrap column-wrap-last">
+                                                        <div class="column odd ">
+                                                                                                                                                                            <div class="header">
+                                                        <h4 class="kicker-link"><a   href="/lifestyle/health/">Health</a></h4>
+                                                </div>
+                                                                                                                          <!-- common/display_image.tpl -->
+  <a class="without_u " href="/news/health/article/Houston-doctor-s-HIV-book-for-kids-surpasses-5953823.php"><img src="http://ww4.hdnux.com/photos/33/57/23/7271659/3/premium_article_featured_articles.jpg" alt="Dr. Robert M. Ricketts wrote &quot;Our Little Soldiers&quot; as a way to help persuade children with HIV to take their medicine. He started a Kickstarter campaign hoping to raise $9,000 to produce the book, and eventually it raised about $65,000, allowing the book to be printed in more languages and countries." border="0" /></a>
+  <!-- e display_image.tpl -->
+                                        <h2 class="headline"><a   href="/news/health/article/Houston-doctor-s-HIV-book-for-kids-surpasses-5953823.php">Houston doctor's HIV book for kids surpasses expectations</a></h2>
+                                </div>
+                                                                                                <div class="column even lastcolumn">
+                                                                                                                                                                            <div class="header">
+                                                        <h4 class="kicker-link"><a   href="/business/energy/">Energy</a></h4>
+                                                </div>
+                                                                                                                          <!-- common/display_image.tpl -->
+  <a class="without_u " href="/business/energy/article/Plastic-makers-fight-move-to-sack-bags-5922765.php"><img src="http://ww2.hdnux.com/photos/33/36/40/7202825/5/premium_article_featured_articles.jpg" alt="At SuperbagÃ©­s plant in Northwest Houston, a worker operates a machine called an extruder, which melts plastic resin and blows the mixture into a bubble that then goes onto a roller to be sliced into plastic bags. (Superbag photo)" border="0" /></a>
+  <!-- e display_image.tpl -->
+                                        <h2 class="headline"><a   href="/business/energy/article/Plastic-makers-fight-move-to-sack-bags-5922765.php">Plastic makers fight move to sack bags</a></h2>
+                                </div>
+                                                </div>
+                                                </div>
+</div>
+<!-- end premium_article_featured_articles.tpl -->
+</div>    
+
+
+<!-- e src/business/widgets/hearst/collection/widget.tpl -->    </div><!-- /zone-5 -->
+    <!-- END Section Highlights Collection -->
+</div>
+<!-- e design/article/premium_story_page.tpl --><!-- src/business/templates/hearst/common/footer.tpl -->
+                      <!-- templates/hearst/home/viafouraFooterJS.tpl -->
+<script>
+    
+    
+    (function (v, s) {
+        v.type = 'text/javascript';
+        v.async = !0;
+        v.src = location.protocol !== 'https:' ? '//cdn.viafoura.net/vf.js' : '//api.viafoura.com/app/js/vf.js';
+        s.parentNode.insertBefore(v, s)
+    }(document.createElement('script'), document.getElementsByTagName('script')[0]));
+
+
+    $(document).ready(function () {
+        if ($('#hdn-vf-comments').length) {HDN.authOnReady('premium',false)}
+        HDN.getBlogCommentCount();
+    });
+    
+</script>
+<!-- e templates/hearst/home/viafouraFooterJS.tpl -->
+        
+<!-- hearst/item/standalone.tpl -->
+<!-- mid:freeform.11335 -->
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<div class="hc_sitefooter">
+<div class="lock1200">
+   <div class="hcsf_header">
+    <a href="http://www.houstonchronicle.com"><img src="/img/modules/sitefooter/footer_logo.png" /></a>
+    <div class="toplink"><a href="#container"><span class="topLinkText">Top</span></a></div>
+   </div>
+   <ul class="hcsf_links">
+    <li class="hcsf_about"> 
+     <h3>About</h3>
+     <ul class="hcsf_linklist">
+      <li><a href="http://www.hearst.com/newspapers/houston-chronicle.php">Our Company</a></li>
+      <li><a class="ad-choice" href="http://www.aboutads.info/choices/"><span class="ad-link"></span> Ad Choices </a></li>
+      <li><a href="https://hearstnewspaperscareerlinks.silkroad.com/">Careers</a></li> 
+      <li><a href="/terms_of_use/">Terms of Use</a></li>
+      <li><a href="http://hearstmediahouston.com/">Advertising</a></li>
+      <li><a href="/privacy_policy">Privacy Policy</a></li>
+      <li><a href="/privacy_policy#your_rights">Your Privacy Rights</a></li>
+                                                <li><a href="/privacy_policy/#caprivacyrights">Your California Privacy Rights</a></li>
+     </ul>
+    </li>
+   </ul>
+   <ul class="hcsf_links">
+    <li class="hcsf_contact"> 
+     <h3>Contact</h3>
+     <ul class="hcsf_linklist">
+      <li><a href="/archive/">Archives</a></li>
+      <li><a href="/customer_service">Customer Service</a></li>
+      <li><a href="/faq">Frequently Asked Questions</a></li>
+      <li><a href="/newsroom_contacts">Newsroom Contacts</a></li>
+     </ul>
+    </li>
+   </ul>
+   <ul class="hcsf_links">
+    <li class="hcsf_connect desktop"> 
+     <h3>Connect</h3>
+     <ul class="hcsf_linklist">
+      <li><a class="fb-link" href="https://www.facebook.com/chroncom">Facebook</a></li>
+      <li><a class="twtr-link" href="https://twitter.com/houstonchron">Twitter</a></li> 
+      <li><a class="li-link" href="http://www.linkedin.com/company/houston-chronicle">LinkedIn</a></li>
+      <li><a class="pin-link" href="http://pinterest.com/houstonchron/">Pinterest</a></li>
+      <li><a class="gplus-link" href="https://plus.google.com/+houstonchronicle">Google+</a></li>
+     </ul>
+    </li>
+    <li class="hcsf_connect mobile"> 
+     <h3>Connect</h3>
+     <ul class="hcsf_linklist">
+      <li><a class="fb-link" href="https://www.facebook.com/chroncom"></a></li>
+      <li><a class="twtr-link" href="https://twitter.com/houstonchron"></a></li> 
+      <li><a class="li-link" href="http://www.linkedin.com/company/houston-chronicle"></a></li>
+      <li><a class="pin-link" href="http://pinterest.com/houstonchron/"></a></li>
+      <li><a class="gplus-link" href="https://plus.google.com/+houstonchronicle"></a></li>
+     </ul>
+    </li>
+   </ul>
+   <div class="copyright-wrap">
+    <img src="/img/modules/sitefooter/hst_copy_logo.png" />
+    <p class="copyright">&copy; 2013 Hearst Newspapers, LLC.</p>
+   </div>
+</div>
+  </div>
+
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-3.newrelic.com","licenseKey":"3fd06eaac1","applicationID":"147157","transactionName":"MwQBZ0RXV0NTVhBdDgpONkFfGVBeVlAcGhEMEQ==","queueTime":0,"applicationTime":14,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-476.min.js"}</script></body></html>
+<!-- e src/business/templates/hearst/common/footer.tpl -->

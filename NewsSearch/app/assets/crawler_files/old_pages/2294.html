@@ -1,0 +1,530 @@
+
+
+
+
+
+
+
+   
+
+
+ 
+
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        
+    
+    
+       
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
+
+
+
+
+
+
+<html>
+<head>
+<title>My Profile - Newsletters| Reuters.com</title>
+<!-- HEAD fragment BEGIN -->
+<link rel="shortcut icon" href="/resources_v2/images/favicon.ico" />
+<link rel="icon" href="/resources_v2/images/favicon.ico" />
+<link href="/resources_v2/css/rcom-main.css" rel="stylesheet" />
+<link href="/resources_v2/css/rcom-section.css" rel="stylesheet" />
+<script type="text/javascript" src="/resources_v2/js/Bootstrap.js"></script>
+<script type="text/javascript" src="/resources_v2/js/rcom-main.js"></script>
+<script type="text/javascript" src="/resources_v2/js/extensions.js"></script>
+<script type="text/javascript" src="/resources_v2/js/rcom-section.js"></script>
+<script language="javascript" src="/resources_v2/js/libraries/yui_2_7_0/yahoo/yahoo-min.js" type="text/javascript"></script> 
+<script src="/resources_v2/js/libraries/yui_2_7_0/event/event-min.js" type="text/javascript"></script> 
+<script src="/resources_v2/js/libraries/yui_2_7_0/dom/dom-min.js" type="text/javascript"></script> 
+<script src="/resources_v2/js/libraries/yui_2_7_0/yahoo-dom-event/yahoo-dom-event.js" type="text/javascript"></script> 
+<script src="/resources_v2/js/libraries/yui_2_7_0/animation/animation-min.js" type="text/javascript"></script> 
+<script src="/resources_v2/js/libraries/yui_2_7_0/connection/connection-min.js" type="text/javascript"></script> 
+<script src="/resources_v2/js/libraries/yui_2_7_0/cookie/cookie-min.js" type="text/javascript"></script>
+
+<link href='/resources_v2/css/rcom-commerce.css' type='text/css' rel='stylesheet'/>
+<link href="/resources_v2/css/rcom-print.css" type='text/css' rel="stylesheet" media="print"/>
+
+<!-- HEAD fragment END -->
+  
+  <script language="JavaScript">
+
+    var tabs = [['newsLetterTab', 'newsLetterLiId'], ['mobileAlertsTab', 'mobileAlertsLiId']];
+    var currentTab = 'newsLetterTab';
+
+    function setChildren(id, checked) {
+        var o = document.getElementById('rbg' + id);
+        // added for newslettercategory checkbox
+        var oCbx = document.getElementById('cbx' + id);
+        var browser = navigator.appName;
+        if (o != undefined) {
+            if (checked) {
+                if (browser.indexOf("Microsoft") != -1) {
+                    o.children[0].checked = true;
+                } else {
+                    o.childNodes[1].checked = true;
+                }
+            } else {
+                var elementCounter = 0;
+                if (browser.indexOf("Microsoft") != -1) {
+                    while (o.children[elementCounter] != undefined) {
+                        o.children[elementCounter].checked = false;
+                        elementCounter++;
+                    }
+                } else {
+                    while (o.childNodes[elementCounter] != undefined) {
+                        o.childNodes[elementCounter].checked = false;
+                        elementCounter++;
+                    }
+                }
+            }
+        }
+        if (oCbx != undefined) {
+            if (checked) {
+               // for newsletter category,do nothing if checked
+            } else {
+                var elementCounter = 0;
+                if (browser.indexOf("Microsoft") != -1) {
+                    while (oCbx.children[elementCounter] != undefined) {
+                        oCbx.children[elementCounter].checked = false;
+                        elementCounter++;
+                    }
+                } else {
+                    while (oCbx.childNodes[elementCounter] != undefined) {
+                        oCbx.childNodes[elementCounter].checked = false;
+                        elementCounter++;
+                    }
+                }
+            }
+        }
+    }
+
+    function setParent(id, nv) {
+        var o = document.getElementById('c' + id);
+        o.value = true;
+        o.checked = true;
+    }
+
+    function tabNavigator(selectedTab, listItemId, titleElementId) {
+
+        if (selectedTab == currentTab) {
+            return true;
+        }
+
+        for (var i = 0; i < tabs.length; i++) {
+            var tabElement = document.getElementById(tabs[i][0]);
+            if (tabElement != undefined) {
+               tabElement.style.display = 'none';
+            }
+            var liElement = document.getElementById(tabs[i][1]);
+            if (tabElement != undefined) {
+               liElement.className = '';
+            }
+        }
+
+        var selectedTabElement = document.getElementById(selectedTab);
+        var selectedLiElement = document.getElementById(listItemId);
+        if ((selectedTabElement != undefined) && (selectedLiElement != undefined)) {
+             currentTab = selectedTab;
+             selectedTabElement.style.display = 'block';
+             selectedLiElement.className = 'current';
+        }
+
+        //setting page title
+        var titleHolderElement = document.getElementById(titleElementId);
+        var pageTitleElement = document.getElementById('pageTitleId');
+        if ((titleHolderElement != undefined ) && (pageTitleElement != undefined) )  {
+            pageTitleElement.innerHTML = titleHolderElement.innerHTML;
+        }
+    }
+
+  </script>
+</head>
+<body>
+
+<!-- HEADER BEGIN -->
+<div id="header3P">
+<script type="text/javascript" src="/resources_v2/js/rcom-header-widget.js"></script>
+</div>
+
+<!-- HEADER END -->
+
+<div id="content">
+
+	<!-- MENU -->
+	
+	
+        
+        
+        
+    
+	<!-- MENU -->
+
+    
+	<div class="section">
+		<div class="sectionContent">	
+			<div class="column1 gridPanel grid8">
+		    <form name="NewsLettersForm" method="GET" action="/profile/pages/newsletter/saveNewsLettersSubscription.do;jsessionid=4E032B3C02E3591E20E5EBFA65166120.node01">
+				<h2>Newsletters</h2>
+	            
+		          
+		          
+		            <h3>
+		            Get the day's top news stories delivered to your inbox.
+		            </h3>
+		            <p>Browse the latest headlines each day. Select your free in.reuters.com e-news letters below and click Submit.</p>
+		          
+		        
+			</div>
+	    
+		    
+			    
+			    
+			    
+	        
+	   
+	        <div class="linebreak" ></div>
+	
+	        <input type="hidden" name="saveAfterAuthorithation" value="true">
+	        
+	        
+	          
+	        
+	        
+	            
+	        
+	            
+	        
+	            
+	        
+	          
+	        
+			<div class="column1 gridPanel grid6">
+				<h4>News</h4>
+	
+	            
+	            
+			        
+			        
+			        
+	            
+			        
+			        
+
+				        <div class="newsletter">           
+				            
+					            <a href="#" onClick="setParent('1022')">
+					            <img src="/profile/resources/images/newsLetterImages/IN/splash_topNews.jpg" width="77" height="58" border="0"  >
+					            </a>
+				            
+				            <div class="newsletter-text">
+				                <input type="checkbox" name="letters[1].checked" value="on" onclick="setChildren(1022, this.checked);" id="c1022"> 
+				                <h5>
+					                
+					                   Reuters India Top News
+					                
+					                
+				                </h5>
+				                <p>A quick-fix on the day's news published with Reuters videos and award-winning news photography and delivered once a day.<p class="schedule">(Sent daily, Monday-Friday at 5pm)</p></p>
+				                
+				                
+				                
+				                
+				            </div>
+						</div>
+				            
+				          
+				                            
+			        
+			        
+	            
+			        
+			        
+			        
+	            
+	        </div>
+            
+	          
+	        
+	        <div class="column2 gridPanel grid6">
+	            <h4>Business/Investing</h4>
+	            
+	            
+	               
+	               
+			        <div class="newsletter">
+			          
+			            <a href="#" onClick="setParent('1021')">
+			              <img src="/profile/resources/images/newsLetterImages/IN/splash_money.jpg" width="77" height="58" border="0"  >
+			            </a>
+			          
+			           	<div class="newsletter-text">
+			              <input type="checkbox" name="letters[0].checked" value="on" onclick="setChildren(1021, this.checked);" id="c1021">
+			               <h5>
+			               
+			                  Reuters Money Top News
+			               
+			              
+			               </h5>
+			              <p>A daily digest of breaking business news, coverage of the Indian economy, major corporate news and the financial markets.<p class="schedule">(Sent daily, Monday-Friday at 5pm)</p>
+</p>
+		
+			              
+			                
+			                
+			            </div>
+					</div>                      
+	
+				    
+				            
+				    
+						
+	            
+	               
+	               
+	            
+	               
+	               
+	               
+	            
+	               
+	               
+			        <div class="newsletter">
+			          
+			           	<div class="newsletter-text">
+			              <input type="checkbox" name="letters[2].checked" value="on" onclick="setChildren(1023, this.checked);" id="c1023">
+			               <h5>
+			               
+			                  Reuters.com Product Updates
+			               
+			              
+			               </h5>
+			              <p>Receive updates on Reuters latest products, innovative tools and special event coverage.<p class="schedule">(Typically sent once per quarter)</p></p>
+		
+			              
+			                
+			                
+			            </div>
+					</div>                      
+	
+				    
+				            
+				    
+						
+	            
+	               
+	               
+	            
+	        </div>
+	        
+	        
+			
+	
+	        
+	 	    <div style="display:none;">
+			  
+	          
+	          
+	        </div>
+	   </div>
+	</div>
+	
+	<div class="section">
+		<div class="sectionContent"> 
+			
+	        
+		        <div class="gridPanel grid12 footy">
+				<h4>I prefer to receive my Newsletters in:</h4>
+				    
+				        
+				        
+		                    <div class="radio inline">
+		                    <p>
+		                    
+		                      <input type="radio" name="format" value="html" checked="checked" /> HTML
+		                    
+		                      <input type="radio" name="format" value="text"  /> Text Only <span class="timestamp"> - Recommended for Blackberry users</span>
+		                    
+		                      <input type="radio" name="format" value="unknown"  /> Not Sure <span class="timestamp"> - If you choose this, we'll ensure the best format for your e-mail system</span>
+		                    
+		                    </p>
+		                    </div>                
+				        
+				    
+		        <p><span class="timestamp">Please note: your selection will be applied to all newsletters that you are subscribed to</span></p>
+		        
+				</div>
+				<div class="gridPanel grid12 footy"></div>
+		        <div class="gridPanel grid12">
+		            <div class="continue">
+		                <div class="button">
+		                <input type="image"
+		                       name="ButtonSubmit" 
+		                       id="ButtonSubmit"
+		                       src="/resources_v2/images/btn_submit.gif" 
+		                       alt="Submit"/>
+		                </div>
+		            </div>
+		        </div>
+	        
+	    </form>
+	    </div>
+	</div>
+</div>
+
+<!-- BEGIN FOOTER -->
+<div id="footer3P">
+<script type="text/javascript" src="/resources_v2/js/rcom-footer-widget.js"></script>
+
+
+
+</div>
+
+<!-- END FOOTER -->
+  
+
+
+  
+
+
+
+
+
+
+
+
+<META name="DCSext.rChannel" content="Registration">
+<META name="DCSext.rCountry" content="IN">
+<META name="WT.cg_n" content="Registration - Newsletter Splash">
+<META name="WT.cg_s" content="">
+<!-- START OF SmartSource Data Collector TAG -->
+<!-- Copyright (c) 1996-2006 WebTrends Inc.  All rights reserved. -->
+<!-- $DateTime: 2006/03/01 12:51:54 $ -->
+<SCRIPT TYPE="text/javascript"><!--
+var gDomain="statse.webtrendslive.com";
+var gDcsId="dcsncwimc10000kzgoor3wv9x_3f2v";
+var gFpc="WT_FPC";
+var gConvert=true;
+if ((typeof(gConvert)!="undefined")&&gConvert&&(document.cookie.indexOf(gFpc+"=")==-1)&&(document.cookie.indexOf("WTLOPTOUT=")==-1)){
+	document.write("<SCR"+"IPT TYPE='text/javascript' SRC='"+"http"+(window.location.protocol.indexOf('https:')==0?'s':'')+"://"+gDomain+"/"+gDcsId+"/wtid.js"+"'><\/SCR"+"IPT>");
+}
+//-->
+</SCRIPT>
+
+<SCRIPT SRC="/resources/js/dcs_tag.js" TYPE="text/javascript"></SCRIPT>
+
+<NOSCRIPT>
+<IMG ALT="" BORDER="0" NAME="DCSIMG" WIDTH="1" HEIGHT="1" SRC="http://statse.webtrendslive.com/dcsncwimc10000kzgoor3wv9x_3f2v/njs.gif?dcsuri=/nojavascript&amp;WT.js=No">
+</NOSCRIPT>
+
+<!-- END OF SmartSource Data Collector TAG -->
+
+
+
+    <!-- Begin BlueKai Tag -->
+<iframe name="__bkframe" height="0" width="0" frameborder="0" src="javascript:void(0)"></iframe>
+<script type="text/javascript" src="http://www.bkrtx.com/js/bk-static.js"></script>
+
+<script>
+	try{		
+		var bkSocialLogin = (typeof socialLoginProvider!="undefined"?socialLoginProvider:"");
+		var bkReferrer = (typeof document.referrer.split("/")[2]!="undefined"?document.referrer.split("/")[2]:"");
+		var bkLoginCookieValue = (typeof loginCookieValue!="undefined"?loginCookieValue:"");
+		var bkSearchVal = (typeof document.location.search!="undefined"?document.location.search:"");
+		var bkRegVal = (typeof registeredCookieValue!="undefined"?registeredCookieValue:"");//(typeof YAHOO.util.Cookie.get("WT_FPC")!="undefined"?YAHOO.util.Cookie.get("WT_FPC"):"");
+		var bkWTFPCCookie = (typeof YAHOO.util.Cookie.get("WT_FPC")!="undefined"?YAHOO.util.Cookie.get("WT_FPC"):"");//YAHOO.util.Cookie.get("WT_FPC");
+		
+		bkWTFPCCookieArr = bkWTFPCCookie.split("="); 
+		bkWTFPCCookieKeyArr = bkWTFPCCookieArr[1].split(":");
+		bkWTFPCCookieKey = bkWTFPCCookieKeyArr[0];
+		
+		//Get Meta Values from Cookie
+		var bkMetaArray = document.getElementsByTagName("meta");
+		for(var i=0;i<bkMetaArray.length;i++){
+			if(bkMetaArray[i].getAttribute("name").indexOf("DCSext.rChannel")>-1){
+				bk_addPageCtx("rch", bkMetaArray[i].getAttribute("content"));
+			}
+			if(bkMetaArray[i].getAttribute("name").indexOf("DCSext.rCountry")>-1){
+				bk_addPageCtx("rco", bkMetaArray[i].getAttribute("content"));
+			}
+			if(bkMetaArray[i].getAttribute("name").indexOf("WT.cg_n")>-1){
+				bk_addPageCtx("wcntn", bkMetaArray[i].getAttribute("content"));
+			}
+			if(bkMetaArray[i].getAttribute("name").indexOf("WT.cg_s")>-1){
+				bk_addPageCtx("wcnts", bkMetaArray[i].getAttribute("content"));
+			}
+			if(bkMetaArray[i].getAttribute("name").indexOf("DCSext.ContentChannel")>-1){
+				bk_addPageCtx("cc", bkMetaArray[i].getAttribute("content"));
+			}
+			if(bkMetaArray[i].getAttribute("name").indexOf("DCSext.ContentType")>-1){
+				bk_addPageCtx("cnt", bkMetaArray[i].getAttribute("content"));
+			}
+			if(bkMetaArray[i].getAttribute("name").indexOf("DCSext.PageNumber")>-1){
+				bk_addPageCtx("pn", bkMetaArray[i].getAttribute("content"));
+			}
+			if(bkMetaArray[i].getAttribute("name").indexOf("DCSext.PageTotal")>-1){
+				bk_addPageCtx("pt", bkMetaArray[i].getAttribute("content"));
+			}
+			if(bkMetaArray[i].getAttribute("name").indexOf("DCSext.VideoType")>-1){
+				bk_addPageCtx("vt", bkMetaArray[i].getAttribute("content"));
+			}
+			if(bkMetaArray[i].getAttribute("name").indexOf("DCSext.rAuthor")>-1){
+				bk_addPageCtx("aut", bkMetaArray[i].getAttribute("content"));
+			}
+			if(bkMetaArray[i].getAttribute("name").indexOf("DCSext.Comments")>-1){
+				bk_addPageCtx("com", bkMetaArray[i].getAttribute("content"));
+			}
+			
+			if(bkMetaArray[i].getAttribute("name").indexOf("DCSext.DartZone")>-1){
+				var bkZoneArray = bkMetaArray[i].getAttribute("content").split("/");
+				for(var z=0;z<bkZoneArray.length;z++){
+					var bkHint = "z"+z;
+					bk_addPageCtx(bkHint, bkZoneArray[z]);
+				}
+			}
+		}
+		bk_addPageCtx("wtc", bkWTFPCCookieKey);	
+		bk_addPageCtx("log", bkLoginCookieValue);
+		bk_addPageCtx("soc", bkSocialLogin);
+		bk_addPageCtx("hsh", bkRegVal);
+		bk_addPageCtx("ref", bkReferrer);
+		bk_addPageCtx("sea", bkSearchVal);
+		
+		
+		bk_doJSTag(4972, 10);
+	}
+	catch(e){}
+		
+</script>
+<!-- End BlueKai Tag -->
+
+</body>
+</html>
+  
+  
+

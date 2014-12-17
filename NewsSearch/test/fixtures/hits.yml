@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  url: MyString
+  spamscore: 1.5
+  tfidf: 1.5
+  pagerank: 1.5
+
+two:
+  url: MyString
+  spamscore: 1.5
+  tfidf: 1.5
+  pagerank: 1.5

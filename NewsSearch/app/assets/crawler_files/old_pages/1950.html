@@ -1,0 +1,1750 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:owc="http://www.olivesoftware.com/schema/owc.xsd" style="overflow:visible;width:100%;height: 100%;">
+<head><title>
+
+</title><meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" /></head>
+<body style="font-family: Arial;font-size: 10pt;background: #ffffff;color: #000000;margin: 0px 0px 0px 0px;padding: 0px 0px 0px 0px;position: absolute;left: 0px;top: 0px;width: 100%;height: 100%;overflow: hidden;">
+    <!-- Splash screen, removed in postInitialize -->
+    <div id="splashscreen" style="background-color: #FFFFFF;position: absolute;left: 0px;top: 0px;width:100%;height: 100%;z-index: 999;">
+	    <table style="width:100%;height: 100%;">
+		    <tr>
+			    <td style="width: 40%;"></td>
+			    <td valign="middle">
+			    <img id="splashscreenImg" style="vertical-align: middle;border-width: 0px;border-style: none; visibility:hidden;" src="" alt="" />
+			    </td>
+			    <td style="width: 40%;"></td>
+		    </tr>
+	    </table>
+    </div>    
+
+      <!-- ====== Show different splash screen for application first time loading (by checking cookie) ====== -->
+      <script language="javascript" type="text/javascript">
+      document.getElementById("splashscreenImg").src = ((!document.cookie) || (document.cookie.indexOf("first_launch") == -1)) ? "styles/images/First_Time_Splash_Screen.gif" : "styles/images/Splash_Screen.gif"; 
+      document.getElementById("splashscreenImg").style.visibility = "visible";
+      </script>
+    
+    <!-- ===== Scripts - after the splash screen but before the iframes for performance ======= -->
+    <script language="javascript" type="text/javascript" src="/Olive/WebComponents/OwcBind.js"></script>    
+    <script language="javascript" type="text/javascript" src="/Olive/WebComponents/OwcCustomBookmarkAdapters.js"></script>
+    <script language="javascript" type="text/javascript" src="/Olive/WebComponents/OwcPanes.js"></script>
+    <script language="javascript" type="text/javascript" src="/Olive/WebComponents/OwcInformationComponentViewer.js"></script>		
+    <script language="javascript" type="text/javascript" src="/Olive/WebComponents/OwcActivityProvider.js"></script>
+    <script language="javascript" type="text/javascript" src="/Olive/WebComponents/OwcReporter.js"></script>
+    <script language="javascript" type="text/javascript" src="/Olive/WebComponents/OwcStatisticsReporter.js"></script>
+    <script language="javascript" type="text/javascript" src="/Olive/WebComponents/OwcGoogleReporter.js"></script>
+    <script language="javascript" type="text/javascript" src="OwcSectionList.js"></script>
+	
+    <!--script language="javascript" type="text/javascript" src="/Olive/WebComponents/OwcFileReporter.js"></script-->
+    <!-- ** adds css files with writeln **--><script language="javascript" type="text/javascript" src="OliveAppClass.js"></script>
+    <script language="javascript" type="text/javascript" src="OliveAppInst.js"></script>	
+
+    <!-- Preload menu icons decorations -->
+    <div class="Hidden">
+	    <img style="width: 1px; height: 1px;" src="styles/images/Toolbar.png" alt="" />
+	    <img style="width: 1px; height: 1px;" src="styles/images/Icons.gif" alt="" />
+	    <img style="width: 1px; height: 1px;" src="/Olive/WebComponents/Layout/images/transparent.gif" alt="" />
+    </div>
+    <!-- End preloading menu icons decorations -->
+    <div owc:control="pane-list" owc:kind="rows" id="paneListMain">
+	    <div id="contentdiv">	<!-- TODO: remove "contentdiv" div - not in use any more -->	
+	        <div id="paneListRoot" owc:control="pane-list" owc:kind="rows">
+	            <div id="ctrlDocumentViewer" owc:control="doc-viewer-agg"
+	                    owc:double-mode-on-gotopage="true"
+	                    owc:double-mode-on-flipping = "true">  
+	                <!-- Top Banner -->
+					<div class="TopBannerDiv" id="TopAdPane" owc:control="pane" owc:resizable="false" align="center">
+						<iframe id="TopAdIFrame" src="Banners/TopBanners.htm" marginheight="0" marginwidth="0" scrolling="no" frameborder="0" align="middle">
+						</iframe>						
+					</div>     
+		            <!-- Toolbar -->						
+		            <div id="paneToolbar" owc:control="pane" owc:resizable="false" class="toolbarPaneContainer">
+		                <div class="toolbarTop">&#160;</div>			            
+		                <table class="toolbarPane toolbarPaneHeight" border="0" cellspacing="0" cellpadding="0" width="100%">						
+			                <tbody>				    
+			                    <tr class="toolbarMainHeight">
+				                    <td class="toolbar-bg-left-image"><img class="OwcPlaceholderImgLeftRight" src="styles/images/t.gif" alt="" /></td>
+				                    <td class="tab-bar-cell">
+					                    <div owc:control="TabStrip" owc:decorate-with-table="true" class="DecoratedTabStrip" id="mainTabStrip">
+						                    <table border="0" cellspacing="0" cellpadding="0">
+						                        <tr>
+						                            <td owc:control="TabItem" owc:init-state="Active">
+						                                <span id="TabItem_Contents"></span>
+						                            </td>							
+						                            <td owc:control="TabItem">
+						                                <span id="TabItem_Search"></span>
+						                            </td>
+						                        </tr>
+						                    </table>							
+					                    </div>						
+				                    </td>				  
+									<!-- Section List -->
+				                    <td class="tab-bar-cell">
+				                        <span id="ctrlSectList" owc:control="SectionList" owc:command="cmdSectionChanged"></span>
+				                    </td>
+					                <!-- More Publications and Issues -->
+					                
+<!--
+<td class="item OwcMenuButton date-bar-cell" owc:control="command" owc:command="ArchButton"> 
+<table cellspacing="0" cellpadding="0"> 
+<tr> 
+<td class="OwcMenuButtonLeft"> 
+<img alt="" class="OwcPlaceholderImgLeftRight" src="styles/images/t.gif" /></td> 
+<td class="OwcMenuButtonBody"> 
+<table cellspacing="0" cellpadding="0" > 
+<tr id="Command_ArchButton"> 
+<td class="ArchButtonBtn"><span>Archive</span></td> 
+</tr> 
+</table> 
+</td> 
+<td class="OwcMenuButtonRight"> 
+<img alt="" class="OwcPlaceholderImgLeftRight" src="styles/images/t.gif" /> 
+</td> 
+</tr> 
+</table> 
+</td> 	
+-->
+				                    <td class="viwer-bar-cell" align="right">
+				                        <table id="ctrlDocViewerBar" owc:control="menu" class="command-bar" border="0" cellspacing="0" cellpadding="0">
+					                        <tr>
+												<td  owc:control="menuitem" owc:command="gotofirstpage">
+							                        <img class="cmd-icon icon-Goto-first-page" src="styles/images/t.gif" alt="" id="MenuItem_GoToFirstPage"/>
+						                        </td>
+						                        <td owc:control="menuitem" owc:command="gotoprevpage">
+							                        <img class="cmd-icon icon-Goto-previous-page" src="styles/images/t.gif" alt="" id="MenuItem_GoToPreviousPage"/>
+						                        </td>
+						                        <td class="bg-page-Selection">
+							                        <input type="text" class="input-page" owc:control="menuitem-edit" owc:command="gotopagebylabel" id="MenuItem_GoToPage" />								    
+						                        </td>
+						                        <td owc:control="menuitem" owc:command="gotonextpage">
+							                        <img class="cmd-icon icon-Goto-next-page" src="styles/images/t.gif" alt="" id="MenuItem_GoToNextPage" />
+						                        </td>
+						                        <td  owc:control="menuitem" owc:command="gotolastpage">
+							                        <img class="cmd-icon icon-Goto-last-page" src="styles/images/t.gif" alt="" id="MenuItem_GoToLastPage"/>
+						                        </td>
+						                        <td class="td-spaced-between-flipcontrol-and-zoom-buttons"></td> 
+						                        <td>
+                                                    <img class="icon-Toolbar-divider" src="styles/images/t.gif" alt="" />
+                                                </td>
+                                                <td class="icon-Toolbar-space"></td>
+                                                <td class="itemPair" owc:control="menuitem" owc:command="zoomFitWindow">
+							                        <span owc:ui="CommandCheckMark">
+							                            <img class="cmd-icon icon-FitToWindowMode" src="styles/images/t.gif" alt="" id="MenuItem_FitToWindow" />
+							                        </span>
+						                        </td>
+						                        <td class="itemPair" owc:control="menuitem" owc:command="zoomFitWidth">
+							                        <span owc:ui="CommandCheckMark">
+							                            <img class="cmd-icon icon-FitToWidthMode" src="styles/images/t.gif" alt="" id="MenuItem_FitToWidth" />
+							                        </span>
+						                        </td>
+						                        <td class="icon-Toolbar-space"></td>
+						                        <td class="itemPair" owc:control="menuitem" owc:command="zoomOut">
+							                        <img class="icon-SmallZoomOut" src="styles/images/t.gif" alt="" id="MenuItem_ZoomOut" />
+						                        </td>
+						                        <td class="itemPair" owc:control="menuitem" owc:command="zoomIn">
+							                        <img class="icon-SmallZoomIn" src="styles/images/t.gif" alt="" id="MenuItem_ZoomIn" />
+						                        </td>						                        
+						                        <td class="icon-Toolbar-space"></td>
+                                                <td class="itemPair" owc:control="menuitem" owc:command="ChangeDoublePageMode" owc:commandparams="false">
+							                        <span owc:ui="CommandCheckMark">
+							                            <img class="cmd-icon icon-SinglePageMode" src="styles/images/t.gif" alt="" id="MenuItem_SinglewMode" />
+							                        </span>
+						                        </td>
+                                                <td class="itemPair" owc:control="menuitem" owc:command="ChangeDoublePageMode" owc:commandparams="true">
+							                        <span owc:ui="CommandCheckMark">
+							                            <img class="cmd-icon icon-DoublePageMode" src="styles/images/t.gif" alt="" id="MenuItem_DoubleMode" />
+							                        </span>
+						                        </td>
+						                        <td class="icon-Toolbar-space"></td>
+						                        <td>
+                                                    <img class="icon-Toolbar-divider" src="styles/images/t.gif" alt="" />
+                                                </td>
+                                                <td class="td-spaced-between-zoom-buttons-and-E-mail-button" ></td>
+                                                <td>
+                                                    <img class="icon-Toolbar-divider" src="styles/images/t.gif" alt="" />
+                                                </td>
+						                        <td class="item" owc:control="menuitem" owc:command="SendMail">
+						                            <table>
+						                                <tr>
+						                                    <td><img class="cmd-icon icon-Email" src="styles/images/t.gif" alt=""  id="MenuItem_EMailImage"/></td>
+						                                </tr>
+						                            </table>								    
+						                        </td>
+						                        <td class="item" owc:control="menuitem" owc:command="PrintDocument">
+						                            <table>
+						                                <tr>
+						                                    <td><img class="cmd-icon icon-Print" src="styles/images/t.gif" alt="" id="MenuItem_PrintImage"/></td>
+						                                </tr>
+						                            </table>
+						                        </td>
+						                        
+						                        <td id="saveMenu" class="item" owc:control="menuitem">
+                                                    <table cellpadding="0">
+				                                        <tr>
+				                                            <td><img class="cmd-icon icon-Save" src="styles/images/t.gif" alt="" id="MenuItem_SaveImage"/></td>
+				                                            <td><img class="cmd-icon icon-Arrow" src="styles/images/t.gif" alt="" id="MenuItem_SaveArrow" /></td>
+				                                        </tr>
+				                                    </table>
+                                                    <table owc:control="menu" class="popup-menu Hidden" owc:menutype="popup" cellspacing="0" cellpadding="0">													            
+					                                    <tr owc:control="menuitem" owc:command="PDFDocDownload" class="MenuItemContent">
+					                                        <td class="icon-cell"><img class="cmd-icon icon-DownloadPDF" src="styles/images/t.gif" alt="" /></td>
+					                                        <td id="MenuItem_DownloadPDF"></td>
+				                                        </tr>
+				                                        <tr owc:control="menuitem" owc:command="PDFPageDownload" class="MenuItemContent">
+					                                        <td class="icon-cell"><img class="cmd-icon icon-DownloadPDF" src="styles/images/t.gif" alt="" /></td>
+					                                        <td id="MenuItem_DownloadPagePDF"></td>
+				                                        </tr>
+				                                        <tr owc:control="menuitem" owc:command="SaveForOfflinePage" class="MenuItemContent">
+						                                    <td class="icon-cell"><img class="cmd-icon icon-OfflineBrowsing" src="styles/images/t.gif" alt="" /></td>
+						                                    <td id="MenuItem_Offline"></td>
+					                                    </tr>
+					                                    <tr owc:control="menuitem" owc:command="AddToFavorites" class="MenuItemContent">
+						                                    <td class="icon-cell"><img class="cmd-icon icon-Bookmark" src="styles/images/t.gif" alt="" /></td>
+						                                    <td id="MenuItem_Bookmark"></td>
+					                                    </tr>											            
+					                                    <tr owc:control="menuitem" owc:command="ShowMyArticles" class="MenuItemContent">
+						                                    <td class="icon-cell"><img class="cmd-icon icon-MyArticles" src="styles/images/t.gif" alt="" /></td>
+						                                    <td id="MenuItem_ShowMyArticles"></td>
+					                                    </tr>											            
+				                                    </table>
+                                                </td>
+                                                
+                                                <td class="item" owc:control="menuitem">
+                                                    <table cellpadding="0">
+				                                        <tr>
+				                                            <td><img class="cmd-icon icon-Share" src="styles/images/t.gif" alt="" id="MenuItem_ShareImage" /></td>
+				                                            <td><img class="cmd-icon icon-Arrow" src="styles/images/t.gif" alt="" id="MenuItem_ShareArrow" /></td>
+				                                        </tr>
+				                                    </table>
+                                                    <table owc:control="menu" class="popup-menu Hidden" owc:menutype="popup" cellspacing="0" cellpadding="0">													            
+                                                        <tr owc:control="menuitem" owc:command="DoFacebook" owc:commandparams="Facebook" class="MenuItemContent">
+						                                    <td class="icon-cell"><img class="cmd-icon icon-Facebook" src="styles/images/t.gif" alt="" /></td>
+						                                    <td id="MenuItem_Facebook"></td>
+					                                    </tr>
+					                                    <tr owc:control="menuitem" owc:command="DoTwitter" owc:commandparams="Twitter" class="MenuItemContent">
+						                                    <td class="icon-cell"><img class="cmd-icon icon-Twitter" src="styles/images/t.gif" alt="" /></td>
+						                                    <td id="MenuItem_Twitter"></td>
+					                                    </tr>
+					                                    <tr owc:control="menuitem" owc:command="DoBookmarkDigg" owc:commandparams="DiggThis" class="MenuItemContent">
+						                                    <td class="icon-cell"><img class="cmd-icon icon-DiggThis" src="styles/images/t.gif" alt="" /></td>
+						                                    <td id="MenuItem_Digg"></td>
+					                                    </tr>
+					                                    <tr owc:control="menuitem" owc:command="DoBookmarkDelicious" owc:commandparams="PostDel" class="MenuItemContent">
+						                                    <td class="icon-cell"><img class="cmd-icon icon-Del_icio_us" src="styles/images/t.gif" alt="" /></td>
+						                                    <td id="MenuItem_PostToDel"></td>
+					                                    </tr>
+					                                    <tr owc:control="menuitem" owc:command="CopyLink" class="MenuItemContent">
+						                                    <td class="icon-cell"><img class="cmd-icon icon-Copy" src="styles/images/t.gif" alt="" /></td>
+						                                    <td id="MenuItem_CopyToClipBoard"></td>
+					                                    </tr>											            
+					                                    <tr owc:control="menuitem" owc:command="AddMailAlert" class="MenuItemContent">
+						                                    <td class="icon-cell"><img class="cmd-icon icon-Email" src="styles/images/t.gif" alt="" /></td>
+						                                    <td id="MenuItem_AddMailAlert"></td>
+					                                    </tr>											            
+				                                    </table>
+                                                </td>
+                                                
+                                                <td>
+                                                    <img class="icon-Toolbar-divider" src="styles/images/t.gif" alt="" />
+                                                </td>
+                                                <!-- Olive Software Logo -->
+                                                <td owc:control="menuitem" owc:command="OpenOliveSoftwareWebsite">   
+						                            <table cellspacing="0" cellpadding="0">
+						                                <tr>
+						                                    <td><img class="icon-OliveLogo" src="styles/images/t.gif" alt="" id="MenuItem_OliveSoftwareWebsite"/></td>
+						                                </tr>
+						                            </table>	      						    
+						                        </td>      
+                                            </tr>
+				                        </table>
+			                        </td>
+				                    <td class="toolbar-bg-right-image"></td>
+			                    </tr>				        
+			                </tbody>
+		                </table>
+		            </div>
+		            <!-- Frames -->
+		            <table id="paneViewerFrames" owc:control="pane-list" owc:kind="columns" owc:ui="ViewerRootPanel" cellpadding="0" cellspacing="0" border="0">
+			            <tr>
+				            <td id="BorderLeftTable" class="main-border-left" owc:control="pane" owc:resizable="false">					
+				                <table class="main-border-left" border="0" cellpadding="0" cellspacing="0">
+				                    <tbody>
+					                    <tr class="main-left-column">
+	                                        <td class="main-bg-left-stretch"></td>
+                                        </tr>
+				                    </tbody>
+				                </table>
+				            </td>
+				            <!-- Left Banner --> 
+				            <td id="LeftAdPane" owc:control="pane" owc:resizable="false" align="left" valign="middle" class="LeftBanner">
+								<div class="LeftBannerDiv" id="LeftAdDiv">	
+									<iframe class="LeftBannerIFrame" id="LeftAdIFrame" src="Banners/LeftBanners.htm" marginheight="0" marginwidth="0" width="0px" height="0px" frameborder="0">
+									</iframe>
+								</div>
+				            </td> 					        
+				            <td id="paneNavigate" owc:control="pane-list" owc:ui="ViewerNavigationPanel" owc:kind="columns" style="vertical-align: top;" owc:pane-size="50%" owc:min-pane-size="500px">      
+					            <div owc:control="pageswitcher" id="mainPageSwitcher">
+						            <div owc:control="pageitem" id="ctrlAllContents">
+							            <div owc:control="pane" id="ctrlContentsPane">
+								            <div owc:ui="header" class="ContentsHeaderWithPublicationLogo unscrollable">
+									                <table class="navigation-table" cellspacing="0" cellpadding="0" align="center">
+                                                        <tbody>      
+                                                            <tr>
+                                                                <td class="tabs-menu">
+                                                                  <table id="contentsMainTabStrip" class="tab-strip-menu" cellspacing="0" cellpadding="0" owc:control="TabStrip" align="left">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="tab-item-menu tab-item-menu-cover ActiveTab" owc:init-state="Active" owc:control="TabItem">
+                                                                                    <span id="TabItem_Cover"></span>
+                                                                                </td>
+                                                                                <td class="tab-separator-menu">|&#160;</td>
+                                                                                <td class="tab-item-menu tab-item-menu-toc" owc:control="TabItem">
+                                                                                    <span id="TabItem_TableOfContents"></span>
+                                                                                </td>
+                                                                                <td class="tab-separator-menu">|&#160;</td> 
+                                                                                <td class="tab-item-menu tab-item-menu-help" owc:control="TabItem">
+                                                                                    <span id="TabItem_Help"></span>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    <!-- Content Pane Close Button -->
+                                                                    <table align="right" cellspacing="0" cellpadding="0">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>
+                                                                                  <div class="tab-item-menu" owc:control="command" owc:command="HideContentPane">
+                                                                                    <span id="Button_Close" class="Label"></span>&#160;<span><img id="Button_Close_Image" class="ContentPaneCloseButton" alt="" src="styles/images/t.gif"/></span>
+                                                                                  </div>                    
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    <!-- End Content Pane Close Button -->
+                                                                </td>
+                                                            </tr> 
+                                                            <tr>
+                                                                <td><span>&#160;</span></td>
+                                                            </tr>
+                                                            
+															<tr>
+																<td>
+																	<span>
+																	    
+																	        <a href="http://www.chron.com/"><img class="publicationLogo" src="Styles/images/houston-logo.jpg" alt="Publication Logo" /></a>
+																	    
+																	</span>
+																</td>
+															</tr>
+															
+                                                            <tr>
+                                                                <td>
+                                                                    <!--span class="dynamicTitleDate" id="contentsPublicationName" owc:control="value" owc:datatype="publication-name"></span-->
+                                                                    <span class="dynamicTitleDate" id="contentsTitle" owc:control="value" owc:datatype="date"></span>
+                                                                </td>
+                                                            </tr>                                                                  
+                                                        </tbody>
+                                                    </table>										            
+								                </div>
+								                <div owc:ui="content" class="all-contents-pane-content unscrollable">
+									                <div owc:control="pageswitcher" id="contentsMainPageSwitcher" style="width: 100%;
+										                height: 100%">
+										                <div owc:control="pageitem" id="pageItemCover" class="scrollable Invisible" style="width: 100%;height: 100%">
+											                <iframe id="cover" src="Cover/Cover.htm" frameborder="0" style="width: 100%; height: 100%; overflow: auto"></iframe>
+										                </div>											            
+										                <div owc:control="pageitem" id="pageItemContents" style="width: 100%; height: 100%" class="Invisible">
+											                <div style="width: 100%; height: 85%">
+																<iframe id="contentsFrame" src="ContentsPane.htm" frameborder="0" style="width: 100%; height: 50%;"></iframe>
+																<hr/>
+																<span style="color: #7A7A7A;padding-left: 10px;">For Breaking News click these links to access our website</span>
+																<iframe id="contentsFrame" frameborder="0" style="width: 100%; height: 45%; overflow: auto" src="http://www.chron.com/?controllerName=collectionRaw&id=19326"><!-- src="http://prewcm.sfgate.com/widgets/xml/olive/chron.html"-->
+																</iframe>
+															</div>
+															<div style="width: 100%; height: 75px; position: absolute; bottom: 5px;">
+																<center><iframe src="http://open.ad.yieldmanager.net/a1?V=4&pubId=22710507551&site=chron.com&cTopId=20397001&V=4&ctLng=en-us&rTy=ac&sz=500x70&dlv=ipbtf&fmt=standard" width="500" height="70" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" frameborder="0" style="border:0" scrolling="no"></iframe></center>
+															</div>
+										                </div>
+										                <div owc:control="pageitem" id="pageItemHelp" class="scrollable Invisible" style="width: 100%; height: 100%">
+											                <iframe id="help" frameborder="0" style="width: 100%; height: 100%; overflow: auto"></iframe>
+										                </div>
+									                </div>
+								                </div>
+							            </div>
+						            </div>
+						            <div owc:control="pageitem" id="pageItemSearch" class="SearchPane Invisible" >			        								        
+					                    <span id="SearchPane_Empty" class="inline-message"></span>
+					                    <iframe id="searchFrame" frameborder="0" style="width: 100%; height: 100%;"></iframe> 
+				                    </div>
+					            </div>
+				            </td>					        
+				            <td owc:control="pane-splitter" owc:ui="ViewerSplitter" class="PaneSplitterControl" style="vertical-align: top" id="paneSplitter"><img class="PaneColsSplitter" src="styles/images/t.gif" alt="" /></td>
+				            <td id="paneContent" owc:control="pane" owc:ui="ViewerContentPanel" style="vertical-align: top">
+		                        <!-- Viewer control -->
+		                        <div id="ctrlFlashViewer"					            
+				                        owc:control="FlashViewer"
+				                        owc:flashcontentoptions="ReaderStyle=ViewPoint||OnePageMode=1"
+				                        owc:hits-for-whole-document="false">
+			                        <span id="FlashPane_NoDocument" class="inline-message"></span>
+		                        </div>
+				            </td>	
+				            <!-- Right Banner -->
+				            <td id="RightAdPane" owc:control="pane" owc:resizable="false" align="right" valign="middle" class="RightBanner">	
+								<div class="RightBannerDiv" id="RightAdDiv">
+									<iframe class="RightBannerIFrame" id="RightAdIFrame" src="Banners/RightBanners.htm" marginheight="0" marginwidth="0" width="0px" height="0px" frameborder="0">
+									</iframe>
+								</div>	
+				            </td>			
+				            <td id="BorderRightTable" class="main-border-right" owc:control="pane" owc:resizable="false" align= "right">
+				                <table class="main-border-right" border="0" cellpadding="0" cellspacing="0">
+				                    <tbody>
+					                    <tr class="main-right-column">
+	                                        <td class="main-bg-right-stretch"></td>
+                                        </tr>
+				                    </tbody>
+				                </table>
+				            </td>
+			            </tr>
+		            </table>
+	            </div>
+            </div>	   
+            <div owc:control="pane" id="paneBottom" owc:resizable="false" class="footerPane">
+            
+                  <table class="footerPane" border="0" cellpadding="0" cellspacing="0">
+                        <tbody>
+                              <tr class="main-bottom">
+                                    <td class="main-bg-left-bottom"></td>
+                                    <td class="main-bg-bottom"><img src="styles/images/t.gif" alt="" /></td>
+                                    <td class="main-bg-right-bottom"></td>
+                              </tr>
+                        </tbody>
+                  </table>
+            </div>
+	    </div>     	   
+    </div>  
+    
+    <!-- ========== Popup windows ========== -->
+<div    id="popup_componentViewer"
+	    owc:control="PopupWindow"
+	    owc:contenttype="URL"
+	    owc:createframe="false"
+	    owc:preservecontent="false"
+	    owc:caption="Article Window"
+	    owc:maximal-width-percent="95" owc:maximal-height-percent="95"
+	    style="left: 100px; top: 80px; z-index: 101; height: 500px; width: 600px; display: none;">
+    <div class="PopupWindowFrame PopupWindowResizable">
+        <div class="PopupWindowFrameTop">
+            <div owc:ui="popupwindowtopleftcorner" class="PopupWindowTopLeftCorner">
+            </div>
+            <div owc:ui="popupwindowtopborder" class="PopupWindowTopBorder">
+            </div>
+            <div owc:ui="popupwindowtoprightcorner" class="PopupWindowTopRightCorner">
+            </div>
+        </div>
+        <div class="PopupWindowFrameContent">
+            <div owc:ui="popupwindowcaption" class="PopupWindowCaption">
+                <div owc:ui="captionleftborder" class="CaptionLeftBorder"></div>
+                <div owc:ui="captionrightborder" class="CaptionRightBorder"></div>                    
+                <div owc:ui="captioncontent" class="CaptionContent"></div>
+                <span owc:ui="popupwindowtitle" class="PopupWindowTitle"></span>
+                <div owc:ui="popupwindowclosebutton" class="PopupWindowClose">
+                    <span class="Label">Close</span>
+                    <img class="icon" src="styles/images/t.gif" alt="" />
+                </div>
+                <div class="PopupWindowDragArea"></div>                    
+            </div>
+            <div owc:ui="popupwindowcontentleftborder" class="PopupWindowContentLeftBorder">
+            </div>
+            <div class="PopupWindowContent">
+                <div owc:ui="client" class="PopupWindowClient">
+                </div>
+                <div owc:ui="mask" class="PopupWindowMask">
+                </div>
+            </div>
+            <div owc:ui="popupwindowcontentrightborder" class="PopupWindowContentRightBorder">
+            </div>
+        </div>
+        <div class="PopupWindowFrameBottom">
+            <div owc:ui="popupwindowbottomleftcorner" class="PopupWindowBottomLeftCorner">
+            </div>
+            <div owc:ui="popupwindowbottomborder" class="PopupWindowBottomBorder">
+            </div>
+            <div owc:ui="popupwindowbottomrightcorner" class="PopupWindowBottomRightCorner">
+            </div>
+        </div>
+    </div>            
+</div>	
+
+<div    id="popup_Library" 
+        owc:caption="More Issues" 
+        owc:contenttype="HTML"
+        owc:control="PopupWindow"
+	    owc:createframe="false"
+	    owc:preservecontent="false" owc:maximal-height-percent="90"
+        style="left: 100px; top: 125px; z-index: 101; display: none;">
+    <div class="PopupWindowFrame PopupWindowResizable">
+        <div class="PopupWindowFrameTop">
+            <div owc:ui="popupwindowtopleftcorner" class="PopupWindowTopLeftCorner">
+            </div>
+            <div owc:ui="popupwindowtopborder" class="PopupWindowTopBorder">
+            </div>
+            <div owc:ui="popupwindowtoprightcorner" class="PopupWindowTopRightCorner">
+            </div>
+        </div>
+        <div class="PopupWindowFrameContent">
+            <div owc:ui="popupwindowcaption" class="PopupWindowCaption">
+                <div owc:ui="captionleftborder" class="CaptionLeftBorder"></div>
+                <div owc:ui="captionrightborder" class="CaptionRightBorder"></div>                    
+                <div owc:ui="captioncontent" class="CaptionContent"></div>
+                <span owc:ui="popupwindowtitle" class="PopupWindowTitle"></span>
+                <div owc:ui="popupwindowclosebutton" class="PopupWindowClose">
+                    <span class="Label">Close</span>
+                    <img class="icon" src="styles/images/t.gif" alt="" />
+                </div>
+                <div class="PopupWindowDragArea"></div>                    
+            </div>
+            <div owc:ui="popupwindowcontentleftborder" class="PopupWindowContentLeftBorder">
+            </div>
+            <div class="PopupWindowContent">
+                <div owc:ui="client" class="PopupWindowClient">
+                    <table class="more-issues-container" style="width: 100%">
+						
+						<tr>
+		                    <td>
+								<div>
+									<table>
+										
+										
+										<tr class="headerPublicationSelection" id="headerPublicationSelection">
+											<td><span>Choose Publication:&#160;</span></td>
+											<td><span id="ctrlPublicationSelection" owc:control="publicationlist" owc:init-value="Sample" owc:command="cmdPublicationChanged"></span></td>
+										</tr>
+												
+										<tr class="headerYearSelection" id="headerYearSelection">
+											<td><span>Choose Year:&#160;</span></td>
+											<td><span id="ctrlYearSelection" owc:control="yearlist" owc:command="cmdYearChanged"></span></td>
+										</tr>
+										
+									</table>
+								</div>
+							</td>
+                         </tr>
+                        <tr>
+                            <td>
+                                <div id="LibraryThumbnailList" class="ArchiveThumblist" style="height: 360px; width: 400px" 
+                                     owc:control="thumb-list"
+                                     owc:usepagination="true"
+                                     owc:selection-highlighting="true"
+                                     owc:list-item-css="thumbnail-item" 
+			                         owc:list-item-css-selected="thumbnail-item-selected"
+                                     owc:page-criterion="cover:1"
+                                     owc:templateid="ThumbListRepository">
+                                </div>							
+                            </td>
+                        </tr>
+                    </table>   
+                  </div>
+                <div owc:ui="mask" class="PopupWindowMask">
+                </div>                    
+            </div>
+            <div owc:ui="popupwindowcontentrightborder" class="PopupWindowContentRightBorder">
+            </div>
+        </div>
+        <div class="PopupWindowFrameBottom">
+            <div owc:ui="popupwindowbottomleftcorner" class="PopupWindowBottomLeftCorner">
+            </div>
+            <div owc:ui="popupwindowbottomborder" class="PopupWindowBottomBorder">
+            </div>
+            <div owc:ui="popupwindowbottomrightcorner" class="PopupWindowBottomRightCorner">
+            </div>
+        </div>
+    </div>
+    <!-- ========== Magnifier for archive thumbnails list ========== -->
+    <div id="ctrlMagnifier" owc:control="Magnifier" class="ThumbFloater"></div>    
+   </div>
+
+<div id="popup_copyrightWarning" 
+        owc:caption="" 
+        owc:contenttype="HTML"
+        owc:control="PopupWindow"
+	    owc:createframe="false"
+	    owc:preservecontent="false" owc:maximal-height-percent="90"
+        style="left: 100px; top: 80px; z-index: 101; display: none;">
+    <div class="PopupWindowFrame PopupWindowResizable">
+        <div class="PopupWindowFrameTop">
+            <div owc:ui="popupwindowtopleftcorner" class="PopupWindowTopLeftCorner">
+            </div>
+            <div owc:ui="popupwindowtopborder" class="PopupWindowTopBorder">
+            </div>
+            <div owc:ui="popupwindowtoprightcorner" class="PopupWindowTopRightCorner">
+            </div>
+        </div>
+        <div class="PopupWindowFrameContent">
+            <div owc:ui="popupwindowcaption" class="PopupWindowCaption">
+                <div owc:ui="captionleftborder" class="CaptionLeftBorder"></div>
+                <div owc:ui="captionrightborder" class="CaptionRightBorder"></div>                    
+                <div owc:ui="captioncontent" class="CaptionContent"></div>
+                <span owc:ui="popupwindowtitle" class="PopupWindowTitle"></span>
+                <div owc:ui="popupwindowclosebutton" class="PopupWindowClose">
+                    <span class="Label">Close</span>
+                    <img class="icon" src="styles/images/t.gif" alt="" />
+                </div>
+                <div class="PopupWindowDragArea"></div>                    
+            </div>
+            <div owc:ui="popupwindowcontentleftborder" class="PopupWindowContentLeftBorder">
+            </div>
+            <div class="PopupWindowContent">
+                <div owc:ui="client" class="PopupWindowClient">
+					<div id="Popup_Copyright_Warning_Content" class="copyright-warning"></div>
+                </div>
+                <div owc:ui="mask" class="PopupWindowMask">
+                </div>                    
+            </div>
+            <div owc:ui="popupwindowcontentrightborder" class="PopupWindowContentRightBorder">
+            </div>
+        </div>
+        <div class="PopupWindowFrameBottom">
+            <div owc:ui="popupwindowbottomleftcorner" class="PopupWindowBottomLeftCorner">
+            </div>
+            <div owc:ui="popupwindowbottomborder" class="PopupWindowBottomBorder">
+            </div>
+            <div owc:ui="popupwindowbottomrightcorner" class="PopupWindowBottomRightCorner">
+            </div>
+        </div>
+    </div>
+   </div>     
+
+   <!-- === Popup for more publications available === -->
+   <div id="popup_morePublications" 
+        owc:caption="More Publications" 
+        owc:contenttype="URL"
+        owc:control="PopupWindow"
+        owc:createframe="false"
+        owc:preservecontent="false" owc:maximal-height-percent="90"
+        style="left: 100px; top: 80px; z-index: 101; display: none;">
+    <div class="PopupWindowFrame PopupWindowResizable">
+        <div class="PopupWindowFrameTop">
+            <div owc:ui="popupwindowtopleftcorner" class="PopupWindowTopLeftCorner">
+            </div>
+            <div owc:ui="popupwindowtopborder" class="PopupWindowTopBorder">
+            </div>
+            <div owc:ui="popupwindowtoprightcorner" class="PopupWindowTopRightCorner">
+            </div>
+        </div>
+        <div class="PopupWindowFrameContent">
+            <div owc:ui="popupwindowcaption" class="PopupWindowCaption">
+                <div owc:ui="captionleftborder" class="CaptionLeftBorder"></div>
+                <div owc:ui="captionrightborder" class="CaptionRightBorder"></div>                    
+                <div owc:ui="captioncontent" class="CaptionContent"></div>
+                <span owc:ui="popupwindowtitle" class="PopupWindowTitle"></span>
+                <div owc:ui="popupwindowclosebutton" class="PopupWindowClose">
+                    <span class="Label">Close</span>
+                    <img class="icon" src="styles/images/t.gif" alt="" />
+                </div>
+                <div class="PopupWindowDragArea"></div>                    
+            </div>
+            <div owc:ui="popupwindowcontentleftborder" class="PopupWindowContentLeftBorder">
+            </div>
+            <div class="PopupWindowContent">
+                <div owc:ui="client" class="PopupWindowClient">
+                </div>
+                <div owc:ui="mask" class="PopupWindowMask">
+                </div>
+            </div>
+            <div owc:ui="popupwindowcontentrightborder" class="PopupWindowContentRightBorder">
+            </div>
+        </div>
+        
+        <div class="PopupWindowFrameBottom">
+            <div owc:ui="popupwindowbottomleftcorner" class="PopupWindowBottomLeftCorner">
+            </div>
+            <div owc:ui="popupwindowbottomborder" class="PopupWindowBottomBorder">
+            </div>
+            <div owc:ui="popupwindowbottomrightcorner" class="PopupWindowBottomRightCorner">
+            </div>
+        </div>
+    </div>
+   </div>  
+               
+    <div	id="popup_printForm" 
+		    owc:control="PopupWindow" 
+		    owc:contenttype="URL" 
+	        owc:createframe="false"
+	        owc:preservecontent="false"
+		    owc:caption="Print Document"
+		    style="display: none;">
+        <div class="PopupWindowFrame">
+            <div class="PopupWindowFrameTop">
+                <div owc:ui="popupwindowtopleftcorner" class="PopupWindowTopLeftCorner">
+                </div>
+                <div owc:ui="popupwindowtopborder" class="PopupWindowTopBorder">
+                </div>
+                <div owc:ui="popupwindowtoprightcorner" class="PopupWindowTopRightCorner">
+                </div>
+            </div>
+            <div class="PopupWindowFrameContent">
+                <div owc:ui="popupwindowcaption" class="PopupWindowCaption">
+                    <div owc:ui="captionleftborder" class="CaptionLeftBorder"></div>
+                    <div owc:ui="captionrightborder" class="CaptionRightBorder"></div>                    
+                    <div owc:ui="captioncontent" class="CaptionContent"></div>
+                    <span owc:ui="popupwindowtitle" class="PopupWindowTitle"></span>
+                    <div owc:ui="popupwindowclosebutton" class="PopupWindowClose">
+                        <span class="Label">Close</span>
+                        <img class="icon" src="styles/images/t.gif" alt="" />
+                    </div>
+                    <div class="PopupWindowDragArea"></div>                    
+                </div>
+                <div owc:ui="popupwindowcontentleftborder" class="PopupWindowContentLeftBorder">
+                </div>
+                <div class="PopupWindowContent">
+                    <div owc:ui="client" class="PopupWindowClient">
+                    </div>
+                    <div owc:ui="mask" class="PopupWindowMask">
+                    </div>
+                </div>
+                <div owc:ui="popupwindowcontentrightborder" class="PopupWindowContentRightBorder">
+                </div>
+            </div>
+            <div class="PopupWindowFrameBottom">
+                <div owc:ui="popupwindowbottomleftcorner" class="PopupWindowBottomLeftCorner">
+                </div>
+                <div owc:ui="popupwindowbottomborder" class="PopupWindowBottomBorder">
+                </div>
+                <div owc:ui="popupwindowbottomrightcorner" class="PopupWindowBottomRightCorner">
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div	id="popup_printDocumentView" 			
+	        owc:control="PopupWindow" 
+	        owc:contenttype="URL" 
+	        owc:caption="Print Preview"
+	        owc:createframe="false"
+	        owc:preservecontent="false"
+	        style="left: 300px; top: 50px; z-index: 101; width: 500px; height: 520px; display: none;">			
+        <div class="PopupWindowFrame PopupWindowResizable">
+            <div class="PopupWindowFrameTop">
+                <div owc:ui="popupwindowtopleftcorner" class="PopupWindowTopLeftCorner">
+                </div>
+                <div owc:ui="popupwindowtopborder" class="PopupWindowTopBorder">
+                </div>
+                <div owc:ui="popupwindowtoprightcorner" class="PopupWindowTopRightCorner">
+                </div>
+            </div>
+            <div class="PopupWindowFrameContent">
+                <div owc:ui="popupwindowcaption" class="PopupWindowCaption">
+                    <div owc:ui="captionleftborder" class="CaptionLeftBorder"></div>
+                    <div owc:ui="captionrightborder" class="CaptionRightBorder"></div>                    
+                    <div owc:ui="captioncontent" class="CaptionContent"></div>
+                    <span owc:ui="popupwindowtitle" class="PopupWindowTitle"></span>
+                    <div owc:ui="popupwindowclosebutton" class="PopupWindowClose">
+                        <span class="Label">Close</span>
+                        <img class="icon" src="styles/images/t.gif" alt="" />
+                    </div>
+                    <div class="PopupWindowDragArea"></div>                    
+                </div>
+                <div owc:ui="popupwindowcontentleftborder" class="PopupWindowContentLeftBorder">
+                </div>
+                <div class="PopupWindowContent">
+                    <div owc:ui="client" class="PopupWindowClient">
+                    </div>
+                    <div owc:ui="mask" class="PopupWindowMask">
+                    </div>
+                </div>
+                <div owc:ui="popupwindowcontentrightborder" class="PopupWindowContentRightBorder">
+                </div>
+            </div>
+            <div class="PopupWindowFrameBottom">
+                <div owc:ui="popupwindowbottomleftcorner" class="PopupWindowBottomLeftCorner">
+                </div>
+                <div owc:ui="popupwindowbottomborder" class="PopupWindowBottomBorder">
+                </div>
+                <div owc:ui="popupwindowbottomrightcorner" class="PopupWindowBottomRightCorner">
+                </div>
+            </div>
+        </div>		    
+    </div>
+    <div    id="popup_mailForm"
+	        owc:control="PopupWindow"
+	        owc:contenttype="URL"
+	        owc:caption="Send this article..."
+	        owc:createframe="false"
+	        owc:preservecontent="false"
+	        style="left: 300px; top: 120px; z-index: 101; display: none;">		    
+        <div class="PopupWindowFrame PopupWindowResizable">
+            <div class="PopupWindowFrameTop">
+                <div owc:ui="popupwindowtopleftcorner" class="PopupWindowTopLeftCorner">
+                </div>
+                <div owc:ui="popupwindowtopborder" class="PopupWindowTopBorder">
+                </div>
+                <div owc:ui="popupwindowtoprightcorner" class="PopupWindowTopRightCorner">
+                </div>
+            </div>
+            <div class="PopupWindowFrameContent">
+                <div owc:ui="popupwindowcaption" class="PopupWindowCaption">
+                    <div owc:ui="captionleftborder" class="CaptionLeftBorder"></div>
+                    <div owc:ui="captionrightborder" class="CaptionRightBorder"></div>                    
+                    <div owc:ui="captioncontent" class="CaptionContent"></div>
+                    <span owc:ui="popupwindowtitle" class="PopupWindowTitle"></span>
+                    <div owc:ui="popupwindowclosebutton" class="PopupWindowClose">
+                        <span class="Label">Close</span>
+                        <img class="icon" src="styles/images/t.gif" alt="" />
+                    </div>
+                    <div class="PopupWindowDragArea"></div>                    
+                </div>
+                <div owc:ui="popupwindowcontentleftborder" class="PopupWindowContentLeftBorder">
+                </div>
+                <div class="PopupWindowContent">
+                    <div owc:ui="client" class="PopupWindowClient">
+                    </div>
+                    <div owc:ui="mask" class="PopupWindowMask">
+                    </div>
+                </div>
+                <div owc:ui="popupwindowcontentrightborder" class="PopupWindowContentRightBorder">
+                </div>
+            </div>
+            <div class="PopupWindowFrameBottom">
+                <div owc:ui="popupwindowbottomleftcorner" class="PopupWindowBottomLeftCorner">
+                </div>
+                <div owc:ui="popupwindowbottomborder" class="PopupWindowBottomBorder">
+                </div>
+                <div owc:ui="popupwindowbottomrightcorner" class="PopupWindowBottomRightCorner">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div    id="popup_printComponentForm"
+            owc:control="PopupWindow"
+            owc:contenttype="URL"
+	        owc:createframe="false"
+	        owc:preservecontent="false"
+	        owc:resizable="false"
+	        style="display: none;">
+      <div class="PopupWindowFrame PopupWindowResizable">
+        <div class="PopupWindowFrameTop">
+            <div owc:ui="popupwindowtopleftcorner" class="PopupWindowTopLeftCorner">
+            </div>
+            <div owc:ui="popupwindowtopborder" class="PopupWindowTopBorder">
+            </div>
+            <div owc:ui="popupwindowtoprightcorner" class="PopupWindowTopRightCorner">
+            </div>
+        </div>
+        <div class="PopupWindowFrameContent">
+            <div owc:ui="popupwindowcaption" class="PopupWindowCaption">
+                <div owc:ui="captionleftborder" class="CaptionLeftBorder"></div>
+                <div owc:ui="captionrightborder" class="CaptionRightBorder"></div>                    
+                <div owc:ui="captioncontent" class="CaptionContent"></div>
+                <span owc:ui="popupwindowtitle" class="PopupWindowTitle"></span>
+                <div owc:ui="popupwindowclosebutton" class="PopupWindowClose">
+                    <span class="Label">Close</span>
+                    <img class="icon" src="styles/images/t.gif" alt="" />
+                </div>
+                <div class="PopupWindowDragArea"></div>                    
+            </div>
+            <div owc:ui="popupwindowcontentleftborder" class="PopupWindowContentLeftBorder">
+            </div>
+            <div class="PopupWindowContent">
+                <div owc:ui="client" class="PopupWindowClient">
+                </div>
+                <div owc:ui="mask" class="PopupWindowMask">
+                </div>
+            </div>
+            <div owc:ui="popupwindowcontentrightborder" class="PopupWindowContentRightBorder">
+            </div>
+        </div>
+        <div class="PopupWindowFrameBottom">
+            <div owc:ui="popupwindowbottomleftcorner" class="PopupWindowBottomLeftCorner">
+            </div>
+            <div owc:ui="popupwindowbottomborder" class="PopupWindowBottomBorder">
+            </div>
+            <div owc:ui="popupwindowbottomrightcorner" class="PopupWindowBottomRightCorner">
+            </div>
+        </div>
+      </div>		    
+    </div>
+    <div	id="popup_printComponentView"
+	        owc:control="PopupWindow"
+	        owc:contenttype="URL"
+	        owc:createframe="false"
+	        owc:preservecontent="false"
+	        owc:caption="Print entity"
+	        style="left: 300px; top: 50px; z-index: 101; height: 520px; width: 500px; display: none;">
+        <div class="PopupWindowFrame PopupWindowResizable">
+            <div class="PopupWindowFrameTop">
+                <div owc:ui="popupwindowtopleftcorner" class="PopupWindowTopLeftCorner">
+                </div>
+                <div owc:ui="popupwindowtopborder" class="PopupWindowTopBorder">
+                </div>
+                <div owc:ui="popupwindowtoprightcorner" class="PopupWindowTopRightCorner">
+                </div>
+            </div>
+            <div class="PopupWindowFrameContent">
+                <div owc:ui="popupwindowcaption" class="PopupWindowCaption">
+                    <div owc:ui="captionleftborder" class="CaptionLeftBorder"></div>
+                    <div owc:ui="captionrightborder" class="CaptionRightBorder"></div>                    
+                    <div owc:ui="captioncontent" class="CaptionContent"></div>
+                    <span owc:ui="popupwindowtitle" class="PopupWindowTitle"></span>
+                    <div owc:ui="popupwindowclosebutton" class="PopupWindowClose">
+                        <span class="Label">Close</span>
+                        <img class="icon" src="styles/images/t.gif" alt="" />
+                    </div>
+                    <div class="PopupWindowDragArea"></div>                    
+                </div>
+                <div owc:ui="popupwindowcontentleftborder" class="PopupWindowContentLeftBorder">
+                </div>
+                <div class="PopupWindowContent">
+                    <div owc:ui="client" class="PopupWindowClient">
+                    </div>
+                    <div owc:ui="mask" class="PopupWindowMask">
+                    </div>
+                </div>
+                <div owc:ui="popupwindowcontentrightborder" class="PopupWindowContentRightBorder">
+                </div>
+            </div>
+            <div class="PopupWindowFrameBottom">
+                <div owc:ui="popupwindowbottomleftcorner" class="PopupWindowBottomLeftCorner">
+                </div>
+                <div owc:ui="popupwindowbottomborder" class="PopupWindowBottomBorder">
+                </div>
+                <div owc:ui="popupwindowbottomrightcorner" class="PopupWindowBottomRightCorner">
+                </div>
+            </div>
+        </div>		    
+    </div>	
+    <div	id="popup_AddToMyArticles"
+	        owc:control="PopupWindow"
+	        owc:contenttype="URL"
+	        owc:createframe="false"
+	        owc:preservecontent="false"
+	        owc:caption="Add Article to My Articles"
+	        style="left: 250px; top: 50px; z-index: 101; height: 300px; width: 600px; display: none;">
+        <div class="PopupWindowFrame PopupWindowResizable">
+            <div class="PopupWindowFrameTop">
+                <div owc:ui="popupwindowtopleftcorner" class="PopupWindowTopLeftCorner">
+                </div>
+                <div owc:ui="popupwindowtopborder" class="PopupWindowTopBorder">
+                </div>
+                <div owc:ui="popupwindowtoprightcorner" class="PopupWindowTopRightCorner">
+                </div>
+            </div>
+            <div class="PopupWindowFrameContent">
+                <div owc:ui="popupwindowcaption" class="PopupWindowCaption">
+                    <div owc:ui="captionleftborder" class="CaptionLeftBorder"></div>
+                    <div owc:ui="captionrightborder" class="CaptionRightBorder"></div>                    
+                    <div owc:ui="captioncontent" class="CaptionContent"></div>
+                    <span owc:ui="popupwindowtitle" class="PopupWindowTitle"></span>
+                    <div owc:ui="popupwindowclosebutton" class="PopupWindowClose">
+                        <span class="Label">Close</span>
+                        <img class="icon" src="styles/images/t.gif" alt="" />
+                    </div>
+                    <div class="PopupWindowDragArea"></div>                    
+                </div>
+                <div owc:ui="popupwindowcontentleftborder" class="PopupWindowContentLeftBorder">
+                </div>
+                <div class="PopupWindowContent">
+                    <div owc:ui="client" class="PopupWindowClient">
+                    </div>
+                    <div owc:ui="mask" class="PopupWindowMask">
+                    </div>
+                </div>
+                <div owc:ui="popupwindowcontentrightborder" class="PopupWindowContentRightBorder">
+                </div>
+            </div>
+            <div class="PopupWindowFrameBottom">
+                <div owc:ui="popupwindowbottomleftcorner" class="PopupWindowBottomLeftCorner">
+                </div>
+                <div owc:ui="popupwindowbottomborder" class="PopupWindowBottomBorder">
+                </div>
+                <div owc:ui="popupwindowbottomrightcorner" class="PopupWindowBottomRightCorner">
+                </div>
+            </div>
+        </div>		    
+    </div>	
+    <div	id="popup_MyArticles"
+	        owc:control="PopupWindow"
+	        owc:contenttype="URL"
+	        owc:createframe="false"
+	        owc:preservecontent="false"
+	        owc:caption="My Articles"
+	        style="left: 250px; top: 50px; z-index: 101; height: 600px; width: 700px; display: none;">
+        <div class="PopupWindowFrame PopupWindowResizable">
+            <div class="PopupWindowFrameTop">
+                <div owc:ui="popupwindowtopleftcorner" class="PopupWindowTopLeftCorner">
+                </div>
+                <div owc:ui="popupwindowtopborder" class="PopupWindowTopBorder">
+                </div>
+                <div owc:ui="popupwindowtoprightcorner" class="PopupWindowTopRightCorner">
+                </div>
+            </div>
+            <div class="PopupWindowFrameContent">
+                <div owc:ui="popupwindowcaption" class="PopupWindowCaption">
+                    <div owc:ui="captionleftborder" class="CaptionLeftBorder"></div>
+                    <div owc:ui="captionrightborder" class="CaptionRightBorder"></div>                    
+                    <div owc:ui="captioncontent" class="CaptionContent"></div>
+                    <span owc:ui="popupwindowtitle" class="PopupWindowTitle"></span>
+                    <div owc:ui="popupwindowclosebutton" class="PopupWindowClose">
+                        <span class="Label">Close</span>
+                        <img class="icon" src="styles/images/t.gif" alt="" />
+                    </div>
+                    <div class="PopupWindowDragArea"></div>                    
+                </div>
+                <div owc:ui="popupwindowcontentleftborder" class="PopupWindowContentLeftBorder">
+                </div>
+                <div class="PopupWindowContent">
+                    <div owc:ui="client" class="PopupWindowClient">
+                    </div>
+                    <div owc:ui="mask" class="PopupWindowMask">
+                    </div>
+                </div>
+                <div owc:ui="popupwindowcontentrightborder" class="PopupWindowContentRightBorder">
+                </div>
+            </div>
+            <div class="PopupWindowFrameBottom">
+                <div owc:ui="popupwindowbottomleftcorner" class="PopupWindowBottomLeftCorner">
+                </div>
+                <div owc:ui="popupwindowbottomborder" class="PopupWindowBottomBorder">
+                </div>
+                <div owc:ui="popupwindowbottomrightcorner" class="PopupWindowBottomRightCorner">
+                </div>
+            </div>
+        </div>		    
+    </div>	
+    <div	id="popup_SaveForOffline"
+	        owc:control="PopupWindow"
+	        owc:contenttype="URL"
+	        owc:createframe="false"
+	        owc:preservecontent="false"
+	        owc:caption="Save For Offline"
+	        style="left: 120px; top: 120px; z-index: 101; height: 390px; width: 500px; display: none;">
+        <div class="PopupWindowFrame PopupWindowResizable">
+            <div class="PopupWindowFrameTop">
+                <div owc:ui="popupwindowtopleftcorner" class="PopupWindowTopLeftCorner">
+                </div>
+                <div owc:ui="popupwindowtopborder" class="PopupWindowTopBorder">
+                </div>
+                <div owc:ui="popupwindowtoprightcorner" class="PopupWindowTopRightCorner">
+                </div>
+            </div>
+            <div class="PopupWindowFrameContent">
+                <div owc:ui="popupwindowcaption" class="PopupWindowCaption">
+                    <div owc:ui="captionleftborder" class="CaptionLeftBorder"></div>
+                    <div owc:ui="captionrightborder" class="CaptionRightBorder"></div>                    
+                    <div owc:ui="captioncontent" class="CaptionContent"></div>
+                    <span owc:ui="popupwindowtitle" class="PopupWindowTitle"></span>
+                    <div owc:ui="popupwindowclosebutton" class="PopupWindowClose">
+                        <span class="Label">Close</span>
+                        <img class="icon" src="styles/images/t.gif" alt="" />
+                    </div>
+                    <div class="PopupWindowDragArea"></div>                    
+                </div>
+                <div owc:ui="popupwindowcontentleftborder" class="PopupWindowContentLeftBorder">
+                </div>
+                <div class="PopupWindowContent">
+                    <div owc:ui="client" class="PopupWindowClient">
+                    </div>
+                    <div owc:ui="mask" class="PopupWindowMask">
+                    </div>
+                </div>
+                <div owc:ui="popupwindowcontentrightborder" class="PopupWindowContentRightBorder">
+                </div>
+            </div>
+            <div class="PopupWindowFrameBottom">
+                <div owc:ui="popupwindowbottomleftcorner" class="PopupWindowBottomLeftCorner">
+                </div>
+                <div owc:ui="popupwindowbottomborder" class="PopupWindowBottomBorder">
+                </div>
+                <div owc:ui="popupwindowbottomrightcorner" class="PopupWindowBottomRightCorner">
+                </div>
+            </div>
+        </div>		    		    
+    </div>
+    <div	id="popup_AddMailAlert"
+	        owc:control="PopupWindow"
+	        owc:contenttype="URL"
+	        owc:createframe="false"
+	        owc:preservecontent="false"
+	        owc:caption="Save For Offline"
+	        style="left: 120px; top: 120px; z-index: 101; height: 390px; width: 500px; display: none;">
+        <div class="PopupWindowFrame PopupWindowResizable">
+            <div class="PopupWindowFrameTop">
+                <div owc:ui="popupwindowtopleftcorner" class="PopupWindowTopLeftCorner">
+                </div>
+                <div owc:ui="popupwindowtopborder" class="PopupWindowTopBorder">
+                </div>
+                <div owc:ui="popupwindowtoprightcorner" class="PopupWindowTopRightCorner">
+                </div>
+            </div>
+            <div class="PopupWindowFrameContent">
+                <div owc:ui="popupwindowcaption" class="PopupWindowCaption">
+                    <div owc:ui="captionleftborder" class="CaptionLeftBorder"></div>
+                    <div owc:ui="captionrightborder" class="CaptionRightBorder"></div>                    
+                    <div owc:ui="captioncontent" class="CaptionContent"></div>
+                    <span owc:ui="popupwindowtitle" class="PopupWindowTitle"></span>
+                    <div owc:ui="popupwindowclosebutton" class="PopupWindowClose">
+                        <span class="Label">Close</span>
+                        <img class="icon" src="styles/images/t.gif" alt="" />
+                    </div>
+                    <div class="PopupWindowDragArea"></div>                    
+                </div>
+                <div owc:ui="popupwindowcontentleftborder" class="PopupWindowContentLeftBorder">
+                </div>
+                <div class="PopupWindowContent">
+                    <div owc:ui="client" class="PopupWindowClient">
+                    </div>
+                    <div owc:ui="mask" class="PopupWindowMask">
+                    </div>
+                </div>
+                <div owc:ui="popupwindowcontentrightborder" class="PopupWindowContentRightBorder">
+                </div>
+            </div>
+            <div class="PopupWindowFrameBottom">
+                <div owc:ui="popupwindowbottomleftcorner" class="PopupWindowBottomLeftCorner">
+                </div>
+                <div owc:ui="popupwindowbottomborder" class="PopupWindowBottomBorder">
+                </div>
+                <div owc:ui="popupwindowbottomrightcorner" class="PopupWindowBottomRightCorner">
+                </div>
+            </div>
+        </div>		    		    
+    </div>
+    <div	id="popup_AccessNotification"
+	        owc:control="PopupWindow"
+	        owc:contenttype="URL"
+	        owc:createframe="false"
+	        owc:preservecontent="false"
+	        owc:caption="Access Notification"
+	        style="left: 120px; top: 120px; z-index: 101; height: 600px; width: 600px; display: none;">
+        <div class="PopupWindowFrame PopupWindowResizable">
+            <div class="PopupWindowFrameTop">
+                <div owc:ui="popupwindowtopleftcorner" class="PopupWindowTopLeftCorner">
+                </div>
+                <div owc:ui="popupwindowtopborder" class="PopupWindowTopBorder">
+                </div>
+                <div owc:ui="popupwindowtoprightcorner" class="PopupWindowTopRightCorner">
+                </div>
+            </div>
+            <div class="PopupWindowFrameContent">
+                <div owc:ui="popupwindowcaption" class="PopupWindowCaption">
+                    <div owc:ui="captionleftborder" class="CaptionLeftBorder"></div>
+                    <div owc:ui="captionrightborder" class="CaptionRightBorder"></div>                    
+                    <div owc:ui="captioncontent" class="CaptionContent"></div>
+                    <span owc:ui="popupwindowtitle" class="PopupWindowTitle"></span>
+                    <div owc:ui="popupwindowclosebutton" class="PopupWindowClose">
+                        <span class="Label">Close</span>
+                        <img class="icon" src="styles/images/t.gif" alt="" />
+                    </div>
+                    <div class="PopupWindowDragArea"></div>                    
+                </div>
+                <div owc:ui="popupwindowcontentleftborder" class="PopupWindowContentLeftBorder">
+                </div>
+                <div class="PopupWindowContent">
+                    <div owc:ui="client" class="PopupWindowClient">
+                    </div>
+                    <div owc:ui="mask" class="PopupWindowMask">
+                    </div>
+                </div>
+                <div owc:ui="popupwindowcontentrightborder" class="PopupWindowContentRightBorder">
+                </div>
+            </div>
+            <div class="PopupWindowFrameBottom">
+                <div owc:ui="popupwindowbottomleftcorner" class="PopupWindowBottomLeftCorner">
+                </div>
+                <div owc:ui="popupwindowbottomborder" class="PopupWindowBottomBorder">
+                </div>
+                <div owc:ui="popupwindowbottomrightcorner" class="PopupWindowBottomRightCorner">
+                </div>
+            </div>
+        </div>		    
+    </div>	
+    <div    id="PostDel_window"
+	        owc:control="PopupWindow"
+	        owc:contenttype="URL"
+	        owc:createframe="false"
+	        owc:preservecontent="false"
+	        owc:caption="Post to del.icio.us"
+	        owc:maximal-width-percent="95" owc:maximal-height-percent="95"
+	        style="left: 100px; top: 80px; z-index: 101; height: 500px; width: 600px; display: none;">
+        <div class="PopupWindowFrame PopupWindowResizable">
+            <div class="PopupWindowFrameTop">
+                <div owc:ui="popupwindowtopleftcorner" class="PopupWindowTopLeftCorner">
+                </div>
+                <div owc:ui="popupwindowtopborder" class="PopupWindowTopBorder">
+                </div>
+                <div owc:ui="popupwindowtoprightcorner" class="PopupWindowTopRightCorner">
+                </div>
+            </div>
+            <div class="PopupWindowFrameContent">
+                <div owc:ui="popupwindowcaption" class="PopupWindowCaption">
+                    <div owc:ui="captionleftborder" class="CaptionLeftBorder"></div>
+                    <div owc:ui="captionrightborder" class="CaptionRightBorder"></div>                    
+                    <div owc:ui="captioncontent" class="CaptionContent"></div>
+                    <span owc:ui="popupwindowtitle" class="PopupWindowTitle"></span>
+                    <div owc:ui="popupwindowclosebutton" class="PopupWindowClose">
+                        <span class="Label">Close</span>
+                        <img class="icon" src="styles/images/t.gif" alt="" />
+                    </div>
+                    <div class="PopupWindowDragArea"></div>                    
+                </div>
+                <div owc:ui="popupwindowcontentleftborder" class="PopupWindowContentLeftBorder">
+                </div>
+                <div class="PopupWindowContent">
+                    <div owc:ui="client" class="PopupWindowClient">
+                    </div>
+                    <div owc:ui="mask" class="PopupWindowMask">
+                    </div>
+                </div>
+                <div owc:ui="popupwindowcontentrightborder" class="PopupWindowContentRightBorder">
+                </div>
+            </div>
+            <div class="PopupWindowFrameBottom">
+                <div owc:ui="popupwindowbottomleftcorner" class="PopupWindowBottomLeftCorner">
+                </div>
+                <div owc:ui="popupwindowbottomborder" class="PopupWindowBottomBorder">
+                </div>
+                <div owc:ui="popupwindowbottomrightcorner" class="PopupWindowBottomRightCorner">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div    id="DiggThis_window"
+	        owc:control="PopupWindow"
+	        owc:contenttype="URL"
+	        owc:createframe="false"
+	        owc:preservecontent="false"
+	        owc:caption="Digg this"
+	        owc:maximal-width-percent="95" owc:maximal-height-percent="95"
+	        style="left: 100px; top: 80px; z-index: 101; height: 500px; width: 600px; display: none;">
+        <div class="PopupWindowFrame PopupWindowResizable">
+            <div class="PopupWindowFrameTop">
+                <div owc:ui="popupwindowtopleftcorner" class="PopupWindowTopLeftCorner">
+                </div>
+                <div owc:ui="popupwindowtopborder" class="PopupWindowTopBorder">
+                </div>
+                <div owc:ui="popupwindowtoprightcorner" class="PopupWindowTopRightCorner">
+                </div>
+            </div>
+            <div class="PopupWindowFrameContent">
+                <div owc:ui="popupwindowcaption" class="PopupWindowCaption">
+                    <div owc:ui="captionleftborder" class="CaptionLeftBorder"></div>
+                    <div owc:ui="captionrightborder" class="CaptionRightBorder"></div>                    
+                    <div owc:ui="captioncontent" class="CaptionContent"></div>
+                    <span owc:ui="popupwindowtitle" class="PopupWindowTitle"></span>
+                    <div owc:ui="popupwindowclosebutton" class="PopupWindowClose">
+                        <span class="Label">Close</span>
+                        <img class="icon" src="styles/images/t.gif" alt="" />
+                    </div>
+                    <div class="PopupWindowDragArea"></div>                    
+                </div>
+                <div owc:ui="popupwindowcontentleftborder" class="PopupWindowContentLeftBorder">
+                </div>
+                <div class="PopupWindowContent">
+                    <div owc:ui="client" class="PopupWindowClient">
+                    </div>
+                    <div owc:ui="mask" class="PopupWindowMask">
+                    </div>
+                </div>
+                <div owc:ui="popupwindowcontentrightborder" class="PopupWindowContentRightBorder">
+                </div>
+            </div>
+            <div class="PopupWindowFrameBottom">
+                <div owc:ui="popupwindowbottomleftcorner" class="PopupWindowBottomLeftCorner">
+                </div>
+                <div owc:ui="popupwindowbottomborder" class="PopupWindowBottomBorder">
+                </div>
+                <div owc:ui="popupwindowbottomrightcorner" class="PopupWindowBottomRightCorner">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup_OkToChangeIssue" 
+            owc:control="PopupWindow"
+            owc:caption="Do you want to view a different issue?" 
+            owc:contenttype="HTML"
+	        owc:createframe="false"
+	        owc:preservecontent="false"
+            style="left: 120px; top: 100px; z-index: 101; display: none;">
+              <div class="PopupWindowFrame PopupWindowResizable">
+            <div class="PopupWindowFrameTop">
+                <div owc:ui="popupwindowtopleftcorner" class="PopupWindowTopLeftCorner">
+                </div>
+                <div owc:ui="popupwindowtopborder" class="PopupWindowTopBorder">
+                </div>
+                <div owc:ui="popupwindowtoprightcorner" class="PopupWindowTopRightCorner">
+                </div>
+            </div>
+            <div class="PopupWindowFrameContent">
+                <div owc:ui="popupwindowcaption" class="PopupWindowCaption">
+                    <div owc:ui="captionleftborder" class="CaptionLeftBorder"></div>
+                    <div owc:ui="captionrightborder" class="CaptionRightBorder"></div>                    
+                    <div owc:ui="captioncontent" class="CaptionContent"></div>
+                    <span owc:ui="popupwindowtitle" class="PopupWindowTitle"></span>
+                    <div owc:ui="popupwindowclosebutton" class="PopupWindowClose">
+                        <span class="Label">Close</span>
+                        <img class="icon" src="styles/images/t.gif" alt="" />
+                    </div>
+                    <div class="PopupWindowDragArea"></div>                    
+                </div>
+                <div owc:ui="popupwindowcontentleftborder" class="PopupWindowContentLeftBorder">
+                </div>
+                <div class="PopupWindowContent">
+                    <div owc:ui="client" class="PopupWindowClient">
+                        <div>The issue "<span owc:control="value" id="newpublication" class="selected-text"></span><span owc:control="value" id="newdate" owc:format="%B %d, %Y" owc:datatype="date" class="selected-text"></span>" will replace the issue "<span owc:control="value" id="priorpublication" class="selected-text"></span><span owc:control="value" id="priordate" owc:format="%B %d, %Y" owc:datatype="date" class="selected-text"></span>" as your current issue. 
+                      Please press <span class="selected-text">OK</span> to continue or <span class="selected-text">Cancel</span> to exit.  
+                       <br />
+                       <br />
+                        </div>
+                        <table style="width:100%">
+	                        <tr align="right">
+		                        <td>
+		                            <table>
+		                                <tr>
+		                                    <td>
+			                                    <span owc:control="commandbutton" owc:decorate-with-table="true" owc:command="OK_ChangeIssue">OK</span>
+		                                    </td>
+		                                    <td>
+			                                    <span owc:control="commandbutton" owc:decorate-with-table="true" owc:command="Cancel_ChangeIssue" >Cancel</span>
+		                                    </td>
+		                                </tr>
+		                            </table>
+		                        </td>
+	                        </tr>
+	                        <tr>
+	                            <td class="notes"> 
+			                        <input type="checkbox" owc:control="Value" owc:datatype="Boolean" id="bDoNotAskAgain_ChangeIssue"/>
+			                        <span>Do not show this window again</span>
+	                            </td>
+	                        </tr>
+                        </table>                    
+                    </div>
+                    <div owc:ui="mask" class="PopupWindowMask">
+                    </div>
+                </div>
+                <div owc:ui="popupwindowcontentrightborder" class="PopupWindowContentRightBorder">
+                </div>
+            </div>
+            <div class="PopupWindowFrameBottom">
+                <div owc:ui="popupwindowbottomleftcorner" class="PopupWindowBottomLeftCorner">
+                </div>
+                <div owc:ui="popupwindowbottomborder" class="PopupWindowBottomBorder">
+                </div>
+                <div owc:ui="popupwindowbottomrightcorner" class="PopupWindowBottomRightCorner">
+                </div>
+            </div>
+        </div>
+    </div>	 
+    <!-- Popup dialog with info about bookmarks in Firefox browser -->
+    <div id="popup_BookmarkInFirefoxNote" 
+            owc:control="PopupWindow"
+            owc:caption="Bookmark info in Firefox browser" 
+            owc:contenttype="HTML"
+	        owc:createframe="false"
+	        owc:preservecontent="false"
+            style="left: 120px; top: 100px; z-index: 101; display: none;">
+              <div class="PopupWindowFrame PopupWindowResizable">
+            <div class="PopupWindowFrameTop">
+                <div owc:ui="popupwindowtopleftcorner" class="PopupWindowTopLeftCorner">
+                </div>
+                <div owc:ui="popupwindowtopborder" class="PopupWindowTopBorder">
+                </div>
+                <div owc:ui="popupwindowtoprightcorner" class="PopupWindowTopRightCorner">
+                </div>
+            </div>
+            <div class="PopupWindowFrameContent">
+                <div owc:ui="popupwindowcaption" class="PopupWindowCaption">
+                    <div owc:ui="captionleftborder" class="CaptionLeftBorder"></div>
+                    <div owc:ui="captionrightborder" class="CaptionRightBorder"></div>                    
+                    <div owc:ui="captioncontent" class="CaptionContent"></div>
+                    <span owc:ui="popupwindowtitle" class="PopupWindowTitle"></span>
+                    <div owc:ui="popupwindowclosebutton" class="PopupWindowClose">
+                        <span class="Label">Close</span>
+                        <img class="icon" src="styles/images/t.gif" alt="" />
+                    </div>
+                    <div class="PopupWindowDragArea"></div>                    
+                </div>
+                <div owc:ui="popupwindowcontentleftborder" class="PopupWindowContentLeftBorder">
+                </div>
+                <div class="PopupWindowContent">
+                    <div owc:ui="client" class="PopupWindowClient">
+                        <br />      
+                        <div><span id="PopupInfo_Firefox_Bookmarks_Introduction"></span></div>                        
+                        <br />
+                        <div><span id="PopupInfo_Firefox_Bookmarks_Info"></span></div>
+                        <div><span id="PopupInfo_Firefox_Bookmarks_HowTo1"></span><span id="PopupInfo_Firefox_Bookmarks_HowTo1_WORD_Bookmarks" class="selected-text"></span><span id="PopupInfo_Firefox_Bookmarks_HowTo1_WORD_menu"></span><span id="PopupInfo_Firefox_Bookmarks_HowTo1_WORD_right_click" class="selected-text"></span><span id="PopupInfo_Firefox_Bookmarks_HowTo1_WORDS"></span><span id="PopupInfo_Firefox_Bookmarks_HowTo1_WORD_Properties" class="selected-text"></span>.</div>
+                        <div><span id="PopupInfo_Firefox_Bookmarks_HowTo2"></span><span id="PopupInfo_Firefox_Bookmarks_HowTo2_WORDS" class="selected-text"></span>.</div>
+                        <div><span id="PopupInfo_Firefox_Bookmarks_HowTo3"></span><span id="PopupInfo_Firefox_Bookmarks_WORD_OK" class="selected-text"></span>.</div>                            
+                        <br />
+                        <table>
+	                        <tr>
+		                        <td>
+			                        <span owc:control="commandbutton" owc:decorate-with-table="true" owc:command="OK_BookmarkInFirefoxNote">OK</span>
+		                        </td>
+	                        </tr>
+	                        <tr>
+	                            <td class="notes"> 
+			                        <input type="checkbox" owc:control="Value" owc:datatype="Boolean" id="bDoNotAskAgain_BookmarkInFirefoxNote"/>
+			                        <span id="PopupInfo_Firefox_Bookmarks_Checkbox"></span>
+	                            </td>
+	                        </tr>
+                        </table>
+                    </div>
+                    <div owc:ui="mask" class="PopupWindowMask">
+                    </div>
+                </div>
+                <div owc:ui="popupwindowcontentrightborder" class="PopupWindowContentRightBorder">
+                </div>
+            </div>
+            <div class="PopupWindowFrameBottom">
+                <div owc:ui="popupwindowbottomleftcorner" class="PopupWindowBottomLeftCorner">
+                </div>
+                <div owc:ui="popupwindowbottomborder" class="PopupWindowBottomBorder">
+                </div>
+                <div owc:ui="popupwindowbottomrightcorner" class="PopupWindowBottomRightCorner">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Popup dialog with info about bookmarks in IE8 browser -->
+    <div id="popup_BookmarkInIE8Note" 
+            owc:control="PopupWindow"
+            owc:caption="Bookmark info in Internet Explorer 8 browser" 
+            owc:contenttype="HTML"
+	        owc:createframe="false"
+	        owc:preservecontent="false"
+            style="left: 120px; top: 100px; z-index: 101; display: none;">
+              <div class="PopupWindowFrame PopupWindowResizable">
+            <div class="PopupWindowFrameTop">
+                <div owc:ui="popupwindowtopleftcorner" class="PopupWindowTopLeftCorner">
+                </div>
+                <div owc:ui="popupwindowtopborder" class="PopupWindowTopBorder">
+                </div>
+                <div owc:ui="popupwindowtoprightcorner" class="PopupWindowTopRightCorner">
+                </div>
+            </div>
+            <div class="PopupWindowFrameContent">
+                <div owc:ui="popupwindowcaption" class="PopupWindowCaption">
+                    <div owc:ui="captionleftborder" class="CaptionLeftBorder"></div>
+                    <div owc:ui="captionrightborder" class="CaptionRightBorder"></div>                    
+                    <div owc:ui="captioncontent" class="CaptionContent"></div>
+                    <span owc:ui="popupwindowtitle" class="PopupWindowTitle"></span>
+                    <div owc:ui="popupwindowclosebutton" class="PopupWindowClose">
+                        <span class="Label">Close</span>
+                        <img class="icon" src="styles/images/t.gif" alt="" />
+                    </div>
+                    <div class="PopupWindowDragArea"></div>                    
+                </div>
+                <div owc:ui="popupwindowcontentleftborder" class="PopupWindowContentLeftBorder">
+                </div>
+                <div class="PopupWindowContent">
+                    <div owc:ui="client" class="PopupWindowClient">
+                        <br />      
+                        <div><span id="PopupInfo_IE8_Bookmarks_Info"></span></div>
+                        <br />      
+                        <div><span id="PopupInfo_IE8_Bookmarks_Info1"></span></div>
+                        <br />
+                        <table>
+	                        <tr align="center">
+		                        <td>
+			                        <span owc:control="commandbutton" owc:decorate-with-table="true" owc:command="OK_BookmarkInIE8Note">OK</span>
+		                        </td>
+	                        </tr>
+                        </table>
+                    </div>
+                    <div owc:ui="mask" class="PopupWindowMask">
+                    </div>
+                </div>
+                <div owc:ui="popupwindowcontentrightborder" class="PopupWindowContentRightBorder">
+                </div>
+            </div>
+            <div class="PopupWindowFrameBottom">
+                <div owc:ui="popupwindowbottomleftcorner" class="PopupWindowBottomLeftCorner">
+                </div>
+                <div owc:ui="popupwindowbottomborder" class="PopupWindowBottomBorder">
+                </div>
+                <div owc:ui="popupwindowbottomrightcorner" class="PopupWindowBottomRightCorner">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Popup dialog for translation -->
+    <div    id="popup_translation"
+	        owc:control="PopupWindow"
+	        owc:contenttype="URL"
+	        owc:createframe="false"
+	        owc:preservecontent="false"
+	        owc:maximal-width-percent="95" owc:maximal-height-percent="95"
+	        style="z-index: 101; display: none;">
+        <div class="PopupWindowFrame PopupWindowResizable">
+            <div class="PopupWindowFrameTop">
+                <div owc:ui="popupwindowtopleftcorner" class="PopupWindowTopLeftCorner">
+                </div>
+                <div owc:ui="popupwindowtopborder" class="PopupWindowTopBorder">
+                </div>
+                <div owc:ui="popupwindowtoprightcorner" class="PopupWindowTopRightCorner">
+                </div>
+            </div>
+            <div class="PopupWindowFrameContent">
+                <div owc:ui="popupwindowcaption" class="PopupWindowCaption">
+                    <div owc:ui="captionleftborder" class="CaptionLeftBorder"></div>
+                    <div owc:ui="captionrightborder" class="CaptionRightBorder"></div>                    
+                    <div owc:ui="captioncontent" class="CaptionContent"></div>
+                    <span owc:ui="popupwindowtitle" class="PopupWindowTitle"></span>
+                    <div owc:ui="popupwindowclosebutton" class="PopupWindowClose">
+                        <span class="Label">Close</span>
+                        <img class="icon" src="styles/images/t.gif" alt="" />
+                    </div>
+                    <div class="PopupWindowDragArea"></div>                    
+                </div>
+                <div owc:ui="popupwindowcontentleftborder" class="PopupWindowContentLeftBorder">
+                </div>
+                <div class="PopupWindowContent">
+                    <div owc:ui="client" class="PopupWindowClient">
+                    </div>
+                    <div owc:ui="mask" class="PopupWindowMask">
+                    </div>
+                </div>
+                <div owc:ui="popupwindowcontentrightborder" class="PopupWindowContentRightBorder">
+                </div>
+            </div>
+            <div class="PopupWindowFrameBottom">
+                <div owc:ui="popupwindowbottomleftcorner" class="PopupWindowBottomLeftCorner">
+                </div>
+                <div owc:ui="popupwindowbottomborder" class="PopupWindowBottomBorder">
+                </div>
+                <div owc:ui="popupwindowbottomrightcorner" class="PopupWindowBottomRightCorner">
+                </div>
+            </div>
+        </div>            
+    </div>
+    <div id="popup_CopyLinkToClipboard" 
+            owc:control="PopupWindow"
+            owc:caption="Copy link to clipboard" 
+            owc:contenttype="HTML"
+	        owc:createframe="false"
+	        owc:preservecontent="false"
+            style="left: 120px; top: 100px; z-index: 101; display: none;">
+              <div class="PopupWindowFrame PopupWindowResizable">
+            <div class="PopupWindowFrameTop">
+                <div owc:ui="popupwindowtopleftcorner" class="PopupWindowTopLeftCorner"></div>
+                <div owc:ui="popupwindowtopborder" class="PopupWindowTopBorder"></div>
+                <div owc:ui="popupwindowtoprightcorner" class="PopupWindowTopRightCorner"></div>
+            </div>
+            <div class="PopupWindowFrameContent">
+                <div owc:ui="popupwindowcaption" class="PopupWindowCaption">
+                    <div owc:ui="captionleftborder" class="CaptionLeftBorder"></div>
+                    <div owc:ui="captionrightborder" class="CaptionRightBorder"></div>                    
+                    <div owc:ui="captioncontent" class="CaptionContent"></div>
+                    <span owc:ui="popupwindowtitle" class="PopupWindowTitle"></span>
+                    <div owc:ui="popupwindowclosebutton" class="PopupWindowClose">
+                        <span class="Label">Close</span>
+                        <img class="icon" src="styles/images/t.gif" alt="" />
+                    </div>
+                    <div class="PopupWindowDragArea"></div>                    
+                </div>
+                <div owc:ui="popupwindowcontentleftborder" class="PopupWindowContentLeftBorder">
+                </div>
+                <div class="PopupWindowContent">
+                    <div owc:ui="client" class="PopupWindowClient">
+                        <p><div><span id="Popup_CopyLinkToClipboard_Text"></span></div></p>
+                        <p><input type="text" id="PopupInfo_CopyLinkToClipboard_Url" size="44" owc:control="Value" owc:datatype="String" /></p>
+                        <p>
+                        <table>
+	                        <tr align="center">
+		                        <td>
+			                        <span owc:control="commandbutton" owc:decorate-with-table="true" owc:command="CloseCopyLinkToClipboardPopup">Close</span>
+		                        </td>
+	                        </tr>
+                        </table>
+                        </p>
+                    </div>
+                    <div owc:ui="mask" class="PopupWindowMask">
+                    </div>
+                </div>
+                <div owc:ui="popupwindowcontentrightborder" class="PopupWindowContentRightBorder">
+                </div>
+            </div>
+            <div class="PopupWindowFrameBottom">
+                <div owc:ui="popupwindowbottomleftcorner" class="PopupWindowBottomLeftCorner">
+                </div>
+                <div owc:ui="popupwindowbottomborder" class="PopupWindowBottomBorder">
+                </div>
+                <div owc:ui="popupwindowbottomrightcorner" class="PopupWindowBottomRightCorner">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- new popup for facebook and twitter-->
+    <div id="Facebook_window"
+	        owc:control="PopupWindow"
+	        owc:contenttype="URL"
+	        owc:createframe="false"
+	        owc:preservecontent="false"
+	        owc:caption="Facebook"
+	        owc:maximal-width-percent="95" owc:maximal-height-percent="95"
+	        style="left: 100px; top: 80px; z-index: 101; height: 500px; width: 600px; display: none;">
+        <div class="PopupWindowFrame PopupWindowResizable">
+            <div class="PopupWindowFrameTop">
+                <div owc:ui="popupwindowtopleftcorner" class="PopupWindowTopLeftCorner">
+                </div>
+                <div owc:ui="popupwindowtopborder" class="PopupWindowTopBorder">
+                </div>
+                <div owc:ui="popupwindowtoprightcorner" class="PopupWindowTopRightCorner">
+                </div>
+            </div>
+            <div class="PopupWindowFrameContent">
+                <div owc:ui="popupwindowcaption" class="PopupWindowCaption">
+                    <div owc:ui="captionleftborder" class="CaptionLeftBorder"></div>
+                    <div owc:ui="captionrightborder" class="CaptionRightBorder"></div>                    
+                    <div owc:ui="captioncontent" class="CaptionContent"></div>
+                    <span owc:ui="popupwindowtitle" class="PopupWindowTitle"></span>
+                    <div owc:ui="popupwindowclosebutton" class="PopupWindowClose">
+                        <span class="Label">Close</span>
+                        <img class="icon" src="styles/images/t.gif" alt="" />
+                    </div>
+                    <div class="PopupWindowDragArea"></div>                    
+                </div>
+                <div owc:ui="popupwindowcontentleftborder" class="PopupWindowContentLeftBorder">
+                </div>
+                <div class="PopupWindowContent">
+                    <div owc:ui="client" class="PopupWindowClient">
+                    </div>
+                    <div owc:ui="mask" class="PopupWindowMask">
+                    </div>
+                </div>
+                <div owc:ui="popupwindowcontentrightborder" class="PopupWindowContentRightBorder">
+                </div>
+            </div>
+            <div class="PopupWindowFrameBottom">
+                <div owc:ui="popupwindowbottomleftcorner" class="PopupWindowBottomLeftCorner">
+                </div>
+                <div owc:ui="popupwindowbottomborder" class="PopupWindowBottomBorder">
+                </div>
+                <div owc:ui="popupwindowbottomrightcorner" class="PopupWindowBottomRightCorner">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Twitter_window"
+	        owc:control="PopupWindow"
+	        owc:contenttype="URL"
+	        owc:createframe="false"
+	        owc:preservecontent="false"
+	        owc:caption="Twitter"
+	        owc:maximal-width-percent="95" owc:maximal-height-percent="95"
+	        style="left: 100px; top: 80px; z-index: 101; height: 500px; width: 600px; display: none;">
+        <div class="PopupWindowFrame PopupWindowResizable">
+            <div class="PopupWindowFrameTop">
+                <div owc:ui="popupwindowtopleftcorner" class="PopupWindowTopLeftCorner">
+                </div>
+                <div owc:ui="popupwindowtopborder" class="PopupWindowTopBorder">
+                </div>
+                <div owc:ui="popupwindowtoprightcorner" class="PopupWindowTopRightCorner">
+                </div>
+            </div>
+            <div class="PopupWindowFrameContent">
+                <div owc:ui="popupwindowcaption" class="PopupWindowCaption">
+                    <div owc:ui="captionleftborder" class="CaptionLeftBorder"></div>
+                    <div owc:ui="captionrightborder" class="CaptionRightBorder"></div>                    
+                    <div owc:ui="captioncontent" class="CaptionContent"></div>
+                    <span owc:ui="popupwindowtitle" class="PopupWindowTitle"></span>
+                    <div owc:ui="popupwindowclosebutton" class="PopupWindowClose">
+                        <span class="Label">Close</span>
+                        <img class="icon" src="styles/images/t.gif" alt="" />
+                    </div>
+                    <div class="PopupWindowDragArea"></div>                    
+                </div>
+                <div owc:ui="popupwindowcontentleftborder" class="PopupWindowContentLeftBorder">
+                </div>
+                <div class="PopupWindowContent">
+                    <div owc:ui="client" class="PopupWindowClient">
+                    </div>
+                    <div owc:ui="mask" class="PopupWindowMask">
+                    </div>
+                </div>
+                <div owc:ui="popupwindowcontentrightborder" class="PopupWindowContentRightBorder">
+                </div>
+            </div>
+            <div class="PopupWindowFrameBottom">
+                <div owc:ui="popupwindowbottomleftcorner" class="PopupWindowBottomLeftCorner">
+                </div>
+                <div owc:ui="popupwindowbottomborder" class="PopupWindowBottomBorder">
+                </div>
+                <div owc:ui="popupwindowbottomrightcorner" class="PopupWindowBottomRightCorner">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Select page area for print -->
+    <div id="PopupWindow_SelectPageToPrint" 
+            owc:control="PopupWindow"
+            owc:caption="Bookmark info in Internet Explorer 8 browser" 
+            owc:contenttype="HTML"
+	        owc:createframe="false"
+	        owc:preservecontent="false"
+            style="left: 120px; top: 100px; z-index: 101; display: none;">
+              <div class="PopupWindowFrame PopupWindowResizable">
+            <div class="PopupWindowFrameTop">
+                <div owc:ui="popupwindowtopleftcorner" class="PopupWindowTopLeftCorner">
+                </div>
+                <div owc:ui="popupwindowtopborder" class="PopupWindowTopBorder">
+                </div>
+                <div owc:ui="popupwindowtoprightcorner" class="PopupWindowTopRightCorner">
+                </div>
+            </div>
+            <div class="PopupWindowFrameContent">
+                <div owc:ui="popupwindowcaption" class="PopupWindowCaption">
+                    <div owc:ui="captionleftborder" class="CaptionLeftBorder"></div>
+                    <div owc:ui="captionrightborder" class="CaptionRightBorder"></div>                    
+                    <div owc:ui="captioncontent" class="CaptionContent"></div>
+                    <span owc:ui="popupwindowtitle" class="PopupWindowTitle"></span>
+                    <div owc:ui="popupwindowclosebutton" class="PopupWindowClose">
+                        <span class="Label">Close</span>
+                        <img class="icon" src="styles/images/t.gif" alt="" />
+                    </div>
+                    <div class="PopupWindowDragArea"></div>                    
+                </div>
+                <div owc:ui="popupwindowcontentleftborder" class="PopupWindowContentLeftBorder">
+                </div>
+                <div class="PopupWindowContent">
+                    <div owc:ui="client" class="PopupWindowClient">
+                        <br />      
+                        <div>Please choose which page you want to print</div>
+                        <br />
+                        <table>
+	                        <tr align="center">
+		                        <td>
+			                        <span owc:control="commandbutton" owc:decorate-with-table="true" owc:command="PrintPageArea_LeftPage">Left Page</span>
+		                        </td>
+		                        <td>
+			                        <span owc:control="commandbutton" owc:decorate-with-table="true" owc:command="PrintPageArea_RightPage">Right Page</span>
+		                        </td>
+	                        </tr>
+                        </table>
+                    </div>
+                    <div owc:ui="mask" class="PopupWindowMask">
+                    </div>
+                </div>
+                <div owc:ui="popupwindowcontentrightborder" class="PopupWindowContentRightBorder">
+                </div>
+            </div>
+            <div class="PopupWindowFrameBottom">
+                <div owc:ui="popupwindowbottomleftcorner" class="PopupWindowBottomLeftCorner">
+                </div>
+                <div owc:ui="popupwindowbottomborder" class="PopupWindowBottomBorder">
+                </div>
+                <div owc:ui="popupwindowbottomrightcorner" class="PopupWindowBottomRightCorner">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="DocumentHoverClueTip" owc:rel=""></div>
+    <script language="javascript" type="text/javascript" src="/Olive/WebComponents/OwcFlashViewer.js"></script>
+    <script language="javascript" type="text/javascript" src="/Olive/WebComponents/OwcDocViewerAgg.js"></script>	
+    <script language="javascript" type="text/javascript" src="/Olive/WebComponents/OwcPopupWindow.js"></script>
+    <script language="javascript" type="text/javascript" src="/Olive/WebComponents/OwcPrintForm.js"></script>	
+    <script language="javascript" type="text/javascript" src="/Olive/WebComponents/OwcThumbList.js"></script>
+    <script language="javascript" type="text/javascript" src="/Olive/WebComponents/OwcPublicationDatetime.js"></script>
+    <script language="javascript" type="text/javascript" src="/Olive/WebComponents/OwcMagnifier.js"></script>		   
+    <script language="javascript" type="text/javascript" src="Default.aspx.js"></script>
+</body>
+</html>

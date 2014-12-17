@@ -1,0 +1,1959 @@
+
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xml:lang="en" lang="en">
+    <head>
+<!-- premiumchron/hearst/home/header_main.tpl -->
+<!-- eid:channel.7996 -->        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UAcHUF9ACQcHVVRV"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(5),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(f){"stack"in f&&(t(1),t(4),"addEventListener"in window&&t(2),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(3),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:8,2:5,3:9,4:7,5:20,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],4:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(2);t("loader").features.stn=!0,t(1),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:6,2:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:20,2:21,ee:"QJf3ax",gos:"7eSDFh"}],6:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:21,2:20,ee:"QJf3ax"}],7:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:21,2:20,ee:"QJf3ax"}],8:[function(t,e){function n(t,e,n){var r=t[0];"string"==typeof r&&(r=new Function(r)),t[0]=o(r,"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:21,2:20,ee:"QJf3ax"}],9:[function(t,e){function n(){c.inPlace(this,d,"fn-")}function r(t,e){c.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}var i=t("ee").create(),a=t(1),s=t(2),c=s(i),f=s(a),u=window.XMLHttpRequest,d=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=i,window.XMLHttpRequest=function(t){var e=new u(t);try{i.emit("new-xhr",[],e),f.inPlace(e,["addEventListener","removeEventListener"],"-",function(t,e){return e}),e.addEventListener("readystatechange",n,!1)}catch(r){try{i.emit("internal-error",[r])}catch(o){}}return e},window.XMLHttpRequest.prototype=u.prototype,c.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),i.on("send-xhr-start",r),i.on("open-xhr-start",r)},{1:5,2:21,ee:"QJf3ax"}],10:[function(t){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=e(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(n.cat=d.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r,this.startTime])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=e(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",[e])}catch(r){}}};for(var u=0;c>u;u++)n.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:11,3:9,4:5,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],11:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){p.proto="https"===d.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=c.createElement("script");e.src=p.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,c=s.document,f="addEventListener",u="attachEvent",d=(""+location).split("?")[0],p=e.exports={offset:i(),origin:d,features:{}};c[f]?(c[f]("DOMContentLoaded",o,!1),s[f]("load",n,!1)):(c[u]("onreadystatechange",r),s[u]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],20:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],21:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s,t))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:20,ee:"QJf3ax"}]},{},["G9z0Bl",3,10,4]);</script>
+<script>var HDN = HDN || {}; HDN.t_firstbyte = Number(new Date());</script>
+<!-- generated at 2014-12-15 20:03:05 on prodWCM4 running vr6.2.1.0 -->
+        <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, width = device-width">
+
+        <link rel="stylesheet" type="text/css" href="/external/css/global.sharedmain.r6.2.1.0.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="/external/css/global.sharedmodules.r6.2.1.0.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="/external/css/global.sharedpages.r6.2.1.0.css" media="all" />
+
+        <link rel="stylesheet" type="text/css" href="/external/css/global.sitemain.r6.2.1.0.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="/external/css/global.sitemodules.r6.2.1.0.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="/external/css/global.sitepages.r6.2.1.0.css" media="all" />
+
+        <link rel="stylesheet" type="text/css" href="/external/css/global.section.r6.2.1.0.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="/external/css/global.ie8.r6.2.1.0.css" media="all" />
+
+        <script type="text/javascript" src="/js/jquery-1.8.1.min.js"></script>
+<script type="text/javascript" src="/external/js/global.header.r6.2.1.0.js"></script>
+
+<!-- hearst/common/omniture.tpl -->
+<script type="text/javascript">
+	// <![CDATA[
+	// document.domain = "hearstnp.com";
+	var requestTime = new Date(1418695385 * 1000);
+
+										
+					
+		
+		// bizobject variables
+		var omni_channelPath = "Home";
+				var omni_title = "Home";
+				var omni_bizObjectId = "7996";
+		var omni_className = "channel";
+		var omni_publicationDate = "2012-09-18 14:13:00";
+		var omni_sourceSite="premiumchron";
+
+        	        
+        var omni_paywallSite = "1";
+
+    	// ]]>
+</script>
+<!--[if IE 6]><script type="text/javascript" src="/js/hdn/utils/DD_belatedPNG_0.0.8a-min.js"></script><![endif]-->
+<!-- e hearst/common/omniture.tpl -->
+
+
+
+        <title>Houston Chronicle | HoustonChronicle.com - Houston Chronicle</title>
+        <link rel="SHORTCUT ICON" href="/favicon.ico?v=2" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon-precomposed.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72-precomposed.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png"/>
+        <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144-precomposed.png"/>
+
+    <link rel="canonical" href="http://www.houstonchronicle.com/" />
+
+    
+<!--[if lt IE 9]>
+        <meta http-equiv="X-UA-Compatible" content="IE=7,IE=8" />
+<![endif]-->
+
+            <meta name="description" content="Get the latest news on Houston, Texas, the United States and the world from the Houston Chronicle on HoustonChronicle.com." />
+    
+                    <meta http-equiv="refresh" content="1800" />
+    
+    
+    
+    
+    <meta property="og:title" content="Home" />
+            <meta property="og:description" content="Get the latest news on Houston, Texas, the United States and the world from the Houston Chronicle on HoustonChronicle.com." />
+                        <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.houstonchronicle.com/" />
+    <meta property="og:image" content="http://www.houstonchronicle.com/img/pages/article/opengraph_default.jpg" />
+    <meta property="og:site_name" content="Houston Chronicle" />
+        <!-- Twitter card metadata  -->
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@houstonchron" />
+    
+<!-- /business/templates/hearst/home/header_fbpage.tpl-->
+
+
+                <meta property="fb:app_id" content="653292111352579"/>
+    
+<!-- e /business/templates/hearst/home/header_fbpage.tpl-->
+<script type="text/javascript" id="adPositionManagerScriptTag" src="http://aps.hearstnp.com/Scripts/loadAds.js"></script>
+
+                            <!-- sectionDesign  siteid  id  -->
+            
+            <!--[if lt IE 9]>
+        <script src="/js/respond.min.js"></script>
+<![endif]-->
+        <script type="text/javascript" async src="http://launch.newsinc.com/js/embed.js" id="_nw2e-js"></script>
+        <!-- CSS/JS Hotfix freeform -->
+        
+        <!-- hearst/item/standalone.tpl -->
+<!-- mid:freeform.13324 -->
+<script type="text/javascript">
+    // turn off/on media and freeform objects from gallery [CPREM-1953]
+    HDN.skipGalleryMediaObjects = true;
+    HDN.skipGalleryFreeformObjects = true;
+</script>
+
+<style>
+/* CPREM-1909 */
+.digital_pass_promo a {font-size: 16px;}
+
+.hc_opinion .alertbox {
+    background: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+/*CPREM-2096*/
+.prem-exclusive .content h4.kicker,
+.prem-exclusive .content h4.kicker .byline {
+	color: #aaa;
+	font-size: 10px;
+	line-height:1em;
+	font-family: "HoustonDeck", serif;
+	margin-bottom:8px;
+}
+</style>
+	
+<style type="text/css">
+/*CPREM-2192 */
+@media screen and (min-width: 1280px){
+.prem_homepage_2 .digital_pass_promo {
+margin: -24px 0 20px 0;
+}
+}
+
+/* Inline perfect pixel fix*/
+.fixed-asset.perfectPixel{ height:250px;}
+
+</style>
+
+
+<!-- Bing Webmaster Tools verification -->
+<meta name="msvalidate.01" content="9451CA04ABC9D1D5C6419C73B4C4F7B7" />
+    </head>
+    <body id="home">
+    <!-- ux/chron/tmpl/channel_omniture.php -->
+
+<!-- Adobe TagManager: Houston Premium -->
+<script type="text/javascript">//<![CDATA[
+var amc=amc||{};if(!amc.on){amc.on=amc.call=function(){}};
+document.write("<scr"+"ipt type=\"text/javascript\" src=\"//www.adobetag.com/d1/v2/ZDEtaGVhcnN0LTMwNzctMzk4My0=/amc.js\"></sc"+"ript>");
+//]]></script>
+<!-- End Adobe TagManager -->
+
+<!-- e ux/chron/tmpl/channel_omniture.php -->
+            <div id="container" class="prem_homepage_2">
+                <div id="header">                 <!-- ux/premiumchron/templates/hearst/common/admin_bar.tpl -->
+<div class="header-top">
+  <div class="lock1200">
+    <ul class="ht-links">
+      <li class="ht-link-item ht-branding"><a href="http://chron.com/" target="_blank"><img src="/img/utils/spacer.png"></a></li>
+      <li class="ht-link-item"><a href="http://chron.com/cars/" target="_blank">Autos</a></li>
+      <li class="ht-link-item"><a href="http://chron.com/jobs/" target="_blank">Jobs</a></li>    
+      <li class="ht-link-item"><a href="http://chron.com/homes/" target="_blank">Real Estate</a></li>
+      <li class="ht-weather">
+        <span>
+          <a class="weather-ico" href="http://weather.chron.com/US/TX/Houston.html" target="_blank"></a>
+          <a class="ht-temp" href="http://weather.chron.com/US/TX/Houston.html" target="_blank"></a>
+        </span>
+      </li>
+    </ul>
+
+    <!-- ux/hearst/widgets/paywallLogin/main.tpl -->
+
+<ul class="ht-right-links signed-in" style="display:none">
+    <li class="ht-ed"><a href="/e-edition/">eNewspaper</a></li>
+    <li class="ht-user">
+        <a id="adminlink" class="ht-expand">Account</a>
+        <div class="hst-admin">
+            <div id="acctAdmin">
+                <ul class="form-list">
+                    <li><a href="https://myaccount.houstonchronicle.com/Login.aspx" class="admin-profile" target="_blank">Edit Your Profile</a></li>
+                    <li><a href="https://myaccount.houstonchronicle.com/Login.aspx" class="admin-sub" target="_blank">Manage Your Subscription</a></li>
+                </ul>
+                <input class="btn-submit" type="button" onclick="edbTokens.logout()" value="Sign Out">
+            </div>
+        </div><!-- /hst-admin -->
+    </li>
+</ul>
+<ul class="ht-right-links signed-out">
+    <li class="ht-ed"><a href="/e-edition/">eNewspaper</a></li>
+    <li class="ht-saved">
+        <span><a href="https://myaccount.houstonchronicle.com/dssSubscribe.aspx?z=00000&amp;pid=114,176&amp;return=http://www.houstonchronicle.com/">Subscribe</a></span>
+    </li>
+    <li class="ht-user">
+        <span><a id="adminlink" class="ht-expand">Sign In</a></span>
+        <div class="hst-admin">
+            <div class="intro">
+                <form action="https://myaccount.houstonchronicle.com/dssmatch.aspx" method="get" id="activate">
+                    <a onclick="document.getElementById('activate').submit();">
+                        <h3>First time signing in to HoustonChronicle.com?</h3>
+                        <input type="hidden" name="return" value="http://www.houstonchronicle.com/"/>
+                        <p><span>Click here</span> to confirm your subscription &amp; sign in information.</p>
+                    </a>
+                    <input type="hidden"  name="commit" value="Activate Account" />
+                </form>
+            </div>
+            <div id="signIn">
+                <form action="https://edb.houstonchronicle.com/WCMPaywall/GetTokensByEmail" method="post" name="aw-login">
+                    <fieldset>
+                        <ul class="form-list">
+                            <li><input class="form-input email-aw useremail" id="aw-email" name="EmailAddress" type="email" autocapitalize="off" onfocus="if(this.value == 'Email Address') { this.value = ''; }" onkeypress="javascript: if (window.event.keyCode === 35) { return false; }" value="" /></li>
+                            <li id="pw-li"><input class="form-input password-aw" id="password" name="Password" type="password" value="" /></li>
+                            <li>
+                                <div id="checkremem" class="checkbox-rm checked">
+                                    <input id="remember_me" name="RememberMe" checked="true" type="checkbox" value="1">
+                                    <label for="remember_me">Stay signed in</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <input type="hidden" value="header" name="SignInError" />
+                    <input class="btn-submit" name="commit" type="submit" value="Sign In">
+                    <p class="forgot"><a href="https://myaccount.houstonchronicle.com/ForgotPassword.aspx" target="_blank">Forgot Your Password?</a></p>
+                </form>
+                <div class="signin-dis">By logging in, you agree to the <a href="/terms_of_use/" target="_blank">Terms and Conditions</a> and <a href="/privacy_policy/" target="_blank">Privacy Policy</a>.</div>
+            </div>
+        </div><!-- /hst-admin -->
+    </li>
+</ul>
+<script>
+    $('.email-aw').watermark('Email Address');
+    $('.password-aw').watermark('Password');
+
+    $.ajax({
+        url: "/validateEdb/channel-7996/",
+        async: false
+    }).done(function(premiumAllowed) {
+        premiumAllowed = +premiumAllowed;
+        if (edbTokens.productToken == null || !premiumAllowed) {
+            $('ul.signed-in').remove();
+            $('ul.signed-out').show();
+            if ( edbTokens.errorMessage && edbTokens.signInError=='header' ){
+                $('#signIn').prepend('<div class="error-wrap error-back-light" style="display: block; "><span class="error-text error-text-light">'+
+                edbTokens.errorMessage+
+                '</span><img src="/img/utils/error_light.png"/></div>');
+                if(edbTokens.emailForPrompt){
+                    $("input.useremail").val(edbTokens.emailForPrompt);
+                }
+            }
+        } else {
+            $('ul.signed-out').remove();
+            $('ul.signed-in').show();
+        }
+    });
+</script>
+
+<!-- e ux/hearst/widgets/paywallLogin/main.tpl -->
+
+
+
+  </div>
+</div>
+<!-- e ux/premiumchron/templates/hearst/common/admin_bar.tpl -->
+                
+            <div class="lock1200">             <div class="header-branding">
+                <a class="logo-link" href="/"></a>
+                        <div class="head-date"><span class="wide-only"></span><span class="date"></span></div>
+        								<div class="header-share">
+											<ul>
+												<li>
+													Follow Us
+												</li>
+												<li><a class="hs-link fb-link" href="https://www.facebook.com/chroncom"></a></li>
+												<li><a class="hs-link twtr-link" href="https://www.twitter.com/houstonchron"></a></li> 
+												<li><a class="hs-link li-link" href="http://www.linkedin.com/company/houston-chronicle"></a></li>
+												<li><a class="hs-link pin-link" href="http://pinterest.com/houstonchron/"></a></li>
+												<li><a class="hs-link gplus-link" href="https://plus.google.com/+houstonchronicle"></a></li>
+											</ul>
+										</div>
+            </div>
+<!-- e premiumchron/hearst/home/header_main.tpl --><!--
+channel.className: channel
+channel.comments: none
+-->
+
+<!-- hearst/home/navigation.tpl -->
+	<!-- ux/premiumchron/templates/hearst/home/navigation_main.tpl -->
+
+
+      
+    
+  
+
+
+
+<div class="header-nav">
+  <div class="wide-sections horizontal-menu">
+    <ul id="wide-nav" class="sections-list">
+
+            
+                        
+          
+                      <li id="Ho-link" class="nav-item first"><a href="/">Home</a></li> 
+          
+                            
+          
+                      <li id="Lo-link" class="nav-item  " data-url="/local/"><a href="javascript:void(0);">Local</a></li>
+          
+                            
+          
+                      <li id="US-link" class="nav-item  " data-url="/us-world/"><a href="javascript:void(0);">US & World</a></li>
+          
+                            
+          
+                      <li id="Sp-link" class="nav-item  " data-url="/sports/"><a href="javascript:void(0);">Sports</a></li>
+          
+                            
+          
+                      <li id="Bu-link" class="nav-item  " data-url="/business/"><a href="javascript:void(0);">Business</a></li>
+          
+                            
+          
+                      <li id="Op-link" class="nav-item  " data-url="/opinion/"><a href="javascript:void(0);">Opinion</a></li>
+          
+                            
+          
+                      <li id="Ar-link" class="nav-item  " data-url="/entertainment/"><a href="javascript:void(0);">Arts & Entertainment</a></li>
+          
+                            
+          
+                      <li id="Li-link" class="nav-item  " data-url="/lifestyle/"><a href="javascript:void(0);">Lifestyle</a></li>
+          
+                            
+          
+                      <li id="In-link" class="nav-item last  " data-url="/insider/"><a href="javascript:void(0);">Insider</a></li>
+          
+                              <li class="search"><a href="javascript:void(0);"><div class="search-open"></div></a></li>
+    </ul>
+    <ul class="search-menu">
+      <li class="nav-item"><a class="menu-collapsed-horizontal" href="javascript:toggleSearch();">Sections</a></li>
+      <li class="search search-icon"><a href="javascript:toggleSearch();"><div class="search-close"></div></a></li>
+      <li class="search search-input">
+        <form action="/results/" method="get">
+          <input type="hidden" name="controllerName" value="search" />
+          <input type="hidden" name="action" value="search" />
+          <input type="hidden" name="searchindex" value="property" />
+          <input type="hidden" name="view" value="premium" />
+          <input type="hidden" name="sort" value="date" />
+          <fieldset>
+            
+            <input class="form-input" id="search" name="query" type="text" onfocus="if(this.value == 'Search') { this.value = ''; }" value="Search">
+            <input class="btn-dark search-btn" value="Search" name="search" type="submit" />
+            
+          </fieldset>
+        </form>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="narrow-sections horizontal-menu">
+    <ul class="sections-list">
+      <li class="nav-item"><a id="sections-link" class="menu-collapsed" href="javascript:void(0);">Sections</a></li>
+      <li class="nav-item search">
+        <div class="search-narrow">
+          <form action="/results/" method="get">
+            <input type="hidden" name="controllerName" value="search" />
+            <input type="hidden" name="action" value="search" />
+            <input type="hidden" name="searchindex" value="property" />
+            <input type="hidden" name="view" value="premium" />
+            <input type="hidden" name="sort" value="date" />
+            <fieldset>
+              
+              <input class="form-input" id="search" name="query" type="text" onfocus="if(this.value == 'Search') { this.value = ''; }" value="Search" />
+              
+         </fieldset>
+          </form>
+          <a href="javascript:void(0);"><div class="search-close"></div></a>
+        </div>
+        <a href="javascript:void(0);"><div class="toggle-btn search-open"></div></a>
+      </li>
+    </ul>
+  </div>
+
+  <div id="sections-menu">
+    <div class="narrow-sections nav-links">
+      <ul class="sections-list">
+                                                        <li id="Ho-link" class="nav-item first"><a href="/">Home</a></li> 
+                                                            <li id="Lo-link" class="nav-item" data-url="/local/"><a href="javascript:toggle_narrow_subsection('Lo');">Local</a></li>
+                                                            <li id="US-link" class="nav-item" data-url="/us-world/"><a href="javascript:toggle_narrow_subsection('US');">US & World</a></li>
+                                                            <li id="Sp-link" class="nav-item" data-url="/sports/"><a href="javascript:toggle_narrow_subsection('Sp');">Sports</a></li>
+                                                            <li id="Bu-link" class="nav-item" data-url="/business/"><a href="javascript:toggle_narrow_subsection('Bu');">Business</a></li>
+                                                            <li id="Op-link" class="nav-item" data-url="/opinion/"><a href="javascript:toggle_narrow_subsection('Op');">Opinion</a></li>
+                                                            <li id="Ar-link" class="nav-item" data-url="/entertainment/"><a href="javascript:toggle_narrow_subsection('Ar');">Arts & Entertainment</a></li>
+                                                            <li id="Li-link" class="nav-item" data-url="/lifestyle/"><a href="javascript:toggle_narrow_subsection('Li');">Lifestyle</a></li>
+                                                            <li id="In-link" class="nav-item last" data-url="/insider/"><a href="javascript:toggle_narrow_subsection('In');">Insider</a></li>
+                                    </ul>
+    </div>
+
+                                                          <div id="Lo" class="nav-links nav-pulldown">
+            <ul class="subsections-list">
+                                                            <li class="nav-item current first"><a href='/local/houston/'>Houston</a></li>
+                                                                                        <li class="nav-item current"><a href='/local/politics-policy/'>Politics & Policy</a></li>
+                                                                                        <li class="nav-item current"><a href='/local/education/'>Education</a></li>
+                                                                                        <li class="nav-item current"><a href='/local/elections/'>Election 2014</a></li>
+                                                                                        <li class="nav-item current"><a href='/local/investigations/'>HC Investigations</a></li>
+                                                                                        <li class="nav-item current"><a href='/local/mostread/'>Most-read Stories</a></li>
+                                                                                        <li class="nav-item current"><a href='/local/specialsections/'>Special Sections</a></li>
+                                                                                        <li class="nav-item current last"><a href='http://www.legacy.com/obituaries/houstonchronicle/' target='_blank' class='externallink' >Obituaries</a></li>
+                                                      </ul>
+          </div>
+                                        <div id="US" class="nav-links nav-pulldown">
+            <ul class="subsections-list">
+                                                            <li class="nav-item current first"><a href='/us-world/us/'>US News</a></li>
+                                                                                        <li class="nav-item current"><a href='/us-world/world/'>World News</a></li>
+                                                                                        <li class="nav-item current"><a href='/us-world/space/'>Space</a></li>
+                                                                                        <li class="nav-item current"><a href='/us-world/science-environment/'>Science & Environment</a></li>
+                                                                                        <li class="nav-item current"><a href='/us-world/politics-policy/'>Politics & Policy</a></li>
+                                                                                        <li class="nav-item current"><a href='http://www.usaweekend.com/content/ebook/tx_houston' target='_blank' class='externallink' >USA Weekend</a></li>
+                                                                                        <li class="nav-item current last"><a href='http://video.houstonchronicle.com/' target='_blank' class='externallink' >Video</a></li>
+                                                      </ul>
+          </div>
+                                        <div id="Sp" class="nav-links nav-pulldown">
+            <ul class="subsections-list">
+                                                            <li class="nav-item current first"><a href='/sports/texans/'>Texans</a></li>
+                                                                                        <li class="nav-item current"><a href='/sports/astros/'>Astros</a></li>
+                                                                                        <li class="nav-item current"><a href='/sports/rockets/'>Rockets</a></li>
+                                                                                        <li class="nav-item current"><a href='/sports/dynamo/'>Dynamo & Dash</a></li>
+                                                                                        <li class="nav-item current"><a href='/sports/college-sports/'>College Sports</a></li>
+                                                                                        <li class="nav-item current"><a href='/sports/hs-sports/'>HS Sports</a></li>
+                                                                                        <li class="nav-item current"><a href='/sports/outdoors/'>Outdoors</a></li>
+                                                                                        <li class="nav-item current"><a href='/sports/more-sports/'>More Sports</a></li>
+                                                                                        <li class="nav-item current last"><a href='http://seatgeek.com/houston-texas-sports-tickets' target='_blank' class='externallink' >Buy Tickets</a></li>
+                                                      </ul>
+          </div>
+                                        <div id="Bu" class="nav-links nav-pulldown">
+            <ul class="subsections-list">
+                                                            <li class="nav-item current first"><a href='/business/energy/'>Energy</a></li>
+                                                                                        <li class="nav-item current"><a href='/business/real-estate/'>Real Estate</a></li>
+                                                                                        <li class="nav-item current"><a href='/business/real-estate/deal-of-the-week/'>Deal of the Week</a></li>
+                                                                                        <li class="nav-item current"><a href='/business/medical/'>Medical</a></li>
+                                                                                        <li class="nav-item current"><a href='/business/retail/'>Retail</a></li>
+                                                                                        <li class="nav-item current"><a href='/business/technology/'>Technology</a></li>
+                                                                                        <li class="nav-item current"><a href='/business/personal-finance/'>Personal Finance</a></li>
+                                                                                        <li class="nav-item current"><a href='/business/top-workplaces/'>Top Workplaces</a></li>
+                                                                                        <li class="nav-item current"><a href='/business/chron-100/'>Chronicle 100</a></li>
+                                                                                        <li class="nav-item current last"><a href='/business/bloomberg/'>Bloomberg</a></li>
+                                                      </ul>
+          </div>
+                                        <div id="Op" class="nav-links nav-pulldown">
+            <ul class="subsections-list">
+                                                            <li class="nav-item current first"><a href='/opinion/editorials/'>Editorials</a></li>
+                                                                                        <li class="nav-item current"><a href='/opinion/outlook/'>Outlook</a></li>
+                                                                                        <li class="nav-item current"><a href='/opinion/letters/'>Letters to the Editor</a></li>
+                                                                                        <li class="nav-item current"><a href='/opinion/recommendations/'>Recommendations</a></li>
+                                                                                        <li class="nav-item current"><a href='/opinion/columnists/'>Columnists</a></li>
+                                                                                        <li class="nav-item current last"><a href='/opinion/corrections/'>Corrections</a></li>
+                                                      </ul>
+          </div>
+                                        <div id="Ar" class="nav-links nav-pulldown">
+            <ul class="subsections-list">
+                                                            <li class="nav-item current first"><a href='/entertainment/restaurants-bars/'>Restaurants & Bars</a></li>
+                                                                                        <li class="nav-item current"><a href='/entertainment/top-100-restaurants/'>Top 100 Restaurants</a></li>
+                                                                                        <li class="nav-item current"><a href='/entertainment/music/'>Music</a></li>
+                                                                                        <li class="nav-item current"><a href='/entertainment/movies/'>Movies & TV</a></li>
+                                                                                        <li class="nav-item current"><a href='/entertainment/books/'>Books</a></li>
+                                                                                        <li class="nav-item current"><a href='/entertainment/arts-theater/'>Arts & Theater</a></li>
+                                                                                        <li class="nav-item current"><a href='http://www.chron.com/life/horoscopes/' target='_blank' class='externallink' >Horoscopes</a></li>
+                                                                                        <li class="nav-item current"><a href='http://www.chron.com/entertainment/comics-games/' target='_blank' class='externallink' >Comics & Games</a></li>
+                                                                                        <li class="nav-item current last"><a href='/entertainment/restaurants-bars/barbecue/'>Barbecue</a></li>
+                                                      </ul>
+          </div>
+                                        <div id="Li" class="nav-links nav-pulldown">
+            <ul class="subsections-list">
+                                                            <li class="nav-item current first"><a href='/lifestyle/escapes/'>Escapes</a></li>
+                                                                                        <li class="nav-item current"><a href='/lifestyle/style/'>Style</a></li>
+                                                                                        <li class="nav-item current"><a href='/lifestyle/food/'>Food & Cooking</a></li>
+                                                                                        <li class="nav-item current"><a href='/lifestyle/food/recipes/'>Recipes</a></li>
+                                                                                        <li class="nav-item current"><a href='/lifestyle/wine/'>Wine</a></li>
+                                                                                        <li class="nav-item current"><a href='/lifestyle/society/'>Society</a></li>
+                                                                                        <li class="nav-item current"><a href='/lifestyle/gardening/'>Gardening</a></li>
+                                                                                        <li class="nav-item current"><a href='/lifestyle/pethousepets/'>Pethouse Pets</a></li>
+                                                                                        <li class="nav-item current"><a href='/lifestyle/houston-belief/'>Houston Belief</a></li>
+                                                                                        <li class="nav-item current"><a href='/lifestyle/health/'>Health</a></li>
+                                                                                        <li class="nav-item current last"><a href='/lifestyle/passages/'>Passages</a></li>
+                                                      </ul>
+          </div>
+                                        <div id="In" class="nav-links nav-pulldown">
+            <ul class="subsections-list">
+                                                            <li class="nav-item current first"><a href='/archive/search/'>Archives</a></li>
+                                                                                        <li class="nav-item current"><a href='/entertainment/restaurants-bars/barbecue/'>Barbecue</a></li>
+                                                                                        <li class="nav-item current"><a href='/local/gray-matters/'>Gray Matters</a></li>
+                                                                                        <li class="nav-item current"><a href='/sports/insider/'>Inside Houston Sports</a></li>
+                                                                                        <li class="nav-item current"><a href='/business/outside-the-boardroom/'>Outside the Boardroom</a></li>
+                                                                                        <li class="nav-item current"><a href='/politics/texas-take/'>Texas Take</a></li>
+                                                                                        <li class="nav-item current"><a href='/local/mostread/'>Most Read</a></li>
+                                                                                        <li class="nav-item current"><a href='/local/todayspaper/'>Today's Paper</a></li>
+                                                                                        <li class="nav-item current last"><a href='http://www.houstonchronicle.com/e-edition/' target='_blank' class='externallink' >eNewspaper</a></li>
+                                                      </ul>
+          </div>
+                    </div>
+  <!-- triple rule -->
+  <div class="solo_triple"></div>
+</div>
+
+</div> </div> <!--e /ux/chron/templates/hearst/home/navigation_main.tpl -->
+<!-- e hearst/home/navigation.tpl -->
+	<!-- templates/design/channel/premium_homepage.tpl  -->
+
+<div id="content">
+		<!-- Premium Promo -->
+		
+		
+<!-- noGen: item_digital_pass_promo -->
+		<!-- hearst/item/standalone.tpl -->
+<!-- mid:freeform.29543 -->
+<div id="uaPromo" class="ua-promo collapsed">
+
+<div class="ua-promo-top"> 
+	<p>Get <span class="em">All Digital Access</span> to Houston’s top stories and in-depth investigative journalism</p>
+	<a id="ua-promo-toggle" class="ua-btn"><span class="toggle-txt">Expand</span><span class="toggle-ico"></span></a>
+</div>
+
+<div class="ua-promo-main">
+	<div class="ua-promo-main-inner">
+	
+		<p class="ua-promo-msg">Your pass to premium digital and print coverage of Houston's latest news</p>	
+		<div class="ua-promo-tabs">
+			<div class="ua-promo-tab-content">
+				<div id="ua-promo-tab-1" class="ua-promo-tab ua-content-on" style="background:url('http://ww3.hdnux.com/photos/27/77/72/6291082/4/rawImage.png') top left no-repeat;background-size:cover;">
+					<!-- 
+						Tab template: Bulleted List 
+						Example:
+						<li><span><span class="em">BOLDED HEADER</span> followed by the rest of the description.</span></li>
+						--> 
+					<div class="tab-inner grad-left">
+						<ul class="content-list">
+							<li><span><span class="em">What’s Happening in Houston:</span> Get the full stories behind what’s going on in your neighborhood and community.</span></li>
+							<li><span><span class="em">Politics & Policy:</span> Stay informed about the current legislative topics and decisions that affect you and your family.</span></li>
+							<li class="last"><span><span class="em">Education:</span> Discover what’s impacting Houston’s educational system.</span></li>
+						</ul>
+					</div>
+					<!-- -->
+				</div>
+				<div id="ua-promo-tab-2" class="ua-promo-tab" style="background:url('http://ww4.hdnux.com/photos/27/77/72/6291115/4/rawImage.png') top left no-repeat;background-size:cover;">
+					<!-- 
+						Tab template: Bulleted List 
+						Example:
+						<li><span><span class="em">BOLDED HEADER</span> followed by the rest of the description.</span></li>
+						--> 
+					<div class="tab-inner grad-left">
+						<ul class="content-list">
+							<li><span><span class="em">Editorials:</span> Read the editorial board’s take on local and national issues.</span></li>
+							<li><span><span class="em">Columnists:</span> Reader favorites cover a variety of topics pertinent to every Houstonian.</span></li>
+							<li class="last"><span><span class="em">Letters to the Editor:</span> Find out what your community has to say!</span></li>
+						</ul>
+					</div>
+					<!-- -->
+				</div>
+				<div id="ua-promo-tab-3" class="ua-promo-tab" style="background:url('http://ww3.hdnux.com/photos/30/00/27/6292966/4/rawImage.png') top left no-repeat;background-size:cover;">
+					<!-- 
+						Tab template: Bulleted List 
+						Example:
+						<li><span><span class="em">BOLDED HEADER</span> followed by the rest of the description.</span></li>
+						--> 
+					<div class="tab-inner grad-left">
+						<ul class="content-list">
+							<li><span><span class="em">Deal of the Week:</span> Find trends and the latest news on residential and commercial real estate</span></li>
+							<li><span><span class="em">Q&A:</span> Get the inside scoop from architects, engineers, investors, property managers, builders and more.</span></li>
+							<li class="last"><span><span class="em">Columnists:</span> Our experts break down what you need to know about residential and commercial real estate in Houston.</span></li>
+						</ul>
+					</div>
+					<!-- -->
+				</div>
+				<div id="ua-promo-tab-4" class="ua-promo-tab" style="background:url('http://ww4.hdnux.com/photos/27/77/71/6291055/4/rawImage.png') top left no-repeat;background-size:cover;">
+					<!-- 
+						Tab template: Bulleted List 
+						Example:
+						<li><span><span class="em">BOLDED HEADER</span> followed by the rest of the description.</span></li>
+						--> 
+					<div class="tab-inner grad-left">
+						<ul class="content-list">
+							<li class="last"><span><span class="em">Houston Chronicle Investigations:</span> Get an in-depth look, not just sound bites. Backgrounds, documents, interviews, and photos that go beyond breaking news – it’s all brought to you by the dedicated Houston Chronicle journalists who spend the time to dig deep and bring you the full story.</span></li>
+						</ul>
+					</div>
+					<!-- -->
+				</div>
+			</div><!-- /.ua-promo-tab-content -->
+			
+			<!--
+			
+			Tab Titles: Left column list 
+			
+			-->
+			<ul class="ua-promo-tab-list">
+				<li id="ua-tab-1" class="ua-tab ua-tab-on">
+					<div class="ua-tab-inner"><div class="v-center">Local News</div></div>
+				</li>
+				<li id="ua-tab-2" class="ua-tab">
+					<div class="ua-tab-inner"><div class="v-center">Opinion</div></div>
+				</li>
+				<li id="ua-tab-3" class="ua-tab">
+					<div class="ua-tab-inner"><div class="v-center">Real Estate</div></div>
+				</li>
+				<li id="ua-tab-4" class="ua-tab">
+					<div class="ua-tab-inner"><div class="v-center">Investigative Reports</div></div>
+				</li>
+			</ul><!-- /.ua-promo-tabs -->
+		
+		
+		</div>
+		
+		<!-- Bottom  -->
+		<div class="ua-promo-footer">
+			<div class="half-left">
+<div class="devices"></div>
+				
+<div class="footer-btn"><a href=" https://myaccount.houstonchronicle.com/dssSubscribe.aspx?z=00000&pid=324" class="v-center"><span class="btn-wrap"><span class="price"><span class="symbol">$</span>2</span><span class="sup">50</span></span><span class="price-info">PER WEEK</span></a></div>
+				<span class="v-center" style="">Get <span class="em">ALL DIGITAL ACCESS</span> for only</span>
+			</div>
+			<div class="half-right">
+				<div class="footer-btn"><a href="https://myaccount.houstonchronicle.com/dssmatch.aspx" class="v-center">Activate<br /> Account</a></div>
+				<span class="v-center">Current home delivery subscriber? Activate to get your <span class="em">FREE</span> digital access!</span>
+			</div>
+		</div>
+	</div><!-- /.ua-promo-main-inner -->
+</div><!-- /.ua-promo-main -->
+
+</div><!-- /.ua-promo -->
+		
+    <div class="addToHome" data-positon="fixed">
+ <div class="popup-wrap clearfix">
+	<div class="popup">
+		<a class="close-popup"></a>
+		<div class="homelogo"></div>
+		<p class="msg ios_msg">
+							Create a shortcut to HC. Tap <a class="b-icon"></a> and then ‘Add to Home Screen’
+					</p>
+		<p class="msg not_ios_msg">
+							Create a shortcut to HC. Tap the menu button and then 'Add shortcut'
+					</p>
+		<p class="msg chrome_msg">
+							Create a shortcut to HC. Tap the menu button and then ‘Add to homescreen’
+					</p>
+	</div>
+ </div>
+ <div class="ios_arrow"></div>
+</div>			
+    <div class="zone zone-1">
+    	<div class="zone-1-top">
+        <!-- src/business/widgets/hearst/collection/widget.tpl -->
+                         <div class="hide-rss-link hdnce-e hdnce-collection-31941-premium_centerpiece"><!-- hearst/collections/premium_centerpiece.tpl -->
+<!-- collection.premium_centerpiece.31941 -->
+<div class="hst-centerpiece clearfix">
+		<!--[if !IE]> --><div class="controls"><a class="prev"><span class="icon"></span></a><a class="next"><span class="icon"></span></a></div><!-- <![endif]-->
+  		        <!--[if lte IE 9]><div class="tabcontent" id="hst_cpiece1"><![endif]-->
+    <!--[if !IE]> --><div class="tabcontent"><!-- <![endif]-->
+      
+              <div class="hide-rss-link hdnce-e hdnce-collection-47181-premium_centerpiece_tab"><!-- hearst/collections/premium_centerpiece_tab.tpl -->
+<!-- collection.premium_centerpiece_tab.47181 -->
+<ul class="illo">
+    
+                                                                            <li class="item first">
+        <div class="img-wrapper">
+            <a  
+                href="/neighborhood/woodlands/news/article/Marking-history-at-Conroe-barbershop-of-9-decades-5946019.php">
+                <h4 class="gradient">Marking history at Conroe barbershop of 9 decades</h4>
+                <img src="http://ww1.hdnux.com/photos/33/51/77/7249864/3/large_43.jpg"
+                    alt="Wayne Mills works to shine a customer's shoes at Shepard's Barbershop Tuesday December 2, 2014 in downtown Conroe, Tx. Shepard's Barbershop is the oldest continuous operating barbershop in Montgomery County. The building owned by Bob Shepard was built in 1914 and became a barbershop in 1922. Leon Apostolo who has been working  at the Shepard's since 1978 currently operates Shepard's Barbershop." />
+            </a>
+        </div>
+        <div class="detail">
+            <!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --><!-- hearst/common/blurb.tpl -->
+                			For nearly a century, generations of Montgomery County men have walked under a striped metal awning and past a rotating barber's pole to take a seat in well-worn green vinyl chairs to get a haircut. Even a young Elvis Presley is widely believed to have gotten his hair clipped at this barbershop in 1955.
+	<!-- hearst/common/blurb.tpl -->
+        </div>
+    </li>
+                                                                            <li class="item rel-links">
+        <h4>
+                            <a   href="/news/houston-texas/texas/article/How-Dickens-saved-Galveston-s-history-5938616.php">How Dickens saved Galveston's history</a>
+                        </h4>
+    </li>
+                                                                            <li class="item rel-links last">
+        <h4>
+                            <a   href="/neighborhood/fortbend/news/article/Sugar-Land-reinvents-the-refinery-site-that-5925223.php">Sugar Land reinvents the refinery site that helped build city</a>
+                        </h4>
+    </li>
+                        </ul>
+<!-- e hearst/collections/premium_centerpiece_tab.tpl -->
+</div>          </div>
+    </div>
+<!-- e hearst/collections/premium_centerpiece.tpl -->
+</div>    
+
+
+<!-- e src/business/widgets/hearst/collection/widget.tpl -->      </div>
+      <div class="narrow-only">
+      	<div class="zone zone-2b-n">
+       	 <!-- src/business/widgets/hearst/collection/widget.tpl -->
+                         <div class="hide-rss-link hdnce-e hdnce-collection-19448-premium_recent_news"><!-- hearst/collections/premium_recent_news.tpl -->
+<!-- collection.premium_recent_news.19448 -->
+
+<div class="collection single-col hc-totn">
+            <h4 class="kicker highlight color-link">Latest</h4>
+        <ul class="hc-totn-list">
+          <li class="hc-totn-item ">
+        <div class="wide-only"><!-- subitem_timestamp.tpl --><!-- 3 hours --><p class="timestamp">6:36&nbsp;PM</p><!-- e subitem_timestamp.tpl --></div>
+        <h2 class="headline"><a   href="/news/houston-texas/houston/article/4-Houstonians-charged-in-New-Jersey-home-invasions-5958900.php">4 Houstonians charged in New Jersey home invasions</a></h2>
+        <div class="narrow-only"><!-- subitem_timestamp.tpl --><!-- 3 hours --><p class="timestamp">6:36&nbsp;PM</p><!-- e subitem_timestamp.tpl --></div>
+      </li>
+          <li class="hc-totn-item ">
+        <div class="wide-only"><!-- subitem_timestamp.tpl --><!-- 3 hours --><p class="timestamp">6:33&nbsp;PM</p><!-- e subitem_timestamp.tpl --></div>
+        <h2 class="headline"><a   href="/news/houston-texas/houston/article/Border-agent-charged-with-waving-through-pot-5958877.php">Border agent charged with waving through pot shipment</a></h2>
+        <div class="narrow-only"><!-- subitem_timestamp.tpl --><!-- 3 hours --><p class="timestamp">6:33&nbsp;PM</p><!-- e subitem_timestamp.tpl --></div>
+      </li>
+          <li class="hc-totn-item ">
+        <div class="wide-only"><!-- subitem_timestamp.tpl --><!-- 3 hours --><p class="timestamp">6:18&nbsp;PM</p><!-- e subitem_timestamp.tpl --></div>
+        <h2 class="headline"><a   href="/news/houston-texas/houston/article/HPD-seeks-help-in-probe-of-woman-s-death-5958867.php">HPD seeks help in probe of woman's death</a></h2>
+        <div class="narrow-only"><!-- subitem_timestamp.tpl --><!-- 3 hours --><p class="timestamp">6:18&nbsp;PM</p><!-- e subitem_timestamp.tpl --></div>
+      </li>
+          <li class="hc-totn-item ">
+        <div class="wide-only"><!-- subitem_timestamp.tpl --><!-- 3 hours --><p class="timestamp">6:06&nbsp;PM</p><!-- e subitem_timestamp.tpl --></div>
+        <h2 class="headline"><a   href="/news/article/Perry-sets-Jan-6-for-special-elections-5958835.php">Perry sets Jan. 6 for special elections</a></h2>
+        <div class="narrow-only"><!-- subitem_timestamp.tpl --><!-- 3 hours --><p class="timestamp">6:06&nbsp;PM</p><!-- e subitem_timestamp.tpl --></div>
+      </li>
+          <li class="hc-totn-item ">
+        <div class="wide-only"><!-- subitem_timestamp.tpl --><!-- 3 hours --><p class="timestamp">6:12&nbsp;PM</p><!-- e subitem_timestamp.tpl --></div>
+        <h2 class="headline"><a   href="/news/houston-texas/houston/article/Donors-visit-family-as-kids-enjoy-Goodfellows-toys-5958839.php">Donors visit family as kids enjoy Goodfellows toys</a></h2>
+        <div class="narrow-only"><!-- subitem_timestamp.tpl --><!-- 3 hours --><p class="timestamp">6:12&nbsp;PM</p><!-- e subitem_timestamp.tpl --></div>
+      </li>
+          <li class="hc-totn-item ">
+        <div class="wide-only"><!-- subitem_timestamp.tpl --><!-- 3 hours --><p class="timestamp">7:30&nbsp;PM</p><!-- e subitem_timestamp.tpl --></div>
+        <h2 class="headline"><a   href="/business/energy/article/Bank-of-Russia-hikes-rate-to-aid-sinking-currency-5958669.php">Bank of Russia hikes rate to aid sinking currency</a></h2>
+        <div class="narrow-only"><!-- subitem_timestamp.tpl --><!-- 3 hours --><p class="timestamp">7:30&nbsp;PM</p><!-- e subitem_timestamp.tpl --></div>
+      </li>
+          <li class="hc-totn-item ">
+        <div class="wide-only"><!-- subitem_timestamp.tpl --><!-- 3 hours --><p class="timestamp">7:30&nbsp;PM</p><!-- e subitem_timestamp.tpl --></div>
+        <h2 class="headline"><a   href="/entertainment/television/article/Cosby-s-wife-defends-him-as-kind-and-generous-5958602.php">Cosby's wife defends him as 'kind' and 'generous'</a></h2>
+        <div class="narrow-only"><!-- subitem_timestamp.tpl --><!-- 3 hours --><p class="timestamp">7:30&nbsp;PM</p><!-- e subitem_timestamp.tpl --></div>
+      </li>
+          <li class="hc-totn-item ">
+        <div class="wide-only"><!-- subitem_timestamp.tpl --><!-- 3 hours --><p class="timestamp">5:34&nbsp;PM</p><!-- e subitem_timestamp.tpl --></div>
+        <h2 class="headline"><a   href="/business/energy/article/Asia-stocks-drop-on-US-slide-Sydney-siege-jitters-5957078.php">Stocks fall after biggest weekly loss since 2012</a></h2>
+        <div class="narrow-only"><!-- subitem_timestamp.tpl --><!-- 3 hours --><p class="timestamp">5:34&nbsp;PM</p><!-- e subitem_timestamp.tpl --></div>
+      </li>
+          <li class="hc-totn-item ">
+        <div class="wide-only"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></div>
+        <h2 class="headline"><a class="hdnce-e hdnce-blogPost-1532957"  href="http://blog.chron.com/sportsupdate/2014/12/former-ut-players-indicted-on-sexual-assault-charges/">Ex-Longhorns indicted on sexual assault charges</a></h2>
+        <div class="narrow-only"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></div>
+      </li>
+          <li class="hc-totn-item ">
+        <div class="wide-only"><!-- subitem_timestamp.tpl --><!-- 3 hours --><p class="timestamp">7:49&nbsp;PM</p><!-- e subitem_timestamp.tpl --></div>
+        <h2 class="headline"><a   href="/news/crime/article/Major-police-operation-unfolding-in-Sydney-5956878.php">2 hostages, gunman dead in Sydney siege</a></h2>
+        <div class="narrow-only"><!-- subitem_timestamp.tpl --><!-- 3 hours --><p class="timestamp">7:49&nbsp;PM</p><!-- e subitem_timestamp.tpl --></div>
+      </li>
+          <li class="hc-totn-item ">
+        <div class="wide-only"><!-- subitem_timestamp.tpl --><!-- 3 hours --><p class="timestamp">5:49&nbsp;PM</p><!-- e subitem_timestamp.tpl --></div>
+        <h2 class="headline"><a   href="/news/houston-texas/article/David-Temple-in-court-in-bid-for-new-trial-5957973.php">Ex-Katy football star seeks new trial in wife's slaying</a></h2>
+        <div class="narrow-only"><!-- subitem_timestamp.tpl --><!-- 3 hours --><p class="timestamp">5:49&nbsp;PM</p><!-- e subitem_timestamp.tpl --></div>
+      </li>
+          <li class="hc-totn-item ">
+        <div class="wide-only"><!-- subitem_timestamp.tpl --><!-- 3 hours --><p class="timestamp">7:57&nbsp;PM</p><!-- e subitem_timestamp.tpl --></div>
+        <h2 class="headline"><a   href="/news/crime/article/TV-station-5-dead-in-shootings-near-Philadelphia-5957791.php">6 dead, gunman on loose in Philadelphia</a></h2>
+        <div class="narrow-only"><!-- subitem_timestamp.tpl --><!-- 3 hours --><p class="timestamp">7:57&nbsp;PM</p><!-- e subitem_timestamp.tpl --></div>
+      </li>
+          <li class="hc-totn-item ">
+        <div class="wide-only"><!-- subitem_timestamp.tpl --><!-- 3 hours --><p class="timestamp">5:30&nbsp;PM</p><!-- e subitem_timestamp.tpl --></div>
+        <h2 class="headline"><a   href="/sports/cougars/article/Report-Cougars-expected-to-hire-Tom-Herman-as-5957948.php">UH expected to hire Tom Herman as next head coach</a></h2>
+        <div class="narrow-only"><!-- subitem_timestamp.tpl --><!-- 3 hours --><p class="timestamp">5:30&nbsp;PM</p><!-- e subitem_timestamp.tpl --></div>
+      </li>
+          <li class="hc-totn-item last-totn">
+        <div class="wide-only"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></div>
+        <h2 class="headline"><a class="hdnce-e hdnce-blogPost-1532548"  href="http://blog.chron.com/ultimatetexans/2014/12/case-keenum-will-return-to-the-texans/">Case Keenum will return to the Texans</a></h2>
+        <div class="narrow-only"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></div>
+      </li>
+      </ul>
+</div>
+<!-- e hearst/collections/premium_recent_news.tpl -->
+</div>    
+
+
+<!-- e src/business/widgets/hearst/collection/widget.tpl -->
+        <div class="hst-freeform hdnce-e hdnce-item-23191"><!-- mid:freeform.23191 -->
+          <script type="text/javascript">
+    $("h1.title").css("display","none");
+</script>
+<div class="solo_triple"></div>
+      </div>
+  <!-- src/business/widgets/hearst/collection/widget.tpl -->
+                         <div class="hide-rss-link hdnce-e hdnce-collection-43976-modular_list"><!-- hearst/collections/modular_list.tpl -->
+<!-- collection.modular_list.43976 -->
+    <!-- templates/design/collection/modular_list/single_zone.tpl  -->
+
+<div class="hst-modularlist">
+	<div class="header clearfix">
+        <!-- zone1 -->
+    	<!-- widgets/hearst/moduleHeader/widget.tpl -->
+                   <h2><span class="first-word">The</span> Scroll</h2>
+        <!-- e widgets/hearst/moduleHeader/widget.tpl --><!-- widgets/hearst/textField/widget.tpl -->
+<p class="exitText">Some people call them blogs. We just call them a place to dive deeply into the issues important to Houstonians:</p><!-- e widgets/hearst/textField/widget.tpl -->
+    	<!-- e zone1 -->
+	</div>
+	
+<!-- collections/modular_list_body.tpl -->
+<ul class="ml-list">
+
+    <li class="ml-item sc-gradient-bar odd local">
+                <div class="ml-text">
+            <h4><a class="hdnce-e hdnce-channel-11275"  href="/local/gray-matters/">Gray Matters</a><span class='sc-caret-right'></span></h4>
+            <!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl -->        </div>
+    </li>
+
+    <li class="ml-item sc-gradient-bar even local">
+                <div class="ml-text">
+            <h4><a class="hdnce-e hdnce-channel-12077"  href="/local/bayou-city-history/">Bayou City History</a><span class='sc-caret-right'></span></h4>
+            <!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl -->        </div>
+    </li>
+
+    <li class="ml-item sc-gradient-bar odd local">
+                <div class="ml-text">
+            <h4><a class="hdnce-e hdnce-channel-11800"  href="/local/prognosis/">Prognosis</a><span class='sc-caret-right'></span></h4>
+            <!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl -->        </div>
+    </li>
+
+    <li class="ml-item sc-gradient-bar even local">
+                <div class="ml-text">
+            <h4><a class="hdnce-e hdnce-channel-11346"  href="/politics/texas-take/">Texas Take</a><span class='sc-caret-right'></span></h4>
+            <!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl -->        </div>
+    </li>
+
+    <li class="ml-item sc-gradient-bar odd local">
+                <div class="ml-text">
+            <h4><a class="hdnce-e hdnce-channel-11820"  href="/local/education/campus-chronicles/">Campus Chronicles</a><span class='sc-caret-right'></span></h4>
+            <!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl -->        </div>
+    </li>
+
+    <li class="ml-item sc-gradient-bar even business">
+                <div class="ml-text">
+            <h4><a class="hdnce-e hdnce-channel-11182"  href="/business/outside-the-boardroom/">Outside the Boardroom</a><span class='sc-caret-right'></span></h4>
+            <!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl -->        </div>
+    </li>
+
+    <li class="ml-item sc-gradient-bar odd sports">
+                <div class="ml-text">
+            <h4><a class="hdnce-e hdnce-channel-11810"  href="/sports/insider/">Inside Houston Sports</a><span class='sc-caret-right'></span></h4>
+            <!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl -->        </div>
+    </li>
+
+    <li class="ml-item sc-gradient-bar even local">
+                <div class="ml-text">
+            <h4><a class="hdnce-e hdnce-channel-12050"  href="/local/the-observation-post/">The Observation Post</a><span class='sc-caret-right'></span></h4>
+            <!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl -->        </div>
+    </li>
+
+    <li class="ml-item sc-gradient-bar odd opinion last">
+                <div class="ml-text">
+            <h4><a class="hdnce-e hdnce-channel-8418"  href="/local/columnists/native-texan/">Native Texan</a><span class='sc-caret-right'></span></h4>
+            <!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl -->        </div>
+    </li>
+</ul>
+<!-- e modular_list_body.tpl -->
+</div>
+
+<!-- e templates/design/collection/modular_list/single_zone.tpl --><!-- e hearst/collections/modular_list.tpl -->
+</div>    
+
+
+<!-- e src/business/widgets/hearst/collection/widget.tpl -->    		</div><!-- /zone 2b narrow-->
+      </div>
+      <div class="zone-1-bottom">
+        <!-- src/business/widgets/hearst/collection/widget.tpl -->
+                         <div class="hide-rss-link hdnce-e hdnce-collection-31942-premium_blockstates"><!-- hearst/collections/premium_blockstates.tpl -->
+<!-- collection.premium_blockstates.31942 -->
+    <div class="collection prem-blockstates">
+                <div class="prem-block ">
+            <div class="inner-block">
+                <div class="img-wrap">
+                    <!-- common/display_image.tpl -->
+  <a class="without_u " href="/news/houston-texas/houston/article/Senate-battles-fuel-Cruz-coalition-5958901.php"><img src="http://ww3.hdnux.com/photos/33/60/03/7274690/3/premium_landscape.jpg" alt="Sen. Ted Cruz, speaking at a committee hearing, will have five committee assignments come January, including the Joint Economic Committee." border="0" /></a>
+  <!-- e display_image.tpl -->                </div>
+                <h2 class="headline"><a   href="/news/houston-texas/houston/article/Senate-battles-fuel-Cruz-coalition-5958901.php">Senate battles fuel Cruz coalition</a></h2>
+                <p class="blurb">
+                    <!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl -->                    <span>
+                        <!-- hearst/common/blurb.tpl -->
+    			 While the political wisdom of Sen. Ted Cruz's action last weekend will long be debated, veteran GOP strategists said there is little doubt it would play well to the conservative base he needs to cultivate if he runs for president in 2016. 
+	<!-- hearst/common/blurb.tpl -->
+                    </span>
+                </p>
+            </div><!-- /inner-block -->
+        </div><!-- /prem-block-item -->
+                <div class="prem-block last">
+            <div class="inner-block">
+                <div class="img-wrap">
+                    <!-- common/display_image.tpl -->
+  <a class="without_u " href="/news/houston-texas/houston/article/Vast-majority-of-Americans-believe-story-of-5958965.php"><img src="http://ww3.hdnux.com/photos/25/03/01/5517410/3/premium_landscape.jpg" alt="A Christmas postcard of the Nativity scene, published circa 1900.  (Photo by Popperfoto/Getty Images)" border="0" /></a>
+  <!-- e display_image.tpl -->                </div>
+                <h2 class="headline"><a   href="/news/houston-texas/houston/article/Vast-majority-of-Americans-believe-story-of-5958965.php">Vast majority of Americans believe story of Christmas miracles</a></h2>
+                <p class="blurb">
+                    <!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl -->                    <span>
+                        <!-- hearst/common/blurb.tpl -->
+    			 &nbsp; 
+ &nbsp; 
+ A survey by the Pew Research Religion and Public Life Project released Monday, though, indicates the religious content of America's favorite holiday seems secure.
+	<!-- hearst/common/blurb.tpl -->
+                    </span>
+                </p>
+            </div><!-- /inner-block -->
+        </div><!-- /prem-block-item -->
+            </div> <!-- /prem-blockstates -->
+<!-- END hearst/collections/premium_blockstates.tpl -->
+</div>    
+
+
+<!-- e src/business/widgets/hearst/collection/widget.tpl -->
+        <div class="hst-freeform hdnce-e hdnce-item-23191"><!-- mid:freeform.23191 -->
+          <script type="text/javascript">
+    $("h1.title").css("display","none");
+</script>
+<div class="solo_triple"></div>
+      </div>
+  <!-- src/business/widgets/hearst/collection/widget.tpl -->
+                         <div class="hide-rss-link hdnce-e hdnce-collection-45115-premium_blockstates"><!-- hearst/collections/premium_blockstates.tpl -->
+<!-- collection.premium_blockstates.45115 -->
+    <div class="collection prem-blockstates">
+                <div class="prem-block ">
+            <div class="inner-block">
+                <div class="img-wrap">
+                    <!-- common/display_image.tpl -->
+  <a class="without_u " href="/lifestyle/passages/milestones/article/Amputee-Katy-Hayes-is-home-for-the-holidays-5953779.php"><img src="http://ww4.hdnux.com/photos/33/57/34/7272251/3/premium_landscape.jpg" alt="Four year-old Arielle Hayes hugs her mother Katy Hayes at there home in Kingwood, Texas Wednesday December 3, 2014. Katy Hayes, and her family have returned home to Kingwood, Texas after spending over two years in Boston, Mass. waiting  for a double arm transplant. The surgery was to be performed at Boston's Brigham and Women's Hospital in what was to be the first such procedure performed in the United States." border="0" /></a>
+  <!-- e display_image.tpl -->                </div>
+                <h2 class="headline"><a   href="/lifestyle/passages/milestones/article/Amputee-Katy-Hayes-is-home-for-the-holidays-5953779.php">Kingwood amputee, family return home for the holidays</a></h2>
+                <p class="blurb">
+                    <!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl -->                    <span>
+                        <!-- hearst/common/blurb.tpl -->
+    			 Katy Hayes wriggled into her new myoelectric arms and let the decoration - a wooden star her kids made - dangle from her plastic fingertips. 
+	<!-- hearst/common/blurb.tpl -->
+                    </span>
+                </p>
+            </div><!-- /inner-block -->
+        </div><!-- /prem-block-item -->
+                <div class="prem-block last">
+            <div class="inner-block">
+                <div class="img-wrap">
+                    <!-- common/display_image.tpl -->
+  <a class="without_u " href="/local/bayou-city-history/article/Houston-s-very-own-subway-system-5953037.php"><img src="http://ww2.hdnux.com/photos/33/54/20/7259153/3/premium_landscape.jpg" alt="Sketch of a subway system for Houston, Feb. 27, 1949. Prepared by architect Garrison King. Published in the Houston Post." border="0" /></a>
+  <!-- e display_image.tpl -->                </div>
+                <h2 class="headline"><a   href="/local/bayou-city-history/article/Houston-s-very-own-subway-system-5953037.php">Houston's very own subway system</a></h2>
+                <p class="blurb">
+                    <!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl -->                    <span>
+                        <!-- hearst/common/blurb.tpl -->
+    			Bayou City History: Garrison King must have thought he had it all figured out.&nbsp;As a newly arrived resident to Houston, the architect saw traffic problems looming ahead for the city.&nbsp;If Houston wanted to join the ranks of other world-class cities like New York, London, Paris and Moscow, it would need a subway system for moving masses of people throughout the region.
+	<!-- hearst/common/blurb.tpl -->
+                    </span>
+                </p>
+            </div><!-- /inner-block -->
+        </div><!-- /prem-block-item -->
+            </div> <!-- /prem-blockstates -->
+<!-- END hearst/collections/premium_blockstates.tpl -->
+</div>    
+
+
+<!-- e src/business/widgets/hearst/collection/widget.tpl -->      </div>
+      <div id="ad_1024"></div>
+      <div id="swappedAd" class="ad-middle">
+				<div class="ad-inner">
+					<div id="AP300" class="ad_deferrable"><script type="text/javascript">/*<![CDATA[*/ hearstPlaceAd("AP300"); /*]]>*/ </script></div>
+				</div>
+			</div>
+    </div><!-- zone 1-->
+     
+    <div class="zone zone-2">
+        <!-- src/business/widgets/hearst/collection/widget.tpl -->
+                         <div class="hide-rss-link hdnce-e hdnce-collection-31943-premium_headlinelist_illus"><!-- hearst/collections/premium_headlinelist_illus.tpl -->
+<!-- collection.premium_headlinelist_illus.31943 -->
+	<!-- design/collection/premium_headlinelist_illus/default.tpl  -->
+<div class="collection prem-hl-illus">
+    <!-- hearst/collections/premium_headlinelist_illus_body.tpl -->
+<div class="prem-hl-item">
+    <h2 class="headline">
+        <a  
+            href="/news/politics/texas/article/State-senator-files-bills-to-prod-lawmakers-on-5958913.php">State senator files bills to prod lawmakers on school finance</a>
+    </h2>
+    <div class="img-wrap">
+        <!-- common/display_image.tpl -->
+<!-- e display_image.tpl -->
+    </div>
+    <p class="blurb">
+        <!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl -->        <span>
+            <!-- hearst/common/blurb.tpl -->
+    			 AUSTIN – A senior state senator who wants to force a legislative conversation on school finance this session filed a spate of bills Monday that would funnel millions more state dollars to public education.
+	<!-- hearst/common/blurb.tpl -->
+        </span>
+    </p>
+</div>
+                
+                    <!-- hearst/item/standalone.tpl -->
+<!-- mid:freeform.19891 -->
+<script>
+        if(edbTokens.productToken == null){ // Logged out
+            var eEditionLink = '/e-edition/';
+        }else{ // Logged in
+            var eEditionHostName = 'myaccount.'+window.location.host.replace('www.', '');
+            var eEditionMasterId = edbTokens.productToken.id;
+            var eEditionEmail = edbTokens.productToken.em;
+            var eEditionLink = 'http://'+eEditionHostName+'/eedition.aspx?mid='+eEditionMasterId+'&em='+eEditionEmail;
+        }
+    </script>
+    <div class="eEdition_promo">
+       <div class="promo_outer">
+           <div class="promo_inner">
+               <h4>Houston Chronicle eNewspaper</h4>
+               <p>Click to read the digital replica of the printed newspaper</p>
+           </div>
+       </div>
+    <a href="#" onclick="window.location=eEditionLink;s.tl(true,'o','E-Edition Link');return false;" class="promo_link" rel="This is a link"></a>
+    </div>
+            <div class="prem-hl-item">
+    <h2 class="headline">
+        <a  
+            href="/news/houston-texas/houston/article/New-UT-center-aims-to-help-student-athletes-5958879.php">New UT center aims to help student athletes</a>
+    </h2>
+    <div class="img-wrap">
+        <!-- common/display_image.tpl -->
+<!-- e display_image.tpl -->
+    </div>
+    <p class="blurb">
+        <!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl -->        <span>
+            <!-- hearst/common/blurb.tpl -->
+    			 As news emerged that two former Longhorn football players were indicted on sexual assault charges, the University of Texas on Monday announced the creation of a new center aimed at helping coaches keep athletes out of such trouble.
+	<!-- hearst/common/blurb.tpl -->
+        </span>
+    </p>
+</div>
+        <div class="prem-hl-item">
+    <h2 class="headline">
+        <a  
+            href="/business/outside-the-boardroom/article/U-S-crude-price-continues-to-drop-despite-5957789.php">U.S. crude price continues to drop, despite global troubles</a>
+    </h2>
+    <div class="img-wrap">
+        <!-- common/display_image.tpl -->
+  <a class="without_u " href="/business/outside-the-boardroom/article/U-S-crude-price-continues-to-drop-despite-5957789.php"><img src="http://ww1.hdnux.com/photos/33/07/05/7106884/3/premium_landscape.jpg" alt="" border="0" /></a>
+  <!-- e display_image.tpl -->
+    </div>
+    <p class="blurb">
+        <!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl -->        <span>
+            <!-- hearst/common/blurb.tpl -->
+    			 A decade ago,  fighting in Libya and a strike in Nigeria  would have sent oil prices around the world soaring, but on Monday morning news that up to 2 million barrels of oil a day may be disrupted only gave Brent crude, the international benchmark, a slight lift.
+	<!-- hearst/common/blurb.tpl -->
+        </span>
+    </p>
+</div>
+        <div class="prem-hl-item">
+    <h2 class="headline">
+        <a  
+            href="/news/transportation/article/Cash-fares-on-Metro-rail-earn-transfer-to-buses-5958695.php">Cash fares on Metro rail earn transfer to buses under proposal</a>
+    </h2>
+    <div class="img-wrap">
+        <!-- common/display_image.tpl -->
+<!-- e display_image.tpl -->
+    </div>
+    <p class="blurb">
+        <!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl -->        <span>
+            <!-- hearst/common/blurb.tpl -->
+    			 Transit officials looking to tweak fare policies on Houston area buses and trains are planning a pilot program that will enable cash-paying rail customers to transfer to buses without paying another fare. 
+	<!-- hearst/common/blurb.tpl -->
+        </span>
+    </p>
+</div>
+        <div class="prem-hl-item last">
+    <h2 class="headline">
+        <a  
+            href="/local/gray-matters/article/What-s-worth-reading-this-morning-in-Houston-5603374.php">The Texas Observer turns 60</a>
+    </h2>
+    <div class="img-wrap">
+        <!-- common/display_image.tpl -->
+  <a class="without_u " href="/local/gray-matters/article/What-s-worth-reading-this-morning-in-Houston-5603374.php"><img src="http://ww4.hdnux.com/photos/30/77/53/6552267/5/premium_landscape.jpg" alt="Texas Flag" border="0" /></a>
+  <!-- e display_image.tpl -->
+    </div>
+    <p class="blurb">
+        <!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl -->        <span>
+            <!-- hearst/common/blurb.tpl -->
+    			 A fascinating look at the birth of the Texas Observer 60 years ago through the eyes of its founding editor, then a 24-year-old liberal navigating "right-wing racist rotgut" Texas dailies and "the conservative-controlled Democratic Party" that ran state politics. 
+	<!-- hearst/common/blurb.tpl -->
+        </span>
+    </p>
+</div>
+        <!-- e hearst/collections/premium_headlinelist_illus_body.tpl --></div> <!-- /prem-hl-illus --> 
+<!-- e design/collection/premium_headlinelist_illus/default.tpl --><!-- END hearst/collections/premium_headlinelist_illus.tpl -->
+</div>    
+
+
+<!-- e src/business/widgets/hearst/collection/widget.tpl --><!-- src/business/widgets/hearst/collection/widget.tpl -->
+                         <div class="hide-rss-link hdnce-e hdnce-collection-32694-premium_homepage_exclusive"><!-- hearst/collections/premium_homepage_exclusive.tpl -->
+  <!-- design/collection/premium_homepage_exclusive/single_zone.tpl -->
+  <div class="prem-exclusive clearfix">
+    
+              <div class="content">   
+          <div class="img-container">
+        	<div class="image-bg">
+        		<img src='http://ww2.hdnux.com/photos/33/51/07/7246301/5/288x192.jpg' />
+        		<div class="gradient grad_1280"></div>
+        	</div>
+          <div class="header clearfix">
+            <!-- zone1 -->
+            <!-- widgets/hearst/moduleHeader/widget.tpl -->
+                   <h2><span class="first-word">Business</span></h2>
+        <!-- e widgets/hearst/moduleHeader/widget.tpl -->            <!-- e zone1 -->
+          </div>
+          <div class="gradient grad_1024"></div>
+        </div>
+        <div class="wrapper">
+                      <h4 class="kicker"><!-- hearst/common/author_name.tpl -->
+<p class="byline">By <a href="/author/erin-mulvaney/">Erin Mulvaney</a></p>
+<!-- e hearst/common/author_name.tpl --></h4>
+                    <h4 class="headline"><a class=""  href="/business/retail/article/Fertitta-s-Golden-Nugget-off-to-a-fast-start-in-5943752.php">Texas gamblers transform sleepy town</a></h4>
+        </div>
+      </div>
+      </div>
+<!-- e design/collection/premium_homepage_exclusive/single_zone.tpl --><!-- e hearst/collections/premium_homepage_exclusive.tpl -->
+</div>    
+
+
+<!-- e src/business/widgets/hearst/collection/widget.tpl -->      	<div id="ad_1280"></div>
+    </div><!-- /zone 2-->
+
+    <div class="wide-only">
+    	<div class="zone zone-2b">
+        <!-- src/business/widgets/hearst/collection/widget.tpl -->
+                         <div class="hide-rss-link hdnce-e hdnce-collection-19448-premium_recent_news"><!-- hearst/collections/premium_recent_news.tpl -->
+<!-- collection.premium_recent_news.19448 -->
+
+<div class="collection single-col hc-totn">
+            <h4 class="kicker highlight color-link">Latest</h4>
+        <ul class="hc-totn-list">
+          <li class="hc-totn-item ">
+        <div class="wide-only"><!-- subitem_timestamp.tpl --><!-- 3 hours --><p class="timestamp">6:36&nbsp;PM</p><!-- e subitem_timestamp.tpl --></div>
+        <h2 class="headline"><a   href="/news/houston-texas/houston/article/4-Houstonians-charged-in-New-Jersey-home-invasions-5958900.php">4 Houstonians charged in New Jersey home invasions</a></h2>
+        <div class="narrow-only"><!-- subitem_timestamp.tpl --><!-- 3 hours --><p class="timestamp">6:36&nbsp;PM</p><!-- e subitem_timestamp.tpl --></div>
+      </li>
+          <li class="hc-totn-item ">
+        <div class="wide-only"><!-- subitem_timestamp.tpl --><!-- 3 hours --><p class="timestamp">6:33&nbsp;PM</p><!-- e subitem_timestamp.tpl --></div>
+        <h2 class="headline"><a   href="/news/houston-texas/houston/article/Border-agent-charged-with-waving-through-pot-5958877.php">Border agent charged with waving through pot shipment</a></h2>
+        <div class="narrow-only"><!-- subitem_timestamp.tpl --><!-- 3 hours --><p class="timestamp">6:33&nbsp;PM</p><!-- e subitem_timestamp.tpl --></div>
+      </li>
+          <li class="hc-totn-item ">
+        <div class="wide-only"><!-- subitem_timestamp.tpl --><!-- 3 hours --><p class="timestamp">6:18&nbsp;PM</p><!-- e subitem_timestamp.tpl --></div>
+        <h2 class="headline"><a   href="/news/houston-texas/houston/article/HPD-seeks-help-in-probe-of-woman-s-death-5958867.php">HPD seeks help in probe of woman's death</a></h2>
+        <div class="narrow-only"><!-- subitem_timestamp.tpl --><!-- 3 hours --><p class="timestamp">6:18&nbsp;PM</p><!-- e subitem_timestamp.tpl --></div>
+      </li>
+          <li class="hc-totn-item ">
+        <div class="wide-only"><!-- subitem_timestamp.tpl --><!-- 3 hours --><p class="timestamp">6:06&nbsp;PM</p><!-- e subitem_timestamp.tpl --></div>
+        <h2 class="headline"><a   href="/news/article/Perry-sets-Jan-6-for-special-elections-5958835.php">Perry sets Jan. 6 for special elections</a></h2>
+        <div class="narrow-only"><!-- subitem_timestamp.tpl --><!-- 3 hours --><p class="timestamp">6:06&nbsp;PM</p><!-- e subitem_timestamp.tpl --></div>
+      </li>
+          <li class="hc-totn-item ">
+        <div class="wide-only"><!-- subitem_timestamp.tpl --><!-- 3 hours --><p class="timestamp">6:12&nbsp;PM</p><!-- e subitem_timestamp.tpl --></div>
+        <h2 class="headline"><a   href="/news/houston-texas/houston/article/Donors-visit-family-as-kids-enjoy-Goodfellows-toys-5958839.php">Donors visit family as kids enjoy Goodfellows toys</a></h2>
+        <div class="narrow-only"><!-- subitem_timestamp.tpl --><!-- 3 hours --><p class="timestamp">6:12&nbsp;PM</p><!-- e subitem_timestamp.tpl --></div>
+      </li>
+          <li class="hc-totn-item ">
+        <div class="wide-only"><!-- subitem_timestamp.tpl --><!-- 3 hours --><p class="timestamp">7:30&nbsp;PM</p><!-- e subitem_timestamp.tpl --></div>
+        <h2 class="headline"><a   href="/business/energy/article/Bank-of-Russia-hikes-rate-to-aid-sinking-currency-5958669.php">Bank of Russia hikes rate to aid sinking currency</a></h2>
+        <div class="narrow-only"><!-- subitem_timestamp.tpl --><!-- 3 hours --><p class="timestamp">7:30&nbsp;PM</p><!-- e subitem_timestamp.tpl --></div>
+      </li>
+          <li class="hc-totn-item ">
+        <div class="wide-only"><!-- subitem_timestamp.tpl --><!-- 3 hours --><p class="timestamp">7:30&nbsp;PM</p><!-- e subitem_timestamp.tpl --></div>
+        <h2 class="headline"><a   href="/entertainment/television/article/Cosby-s-wife-defends-him-as-kind-and-generous-5958602.php">Cosby's wife defends him as 'kind' and 'generous'</a></h2>
+        <div class="narrow-only"><!-- subitem_timestamp.tpl --><!-- 3 hours --><p class="timestamp">7:30&nbsp;PM</p><!-- e subitem_timestamp.tpl --></div>
+      </li>
+          <li class="hc-totn-item ">
+        <div class="wide-only"><!-- subitem_timestamp.tpl --><!-- 3 hours --><p class="timestamp">5:34&nbsp;PM</p><!-- e subitem_timestamp.tpl --></div>
+        <h2 class="headline"><a   href="/business/energy/article/Asia-stocks-drop-on-US-slide-Sydney-siege-jitters-5957078.php">Stocks fall after biggest weekly loss since 2012</a></h2>
+        <div class="narrow-only"><!-- subitem_timestamp.tpl --><!-- 3 hours --><p class="timestamp">5:34&nbsp;PM</p><!-- e subitem_timestamp.tpl --></div>
+      </li>
+          <li class="hc-totn-item ">
+        <div class="wide-only"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></div>
+        <h2 class="headline"><a class="hdnce-e hdnce-blogPost-1532957"  href="http://blog.chron.com/sportsupdate/2014/12/former-ut-players-indicted-on-sexual-assault-charges/">Ex-Longhorns indicted on sexual assault charges</a></h2>
+        <div class="narrow-only"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></div>
+      </li>
+          <li class="hc-totn-item ">
+        <div class="wide-only"><!-- subitem_timestamp.tpl --><!-- 3 hours --><p class="timestamp">7:49&nbsp;PM</p><!-- e subitem_timestamp.tpl --></div>
+        <h2 class="headline"><a   href="/news/crime/article/Major-police-operation-unfolding-in-Sydney-5956878.php">2 hostages, gunman dead in Sydney siege</a></h2>
+        <div class="narrow-only"><!-- subitem_timestamp.tpl --><!-- 3 hours --><p class="timestamp">7:49&nbsp;PM</p><!-- e subitem_timestamp.tpl --></div>
+      </li>
+          <li class="hc-totn-item ">
+        <div class="wide-only"><!-- subitem_timestamp.tpl --><!-- 3 hours --><p class="timestamp">5:49&nbsp;PM</p><!-- e subitem_timestamp.tpl --></div>
+        <h2 class="headline"><a   href="/news/houston-texas/article/David-Temple-in-court-in-bid-for-new-trial-5957973.php">Ex-Katy football star seeks new trial in wife's slaying</a></h2>
+        <div class="narrow-only"><!-- subitem_timestamp.tpl --><!-- 3 hours --><p class="timestamp">5:49&nbsp;PM</p><!-- e subitem_timestamp.tpl --></div>
+      </li>
+          <li class="hc-totn-item ">
+        <div class="wide-only"><!-- subitem_timestamp.tpl --><!-- 3 hours --><p class="timestamp">7:57&nbsp;PM</p><!-- e subitem_timestamp.tpl --></div>
+        <h2 class="headline"><a   href="/news/crime/article/TV-station-5-dead-in-shootings-near-Philadelphia-5957791.php">6 dead, gunman on loose in Philadelphia</a></h2>
+        <div class="narrow-only"><!-- subitem_timestamp.tpl --><!-- 3 hours --><p class="timestamp">7:57&nbsp;PM</p><!-- e subitem_timestamp.tpl --></div>
+      </li>
+          <li class="hc-totn-item ">
+        <div class="wide-only"><!-- subitem_timestamp.tpl --><!-- 3 hours --><p class="timestamp">5:30&nbsp;PM</p><!-- e subitem_timestamp.tpl --></div>
+        <h2 class="headline"><a   href="/sports/cougars/article/Report-Cougars-expected-to-hire-Tom-Herman-as-5957948.php">UH expected to hire Tom Herman as next head coach</a></h2>
+        <div class="narrow-only"><!-- subitem_timestamp.tpl --><!-- 3 hours --><p class="timestamp">5:30&nbsp;PM</p><!-- e subitem_timestamp.tpl --></div>
+      </li>
+          <li class="hc-totn-item last-totn">
+        <div class="wide-only"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></div>
+        <h2 class="headline"><a class="hdnce-e hdnce-blogPost-1532548"  href="http://blog.chron.com/ultimatetexans/2014/12/case-keenum-will-return-to-the-texans/">Case Keenum will return to the Texans</a></h2>
+        <div class="narrow-only"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></div>
+      </li>
+      </ul>
+</div>
+<!-- e hearst/collections/premium_recent_news.tpl -->
+</div>    
+
+
+<!-- e src/business/widgets/hearst/collection/widget.tpl -->
+        <div class="hst-freeform hdnce-e hdnce-item-23191"><!-- mid:freeform.23191 -->
+          <script type="text/javascript">
+    $("h1.title").css("display","none");
+</script>
+<div class="solo_triple"></div>
+      </div>
+  <!-- src/business/widgets/hearst/collection/widget.tpl -->
+                         <div class="hide-rss-link hdnce-e hdnce-collection-43976-modular_list"><!-- hearst/collections/modular_list.tpl -->
+<!-- collection.modular_list.43976 -->
+    <!-- templates/design/collection/modular_list/single_zone.tpl  -->
+
+<div class="hst-modularlist">
+	<div class="header clearfix">
+        <!-- zone1 -->
+    	<!-- widgets/hearst/moduleHeader/widget.tpl -->
+                   <h2><span class="first-word">The</span> Scroll</h2>
+        <!-- e widgets/hearst/moduleHeader/widget.tpl --><!-- widgets/hearst/textField/widget.tpl -->
+<p class="exitText">Some people call them blogs. We just call them a place to dive deeply into the issues important to Houstonians:</p><!-- e widgets/hearst/textField/widget.tpl -->
+    	<!-- e zone1 -->
+	</div>
+	
+<!-- collections/modular_list_body.tpl -->
+<ul class="ml-list">
+
+    <li class="ml-item sc-gradient-bar odd local">
+                <div class="ml-text">
+            <h4><a class="hdnce-e hdnce-channel-11275"  href="/local/gray-matters/">Gray Matters</a><span class='sc-caret-right'></span></h4>
+            <!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl -->        </div>
+    </li>
+
+    <li class="ml-item sc-gradient-bar even local">
+                <div class="ml-text">
+            <h4><a class="hdnce-e hdnce-channel-12077"  href="/local/bayou-city-history/">Bayou City History</a><span class='sc-caret-right'></span></h4>
+            <!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl -->        </div>
+    </li>
+
+    <li class="ml-item sc-gradient-bar odd local">
+                <div class="ml-text">
+            <h4><a class="hdnce-e hdnce-channel-11800"  href="/local/prognosis/">Prognosis</a><span class='sc-caret-right'></span></h4>
+            <!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl -->        </div>
+    </li>
+
+    <li class="ml-item sc-gradient-bar even local">
+                <div class="ml-text">
+            <h4><a class="hdnce-e hdnce-channel-11346"  href="/politics/texas-take/">Texas Take</a><span class='sc-caret-right'></span></h4>
+            <!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl -->        </div>
+    </li>
+
+    <li class="ml-item sc-gradient-bar odd local">
+                <div class="ml-text">
+            <h4><a class="hdnce-e hdnce-channel-11820"  href="/local/education/campus-chronicles/">Campus Chronicles</a><span class='sc-caret-right'></span></h4>
+            <!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl -->        </div>
+    </li>
+
+    <li class="ml-item sc-gradient-bar even business">
+                <div class="ml-text">
+            <h4><a class="hdnce-e hdnce-channel-11182"  href="/business/outside-the-boardroom/">Outside the Boardroom</a><span class='sc-caret-right'></span></h4>
+            <!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl -->        </div>
+    </li>
+
+    <li class="ml-item sc-gradient-bar odd sports">
+                <div class="ml-text">
+            <h4><a class="hdnce-e hdnce-channel-11810"  href="/sports/insider/">Inside Houston Sports</a><span class='sc-caret-right'></span></h4>
+            <!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl -->        </div>
+    </li>
+
+    <li class="ml-item sc-gradient-bar even local">
+                <div class="ml-text">
+            <h4><a class="hdnce-e hdnce-channel-12050"  href="/local/the-observation-post/">The Observation Post</a><span class='sc-caret-right'></span></h4>
+            <!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl -->        </div>
+    </li>
+
+    <li class="ml-item sc-gradient-bar odd opinion last">
+                <div class="ml-text">
+            <h4><a class="hdnce-e hdnce-channel-8418"  href="/local/columnists/native-texan/">Native Texan</a><span class='sc-caret-right'></span></h4>
+            <!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl -->        </div>
+    </li>
+</ul>
+<!-- e modular_list_body.tpl -->
+</div>
+
+<!-- e templates/design/collection/modular_list/single_zone.tpl --><!-- e hearst/collections/modular_list.tpl -->
+</div>    
+
+
+<!-- e src/business/widgets/hearst/collection/widget.tpl -->    	</div><!-- /zone 2b-->
+		</div>
+    
+    <div class="zone zone-3">
+        <!-- src/business/widgets/hearst/collection/widget.tpl -->
+                         <div class="hide-rss-link hdnce-e hdnce-collection-19452-premium_featured_articles"><!-- collections/premium_featured_articles.tpl -->
+<!-- collection.premium_featured_articles.19452 -->
+<div class="collection hc-section-hl">
+            
+        
+            <div class="sec-hl-item first-sec-item">
+                            
+            <div class="header">
+                <h4 class="kicker-link">
+                    <a class="hdnce-e hdnce-channel-8002"
+                        href="/lifestyle/">Lifestyle</a>
+                </h4>
+            </div>
+                <!-- common/display_image.tpl -->
+  <a class="without_u " href="/life/article/Not-cookie-cutter-Couple-move-to-Pearland-and-5958557.php"><img src="http://ww2.hdnux.com/photos/33/60/05/7274817/5/premium_landscape.jpg" alt="The couple's nursery for their son, Isaac, is painted a dark navy blue, a shade father Yano Garcia believes Isaac will fully appreciate when he's older.﻿" border="0" /></a>
+  <!-- e display_image.tpl -->
+        <h2 class="headline">
+            <a  
+                href="/life/article/Not-cookie-cutter-Couple-move-to-Pearland-and-5958557.php">Pearland couple put their stamp on the suburban home</a>
+        </h2>
+        <!-- hearst/common/author_name.tpl -->
+<p class="byline">By <a href="/author/alyson-ward/">Alyson Ward</a></p>
+<!-- e hearst/common/author_name.tpl -->        <p class="blurb"><!-- hearst/common/blurb.tpl -->
+    			 Outside, their home looks just like any other on the block - a two-story brick house, garage in front.
+	<!-- hearst/common/blurb.tpl --></p>
+        <div class="footer">
+        
+                    
+            <a href="/life/article/Not-cookie-cutter-Couple-move-to-Pearland-and-5958557.php"
+                class="continues " >
+                Continues in Lifestyle</a>
+                </div>
+    </div>
+            
+        
+                            <div class="sec-hl-item">
+                                        
+            <div class="header">
+                <h4 class="kicker-link">
+                    <a class="hdnce-e hdnce-channel-11275"
+                        href="/local/gray-matters/">Gray Matters</a>
+                </h4>
+            </div>
+                <!-- common/display_image.tpl -->
+  <a class="without_u " href="/local/gray-matters/article/December-graduation-and-the-things-I-want-to-5957963.php"><img src="http://ww1.hdnux.com/photos/33/57/55/7273336/4/premium_landscape.jpg" alt="" border="0" /></a>
+  <!-- e display_image.tpl -->
+        <h2 class="headline">
+            <a  
+                href="/local/gray-matters/article/December-graduation-and-the-things-I-want-to-5957963.php">The taillights of despair</a>
+        </h2>
+        <!-- hearst/common/author_name.tpl -->
+<p class="byline">By Doni M. Wilson, for the Houston Chronicle</p>
+<!-- e hearst/common/author_name.tpl -->        <p class="blurb"><!-- hearst/common/blurb.tpl -->
+    			 It's Saturday, 63 degrees in December, and I am flying down the highway to Houston Baptist University.
+	<!-- hearst/common/blurb.tpl --></p>
+        <div class="footer">
+        
+                    
+            <a href="/local/gray-matters/article/December-graduation-and-the-things-I-want-to-5957963.php"
+                class="continues " >
+                Continues in Local</a>
+                </div>
+    </div>
+            
+        
+                            <div class="sec-hl-item last-sec-item">
+                                        
+            <div class="header">
+                <h4 class="kicker-link">
+                    <a class="hdnce-e hdnce-channel-8029"
+                        href="/business/real-estate/">Real Estate</a>
+                </h4>
+            </div>
+                <!-- common/display_image.tpl -->
+  <a class="without_u " href="/business/real-estate/article/Pitching-River-Oaks-chic-on-the-streets-of-5953969.php"><img src="http://ww4.hdnux.com/photos/33/55/62/7265467/5/premium_landscape.jpg" alt="A cocktail party hosted by Oliver McMillan at a brownstone on Sunday, Dec. 7, 2014 in New York, N.Y. The developer of River Oaks District, is marketing the upscale mixed-use project under construction on Westheimer, to national and international retailers from NYC where they all have a presence. ( Rich Schultz / Chronicle)" border="0" /></a>
+  <!-- e display_image.tpl -->
+        <h2 class="headline">
+            <a  
+                href="/business/real-estate/article/Pitching-River-Oaks-chic-on-the-streets-of-5953969.php">Pitching River Oaks chic on Manhattan streets</a>
+        </h2>
+        <!-- hearst/common/author_name.tpl -->
+<p class="byline">By <a href="/author/nancy-sarnoff/">Nancy Sarnoff</a></p>
+<!-- e hearst/common/author_name.tpl -->        <p class="blurb"><!-- hearst/common/blurb.tpl -->
+    			 NEW YORK - Dene Oliver strides into the cocktail party fashionably late.
+	<!-- hearst/common/blurb.tpl --></p>
+        <div class="footer">
+        
+                    
+            <a href="/business/real-estate/article/Pitching-River-Oaks-chic-on-the-streets-of-5953969.php"
+                class="continues " >
+                Continues in Business</a>
+                </div>
+    </div>
+    </div>
+<!-- e premium_featured_articles.tpl -->
+</div>    
+
+
+<!-- e src/business/widgets/hearst/collection/widget.tpl -->
+        <div class="hst-freeform hdnce-e hdnce-item-23191"><!-- mid:freeform.23191 -->
+          <script type="text/javascript">
+    $("h1.title").css("display","none");
+</script>
+<div class="solo_triple"></div>
+      </div>
+  <!-- src/business/widgets/hearst/collection/widget.tpl -->
+                         <div class="hide-rss-link hdnce-e hdnce-collection-26098-premium_featured_articles"><!-- collections/premium_featured_articles.tpl -->
+<!-- collection.premium_featured_articles.26098 -->
+<div class="collection hc-section-hl">
+            
+        
+            <div class="sec-hl-item first-sec-item">
+                            
+            <div class="header">
+                <h4 class="kicker-link">
+                    <a class="hdnce-e hdnce-channel-8019"
+                        href="/entertainment/movies/">Movies & TV</a>
+                </h4>
+            </div>
+                <!-- common/display_image.tpl -->
+  <a class="without_u " href="/entertainment/movies/article/Hobbit-concludes-at-last-in-the-best-of-the-5958572.php"><img src="http://ww2.hdnux.com/photos/33/60/05/7274853/3/premium_landscape.jpg" alt="MARTIN FREEMAN as Bilbo in the fantasy adventure &quot;THE HOBBIT: THE BATTLE OF THE FIVE ARMIES,&quot; a production of New Line Cinema and Metro-Goldwyn-Mayer Pictures (MGM), released by Warner Bros. Pictures and MGM." border="0" /></a>
+  <!-- e display_image.tpl -->
+        <h2 class="headline">
+            <a  
+                href="/entertainment/movies/article/Hobbit-concludes-at-last-in-the-best-of-the-5958572.php">'Hobbit' concludes, at last, in the best of the drawn-out trilogy</a>
+        </h2>
+        <!-- hearst/common/author_name.tpl -->
+<p class="byline">By Mick LaSalle</p>
+<!-- e hearst/common/author_name.tpl -->        <p class="blurb"><!-- hearst/common/blurb.tpl -->
+    			 Now that it's over, finally, we can see that all three parts of "The Hobbit" told a very simple story: Bilbo, a hobbit, is recruited by dwarves to help them steal treasure from a dragon.
+	<!-- hearst/common/blurb.tpl --></p>
+        <div class="footer">
+        
+                    
+            <a href="/entertainment/movies/article/Hobbit-concludes-at-last-in-the-best-of-the-5958572.php"
+                class="continues " >
+                Continues in Arts & Entertainment</a>
+                </div>
+    </div>
+            
+        
+                            <div class="sec-hl-item">
+                                        
+            <div class="header">
+                <h4 class="kicker-link">
+                    <a class="hdnce-e hdnce-channel-8003"
+                        href="/sports/texans/">Texans</a>
+                </h4>
+            </div>
+                <!-- common/display_image.tpl -->
+  <a class="without_u " href="/sports/texans/article/Texans-defense-did-almost-everything-it-could-5957156.php"><img src="http://ww1.hdnux.com/photos/33/57/30/7271944/5/premium_landscape.jpg" alt="Safety Kendrick Lewis provides the Texans with their only touchdown of the day by diving past Colts running back Trent Richardson to finish off a 27-yard interception return." border="0" /></a>
+  <!-- e display_image.tpl -->
+        <h2 class="headline">
+            <a  
+                href="/sports/texans/article/Texans-defense-did-almost-everything-it-could-5957156.php">Texans' defense did almost everything it could</a>
+        </h2>
+        <!-- hearst/common/author_name.tpl -->
+<p class="byline">By <a href="/author/john-mcclain/">John McClain</a></p>
+<!-- e hearst/common/author_name.tpl -->        <p class="blurb"><!-- hearst/common/blurb.tpl -->
+    			 INDIANAPOLIS - If you need proof that the Texans played their best defensive game in their 13-year rivalry with Indianapolis, consider this: Only once have the Texans allowed fewer than the 17 points the Colts scored Sunday.
+	<!-- hearst/common/blurb.tpl --></p>
+        <div class="footer">
+        
+                    
+            <a href="/sports/texans/article/Texans-defense-did-almost-everything-it-could-5957156.php"
+                class="continues " >
+                Continues in Sports</a>
+                </div>
+    </div>
+            
+        
+                            <div class="sec-hl-item last-sec-item">
+                                        
+            <div class="header">
+                <h4 class="kicker-link">
+                    <a class="hdnce-e hdnce-channel-8008"
+                        href="/local/houston/">Houston</a>
+                </h4>
+            </div>
+                <!-- common/display_image.tpl -->
+  <a class="without_u " href="/news/houston-texas/houston/article/Paramedics-house-calls-highlight-of-new-health-5956946.php"><img src="http://ww3.hdnux.com/photos/33/57/20/7271486/3/premium_landscape.jpg" alt="Paramedic Nivea Wheat regularly visits﻿ William Jones as a part of ﻿ a ﻿Montgomery County Hospital District program called &quot;Community Paramedicine.&quot; ﻿" border="0" /></a>
+  <!-- e display_image.tpl -->
+        <h2 class="headline">
+            <a  
+                href="/news/houston-texas/houston/article/Paramedics-house-calls-highlight-of-new-health-5956946.php">Paramedics' house calls highlight new health care approach</a>
+        </h2>
+        <!-- hearst/common/author_name.tpl -->
+<p class="byline">By <a href="/author/mihir-zaveri/">Mihir Zaveri</a></p>
+<!-- e hearst/common/author_name.tpl -->        <p class="blurb"><!-- hearst/common/blurb.tpl -->
+    			 William Jones sat on a brown sofa in his small, cluttered living room, as a paramedic rolled up his jean leg and pulled down his sock, revealing a limb swollen with fluid.
+	<!-- hearst/common/blurb.tpl --></p>
+        <div class="footer">
+        
+                    
+            <a href="/news/houston-texas/houston/article/Paramedics-house-calls-highlight-of-new-health-5956946.php"
+                class="continues " >
+                Continues in Local</a>
+                </div>
+    </div>
+    </div>
+<!-- e premium_featured_articles.tpl -->
+</div>    
+
+
+<!-- e src/business/widgets/hearst/collection/widget.tpl -->
+        <div class="hst-freeform hdnce-e hdnce-item-23191"><!-- mid:freeform.23191 -->
+          <script type="text/javascript">
+    $("h1.title").css("display","none");
+</script>
+<div class="solo_triple"></div>
+      </div>
+  <!-- src/business/widgets/hearst/collection/widget.tpl -->
+                         <div class="hide-rss-link hdnce-e hdnce-collection-44203-premium_featured_articles"><!-- collections/premium_featured_articles.tpl -->
+<!-- collection.premium_featured_articles.44203 -->
+<div class="collection hc-section-hl">
+            
+        
+            <div class="sec-hl-item first-sec-item">
+                            
+            <div class="header">
+                <h4 class="kicker-link">
+                    <a class="hdnce-e hdnce-channel-8034"
+                        href="/lifestyle/food/">Food & Cooking</a>
+                </h4>
+            </div>
+                <!-- common/display_image.tpl -->
+  <a class="without_u " href="/life/food/article/Triniti-restaurant-launches-buzzy-new-Sanctuari-5953417.php"><img src="http://ww3.hdnux.com/photos/33/55/36/7264158/5/premium_landscape.jpg" alt="Laurie Sheddan Harvey oversees operations at Sanctuari, the new bar located  inside Triniti restaurant.﻿" border="0" /></a>
+  <!-- e display_image.tpl -->
+        <h2 class="headline">
+            <a  
+                href="/life/food/article/Triniti-restaurant-launches-buzzy-new-Sanctuari-5953417.php">Triniti restaurant launches buzzy new Sanctuari Bar</a>
+        </h2>
+        <!-- hearst/common/author_name.tpl -->
+<p class="byline">By <a href="/author/greg-morago/">Greg Morago</a></p>
+<!-- e hearst/common/author_name.tpl -->        <p class="blurb"><!-- hearst/common/blurb.tpl -->
+    			 Laurie Sheddan Harvey can administer to what ails you.
+	<!-- hearst/common/blurb.tpl --></p>
+        <div class="footer">
+        
+                    
+            <a href="/life/food/article/Triniti-restaurant-launches-buzzy-new-Sanctuari-5953417.php"
+                class="continues " >
+                Continues in Lifestyle</a>
+                </div>
+    </div>
+            
+        
+                            <div class="sec-hl-item">
+                                        
+            <div class="header">
+                <h4 class="kicker-link">
+                    <a class="hdnce-e hdnce-channel-10924"
+                        href="/life/travel/weekend-getaways/">Weekend Getaways</a>
+                </h4>
+            </div>
+                <!-- common/display_image.tpl -->
+  <a class="without_u " href="/life/travel/weekend-getaways/article/Buzzy-new-haunts-and-natural-beauty-in-5953594.php"><img src="http://ww3.hdnux.com/photos/33/55/45/7264614/3/premium_landscape.jpg" alt="Accessible walking trails wind through the Ruby M. Mize Azalea Garden, a colorful spot for hiking on crisp fall and early winter days in Nacogdoches." border="0" /></a>
+  <!-- e display_image.tpl -->
+        <h2 class="headline">
+            <a  
+                href="/life/travel/weekend-getaways/article/Buzzy-new-haunts-and-natural-beauty-in-5953594.php">New haunts and natural beauty in Nacogdoches</a>
+        </h2>
+        <!-- hearst/common/author_name.tpl -->
+<p class="byline">By Jennifer Babisak</p>
+<!-- e hearst/common/author_name.tpl -->        <p class="blurb"><!-- hearst/common/blurb.tpl -->
+    			 NACOGDOCHES - The "oldest town in Texas" is experiencing a fresh influx of culture as new restaurants and shops enliven the brick streets in and around its charming historic district.
+	<!-- hearst/common/blurb.tpl --></p>
+        <div class="footer">
+        
+                    
+            <a href="/life/travel/weekend-getaways/article/Buzzy-new-haunts-and-natural-beauty-in-5953594.php"
+                class="continues " >
+                Continues in Travel</a>
+                </div>
+    </div>
+            
+        
+                            <div class="sec-hl-item last-sec-item">
+                                        
+            <div class="header">
+                <h4 class="kicker-link">
+                    <a class="hdnce-e hdnce-channel-8039"
+                        href="/lifestyle/style/">Style</a>
+                </h4>
+            </div>
+                <!-- common/display_image.tpl -->
+  <a class="without_u " href="/life/style/fashion/article/From-Santa-s-sled-Luxury-gifts-for-the-holiday-5953466.php"><img src="http://ww1.hdnux.com/photos/33/55/41/7264352/3/premium_landscape.jpg" alt="Your cash and credit looks just a bit more cool in this Tommy Hilfiger Schoolboy Striped Double Billfold Wallet. Bring on the varsity blues; $48 at Macy s." border="0" /></a>
+  <!-- e display_image.tpl -->
+        <h2 class="headline">
+            <a  
+                href="/life/style/fashion/article/From-Santa-s-sled-Luxury-gifts-for-the-holiday-5953466.php">From Santa's sled: Luxury gifts for the holiday</a>
+        </h2>
+        <!-- hearst/common/author_name.tpl -->
+<p class="byline">By <a href="/author/greg-morago/">Greg Morago</a></p>
+<!-- e hearst/common/author_name.tpl -->        <p class="blurb"><!-- hearst/common/blurb.tpl -->
+    			 The best present is one that you want yourself, particularly if it's something indulgent.
+	<!-- hearst/common/blurb.tpl --></p>
+        <div class="footer">
+        
+                    
+            <a href="/life/style/fashion/article/From-Santa-s-sled-Luxury-gifts-for-the-holiday-5953466.php"
+                class="continues " >
+                Continues in Lifestyle</a>
+                </div>
+    </div>
+    </div>
+<!-- e premium_featured_articles.tpl -->
+</div>    
+
+
+<!-- e src/business/widgets/hearst/collection/widget.tpl -->    </div><!-- /zone-3-->
+
+    <div class="bottom-wrap">
+        <div class="bottom-wrap-outer">
+          <div class="bottom-wrap-inner">  
+            <div class="zone zone-4">
+                <!-- src/business/widgets/hearst/collection/widget.tpl -->
+                         <div class="hide-rss-link hdnce-e hdnce-collection-19609-premium_featured_columnists"><!-- hearst/collections/premium_featured_columnists.tpl -->
+<!-- collection.premium_featured_columnists.19609 -->
+
+<div class="collection hc-ft-columnists">
+    <div class="aboveRule">
+        <div class="extended_wrapper">
+            
+                                            <div class="header">
+                    <h4 class="kicker highlight color-link">Featured Columnists</h4>
+                </div>
+                                                                            <!-- hearst/common/columnist_home.tpl -->
+<div class="ftc-item-wrap odd">
+    <div class="ftc-item ftc-first">
+                                        
+                                <div class="ftc-item-head" style="background: url(http://ww1.hdnux.com/photos/16/12/32/3712684/8/premium_columnists_portrait.png) bottom right no-repeat;
+            background-size: contain; behavior: url(/css/hdn/backgroundsize.htc);
+            -ms-behavior: url(/css/hdn/backgroundsize.htc);">
+                        <h3 class="ftc-name">
+                <a href="/author/ken-hoffman/">
+                <span class="first-name">Ken</span> Hoffman</a>
+            </h3>
+                    </div>
+        <div class="ftc-content">
+            <h2 class="headline">
+                <a href="/life/columnists/hoffman/article/Hoffman-Domino-s-Smart-Slices-sound-healthy-but-5958567.php">The slice of pizza you can't have</a>
+            </h2>
+            <p class="blurb"><!-- hearst/common/blurb.tpl -->
+    			 Here's a terrific fast-food product … that I can't review for the Drive-Thru Gourmet. 
+ Because you can't buy it. 
+ It's not illegal - it's just not for sale. 
+ Even though I think it would be a huge hit, especially with smart people.
+	<!-- hearst/common/blurb.tpl --></p>
+        </div>
+        <div class="footer">
+        
+                    
+            
+                            <a href="/life/columnists/hoffman/article/Hoffman-Domino-s-Smart-Slices-sound-healthy-but-5958567.php" class="continues continues-in">Continues in Featured Columnists</a>
+                        <a href="/life/columnists/hoffman/article/Hoffman-Domino-s-Smart-Slices-sound-healthy-but-5958567.php" class="continues continue-reading">Continue Reading</a>
+                </div>
+    </div>
+</div>
+<!-- e hearst/common/columnist_home.tpl -->                                                                                                                <!-- hearst/common/columnist_home.tpl -->
+<div class="ftc-item-wrap even">
+    <div class="ftc-item">
+                                        
+                                <div class="ftc-item-head" style="background: url(http://ww1.hdnux.com/photos/15/56/73/3600076/4/premium_columnists_portrait.png) bottom right no-repeat;
+            background-size: contain; behavior: url(/css/hdn/backgroundsize.htc);
+            -ms-behavior: url(/css/hdn/backgroundsize.htc);">
+                        <h3 class="ftc-name">
+                <a href="/author/jay-lee/">
+                <span class="first-name">Jay</span> Lee</a>
+            </h3>
+                    </div>
+        <div class="ftc-content">
+            <h2 class="headline">
+                <a href="/business/jaylee/article/PC-may-be-able-to-find-the-cause-of-its-own-sleep-5958210.php">PC may be able to find the cause of its own sleep disorder</a>
+            </h2>
+            <p class="blurb"><!-- hearst/common/blurb.tpl -->
+    			 Q. My HP desktop system recently developed a quirk. When I leave it idle or select Sleep, the machine powers down instead of entering sleep mode as it used to do correctly. I have checked the selection of power options, which appear to be correct, and I have reset the defaults to original settings to no avail. 
+	<!-- hearst/common/blurb.tpl --></p>
+        </div>
+        <div class="footer">
+        
+                    
+            
+                            <a href="/business/jaylee/article/PC-may-be-able-to-find-the-cause-of-its-own-sleep-5958210.php" class="continues continues-in">Continues in Featured Columnists</a>
+                        <a href="/business/jaylee/article/PC-may-be-able-to-find-the-cause-of-its-own-sleep-5958210.php" class="continues continue-reading">Continue Reading</a>
+                </div>
+    </div>
+</div>
+<!-- e hearst/common/columnist_home.tpl -->                                                                                <div class="ft-columnistsSpacer">
+                    <div class="solo_triple"></div>
+                </div>
+                                                                <!-- hearst/common/columnist_home.tpl -->
+<div class="ftc-item-wrap odd">
+    <div class="ftc-item">
+                                        
+                                <div class="ftc-item-head" style="background: url(http://ww1.hdnux.com/photos/21/63/72/4669108/3/premium_columnists_portrait.jpg) bottom right no-repeat;
+            background-size: contain; behavior: url(/css/hdn/backgroundsize.htc);
+            -ms-behavior: url(/css/hdn/backgroundsize.htc);">
+                        <h3 class="ftc-name">
+                <a href="/author/jerome-solomon/">
+                <span class="first-name">Jerome</span> Solomon</a>
+            </h3>
+                    </div>
+        <div class="ftc-content">
+            <h2 class="headline">
+                <a href="/sports/columnists/solomon/article/Texans-season-lost-when-team-mishandled-QB-5957105.php">Texans' season lost when team mishandled QB situation</a>
+            </h2>
+            <p class="blurb"><!-- hearst/common/blurb.tpl -->
+    			 INDIANAPOLIS - The record books will say the Texans lost to the Colts on Dec. 14, 2014. 
+ The final score of 17-10 wasn't determined until Sunday, but the Texans lost this game a long time ago.
+	<!-- hearst/common/blurb.tpl --></p>
+        </div>
+        <div class="footer">
+        
+                    
+            
+                            <a href="/sports/columnists/solomon/article/Texans-season-lost-when-team-mishandled-QB-5957105.php" class="continues continues-in">Continues in Featured Columnists</a>
+                        <a href="/sports/columnists/solomon/article/Texans-season-lost-when-team-mishandled-QB-5957105.php" class="continues continue-reading">Continue Reading</a>
+                </div>
+    </div>
+</div>
+<!-- e hearst/common/columnist_home.tpl -->                                                                                                                <!-- hearst/common/columnist_home.tpl -->
+<div class="ftc-item-wrap even">
+    <div class="ftc-item ftc-last">
+                                        
+                                <div class="ftc-item-head" style="background: url(http://ww2.hdnux.com/photos/31/65/70/6774333/4/premium_columnists_portrait.jpg) bottom right no-repeat;
+            background-size: contain; behavior: url(/css/hdn/backgroundsize.htc);
+            -ms-behavior: url(/css/hdn/backgroundsize.htc);">
+                        <h3 class="ftc-name">
+                <a href="/author/peggy-fikac/">
+                <span class="first-name">Peggy</span> Fikac</a>
+            </h3>
+                    </div>
+        <div class="ftc-content">
+            <h2 class="headline">
+                <a href="/news/columnists/fikac/article/Fikac-Perry-re-introducing-himself-to-a-national-5956859.php">Perry re-introducing himself to a national audience</a>
+            </h2>
+            <p class="blurb"><!-- hearst/common/blurb.tpl -->
+    			 AUSTIN - When Gov. Rick Perry announced last year that he wouldn't run for re-election, one loyalist tweeted her biggest regret was that Perry didn't sign off with a cheeky "adios" and an "LL Cool J-style microphone drop."
+	<!-- hearst/common/blurb.tpl --></p>
+        </div>
+        <div class="footer">
+        
+                    
+            
+                            <a href="/news/columnists/fikac/article/Fikac-Perry-re-introducing-himself-to-a-national-5956859.php" class="continues continues-in">Continues in Featured Columnists</a>
+                        <a href="/news/columnists/fikac/article/Fikac-Perry-re-introducing-himself-to-a-national-5956859.php" class="continues continue-reading">Continue Reading</a>
+                </div>
+    </div>
+</div>
+<!-- e hearst/common/columnist_home.tpl -->                                                                                <div class="ft-columnistsSpacer" style="display:none">
+                    <div class="solo_triple"></div>
+                </div>
+                                    </div>
+    </div>
+</div>
+<!-- e premium_featured_columnists.tpl -->
+</div>    
+
+
+<!-- e src/business/widgets/hearst/collection/widget.tpl --><!-- src/business/widgets/hearst/collection/widget.tpl -->
+                         
+<!-- noGen: collection_c485d2ed5cc4ce64fcccca710c7a0bb7_37636 -->
+    
+
+
+<!-- e src/business/widgets/hearst/collection/widget.tpl -->  
+            </div><!-- /zone-4-->
+            
+            <div class="zone zone-5">   
+                <!-- src/business/widgets/hearst/collection/widget.tpl -->
+                         <div class="hide-rss-link hdnce-e hdnce-collection-19454-premium_exclusive_content"><!-- collections/premium_exclusive_content.tpl -->
+<!-- collection.premium_exclusive_content.19454 -->
+<div class="collection hc-ft-stories">
+        <div class="fts-item">
+        
+            
+        <h4 class="kicker">Houston</h4>
+            <div class="wide-only">
+            <h2 class="headline nosubhead">
+                <a  
+                    href="/news/houston-texas/houston/article/hed-5957028.php?cmpid=hcec">Valero seeks special deal for its Manchester refinery</a>
+            </h2>
+                    </div>
+        <div class="img-wrap">
+        <!-- common/display_image.tpl -->
+  <a class="without_u " href="/news/houston-texas/houston/article/hed-5957028.php?cmpid=hcec"><img src="http://ww1.hdnux.com/photos/33/57/24/7271720/3/premium_landscape.jpg" alt="A teenage girl walks around the track of a park across the street from the Valero refinery Monday, Aug. 4, 2014, in the Manchester neighborhood of Houston. An Environmental Protection Agency rule to require refineries to monitor emissions of benzene is to be publicly debated Tuesday near Houston. (AP Photo/Pat Sullivan)" border="0" /></a>
+  <!-- e display_image.tpl -->
+        </div>
+        <div class="narrowest-only">
+            <h2 class="headline nosubhead">
+                <a  
+                    href="/news/houston-texas/houston/article/hed-5957028.php?cmpid=hcec">Valero seeks special deal for its Manchester refinery</a>
+            </h2>
+                    </div>
+        <!-- hearst/common/author_name.tpl -->
+<p class="byline">By <a href="/author/mike-morris/?cmpid=hcec">Mike Morris</a></p>
+<!-- e hearst/common/author_name.tpl -->        <p class="blurb">
+            <!-- hearst/common/blurb.tpl -->
+    			 Companies routinely relocate to the city or state that lures them with the best tax break, but Valero wants Houston City Council to give its eastside refinery the same treatment without having to pack its bags.
+	<!-- hearst/common/blurb.tpl -->
+        </p>
+        <div class="footer">
+        
+                    
+            <a href="/news/houston-texas/houston/article/hed-5957028.php?cmpid=hcec" class="continues "
+                >Continues in Local</a>
+                </div>
+    </div>
+        <div class="fts-item fts-last">
+        
+            <h4 class="kicker">The Heights</h4>
+            <div class="wide-only">
+            <h2 class="headline nosubhead">
+                <a  
+                    href="/business/real-estate/article/Family-putting-historic-property-to-modern-use-5950761.php?cmpid=hcec">Clock tower will get up and running again</a>
+            </h2>
+                    </div>
+        <div class="img-wrap">
+        <!-- common/display_image.tpl -->
+  <a class="without_u " href="/business/real-estate/article/Family-putting-historic-property-to-modern-use-5950761.php?cmpid=hcec"><img src="http://ww4.hdnux.com/photos/33/54/10/7258683/5/premium_landscape.jpg" alt="The historic Heights Clock Tower, 611 West 22nd St., is shown Wednesday, Nov. 26, 2014, in Houston. ( Melissa Phillip / Houston Chronicle )" border="0" /></a>
+  <!-- e display_image.tpl -->
+        </div>
+        <div class="narrowest-only">
+            <h2 class="headline nosubhead">
+                <a  
+                    href="/business/real-estate/article/Family-putting-historic-property-to-modern-use-5950761.php?cmpid=hcec">Clock tower will get up and running again</a>
+            </h2>
+                    </div>
+        <!-- hearst/common/author_name.tpl -->
+<p class="byline">By <a href="/author/erin-mulvaney/?cmpid=hcec">Erin Mulvaney</a></p>
+<!-- e hearst/common/author_name.tpl -->        <p class="blurb">
+            <!-- hearst/common/blurb.tpl -->
+    			 Time stands still on the century-old clock atop a historic industrial building in the Heights.
+	<!-- hearst/common/blurb.tpl -->
+        </p>
+        <div class="footer">
+        
+                    
+            <a href="/business/real-estate/article/Family-putting-historic-property-to-modern-use-5950761.php?cmpid=hcec" class="continues "
+                >Continues in Business</a>
+                </div>
+    </div>
+</div>
+<!-- e premium_exclusive_content.tpl -->
+</div>    
+
+
+<!-- e src/business/widgets/hearst/collection/widget.tpl -->            </div><!-- /zone-5-->
+          </div><!-- /bottom-wrap-inner -->
+        </div><!-- /bottom-wrap-outer -->       
+    </div><!-- /bottom-wrap -->     
+    
+</div><!-- /content -->     
+
+<div class="ad-bottom">
+    <div class="ad-inner">
+        <div id="BP300" class="ad_deferrable"><script type="text/javascript">/*<![CDATA[*/ hearstPlaceAd("BP300"); /*]]>*/</script></div>    </div>
+</div>
+
+</div><!-- /container -->     
+
+<!-- e templates/design/channel/premium_homepage.tpl  -->
+	<!-- src/business/templates/hearst/common/footer.tpl -->
+                      <!-- templates/hearst/home/viafouraFooterJS.tpl -->
+<script>
+        
+    // This must be correctly defined before Viafoura is called
+    // or else we run the risk of tainting the comments for a particular url
+    $('meta[property="og:url"]').attr('content', location.href);
+    
+    
+    
+    (function (v, s) {
+        v.type = 'text/javascript';
+        v.async = !0;
+        v.src = location.protocol !== 'https:' ? '//cdn.viafoura.net/vf.js' : '//api.viafoura.com/app/js/vf.js';
+        s.parentNode.insertBefore(v, s)
+    }(document.createElement('script'), document.getElementsByTagName('script')[0]));
+
+
+    $(document).ready(function () {
+        if ($('#hdn-vf-comments').length) {HDN.authOnReady('premium',true)}
+        HDN.getBlogCommentCount();
+    });
+    
+</script>
+<!-- e templates/hearst/home/viafouraFooterJS.tpl -->
+        
+<!-- hearst/item/standalone.tpl -->
+<!-- mid:freeform.11335 -->
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<div class="hc_sitefooter">
+<div class="lock1200">
+   <div class="hcsf_header">
+    <a href="http://www.houstonchronicle.com"><img src="/img/modules/sitefooter/footer_logo.png" /></a>
+    <div class="toplink"><a href="#container"><span class="topLinkText">Top</span></a></div>
+   </div>
+   <ul class="hcsf_links">
+    <li class="hcsf_about"> 
+     <h3>About</h3>
+     <ul class="hcsf_linklist">
+      <li><a href="http://www.hearst.com/newspapers/houston-chronicle.php">Our Company</a></li>
+      <li><a class="ad-choice" href="http://www.aboutads.info/choices/"><span class="ad-link"></span> Ad Choices </a></li>
+      <li><a href="https://hearstnewspaperscareerlinks.silkroad.com/">Careers</a></li> 
+      <li><a href="/terms_of_use/">Terms of Use</a></li>
+      <li><a href="http://hearstmediahouston.com/">Advertising</a></li>
+      <li><a href="/privacy_policy">Privacy Policy</a></li>
+      <li><a href="/privacy_policy#your_rights">Your Privacy Rights</a></li>
+                                                <li><a href="/privacy_policy/#caprivacyrights">Your California Privacy Rights</a></li>
+     </ul>
+    </li>
+   </ul>
+   <ul class="hcsf_links">
+    <li class="hcsf_contact"> 
+     <h3>Contact</h3>
+     <ul class="hcsf_linklist">
+      <li><a href="/archive/">Archives</a></li>
+      <li><a href="/customer_service">Customer Service</a></li>
+      <li><a href="/faq">Frequently Asked Questions</a></li>
+      <li><a href="/newsroom_contacts">Newsroom Contacts</a></li>
+     </ul>
+    </li>
+   </ul>
+   <ul class="hcsf_links">
+    <li class="hcsf_connect desktop"> 
+     <h3>Connect</h3>
+     <ul class="hcsf_linklist">
+      <li><a class="fb-link" href="https://www.facebook.com/chroncom">Facebook</a></li>
+      <li><a class="twtr-link" href="https://twitter.com/houstonchron">Twitter</a></li> 
+      <li><a class="li-link" href="http://www.linkedin.com/company/houston-chronicle">LinkedIn</a></li>
+      <li><a class="pin-link" href="http://pinterest.com/houstonchron/">Pinterest</a></li>
+      <li><a class="gplus-link" href="https://plus.google.com/+houstonchronicle">Google+</a></li>
+     </ul>
+    </li>
+    <li class="hcsf_connect mobile"> 
+     <h3>Connect</h3>
+     <ul class="hcsf_linklist">
+      <li><a class="fb-link" href="https://www.facebook.com/chroncom"></a></li>
+      <li><a class="twtr-link" href="https://twitter.com/houstonchron"></a></li> 
+      <li><a class="li-link" href="http://www.linkedin.com/company/houston-chronicle"></a></li>
+      <li><a class="pin-link" href="http://pinterest.com/houstonchron/"></a></li>
+      <li><a class="gplus-link" href="https://plus.google.com/+houstonchronicle"></a></li>
+     </ul>
+    </li>
+   </ul>
+   <div class="copyright-wrap">
+    <img src="/img/modules/sitefooter/hst_copy_logo.png" />
+    <p class="copyright">&copy; 2013 Hearst Newspapers, LLC.</p>
+   </div>
+</div>
+  </div>
+
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-3.newrelic.com","licenseKey":"3fd06eaac1","applicationID":"147157","transactionName":"MwQBZ0RXV0NTVhBdDgpONkFfGVBeVlAcGhEMEQ==","queueTime":0,"applicationTime":32,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-476.min.js"}</script></body></html>
+<!-- e src/business/templates/hearst/common/footer.tpl -->

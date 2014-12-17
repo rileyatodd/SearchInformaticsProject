@@ -1,0 +1,1687 @@
+<!DOCTYPE html>
+<!--[if IE 6]><html id="bleacherreport" class="ie ie6 ie67 no-js team add-background-color " lang="en" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/"><![endif]--><!--[if IE 7]><html id="bleacherreport" class="ie ie67 ie7 ie78 no-js team add-background-color " lang="en" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/"><![endif]--><!--[if IE 8]><html id="bleacherreport" class="ie ie78 ie8 ie89 no-js team add-background-color " lang="en" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/"><![endif]--><!--[if IE 9]><html id="bleacherreport" class="ie ie89 ie9 no-js team add-background-color " lang="en" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/"><![endif]--><!--[if gt IE 9]><!--><html id="bleacherreport" class=" no-js team add-background-color " lang="en" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/"><!--<![endif]-->
+
+
+
+<head>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-5.newrelic.com","queueTime":0,"errorBeacon":"bam.nr-data.net","agentToken":null,"ttGuid":"","transactionName":"Jl0PRBZcVVVRQUpWRBFbAlwBQBZKXFwSGFcXRghTCFY=","applicationTime":250,"agent":"js-agent.newrelic.com/nr-476.min.js","licenseKey":"d0c34cbdc7","userAttributes":"HhARQg1AVGZdV0cNFAFUVVFVBFwJAQoGUVdWUAcEXAsKWgYHUFVTVAcEU1YCWwlSUlwABlEHAgIHVVtaBwVSVlVVBAcIAgtcAVYCAFMUSRANXwNUXF1rWgsVDEdUAFwXVhtE","applicationID":"1841291"}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UQ8UUF5XCQEJVQ=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(5),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(f){"stack"in f&&(t(1),t(4),"addEventListener"in window&&t(2),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(3),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:8,2:5,3:9,4:7,5:20,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],4:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(2);t("loader").features.stn=!0,t(1),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:6,2:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:20,2:21,ee:"QJf3ax",gos:"7eSDFh"}],6:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:21,2:20,ee:"QJf3ax"}],7:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:21,2:20,ee:"QJf3ax"}],8:[function(t,e){function n(t,e,n){var r=t[0];"string"==typeof r&&(r=new Function(r)),t[0]=o(r,"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:21,2:20,ee:"QJf3ax"}],9:[function(t,e){function n(){c.inPlace(this,d,"fn-")}function r(t,e){c.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}var i=t("ee").create(),a=t(1),s=t(2),c=s(i),f=s(a),u=window.XMLHttpRequest,d=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=i,window.XMLHttpRequest=function(t){var e=new u(t);try{i.emit("new-xhr",[],e),f.inPlace(e,["addEventListener","removeEventListener"],"-",function(t,e){return e}),e.addEventListener("readystatechange",n,!1)}catch(r){try{i.emit("internal-error",[r])}catch(o){}}return e},window.XMLHttpRequest.prototype=u.prototype,c.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),i.on("send-xhr-start",r),i.on("open-xhr-start",r)},{1:5,2:21,ee:"QJf3ax"}],10:[function(t){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=e(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(n.cat=d.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r,this.startTime])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=e(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",[e])}catch(r){}}};for(var u=0;c>u;u++)n.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:11,3:9,4:5,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],11:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){p.proto="https"===d.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=c.createElement("script");e.src=p.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,c=s.document,f="addEventListener",u="attachEvent",d=(""+location).split("?")[0],p=e.exports={offset:i(),origin:d,features:{}};c[f]?(c[f]("DOMContentLoaded",o,!1),s[f]("load",n,!1)):(c[u]("onreadystatechange",r),s[u]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],20:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],21:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s,t))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:20,ee:"QJf3ax"}]},{},["G9z0Bl",3,10,4]);</script>
+    <!--[if lte IE 8]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+	  <script>var _sf_startpt=(new Date()).getTime()</script>
+
+ 	<meta charset="utf-8">
+	<title>Tom Savage Flashes Deep Ball, but Fails to Inspire Confidence in Texans Debut | Bleacher Report</title>
+
+			<meta name="keywords" content="Football, NFL, AFC South, Houston Texans, Opinion">
+	
+			<meta name="description" content="Houston Texans news, rumors, scores, schedules, predictions, picks against the spread, free agent updates, power rankings, mock drafts and more">
+	
+    
+
+<meta property="og:description" content="On a day where  Browns  quarterback  Johnny      Manziel       flamed out before a live audience of the entire television world, a prevailing sentiment among  Texans  fans I observed ...">
+<meta property="og:image" content="http://img.bleacherreport.net/img/images/photos/003/197/759/hi-res-d78c6105a5a52e98ea5a705a195a4d94_crop_exact.jpg?w=1500&h=1500&q=85">
+<meta property="og:site_name" content="Bleacher Report">
+<meta property="og:title" content="Savage Fails to Inspire Confidence in Texans Debut">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://bleacherreport.com/articles/2300919-tom-savage-flashes-deep-ball-but-fails-to-inspire-confidence-in-texans-debut">
+    
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:description" content="On a day where  Browns  quarterback  Johnny      Manziel       flamed out before a live audience of the entire television world, a prevailing sentiment among  Texans  fans I observed ...">
+<meta name="twitter:app:name:iphone" content="Team Stream by Bleacher Report">
+<meta name="twitter:app:id:iphone" content="418075935">
+<meta name="twitter:app:name:ipad" content="Team Stream by Bleacher Report">
+<meta name="twitter:app:id:ipad" content="484725748">
+<meta name="twitter:app:name:googleplay" content="Team Stream by Bleacher Report">
+<meta name="twitter:app:id:googleplay" content="com.bleacherreport.android.teamstream">
+
+
+
+		        <link rel="alternate" media="only screen and (max-width: 640px)" href="http://m.bleacherreport.com/articles/2300919-tom-savage-flashes-deep-ball-but-fails-to-inspire-confidence-in-texans-debut">
+        <link rel="canonical" href="http://bleacherreport.com/articles/2300919-tom-savage-flashes-deep-ball-but-fails-to-inspire-confidence-in-texans-debut">
+    
+	<link href="http://static2.bleacherreport.net/pkg/stylesheets/a22277e6_redesign_common.css" media="screen" rel="stylesheet" />
+
+	
+
+	<style>
+		.add-background-color, .entry .entry-header .timestamp, .shop-module { background-color: #001831; }.module .header h3 {border-top-color: #001831;}
+	</style>
+    <style>
+ 	 		            .team-color-background, .team-color-background--sudo:before { background-color: #001831!important; }
+            .team-color-text { color: #001831!important; }
+            .team-color-border, blockquote { border-color: #001831!important;}
+            .team-color-border-top-sudo:after, .team-color-border-top-sudo:before  { border-top-color: #001831!important; }
+            .team-color-border-right-sudo:after, .team-color-border-right-sudo:before  { border-right-color: #001831!important; }
+		
+        
+            
+                #page-header .header-logo {
+                    background-image: url("http://cdn.bleacherreport.net/images/team_logos/73x73/houston_texans.png");
+                }
+
+                @media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
+                    #page-header .header-logo { background-image: url("http://cdn.bleacherreport.net/images/team_logos/146x146/houston_texans.png"); }
+                }
+            
+        
+    </style>
+
+            <script src="http://static2.bleacherreport.net/pkg/javascripts/794eb9db_redesign_top.js"></script>
+    
+	<script>
+		BR.optimizely_sampling = true;
+		BR.optimizely_cookie = false;
+		BR.front_page_survey = false;
+		BR.PageData          = {"article":2300919,"buzz":"top100","division":"AFC_South","event":"none","fantasy":"none","gp_flag":"","league":"NFL","render_strategy":"article","site":"NFL","tags":"Football,NFL,AFC_South,Houston_Texans,Opinion","team":"Houston_Texans","url_hierarchy_level_1":"bleacherreport.com/articles","writer":"Rivers McCown","zone":"article"};
+    BR.funnel_country    = "USA";
+    BR.QueryString = (function (key) {
+			var vars = {}, hash;
+			var q = document.URL.split('?')[1];
+			if(q != undefined) {
+				q = q.split('&');
+				for(var i = 0; i < q.length; i++){
+					hash = q[i].split('=');
+					vars[hash[0]] = hash[1];
+				}
+			}
+			return vars
+		}());
+	</script>
+
+    
+    
+
+<script id=optimizely-loader>
+!function(d, s, id, url, en) {
+  if(d.getElementById(id)) {
+    if(d.createEvent) {
+      var e = d.createEvent('Events'); e.initEvent(en, true, true); d.dispatchEvent(e);
+    } else {
+      d.documentElement[en] = 'true';
+    }
+  } else {
+    var js = d.createElement(s), fjs = d.getElementsByTagName(s)[0]; js.id = id; js.src = url;
+    if(d.createEvent) {
+      js.onload = function() { var e = d.createEvent('Events'); e.initEvent(en, true, true); d.dispatchEvent(e); };
+    } else {
+      js.onreadystatechange = function() { if(js.readyState === 'loaded') { d.documentElement[en] = 'true'; } };
+    }
+    fjs.parentNode.insertBefore(js, fjs);
+  }
+}(document, 'script', 'optimizely-pscript', '//cdn.optimizely.com/js/261889587.js', 'optimizelyLoaded');
+</script>
+
+
+
+  <script>
+  var googletag = googletag || {};
+
+  googletag.cmd = googletag.cmd || [];
+
+  BR.Ads              = BR.Ads || {};
+  BR.Ads.mobile       = false;
+  BR.Ads.sitePlatform = 'desk';
+  BR.Ads.slots        = [];
+
+      BR.Ads.articleId = 2300919;
+  
+  
+      BR.Ads.embedded = false;
+  
+  
+      BR.Ads.layout = 'default';
+  
+  
+      BR.Ads.social = false;
+  
+      BR.Ads.tagId = 152;
+  
+  </script>
+
+
+	    <link href="http://static2.bleacherreport.net/pkg/stylesheets/59977fa4_redesign_newsletter_signup.css" media="screen" rel="stylesheet" />
+    
+      <link href="http://static2.bleacherreport.net/pkg/stylesheets/8138fa88_redesign_social_promos.css" media="screen" rel="stylesheet" />
+    
+    
+  <link rel='alternate' href="android-app://com.bleacherreport.android.teamstream/teamstream/article/bleacherreport.com/articles/2300919-tom-savage-flashes-deep-ball-but-fails-to-inspire-confidence-in-texans-debut">
+  
+    <link href="http://static2.bleacherreport.net/pkg/stylesheets/ae8b86a5_desktop_articles.css" media="screen" rel="stylesheet" />
+    
+        <link href="http://static2.bleacherreport.net/pkg/stylesheets/4633108f_redesign_articles.css" media="screen" rel="stylesheet" />
+    
+    <link href="http://static2.bleacherreport.net/pkg/stylesheets/b55a8b96_redesign_print.css" media="print" rel="stylesheet" />
+
+    
+    
+    
+<meta property="article:publisher" content="http://www.facebook.com/bleacherreport">
+
+
+<meta name="og:locale" content="en_UK">
+<meta name="twitter:image" content="http://img.bleacherreport.net/img/images/photos/003/197/759/hi-res-d78c6105a5a52e98ea5a705a195a4d94_crop_exact.jpg?w=200&h=200&q=85">
+<meta name="twitter:site" content="@bleacherreport">
+<meta name="twitter:title" content="Savage Fails to Inspire Confidence in Texans Debut">
+<meta name="twitter:url" content="http://bleacherreport.com/articles/2300919-tom-savage-flashes-deep-ball-but-fails-to-inspire-confidence-in-texans-debut">
+
+<meta name="pubdate" content="2014-12-15T16:03:37-05:00">
+<meta name="author" content="Rivers McCown">
+<meta name="section" content="Team">
+
+<meta name="twitter:app:url:iphone" content="teamstream://article/m.bleacherreport.com/articles/2300919-tom-savage-flashes-deep-ball-but-fails-to-inspire-confidence-in-texans-debut">
+<meta name="twitter:app:url:ipad" content="teamstream://article/m.bleacherreport.com/articles/2300919-tom-savage-flashes-deep-ball-but-fails-to-inspire-confidence-in-texans-debut">
+<meta name="twitter:app:url:googleplay" content="http://m.bleacherreport.com/articles/2300919-tom-savage-flashes-deep-ball-but-fails-to-inspire-confidence-in-texans-debut">
+
+<link rel="alternate" type="application/json+oembed" href="http://bleacherreport.com/oembed?url=http%3A%2F%2Fbleacherreport.com%2Farticles%2F2300919-tom-savage-flashes-deep-ball-but-fails-to-inspire-confidence-in-texans-debut&format=json">
+<link rel="alternate" type="application/xml+oembed" href="http://bleacherreport.com/oembed?url=http%3A%2F%2Fbleacherreport.com%2Farticles%2F2300919-tom-savage-flashes-deep-ball-but-fails-to-inspire-confidence-in-texans-debut&format=xml">
+
+          <style>
+      #page-header { background-image: url("http://cdn.bleacherreport.net/images/team_logos/148x148/houston_texans.png"); }
+      @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5) {
+        #page-header { background-image: url("http://cdn.bleacherreport.net/images/team_logos/296x296/houston_texans.png"); background-size: 148px 148px; }
+      }
+    </style>
+  
+
+    
+    <!-- "article_data_script/2300919/desktop" background cached 12/15/2014 at 10:34 PM -->
+    <script>
+        (function() {
+            BR.articleData = BR.articleData || {};
+
+            $.extend(BR.articleData, {"containsVideo":false,"author":{"rankLabel":"Featured Columnist","customByline":"AFC South Lead Writer","isColumnist":true,"isLeadWriter":true,"title":"Featured Columnist I","avatar":"http://cdn.bleacherreport.net/images_root/users/photos/006/152/179/1468677_10100206412115523_1517520094_n.jpg?1406738741","name":"Rivers McCown","twitterName":null,"permalink":"6152179-rivers-mccown"},"dynamicHook":"Savage Fails to Inspire Confidence in Texans Debut","primaryPhoto":null,"renderStrategy":"article","title":"Tom Savage Flashes Deep Ball, but Fails to Inspire Confidence in Texans Debut","updatedAt":"2014-12-15T17:33:18-05:00","createdAt":"2014-12-15T16:03:37-05:00","authorId":6152179,"id":2300919,"permalink":"2300919-tom-savage-flashes-deep-ball-but-fails-to-inspire-confidence-in-texans-debut"}, {
+                media_slots: BR.articleData.media_slots || {}
+            });
+
+            if(window.location.hash && window.location.hash.indexOf('/page/') !== -1)  {
+                // url hash struct => #articles/#####-article-title/page/num
+                BR.articleData.page = window.location.hash.split('/')[3] || 1;
+            }
+
+            
+                 BR.articleData.team_color = "001831"
+            
+        })();
+    </script>
+
+
+<script>
+    $.extend(BR.articleData, {"commentsDisabled":null,"commentsCount":"2","page":1,"hitCount":1818});
+</script>
+
+
+    <script>
+        BR.can_edit = false;
+        BR.can_recache = false;
+    </script>
+
+	<link href="http://static.bleacherreport.net/favicon.ico" rel="shortcut icon">
+	<link href="http://static.bleacherreport.net/apple-touch-icon.png" rel="apple-touch-icon">
+
+		  <link href="http://bleacherreport.com/articles/feed?tag_id=152" rel="alternate" title="Houston Texans RSS feed" type="application/rss+xml" />
+	
+	<link href="http://bleacherreport.com/articles/feed" rel="alternate" title="Bleacher Report RSS feed" type="application/rss+xml" />
+
+				<meta property="fb:app_id" content="135174055162">
+	
+	<meta name="aol-te-auth" content="1c424580-0f86-4d9b-88b2-bc8c0d029d4c">
+	<meta name="verify-v1" content="+Ntj422Jc4V03qgBqLYbF3LMvrursV0X2btn2Zoqn9w=">
+	<meta name="robots" content="NOODP">
+</head>
+
+<body>
+<script>
+  var _comscore = _comscore || [];
+	var _gaq      = _gaq || [];
+	var _qevents  = _qevents || [];
+</script>
+
+
+		<script>
+  	BR.analyticsLoggedIn = false;
+  	BR.analyticsPageType = "article";
+		BR.partnerDomain     = "";
+  	BR.teamTrackerPath   = "";
+
+		 BR.teamTrackerPath = "/nfl"+"/articles/2300919-tom-savage-flashes-deep-ball-but-fails-to-inspire-confidence-in-texans-debut";   	BR.teamTrackerPath += "?pagetype=" + BR.analyticsPageType + "&logged_in=" + BR.analyticsLoggedIn;
+  	if(BR.partnerDomain) { BR.teamTrackerPath += "&external_domain=" + BR.partnerDomain; }
+		try { var author_id = BR.Article.getArticleAuthorId(); if(author_id) { BR.teamTrackerPath += "&author=" + author_id; } } catch(exception) {}
+
+		_gaq.push(
+		  ['_setAccount', 'UA-432905-1'],
+		  ['_addIgnoredOrganic', 'bleacherreport.com'], ['_addIgnoredOrganic', 'www.bleacherreport.com'], ['_addIgnoredOrganic', 'bleacherreport'], ['_addIgnoredOrganic', 'Bleacher Report'], ['_addIgnoredOrganic', 'the bleacher report'],
+		  ['_setCustomVar', 1, "blue_green", "control", 2],
+		  ['_setCustomVar', 2, "page_type", "article", 3]
+			, ['_setCustomVar', 3, "team_tracker_path", "/nfl/houston-texans", 3]									, ['_setCustomVar', 5, "author_id", "6152179", 3]		);
+
+		if(BR.PageData.league) {
+			_gaq.push(['_setPageGroup', '1', BR.PageData.league]);
+			if(BR.PageData.team && BR.PageData.team != 'none') {
+				_gaq.push(['_setPageGroup', '2', BR.PageData.team]);
+			}
+		} else {
+							_gaq.push(['_setPageGroup', '1', 'Other Article']);
+					}
+
+					_gaq.push(["_trackPageview"]);
+		
+		
+		
+		
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+	  })();
+	</script>
+
+		<script>
+	  _comscore.push({ c1: "2", c2: "6246855", c4: 'http://bleacherreport.com/articles/2300919-tom-savage-flashes-deep-ball-but-fails-to-inspire-confidence-in-texans-debut', c5: 'NFL', c6: ''});
+	  (function() {
+	    var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+	    s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+	    el.parentNode.insertBefore(s, el);
+	  })();
+	</script>
+			<noscript>
+		  <img src="http://b.scorecardresearch.com/p?c1=2&amp;c2=6246855&amp;c4=bleacherreport.com/articles/2300919-tom-savage-flashes-deep-ball-but-fails-to-inspire-confidence-in-texans-debut&amp;cv=2.0&amp;cj=1" width="0" height="0" alt="">
+		</noscript>
+	
+		<script>
+		_qevents.push( { qacct:"p-3a-0o8sJKz6Ek"} );
+		(function() {
+	  	var elem = document.createElement('script');
+	  	elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+	  	elem.async = true;
+	   	elem.type = "text/javascript";
+	   	var scpt = document.getElementsByTagName('script')[0];
+	   	scpt.parentNode.insertBefore(elem, scpt);
+	  })();
+	</script>
+	<noscript>
+	  <img src="http://pixel.quantserve.com/pixel/p-3a-0o8sJKz6Ek.gif" width="1" height="1" alt="">
+	</noscript>
+
+				<script>
+			if (BR.articleData) {
+				__reach_config = {
+					pid: '4fe3518fa782f32da10007b7',
+					date: BR.articleData.createdAt,
+											title: 'Tom Savage Flashes Deep Ball, but Fails to Inspire Confidence in Texans Debut | Bleacher Report',
+										url: 'http://bleacherreport.com/articles/2300919-tom-savage-flashes-deep-ball-but-fails-to-inspire-confidence-in-texans-debut',
+					iframe: true,
+					authors: BR.PageData.writer ? [escape(BR.PageData.writer)] : [],
+					channels: BR.PageData.tags.split(','),
+					tags: BR.PageData.tags.split(',')
+				};
+				(function(){
+					var s = document.createElement('script');
+					s.async = true;
+					s.type = 'text/javascript';
+					s.src = document.location.protocol + '//d8rk54i4mohrb.cloudfront.net/js/reach.js';
+					(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(s);
+				})();
+			}
+		</script>
+	
+  				<script>
+			window.Krux||((Krux=function(){Krux.q.push(arguments);}).q=[]);
+			(function(){
+				function retrieve(n){
+					var m, k='kx'+n;
+					if (window.localStorage) {
+						return window.localStorage[k] || "";
+					} else if (navigator.cookieEnabled) {
+						m = document.cookie.match(k+'=([^;]*)');
+						return (m && unescape(m[1])) || "";
+					} else {
+						return '';
+					}
+				}
+				Krux.user = retrieve('user');
+				Krux.segments = retrieve('segs') && retrieve('segs').split(',') || [];
+			})();
+		</script>
+		<script class="kxct" data-id="ITb9Q03y" data-timing="async" data-version="1.9" type="text/javascript">
+		  window.Krux||((Krux=function(){Krux.q.push(arguments)}).q=[]);
+		  (function(){
+		    var k=document.createElement('script');k.type='text/javascript';k.async=true;
+		    var m,src=(m=location.href.match(/\bkxsrc=([^&]+)/))&&decodeURIComponent(m[1]);
+		    k.src = /^https?:\/\/([^\/]+\.)?krxd\.net(:\d{1,5})?\//i.test(src) ? src : src === "disable" ? "" :
+		      (location.protocol==="https:"?"https:":"http:")+"//cdn.krxd.net/controltag?confid=ITb9Q03y"
+		  ;
+		    var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(k,s);
+		  }());
+		</script>
+	
+	<div id="hat">
+		<div class="inner">
+      							<div id="news-alerts">
+					<span></span>
+					<div id="news-alerts-container"></div>
+				</div>
+			
+			<ul id="user-menu">
+				<li id="search-container">
+										<form action="/search">
+						<span id="search-glass"></span>
+						<input id="search" name="q" placeholder="Search" class="medium-text text">
+						<input type="submit" id="search-submit" value="Search">
+					</form>
+					<img alt="" id="search-indicator" src="http://static2.bleacherreport.net/images/redesign/common/loading/small.gif?1418680844" />
+				</li>
+
+														<li id="login2"><a href="/login" id="log_in_link">Login</a></li>
+					<li id="signup"><a href="/signup" id="sign_up_link">Sign Up</a></li>
+							</ul>
+		</div>
+	</div>
+
+
+
+
+	
+<div id="header" class="logo-tall usa">
+	<div class="inner">
+        <a href="/" id="header-logo">
+      Bleacher Report
+      
+    </a>
+  	
+	
+	<link href="http://static2.bleacherreport.net/pkg/stylesheets/fe8953b2_redesign_scores_turner.css" media="screen" rel="stylesheet" />
+	<section id="scoreline"></section>
+
+    <div id="nav-wrapper" class="clear">
+    <div id="nav-container">
+	
+							<ul id="nav">
+  <li id="nav-item-home" class="home"><a href="/" title="Home" rel="home"><span class="br-sprite br-sprite--logo-red">Home</span></a></li>
+  <li class="nfl" data-sub-nav-position="left"><a href="/nfl">NFL</a></li>
+  <li class="college-football"><a href="/college-football">CFB</a></li>
+  <li class="mlb" data-sub-nav-position="left"><a href="/mlb">MLB</a></li>
+  <li class="nba" data-sub-nav-position="left"><a href="/nba">NBA</a></li>
+  <li class="world-football"><a href="/world-football">Soccer</a></li>
+  <li class="nhl" data-sub-nav-position="left"><a href="/nhl">NHL</a></li>
+  <li class="college-basketball"><a href="/college-basketball">CBB</a></li>
+  <li class="ufc" data-sub-nav-position="left"><a href="/ufc">UFC</a></li>
+  <li class="wwe" data-sub-nav-position="left"><a href="/wwe">WWE</a></li>
+  <li class="golf" data-sub-nav-position="left"><a href="/golf" data-sub-nav-position="left">Golf</a></li>
+  <li class="nascar"><a href="/nascar">Nascar</a></li>
+  <li class="more" data-sub-nav-position="right"><a href="#">More</a></li>
+  <li id="nav-item-br-teams" class="br-teams separate" data-sub-nav-position="right"><a href="/mybr">My&nbsp;Teams</a></li>
+  <li class="video separate" data-sub-nav-position="right"><a href="/video">Video</a></li>
+  <li class="sports-lists separate"><a href="/sports-lists">Lists</a></li>
+  <li class="trending separate"><a href="/trending">Trending</a></li>
+  <li id="nav-item-break"></li>
+</ul>
+
+			<div id="br-teams-nav-dropdown" class="nav-dropdown">
+  <div class="nav-column links-column">
+    <ul>
+      <li><a href="/mybr">Edit Favorites</a></li>
+    </ul>
+  </div>
+  <div class="nav-columns-wrapper">
+    <div class="nav-columns">
+      
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+
+	  	
+</div>
+
+    
+        
+
+	
+	<div id="sub-nav-container">
+		<ul id="sub-nav">
+			
+									<!-- "tag_breadcrumbs_152" cached 12/15/2014 at 08:23 PM -->
+													<li class="breadcrumb br-sprite--sudo br-sprite--sudo-nav-arrow first nfl br-dropdown">
+								<a href="/nfl">NFL</a>
+							</li>
+													<li class="breadcrumb br-sprite--sudo br-sprite--sudo-nav-arrow last houston-texans ">
+								<a href="/houston-texans">Houston</a>
+							</li>
+															
+				<li>
+					<a href="/houston-texans">Home</a>
+				</li>
+
+					<!-- "tag_teams_link_152" cached 12/15/2014 at 09:16 PM -->
+			
+
+									<li>
+    <a href="/houston-texans/schedule">Schedules</a>
+</li>
+
+				
+				
+															<li>
+							<a href="/houston-texans/stream">Team Stream</a>
+						</li>
+									
+				
+					<li>
+						<a href="/houston-texans/archives">Archives</a>
+					</li>
+				
+
+				
+					<li>
+						<a href="/houston-texans/top-writers">Top Writers</a>
+					</li>
+				
+
+				
+					<li>
+						<a href="http://www.vividseats.com/?wsUser=233">Tickets</a>
+					</li>
+				
+
+				
+					<li>
+						<a href="http://shop.bleacherreport.com/NFL/Houston-Texans" target="_blank">Shop</a>
+					</li>
+				
+
+									<li>
+						<a href="/houston-texans/newsletter">Newsletter</a>
+					</li>
+				
+				
+
+							
+
+							<li id="mobile"><a href="/articles/2300919-tom-savage-flashes-deep-ball-but-fails-to-inspire-confidence-in-texans-debut?m=1">Mobile site</a></li>
+					</ul>
+	</div>
+
+
+    
+</div>
+  </div>
+</div>
+
+  
+<div class="br-ad-wrapper">
+      <div id="br-ad-1" class="br-ad" data-collapsed="1" data-position="bnr_atf_01" data-reload="2" data-size="[[970,66],[728,90],[728,1],[450,1],[970,250]]"></div>
+  </div>
+
+
+
+
+  
+	
+	
+
+
+			
+					<div id="page-header" class="team-page houston-texans with-logo">
+									<h1>
+						<a href="/houston-texans">
+							Houston
+							<span>Texans</span>
+						</a>
+					</h1>
+							</div>
+			
+
+
+
+
+<div id="container">
+	<div id="container-shadow"></div>
+	<!-- "breaking_news_152" cached 12/15/2014 at 10:05 PM -->
+				
+
+	<div id='newsletter-stored-email' style="display:none"></div>
+
+
+  
+  
+  
+
+<div id="newsletter-lightbox"></div> 
+
+
+    
+    	<div id="slide-in">
+	  <div id="slide-in-container">
+	    <h3><a href="/?stream_add=houston-texans"><img alt="Teamstream_header" src="http://static.bleacherreport.net/images/redesign/modules/uber-module/teamstream_header.png" width="160" /></a></h3>
+	    <a href="/?stream_add=houston-texans" class="slide-in-content"><img alt="Houston Texans" class="png-fix" height="24" src="http://cdn.bleacherreport.net/images/team_logos/24x24/houston_texans.png" width="24" /><span>Want more real-time Houston Texans news?</span><div class="clear"></div></a>
+	    <a href="/?stream_add=houston-texans">Visit Team Stream on BleacherReport.com!</a>
+	    <span id="slide-in-close" class="grey-circle-close">&times;</span>
+	  </div>
+	</div>
+
+
+
+
+<div id="content" class="article-page">
+  <div id="container-page">
+    
+
+
+  <!-- "article_2300919_body" background cached 12/15/2014 at 10:34 PM -->
+    
+
+<!-- ~verifyCache~ -->
+<!-- ~verifySocial~ -->
+
+<div id="article-slider" itemscope itemtype="http://schema.org/Article">
+
+  <article class="article article--article cf ">
+
+    <header class="article_header cf">
+      <meta itemprop="keywords" content="Football, NFL, AFC South, Houston Texans, Opinion"/>
+      <meta itemprop="description" content="Houston Texans news, rumors, scores, schedules, predictions, picks against the spread, free agent updates, power rankings, mock drafts and more"/>
+      <meta itemprop="about" content="Football, NFL, AFC South, Houston Texans, Opinion"/>
+      <meta itemprop="isFamilyFriendly" content="true"/>
+      <meta itemprop="interactionCount" data-correlation="comments" content="UserComments:2"/>
+      <meta itemprop="interactionCount" data-correlation="twitter" content=""/>
+      <meta itemprop="interactionCount" data-correlation="facebook" content=""/>
+
+      <h1 class="article_title" itemprop="headline name">Tom Savage Flashes Deep Ball, but Fails to Inspire Confidence in Texans Debut</h1>
+      
+        
+
+<h4 class="article_author" itemprop="author">
+     
+        
+            <address class="article_author-info" itemscope itemtype="http://schema.org/Person">
+                By <a class="article_author-link" itemprop="url" href="/users/6152179-rivers-mccown" title="Rivers McCown">
+                  <span itemprop="name">Rivers  McCown</span>
+                </a>, <span class="author-rank">AFC South Lead Writer</span>
+            </address>
+        
+    
+
+    
+        <time class="article_timestamp" itemprop="datePublished" data-updated_at="1418677417">Dec 15, 2014</time>
+    
+</h4>
+
+      
+
+      
+        <div id="top-share-buttons-region">
+          
+
+<ul class="share-buttons cf share-buttons--top">
+  
+
+<li class="share-button button button--facebook " data-source="facebook" data-position="top" data-url="http://bleacherreport.com/articles/2300919-tom-savage-flashes-deep-ball-but-fails-to-inspire-confidence-in-texans-debut">
+  <a href="#" target="_blank" title="Share on Facebook">
+    <span class="br-sprite br-sprite--facebook "></span>
+    
+<span class="share-text">Share</span>
+<span class="share-count"></span>
+  </a>
+</li>
+  
+
+<li class="share-button button button--twitter " data-source="twitter" data-position="top">
+  <a href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fbleacherreport.com%2Farticles%2F2300919-tom-savage-flashes-deep-ball-but-fails-to-inspire-confidence-in-texans-debut&text=Tom+Savage+Flashes+Deep+Ball%2C+but+Fails+to+Inspire+Confidence+in+Texans+Debut&tw_p=tweetbutton&via=bleacherreport&counturl=http%3A%2F%2Fbleacherreport.com%2Farticles%2F2300919-tom-savage-flashes-deep-ball-but-fails-to-inspire-confidence-in-texans-debut&url=http%3A%2F%2Fbleacherreport.com%2Farticles%2F2300919-tom-savage-flashes-deep-ball-but-fails-to-inspire-confidence-in-texans-debut%3Futm_source%3Dtwitter.com%26utm_medium%3Dshare%26utm_campaign%3Dweb-des-art-top-152" target="_blank" title="Share on Twitter">
+    <span class="br-sprite br-sprite--twitter "></span>
+    
+<span class="share-text">Tweet</span>
+<span class="share-count"></span>
+  </a>
+</li>
+  <li class="total-share-count team-color-text"></li>
+</ul>
+        </div>
+      
+    </header>
+
+    <div class="article_pages ">
+              
+
+        
+          <section class="article_page  js-article-page-1 cf  is-active " data-page="1">
+            
+            <header class="article_page-header">
+  
+  
+    <div class="article_nav-bar br-texture--sudo br-texture--sudo-fade-to-white">
+      
+          <div class="paginators paginators--top">
+    
+        <a href="javascript: void(0)" title="Next Article" class="paginator paginator--primary paginator--next">Next ARTICLE <span class="aquo">&raquo;</span></a>
+    
+</div>
+      
+        
+          <span class="bar-headline">Use your &larr; &rarr; (arrow) keys to browse more stories</span>
+        
+      
+    </div>
+  
+</header>
+          
+            
+
+
+  
+  
+    <div class="article_image" itemprop="associatedMedia">
+      <div class="article_image--main  " style="max-width:630px" itemscope itemtype="http://schema.org/ImageObject">
+                  
+              <img itemprop="contentURL" src="http://img.bleacherreport.net/img/images/photos/003/197/759/hi-res-d78c6105a5a52e98ea5a705a195a4d94_crop_north.jpg?w=630&h=420&q=75" alt="Tom Savage Flashes Deep Ball, but Fails to Inspire Confidence in Texans Debut" width="630" height="420" />
+          
+
+          
+              <div class="caption-overlay border-box" max-width="630"></div>
+          
+        
+        
+          <div class="article_image-accreditation" max-width="630">
+            <span>Darron Cummings/Associated Press</span> <br>
+            
+          </div>
+        
+
+        
+      </div>
+    </div>
+  
+
+
+
+
+          
+            
+          
+            
+              <div class="article_info team-color-border cf">
+
+  
+    
+      <div class="total-reads article-stats">
+        <div class="team-color-text article-stats_count">1.7K</div>
+        <div class="article-stats_label">Reads</div>
+      </div>
+    
+  
+
+  <div class="article_comments js-open-comments article-stats ">
+    <div class="comments-count team-color-text article-stats_count">2</div>
+    <div class="comments-label article-stats_label">Comments</div>
+  </div>
+
+  
+</div>
+            
+          
+            <div class="article_body cf" itemprop="articleBody">
+              
+    <p class="ui-droppable"></p>
+<p class="ui-droppable">On a day where <a href="http://bleacherreport.com/cleveland-browns">Browns</a> quarterback <a href="http://bleacherreport.com/johnny-manziel">Johnny <span class="spellcheck"><span class="spellcheck"><span class="spellcheck"><span class="spellcheck"><span class="spellcheck">Manziel</span></span></span></span></span></a> flamed out before a live audience of the entire television world, a prevailing sentiment among <a href="http://bleacherreport.com/houston-texans">Texans</a> fans I observed went something like, "well, at least rookie quarterback Tom Savage didn't do <strong>that</strong> poorly."</p>
+<p><blockquote class="twitter-tweet" align="center" width="350"><p>An air cast is always bad news, and such is the case for <a href="https://twitter.com/hashtag/Texans?src=hash">#Texans</a> QB Ryan Fitzpatrick. He has a broken leg &amp; his season is over, source said.</p>&mdash; Ian Rapoport (@RapSheet) <a href="https://twitter.com/RapSheet/status/544225769346830336">December 14, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+<p>Pushed into action by<a href="http://www.nfl.com/news/story/0ap3000000443194/article/texans-ryan-fitzpatrick-breaks-leg-out-for-season" target="_blank"> the broken leg</a> that ended quarterback Ryan Fitzpatrick's season, Savage took the reins of the Texans offense and provided fuel for both his promoters and his detractors. On the one hand, Savage looked completely confused by the offense at times. He ran the wrong way on a pair of running plays, mishandled a snap, mishandled a <span class="spellcheck"><span class="spellcheck"><span class="spellcheck"><span class="spellcheck"><span class="spellcheck">handoff</span></span></span></span></span> to <a href="http://bleacherreport.com/arian-foster"><span class="spellcheck"><span class="spellcheck"><span class="spellcheck"><span class="spellcheck"><span class="spellcheck">Arian</span></span></span></span></span> Foster</a>&nbsp;and generally read the field so slowly it made Fitzpatrick look like Philip Rivers.&nbsp;</p>
+<p>On the other hand, Savage also showed what he <a href="http://bleacherreport.com/articles/2180044-preseason-proves-bill-obriens-texans-have-qb-issues-in-both-present-and-future" target="_blank">did not get much of a chance to unleash</a> in the preseason: his deep ball. Savage had a pair of over-the-top completions to receivers <span class="spellcheck"><span class="spellcheck"><span class="spellcheck"><span class="spellcheck"><span class="spellcheck">DeVier</span></span></span></span></span> Posey and <span class="spellcheck"><span class="spellcheck"><span class="spellcheck"><span class="spellcheck"><span class="spellcheck">DeAndre</span></span></span></span></span> Hopkins, both bullets that landed on the mark. A third pass was on the money to Hopkins but held up just enough that a <a href="http://bleacherreport.com/indianapolis-colts">Colts</a> safety was able to break it up.&nbsp;</p>
+<p>And then, just as Texans fans were starting to ponder their next two weeks watching Savage, a Colts defender dove into his knee on the penultimate Texans offensive snap of the game, and a hobbling Savage threw a lame duck interception to <span class="spellcheck"><span class="spellcheck"><span class="spellcheck"><span class="spellcheck"><span class="spellcheck">Vontae</span></span></span></span></span> Davis to send the Colts to their <span class="spellcheck"><span class="spellcheck"><span class="spellcheck"><span class="spellcheck"><span class="spellcheck">kneeldowns</span></span></span></span></span> and the division championship. The Texans signed Case <span class="spellcheck"><span class="spellcheck"><span class="spellcheck"><span class="spellcheck"><span class="spellcheck">Keenum</span></span></span></span></span> <a href="http://blog.chron.com/ultimatetexans/2014/12/case-keenum-will-return-to-the-texans/#16894101=0&amp;29166103=0" target="_blank">from the </a><a href="http://bleacherreport.com/st-louis-rams">Rams</a> practice squad on Monday, per John McClain of the <em>Houston Chronicle</em>.&nbsp;Texans head coach Bill O'Brien has announced that Savage will miss the <a href="http://bleacherreport.com/baltimore-ravens">Baltimore</a> game and could potentially be out longer than that, per FOX26's Mark <span class="spellcheck"><span class="spellcheck"><span class="spellcheck"><span class="spellcheck"><span class="spellcheck">Berman</span></span></span></span></span>:</p>
+<p><blockquote class="twitter-tweet" align="center" width="350"><p>Bill O&#39;Brien:&quot;Ryan Fitzpatrick is out w/ a broken tibia. Had surgery.Tom Savage will be out 4the Baltimore game, may be out 4more than that&quot;</p>&mdash; Mark Berman (@MarkBermanFox26) <a href="https://twitter.com/MarkBermanFox26/status/544590957044580353">December 15, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+<p><span class="spellcheck"><span class="spellcheck"><span class="spellcheck"><span class="spellcheck"><span class="spellcheck">Keenum</span></span></span></span></span> knows the offense from the preseason, which is about as good as the Texans are going to do as they head down to quarterback No. 5 on the depth chart. Plus, it gets <span class="spellcheck"><span class="spellcheck"><span class="spellcheck"><span class="spellcheck"><span class="spellcheck">Keenum</span></span></span></span></span> <span class="spellcheck"><span class="spellcheck"><span class="spellcheck"><span class="spellcheck"><span class="spellcheck">Truthers</span></span></span></span></span> a chance to <a href="http://bleacherreport.com/articles/2278859-ryan-mallett-out-for-year-is-tom-savage-ready-to-start-for-texans" target="_blank">believe in their local business again</a>, which is some small consolation for them.&nbsp;</p>
+<p>Back to Savage: I thought the <em>Chronicle</em>'s Stephanie <span class="spellcheck"><span class="spellcheck"><span class="spellcheck"><span class="spellcheck"><span class="spellcheck">Stradley</span></span></span></span></span> made an astute point when talking about him yesterday on Twitter. The lack of offseason reps for the third quarterback may have played a part in how raw Savage looked.&nbsp;</p>
+<p><blockquote class="twitter-tweet" align="center" width="350"><p>In related news, I wish Savage had more reps in camp that were given to guys who are not on roster any more. Sort of like New England did.</p>&mdash; Stephanie Stradley (@StephStradley) <a href="https://twitter.com/StephStradley/status/544207710179192832">December 14, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+<p>While it's too early to have a complete statistical breakdown, note that Savage had what <a href="http://www.footballoutsiders.com/" target="_blank">Football Outsiders</a> would define as a successful play on just 31 percent of his 22 <span class="spellcheck"><span class="spellcheck"><span class="spellcheck"><span class="spellcheck"><span class="spellcheck">dropbacks</span></span></span></span></span>. It was clear that there were a lot of problems. Short accuracy was lacking, but because Savage was throwing behind his receivers I think his overall timing was just too slow at this point in his development.</p>
+<p><div class="article_image article-image cf  image-upload block-level" style="max-width:650px;">
+    <div class="article_image--body ">
+                  
+
+          <img class="white-frame border-box" src="http://img.bleacherreport.net/img/article/media_slots/photos/001/875/610/8ce11e93fe5b1149efd2836a5578806a_crop_exact.png?w=650&h=433&q=85" width="650" height="433" alt="" />
+        
+        
+            <div class="caption-overlay border-box"></div>
+
+            <span class="article_image-accreditation">
+                Source: NFL Game Rewind
+            </span>
+        
+        
+    </div>
+
+    </div></p>
+<p>It's hard to project what to think of Savage going forward with just 22 <span class="spellcheck"><span class="spellcheck"><span class="spellcheck"><span class="spellcheck"><span class="spellcheck">dropbacks</span></span></span></span></span> of information. Hopefully whatever leg injury he's diagnosed with doesn't sit him too long, because Savage is exactly the kind of player who needs a full season of <span class="spellcheck"><span class="spellcheck"><span class="spellcheck"><span class="spellcheck"><span class="spellcheck">OTAs</span></span></span></span></span>. Developmental projects don't develop without reps, snaps and time on the practice field.&nbsp;</p>
+<p>As I said, I think there are plays for both the pro and the con camps to latch on to, and Savage's deep arm can be a difference-maker.&nbsp;</p>
+<p><div class="article_image article-image cf  image-upload block-level" style="max-width:650px;">
+    <div class="article_image--body ">
+                  
+
+          <img class="white-frame border-box" src="http://img.bleacherreport.net/img/article/media_slots/photos/001/875/611/d997a3920b99cdcc4dcf5706b341dfb7_crop_exact.png?w=650&h=431&q=85" width="650" height="431" alt="" />
+        
+        
+            <div class="caption-overlay border-box"></div>
+
+            <span class="article_image-accreditation">
+                Source: NFL Game Rewind
+            </span>
+        
+        
+    </div>
+
+    </div></p>
+<p>Ultimately, I don't think enough was shown to make me think the Texans have a clear-cut starter for next season. I also don't think we've seen enough to completely write the possibility off.</p>
+<p>Given where the Texans are going to draft next season, barring the possibility of an improbable (though not impossible, as we saw with Teddy <span class="spellcheck"><span class="spellcheck"><span class="spellcheck"><span class="spellcheck"><span class="spellcheck">Bridgewater</span></span></span></span></span>) draft slide for Oregon quarterback Marcus <span class="spellcheck"><span class="spellcheck"><span class="spellcheck"><span class="spellcheck"><span class="spellcheck">Mariota</span></span></span></span></span>, it doesn't appear they'll be in position to draft a franchise quarterback. The Texans have made it abundantly clear to Ryan Mallett that they'd like him back next season, according to <a href="http://bleacherreport.com/nfl">NFL</a>.com's Ian <span class="spellcheck"><span class="spellcheck"><span class="spellcheck"><span class="spellcheck"><span class="spellcheck">Rapoport</span></span></span></span></span>:</p>
+<p><blockquote class="twitter-tweet" align="center" width="350"><p><a href="https://twitter.com/hashtag/Texans?src=hash">#Texans</a> didn’t get to find out if Ryan Mallett is their franchise QB. But they did inform him today they want him back for 2015, source says</p>&mdash; Ian Rapoport (@RapSheet) <a href="https://twitter.com/RapSheet/status/537041453122617344">November 25, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+<p>I think perhaps the path of least resistance for the Texans will be walking into the season with a three-headed competition between Mallett, Savage and another mid-round rookie quarterback. Then the Texans give each one a fair shake and see where they are entering 2016. It's probably not what you want to hear if you're a Texans fan who just wants a franchise guy, but it's also better than the proven product of mediocrity that was Fitzpatrick.&nbsp;</p>
+<p><div class="article-video  full-width akamai">
+          
+
+  <div id="video-cxYWl3cTpSzWpEuEYwTfAvqTsoZ1vq7M" class="video-player" data-id="cxYWl3cTpSzWpEuEYwTfAvqTsoZ1vq7M" data-provider="akamai"></div>
+  
+
+<script>
+!function(d, s, id, url, en) {
+  if(d.getElementById(id)) {
+    if(d.createEvent) {
+      var e = d.createEvent('Events'); e.initEvent(en, true, true); d.dispatchEvent(e);
+    } else {
+      d.documentElement[en] = 'true';
+    }
+  } else {
+    var js = d.createElement(s), fjs = d.getElementsByTagName(s)[0]; js.id = id; js.src = url;
+    if(d.createEvent) {
+      js.onload = function() { var e = d.createEvent('Events'); e.initEvent(en, true, true); d.dispatchEvent(e); };
+    } else {
+      js.onreadystatechange = function() { if(js.readyState === 'loaded') { d.documentElement[en] = 'true'; } };
+    }
+    fjs.parentNode.insertBefore(js, fjs);
+  }
+}(document, 'script', 'akamai-video-javascript', '/amp.premier/2/amp.premier.min.js?amp-defaults=/amp.premier/2/config.xml', 'AkamaiVideoJavaScriptLoaded');
+</script>
+
+
+            
+              
+
+  <ul class="share-buttons share-buttons--video share-buttons--akamai cf border-box ">
+      
+
+<li class="share-button button button--facebook " data-source="facebook" data-position="vid" data-url="http://bleacherreport.com/articles/2300919-tom-savage-flashes-deep-ball-but-fails-to-inspire-confidence-in-texans-debut">
+  <a href="#" target="_blank" title="Share on Facebook">
+    <span class="br-sprite br-sprite--facebook "></span>
+    
+<span class="share-text">Share</span>
+<span class="share-count"></span>
+  </a>
+</li>
+      
+
+<li class="share-button button button--twitter " data-source="twitter" data-position="vid">
+  <a href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fbleacherreport.com%2Farticles%2F2300919-tom-savage-flashes-deep-ball-but-fails-to-inspire-confidence-in-texans-debut&text=Tom+Savage+Flashes+Deep+Ball%2C+but+Fails+to+Inspire+Confidence+in+Texans+Debut&tw_p=tweetbutton&via=bleacherreport&counturl=http%3A%2F%2Fbleacherreport.com%2Farticles%2F2300919-tom-savage-flashes-deep-ball-but-fails-to-inspire-confidence-in-texans-debut&url=http%3A%2F%2Fbleacherreport.com%2Farticles%2F2300919-tom-savage-flashes-deep-ball-but-fails-to-inspire-confidence-in-texans-debut%3Futm_source%3Dtwitter.com%26utm_medium%3Dshare%26utm_campaign%3Dweb-des-art-vid-152" target="_blank" title="Share on Twitter">
+    <span class="br-sprite br-sprite--twitter "></span>
+    
+<span class="share-text">Tweet</span>
+<span class="share-count"></span>
+  </a>
+</li>
+      
+        
+
+<li class="share-button button button--email "  data-source="email" data-position="vid">
+  <a href="mailto:?title=Tom%20Savage%20Flashes%20Deep%20Ball%2C%20but%20Fails%20to%20Inspire%20Confidence%20in%20Texans%20Debut&body=Tom%20Savage%20Flashes%20Deep%20Ball%2C%20but%20Fails%20to%20Inspire%20Confidence%20in%20Texans%20Debut%0A%0Ahttp%3A%2F%2Fbleacherreport.com%2Farticles%2F2300919-tom-savage-flashes-deep-ball-but-fails-to-inspire-confidence-in-texans-debut" title="Email">
+    <span class="br-sprite br-sprite--email "></span>
+  </a>
+</li>
+        
+            
+
+<li class="share-button button button--embed " data-source="embed" data-position="vid">
+  <a href="javascript:void(0)" title="Get Embed Code" >
+    <span class="br-sprite br-sprite--embed "></span>
+    
+<span class="share-text">Embed</span>
+<span class="share-count"></span>
+  </a>
+</li>
+        
+      
+  </ul>
+
+          
+                  </div></p>
+<p>I am still skeptical that Savage will be good enough to be an NFL starter. (I'm also skeptical that Mallett <a href="http://bleacherreport.com/articles/2273746-ryan-malletts-first-start-a-victory-for-bill-obrien" target="_blank">will be good enough</a> to be an NFL starter.) But by setting Savage and Mallett up for a competition, at least the Texans can say they are going with unproven commodities that <strong>could</strong> be worthwhile NFL starters.</p>
+<p>My opinion is that it's better to window shop on unproven quarterbacks than to lock down with a quarterback like Fitzpatrick, who has nothing new to show you at this point. Mallett and Savage is not a quarterback committee with much promise in my opinion, but at least it has the potential of promise.&nbsp;</p>
+<p>&nbsp;</p>
+<div>
+<em>Rivers <span class="spellcheck"><span class="spellcheck"><span class="spellcheck"><span class="spellcheck"><span class="spellcheck">McC</span></span></span></span></span></em><em>own is the AFC South Lead Writer for Bleacher Report and the co-host of the&nbsp;</em><a href="https://itunes.apple.com/us/podcast/the-three-cone-drill/id918386126" target="_blank"><em>Three-Cone Drill <span class="spellcheck"><span class="spellcheck"><span class="spellcheck"><span class="spellcheck"><span class="spellcheck">podcast</span></span></span></span></span></em></a><em>. His work has also appeared on Football Outsiders and ESPN.com. Follow him on Twitter at&nbsp;<a href="https://twitter.com/riversmccown">@riversmccown</a>.</em>
+</div>
+
+            </div>
+          
+            
+          
+            
+          </section>
+        
+      
+    </div>
+
+    <footer class="article_footer">
+      
+
+<ul class="share-buttons cf">
+    
+
+<li class="share-button button button--facebook button--medium" data-source="facebook" data-position="bot" data-url="http://bleacherreport.com/articles/2300919-tom-savage-flashes-deep-ball-but-fails-to-inspire-confidence-in-texans-debut">
+  <a href="#" target="_blank" title="Share on Facebook">
+    <span class="br-sprite br-sprite--facebook br-sprite--medium"></span>
+    
+<span class="share-text">Share</span>
+<span class="share-count"></span>
+  </a>
+</li>
+    
+
+<li class="share-button button button--twitter button--medium" data-source="twitter" data-position="bot">
+  <a href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fbleacherreport.com%2Farticles%2F2300919-tom-savage-flashes-deep-ball-but-fails-to-inspire-confidence-in-texans-debut&text=Tom+Savage+Flashes+Deep+Ball%2C+but+Fails+to+Inspire+Confidence+in+Texans+Debut&tw_p=tweetbutton&via=bleacherreport&counturl=http%3A%2F%2Fbleacherreport.com%2Farticles%2F2300919-tom-savage-flashes-deep-ball-but-fails-to-inspire-confidence-in-texans-debut&url=http%3A%2F%2Fbleacherreport.com%2Farticles%2F2300919-tom-savage-flashes-deep-ball-but-fails-to-inspire-confidence-in-texans-debut%3Futm_source%3Dtwitter.com%26utm_medium%3Dshare%26utm_campaign%3Dweb-des-art-bot-152" target="_blank" title="Share on Twitter">
+    <span class="br-sprite br-sprite--twitter br-sprite--medium"></span>
+    
+<span class="share-text">Tweet</span>
+<span class="share-count"></span>
+  </a>
+</li>
+    
+
+<li class="share-button button button--google-plus button--medium" data-source="google-plus" data-position="bot">
+  <a href="https://plus.google.com/share?url=http%3A%2F%2Fbleacherreport.com%2Farticles%2F2300919-tom-savage-flashes-deep-ball-but-fails-to-inspire-confidence-in-texans-debut%3Futm_source%3Dplus.url.google.com%26utm_medium%3Dshare%26utm_campaign%3Dweb-des-art-bot-152" title="Share on Google Plus">
+    <span class="br-sprite br-sprite--google-plus br-sprite--medium"></span>
+  </a>
+</li>
+    
+      
+
+<li class="share-button button button--reddit button--medium" data-source="reddit" data-position="bot">
+  <a href="http://www.reddit.com/submit?url=http%3A%2F%2Fbleacherreport.com%2Farticles%2F2300919-tom-savage-flashes-deep-ball-but-fails-to-inspire-confidence-in-texans-debut%3Futm_source%3Dreddit.com%26utm_medium%3Dshare%26utm_campaign%3Dweb-des-art-bot-152" target="_blank" title="Share on Reddit" >
+    <span class="br-sprite br-sprite--reddit br-sprite--medium"></span>
+  </a>
+</li>
+    
+    
+      
+
+<li class="button button--comments css-triangle css-triangle--right team-color-background team-color-border-top-sudo button--medium">
+  <a href="javascript:void(0)" class="js-open-comments" title="Open Comments">
+    <span class="comments-count">2</span>
+    <span class="comments-label">Comments</span>
+  </a>
+</li>
+    
+</ul>
+
+    </footer>
+
+    
+  </article>
+</div>
+
+  
+
+    
+
+<aside class="related-content module  ">
+  
+      
+          <div class="button-wrapper">
+  <a href="http://bleacherreport.com/mobile" class="button button--app-download team-color-background " title="Download Team Stream">DOWNLOAD FREE APP</a>
+</div>
+      
+
+      <h2 class="related-content-title">
+        More Texans From <span class="br-sprite br-sprite--team-stream"></span>
+      </h2>
+  
+  <div id="related-content-region" class="">
+    
+        	<!-- "tag_152_related" background cached 12/15/2014 at 10:34 PM -->
+			<ul class="br-carousel cf">
+        							<li class="rc-b  first br-carousel_item ">
+		<a href="/articles/2299987-did-jj-watt-steal-the-nfl-mvp-from-aaron-rodgers" class="image-with-caption"  style="width:204px">
+            <img alt="Did Watt Take MVP Lead over Rodgers on Sunday?" class="br-carousel_image border-box" height="129" src="http://img.bleacherreport.net/img/images/photos/003/196/466/0f0b165a9ab53617960a23b534c8a6f9_crop_north.jpg?w=204&amp;h=129&amp;q=75" width="204" />
+			<span class="video png-fix"></span>
+            <span class="caption-overlay caption-overlay-102 border-box"></span>
+            <div class="rc-title br-carousel_hook caption">Did Watt Take MVP Lead over Rodgers?</div>
+		</a>
+	</li>
+
+											<li class="rc-b   br-carousel_item ">
+		<a href="/articles/2295029-jadeveon-clowney-faces-uphill-battle-to-reach-potential-after-knee-surgery" class="image-with-caption"  style="width:204px">
+            <img alt="Clowney Faces Uphill Battle to Reach Potential" class="br-carousel_image border-box" height="129" src="http://img.bleacherreport.net/img/images/photos/003/190/845/6ea0118cae5322c5975cf04d95c58620_crop_north.jpg?w=204&amp;h=129&amp;q=75" width="204" />
+			
+            <span class="caption-overlay caption-overlay-102 border-box"></span>
+            <div class="rc-title br-carousel_hook caption">Clowney Faces Uphill Battle to Reach Potential</div>
+		</a>
+	</li>
+
+											<li class="rc-b last  br-carousel_item ">
+		<a href="/articles/2264979-in-a-year-of-big-offense-and-big-controversy-jj-watt-stands-as-brightest-star" class="image-with-caption"  style="width:204px">
+            <img alt="Can J.J. Watt Save the NFL from Itself?" class="br-carousel_image border-box" height="129" src="http://img.bleacherreport.net/img/images/photos/003/182/658/bfa851950b0a17c4c7eb376831fc62df_crop_north.jpg?w=204&amp;h=129&amp;q=75" width="204" />
+			
+            <span class="caption-overlay caption-overlay-102 border-box"></span>
+            <div class="rc-title br-carousel_hook caption">Watt Is the Hero the NFL Needs</div>
+		</a>
+	</li>
+
+											<li class="rc-b  first br-carousel_item ">
+		<a href="/articles/2176271-nfl-power-rankings-where-does-every-team-stand-heading-into-week-16" class="image-with-caption"  style="width:204px">
+            <img alt="Miller's Updated Power Rankings After Week 15" class="br-carousel_image border-box" height="129" src="http://img.bleacherreport.net/img/images/photos/003/196/970/hi-res-46981840c80d09b724021b390b460dbc_crop_north.jpg?w=204&amp;h=129&amp;q=75" width="204" />
+			
+            <span class="caption-overlay caption-overlay-102 border-box"></span>
+            <div class="rc-title br-carousel_hook caption">New No. 1 in Latest Power Rankings</div>
+		</a>
+	</li>
+
+											<li class="rc-b   br-carousel_item ">
+		<a href="/articles/2300019-mike-taniers-monday-morning-hangover-hot-teams-and-baby-animals" class="image-with-caption"  style="width:204px">
+            <img alt="Monday Morning Hangover: Hot Teams and Baby Animals" class="br-carousel_image border-box" height="129" src="http://img.bleacherreport.net/img/images/photos/003/197/100/52e226b81fbcacde6867bd29ddfbdfc5_crop_north.png?w=204&amp;h=129&amp;q=75" width="204" />
+			
+            <span class="caption-overlay caption-overlay-102 border-box"></span>
+            <div class="rc-title br-carousel_hook caption">The Good, Bad and Strange of NFL Week 15</div>
+		</a>
+	</li>
+
+											<li class="rc-b last  br-carousel_item ">
+		<a href="/articles/2300179-nfl-fact-or-fiction-week-15-knee-jerk-reactions" class="image-with-caption"  style="width:204px">
+            <img alt="NFL Week 15 Knee-Jerk Reactions" class="br-carousel_image border-box" height="129" src="http://img.bleacherreport.net/img/images/photos/003/197/515/013a180ed9f8a7711f5fae593c7a3bc6_crop_north.jpg?w=204&amp;h=129&amp;q=75" width="204" />
+			<span class="video png-fix"></span>
+            <span class="caption-overlay caption-overlay-102 border-box"></span>
+            <div class="rc-title br-carousel_hook caption">NFL Week 15 'Fact or Fiction'</div>
+		</a>
+	</li>
+
+											<li class="rc-b  first br-carousel_item display-none">
+		<a href="/articles/2299978-what-must-johnny-manziel-improve-to-become-reliable-nfl-qb" class="image-with-caption"  style="width:204px">
+            <img alt="Manziel's Technique, Footwork Lead to Awful Outing" class="br-carousel_image border-box" height="129" src="http://img.bleacherreport.net/img/images/photos/003/197/493/fa5d159d5bf2a2b65b57b690e778dcb9_crop_north.png?w=204&amp;h=129&amp;q=75" width="204" />
+			
+            <span class="caption-overlay caption-overlay-102 border-box"></span>
+            <div class="rc-title br-carousel_hook caption">Manziel Has Much to Learn After Poor Start</div>
+		</a>
+	</li>
+
+											<li class="rc-b   br-carousel_item display-none">
+		<a href="/articles/2299987-did-jj-watt-steal-the-nfl-mvp-from-aaron-rodgers" class="image-with-caption"  style="width:204px">
+            <img alt="Did Watt Take MVP Lead over Rodgers on Sunday?" class="br-carousel_image border-box" height="129" src="http://img.bleacherreport.net/img/images/photos/003/196/997/hi-res-00a6edbc5bac9fe292a354458a30848f_crop_north.jpg?w=204&amp;h=129&amp;q=75" width="204" />
+			<span class="video png-fix"></span>
+            <span class="caption-overlay caption-overlay-102 border-box"></span>
+            <div class="rc-title br-carousel_hook caption">Has Watt Passed Rodgers for MVP Lead?</div>
+		</a>
+	</li>
+
+											<li class="rc-b last  br-carousel_item display-none">
+		<a href="/articles/2299870-winners-and-losers-from-nfl-week-15" class="image-with-caption"  style="width:204px">
+            <img alt="Winners, Losers from NFL Week 15" class="br-carousel_image border-box" height="129" src="http://img.bleacherreport.net/img/images/photos/003/196/343/cefab9b2596a5b61021aa1512a03d111_crop_north.jpg?w=204&amp;h=129&amp;q=75" width="204" />
+			<span class="video png-fix"></span>
+            <span class="caption-overlay caption-overlay-102 border-box"></span>
+            <div class="rc-title br-carousel_hook caption">Winners, Losers from Week 15</div>
+		</a>
+	</li>
+
+											<li class="rc-b  first br-carousel_item display-none">
+		<a href="/articles/2300077-breaking-down-the-afc-playoff-picture-whos-in-and-whos-out" class="image-with-caption"  style="width:204px">
+            <img alt="Breaking Down AFC Playoff Picture After Week 15" class="br-carousel_image border-box" height="129" src="http://img.bleacherreport.net/img/images/photos/003/196/995/hi-res-9807cc84d1edfbc375b61f3530339f8a_crop_north.jpg?w=204&amp;h=129&amp;q=75" width="204" />
+			<span class="video png-fix"></span>
+            <span class="caption-overlay caption-overlay-102 border-box"></span>
+            <div class="rc-title br-carousel_hook caption">Breaking Down AFC Playoff Picture</div>
+		</a>
+	</li>
+
+											<li class="rc-b   br-carousel_item display-none">
+		<a href="/articles/2299661-johnny-manziels-putrid-first-start-has-to-be-alarming-for-browns" class="image-with-caption"  style="width:204px">
+            <img alt="Manziel Era off to Alarming, Putrid Start" class="br-carousel_image border-box" height="129" src="http://img.bleacherreport.net/img/images/photos/003/196/291/576314a78b60fae912a1728119e7e7ad_crop_north.png?w=204&amp;h=129&amp;q=75" width="204" />
+			
+            <span class="caption-overlay caption-overlay-102 border-box"></span>
+            <div class="rc-title br-carousel_hook caption">Manziel Era off to Alarming, Putrid Start</div>
+		</a>
+	</li>
+
+											<li class="rc-b last  br-carousel_item display-none">
+		<a href="/articles/2300021-fantasy-football-week-15-biggest-takeaways-from-sunday" class="image-with-caption"  style="width:204px">
+            <img alt="Biggest Week 15 Fantasy Takeaways" class="br-carousel_image border-box" height="129" src="http://img.bleacherreport.net/img/images/photos/003/197/009/hi-res-88bdc879607d7eb3f70150d7b8124d9d_crop_north.jpg?w=204&amp;h=129&amp;q=75" width="204" />
+			
+            <span class="caption-overlay caption-overlay-102 border-box"></span>
+            <div class="rc-title br-carousel_hook caption">Biggest Week 15 Fantasy Takeaways</div>
+		</a>
+	</li>
+
+							</ul>
+	
+    
+  </div>
+  
+</aside>
+    <a class="related-content_load" href="javascript:void(0)">Load More Stories</a>
+    <div id="comments" data-page="0"></div>
+  </div>
+</div>
+
+
+    <div id="sidebar" class="article-page">
+                    <!-- "tag_152_side_column" background cached 12/15/2014 at 10:34 PM -->
+                                                                            
+                            
+  <div id="fans-on-facebook-module" class="module">
+    <div class="header">
+      <h3>Follow Houston Texans from B/R on Facebook</h3>
+    </div>
+
+    
+    <div class="fb-like facebook-like-inline facebook-like-impression" data-href="http://www.facebook.com/BRHoustonTexans" data-ref="facebook-like-conversion-team_sidebar" data-send="false" data-show-faces="true" data-width="310"></div>
+    <p>Follow <a href="http://www.facebook.com/BRHoustonTexans" target="_blank">Houston Texans from B/R on Facebook</a> and get the latest updates straight to your newsfeed!</p>
+  </div>
+
+
+                        
+                                    
+                  
+<div class="br-ad-wrapper">
+  <div id="br-ad-2" class="br-ad" data-collapsed="2" data-position="rect_atf_01" data-reload="2" data-size="[[300,250],[300,2]]"></div>
+</div>
+
+
+                
+
+	<div id="content-player-module" class="module "> 
+		<div class="header">
+			<h3>
+				Texans Team Stream<sup>TM</sup>
+			</h3>
+		</div>
+
+        <ul class="thumbnail content-player_list content-player_list--current">
+          
+<li class="content-player_item border-box first" data-article-id="2300919" data-position="0" title="Savage Fails to Inspire Confidence in Texans Debut">
+	
+	<a href="/articles/2300919-tom-savage-flashes-deep-ball-but-fails-to-inspire-confidence-in-texans-debut">
+		<img src="http://img.bleacherreport.net/img/images/photos/003/197/759/hi-res-d78c6105a5a52e98ea5a705a195a4d94_crop_north.jpg?w=100&h=68&q=75" width="100" height="68" alt="">
+		
+	</a>
+	<a href="/articles/2300919-tom-savage-flashes-deep-ball-but-fails-to-inspire-confidence-in-texans-debut">Savage Fails to Inspire Confidence in Texans Debut</a>
+			<div class="source">from Bleacher Report</div>
+	    <div class="team-color-border css-triangle css-triangle--right team-color-border-right-sudo"></div>
+</li>
+
+        </ul>
+        <div class="br-texture--shadow-line br-sprite--sudo br-sprite--sudo-shadow-line"></div>
+        <div class="content-player_scroller">
+          <ul class="thumbnail content-player_list content-player_list--pages">
+            
+                                    
+<li class="content-player_item border-box " data-article-id="2176271" data-position="1" title="Miller's Updated Power Rankings After Week 15">
+	
+	<a href="/articles/2176271-nfl-power-rankings-where-does-every-team-stand-heading-into-week-16">
+		<img src="http://img.bleacherreport.net/img/images/photos/003/196/970/hi-res-46981840c80d09b724021b390b460dbc_crop_north.jpg?w=100&h=68&q=75" width="100" height="68" alt="">
+		
+	</a>
+	<a href="/articles/2176271-nfl-power-rankings-where-does-every-team-stand-heading-into-week-16">Miller's Updated Power Rankings After Week 15</a>
+			<div class="source">from Bleacher Report</div>
+	    <div class="team-color-border css-triangle css-triangle--right team-color-border-right-sudo"></div>
+</li>
+
+                                    
+<li class="content-player_item border-box " data-article-id="2299889" data-position="2" title="Savage (Knee) Ruled vs. Ravens; Lewis or Keenum Will Start">
+	
+	<a href="/articles/2299889-tom-savage-injury-updates-on-texans-qbs-leg-and-return">
+		<img src="http://img.bleacherreport.net/img/images/photos/003/196/632/740ef11ee3a3a9896185736da8930f1a_crop_north.jpg?w=100&h=68&q=75" width="100" height="68" alt="">
+		
+	</a>
+	<a href="/articles/2299889-tom-savage-injury-updates-on-texans-qbs-leg-and-return">Savage (Knee) Ruled vs. Ravens; Lewis or Keenum Will Start</a>
+			<div class="source">from Bleacher Report</div>
+	    <div class="team-color-border css-triangle css-triangle--right team-color-border-right-sudo"></div>
+</li>
+
+                                    
+<li class="content-player_item border-box " data-article-id="2225076" data-position="3" title="O'Brien Thinks Johnson (Concussion) Will Return Sun.">
+	
+	<a href="/articles/2225076-andre-johnson-injury-updates-on-texans-stars-possible-concussion-and-return">
+		<img src="http://img.bleacherreport.net/img/images/photos/003/186/293/f5fa008468119189ec059c434cb97bf2_crop_north.jpg?w=100&h=68&q=75" width="100" height="68" alt="">
+		
+	</a>
+	<a href="/articles/2225076-andre-johnson-injury-updates-on-texans-stars-possible-concussion-and-return">O'Brien Thinks Johnson (Concussion) Will Return Sun.</a>
+			<div class="source">from Bleacher Report</div>
+	    <div class="team-color-border css-triangle css-triangle--right team-color-border-right-sudo"></div>
+</li>
+
+                                    
+<li class="content-player_item border-box " data-article-id="2231926" data-position="4" title="QB Fitzpatrick (Broken Leg) Has Surgery, Put on IR">
+	
+	<a href="/articles/2231926-ryan-fitzpatrick-injury-updates-on-texans-stars-leg-and-return">
+		<img src="http://img.bleacherreport.net/img/images/photos/003/195/991/d4aeb0b8c12cd57ee27b544ec12d48b3_crop_north.jpg?w=100&h=68&q=75" width="100" height="68" alt="">
+		
+	</a>
+	<a href="/articles/2231926-ryan-fitzpatrick-injury-updates-on-texans-stars-leg-and-return">QB Fitzpatrick (Broken Leg) Has Surgery, Put on IR</a>
+			<div class="source">from Bleacher Report</div>
+	    <div class="team-color-border css-triangle css-triangle--right team-color-border-right-sudo"></div>
+</li>
+
+                                    
+<li class="content-player_item border-box " data-article-id="2300472" data-position="5" title="Source: Texans Plan to Release Andre If He Refuses Pay Cut">
+	
+	<a href="/articles/2300472-insider-buzz-texans-will-release-andre-johnson-draft-wr-if-he-refuses-pay-cut">
+		<img src="http://img.bleacherreport.net/img/images/photos/003/197/211/a885f24fc2472ce374b8f87c42d28ac2_crop_north.jpg?w=100&h=68&q=75" width="100" height="68" alt="">
+		<span class="video png-fix"></span>
+	</a>
+	<a href="/articles/2300472-insider-buzz-texans-will-release-andre-johnson-draft-wr-if-he-refuses-pay-cut">Source: Texans Plan to Release Andre If He Refuses Pay Cut</a>
+			<div class="source">from Bleacher Report</div>
+	    <div class="team-color-border css-triangle css-triangle--right team-color-border-right-sudo"></div>
+</li>
+
+                                    
+<li class="content-player_item border-box " data-article-id="2300019" data-position="6" title="Monday Morning Hangover: Hot Teams and Baby Animals">
+	
+	<a href="/articles/2300019-mike-taniers-monday-morning-hangover-hot-teams-and-baby-animals">
+		<img src="http://img.bleacherreport.net/img/images/photos/003/197/100/52e226b81fbcacde6867bd29ddfbdfc5_crop_north.png?w=100&h=68&q=75" width="100" height="68" alt="">
+		
+	</a>
+	<a href="/articles/2300019-mike-taniers-monday-morning-hangover-hot-teams-and-baby-animals">Monday Morning Hangover: Hot Teams and Baby Animals</a>
+			<div class="source">from Bleacher Report</div>
+	    <div class="team-color-border css-triangle css-triangle--right team-color-border-right-sudo"></div>
+</li>
+
+                                <li class="last content-player_item border-box">
+	<a href="/" class="image"></a>
+	<a href="/">Jump to the Bleacher Report homepage</a>
+    <div class="team-color-border css-triangle css-triangle--right team-color-border-right-sudo"></div>
+</li>
+            
+          </ul>
+        </div>
+
+        <div class="br-texture--shadow-line br-sprite--sudo br-sprite--sudo-shadow-line"></div>
+		<div id="content-player-controls" data-position="0">
+			<a href="#" class="previous disabled"><span class="aquo">&laquo;</span> Previous</a>
+			<a href="#" class="next">Next <span class="aquo">&raquo;</span></a>
+		</div>
+	</div>
+
+                                
+                
+                
+                
+                
+
+                                    <div id="affiliate-articles" class="module">
+  <div class="header">
+    <h3>Out of Bounds</h3>
+  </div>
+  <div class="OUTBRAIN" data-src=http://bleacherreport.com/articles/2300919-tom-savage-flashes-deep-ball-but-fails-to-inspire-confidence-in-texans-debut data-widget-id="SB_1" data-ob-template="BleacherReport_1"></div>
+  <div class="OUTBRAIN" data-src=http://bleacherreport.com/articles/2300919-tom-savage-flashes-deep-ball-but-fails-to-inspire-confidence-in-texans-debut data-widget-id="SB_2" data-ob-template="BleacherReport_1"></div>
+  <script type="text/javascript" async="async" src="http://widgets.outbrain.com/outbrain.js"></script>
+</div>
+
+                
+                <div id="sidebar-fb-connect" style="display:none">
+  <h3>You're currently logged into Facebook</h3>
+  <img alt="Facebook" height="32" src="http://static2.bleacherreport.net/images/articles/icon-fb.png?1418680844" title="Facebook" width="32" />
+  <p>Do you want to share your Bleacher Report activity on Facebook?</p>
+  <p id="fb-connect-button">
+		<img alt="Connect with Facebook" class="facebook_connect png-fix" height="23" src="http://static2.bleacherreport.net/images/redesign/facebook/connect.png?1418680844" width="193" />
+  </p>
+</div>
+
+                                     
+                
+                                      
+<div class="br-ad-wrapper">
+  <div id="br-ad-3" class="br-ad" data-collapsed="3" data-position="rect_btf_01" data-reload="1" data-size="[[300,600],[300,250],[300,3]]"></div>
+</div>
+
+
+                
+                
+
+
+	<div id="article-newsletter-side-module" class="module">
+		<div class="header">
+			<h3><a href="/houston-texans/newsletter">Texans Newsletter</a></h3>
+		</div>
+		<div id="article-newsletter-engage-content">
+			<div class="step-1">
+				<img alt="Houston Texans" class="png-fix" height="50" src="http://cdn.bleacherreport.net/images/team_logos/50x50/houston_texans.png" width="50" />
+				<p class="newsletter-intro">We'd like to send you the most entertaining <strong class="signup_tag">Houston Texans</strong> articles, videos, and podcasts from around the web.</p>
+				<p id="newsletter-error" class="error"></p>
+				<form id="permanent-newsletter" method="post">
+					<p class="newsletter-error error"></p>
+					<p id="email-input"><input type="text" name="newsletter-email" class="text medium-text border-box" placeholder="Your Email Address" id="newsletter-email"></p>
+					<p id="sign-me-up">
+						<a class="medium-orange button" id="newsletter-submit">Subscribe Now</a>
+						<img alt="" height="16" id="newsletter-side-module-spinner" src="http://static2.bleacherreport.net/images/redesign/common/loading/small.gif?1418680844" width="16" />
+					</p>
+					<span class="help secure png-fix">We will never share your email address</span>
+				</form>
+			</div>
+			<div class="step-2">
+				<p><em>Thanks for signing up.</em></p>
+				<span class="small-orange button newsletter-kiosk">Subscribe to More Teams</span>
+			</div>
+		</div>
+	</div>
+
+
+
+                                    
+
+                
+                                    <div class="article_page_ad">
+                          
+<div class="br-ad-wrapper">
+  <div id="br-ad-4" class="br-ad" data-collapsed="4" data-position="rect_btf_02" data-reload="1" data-size="[[300,250],[300,4]]"></div>
+</div>
+
+
+                    </div>
+                            
+            </div>
+
+    
+ 
+
+
+
+</div>
+
+		<!-- "default_footer_" background cached 12/15/2014 at 10:35 PM -->
+<div id="footer">
+	<div class="inner boxed">
+		<div class="footer-module">
+			<div class="footer-module-upper">
+				<div class="footer-header">
+					<h4><a href="#" class="newsletter-kiosk">Sign up for newsletters</a></h4>
+				</div>
+				<p class="action-item"><a href="#" class="newsletter-kiosk">Choose Teams</a></p>
+			</div>
+			<div class="footer-header">
+				<h4><a href="/mobile">Get the app</a></h4>
+			</div>
+			<p>Real-time news for your favorite teams, right on your mobile device.</p>
+			<p class="action-item"><a href="/mobile">Download Now</a></p>
+		</div>
+		<div class="footer-module">
+			<div class="footer-module-upper">
+				<div class="footer-header">
+					<h4>Follow B/R</h4>
+				</div>
+				<ul id="socialmedia-icons">
+											<li><a href="http://twitter.com/bleacherreport" id="twitter">Twitter</a></li>
+						<li><a href="http://www.facebook.com/bleacherreport" id="facebook">Facebook</a></li>
+										<li><a href="http://instagram.com/bleacherreport" id="instagram">Instagram</a></li>
+					<li><a href="http://plus.google.com/+bleacherreport" id="google-plus">Google+</a></li>
+				</ul>
+			</div>
+			<div class="footer-header">
+				<h4>Launch a career</h4>
+			</div>
+			<p>B/R's <a href="/who_should_write_for_br">Writer Program</a> and <a href="/pages/wi">Advanced Program in Sports Media</a> can give you the edge you need to get ahead.</p>
+			<p class="action-item"><a href="/who_should_write_for_br">Apply Now</a></p>
+		</div>
+		<div id="popular-topics" class="footer-module">
+			<div class="footer-header">
+				<h4>Popular Topics</h4>
+			</div>
+			<ul>
+													<li><a href="http://bleacherreport.com/articles/2269369-2015-nfl-mock-draft-matt-millers-latest-projections">2015 NFL Mock Draft</a></li>
+									<li><a href="http://bleacherreport.com/articles/2176271-nfl-power-rankings-where-does-every-team-stand-heading-into-week-16">NFL Power Rankings</a></li>
+									<li><a href="http://bleacherreport.com/articles/2286863-fantasy-football-week-14-matchups-must-start-players-of-the-week">Fantasy Football</a></li>
+									<li><a href="http://bleacherreport.com/articles/2286753-nfl-picks-week-14-bleacher-reports-expert-consensus-picks">NFL Picks</a></li>
+									<li><a href="http://bleacherreport.com/articles/2281710-2014-15-nba-power-rankings-at-the-end-of-november">NBA Power Rankings</a></li>
+									<li><a href="http://bleacherreport.com/articles/2289992-predictions-for-every-bowl-game">Bowl Predictions</a></li>
+							</ul>
+		</div>
+		<div id="copyright" class="footer-module">
+			<a href="http://www.turner.com" id="corporate-logo">Turner</a>
+			<p>
+				Copyright &copy; 2014 Bleacher Report, Inc. Turner Broadcasting System, Inc. All Rights Reserved.
+				BleacherReport.com is part of Bleacher Report - Turner Sports Network, part of the Turner Sports and Entertainment Network.
+				Certain photos copyright &copy; 2014 by Getty Images.
+				Any commercial use or distribution without the express written consent of Getty Images is strictly prohibited.
+			</p>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="inner">
+		<ul id="toes">
+			<li><a href="/about">About</a></li>
+			<li><a href="http://blog.bleacherreport.com">Blog</a></li>
+			<li><a href="/contact">Contact Us</a>
+			<li><a href="/careers">Careers</a>
+			<li><a href="/pages/comguidelines">Community Guidelines</a></li>
+			<li><a href="/pages/privacy" rel="nofollow">Privacy</a></li>
+						<li><a href="/pages/terms" rel="nofollow">Terms of Use</a></li>
+		</ul>
+		<div class="clear"></div>
+	</div>
+</div>
+
+
+
+<script>
+BR.sign_up_template = "\t<div class=\"sign_up_container\">\n\t\t<div class=\"sign_up_side\">\n\t\t\t<h4>Sign up through Facebook</h4>\n\t\t\t<ul>\n\t\t\t\t<li>Follow your Facebook friends on Bleacher Report</li>\n\t\t\t\t<li>Share your articles, comments, and more with friends</li>\n\t\t\t</ul>\n\t\t\t<img alt=\"Connect with Facebook\" class=\"facebook_connect png-fix\" height=\"23\" src=\"http://static2.bleacherreport.net/images/redesign/facebook/connect.png?1418680844\" width=\"193\" />\n\t\t</div>\n\n\t\t<div class=\"sign_up_body\">\n\t\t\t<div id=\"join_bleacher_report\">\n\t\t\t\t<h4>Join Bleacher Report</h4>\n\t\t\t\t<p id=\"hat_sign_up_required\" class=\"alert\">You must register in order for that functionality to work!</p>\n\t\t\t\t<ul>\n\t\t\t\t\t<form action=\"https://bleacherreport.com/accounts/create_from_hat\" id=\"hat_signup_form\" method=\"post\">\n\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t<label for=\"br-hat-sign-up-first_name\">First Name <em>(required)</em></label>\n\t\t\t\t\t\t\t<input class=\"text medium-text\" name=\"first_name\" id=\"br-hat-sign-up-first_name\">\n\t\t\t\t\t\t\t<div class=\"signup_errors\" id=\"first_name_errors\"></div>\n\t\t\t\t\t\t</li>\n\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t<label for=\"br-hat-sign-up-last_name\">Last Name <em>(required)</em></label>\n\t\t\t\t\t\t\t<input class=\"text medium-text\" name=\"last_name\" id=\"br-hat-sign-up-last_name\">\n\t\t\t\t\t\t\t<div class=\"signup_errors\" id=\"last_name_errors\"></div>\n\t\t\t\t\t\t</li>\n\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t<label for=\"br-hat-sign-up-email\">Email <em>(required)</em></label>\n\t\t\t\t\t\t\t<input type=\"email\" class=\"text medium-text\" name=\"email\" id=\"br-hat-sign-up-email\">\n\t\t\t\t\t\t\t<div class=\"signup_errors\" id=\"email_errors\"></div>\n\t\t\t\t\t\t</li>\n\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t<label for=\"br-hat-sign-up-password\">Password <em>(required)</em></label>\n\t\t\t\t\t\t\t<input type=\"password\" class=\"text medium-text\" name=\"password\" id=\"br-hat-sign-up-password\">\n\t\t\t\t\t\t\t<div class=\"signup_errors\" id=\"password_errors\"></div>\n\t\t\t\t\t\t</li>\n\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t<label for=\"br-hat-sign-up-password_confirmation\">Confirm Password <em>(required)</em></label>\n\t\t\t\t\t\t\t<input type=\"password\" class=\"text medium-text\" name=\"password_confirmation\" id=\"br-hat-sign-up-password_confirmation\">\n\t\t\t\t\t\t\t<div class=\"signup_errors\" id=\"password_confirmation_errors\"></div>\n\t\t\t\t\t\t\t<input name=\"comment\" id=\"br-hat-sign-up-comment\">\n\t\t\t\t\t\t</li>\n\t\t\t\t\t\t<li id=\"hat_sign_up_captcha\">\n\t\t\t\t\t\t</li>\n\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t<span id=\"hat_signup_submit\" class=\"medium-orange button\">Sign Up</span>\n\t\t\t\t\t\t\t<input type=\"submit\" value=\"\" style=\"display:none\" />\n\t\t\t\t\t\t</li>\n\t\t\t\t\t\t<li class=\"sign-up-tos\">By clicking on 'Sign Up' above, you confirm that you have accepted the <a href=\"/pages/terms\" target=\"_blank\">Terms of Service</a>.</li>\n\t\t\t\t\t\t<input type=\"hidden\" id=\"hat_comment_body\" name=\"comment_body\">\n\t\t\t\t\t\t<input type=\"hidden\" id=\"hat_comment_article_id\" name=\"comment_article_id\">\n\t\t\t\t\t\t<input type=\"hidden\" id=\"hat_comment_parent_id\" name=\"comment_parent_id\">\n\t\t\t\t\t\t<input type=\"hidden\" name=\"current_href\">\n\t\t\t\t\t</form>\n\t\t\t\t</ul>\n\t\t\t</div><!-- end of sign up main, join edition -->\n\n\t\t\t<div id=\"log_in_to_bleacher_report\">\n\t\t\t\t<h4>Log in to Bleacher Report</h4>\n\t\t\t\t<div id=\"login_message\"></div>\n\t\t\t\t<ul>\n\t\t\t\t\t<form id=\"login_form\" action=\"https://bleacherreport.com/login_from_ajax\" method=\"post\">\n\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t<label for=\"hat_log_in_email\">Email</label>\n\t\t\t\t\t\t\t<input type=\"email\" class=\"text medium-text\" name=\"user[email]\" id=\"hat_log_in_email\">\n\t\t\t\t\t\t</li>\n\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t<label for=\"hat_log_in_password\">Password</label>\n\t\t\t\t\t\t\t<input type=\"password\" class=\"text medium-text\" name=\"user[password]\" id=\"hat_log_in_password\">\n\t\t\t\t\t\t\t<a href=\"#\" class=\"forgot-password-link\">Forgot password?</a>\n\t\t\t\t\t\t</li>\n\t\t\t\t\t\t<li><input id=\"login_button\" type=\"submit\" value=\"Log In\" class=\"medium-orange button\"></li>\n\t\t\t\t\t</form>\n\t\t\t\t</ul>\n\n\t\t\t\t<ul id=\"change-password\">\n\t\t\t\t\t<h4>Change your password</h4>\n\t\t\t\t\t<form action=\"/accounts/forgot_password\" method=\"post\">\n\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t<label for=\"email\">Email Address</label>\n\t\t\t\t\t\t\t<input id=\"email\" name=\"email\" type=\"email\" class=\"text medium-text\">\n\t\t\t\t\t\t\t<a href=\"#\" class=\"forgot-password-link\">I know my password.</a>\n\t\t\t\t\t\t</li>\n\t\t\t\t\t\t<li><input type=\"submit\" value=\"Change password\" class=\"medium-orange button\"></li>\n\t\t\t\t\t</form>\n\t\t\t\t</ul>\n\t\t\t</div><!-- end of sign up main, log in edition -->\n\t\t</div>\n\t</div>\n";
+</script>
+
+<div id="nav-dropdown-template" class="nav-dropdown">
+	<div class="nav-columns-wrapper">
+		<div class="nav-columns"></div>
+	</div>
+</div>
+
+<div id="nav-tabbed-dropdown-template" class="nav-dropdown">
+	<div class="tab-list-container">
+		<ul>
+			<li class="all-link"></li>
+		</ul>
+		<div class="clear"></div>
+	</div>
+</div>
+
+<div id="tab-container-template" class="tab-container">
+	<div class="nav-columns-wrapper">
+		<div class="nav-columns"></div>
+	</div>
+</div>
+
+<div id="nav-column-template" class="nav-column">
+	<h3></h3>
+	<ul>
+		<li></li>
+	</ul>
+</div>
+
+<div id="sub-nav-dropdown-template" class="sub-nav-dropdown">
+	<div class="nav-columns-wrapper">
+		<div class="nav-columns"></div>
+	</div>
+</div>
+
+<div id="tooltip">
+	<div class="body png-fix"></div>
+	<div class="right png-fix"></div>
+</div>
+
+
+
+	
+<div id="br-ad-5" class="br-ad" data-position="oop_skin_01" data-reload="2" data-size="[[3,3]]"></div>
+
+
+<script>
+    //concerned about env and api_url
+    BR.tag_permalink = "houston-texans";
+
+    BR.serverData = BR.serverData || {};
+
+    BR.serverData.env                      = "production";
+    BR.serverData.server_home              = "/home/deploy";
+    BR.serverData.api_url                  = "http://api.bleacherreport.com/api/v1";
+    BR.serverData.snapper_url              = "http://snapper-prod.s3.amazonaws.com.global.prod.fastly.net/";
+    BR.serverData.base_url                 = BR.PageData.url_hierarchy_level_1;
+    BR.serverData.request_scheme           = "http";
+    BR.serverData.embedded                 = false;
+    BR.serverData.team_stream              = false;
+    BR.serverData.is_fallback              = false;
+    BR.serverData.hide_related_content     = false;
+    BR.serverData.cnn                      = false;
+    BR.serverData.cnn_app                  = false;
+    BR.serverData.ngtv                     = false;
+    BR.serverData.country                  = "";
+    BR.serverData.from_social              = false;
+    BR.serverData.team_page                = false;
+    BR.serverData.is_article               = true;
+    BR.serverData.verbose_prism            = false;
+    BR.serverData.secure_host              = "https://bleacherreport.com";
+    BR.serverData.fbAppId                  = 135174055162;
+    BR.serverData.ensure_optimizely_mobile = true;
+
+    
+        BR.serverData.comments_disabled = false;
+        BR.serverData.bluegreen_active  = false;
+    
+</script>
+
+
+<script>
+    (function (d,s,id) {
+        var t, js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js=d.createElement(s); js.id=id;
+        js.src="//player.ooyala.com/v3/MDYzZmYzZjIwNTA0YjI4Y2YyM2JmNTgw?platform=html5-fallback";
+        js.onload = js.onreadystatechange = function(){
+            var ev;
+
+            js.onreadystatechange = js.onload = null;
+
+            try {
+                ev = new Event('ooyalaLoaded');
+            }
+            catch(e) {
+                ev = document.createEvent('Event');
+                ev.initEvent('ooyalaLoaded', true, true);
+            }
+
+            document.dispatchEvent(ev);
+        };
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, "script", "ooyala-pscript"));
+</script>
+
+
+	<script src="http://static2.bleacherreport.net/pkg/javascripts/70afc45f_redesign_common.js"></script>
+	<script src="http://static2.bleacherreport.net/pkg/javascripts/d34914b2_redesign_marionette_common.js"></script>
+	<div id="fb-root"></div>
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : BR.serverData.fbAppId, // App ID from the app dashboard
+            cookie: true,
+            channelUrl : 'http://bleacherreport.com/facebook_channel.html', // Channel file for x-domain comms
+            status     : true, // Check Facebook Login status
+            xfbml      : true, // Look for social plugins on the page
+            version    : 'v2.0'
+        });
+
+        // Additional initialization code such as adding Event Listeners goes here
+        (function($){
+            $(document).trigger('fbLoaded');
+        }(jQuery));
+    };
+
+    // Load the SDK asynchronously
+    (function(){
+        // If we've already installed the SDK, we're done
+        if (document.getElementById('facebook-jssdk')) {return;}
+
+        // Get the first script element, which we'll use to find the parent node
+        var firstScriptElement = document.getElementsByTagName('script')[0];
+
+        // Create a new script element and set its id
+        var facebookJS = document.createElement('script');
+        facebookJS.id = 'facebook-jssdk';
+
+        // Set the new script's source to the source of the Facebook JS SDK
+        facebookJS.src = '//connect.facebook.net/en_US/all.js';
+
+        // Insert the Facebook JS SDK into the DOM
+        firstScriptElement.parentNode.insertBefore(facebookJS, firstScriptElement);
+    }());
+</script>
+
+
+    <script>
+      BR.signup_tag = {};
+      BR.signup_tag.id = 152;
+      BR.signup_tag.type = "Team";
+      BR.signup_tag.permalink = 'houston-texans';
+      BR.signup_tag.hide_newsletter_signup = false;
+      BR.signup_tag.facebook_page = "BRHoustonTexans";
+      
+        BR.signup_tag.twitter_account = 'BR_HouTexans';
+      
+
+      BR.fan_survey_enabled = false
+      BR.asocial_promo_enabled = false;
+      BR.facebook_like_popup_enabled = true;
+
+      BR.newsletter = false && !(BR.asocial_promo_enabled || BR.facebook_like_popup_enabled);
+
+      
+    </script>
+    <script src="http://static2.bleacherreport.net/pkg/javascripts/f18e2869_redesign_newsletter_signup.js"></script>
+    <script src="http://static2.bleacherreport.net/pkg/javascripts/48541d93_redesign_newsletter_controller.js"></script>
+    
+      <script src="http://static2.bleacherreport.net/pkg/javascripts/98c67373_redesign_social_promos.js"></script>
+          <script>
+        BR.tnt = false;
+        BR.tag_id = 152;
+        BR.tag_type = "Team";
+        BR.currentArticle = {"external_source":null,"is_video":false,"sorted_source_title":null,"channel_primary_image_150x100":"http://img.bleacherreport.net/img/images/photos/003/197/759/hi-res-d78c6105a5a52e98ea5a705a195a4d94_crop_north.jpg?w=150&h=100&q=75","channel_primary_image":"http://img.bleacherreport.net/img/images/photos/003/197/759/hi-res-d78c6105a5a52e98ea5a705a195a4d94_crop_north.jpg?w=100&h=68&q=75","league_override":false,"render_strategy":"article","channel_primary_image_grayscale":"http://cdn.bleacherreport.net/images_root/images/photos/003/197/759/hi-res-d78c6105a5a52e98ea5a705a195a4d94_bw_100x68.jpg?1418676657","id":2300919,"title":"Tom Savage Flashes Deep Ball, but Fails to Inspire Confidence in Texans Debut","dynamic_hook":"Savage Fails to Inspire Confidence in Texans Debut","permalink":"2300919-tom-savage-flashes-deep-ball-but-fails-to-inspire-confidence-in-texans-debut"};
+        BR.context = "houston-texans";
+        BR.tags = [{"twitter_account":null,"facebook_page":null,"name":"Football","id":6,"permalink":"football"},{"twitter_account":"BR_NFL","facebook_page":"BRNFL","name":"NFL","id":16,"permalink":"nfl"},{"twitter_account":null,"facebook_page":null,"name":"AFC South","id":44,"permalink":"afc-south"},{"twitter_account":"BR_HouTexans","facebook_page":"BRHoustonTexans","name":"Houston Texans","id":152,"permalink":"houston-texans"},{"twitter_account":null,"facebook_page":null,"name":"Opinion","id":7018,"permalink":"editorial"}];
+        BR.channel_tag_id = 152;
+        BR.channel_context = "houston-texans";
+    </script>
+
+    <script src="http://static2.bleacherreport.net/pkg/javascripts/659f79b7_redesign_article.js"></script>
+
+    
+        
+        
+        
+        
+        
+            
+
+    <script>
+  window.twttr = (function (d,s,id) {
+    var t, js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return window.twttr; js=d.createElement(s); js.id=id;
+    js.src="https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+    return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+  }(document, "script", "twitter-wjs"));
+</script>
+
+
+    <script>
+        (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+        })();
+    </script>
+
+		<script src="http://static2.bleacherreport.net/pkg/javascripts/6a9fd568_redesign_scores_turner.js"></script>
+		<script>
+			$(function(){
+				BR.Scores.scoreline = new BR.Scores.Scoreboard.Views.Scoreline({container: 'section#scoreline'});
+			});
+		</script>
+
+	
+<script>
+	BR.environment = "production";
+	BR.imagePrefix = ""
+</script>
+
+
+<div id="kiosk-container"></div>
+<!--[if IE]>
+	<script src="http://static2.bleacherreport.net/pkg/javascripts/31c7ab2a_redesign_ie.js"></script>
+<![endif]-->
+
+<!--[if IE 6]>
+	<script src="http://static2.bleacherreport.net/pkg/javascripts/03d493b6_redesign_ie6.js"></script>
+  <script>DD_belatedPNG.fix("#header-logo,.caption-overlay");</script>
+<![endif]-->
+
+<script>
+	BR.timedConfig = {"uber_module":true,"puggernaut":false,"slideshows_ready":false,"comments_count_display":25,"iphone_promo":true,"tablet_app_promo":true,"new_url_cutoff_date":"2012/01/12","reprocess_photo_delay":10};
+</script>
+
+  				<script>
+		  (function () {
+		    var d = new Image(1, 1);
+		    d.onerror = d.onload = function () {
+		      d.onerror = d.onload = null;
+		    };
+		    d.src = ["//secure-us.imrworldwide.com/cgi-bin/m?ci=us-204044h&cg=0&cc=1&si=", escape(window.location.href), "&rp=", escape(document.referrer), "&ts=compact&rnd=", (new Date()).getTime()].join('');
+		  })();
+		</script>
+		<noscript>
+		  <div>
+		    <img src="//secure-us.imrworldwide.com/cgi-bin/m?ci=us-204044h&amp;cg=0&amp;cc=1&amp;ts=noscript" width="1" height="1" alt="" />
+		  </div>
+		</noscript>
+
+	  		  				<script>
+  var _sf_async_config={};
+
+  _sf_async_config.authors      = BR.PageData.writer;
+  _sf_async_config.domain       = 'bleacherreport.com';
+  _sf_async_config.uid          = 45648;
+  _sf_async_config.useCanonical = true;
+
+  if(BR.cobrand) {
+    _sf_async_config.sections = (BR.PageData.league ? BR.PageData.league : BR.PageData.site) + ',cobrand';
+  } else {
+    _sf_async_config.sections = BR.PageData.site + ',br';
+  }
+
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+         (('https:' == document.location.protocol) ? 'https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/' : 'http://static.chartbeat.com/') +
+         'js/chartbeat.js');
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+       loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script>
+
+					  
+
+
+<div id="pixels">
+	
+</div>
+
+<script>
+	(function() {
+    if(document.location.protocol == 'http:'){
+  		var gads = document.createElement('script');
+  		gads.async = true;
+  		gads.type = 'text/javascript';
+  		var useSSL = 'https:' == document.location.protocol;
+  		gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+  		var node = document.getElementsByTagName('head')[0];
+  		node.parentNode.insertBefore(gads, node);
+    }
+	})();
+</script>
+
+
+<script>
+  if(BR.MarionetteApplication) {
+            BR.MarionetteApplication.start();
+  }
+</script>
+
+<!-- generated at: 12/15/2014 at 10:38 PM -->
+</body>
+</html>

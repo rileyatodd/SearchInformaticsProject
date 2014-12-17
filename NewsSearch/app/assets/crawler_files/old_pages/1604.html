@@ -1,0 +1,1521 @@
+
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xml:lang="en" lang="en">
+    <head>
+<!-- premiumchron/hearst/home/header_main.tpl -->
+<!-- eid:channel.9380 -->        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UAcHUF9ACQcHVVRV"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(5),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(f){"stack"in f&&(t(1),t(4),"addEventListener"in window&&t(2),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(3),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:8,2:5,3:9,4:7,5:20,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],4:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(2);t("loader").features.stn=!0,t(1),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:6,2:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:20,2:21,ee:"QJf3ax",gos:"7eSDFh"}],6:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:21,2:20,ee:"QJf3ax"}],7:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:21,2:20,ee:"QJf3ax"}],8:[function(t,e){function n(t,e,n){var r=t[0];"string"==typeof r&&(r=new Function(r)),t[0]=o(r,"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:21,2:20,ee:"QJf3ax"}],9:[function(t,e){function n(){c.inPlace(this,d,"fn-")}function r(t,e){c.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}var i=t("ee").create(),a=t(1),s=t(2),c=s(i),f=s(a),u=window.XMLHttpRequest,d=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=i,window.XMLHttpRequest=function(t){var e=new u(t);try{i.emit("new-xhr",[],e),f.inPlace(e,["addEventListener","removeEventListener"],"-",function(t,e){return e}),e.addEventListener("readystatechange",n,!1)}catch(r){try{i.emit("internal-error",[r])}catch(o){}}return e},window.XMLHttpRequest.prototype=u.prototype,c.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),i.on("send-xhr-start",r),i.on("open-xhr-start",r)},{1:5,2:21,ee:"QJf3ax"}],10:[function(t){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=e(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(n.cat=d.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r,this.startTime])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=e(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",[e])}catch(r){}}};for(var u=0;c>u;u++)n.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:11,3:9,4:5,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],11:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){p.proto="https"===d.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=c.createElement("script");e.src=p.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,c=s.document,f="addEventListener",u="attachEvent",d=(""+location).split("?")[0],p=e.exports={offset:i(),origin:d,features:{}};c[f]?(c[f]("DOMContentLoaded",o,!1),s[f]("load",n,!1)):(c[u]("onreadystatechange",r),s[u]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],20:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],21:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s,t))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:20,ee:"QJf3ax"}]},{},["G9z0Bl",3,10,4]);</script>
+<script>var HDN = HDN || {}; HDN.t_firstbyte = Number(new Date());</script>
+<!-- generated at 2014-12-15 18:50:36 on prodWCM6 running vr6.2.1.0 -->
+        <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, width = device-width">
+
+        <link rel="stylesheet" type="text/css" href="/external/css/global.sharedmain.r6.2.1.0.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="/external/css/global.sharedmodules.r6.2.1.0.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="/external/css/global.sharedpages.r6.2.1.0.css" media="all" />
+
+        <link rel="stylesheet" type="text/css" href="/external/css/global.sitemain.r6.2.1.0.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="/external/css/global.sitemodules.r6.2.1.0.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="/external/css/global.sitepages.r6.2.1.0.css" media="all" />
+
+        <link rel="stylesheet" type="text/css" href="/external/css/global.section.r6.2.1.0.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="/external/css/global.ie8.r6.2.1.0.css" media="all" />
+
+        <script type="text/javascript" src="/js/jquery-1.8.1.min.js"></script>
+<script type="text/javascript" src="/external/js/global.header.r6.2.1.0.js"></script>
+
+<!-- hearst/common/omniture.tpl -->
+<script type="text/javascript">
+	// <![CDATA[
+	// document.domain = "hearstnp.com";
+	var requestTime = new Date(1418691036 * 1000);
+
+										
+					
+		
+		// bizobject variables
+		var omni_channelPath = "Arts & Entertainment :: Top 100 Restaurants";
+				var omni_title = "Top 100 Restaurants";
+				var omni_bizObjectId = "9380";
+		var omni_className = "channel";
+		var omni_publicationDate = "2013-08-29 19:07:00";
+		var omni_sourceSite="premiumchron";
+
+        	        
+        var omni_paywallSite = "1";
+
+    	// ]]>
+</script>
+<!--[if IE 6]><script type="text/javascript" src="/js/hdn/utils/DD_belatedPNG_0.0.8a-min.js"></script><![endif]-->
+<!-- e hearst/common/omniture.tpl -->
+
+
+
+        <title>Top 100 Restaurants | HoustonChronicle.com - Houston Chronicle</title>
+        <link rel="SHORTCUT ICON" href="/favicon.ico?v=2" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon-precomposed.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72-precomposed.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png"/>
+        <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144-precomposed.png"/>
+
+    <link rel="canonical" href="http://www.houstonchronicle.com/entertainment/top-100-restaurants/" />
+
+    
+<!--[if lt IE 9]>
+        <meta http-equiv="X-UA-Compatible" content="IE=7,IE=8" />
+<![endif]-->
+
+            <meta name="description" content="The Houston Chronicle's restaurant critic Alison Cook compiles the top 100 places to eat in the city." />
+    
+    
+    
+    
+    
+    <meta property="og:title" content="Top 100 Restaurants" />
+            <meta property="og:description" content="The Houston Chronicle's restaurant critic Alison Cook compiles the top 100 places to eat in the city." />
+                        <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.houstonchronicle.com/entertainment/top-100-restaurants/" />
+    <meta property="og:image" content="http://www.houstonchronicle.com/img/pages/article/opengraph_default.jpg" />
+    <meta property="og:site_name" content="Houston Chronicle" />
+        <!-- Twitter card metadata  -->
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@houstonchron" />
+    
+<!-- /business/templates/hearst/home/header_fbpage.tpl-->
+
+
+                <meta property="fb:app_id" content="653292111352579"/>
+    
+<!-- e /business/templates/hearst/home/header_fbpage.tpl-->
+<script type="text/javascript" id="adPositionManagerScriptTag" src="http://aps.hearstnp.com/Scripts/loadAds.js"></script>
+
+                            <!-- sectionDesign  siteid  id  -->
+            
+            <!--[if lt IE 9]>
+        <script src="/js/respond.min.js"></script>
+<![endif]-->
+        <script type="text/javascript" async src="http://launch.newsinc.com/js/embed.js" id="_nw2e-js"></script>
+        <!-- CSS/JS Hotfix freeform -->
+        
+        <!-- hearst/item/standalone.tpl -->
+<!-- mid:freeform.13324 -->
+<script type="text/javascript">
+    // turn off/on media and freeform objects from gallery [CPREM-1953]
+    HDN.skipGalleryMediaObjects = true;
+    HDN.skipGalleryFreeformObjects = true;
+</script>
+
+<style>
+/* CPREM-1909 */
+.digital_pass_promo a {font-size: 16px;}
+
+.hc_opinion .alertbox {
+    background: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+/*CPREM-2096*/
+.prem-exclusive .content h4.kicker,
+.prem-exclusive .content h4.kicker .byline {
+	color: #aaa;
+	font-size: 10px;
+	line-height:1em;
+	font-family: "HoustonDeck", serif;
+	margin-bottom:8px;
+}
+</style>
+	
+<style type="text/css">
+/*CPREM-2192 */
+@media screen and (min-width: 1280px){
+.prem_homepage_2 .digital_pass_promo {
+margin: -24px 0 20px 0;
+}
+}
+
+/* Inline perfect pixel fix*/
+.fixed-asset.perfectPixel{ height:250px;}
+
+</style>
+
+
+<!-- Bing Webmaster Tools verification -->
+<meta name="msvalidate.01" content="9451CA04ABC9D1D5C6419C73B4C4F7B7" />
+    </head>
+    <body id="home">
+    <!-- ux/chron/tmpl/channel_omniture.php -->
+
+<!-- Adobe TagManager: Houston Premium -->
+<script type="text/javascript">//<![CDATA[
+var amc=amc||{};if(!amc.on){amc.on=amc.call=function(){}};
+document.write("<scr"+"ipt type=\"text/javascript\" src=\"//www.adobetag.com/d1/v2/ZDEtaGVhcnN0LTMwNzctMzk4My0=/amc.js\"></sc"+"ript>");
+//]]></script>
+<!-- End Adobe TagManager -->
+
+<!-- e ux/chron/tmpl/channel_omniture.php -->
+            <div id="container" class="section hc_subsection">
+                <div id="header">                 <!-- ux/premiumchron/templates/hearst/common/admin_bar.tpl -->
+<div class="header-top">
+  <div class="lock1200">
+    <ul class="ht-links">
+      <li class="ht-link-item ht-branding"><a href="http://chron.com/" target="_blank"><img src="/img/utils/spacer.png"></a></li>
+      <li class="ht-link-item"><a href="http://chron.com/cars/" target="_blank">Autos</a></li>
+      <li class="ht-link-item"><a href="http://chron.com/jobs/" target="_blank">Jobs</a></li>    
+      <li class="ht-link-item"><a href="http://chron.com/homes/" target="_blank">Real Estate</a></li>
+      <li class="ht-weather">
+        <span>
+          <a class="weather-ico" href="http://weather.chron.com/US/TX/Houston.html" target="_blank"></a>
+          <a class="ht-temp" href="http://weather.chron.com/US/TX/Houston.html" target="_blank"></a>
+        </span>
+      </li>
+    </ul>
+
+    <!-- ux/hearst/widgets/paywallLogin/main.tpl -->
+
+<ul class="ht-right-links signed-in" style="display:none">
+    <li class="ht-ed"><a href="/e-edition/">eNewspaper</a></li>
+    <li class="ht-user">
+        <a id="adminlink" class="ht-expand">Account</a>
+        <div class="hst-admin">
+            <div id="acctAdmin">
+                <ul class="form-list">
+                    <li><a href="https://myaccount.houstonchronicle.com/Login.aspx" class="admin-profile" target="_blank">Edit Your Profile</a></li>
+                    <li><a href="https://myaccount.houstonchronicle.com/Login.aspx" class="admin-sub" target="_blank">Manage Your Subscription</a></li>
+                </ul>
+                <input class="btn-submit" type="button" onclick="edbTokens.logout()" value="Sign Out">
+            </div>
+        </div><!-- /hst-admin -->
+    </li>
+</ul>
+<ul class="ht-right-links signed-out">
+    <li class="ht-ed"><a href="/e-edition/">eNewspaper</a></li>
+    <li class="ht-saved">
+        <span><a href="https://myaccount.houstonchronicle.com/dssSubscribe.aspx?z=00000&amp;pid=114,176&amp;return=http://www.houstonchronicle.com/entertainment/top-100-restaurants/">Subscribe</a></span>
+    </li>
+    <li class="ht-user">
+        <span><a id="adminlink" class="ht-expand">Sign In</a></span>
+        <div class="hst-admin">
+            <div class="intro">
+                <form action="https://myaccount.houstonchronicle.com/dssmatch.aspx" method="get" id="activate">
+                    <a onclick="document.getElementById('activate').submit();">
+                        <h3>First time signing in to HoustonChronicle.com?</h3>
+                        <input type="hidden" name="return" value="http://www.houstonchronicle.com/entertainment/top-100-restaurants/"/>
+                        <p><span>Click here</span> to confirm your subscription &amp; sign in information.</p>
+                    </a>
+                    <input type="hidden"  name="commit" value="Activate Account" />
+                </form>
+            </div>
+            <div id="signIn">
+                <form action="https://edb.houstonchronicle.com/WCMPaywall/GetTokensByEmail" method="post" name="aw-login">
+                    <fieldset>
+                        <ul class="form-list">
+                            <li><input class="form-input email-aw useremail" id="aw-email" name="EmailAddress" type="email" autocapitalize="off" onfocus="if(this.value == 'Email Address') { this.value = ''; }" onkeypress="javascript: if (window.event.keyCode === 35) { return false; }" value="" /></li>
+                            <li id="pw-li"><input class="form-input password-aw" id="password" name="Password" type="password" value="" /></li>
+                            <li>
+                                <div id="checkremem" class="checkbox-rm checked">
+                                    <input id="remember_me" name="RememberMe" checked="true" type="checkbox" value="1">
+                                    <label for="remember_me">Stay signed in</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <input type="hidden" value="header" name="SignInError" />
+                    <input class="btn-submit" name="commit" type="submit" value="Sign In">
+                    <p class="forgot"><a href="https://myaccount.houstonchronicle.com/ForgotPassword.aspx" target="_blank">Forgot Your Password?</a></p>
+                </form>
+                <div class="signin-dis">By logging in, you agree to the <a href="/terms_of_use/" target="_blank">Terms and Conditions</a> and <a href="/privacy_policy/" target="_blank">Privacy Policy</a>.</div>
+            </div>
+        </div><!-- /hst-admin -->
+    </li>
+</ul>
+<script>
+    $('.email-aw').watermark('Email Address');
+    $('.password-aw').watermark('Password');
+
+    $.ajax({
+        url: "/validateEdb/channel-9380/",
+        async: false
+    }).done(function(premiumAllowed) {
+        premiumAllowed = +premiumAllowed;
+        if (edbTokens.productToken == null || !premiumAllowed) {
+            $('ul.signed-in').remove();
+            $('ul.signed-out').show();
+            if ( edbTokens.errorMessage && edbTokens.signInError=='header' ){
+                $('#signIn').prepend('<div class="error-wrap error-back-light" style="display: block; "><span class="error-text error-text-light">'+
+                edbTokens.errorMessage+
+                '</span><img src="/img/utils/error_light.png"/></div>');
+                if(edbTokens.emailForPrompt){
+                    $("input.useremail").val(edbTokens.emailForPrompt);
+                }
+            }
+        } else {
+            $('ul.signed-out').remove();
+            $('ul.signed-in').show();
+        }
+    });
+</script>
+
+<!-- e ux/hearst/widgets/paywallLogin/main.tpl -->
+
+
+
+  </div>
+</div>
+<!-- e ux/premiumchron/templates/hearst/common/admin_bar.tpl -->
+                
+            <div class="lock1200">             <div class="header-branding">
+                <a class="logo-link" href="/"></a>
+                <h1 class="section-title"><a class="color-link" href="/entertainment/top-100-restaurants/">Top 100 Restaurants</a></h1>
+            </div>
+<!-- e premiumchron/hearst/home/header_main.tpl --><!--
+channel.className: channel
+channel.comments: none
+-->
+
+<!-- hearst/home/navigation.tpl -->
+	<!-- ux/premiumchron/templates/hearst/home/navigation_main.tpl -->
+
+
+      
+    
+  
+
+
+
+<div class="header-nav">
+  <div class="wide-sections horizontal-menu">
+    <ul id="wide-nav" class="sections-list">
+
+            
+                        
+          
+                      <li id="Ho-link" class="nav-item first"><a href="/">Home</a></li> 
+          
+                            
+          
+                      <li id="Lo-link" class="nav-item  " data-url="/local/"><a href="javascript:void(0);">Local</a></li>
+          
+                            
+          
+                      <li id="US-link" class="nav-item  " data-url="/us-world/"><a href="javascript:void(0);">US & World</a></li>
+          
+                            
+          
+                      <li id="Sp-link" class="nav-item  " data-url="/sports/"><a href="javascript:void(0);">Sports</a></li>
+          
+                            
+          
+                      <li id="Bu-link" class="nav-item  " data-url="/business/"><a href="javascript:void(0);">Business</a></li>
+          
+                            
+          
+                      <li id="Op-link" class="nav-item  " data-url="/opinion/"><a href="javascript:void(0);">Opinion</a></li>
+          
+                            
+                       
+          
+                      <li id="Ar-link" class="nav-item  current currentsection" data-url="/entertainment/"><a href="javascript:void(0);">Arts & Entertainment</a></li>
+          
+                            
+          
+                      <li id="Li-link" class="nav-item  " data-url="/lifestyle/"><a href="javascript:void(0);">Lifestyle</a></li>
+          
+                            
+          
+                      <li id="In-link" class="nav-item last  " data-url="/insider/"><a href="javascript:void(0);">Insider</a></li>
+          
+                              <li class="search"><a href="javascript:void(0);"><div class="search-open"></div></a></li>
+    </ul>
+    <ul class="search-menu">
+      <li class="nav-item"><a class="menu-collapsed-horizontal" href="javascript:toggleSearch();">Sections</a></li>
+      <li class="search search-icon"><a href="javascript:toggleSearch();"><div class="search-close"></div></a></li>
+      <li class="search search-input">
+        <form action="/results/" method="get">
+          <input type="hidden" name="controllerName" value="search" />
+          <input type="hidden" name="action" value="search" />
+          <input type="hidden" name="searchindex" value="property" />
+          <input type="hidden" name="view" value="premium" />
+          <input type="hidden" name="sort" value="date" />
+          <fieldset>
+            
+            <input class="form-input" id="search" name="query" type="text" onfocus="if(this.value == 'Search') { this.value = ''; }" value="Search">
+            <input class="btn-dark search-btn" value="Search" name="search" type="submit" />
+            
+          </fieldset>
+        </form>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="narrow-sections horizontal-menu">
+    <ul class="sections-list">
+      <li class="nav-item"><a id="sections-link" class="menu-collapsed" href="javascript:void(0);">Sections</a></li>
+      <li class="nav-item search">
+        <div class="search-narrow">
+          <form action="/results/" method="get">
+            <input type="hidden" name="controllerName" value="search" />
+            <input type="hidden" name="action" value="search" />
+            <input type="hidden" name="searchindex" value="property" />
+            <input type="hidden" name="view" value="premium" />
+            <input type="hidden" name="sort" value="date" />
+            <fieldset>
+              
+              <input class="form-input" id="search" name="query" type="text" onfocus="if(this.value == 'Search') { this.value = ''; }" value="Search" />
+              
+         </fieldset>
+          </form>
+          <a href="javascript:void(0);"><div class="search-close"></div></a>
+        </div>
+        <a href="javascript:void(0);"><div class="toggle-btn search-open"></div></a>
+      </li>
+    </ul>
+  </div>
+
+  <div id="sections-menu">
+    <div class="narrow-sections nav-links">
+      <ul class="sections-list">
+                                                        <li id="Ho-link" class="nav-item first"><a href="/">Home</a></li> 
+                                                            <li id="Lo-link" class="nav-item" data-url="/local/"><a href="javascript:toggle_narrow_subsection('Lo');">Local</a></li>
+                                                            <li id="US-link" class="nav-item" data-url="/us-world/"><a href="javascript:toggle_narrow_subsection('US');">US & World</a></li>
+                                                            <li id="Sp-link" class="nav-item" data-url="/sports/"><a href="javascript:toggle_narrow_subsection('Sp');">Sports</a></li>
+                                                            <li id="Bu-link" class="nav-item" data-url="/business/"><a href="javascript:toggle_narrow_subsection('Bu');">Business</a></li>
+                                                            <li id="Op-link" class="nav-item" data-url="/opinion/"><a href="javascript:toggle_narrow_subsection('Op');">Opinion</a></li>
+                                                            <li id="Ar-link" class="nav-item" data-url="/entertainment/"><a href="javascript:toggle_narrow_subsection('Ar');">Arts & Entertainment</a></li>
+                                                            <li id="Li-link" class="nav-item" data-url="/lifestyle/"><a href="javascript:toggle_narrow_subsection('Li');">Lifestyle</a></li>
+                                                            <li id="In-link" class="nav-item last" data-url="/insider/"><a href="javascript:toggle_narrow_subsection('In');">Insider</a></li>
+                                    </ul>
+    </div>
+
+                                                          <div id="Lo" class="nav-links nav-pulldown">
+            <ul class="subsections-list">
+                                                            <li class="nav-item current first"><a href='/local/houston/'>Houston</a></li>
+                                                                                        <li class="nav-item current"><a href='/local/politics-policy/'>Politics & Policy</a></li>
+                                                                                        <li class="nav-item current"><a href='/local/education/'>Education</a></li>
+                                                                                        <li class="nav-item current"><a href='/local/elections/'>Election 2014</a></li>
+                                                                                        <li class="nav-item current"><a href='/local/investigations/'>HC Investigations</a></li>
+                                                                                        <li class="nav-item current"><a href='/local/mostread/'>Most-read Stories</a></li>
+                                                                                        <li class="nav-item current"><a href='/local/specialsections/'>Special Sections</a></li>
+                                                                                        <li class="nav-item current last"><a href='http://www.legacy.com/obituaries/houstonchronicle/' target='_blank' class='externallink' >Obituaries</a></li>
+                                                      </ul>
+          </div>
+                                        <div id="US" class="nav-links nav-pulldown">
+            <ul class="subsections-list">
+                                                            <li class="nav-item current first"><a href='/us-world/us/'>US News</a></li>
+                                                                                        <li class="nav-item current"><a href='/us-world/world/'>World News</a></li>
+                                                                                        <li class="nav-item current"><a href='/us-world/space/'>Space</a></li>
+                                                                                        <li class="nav-item current"><a href='/us-world/science-environment/'>Science & Environment</a></li>
+                                                                                        <li class="nav-item current"><a href='/us-world/politics-policy/'>Politics & Policy</a></li>
+                                                                                        <li class="nav-item current"><a href='http://www.usaweekend.com/content/ebook/tx_houston' target='_blank' class='externallink' >USA Weekend</a></li>
+                                                                                        <li class="nav-item current last"><a href='http://video.houstonchronicle.com/' target='_blank' class='externallink' >Video</a></li>
+                                                      </ul>
+          </div>
+                                        <div id="Sp" class="nav-links nav-pulldown">
+            <ul class="subsections-list">
+                                                            <li class="nav-item current first"><a href='/sports/texans/'>Texans</a></li>
+                                                                                        <li class="nav-item current"><a href='/sports/astros/'>Astros</a></li>
+                                                                                        <li class="nav-item current"><a href='/sports/rockets/'>Rockets</a></li>
+                                                                                        <li class="nav-item current"><a href='/sports/dynamo/'>Dynamo & Dash</a></li>
+                                                                                        <li class="nav-item current"><a href='/sports/college-sports/'>College Sports</a></li>
+                                                                                        <li class="nav-item current"><a href='/sports/hs-sports/'>HS Sports</a></li>
+                                                                                        <li class="nav-item current"><a href='/sports/outdoors/'>Outdoors</a></li>
+                                                                                        <li class="nav-item current"><a href='/sports/more-sports/'>More Sports</a></li>
+                                                                                        <li class="nav-item current last"><a href='http://seatgeek.com/houston-texas-sports-tickets' target='_blank' class='externallink' >Buy Tickets</a></li>
+                                                      </ul>
+          </div>
+                                        <div id="Bu" class="nav-links nav-pulldown">
+            <ul class="subsections-list">
+                                                            <li class="nav-item current first"><a href='/business/energy/'>Energy</a></li>
+                                                                                        <li class="nav-item current"><a href='/business/real-estate/'>Real Estate</a></li>
+                                                                                        <li class="nav-item current"><a href='/business/real-estate/deal-of-the-week/'>Deal of the Week</a></li>
+                                                                                        <li class="nav-item current"><a href='/business/medical/'>Medical</a></li>
+                                                                                        <li class="nav-item current"><a href='/business/retail/'>Retail</a></li>
+                                                                                        <li class="nav-item current"><a href='/business/technology/'>Technology</a></li>
+                                                                                        <li class="nav-item current"><a href='/business/personal-finance/'>Personal Finance</a></li>
+                                                                                        <li class="nav-item current"><a href='/business/top-workplaces/'>Top Workplaces</a></li>
+                                                                                        <li class="nav-item current"><a href='/business/chron-100/'>Chronicle 100</a></li>
+                                                                                        <li class="nav-item current last"><a href='/business/bloomberg/'>Bloomberg</a></li>
+                                                      </ul>
+          </div>
+                                        <div id="Op" class="nav-links nav-pulldown">
+            <ul class="subsections-list">
+                                                            <li class="nav-item current first"><a href='/opinion/editorials/'>Editorials</a></li>
+                                                                                        <li class="nav-item current"><a href='/opinion/outlook/'>Outlook</a></li>
+                                                                                        <li class="nav-item current"><a href='/opinion/letters/'>Letters to the Editor</a></li>
+                                                                                        <li class="nav-item current"><a href='/opinion/recommendations/'>Recommendations</a></li>
+                                                                                        <li class="nav-item current"><a href='/opinion/columnists/'>Columnists</a></li>
+                                                                                        <li class="nav-item current last"><a href='/opinion/corrections/'>Corrections</a></li>
+                                                      </ul>
+          </div>
+                                        <div id="Ar" class="nav-links nav-pulldown">
+            <ul class="subsections-list">
+                                                            <li class="nav-item current first"><a href='/entertainment/restaurants-bars/'>Restaurants & Bars</a></li>
+                                                                                        <li class="nav-item current"><a href='/entertainment/top-100-restaurants/'>Top 100 Restaurants</a></li>
+                                                                                        <li class="nav-item current"><a href='/entertainment/music/'>Music</a></li>
+                                                                                        <li class="nav-item current"><a href='/entertainment/movies/'>Movies & TV</a></li>
+                                                                                        <li class="nav-item current"><a href='/entertainment/books/'>Books</a></li>
+                                                                                        <li class="nav-item current"><a href='/entertainment/arts-theater/'>Arts & Theater</a></li>
+                                                                                        <li class="nav-item current"><a href='http://www.chron.com/life/horoscopes/' target='_blank' class='externallink' >Horoscopes</a></li>
+                                                                                        <li class="nav-item current"><a href='http://www.chron.com/entertainment/comics-games/' target='_blank' class='externallink' >Comics & Games</a></li>
+                                                                                        <li class="nav-item current last"><a href='/entertainment/restaurants-bars/barbecue/'>Barbecue</a></li>
+                                                      </ul>
+          </div>
+                                        <div id="Li" class="nav-links nav-pulldown">
+            <ul class="subsections-list">
+                                                            <li class="nav-item current first"><a href='/lifestyle/escapes/'>Escapes</a></li>
+                                                                                        <li class="nav-item current"><a href='/lifestyle/style/'>Style</a></li>
+                                                                                        <li class="nav-item current"><a href='/lifestyle/food/'>Food & Cooking</a></li>
+                                                                                        <li class="nav-item current"><a href='/lifestyle/food/recipes/'>Recipes</a></li>
+                                                                                        <li class="nav-item current"><a href='/lifestyle/wine/'>Wine</a></li>
+                                                                                        <li class="nav-item current"><a href='/lifestyle/society/'>Society</a></li>
+                                                                                        <li class="nav-item current"><a href='/lifestyle/gardening/'>Gardening</a></li>
+                                                                                        <li class="nav-item current"><a href='/lifestyle/pethousepets/'>Pethouse Pets</a></li>
+                                                                                        <li class="nav-item current"><a href='/lifestyle/houston-belief/'>Houston Belief</a></li>
+                                                                                        <li class="nav-item current"><a href='/lifestyle/health/'>Health</a></li>
+                                                                                        <li class="nav-item current last"><a href='/lifestyle/passages/'>Passages</a></li>
+                                                      </ul>
+          </div>
+                                        <div id="In" class="nav-links nav-pulldown">
+            <ul class="subsections-list">
+                                                            <li class="nav-item current first"><a href='/archive/search/'>Archives</a></li>
+                                                                                        <li class="nav-item current"><a href='/entertainment/restaurants-bars/barbecue/'>Barbecue</a></li>
+                                                                                        <li class="nav-item current"><a href='/local/gray-matters/'>Gray Matters</a></li>
+                                                                                        <li class="nav-item current"><a href='/sports/insider/'>Inside Houston Sports</a></li>
+                                                                                        <li class="nav-item current"><a href='/business/outside-the-boardroom/'>Outside the Boardroom</a></li>
+                                                                                        <li class="nav-item current"><a href='/politics/texas-take/'>Texas Take</a></li>
+                                                                                        <li class="nav-item current"><a href='/local/mostread/'>Most Read</a></li>
+                                                                                        <li class="nav-item current"><a href='/local/todayspaper/'>Today's Paper</a></li>
+                                                                                        <li class="nav-item current last"><a href='http://www.houstonchronicle.com/e-edition/' target='_blank' class='externallink' >eNewspaper</a></li>
+                                                      </ul>
+          </div>
+                    </div>
+  <!-- triple rule -->
+  <div class="solo_triple"></div>
+</div>
+
+</div> </div> <!--e /ux/chron/templates/hearst/home/navigation_main.tpl -->
+<!-- e hearst/home/navigation.tpl -->
+	<!-- templates/design/channel/premium_subsection.tpl -->
+
+<div id="content">
+  <div class="subsection_wrap">
+    <div class="zone zone-1">
+        <div class="addToHome" data-positon="fixed">
+ <div class="popup-wrap clearfix">
+	<div class="popup">
+		<a class="close-popup"></a>
+		<div class="homelogo"></div>
+		<p class="msg ios_msg">
+							Save Top 100 Restaurants to your phone. Tap <a class="b-icon"></a> and then ‘Add to Home Screen’.
+					</p>
+		<p class="msg not_ios_msg">
+							Save Top 100 Restaurants to your phone. Tap the menu button and then 'Add shortcut'.
+					</p>
+		<p class="msg chrome_msg">
+							Save Top 100 Restaurants to your phone. Tap the menu button and then ‘Add to homescreen’.
+					</p>
+	</div>
+ </div>
+ <div class="ios_arrow"></div>
+</div><!-- src/business/widgets/hearst/collection/widget.tpl -->
+                         <div class="hide-rss-link hdnce-e hdnce-collection-43711-premium_section_above_the_fold"><!-- collections/premium_section_above_the_fold.tpl -->
+<!-- collection.premium_section_above_the_fold.43711 -->
+
+<div class="collection thirds-2-1 hc-home-lead af">
+    <div class="column wide-col">
+        <div class="hl-item hl-item-1">
+            <h2 class="headline">
+                <a  
+                    href="/entertainment/top-100-restaurants/article/The-top-100-restaurants-of-Houston-list-explained-5772494.php">How the top 100 restaurants in Houston for 2014 were picked</a>
+            </h2>
+                <div class="img-wrap">
+                <!-- common/display_image.tpl -->
+  <a class="without_u " href="/entertainment/top-100-restaurants/article/The-top-100-restaurants-of-Houston-list-explained-5772494.php"><img src="http://ww2.hdnux.com/photos/32/26/70/6909477/7/premium_landscape.jpg" alt="1. Oxheart 	  Cuisine:  Contemporary American  Entree price:  $$$$  Where:  1302 Nance  Phone:  832-830-8592  Website:   oxhearthouston.com   Read Alison Cook's review of Oxheart   Pictured above:  Roast sirloin and sausage of grass-fed beef, with pickled beets and citrus leaf, black tea, and a sauce of dried offal" border="0" /></a>
+  <!-- e display_image.tpl -->
+            </div>
+            <div>
+                        <!-- hearst/common/author_name.tpl -->
+<p class="byline">By <a href="/author/alison-cook/">Alison Cook</a></p>
+<!-- e hearst/common/author_name.tpl -->                <p class="blurb">
+                    <!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl -->                    <!-- hearst/common/blurb.tpl -->
+    			 As I mention each year at the dawn of a new Top 100 Restaurants list, these are not necessarily Houston's fanciest restaurants, nor the most expensive, nor the ones most worthy of multiple stars in some fading fine-dining universe where napery and carpeting and luxury ingredients mattered intensely.
+	<!-- hearst/common/blurb.tpl -->
+                </p>
+                    <a href="/entertainment/top-100-restaurants/article/The-top-100-restaurants-of-Houston-list-explained-5772494.php"
+                    class="continues " >Continue Reading</a>
+            </div>
+        </div><!-- /hl-item-1 -->
+    </div><!-- /wide-col -->
+    <div class="column narrow-col">
+        <div class="hl-item hl-item-2">
+            <h2 class="headline">
+                <a class="hdnce-e hdnce-link-28905" 
+                    href="http://www.houstonchronicle.com/entertainment/top-100-restaurants/article/Alison-Cook-s-Top-100-restaurants-of-2014-to-be-5770757.php?cmpid=twitter-premium&t=fd54ed592b73d66009">Where to find the book of Houston's top 100 restaurants</a>
+            </h2>
+                    <p class="blurb">
+                <!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl -->                <!-- hearst/common/blurb.tpl -->
+    			
+	<!-- hearst/common/blurb.tpl -->
+            </p>
+        </div><!-- /hl-item-2 -->
+        <div class="ad-middle">
+            <div class="ad-inner ad-smallBP">
+                <div id="AP300" class="ad_deferrable"><script type="text/javascript">/*<![CDATA[*/ hearstPlaceAd("AP300"); /*]]>*/ </script></div>
+
+            </div>
+        </div>
+    </div><!-- /narrow-col -->
+</div><!-- /hc-home-lead -->
+<!-- END Sections Lead Stories -->
+<!-- e premium_section_above_the_fold.tpl -->
+</div>    
+
+
+<!-- e src/business/widgets/hearst/collection/widget.tpl -->    </div><!-- zone 1-->
+
+    <div class="zone zone-2">
+        <!-- src/business/widgets/hearst/collection/widget.tpl -->
+                         <div class="hide-rss-link hdnce-e hdnce-collection-43186-premium_subsection_top_stories"><!-- hearst/collections/premium_subsection_top_stories.tpl -->
+<!-- collection.premium_subsection_top_stories.43186 -->
+
+    <div class="collection hc_sub_topstories">
+    <div class="header">
+
+            <h4 class="kicker highlight color-link">Top 25 Restaurants</h4>
+        </div>
+    <div class="sub_topstories_spacer"></div>
+            <div class="sub_topstories_item no-photo ">
+        <h2 class="headline">
+            <a class="hdnce-e hdnce-link-28940"  href="http://www.houstonchronicle.com/entertainment/top-100-restaurants-database/">Search for a restaurant near you in our interactive database</a>
+        </h2>
+        <!-- hearst/common/author_name.tpl -->
+<p class="byline"></p>
+<!-- e hearst/common/author_name.tpl -->        <p class="blurb">
+            <!-- hearst/common/blurb.tpl -->
+    			
+	<!-- hearst/common/blurb.tpl -->
+        </p>
+        
+                    <a href="http://www.houstonchronicle.com/entertainment/top-100-restaurants-database/"
+                class="continues hdnce-e hdnce-link-28940" >Continue Reading</a>
+            </div>
+                <div class="sub_topstories_item ">
+        <!-- common/display_image.tpl -->
+  <a class="without_u " href="/entertainment/top-100-restaurants/article/1-Oxheart-5749163.php"><img src="http://ww1.hdnux.com/photos/31/50/61/6720580/3/premium_landscape.jpg" alt="Oxheart:  Tomatoes (from Three Sisters Farm) served with bay leaf, pine nut puree, spring herbs with milk foam." border="0" /></a>
+  <!-- e display_image.tpl -->
+        <h2 class="headline">
+            <a   href="/entertainment/top-100-restaurants/article/1-Oxheart-5749163.php">1: Oxheart</a>
+        </h2>
+        <!-- hearst/common/author_name.tpl -->
+<p class="byline">By <a href="/author/alison-cook/">Alison Cook</a></p>
+<!-- e hearst/common/author_name.tpl -->        <p class="blurb">
+            <!-- hearst/common/blurb.tpl -->
+    			 Once again, this small and informal tasting-menu restaurant in the Warehouse District deserves to be known as Houston's best.
+	<!-- hearst/common/blurb.tpl -->
+        </p>
+        
+                    <a href="/entertainment/top-100-restaurants/article/1-Oxheart-5749163.php"
+                class="continues " >Continue Reading</a>
+            </div>
+                <div class="sub_topstories_item ">
+        <!-- common/display_image.tpl -->
+  <a class="without_u " href="/entertainment/top-100-restaurants/article/2-The-Pass-5749166.php"><img src="http://ww4.hdnux.com/photos/17/12/25/3974519/7/premium_landscape.jpg" alt="Bucatini with Gulf shrimp and harissa from the Provisions menu at The Pass &amp;amp; Provisions." border="0" /></a>
+  <!-- e display_image.tpl -->
+        <h2 class="headline">
+            <a   href="/entertainment/top-100-restaurants/article/2-The-Pass-5749166.php">2: The Pass</a>
+        </h2>
+        <!-- hearst/common/author_name.tpl -->
+<p class="byline">By <a href="/author/alison-cook/">Alison Cook</a></p>
+<!-- e hearst/common/author_name.tpl -->        <p class="blurb">
+            <!-- hearst/common/blurb.tpl -->
+    			 From the moment the festive champagne cart rolls up to your table in this calm, chaste dining room, The Pass delivers a type of modern luxury that is rare in Houston.
+	<!-- hearst/common/blurb.tpl -->
+        </p>
+        
+                    <a href="/entertainment/top-100-restaurants/article/2-The-Pass-5749166.php"
+                class="continues " >Continue Reading</a>
+            </div>
+                <div class="sub_topstories_item ">
+        <!-- common/display_image.tpl -->
+  <a class="without_u " href="/entertainment/top-100-restaurants/article/3-Killen-s-Barbecue-5749170.php"><img src="http://ww2.hdnux.com/photos/31/24/53/6638317/3/premium_landscape.jpg" alt="Three meat plate with brisket, pork ribs and jalapeño sausage link at Killen's BBQ." border="0" /></a>
+  <!-- e display_image.tpl -->
+        <h2 class="headline">
+            <a   href="/entertainment/top-100-restaurants/article/3-Killen-s-Barbecue-5749170.php">3: Killen's Barbecue</a>
+        </h2>
+        <!-- hearst/common/author_name.tpl -->
+<p class="byline">By <a href="/author/alison-cook/">Alison Cook</a></p>
+<!-- e hearst/common/author_name.tpl -->        <p class="blurb">
+            <!-- hearst/common/blurb.tpl -->
+    			 The constant lines outside this exciting Pearland destination attest to the grandeur of chef Ronnie Killen's meticulously smoked meats.
+	<!-- hearst/common/blurb.tpl -->
+        </p>
+        
+                    <a href="/entertainment/top-100-restaurants/article/3-Killen-s-Barbecue-5749170.php"
+                class="continues " >Continue Reading</a>
+            </div>
+                <div class="sub_topstories_item ">
+        <!-- common/display_image.tpl -->
+  <a class="without_u " href="/entertainment/top-100-restaurants/article/4-Common-Bond-Cafe-Bakery-5749174.php"><img src="http://ww2.hdnux.com/photos/31/34/63/6671605/3/premium_landscape.jpg" alt="Grilled bread from Common Bond Bakery, served with the goat ricotta spread at Pax Americana." border="0" /></a>
+  <!-- e display_image.tpl -->
+        <h2 class="headline">
+            <a   href="/entertainment/top-100-restaurants/article/4-Common-Bond-Cafe-Bakery-5749174.php">4: Common Bond Cafe & Bakery</a>
+        </h2>
+        <!-- hearst/common/author_name.tpl -->
+<p class="byline">By <a href="/author/alison-cook/">Alison Cook</a></p>
+<!-- e hearst/common/author_name.tpl -->        <p class="blurb">
+            <!-- hearst/common/blurb.tpl -->
+    			 A niche that has long stood empty on the local dining scene has finally been filled with the advent of this sleek, state-of-the-art bakery.
+	<!-- hearst/common/blurb.tpl -->
+        </p>
+        
+                    <a href="/entertainment/top-100-restaurants/article/4-Common-Bond-Cafe-Bakery-5749174.php"
+                class="continues " >Continue Reading</a>
+            </div>
+                <div class="sub_topstories_item ">
+        <!-- common/display_image.tpl -->
+  <a class="without_u " href="/entertainment/top-100-restaurants/article/5-Caracol-5749179.php"><img src="http://ww1.hdnux.com/photos/26/63/46/5978516/3/premium_landscape.jpg" alt="Tamales at Caracol. (Photo: Greg Morago)" border="0" /></a>
+  <!-- e display_image.tpl -->
+        <h2 class="headline">
+            <a   href="/entertainment/top-100-restaurants/article/5-Caracol-5749179.php">5: Caracol</a>
+        </h2>
+        <!-- hearst/common/author_name.tpl -->
+<p class="byline">By <a href="/author/alison-cook/">Alison Cook</a></p>
+<!-- e hearst/common/author_name.tpl -->        <p class="blurb">
+            <!-- hearst/common/blurb.tpl -->
+    			 Just walking into this glamorous, airy dining room is exhilarating.
+	<!-- hearst/common/blurb.tpl -->
+        </p>
+        
+                    <a href="/entertainment/top-100-restaurants/article/5-Caracol-5749179.php"
+                class="continues " >Continue Reading</a>
+            </div>
+                <div class="sub_topstories_item ">
+        <!-- common/display_image.tpl -->
+  <a class="without_u " href="/entertainment/top-100-restaurants/article/6-Indika-5749184.php"><img src="http://ww1.hdnux.com/photos/26/13/41/5814336/19/premium_landscape.jpg" alt="A crepe stuffed with butternut squash and avocado at Indika, which was featured on Food Network's 'Outrageous Food.'" border="0" /></a>
+  <!-- e display_image.tpl -->
+        <h2 class="headline">
+            <a   href="/entertainment/top-100-restaurants/article/6-Indika-5749184.php">6: Indika</a>
+        </h2>
+        <!-- hearst/common/author_name.tpl -->
+<p class="byline">By <a href="/author/alison-cook/">Alison Cook</a></p>
+<!-- e hearst/common/author_name.tpl -->        <p class="blurb">
+            <!-- hearst/common/blurb.tpl -->
+    			 Indika perches gracefully at the summit of Houston's mighty range of Subcontinental restaurants.
+	<!-- hearst/common/blurb.tpl -->
+        </p>
+        
+                    <a href="/entertainment/top-100-restaurants/article/6-Indika-5749184.php"
+                class="continues " >Continue Reading</a>
+            </div>
+                <div class="sub_topstories_item ">
+        <!-- common/display_image.tpl -->
+  <a class="without_u " href="/entertainment/top-100-restaurants/article/7-Underbelly-5749188.php"><img src="http://ww3.hdnux.com/photos/21/37/42/4585602/9/premium_landscape.jpg" alt="The Juicy Lucy burger from Underbelly's lunch and bar menus, with made with heirloom tomato and Slow Dough cornmeal squares. Photo by Alison Cook" border="0" /></a>
+  <!-- e display_image.tpl -->
+        <h2 class="headline">
+            <a   href="/entertainment/top-100-restaurants/article/7-Underbelly-5749188.php">7: Underbelly</a>
+        </h2>
+        <!-- hearst/common/author_name.tpl -->
+<p class="byline">By <a href="/author/alison-cook/">Alison Cook</a></p>
+<!-- e hearst/common/author_name.tpl -->        <p class="blurb">
+            <!-- hearst/common/blurb.tpl -->
+    			 This big, raucous refectory with its busy open kitchen is chef Chris Shepherd's unabashed love song to the multicultural strains that are shaping Houston's modern Gulf Coast cuisine.
+	<!-- hearst/common/blurb.tpl -->
+        </p>
+        
+                    <a href="/entertainment/top-100-restaurants/article/7-Underbelly-5749188.php"
+                class="continues " >Continue Reading</a>
+            </div>
+                <div class="sub_topstories_item ">
+        <!-- common/display_image.tpl -->
+  <a class="without_u " href="/entertainment/top-100-restaurants/article/8-MF-Sushi-5749190.php"><img src="http://ww3.hdnux.com/photos/21/45/27/4609478/11/premium_landscape.jpg" alt="Whole curried head of kinmedai (goldeneye snapper) at MF Sushi" border="0" /></a>
+  <!-- e display_image.tpl -->
+        <h2 class="headline">
+            <a   href="/entertainment/top-100-restaurants/article/8-MF-Sushi-5749190.php">8: MF Sushi</a>
+        </h2>
+        <!-- hearst/common/author_name.tpl -->
+<p class="byline">By <a href="/author/alison-cook/">Alison Cook</a></p>
+<!-- e hearst/common/author_name.tpl -->        <p class="blurb">
+            <!-- hearst/common/blurb.tpl -->
+    			 Chef-owner Chris Kinjo's sushi mecca bounced back from a disastrous 2013 kitchen fire handsomer and better staffed than before.
+	<!-- hearst/common/blurb.tpl -->
+        </p>
+        
+                    <a href="/entertainment/top-100-restaurants/article/8-MF-Sushi-5749190.php"
+                class="continues " >Continue Reading</a>
+            </div>
+                <div class="sub_topstories_item ">
+        <!-- common/display_image.tpl -->
+  <a class="without_u " href="/entertainment/top-100-restaurants/article/9-Coltivare-5749191.php"><img src="http://ww1.hdnux.com/photos/26/01/07/5771728/11/premium_landscape.jpg" alt="Salad of fennel, avocado, chile &amp; local citrus at Coltivare." border="0" /></a>
+  <!-- e display_image.tpl -->
+        <h2 class="headline">
+            <a   href="/entertainment/top-100-restaurants/article/9-Coltivare-5749191.php">9: Coltivare</a>
+        </h2>
+        <!-- hearst/common/author_name.tpl -->
+<p class="byline">By <a href="/author/alison-cook/">Alison Cook</a></p>
+<!-- e hearst/common/author_name.tpl -->        <p class="blurb">
+            <!-- hearst/common/blurb.tpl -->
+    			 The most interesting Italian food in Houston right now isn't fancy, and it's more modern Gulf Coastal than strictly Italian.
+	<!-- hearst/common/blurb.tpl -->
+        </p>
+        
+                    <a href="/entertainment/top-100-restaurants/article/9-Coltivare-5749191.php"
+                class="continues " >Continue Reading</a>
+            </div>
+                <div class="sub_topstories_item ">
+        <!-- common/display_image.tpl -->
+  <a class="without_u " href="/entertainment/top-100-restaurants/article/10-Melange-Creperie-5749195.php"><img src="http://ww3.hdnux.com/photos/23/50/63/5147842/5/premium_landscape.jpg" alt="Sean Carroll drops in ingredients for a sweet crepes in the Melange Creperie stand at City Hall Farmer's Market" border="0" /></a>
+  <!-- e display_image.tpl -->
+        <h2 class="headline">
+            <a   href="/entertainment/top-100-restaurants/article/10-Melange-Creperie-5749195.php">10: Melange Creperie</a>
+        </h2>
+        <!-- hearst/common/author_name.tpl -->
+<p class="byline">By <a href="/author/alison-cook/">Alison Cook</a></p>
+<!-- e hearst/common/author_name.tpl -->        <p class="blurb">
+            <!-- hearst/common/blurb.tpl -->
+    			 Without so much as a chair, a table or a piece of cutlery to its name, this little sidewalk kiosk may be Houston's most consistently superb eating experience.
+	<!-- hearst/common/blurb.tpl -->
+        </p>
+        
+                    <a href="/entertainment/top-100-restaurants/article/10-Melange-Creperie-5749195.php"
+                class="continues " >Continue Reading</a>
+            </div>
+                <div class="sub_topstories_item ">
+        <!-- common/display_image.tpl -->
+  <a class="without_u " href="/entertainment/top-100-restaurants/article/11-Hugo-s-5749111.php"><img src="http://ww2.hdnux.com/photos/23/56/15/5169997/55/premium_landscape.jpg" alt="6. Hugo's  
+Cuisine: Mexican 
+Dish: Pescado Frito 
+Entree price range: $$-$$$ 
+Where: 1600 Westheimer 
+Phone: 713-524-7744 
+Website:   hugosrestaurant.net  
+  Read Alison Cook's review of Hugo's." border="0" /></a>
+  <!-- e display_image.tpl -->
+        <h2 class="headline">
+            <a   href="/entertainment/top-100-restaurants/article/11-Hugo-s-5749111.php">11: Hugo's</a>
+        </h2>
+        <!-- hearst/common/author_name.tpl -->
+<p class="byline">By <a href="/author/alison-cook/">Alison Cook</a></p>
+<!-- e hearst/common/author_name.tpl -->        <p class="blurb">
+            <!-- hearst/common/blurb.tpl -->
+    			 After 12 years, chef Hugo Ortega's beautifully run regional Mexican restaurant qualifies as a Houston cultural treasure.
+	<!-- hearst/common/blurb.tpl -->
+        </p>
+        
+                    <a href="/entertainment/top-100-restaurants/article/11-Hugo-s-5749111.php"
+                class="continues " >Continue Reading</a>
+            </div>
+                <div class="sub_topstories_item ">
+        <!-- common/display_image.tpl -->
+  <a class="without_u " href="/entertainment/top-100-restaurants/article/12-Pax-Americana-5749115.php"><img src="http://ww1.hdnux.com/photos/31/34/63/6671600/3/premium_landscape.jpg" alt="Nine-spice smoked brisket with herb salad, black garlic and roasted potatoes at Pax Americana." border="0" /></a>
+  <!-- e display_image.tpl -->
+        <h2 class="headline">
+            <a   href="/entertainment/top-100-restaurants/article/12-Pax-Americana-5749115.php">12: Pax Americana</a>
+        </h2>
+        <!-- hearst/common/author_name.tpl -->
+<p class="byline">By <a href="/author/alison-cook/">Alison Cook</a></p>
+<!-- e hearst/common/author_name.tpl -->        <p class="blurb">
+            <!-- hearst/common/blurb.tpl -->
+    			 This fledgling restaurant is one to watch. Co-chefs Adam Dorris and Plinio Sandalio — the former a specialist in savory dishes, the latter in sweet — collaborate on a smart short menu devoted to painstakingly curated American ingredients, particularly from the Gulf Coast.
+	<!-- hearst/common/blurb.tpl -->
+        </p>
+        
+                    <a href="/entertainment/top-100-restaurants/article/12-Pax-Americana-5749115.php"
+                class="continues " >Continue Reading</a>
+            </div>
+                <div class="sub_topstories_item ">
+        <!-- common/display_image.tpl -->
+  <a class="without_u " href="/entertainment/top-100-restaurants/article/13-Himalaya-5749117.php"><img src="http://ww2.hdnux.com/photos/26/42/44/5908781/5/premium_landscape.jpg" alt="At Himalaya: Afghani lamb karhai with ginger and cilantro" border="0" /></a>
+  <!-- e display_image.tpl -->
+        <h2 class="headline">
+            <a   href="/entertainment/top-100-restaurants/article/13-Himalaya-5749117.php">13: Himalaya</a>
+        </h2>
+        <!-- hearst/common/author_name.tpl -->
+<p class="byline">By <a href="/author/alison-cook/">Alison Cook</a></p>
+<!-- e hearst/common/author_name.tpl -->        <p class="blurb">
+            <!-- hearst/common/blurb.tpl -->
+    			 The table coverings are clear plastic and the cheerful room is modest, but the Pakistani cooking at Houston's premier ethnic mom-and-pop is anything but.
+	<!-- hearst/common/blurb.tpl -->
+        </p>
+        
+                    <a href="/entertainment/top-100-restaurants/article/13-Himalaya-5749117.php"
+                class="continues " >Continue Reading</a>
+            </div>
+                <div class="sub_topstories_item ">
+        <!-- common/display_image.tpl -->
+  <a class="without_u " href="/entertainment/top-100-restaurants/article/14-Pondicheri-5749123.php"><img src="http://ww1.hdnux.com/photos/23/54/65/5164380/5/premium_landscape.jpg" alt="Not your usual breakfast toasts at Pondicheri." border="0" /></a>
+  <!-- e display_image.tpl -->
+        <h2 class="headline">
+            <a   href="/entertainment/top-100-restaurants/article/14-Pondicheri-5749123.php">14: Pondicheri</a>
+        </h2>
+        <!-- hearst/common/author_name.tpl -->
+<p class="byline">By <a href="/author/alison-cook/">Alison Cook</a></p>
+<!-- e hearst/common/author_name.tpl -->        <p class="blurb">
+            <!-- hearst/common/blurb.tpl -->
+    			 The beauty of Anita Jaisinghani's chic Indian "diner" is that it stays strong all day long.
+	<!-- hearst/common/blurb.tpl -->
+        </p>
+        
+                    <a href="/entertainment/top-100-restaurants/article/14-Pondicheri-5749123.php"
+                class="continues " >Continue Reading</a>
+            </div>
+                <div class="sub_topstories_item ">
+        <!-- common/display_image.tpl -->
+  <a class="without_u " href="/entertainment/top-100-restaurants/article/15-Mala-Sichuan-Bistro-5749127.php"><img src="http://ww1.hdnux.com/photos/23/57/35/5175136/11/premium_landscape.jpg" alt="13. Mala Sichuan Bistro
+Cuisine: Chinese
+Dish: Chengdu-style pot roasted tilapia
+Entree price range: $$
+Where: 9348 Bellaire
+Phone: 713-995-1889
+Find Alison Cook’s review  here ." border="0" /></a>
+  <!-- e display_image.tpl -->
+        <h2 class="headline">
+            <a   href="/entertainment/top-100-restaurants/article/15-Mala-Sichuan-Bistro-5749127.php">15: Mala Sichuan Bistro</a>
+        </h2>
+        <!-- hearst/common/author_name.tpl -->
+<p class="byline">By <a href="/author/alison-cook/">Alison Cook</a></p>
+<!-- e hearst/common/author_name.tpl -->        <p class="blurb">
+            <!-- hearst/common/blurb.tpl -->
+    			 Houstonians gravitate to Mala Sichuan because it's the best ambassador for the boisterous flavors of southwestern China.
+	<!-- hearst/common/blurb.tpl -->
+        </p>
+        
+                    <a href="/entertainment/top-100-restaurants/article/15-Mala-Sichuan-Bistro-5749127.php"
+                class="continues " >Continue Reading</a>
+            </div>
+                <div class="sub_topstories_item ">
+        <!-- common/display_image.tpl -->
+  <a class="without_u " href="/entertainment/top-100-restaurants/article/16-Triniti-5749130.php"><img src="http://ww4.hdnux.com/photos/23/56/15/5170007/63/premium_landscape.jpg" alt="16. Triniti  Cuisine: New American Dish: pork collar with savory oats, dried fruit, butternut squash and porcini mushrooms Entree price range: $$$$ Where: 2815 S. Shepherd Phone: 713-527-9090 Website:  trinitirestaurant.com   Read Alison Cook’s review of Triniti ." border="0" /></a>
+  <!-- e display_image.tpl -->
+        <h2 class="headline">
+            <a   href="/entertainment/top-100-restaurants/article/16-Triniti-5749130.php">16: Triniti</a>
+        </h2>
+        <!-- hearst/common/author_name.tpl -->
+<p class="byline">By <a href="/author/alison-cook/">Alison Cook</a></p>
+<!-- e hearst/common/author_name.tpl -->        <p class="blurb">
+            <!-- hearst/common/blurb.tpl -->
+    			 New initiatives are keeping this gorgeous contemporary restaurant relevant to the city's dining conversation.
+	<!-- hearst/common/blurb.tpl -->
+        </p>
+        
+                    <a href="/entertainment/top-100-restaurants/article/16-Triniti-5749130.php"
+                class="continues " >Continue Reading</a>
+            </div>
+                <div class="sub_topstories_item ">
+        <!-- common/display_image.tpl -->
+  <a class="without_u " href="/entertainment/top-100-restaurants/article/17-Kata-Robata-5749132.php"><img src="http://ww4.hdnux.com/photos/11/57/47/2554343/5/premium_landscape.jpg" alt="Sea Urchin Pasta at Kata Robata" border="0" /></a>
+  <!-- e display_image.tpl -->
+        <h2 class="headline">
+            <a   href="/entertainment/top-100-restaurants/article/17-Kata-Robata-5749132.php">17: Kata Robata</a>
+        </h2>
+        <!-- hearst/common/author_name.tpl -->
+<p class="byline">By <a href="/author/alison-cook/">Alison Cook</a></p>
+<!-- e hearst/common/author_name.tpl -->        <p class="blurb">
+            <!-- hearst/common/blurb.tpl -->
+    			 From Copper River sockeye in season to the briny joys of wild Japanese horse mackerel, the sushi and sashimi crafted by chef Manabu Horiuchi is as immaculate as always at this crowded Upper Kirby haunt.
+	<!-- hearst/common/blurb.tpl -->
+        </p>
+        
+                    <a href="/entertainment/top-100-restaurants/article/17-Kata-Robata-5749132.php"
+                class="continues " >Continue Reading</a>
+            </div>
+                <div class="sub_topstories_item ">
+        <!-- common/display_image.tpl -->
+  <a class="without_u " href="/entertainment/top-100-restaurants/article/18-Reef-5749151.php"><img src="http://ww2.hdnux.com/photos/05/61/43/1513697/5/premium_landscape.jpg" alt="Seared Triple Tail with artichoke barigoule is a featured dish at the Reef restaurant." border="0" /></a>
+  <!-- e display_image.tpl -->
+        <h2 class="headline">
+            <a   href="/entertainment/top-100-restaurants/article/18-Reef-5749151.php">18: Reef</a>
+        </h2>
+        <!-- hearst/common/author_name.tpl -->
+<p class="byline">By <a href="/author/alison-cook/">Alison Cook</a></p>
+<!-- e hearst/common/author_name.tpl -->        <p class="blurb">
+            <!-- hearst/common/blurb.tpl -->
+    			 It's fun to see new ideas percolating again at this bustling Midtown Gulf seafood mecca, which had been running in place since its groundbreaking debut seven years ago when chef Bryan Caswell introduced lesser-known species and bycatch to Houston.
+	<!-- hearst/common/blurb.tpl -->
+        </p>
+        
+                    <a href="/entertainment/top-100-restaurants/article/18-Reef-5749151.php"
+                class="continues " >Continue Reading</a>
+            </div>
+                <div class="sub_topstories_item ">
+        <!-- common/display_image.tpl -->
+  <a class="without_u " href="/entertainment/top-100-restaurants/article/19-Roost-5749154.php"><img src="http://ww3.hdnux.com/photos/31/60/04/6750510/3/premium_landscape.jpg" alt="﻿Roost is now offering a &quot;Dog Days of Summer&quot; menu that includes items such as fried green tomatoe﻿s." border="0" /></a>
+  <!-- e display_image.tpl -->
+        <h2 class="headline">
+            <a   href="/entertainment/top-100-restaurants/article/19-Roost-5749154.php">19: Roost</a>
+        </h2>
+        <!-- hearst/common/author_name.tpl -->
+<p class="byline">By <a href="/author/alison-cook/">Alison Cook</a></p>
+<!-- e hearst/common/author_name.tpl -->        <p class="blurb">
+            <!-- hearst/common/blurb.tpl -->
+    			 This unassuming little Montrose bistro may look like a midcentury basement rec room, but it just gets better — and more expressive of the blending of international cuisines to which Houstonians are heir.
+	<!-- hearst/common/blurb.tpl -->
+        </p>
+        
+                    <a href="/entertainment/top-100-restaurants/article/19-Roost-5749154.php"
+                class="continues " >Continue Reading</a>
+            </div>
+                <div class="sub_topstories_item ">
+        <!-- common/display_image.tpl -->
+  <a class="without_u " href="/entertainment/top-100-restaurants/article/20-Pho-Binh-Trailer-5749155.php"><img src="http://ww2.hdnux.com/photos/23/56/15/5170005/55/premium_landscape.jpg" alt="14. Pho Binh Trailer   
+Cuisine: Vietnamese 
+Dish: Pho Tai Nam Gau with crispy fat 
+Entree price range: $ 
+Where: 10928 Beamer 
+Phone: 281-484-3963 
+Website:   phobinh.com  
+  Read Alison Cook's review of Pho Binh." border="0" /></a>
+  <!-- e display_image.tpl -->
+        <h2 class="headline">
+            <a   href="/entertainment/top-100-restaurants/article/20-Pho-Binh-Trailer-5749155.php">20: Pho Binh Trailer</a>
+        </h2>
+        <!-- hearst/common/author_name.tpl -->
+<p class="byline">By <a href="/author/alison-cook/">Alison Cook</a></p>
+<!-- e hearst/common/author_name.tpl -->        <p class="blurb">
+            <!-- hearst/common/blurb.tpl -->
+    			 What is there to say about this beloved southeast Houston landmark other than that the family-run soup kitchen is essential to our civic life?
+	<!-- hearst/common/blurb.tpl -->
+        </p>
+        
+                    <a href="/entertainment/top-100-restaurants/article/20-Pho-Binh-Trailer-5749155.php"
+                class="continues " >Continue Reading</a>
+            </div>
+                <div class="sub_topstories_item ">
+        <!-- common/display_image.tpl -->
+  <a class="without_u " href="/entertainment/top-100-restaurants/article/21-Dolce-Vita-5749024.php"><img src="http://ww4.hdnux.com/photos/23/56/15/5170015/57/premium_landscape.jpg" alt="24. Dolce Vita Pizzeria Enoteca 
+Cuisine: Italian
+Dish: Margherita pizza
+Entree price range: $$
+Where: 500 Westheimer
+Phone: 713-520-8222
+Website:   dolcevitahouston.com 
+ Read Alison Cook’s review ." border="0" /></a>
+  <!-- e display_image.tpl -->
+        <h2 class="headline">
+            <a   href="/entertainment/top-100-restaurants/article/21-Dolce-Vita-5749024.php">21: Dolce Vita Pizzeria Enoteca</a>
+        </h2>
+        <!-- hearst/common/author_name.tpl -->
+<p class="byline">By <a href="/author/alison-cook/">Alison Cook</a></p>
+<!-- e hearst/common/author_name.tpl -->        <p class="blurb">
+            <!-- hearst/common/blurb.tpl -->
+    			 The most lovable of chef Marco Wiles' three excellent Houston Italian spots is this comfortable old Montrose house where Neapolitan pizza first burst upon our consciousness.
+	<!-- hearst/common/blurb.tpl -->
+        </p>
+        
+                    <a href="/entertainment/top-100-restaurants/article/21-Dolce-Vita-5749024.php"
+                class="continues " >Continue Reading</a>
+            </div>
+                <div class="sub_topstories_item ">
+        <!-- common/display_image.tpl -->
+  <a class="without_u " href="/entertainment/top-100-restaurants/article/22-Killen-s-Steakhouse-5749030.php"><img src="http://ww2.hdnux.com/photos/22/55/00/4902941/3/premium_landscape.jpg" alt="The Broken Arrow Ranch Venison Chop with house made blueberry sausage and sweet corn Rissoto at Killen's Steakhouse Friday, Jan. 27, 2012, in Pearland." border="0" /></a>
+  <!-- e display_image.tpl -->
+        <h2 class="headline">
+            <a   href="/entertainment/top-100-restaurants/article/22-Killen-s-Steakhouse-5749030.php">22: Killen's Steakhouse</a>
+        </h2>
+        <!-- hearst/common/author_name.tpl -->
+<p class="byline">By <a href="/author/alison-cook/">Alison Cook</a></p>
+<!-- e hearst/common/author_name.tpl -->        <p class="blurb">
+            <!-- hearst/common/blurb.tpl -->
+    			 Chef Ronnie Killen may be applying scholarly attention to his new barbecue spot of late, but his splendid Texas steakhouse — still under his watchful eye — clicks right along in the capable hands of DeeDee Killen and chef de cuisine Teddy Lopez.
+	<!-- hearst/common/blurb.tpl -->
+        </p>
+        
+                    <a href="/entertainment/top-100-restaurants/article/22-Killen-s-Steakhouse-5749030.php"
+                class="continues " >Continue Reading</a>
+            </div>
+                <div class="sub_topstories_item ">
+        <!-- common/display_image.tpl -->
+  <a class="without_u " href="/entertainment/top-100-restaurants/article/23-Good-Dog-Houston-5749035.php"><img src="http://ww4.hdnux.com/photos/24/75/01/5492815/3/premium_landscape.jpg" alt="Now that's a good dog from Good Dog Houston." border="0" /></a>
+  <!-- e display_image.tpl -->
+        <h2 class="headline">
+            <a   href="/entertainment/top-100-restaurants/article/23-Good-Dog-Houston-5749035.php">23: Good Dog Houston</a>
+        </h2>
+        <!-- hearst/common/author_name.tpl -->
+<p class="byline">By <a href="/author/alison-cook/">Alison Cook</a></p>
+<!-- e hearst/common/author_name.tpl -->        <p class="blurb">
+            <!-- hearst/common/blurb.tpl -->
+    			 Once upon a time it was a food truck. Now Amalia Pferd and Daniel Caballero's new brick-and-mortar restaurant — don't anybody dare call it "just a hot-dog joint" — is an object lesson in the ways the city's burgeoning food-truck scene has enriched our dining options.
+	<!-- hearst/common/blurb.tpl -->
+        </p>
+        
+                    <a href="/entertainment/top-100-restaurants/article/23-Good-Dog-Houston-5749035.php"
+                class="continues " >Continue Reading</a>
+            </div>
+                <div class="sub_topstories_item ">
+        <!-- common/display_image.tpl -->
+  <a class="without_u " href="/entertainment/top-100-restaurants/article/24-Hubcap-Grill-5749040.php"><img src="http://ww4.hdnux.com/photos/31/15/21/6607939/8/premium_landscape.jpg" alt="Hubcap Grill 
+ 
+ 
+ Address:  1111 Prairie, 1133 W 19th, 800 Bradford Ave. in Kemah
+ 
+ Phone:  (713) 223-5885, (713) 862-0555, (281) 339-7116 
+ 
+ Website:   hubcapgrill.com" border="0" /></a>
+  <!-- e display_image.tpl -->
+        <h2 class="headline">
+            <a   href="/entertainment/top-100-restaurants/article/24-Hubcap-Grill-5749040.php">24: Hubcap Grill</a>
+        </h2>
+        <!-- hearst/common/author_name.tpl -->
+<p class="byline">By <a href="/author/alison-cook/">Alison Cook</a></p>
+<!-- e hearst/common/author_name.tpl -->        <p class="blurb">
+            <!-- hearst/common/blurb.tpl -->
+    			 Burger maestro Ricky Craig has expanded to Kemah this year without missing a beat in quality.
+	<!-- hearst/common/blurb.tpl -->
+        </p>
+        
+                    <a href="/entertainment/top-100-restaurants/article/24-Hubcap-Grill-5749040.php"
+                class="continues " >Continue Reading</a>
+            </div>
+                <div class="sub_topstories_item last">
+        <!-- common/display_image.tpl -->
+  <a class="without_u " href="/entertainment/top-100-restaurants/article/25-Da-Marco-5749042.php"><img src="http://ww2.hdnux.com/photos/32/26/73/6909657/6/premium_landscape.jpg" alt="" border="0" /></a>
+  <!-- e display_image.tpl -->
+        <h2 class="headline">
+            <a   href="/entertainment/top-100-restaurants/article/25-Da-Marco-5749042.php">25: Da Marco</a>
+        </h2>
+        <!-- hearst/common/author_name.tpl -->
+<p class="byline">By <a href="/author/alison-cook/">Alison Cook</a></p>
+<!-- e hearst/common/author_name.tpl -->        <p class="blurb">
+            <!-- hearst/common/blurb.tpl -->
+    			 Truth? This rarefied Italian restaurant was a vital food destination when it opened in 2002.
+	<!-- hearst/common/blurb.tpl -->
+        </p>
+        
+                    <a href="/entertainment/top-100-restaurants/article/25-Da-Marco-5749042.php"
+                class="continues " >Continue Reading</a>
+            </div>
+    </div>
+<!-- e hearst/collections/premium_subsection_top_stories.tpl -->
+</div>    
+
+
+<!-- e src/business/widgets/hearst/collection/widget.tpl -->    </div><!-- /zone 2-->
+
+    <div class="zone zone-3">
+        <!-- src/business/widgets/hearst/collection/widget.tpl -->
+                         <div class="hide-rss-link hdnce-e hdnce-collection-43184-premium_subsection_more_stories"><!-- templates/hearst/collections/premium_subsection_more_stories.tpl -->
+<!-- collection.premium_subsection_more_stories.43184 -->
+
+
+<div class="collection hc_sub_morestories">
+    <div class="header">
+        <h4 class="kicker highlight color-link">Top 26-100 Restaurants</h4>
+    </div>
+    <ul class="hc_more_list">
+        <li class="hc_more_item">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/26-Etoile-Cuisine-et-Bar-5749049.php">26:  Étoile Cuisine et Bar</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/27-Tony-s-5749055.php">27: Tony's</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/28-Pizaro-s-Pizza-Napoletana-5749057.php">28: Pizaro's Pizza Napoletana</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/29-Latin-Bites-5749060.php">29: Latin Bites</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/30-Giacomo-s-Cibo-e-Vino-5749070.php">30: Giacomo's Cibo e Vino</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/31-Grea-W-Kana-Cafe-5748953.php">31: Great W'Kana Cafe</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/32-Uchi-5748968.php">32: Uchi</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/33-Hyunh-Restaurant-5748972.php">33: Hyunh Restaurant</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/34-Provisions-5748976.php">34: Provisions</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/35-Sparrow-Bar-Cookshop-5748978.php">35: Sparrow Bar & Cookshop</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/36-Local-Foods-5748985.php">36: Local Foods</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/37-Corkscrew-BBQ-5748989.php">37: Corkscrew BBQ</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/38-Costa-Brava-Bistro-5748997.php">38: Costa Brava Bistro</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/Brennan-s-of-Houston-5749003.php">39: Brennan's of Houston</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/40-Pico-s-Mex-Mex-5749016.php">40: Pico's Mex-Mex</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/41-Fielding-s-Wood-Grill-5748864.php">41: Fielding's Wood Grill</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/42-Cedar-s-Bakery-5748873.php">42: Cedar's Bakery</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/43-Cuchara-5748884.php">43: Cuchara</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/44-Andes-Cafe-5748895.php">44: Andes Cafe</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/45-Bernie-s-Burger-Bus-5748900.php">45: Bernie's Burger Bus</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/46-Irma-s-5748907.php">46: Irma's</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/47-Hai-Cang-Seafood-5748910.php">47: Hai Cang Seafood</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/48-Sylvia-s-Enchilada-Kitchen-5748914.php">48: Sylvia's Enchilada Kitchen</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/49-Americas-5748918.php">49: Américas</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/50-Shri-Balaji-Bhavan-5748932.php">50: Shri Balaji Bhavan</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/51-60-Degrees-Mastercrafted-5748527.php">51: 60 Degrees Mastercrafted</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/52-Ciao-Bello-5748541.php">52: Ciao Bello</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/53-La-Casa-Del-Caballo-5748549.php">53: La Casa Del Caballo</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/54-Coppa-Ristorante-Italiano-5748551.php">54: Coppa Ristorante Italiano</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/55-Revival-Market-5748554.php">55: Revival Market</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/56-Pappas-Bros-Steakhouse-5748555.php">56: Pappas Bros. Steakhouse</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/57-Gatlin-s-BBQ-5748566.php">57: Gatlin's BBQ</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/58-Confucius-Seafood-5748780.php">58: Confucius Seafood</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/59-Vic-Anthony-s-Steakhouse-5748785.php">59: Vic & Anthony's Steakhouse</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/60-The-Original-Ninfa-s-on-Navigation-5748790.php">60: The Original Ninfa's on Navigation</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/61-Kris-Bistro-Wine-Lounge-5748803.php">61: Kris Bistro & Wine Lounge</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/62-Heights-General-Store-5748811.php">62: Heights General Store</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/63-Vieng-Thai-5748820.php">63: Vieng Thai</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/64-Cajun-Kitchen-5748829.php">64: Cajun Kitchen</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/65-RDG-Bar-Annie-5748830.php">65: RDG & Bar Annie</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/66-Rainbow-Lodge-5748833.php">66: Rainbow Lodge</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/67-Mezzanotte-5748839.php">67: Mezzanotte</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/68-Piqueo-5748844.php">68: Piqueo</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/69-Kasra-Persian-Grill-5748848.php">69: Kasra Persian Grill</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/70-Hubbell-Hudson-Bistro-5748853.php">70: Hubbell & Hudson Bistro</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/71-Kiran-s-5748481.php">71: Kiran's</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/72-El-Tiempo-Cantina-5748480.php">72: El Tiempo Cantina</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/73-Bijan-Persian-Grill-5748478.php">73: Bijan Persian Grill</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/74-Paulie-s-5748473.php">74: Paulie's</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/75-Lupita-s-Mexican-Restaurant-5748463.php">75: Lupita's Mexican Restaurant</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/78-Pho-Hung-5748441.php">76: Pho Hung</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/Eatsie-Boys-Cafe-5748458.php">77: Eatsie Boys Cafe</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/78-Rice-Bowl-Chinese-Indonesian-5748452.php">78: Rice Bowl Chinese & Indonesian</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/79-The-Breakfast-Klub-5748436.php">79: The Breakfast Klub</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/80-Karanchos-5748433.php">80: Karanchos</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/81-Yum-Yum-Cha-Cafe-5744855.php">81: Yum Yum Cha Cafe</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/82-Cafe-Th-5744851.php">82: Cafe Th</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/83-Brook-s-Place-5744847.php">83: Brook's Place</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/84-Bon-Ga-Garden-5744845.php">84: Bon Ga Garden</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/85-Laredo-Taqueria-5744837.php">85: Laredo Taqueria</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/86-Que-Huong-5744835.php">86: Que Huong</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/87-The-Shack-5744833.php">87: The Shack</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/88-Banana-Leaf-Malaysian-Cuisine-5744831.php">88: Banana Leaf Malaysian Cuisine</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/89-Goode-Company-Seafood-5744828.php">89: Goode Company Seafood</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/90-La-Guadalupe-Bakery-Cafe-5744825.php">90: La Guadalupana Bakery & Cafe</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/91-Virgie-s-Bar-B-Que-5744485.php">91: Virgie's Bar-B-Que</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/92-Pollo-Bravo-5744737.php">92: Pollo Bravo</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/93-Classic-Kitchen-5744763.php">93: Classic Kitchen</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/94-Bosta-Wine-Coffee-5744772.php">94: Bosta Wine & Coffee</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/95-Fu-Fu-Cafe-5744776.php">95: Fu Fu Cafe</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/96-Seabrook-Waffle-Company-5744779.php">96: Seabrook Waffle Company</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/Alpha-Bakery-Deli-5744784.php">97: Alpha Bakery & Deli</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/98-Frenchy-s-5744791.php">98: Frenchy's</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/99-Gilhooley-s-5744794.php">99: Gilhooley's</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+        <li class="hc_more_item loadmoreitem">
+            <h2 class="headline"><a href="/entertainment/top-100-restaurants/article/100-Xin-Jiang-BBQ-5744797.php">100: Xin Jiang BBQ</a></h2>
+            <p class="timestamp"><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></p>
+        </li>
+    </ul>
+    <div class="footer">
+        
+            
+                                        <a id="loadmore" href="javascript:void(0)" onclick="$('.loadmoreitem').fadeIn();$(this).html('Return To Top');$(this).attr('href','#');$(this).attr('onclick','');return false;">Load More Top 100 Restaurants News</a>
+    </div>
+</div>
+<!-- e templates/hearst/collections/premium_subsection_more_stories.tpl -->
+</div>    
+
+
+<!-- e src/business/widgets/hearst/collection/widget.tpl -->    </div><!-- /zone 3-->
+  </div>
+  <div class="solo_triple"></div>
+</div><!-- /content -->     
+
+
+<div class="ad-bottom">
+    <div class="ad-inner">
+        <div id="BP300" class="ad_deferrable"><script type="text/javascript">/*<![CDATA[*/ hearstPlaceAd("BP300"); /*]]>*/</script></div>
+    </div>
+</div>
+
+
+<!-- e templates/design/channel/premium_subsection.tpl -->
+	<!-- src/business/templates/hearst/common/footer.tpl -->
+                      <!-- templates/hearst/home/viafouraFooterJS.tpl -->
+<script>
+        
+    // This must be correctly defined before Viafoura is called
+    // or else we run the risk of tainting the comments for a particular url
+    $('meta[property="og:url"]').attr('content', location.href);
+    
+    
+    
+    (function (v, s) {
+        v.type = 'text/javascript';
+        v.async = !0;
+        v.src = location.protocol !== 'https:' ? '//cdn.viafoura.net/vf.js' : '//api.viafoura.com/app/js/vf.js';
+        s.parentNode.insertBefore(v, s)
+    }(document.createElement('script'), document.getElementsByTagName('script')[0]));
+
+
+    $(document).ready(function () {
+        if ($('#hdn-vf-comments').length) {HDN.authOnReady('premium',true)}
+        HDN.getBlogCommentCount();
+    });
+    
+</script>
+<!-- e templates/hearst/home/viafouraFooterJS.tpl -->
+        
+<!-- hearst/item/standalone.tpl -->
+<!-- mid:freeform.11335 -->
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<div class="hc_sitefooter">
+<div class="lock1200">
+   <div class="hcsf_header">
+    <a href="http://www.houstonchronicle.com"><img src="/img/modules/sitefooter/footer_logo.png" /></a>
+    <div class="toplink"><a href="#container"><span class="topLinkText">Top</span></a></div>
+   </div>
+   <ul class="hcsf_links">
+    <li class="hcsf_about"> 
+     <h3>About</h3>
+     <ul class="hcsf_linklist">
+      <li><a href="http://www.hearst.com/newspapers/houston-chronicle.php">Our Company</a></li>
+      <li><a class="ad-choice" href="http://www.aboutads.info/choices/"><span class="ad-link"></span> Ad Choices </a></li>
+      <li><a href="https://hearstnewspaperscareerlinks.silkroad.com/">Careers</a></li> 
+      <li><a href="/terms_of_use/">Terms of Use</a></li>
+      <li><a href="http://hearstmediahouston.com/">Advertising</a></li>
+      <li><a href="/privacy_policy">Privacy Policy</a></li>
+      <li><a href="/privacy_policy#your_rights">Your Privacy Rights</a></li>
+                                                <li><a href="/privacy_policy/#caprivacyrights">Your California Privacy Rights</a></li>
+     </ul>
+    </li>
+   </ul>
+   <ul class="hcsf_links">
+    <li class="hcsf_contact"> 
+     <h3>Contact</h3>
+     <ul class="hcsf_linklist">
+      <li><a href="/archive/">Archives</a></li>
+      <li><a href="/customer_service">Customer Service</a></li>
+      <li><a href="/faq">Frequently Asked Questions</a></li>
+      <li><a href="/newsroom_contacts">Newsroom Contacts</a></li>
+     </ul>
+    </li>
+   </ul>
+   <ul class="hcsf_links">
+    <li class="hcsf_connect desktop"> 
+     <h3>Connect</h3>
+     <ul class="hcsf_linklist">
+      <li><a class="fb-link" href="https://www.facebook.com/chroncom">Facebook</a></li>
+      <li><a class="twtr-link" href="https://twitter.com/houstonchron">Twitter</a></li> 
+      <li><a class="li-link" href="http://www.linkedin.com/company/houston-chronicle">LinkedIn</a></li>
+      <li><a class="pin-link" href="http://pinterest.com/houstonchron/">Pinterest</a></li>
+      <li><a class="gplus-link" href="https://plus.google.com/+houstonchronicle">Google+</a></li>
+     </ul>
+    </li>
+    <li class="hcsf_connect mobile"> 
+     <h3>Connect</h3>
+     <ul class="hcsf_linklist">
+      <li><a class="fb-link" href="https://www.facebook.com/chroncom"></a></li>
+      <li><a class="twtr-link" href="https://twitter.com/houstonchron"></a></li> 
+      <li><a class="li-link" href="http://www.linkedin.com/company/houston-chronicle"></a></li>
+      <li><a class="pin-link" href="http://pinterest.com/houstonchron/"></a></li>
+      <li><a class="gplus-link" href="https://plus.google.com/+houstonchronicle"></a></li>
+     </ul>
+    </li>
+   </ul>
+   <div class="copyright-wrap">
+    <img src="/img/modules/sitefooter/hst_copy_logo.png" />
+    <p class="copyright">&copy; 2013 Hearst Newspapers, LLC.</p>
+   </div>
+</div>
+  </div>
+
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-3.newrelic.com","licenseKey":"3fd06eaac1","applicationID":"147157","transactionName":"MwQBZ0RXV0NTVhBdDgpOJUZYVU1ZXVtLVwwCIgtSWFhcXHFaCkATCw0PVkQMA0JXWwBREzIIBkQ=","queueTime":0,"applicationTime":28,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-476.min.js"}</script></body></html>
+<!-- e src/business/templates/hearst/common/footer.tpl -->

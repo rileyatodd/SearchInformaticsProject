@@ -1,0 +1,3243 @@
+<!DOCTYPE html>
+<!--[if lte IE 7]> <html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/" class="ie7 lte8 lte9 " lang="en-au"> <![endif]-->
+<!--[if IE 8]> <html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/" class="ie8 lte8 lte9 " lang="en-au"> <![endif]-->
+<!--[if IE 9]> <html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/" class="ie9 lte9 " lang="en-au"> <![endif]-->
+<!--[if gt IE 9]><!--><html lang="en-au" class=""><!--<![endif]-->
+
+<head>
+    <title>Good Food - Good Food</title>
+        <script type="text/javascript">
+        var mDomains = ["smh.com.au", "theage.com.au", "watoday.com.au", "brisbanetimes.com.au", "canberratimes.com.au",
+            "essentialkids.com.au", "essentialbaby.com.au", "dailylife.com.au", "businessday.com.au","goodfood.com.au"]
+        if (exists(mDomains, function(substring) {return contains(document.domain, substring)})
+                && isSmartPhone(navigator.userAgent) && !contains(document.cookie, "iphone_redirect=false")) {
+            var currentLocation = document.location.href;
+            if (!contains(currentLocation, "/lifestyle/cuisine") && !contains(currentLocation, "/business/markets")) {
+                if (contains(currentLocation, "www.")) {
+                    currentLocation = currentLocation.replace("www.", "m.");
+                    window.location = currentLocation;
+                }
+                if (contains(currentLocation, "media.")) {
+                    currentLocation = currentLocation.replace("media.", "m.media.");
+                    window.location = currentLocation;
+                }
+            }
+        }
+
+        /**
+         * Returns a <code>Boolean</code> indicating whether or not the user agent represents a smart phone.
+         *
+         * @param userAgent User agent to test.
+         * @return True if the user agent represents a smart phone; otherwise false.
+         */
+        function isSmartPhone(userAgent) {
+            return ((matchesSmartPhoneUserAgentRegularExpressions(userAgent)) &&
+                    (!matchesTabletUserAgentRegularExpressions(userAgent)));
+        }
+
+        /**
+         * Returns a <code>Boolean</code> indicating whether or not the specified user agent represents a smart phone.
+         * If any of the regular expressions are updated then they should be updated in
+         * <code>SmartPhoneHelper.java</code>.
+         *
+         * @param userAgent User agent to test.
+         * @return True if the user agent represents a smart phone; otherwise false.
+         */
+        function matchesSmartPhoneUserAgentRegularExpressions(userAgent) {
+            var smartPhoneUserAgentRegularExpressions = ["^Mozilla/5.0.*iPhone.*", "^Mozilla/5.0.*iPod.*",
+                "^Mozilla/5.0.*Android [1-3].*", "^Mozilla/5.0.*SymbianOS/9.*", "^Mozilla/5.0.*Symbian/3.*",
+                "^Mozilla/5.0.*Mobile Safari/.*5[2-3][0-9].*", ".*Dolfin/[1-2].[0-9].*", "^Mozilla/[4-5].0.*Windows Phone OS 7.[0-5].*", "^Opera/9.*Android; Opera Mini.*"];
+            return userAgentMatchesAnyOf(userAgent, smartPhoneUserAgentRegularExpressions);
+        }
+
+        /**
+         * Returns a <code>Boolean</code> indicating whether or not the specified user agent represents a tablet. If any
+         * of the regular expressions are updated then they should be updated in <code>SmartPhoneHelper.java</code>.
+         *
+         * @param userAgent User agent to test.
+         * @return True if the user agent represents a tablet; otherwise false.
+         */
+        function matchesTabletUserAgentRegularExpressions(userAgent) {
+            var tableUserAgentRegularExpressions = ["^Mozilla/5.0.*iPad.*", "^Mozilla/5.0.*GT-P1000.*",
+                "^Mozilla/5.0.*GT-P7500.*", "^Mozilla/5.0.*MZ601.*", "^Mozilla/5.0.*Transformer TF101.*"];
+            return userAgentMatchesAnyOf(userAgent, tableUserAgentRegularExpressions);
+        }
+
+        /**
+         * Determines whether any of the elements match the predicate
+         *
+         * @param elements a collection of elements to check
+         * @param predicate function taking a single element and returning true when that element matches, false otherwise
+         * @return {Boolean}
+         */
+        function exists(elements, predicate) {
+            var index = 0;
+            for (; index < elements.length; index++) {
+                if (predicate(elements[index])) {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        /**
+         * Determines whether {string} contains {substring}
+         *
+         * @param string
+         * @param substring
+         * @return {Boolean}
+         */
+        function contains(string, substring) {
+            return string.indexOf(substring) != -1
+        }
+
+        /**
+         * Determines whether the user agent matches any of the expressions defined by {patterns}
+         *
+         * @param userAgent the User Agent value of the browser
+         * @param patterns the expression patterns to match against
+         * @return {Boolean}
+         */
+        function userAgentMatchesAnyOf(userAgent, patterns) {
+            if ((userAgent) && (userAgent.length > 0)) {
+                return exists(patterns, function(pattern) {return userAgent.match(pattern)})
+            }
+            return false;
+        }
+    </script>
+
+    <script type="text/javascript">
+var titanEnabled = true;
+
+var digitalData = {
+    page: {
+        pageInfo: {
+            pageID: '3724484',
+            pageName: 'Good Food',
+            brand: 'goodfood',
+            generator: 'DC',
+            author: '',
+            effectiveDate: '2014-10-21T23:33:56Z',
+            issueDate: '2012-10-18T08:25:35Z',
+            sysEnv: 'desktop'
+        },
+        category: {
+            pageType: 'Homepage',
+            primaryCategory: 'home',
+            subCategory1: '',
+            subCategory2: '',
+            subCategory3: '',
+            subCategory4: ''
+        },
+        social: {
+            fbAppIdForGA: '503488889664154'
+        }
+    },
+    titan: {
+        adSite: 'GOOD-FOOD',
+        adZone: 'home',
+        adExclusions: ['AdExclusion-danmurphy' ],
+        adKeyValues: {
+            csub: 'visitor',
+            cat: 'home',
+            ctype: 'homepage'
+        },
+        adSlots: ['adspot-620x225-pos-1','adspot-300x250-pos-1','adspot-300x250-pos-2','adspot-728x90_468x60-pos-2']
+    },
+    user: [
+        {
+            profile: {
+                membershipType: 'visitor'
+            }
+        }
+    ],
+    version: '1.0',
+    events: []
+};
+</script>
+
+    <meta http-equiv="content-language" content="en" />
+<meta http-equiv="imagetoolbar" content="no" />
+    <link rel="canonical" href="http://www.goodfood.com.au/"/>
+    <link rel="alternate" media="only screen and (max-width: 640px)" href="http://m.goodfood.com.au/"/>
+<meta name="robots" content="noarchive,noodp,index" />
+<meta name="robots" content="ACAP allow-index" />
+<meta name="robots" content="ACAP allow-follow" />
+<meta name="robots" content="ACAP disallow-preserve" />
+<meta name="robots" content="ACAP allow-present prohibited-modification=annotation" />
+<meta name="description" content="Good Food is your essential companion to eating out, eating in and everything in between" />
+<meta name="keywords" content="" />
+<meta name="news_keywords" content="" />
+
+<meta name="google-site-verification" content="j69g9KT7pLXDrDRKCMlVe8gg4AUqC2bj34QIYwfN4m8" />
+<meta name="msvalidate.01" content="3A0F8B0A5D246EFE15A2F9F975D1E623" />
+
+                <link rel="stylesheet" type="text/css" media="screen,print" href="http://resources.goodfood.com.au/common/media-common-1.0/css/output/7.49.1/common.skin.magazine.css/common.skin.magazine_min.css" />
+
+            <link rel="stylesheet" type="text/css" media="screen,print" href="http://resources.goodfood.com.au/common/media-common-1.0/css/output/7.49.1/common.skin.goodfood.css/common.skin.goodfood_min.css" />
+
+                <link rel="stylesheet" type="text/css" media="screen,print" href="http://resources.goodfood.com.au/common/media-common-1.0/css/output/7.49.1/skin.promotions.css/skin.promotions_min.css" />
+
+<!--[if lte IE 9]>
+            <link rel="stylesheet" type="text/css" media="screen,print" href="http://resources.goodfood.com.au/common/media-common-1.0/css/output/7.49.1/common.skin.ie.goodfood.css/common.skin.ie.goodfood_min.css" />
+
+<![endif]-->
+<link rel="shortcut icon" href="/favicon.ico"/>
+<meta property="og:title" content="Good Food"/>
+<meta property="og:description" content=""/>
+<meta property="og:site_name" content="Good Food"/>
+<meta property="og:type" content="article"/> 
+<meta property="og:url" content="http://www.goodfood.com.au/"/>
+<meta property="og:image" content="http://images.smh.com.au/2014/02/12/5155383/FAIRFAX-logo.jpg"/>
+    <meta property="fb:app_id" content="503488889664154"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@goodfoodAU">
+
+    <link href="https://plus.google.com/116539041758239410845" rel="Publisher"/>
+
+
+    <script src="//assets.adobedtm.com/7d5ea80d054b96730162d0905d59678c4d2bf30c/satelliteLib-fc35eab6559a121532bab25bb77b90e6a30892b9.js"></script>
+</head>
+<body class="goodfood home">
+    <script type="text/javascript">
+// <![CDATA[
+	document.body.className += " scriptable";
+// ]]>
+</script>
+
+    <a class="skipLink" href="#nav">Skip to navigation</a>
+<a class="skipLink" href="#content">Skip to content</a>
+
+    <div id="sponsorLink_cA-helmet" class="cA-helmet">
+    <div id="video-player-companion-ad-helmet"></div><!-- id:video-player-companion-ad-helmet -->
+</div><!-- id:sponsorLink_cA-helmet -->
+    <div class="outerWrap">
+        <div class="wrap cfix">
+            <div class="whiteStrip">
+    <div class="innerWrap">
+        <ul class="linksLeft">
+    <li id="whiteStrip-time">Tuesday, 16 December 2014</li>
+    <li><a href="http://www.thevine.com.au/">The Vine</a></li>
+    <li><a href="http://www.essentialbaby.com.au/">Essential Baby</a></li>
+    <li class="last"><a href="http://www.essentialkids.com.au/">Essential Kids</a></li>
+</ul>
+
+        <a class="logo" href="http://www.fairfax.com.au/">Fairfax Media</a>
+        <ul class="linksRight">
+    <li><a href="http://smh.com.au/" onClick="trackCode(this,'ws-top');">News</a></li>
+    <li><a href="http://www.domain.com.au/" onClick="trackCode(this,'ws-top');">Domain</a></li>
+    <li><a href="http://drive.com.au/" onClickH="trackCode(this,'ws-top');">Drive</a></li>
+    <li><a href="http://www.adzuna.com.au" onClick="trackCode(this,'ws-top');">Jobs</a></li>
+    <li><a href="http://www.rsvp.com.au/" onClick="trackCode(this,'ws-top');">RSVP</a></li>
+    <li><a href="http://www.stayz.com.au" onClick="trackCode(this,'ws-top');">Stayz</a></li>
+    <li class="hasDropdown last">
+        <a href="javascript:;">More</a>
+        <ul>
+            <li><a onClick="trackCode(this,'ws-top');" href="http://www.essentialbaby.com.au/">Essential Baby</a></li>
+            <li><a onClick="trackCode(this,'ws-top');" href="http://www.essentialkids.com.au/">Essential Kids</a></li>
+            <li><a onClick="trackCode(this,'ws-top');" href="http://www.stayz.com.au/">Stayz</a></li>
+            <li><a onClick="trackCode(this,'ws-top');" href="http://www.tradingroom.com.au/">Trading Room</a></li>
+            <li><a onClick="trackCode(this,'ws-top');" href="http://www.weatherzone.com.au/">WeatherZone</a></li>
+            <li><a onClick="trackCode(this,'ws-top');" href="http://membercentre.fairfax.com.au/">Member Centre</a></li>
+            <li class="last"><a onClick="trackCode(this,'ws-top');" href="http://www.fairfax.com.au/?s_rid=WS:smh:top">More sites &raquo;</a></li>
+        </ul>
+    </li>
+</ul>
+    </div><!-- class:innerWrap -->
+</div><!-- class:whiteStrip -->
+<div class="header cfix" role="banner">
+    <div class="innerWrap">
+        <div class="topCont cfix">
+            <h1 class="mh-logo ir"><a href="http://www.goodfood.com.au" title="Good Food">Good Food</a></h1>
+            
+
+    <div class="mT-socialLinks">
+        <ul>
+                <li class="ir fb"><a href="http://www.facebook.com/pages/Good-Food/492499720777787" title="Facebook">Become a fan on Facebook</a></li>
+                <li class="ir twt"><a href="https://twitter.com/goodfoodAU" title="Twitter">Follow us on Twitter</a></li>
+                <li class="ir pnt"><a href="http://pinterest.com/fairfaxgoodfood/" title="Pinterest">Pinterest</a></li>
+                <li class="ir inst"><a href="http://www.instagram.com/goodfoodau" title="Instagram">Follow us on Instagram</a></li>
+                <li class="ir nwsl"><a href="https://membercentre.fairfax.com.au/NewsletterSubscription.aspx?site=gdf" title="Newsletter">Sign up to our newsletter</a></li>
+        </ul>
+    </div><!-- class:mT-socialLinks -->
+
+        </div><!-- class:topCont cfix -->
+    </div><!-- class:innerWrap -->
+    <div class="navHolder cfix">
+        <div class="innerWrap">
+                    <ul id="navigation" class="navigation" role="navigation">
+                <li class="selected home">
+                    <a href="http://www.goodfood.com.au/" class="topNav">
+                                <span class="icon home"></span>
+                    </a>
+                </li>
+                <li class=" hasDropdown recipes cook">
+                    <a href="http://www.goodfood.com.au/good-food/cook" class="topNav">
+                                <span>Cook</span>
+                    </a>
+                                <div class="ddown wide">
+                                    <div class="ddownInner cfix">
+                            <ul>
+                                    <li class="first"
+                                        >
+                                        <a href="/good-food/search.html?ss=Good+Food&max=19&type=FoodRecipe" title="recipes">recipes</a>
+                                    </li>
+                                    <li
+                                        >
+                                        <a href="/good-food/cook/aggregate/popular-recipe-collections-20121108-28zoc.html" title="recipe collections">recipe collections</a>
+                                    </li>
+                                    <li
+                                        >
+                                        <a href="/good-food/cook/aggregate/weekly-meal-planners-20130607-2nuhz.html" title="weekly meal plans">weekly meal plans</a>
+                                    </li>
+                                    <li
+                                        >
+                                        <a href="/good-food/cook/aggregate/kitchen-basics-20121030-28gsq.html" title="how-to">how-to</a>
+                                    </li>
+                                    <li class="last"
+                                        >
+                                        <a href="/good-food/cook/type/Article" title="latest cook articles">latest cook articles</a>
+                                    </li>
+                            </ul>
+                                    </div>
+                                </div>
+                </li>
+                <li class=" hasDropdown  eatout">
+                    <a href="http://www.goodfood.com.au/good-food/eat-out" class="topNav">
+                                <span>Eat out</span>
+                    </a>
+                                <div class="ddown wide">
+                                    <div class="ddownInner cfix">
+                            <ul>
+                                    <li class="first"
+                                        >
+                                        <a href="/good-food/search.html?ss=Good+Food&max=19&type=FoodRestaurant" title="Reviews">Reviews</a>
+                                    </li>
+                                    <li
+                                        >
+                                        <a href="/good-food/eat-out/aggregate/good-food-guides-20121212-2b8wp.html" title="Good Guides">Good Guides</a>
+                                    </li>
+                                    <li
+                                        >
+                                        <a href="/good-food/eat-street/aggregate/eat-streets-and-dining-precincts-20140127-31ij6.html" title="Eat Streets">Eat Streets</a>
+                                    </li>
+                                    <li
+                                        >
+                                        <a href="/good-food/eat-out/type/Article" title="Latest eat out articles">Latest eat out articles</a>
+                                    </li>
+                                    <li class="last"
+                                        >
+                                        <a href="/good-food/search.html?ss=Good+Food&max=19&type=FoodRestaurant&text=&location=&cuisine=&priceRange=&features=BYO&publication=" title="BYO">BYO</a>
+                                    </li>
+                            </ul>
+                                    </div>
+                                </div>
+                </li>
+                <li class=" hasDropdown drinkreviews drink">
+                    <a href="http://www.goodfood.com.au/good-food/drink" class="topNav">
+                                <span>Drink</span>
+                    </a>
+                                <div class="ddown wide">
+                                    <div class="ddownInner cfix">
+                            <ul>
+                                    <li class="first"
+                                        >
+                                        <a href="/good-food/search.html?ss=Good+Food&max=19&type=FoodWine" title="drink reviews">drink reviews</a>
+                                    </li>
+                                    <li
+                                        >
+                                        <a href="/good-food/drink/aggregate/beer-20121126-2a2ey.html" title="beer">beer</a>
+                                    </li>
+                                    <li
+                                        >
+                                        <a href="/good-food/drink/aggregate/coffee-20130325-2gp95.html" title="coffee">coffee</a>
+                                    </li>
+                                    <li
+                                        >
+                                        <a href="http://www.goodfood.com.au/good-food/drink/aggregate/cocktails-20121119-29lqn.html?rand=1396916603085" title="cocktails">cocktails</a>
+                                    </li>
+                                    <li class="last"
+                                        >
+                                        <a href="/good-food/drink/type/Article" title="latest articles">latest articles</a>
+                                    </li>
+                            </ul>
+                                    </div>
+                                </div>
+                </li>
+                <li class=" hasDropdown sydneynews foodnews">
+                    <a href="http://www.goodfood.com.au/good-food/food-news" class="topNav">
+                                <span>News</span>
+                    </a>
+                                <div class="ddown wide">
+                                    <div class="ddownInner cfix">
+                            <ul>
+                                    <li class="first"
+                                        class="off" data-location="Sydney">
+                                        <a href="/good-food/food-news/column/short-black" title="Sydney news">Sydney news</a>
+                                    </li>
+                                    <li
+                                        class="off" data-location="Melbourne">
+                                        <a href="/good-food/food-news/column/espresso" title="Melbourne news">Melbourne news</a>
+                                    </li>
+                                    <li
+                                        class="off" data-location="Canberra">
+                                        <a href="/good-food/food-news/column/morsels" title="Canberra news">Canberra news</a>
+                                    </li>
+                                    <li
+                                        class="off" data-location="Brisbane">
+                                        <a href="/good-food/food-news/column/graze" title="Brisbane news">Brisbane news</a>
+                                    </li>
+                                    <li
+                                        >
+                                        <a href="/good-food/food-news/" title="Latest articles">Latest articles</a>
+                                    </li>
+                                    <li class="last"
+                                        >
+                                        <a href="http://www.goodfood.com.au/good-food/food-news/aggregate/food-for-good-20140521-38obz.html" title="Food for Good">Food for Good</a>
+                                    </li>
+                            </ul>
+                                    </div>
+                                </div>
+                </li>
+                <li class=" hasDropdown  topten">
+                    <a href="http://www.goodfood.com.au/good-food/top-10" class="topNav">
+                                <span>Top 10</span>
+                    </a>
+                                <div class="ddown wide">
+                                    <div class="ddownInner cfix">
+                            <ul>
+                                    <li class="first"
+                                        >
+                                        <a href="/good-food/top-10/cook" title="Cook">Cook</a>
+                                    </li>
+                                    <li
+                                        >
+                                        <a href="/good-food/top-10/eat-out" title="Eat out">Eat out</a>
+                                    </li>
+                                    <li class="last"
+                                        >
+                                        <a href="/good-food/top-10/drink" title="Drink">Drink</a>
+                                    </li>
+                            </ul>
+                                    </div>
+                                </div>
+                </li>
+    </ul>
+
+                <div class="cT-chooseLocation">
+        <form action="#">
+            <label>Choose your location:</label>
+            <select>
+                    <option value="Default" selected="selected">National</option>
+                    <option value="Sydney" >Sydney</option>
+                    <option value="Melbourne" >Melbourne</option>
+                    <option value="Brisbane" >Brisbane</option>
+                    <option value="Canberra" >Canberra</option>
+            </select>
+        </form>
+    </div><!-- class:cT-chooseLocation -->
+
+        </div><!-- class:innerWrap -->
+    </div><!-- class:navHolder cfix -->
+</div><!-- class:header cfix -->
+            <div class="mainCont innerWrap cfix">
+                <div id="adspot-940x250-pos-1" class="ad" style='display:none;'> <script type="text/javascript"> var titan = window.titan || {}; titan.requestAd = titan.requestAd || []; titan.requestAd.push("adspot-940x250-pos-1"); </script> </div>
+                        <div class="" data-location="Default">
+                
+
+    <div class="circularRotator">
+        <div class="circularRotatorWrap">
+            <div class="selectedFrame">
+                <div></div>
+            </div><!-- class:selectedFrame -->
+            <ul class="tabs">
+                    
+                    <li class="tab">
+                        <div class="wof">
+                            <h4><a href="http://www.goodfood.com.au/good-food/cook/aggregate/weekly-meal-planner-20141210-3m8qv.html" title="Weekly meal planner" >Weekly meal planner</a></h4>
+                            <p>With Christmas just around the corner, relaxed dinners are in order, like steak sandwiches and fried chicken with garlic.</p>
+                            
+                            
+
+                            <a class="readMore" href="http://www.goodfood.com.au/good-food/cook/aggregate/weekly-meal-planner-20141210-3m8qv.html">Read more</a>
+                        </div><!-- class:wof -->
+                                <a href="http://www.goodfood.com.au/good-food/cook/aggregate/weekly-meal-planner-20141210-3m8qv.html" title="Weekly meal planner"><img src="http://images.goodfood.com.au/2014/12/10/6077548/GF_hero_chicken_deep-20141210155222589117-420x280.jpg" width="420" height="280" alt="Saturday: Neil Perry's deep-fried chicken with garlic and peppercorns." /></a>
+
+                    </li>
+                    
+                    
+                    <li class="tab selected">
+                        <div class="wof">
+                            <h4><a href="http://www.goodfood.com.au/good-food/cook/recipe/black-pepper-tofu-with-eggplant-20141215-3mjyw.html" title="Far-east feast" >Far-east feast</a></h4>
+                            <p>Eat this delicious Sichuan eggplant-tofu dish as a mid-week main, or serve it up in a spicy banquet.</p>
+                            
+                            
+
+                            <a class="readMore" href="http://www.goodfood.com.au/good-food/cook/recipe/black-pepper-tofu-with-eggplant-20141215-3mjyw.html">Read more</a>
+                        </div><!-- class:wof -->
+                                <a href="http://www.goodfood.com.au/good-food/cook/recipe/black-pepper-tofu-with-eggplant-20141215-3mjyw.html" title="Black pepper tofu with eggplant"><img src="http://images.goodfood.com.au/2014/12/15/6091164/GF_hero_perry_tofu-20141215075705113381-420x280.jpg" width="420" height="280" alt="Neil Perry's black pepper tofu with eggplant." /></a>
+
+                    </li>
+                    
+                    
+                    <li class="tab">
+                        <div class="wof">
+                            <h4><a href="http://www.goodfood.com.au/good-food/celebration/the-year-i-nailed-christmas-chefs-and-cooks-recall-the-year-when-everything-went-right-20141203-11yb7x.html" title="The year I nailed Christmas" >The year I nailed Christmas</a></h4>
+                            <p>Professionals and home cooks share tips and tales of that proud moment when everything gelled.</p>
+                            
+                            
+
+                            <a class="readMore" href="http://www.goodfood.com.au/good-food/celebration/the-year-i-nailed-christmas-chefs-and-cooks-recall-the-year-when-everything-went-right-20141203-11yb7x.html">Read more</a>
+                        </div><!-- class:wof -->
+                                <a href="http://www.goodfood.com.au/good-food/celebration/the-year-i-nailed-christmas-chefs-and-cooks-recall-the-year-when-everything-went-right-20141203-11yb7x.html" title="The year I nailed Christmas: chefs and cooks recall the year when everything went right"><img src="http://images.goodfood.com.au/2014/12/09/6071815/AS-000goodfood-hero-20141209090500812797-420x280.jpg" width="420" height="280" alt="Guillaume Brahimi's ice-cream Christmas tree." /></a>
+
+                    </li>
+                    
+            </ul>
+        </div><!-- class:circularRotatorWrap -->
+        <ul class="hidden">
+                <li>
+                    <div class="wof">
+                        <h4><a href="http://www.goodfood.com.au/good-food/cook/aggregate/weekly-meal-planner-20141210-3m8qv.html" title="Weekly meal planner" >Weekly meal planner</a></h4>
+                        <p>With Christmas just around the corner, relaxed dinners are in order, like steak sandwiches and fried chicken with garlic.</p>
+                        
+                        
+
+                        <a class="readMore" href="http://www.goodfood.com.au/good-food/cook/aggregate/weekly-meal-planner-20141210-3m8qv.html">Read more</a>
+                    </div><!-- class:hiddenWof -->
+                            <a href="http://www.goodfood.com.au/good-food/cook/aggregate/weekly-meal-planner-20141210-3m8qv.html" title="Weekly meal planner"><img src="http://images.goodfood.com.au/2014/12/10/6077548/GF_hero_chicken_deep-20141210155222589117-420x280.jpg" width="420" height="280" alt="Saturday: Neil Perry's deep-fried chicken with garlic and peppercorns." /></a>
+
+                </li>
+                <li>
+                    <div class="wof">
+                        <h4><a href="http://www.goodfood.com.au/good-food/cook/recipe/black-pepper-tofu-with-eggplant-20141215-3mjyw.html" title="Far-east feast" >Far-east feast</a></h4>
+                        <p>Eat this delicious Sichuan eggplant-tofu dish as a mid-week main, or serve it up in a spicy banquet.</p>
+                        
+                        
+
+                        <a class="readMore" href="http://www.goodfood.com.au/good-food/cook/recipe/black-pepper-tofu-with-eggplant-20141215-3mjyw.html">Read more</a>
+                    </div><!-- class:hiddenWof -->
+                            <a href="http://www.goodfood.com.au/good-food/cook/recipe/black-pepper-tofu-with-eggplant-20141215-3mjyw.html" title="Black pepper tofu with eggplant"><img src="http://images.goodfood.com.au/2014/12/15/6091164/GF_hero_perry_tofu-20141215075705113381-420x280.jpg" width="420" height="280" alt="Neil Perry's black pepper tofu with eggplant." /></a>
+
+                </li>
+                <li>
+                    <div class="wof">
+                        <h4><a href="http://www.goodfood.com.au/good-food/celebration/the-year-i-nailed-christmas-chefs-and-cooks-recall-the-year-when-everything-went-right-20141203-11yb7x.html" title="The year I nailed Christmas" >The year I nailed Christmas</a></h4>
+                        <p>Professionals and home cooks share tips and tales of that proud moment when everything gelled.</p>
+                        
+                        
+
+                        <a class="readMore" href="http://www.goodfood.com.au/good-food/celebration/the-year-i-nailed-christmas-chefs-and-cooks-recall-the-year-when-everything-went-right-20141203-11yb7x.html">Read more</a>
+                    </div><!-- class:hiddenWof -->
+                            <a href="http://www.goodfood.com.au/good-food/celebration/the-year-i-nailed-christmas-chefs-and-cooks-recall-the-year-when-everything-went-right-20141203-11yb7x.html" title="The year I nailed Christmas: chefs and cooks recall the year when everything went right"><img src="http://images.goodfood.com.au/2014/12/09/6071815/AS-000goodfood-hero-20141209090500812797-420x280.jpg" width="420" height="280" alt="Guillaume Brahimi's ice-cream Christmas tree." /></a>
+
+                </li>
+                <li>
+                    <div class="wof">
+                        <h4><a href="http://www.goodfood.com.au/good-food/top-10-cook/ten-things-you-never-knew-about-ham-20141211-11zis0.html" title="Ten things you never knew about ham" >Ten things you never knew about ham</a></h4>
+                        <p>Australia loves a spot of cured pig, especially at Christmas time. Here are 10 porcine facts to munch on this ham season.</p>
+                        
+                        
+
+                        <a class="readMore" href="http://www.goodfood.com.au/good-food/top-10-cook/ten-things-you-never-knew-about-ham-20141211-11zis0.html">Read more</a>
+                    </div><!-- class:hiddenWof -->
+                            <a href="http://www.goodfood.com.au/good-food/top-10-cook/ten-things-you-never-knew-about-ham-20141211-11zis0.html" title="Ten things you never knew about ham"><img src="http://images.goodfood.com.au/2014/12/12/6083259/AS-goodfood-hero-20141212084045446658-420x280.jpg" width="420" height="280" alt="Christmas ham." /></a>
+
+                </li>
+                <li>
+                    <div class="wof">
+                        <h4><a href="http://www.goodfood.com.au/good-food/celebration/good-times-how-to-throw-a-party-like-a-pro-20141023-11aead.html" title="How to throw a party like a pro" >How to throw a party like a pro</a></h4>
+                        <p>It's that time of year again, where the pointy end becomes the party end.</p>
+                        
+                        
+
+                        <a class="readMore" href="http://www.goodfood.com.au/good-food/celebration/good-times-how-to-throw-a-party-like-a-pro-20141023-11aead.html">Read more</a>
+                    </div><!-- class:hiddenWof -->
+                            <a href="http://www.goodfood.com.au/good-food/celebration/good-times-how-to-throw-a-party-like-a-pro-20141023-11aead.html" title="Good times: How to throw a party like a pro"><img src="http://images.goodfood.com.au/2014/12/11/6079033/sm-hero-meppem-20141211083010116807-420x280.jpg" width="420" height="280" alt="Fruit Punch." /></a>
+
+                </li>
+                <li>
+                    <div class="wof">
+                        <h4><a href="http://www.goodfood.com.au/good-food/drink/huon-hookes-top-wines-of-2014-20141204-11zxdz.html" title="Top 20 wines of 2014" >Top 20 wines of 2014</a></h4>
+                        <p>It wasn't the $1800 bottle of Penfolds, but a much cheaper wine that grabbed top billing.</p>
+                        
+                        
+
+                        <a class="readMore" href="http://www.goodfood.com.au/good-food/drink/huon-hookes-top-wines-of-2014-20141204-11zxdz.html">Read more</a>
+                    </div><!-- class:hiddenWof -->
+                            <a href="http://www.goodfood.com.au/good-food/drink/huon-hookes-top-wines-of-2014-20141204-11zxdz.html" title="Huon Hooke's top wines of 2014"><img src="http://images.goodfood.com.au/2014/12/09/6072009/sm-hero-wine-20141209095156188916-420x280.jpg" width="420" height="280" alt="Red wine" /></a>
+
+                </li>
+        </ul>
+    </div><!-- class:circularRotator -->
+
+        </div><!-- class: -->
+        <div class=" off" data-location="Sydney">
+                
+
+    <div class="circularRotator">
+        <div class="circularRotatorWrap">
+            <div class="selectedFrame">
+                <div></div>
+            </div><!-- class:selectedFrame -->
+            <ul class="tabs">
+                    
+                    <li class="tab">
+                        <div class="wof">
+                            <h4><a href="http://www.goodfood.com.au/good-food/celebration/the-year-i-nailed-christmas-chefs-and-cooks-recall-the-year-when-everything-went-right-20141203-11yb7x.html" title="The year I nailed Christmas: chefs and cooks ..." >The year I nailed Christmas: chefs and cooks ...</a></h4>
+                            <p>Professionals and home cooks share tips and tales of that proud moment when everything gelled.</p>
+                            
+                            
+
+                            <a class="readMore" href="http://www.goodfood.com.au/good-food/celebration/the-year-i-nailed-christmas-chefs-and-cooks-recall-the-year-when-everything-went-right-20141203-11yb7x.html">Read more</a>
+                        </div><!-- class:wof -->
+                                <a href="http://www.goodfood.com.au/good-food/celebration/the-year-i-nailed-christmas-chefs-and-cooks-recall-the-year-when-everything-went-right-20141203-11yb7x.html" title="The year I nailed Christmas: chefs and cooks recall the year when everything went right"><img src="http://images.goodfood.com.au/2014/12/09/6071815/AS-000goodfood-hero-20141209090500812797-420x280.jpg" width="420" height="280" alt="Guillaume Brahimi's ice-cream Christmas tree." /></a>
+
+                    </li>
+                    
+                    
+                    <li class="tab selected">
+                        <div class="wof">
+                            <h4><a href="http://www.goodfood.com.au/good-food/eat-out/hottest-restaurant-openings-in-sydney-2014-20141209-1238rt.html" title="The hottest restaurant openings of 2014" >The hottest restaurant openings of 2014</a></h4>
+                            <p>From family friendly to super chic, why did these new eateries rise above all others?</p>
+                            
+                            
+
+                            <a class="readMore" href="http://www.goodfood.com.au/good-food/eat-out/hottest-restaurant-openings-in-sydney-2014-20141209-1238rt.html">Read more</a>
+                        </div><!-- class:wof -->
+                                <a href="http://www.goodfood.com.au/good-food/eat-out/hottest-restaurant-openings-in-sydney-2014-20141209-1238rt.html" title="Hottest restaurant openings in Sydney 2014"><img src="http://images.goodfood.com.au/2014/12/16/6095153/hero_lobster-420x280.jpg" width="420" height="280" alt="Lobster roll." /></a>
+
+                    </li>
+                    
+                    
+                    <li class="tab">
+                        <div class="wof">
+                            <h4><a href="http://www.goodfood.com.au/good-food/cook/recipe/black-pepper-tofu-with-eggplant-20141215-3mjyw.html" title="Black pepper tofu with eggplant" >Black pepper tofu with eggplant</a></h4>
+                            <p>Eat this delicious Sichuan eggplant-tofu dish as a mid-week main, or serve it up in a spicy banquet.</p>
+                            
+                            
+
+                            <a class="readMore" href="http://www.goodfood.com.au/good-food/cook/recipe/black-pepper-tofu-with-eggplant-20141215-3mjyw.html">Read more</a>
+                        </div><!-- class:wof -->
+                                <a href="http://www.goodfood.com.au/good-food/cook/recipe/black-pepper-tofu-with-eggplant-20141215-3mjyw.html" title="Black pepper tofu with eggplant"><img src="http://images.goodfood.com.au/2014/12/15/6091164/GF_hero_perry_tofu-20141215075705113381-420x280.jpg" width="420" height="280" alt="Neil Perry's black pepper tofu with eggplant." /></a>
+
+                    </li>
+                    
+            </ul>
+        </div><!-- class:circularRotatorWrap -->
+        <ul class="hidden">
+                <li>
+                    <div class="wof">
+                        <h4><a href="http://www.goodfood.com.au/good-food/celebration/the-year-i-nailed-christmas-chefs-and-cooks-recall-the-year-when-everything-went-right-20141203-11yb7x.html" title="The year I nailed Christmas: chefs and cooks ..." >The year I nailed Christmas: chefs and cooks ...</a></h4>
+                        <p>Professionals and home cooks share tips and tales of that proud moment when everything gelled.</p>
+                        
+                        
+
+                        <a class="readMore" href="http://www.goodfood.com.au/good-food/celebration/the-year-i-nailed-christmas-chefs-and-cooks-recall-the-year-when-everything-went-right-20141203-11yb7x.html">Read more</a>
+                    </div><!-- class:hiddenWof -->
+                            <a href="http://www.goodfood.com.au/good-food/celebration/the-year-i-nailed-christmas-chefs-and-cooks-recall-the-year-when-everything-went-right-20141203-11yb7x.html" title="The year I nailed Christmas: chefs and cooks recall the year when everything went right"><img src="http://images.goodfood.com.au/2014/12/09/6071815/AS-000goodfood-hero-20141209090500812797-420x280.jpg" width="420" height="280" alt="Guillaume Brahimi's ice-cream Christmas tree." /></a>
+
+                </li>
+                <li>
+                    <div class="wof">
+                        <h4><a href="http://www.goodfood.com.au/good-food/eat-out/hottest-restaurant-openings-in-sydney-2014-20141209-1238rt.html" title="The hottest restaurant openings of 2014" >The hottest restaurant openings of 2014</a></h4>
+                        <p>From family friendly to super chic, why did these new eateries rise above all others?</p>
+                        
+                        
+
+                        <a class="readMore" href="http://www.goodfood.com.au/good-food/eat-out/hottest-restaurant-openings-in-sydney-2014-20141209-1238rt.html">Read more</a>
+                    </div><!-- class:hiddenWof -->
+                            <a href="http://www.goodfood.com.au/good-food/eat-out/hottest-restaurant-openings-in-sydney-2014-20141209-1238rt.html" title="Hottest restaurant openings in Sydney 2014"><img src="http://images.goodfood.com.au/2014/12/16/6095153/hero_lobster-420x280.jpg" width="420" height="280" alt="Lobster roll." /></a>
+
+                </li>
+                <li>
+                    <div class="wof">
+                        <h4><a href="http://www.goodfood.com.au/good-food/cook/recipe/black-pepper-tofu-with-eggplant-20141215-3mjyw.html" title="Black pepper tofu with eggplant" >Black pepper tofu with eggplant</a></h4>
+                        <p>Eat this delicious Sichuan eggplant-tofu dish as a mid-week main, or serve it up in a spicy banquet.</p>
+                        
+                        
+
+                        <a class="readMore" href="http://www.goodfood.com.au/good-food/cook/recipe/black-pepper-tofu-with-eggplant-20141215-3mjyw.html">Read more</a>
+                    </div><!-- class:hiddenWof -->
+                            <a href="http://www.goodfood.com.au/good-food/cook/recipe/black-pepper-tofu-with-eggplant-20141215-3mjyw.html" title="Black pepper tofu with eggplant"><img src="http://images.goodfood.com.au/2014/12/15/6091164/GF_hero_perry_tofu-20141215075705113381-420x280.jpg" width="420" height="280" alt="Neil Perry's black pepper tofu with eggplant." /></a>
+
+                </li>
+                <li>
+                    <div class="wof">
+                        <h4><a href="http://www.goodfood.com.au/good-food/top-10-cook/ten-things-you-never-knew-about-ham-20141211-11zis0.html" title="Ten things you never knew about ham" >Ten things you never knew about ham</a></h4>
+                        <p>Australia loves a spot of cured pig, especially at Christmas time. Here are 10 porcine facts to munch on this ham season.</p>
+                        
+                        
+
+                        <a class="readMore" href="http://www.goodfood.com.au/good-food/top-10-cook/ten-things-you-never-knew-about-ham-20141211-11zis0.html">Read more</a>
+                    </div><!-- class:hiddenWof -->
+                            <a href="http://www.goodfood.com.au/good-food/top-10-cook/ten-things-you-never-knew-about-ham-20141211-11zis0.html" title="Ten things you never knew about ham"><img src="http://images.goodfood.com.au/2014/12/12/6083259/AS-goodfood-hero-20141212084045446658-420x280.jpg" width="420" height="280" alt="Christmas ham." /></a>
+
+                </li>
+                <li>
+                    <div class="wof">
+                        <h4><a href="http://www.goodfood.com.au/good-food/cook/aggregate/weekly-meal-planner-20141210-3m8qv.html" title="Weekly meal planner" >Weekly meal planner</a></h4>
+                        <p>With Christmas just around the corner, relaxed, simple dinners are in order.</p>
+                        
+                        
+
+                        <a class="readMore" href="http://www.goodfood.com.au/good-food/cook/aggregate/weekly-meal-planner-20141210-3m8qv.html">Read more</a>
+                    </div><!-- class:hiddenWof -->
+                            <a href="http://www.goodfood.com.au/good-food/cook/aggregate/weekly-meal-planner-20141210-3m8qv.html" title="Weekly meal planner"><img src="http://images.goodfood.com.au/2014/12/10/6077548/GF_hero_chicken_deep-20141210155222589117-420x280.jpg" width="420" height="280" alt="Saturday: Neil Perry's deep-fried chicken with garlic and peppercorns." /></a>
+
+                </li>
+        </ul>
+    </div><!-- class:circularRotator -->
+
+        </div><!-- class: off -->
+        <div class=" off" data-location="Melbourne">
+                
+
+    <div class="circularRotator">
+        <div class="circularRotatorWrap">
+            <div class="selectedFrame">
+                <div></div>
+            </div><!-- class:selectedFrame -->
+            <ul class="tabs">
+                    
+                    <li class="tab">
+                        <div class="wof">
+                            <h4><a href="http://www.goodfood.com.au/good-food/cook/recipe/black-pepper-tofu-with-eggplant-20141215-3mjyw.html" title="Black pepper tofu with eggplant" >Black pepper tofu with eggplant</a></h4>
+                            <p>Eat this delicious Sichuan eggplant-tofu dish as a mid-week main, or serve it up in a spicy banquet.</p>
+                            
+                            
+
+                            <a class="readMore" href="http://www.goodfood.com.au/good-food/cook/recipe/black-pepper-tofu-with-eggplant-20141215-3mjyw.html">Read more</a>
+                        </div><!-- class:wof -->
+                                <a href="http://www.goodfood.com.au/good-food/cook/recipe/black-pepper-tofu-with-eggplant-20141215-3mjyw.html" title="Black pepper tofu with eggplant"><img src="http://images.goodfood.com.au/2014/12/15/6091164/GF_hero_perry_tofu-20141215075705113381-420x280.jpg" width="420" height="280" alt="Neil Perry's black pepper tofu with eggplant." /></a>
+
+                    </li>
+                    
+                    
+                    <li class="tab selected">
+                        <div class="wof">
+                            <h4><a href="http://www.goodfood.com.au/good-food/eat-out/melbournes-best-new-restaurants-of-2014-20141209-1239z0.html" title="Melbourne's best new restaurants of 2014" >Melbourne's best new restaurants of 2014</a></h4>
+                            <p>Trends come and go but these are the venues that won a place in our hearts.</p>
+                            
+                            
+
+                            <a class="readMore" href="http://www.goodfood.com.au/good-food/eat-out/melbournes-best-new-restaurants-of-2014-20141209-1239z0.html">Read more</a>
+                        </div><!-- class:wof -->
+                                <a href="http://www.goodfood.com.au/good-food/eat-out/melbournes-best-new-restaurants-of-2014-20141209-1239z0.html" title="Melbourne's best new restaurants of 2014"><img src="http://images.goodfood.com.au/2014/12/16/6096138/AS-0goodfood-hero-20141216124256600296-420x280.jpg" width="420" height="280" alt="Pasta at Tipo 00." /></a>
+
+                    </li>
+                    
+                    
+                    <li class="tab">
+                        <div class="wof">
+                            <h4><a href="http://www.goodfood.com.au/good-food/celebration/the-year-i-nailed-christmas-chefs-and-cooks-recall-the-year-when-everything-went-right-20141203-11yb7x.html" title="The year I nailed Christmas: chefs and cooks ..." >The year I nailed Christmas: chefs and cooks ...</a></h4>
+                            <p>Professionals and home cooks share tips and tales of that proud moment when everything gelled.</p>
+                            
+                            
+
+                            <a class="readMore" href="http://www.goodfood.com.au/good-food/celebration/the-year-i-nailed-christmas-chefs-and-cooks-recall-the-year-when-everything-went-right-20141203-11yb7x.html">Read more</a>
+                        </div><!-- class:wof -->
+                                <a href="http://www.goodfood.com.au/good-food/celebration/the-year-i-nailed-christmas-chefs-and-cooks-recall-the-year-when-everything-went-right-20141203-11yb7x.html" title="The year I nailed Christmas: chefs and cooks recall the year when everything went right"><img src="http://images.goodfood.com.au/2014/12/09/6071815/AS-000goodfood-hero-20141209090500812797-420x280.jpg" width="420" height="280" alt="Guillaume Brahimi's ice-cream Christmas tree." /></a>
+
+                    </li>
+                    
+            </ul>
+        </div><!-- class:circularRotatorWrap -->
+        <ul class="hidden">
+                <li>
+                    <div class="wof">
+                        <h4><a href="http://www.goodfood.com.au/good-food/cook/recipe/black-pepper-tofu-with-eggplant-20141215-3mjyw.html" title="Black pepper tofu with eggplant" >Black pepper tofu with eggplant</a></h4>
+                        <p>Eat this delicious Sichuan eggplant-tofu dish as a mid-week main, or serve it up in a spicy banquet.</p>
+                        
+                        
+
+                        <a class="readMore" href="http://www.goodfood.com.au/good-food/cook/recipe/black-pepper-tofu-with-eggplant-20141215-3mjyw.html">Read more</a>
+                    </div><!-- class:hiddenWof -->
+                            <a href="http://www.goodfood.com.au/good-food/cook/recipe/black-pepper-tofu-with-eggplant-20141215-3mjyw.html" title="Black pepper tofu with eggplant"><img src="http://images.goodfood.com.au/2014/12/15/6091164/GF_hero_perry_tofu-20141215075705113381-420x280.jpg" width="420" height="280" alt="Neil Perry's black pepper tofu with eggplant." /></a>
+
+                </li>
+                <li>
+                    <div class="wof">
+                        <h4><a href="http://www.goodfood.com.au/good-food/eat-out/melbournes-best-new-restaurants-of-2014-20141209-1239z0.html" title="Melbourne's best new restaurants of 2014" >Melbourne's best new restaurants of 2014</a></h4>
+                        <p>Trends come and go but these are the venues that won a place in our hearts.</p>
+                        
+                        
+
+                        <a class="readMore" href="http://www.goodfood.com.au/good-food/eat-out/melbournes-best-new-restaurants-of-2014-20141209-1239z0.html">Read more</a>
+                    </div><!-- class:hiddenWof -->
+                            <a href="http://www.goodfood.com.au/good-food/eat-out/melbournes-best-new-restaurants-of-2014-20141209-1239z0.html" title="Melbourne's best new restaurants of 2014"><img src="http://images.goodfood.com.au/2014/12/16/6096138/AS-0goodfood-hero-20141216124256600296-420x280.jpg" width="420" height="280" alt="Pasta at Tipo 00." /></a>
+
+                </li>
+                <li>
+                    <div class="wof">
+                        <h4><a href="http://www.goodfood.com.au/good-food/celebration/the-year-i-nailed-christmas-chefs-and-cooks-recall-the-year-when-everything-went-right-20141203-11yb7x.html" title="The year I nailed Christmas: chefs and cooks ..." >The year I nailed Christmas: chefs and cooks ...</a></h4>
+                        <p>Professionals and home cooks share tips and tales of that proud moment when everything gelled.</p>
+                        
+                        
+
+                        <a class="readMore" href="http://www.goodfood.com.au/good-food/celebration/the-year-i-nailed-christmas-chefs-and-cooks-recall-the-year-when-everything-went-right-20141203-11yb7x.html">Read more</a>
+                    </div><!-- class:hiddenWof -->
+                            <a href="http://www.goodfood.com.au/good-food/celebration/the-year-i-nailed-christmas-chefs-and-cooks-recall-the-year-when-everything-went-right-20141203-11yb7x.html" title="The year I nailed Christmas: chefs and cooks recall the year when everything went right"><img src="http://images.goodfood.com.au/2014/12/09/6071815/AS-000goodfood-hero-20141209090500812797-420x280.jpg" width="420" height="280" alt="Guillaume Brahimi's ice-cream Christmas tree." /></a>
+
+                </li>
+                <li>
+                    <div class="wof">
+                        <h4><a href="http://www.goodfood.com.au/good-food/top-10-cook/ten-things-you-never-knew-about-ham-20141211-11zis0.html" title="Ten things you never knew about ham" >Ten things you never knew about ham</a></h4>
+                        <p>Australia loves a spot of cured pig, especially at Christmas time. Here are 10 porcine facts to munch on this ham season.</p>
+                        
+                        
+
+                        <a class="readMore" href="http://www.goodfood.com.au/good-food/top-10-cook/ten-things-you-never-knew-about-ham-20141211-11zis0.html">Read more</a>
+                    </div><!-- class:hiddenWof -->
+                            <a href="http://www.goodfood.com.au/good-food/top-10-cook/ten-things-you-never-knew-about-ham-20141211-11zis0.html" title="Ten things you never knew about ham"><img src="http://images.goodfood.com.au/2014/12/12/6083259/AS-goodfood-hero-20141212084045446658-420x280.jpg" width="420" height="280" alt="Christmas ham." /></a>
+
+                </li>
+                <li>
+                    <div class="wof">
+                        <h4><a href="http://www.goodfood.com.au/good-food/drink/huon-hookes-top-wines-of-2014-20141204-11zxdz.html" title="Huon Hooke's top wines of 2014" >Huon Hooke's top wines of 2014</a></h4>
+                        <p>The wines that most excited <b>Huon Hooke</b> this year were not those with stratospheric prices but those offering great value for money.</p>
+                        
+                        
+
+                        <a class="readMore" href="http://www.goodfood.com.au/good-food/drink/huon-hookes-top-wines-of-2014-20141204-11zxdz.html">Read more</a>
+                    </div><!-- class:hiddenWof -->
+                            <a href="http://www.goodfood.com.au/good-food/drink/huon-hookes-top-wines-of-2014-20141204-11zxdz.html" title="Huon Hooke's top wines of 2014"><img src="http://images.goodfood.com.au/2014/12/09/6072009/sm-hero-wine-20141209095156188916-420x280.jpg" width="420" height="280" alt="Red wine" /></a>
+
+                </li>
+                <li>
+                    <div class="wof">
+                        <h4><a href="http://www.goodfood.com.au/good-food/cook/aggregate/weekly-meal-planner-20141210-3m8qv.html" title="Weekly meal planner" >Weekly meal planner</a></h4>
+                        <p>With Christmas just around the corner, relaxed, simple dinners are in order.</p>
+                        
+                        
+
+                        <a class="readMore" href="http://www.goodfood.com.au/good-food/cook/aggregate/weekly-meal-planner-20141210-3m8qv.html">Read more</a>
+                    </div><!-- class:hiddenWof -->
+                            <a href="http://www.goodfood.com.au/good-food/cook/aggregate/weekly-meal-planner-20141210-3m8qv.html" title="Weekly meal planner"><img src="http://images.goodfood.com.au/2014/12/10/6077548/GF_hero_chicken_deep-20141210155222589117-420x280.jpg" width="420" height="280" alt="Saturday: Neil Perry's deep-fried chicken with garlic and peppercorns." /></a>
+
+                </li>
+        </ul>
+    </div><!-- class:circularRotator -->
+
+        </div><!-- class: off -->
+        <div class=" off" data-location="Brisbane">
+                
+
+
+        </div><!-- class: off -->
+        <div class=" off" data-location="Canberra">
+                
+
+    <div class="circularRotator">
+        <div class="circularRotatorWrap">
+            <div class="selectedFrame">
+                <div></div>
+            </div><!-- class:selectedFrame -->
+            <ul class="tabs">
+                    
+                    <li class="tab">
+                        <div class="wof">
+                            <h4><a href="http://www.goodfood.com.au/good-food/drink/canberra-wine-industry-produces-top-shiraz-riesling-in-2014-20141128-11v8mz.html" title="Heat, frost, fail to stem award flow" >Heat, frost, fail to stem award flow</a></h4>
+                            <p>Despite nature's harsh dealings, Canberra region's winegrowers continue to produce top-notch riesling and shiraz, writes Chris Shanahan.</p>
+                            
+                            
+
+                            <a class="readMore" href="http://www.goodfood.com.au/good-food/drink/canberra-wine-industry-produces-top-shiraz-riesling-in-2014-20141128-11v8mz.html">Read more</a>
+                        </div><!-- class:wof -->
+                                <a href="http://www.goodfood.com.au/good-food/drink/canberra-wine-industry-produces-top-shiraz-riesling-in-2014-20141128-11v8mz.html" title="Canberra wine industry produces top shiraz, riesling in 2014"><img src="http://images.goodfood.com.au/2014/12/03/6052400/ld-HR-PMwineB-20141203091737953715-420x280.jpg" width="420" height="280" alt="<p>" /></a>
+
+                    </li>
+                    
+                    
+                    <li class="tab selected">
+                        <div class="wof">
+                            <h4><a href="http://www.goodfood.com.au/good-food/cook/how-to-make-a-christmas-gingerbread-house-20141201-11xeoa.html?aggregate=525178" title="How to make a gingerbread house" >How to make a gingerbread house</a></h4>
+                            <p>The key is in the lollies, says master gingerbread house builder Phillippa Grogan.</p>
+                            
+                            
+
+                            <a class="readMore" href="http://www.goodfood.com.au/good-food/cook/how-to-make-a-christmas-gingerbread-house-20141201-11xeoa.html?aggregate=525178">Read more</a>
+                        </div><!-- class:wof -->
+                                <a href="http://www.goodfood.com.au/good-food/cook/how-to-make-a-christmas-gingerbread-house-20141201-11xeoa.html?aggregate=525178" title="How to make a gingerbread house "><img src="http://images.goodfood.com.au/2014/12/02/6048009/GF_hero_grogan-20141202070413118571-420x280.jpg" width="420" height="280" alt="Phillippa Grogan demonstrates how to make a gingerbread house." /></a>
+
+                    </li>
+                    
+                    
+                    <li class="tab">
+                        <div class="wof">
+                            <h4><a href="http://www.goodfood.com.au/good-food/cook/bryan-martins-great-caesar-salad-20141202-11yh91.html" title="All hail this caesar salad" >All hail this caesar salad</a></h4>
+                            <p>A 100 years on from its inception, it remains summer's best salad. Here's Bryan Martin's version.</p>
+                            
+                            
+
+                            <a class="readMore" href="http://www.goodfood.com.au/good-food/cook/bryan-martins-great-caesar-salad-20141202-11yh91.html">Read more</a>
+                        </div><!-- class:wof -->
+                                <a href="http://www.goodfood.com.au/good-food/cook/bryan-martins-great-caesar-salad-20141202-11yh91.html" title="Bryan Martin's great caesar salad"><img src="http://images.goodfood.com.au/2014/12/09/6073445/ld-HR-FWmartin-20141209155500375071-420x280.jpg" width="420" height="280" alt="<p>" /></a>
+
+                    </li>
+                    
+            </ul>
+        </div><!-- class:circularRotatorWrap -->
+        <ul class="hidden">
+                <li>
+                    <div class="wof">
+                        <h4><a href="http://www.goodfood.com.au/good-food/drink/canberra-wine-industry-produces-top-shiraz-riesling-in-2014-20141128-11v8mz.html" title="Heat, frost, fail to stem award flow" >Heat, frost, fail to stem award flow</a></h4>
+                        <p>Despite nature's harsh dealings, Canberra region's winegrowers continue to produce top-notch riesling and shiraz, writes Chris Shanahan.</p>
+                        
+                        
+
+                        <a class="readMore" href="http://www.goodfood.com.au/good-food/drink/canberra-wine-industry-produces-top-shiraz-riesling-in-2014-20141128-11v8mz.html">Read more</a>
+                    </div><!-- class:hiddenWof -->
+                            <a href="http://www.goodfood.com.au/good-food/drink/canberra-wine-industry-produces-top-shiraz-riesling-in-2014-20141128-11v8mz.html" title="Canberra wine industry produces top shiraz, riesling in 2014"><img src="http://images.goodfood.com.au/2014/12/03/6052400/ld-HR-PMwineB-20141203091737953715-420x280.jpg" width="420" height="280" alt="<p>" /></a>
+
+                </li>
+                <li>
+                    <div class="wof">
+                        <h4><a href="http://www.goodfood.com.au/good-food/cook/how-to-make-a-christmas-gingerbread-house-20141201-11xeoa.html?aggregate=525178" title="How to make a gingerbread house" >How to make a gingerbread house</a></h4>
+                        <p>The key is in the lollies, says master gingerbread house builder Phillippa Grogan.</p>
+                        
+                        
+
+                        <a class="readMore" href="http://www.goodfood.com.au/good-food/cook/how-to-make-a-christmas-gingerbread-house-20141201-11xeoa.html?aggregate=525178">Read more</a>
+                    </div><!-- class:hiddenWof -->
+                            <a href="http://www.goodfood.com.au/good-food/cook/how-to-make-a-christmas-gingerbread-house-20141201-11xeoa.html?aggregate=525178" title="How to make a gingerbread house "><img src="http://images.goodfood.com.au/2014/12/02/6048009/GF_hero_grogan-20141202070413118571-420x280.jpg" width="420" height="280" alt="Phillippa Grogan demonstrates how to make a gingerbread house." /></a>
+
+                </li>
+                <li>
+                    <div class="wof">
+                        <h4><a href="http://www.goodfood.com.au/good-food/cook/bryan-martins-great-caesar-salad-20141202-11yh91.html" title="All hail this caesar salad" >All hail this caesar salad</a></h4>
+                        <p>A 100 years on from its inception, it remains summer's best salad. Here's Bryan Martin's version.</p>
+                        
+                        
+
+                        <a class="readMore" href="http://www.goodfood.com.au/good-food/cook/bryan-martins-great-caesar-salad-20141202-11yh91.html">Read more</a>
+                    </div><!-- class:hiddenWof -->
+                            <a href="http://www.goodfood.com.au/good-food/cook/bryan-martins-great-caesar-salad-20141202-11yh91.html" title="Bryan Martin's great caesar salad"><img src="http://images.goodfood.com.au/2014/12/09/6073445/ld-HR-FWmartin-20141209155500375071-420x280.jpg" width="420" height="280" alt="<p>" /></a>
+
+                </li>
+                <li>
+                    <div class="wof">
+                        <h4><a href="http://www.goodfood.com.au/good-food/food-news/glutenfree-cafes-and-restaurants-in-canberra-20141208-11ztin.html" title="Gluten free? Yes, we do" >Gluten free? Yes, we do</a></h4>
+                        <p>Coeliac sufferer Scherry Bloul welcomes a rise in gluten-free dining options at Canberra's cafes and restaurants.</p>
+                        
+                        
+
+                        <a class="readMore" href="http://www.goodfood.com.au/good-food/food-news/glutenfree-cafes-and-restaurants-in-canberra-20141208-11ztin.html">Read more</a>
+                    </div><!-- class:hiddenWof -->
+                            <a href="http://www.goodfood.com.au/good-food/food-news/glutenfree-cafes-and-restaurants-in-canberra-20141208-11ztin.html" title="Gluten-free cafes and restaurants in Canberra"><img src="http://images.goodfood.com.au/2014/12/09/6073427/ld-HR-FWglutenB-20141209153649167848-420x280.jpg" width="420" height="280" alt="<P>" /></a>
+
+                </li>
+                <li>
+                    <div class="wof">
+                        <h4><a href="http://www.goodfood.com.au/good-food/top-10-eat-out/canberras-top-20-restaurants-for-2014-20141203-11z417.html" title="Canberra's top 20 restaurants for 2014" >Canberra's top 20 restaurants for 2014</a></h4>
+                        <p>We ate, we argued, we ate some more, and finally picked our top 20 restaurants in the capital. Who made the cut?</p>
+                        
+                        
+
+                        <a class="readMore" href="http://www.goodfood.com.au/good-food/top-10-eat-out/canberras-top-20-restaurants-for-2014-20141203-11z417.html">Read more</a>
+                    </div><!-- class:hiddenWof -->
+                            <a href="http://www.goodfood.com.au/good-food/top-10-eat-out/canberras-top-20-restaurants-for-2014-20141203-11z417.html" title="Canberra's top 20 restaurants for 2014"><img src="http://images.goodfood.com.au/2014/12/03/6054187/temporada-420x280.jpg" width="420" height="280" alt="A spread at Temporada." /></a>
+
+                </li>
+        </ul>
+    </div><!-- class:circularRotator -->
+
+        </div><!-- class: off -->
+
+                <div id="content" class="span-16" role="main">
+                    <div aria-label="Search tools" role="search" class="cT-searchForm closed cfix">
+    <form id="search__panel" action="/good-food/search.html" method="get">
+        <input type="hidden" name="ss" value="Good Food"/>
+        <input type="hidden" name="max" value="19"/>
+        <input id="cat" type="hidden" name="cat" value=""/>
+        <fieldset class="search__simple">
+            <div class="formSimple">
+                <label for="search" class="hide-visually">Search:</label>
+                <div class="select__wrapper">
+                    <select id="search__section" name="type" aria-required="true">
+                        <option value="">All</option>
+                            <option value="FoodRecipe,FoodAggregate,Article" >Cook</option>
+                            <option value="FoodWine,FoodAggregate,Article" >Drink</option>
+                            <option value="FoodRestaurant,FoodAggregate,Article" >Eat Out</option>
+                            <option value="FoodAggregate,Article" >News</option>
+                    </select>
+                </div>
+                <input name="text" type="text" id="search" placeholder="Enter keyword(s) or Name" aria-required="true" value="">
+                <input type="submit" class="btn" value="Search">
+            </div>
+        </fieldset>
+    </form>
+</div><!-- class:cT-searchForm closed cfix -->
+
+                            <div class="" data-location="Default">
+                
+
+    <section class="foodnews sectionListing" >
+            <a href="/good-food/food-news">
+    <h2 class="sectionHeading">
+        <span>daily bites</span>
+    </h2>
+    </a>
+
+        <div class="cols-1">
+                
+    <article class="leadArticle last">
+        <header>
+            <h3><a href="http://www.goodfood.com.au/good-food/food-news/elwood-croissant-bakery-lune-looks-to-expand-to-northern-suburbs-20141216-125eti.html" title="Cult croissant bakery Lune looks to expand">Cult croissant bakery Lune looks to expand</a></h3>
+        </header>
+        <div class="wof">
+            <p>
+                    <cite>Roslyn Grundy</cite>
+
+                Melbourne hole-in-the-wall croissanterie Lune is planning a bigger operation in the city's north.
+                
+
+            </p>
+        </div>
+    </article><!-- class:leadArticle last -->
+    
+        
+    
+    
+
+                <ul>
+                        <li>
+                            <a href="http://www.goodfood.com.au/good-food/food-news/fraser-short-and-ben-sweeten-to-open-chippendale-restaurant-20141212-125tso.html" title="Fraser Short and Ben Sweeten to open Chippendale restaurant">Fraser Short and Ben Sweeten to open Chippendale restaurant</a>
+                        </li>
+                        <li>
+                            <a href="http://www.goodfood.com.au/good-food/food-news/sake-restaurant-comes-to-double-bay-20141212-125uzd.html" title="Just open: Sake restaurant comes to Double Bay">Just open: Sake restaurant comes to Double Bay</a>
+                        </li>
+                        <li>
+                            <a href="https://display.engagesciences.com/display/container/d/d642e48c-aa49-4ff1-87c4-91a2228af127/details?showLikeGate=false" title="WIN: A dinner party cooked by Guillaume Brahimi">WIN: A dinner party cooked by Guillaume Brahimi</a>
+                        </li>
+                </ul>
+        </div>
+    </section>
+
+        </div><!-- class: -->
+        <div class=" off" data-location="Sydney">
+                
+
+    <section class="foodnews sectionListing" >
+            <a href="/good-food/food-news">
+    <h2 class="sectionHeading">
+        <span>daily bites</span>
+    </h2>
+    </a>
+
+        <div class="cols-1">
+                
+    <article class="leadArticle last">
+        <header>
+            <h3><a href="http://www.goodfood.com.au/good-food/food-news/sake-restaurant-comes-to-double-bay-20141212-125uzd.html" title="Sake restaurant comes to Double Bay">Sake restaurant comes to Double Bay</a></h3>
+        </header>
+        <div class="wof">
+            <p>
+                    <cite>Scott Bolles</cite>
+
+                Featuring a charcoal robata grill, Sake Double Bay has opened its doors.
+                
+    <span class="article-meta">
+        <em class="access">Contains:</em>
+        <a href="http://www.goodfood.com.au/good-food/food-news/sake-restaurant-comes-to-double-bay-20141212-125uzd.html#comments"></a>
+    </span>
+
+            </p>
+        </div>
+    </article><!-- class:leadArticle last -->
+    
+        
+    
+    
+
+                <ul>
+                        <li>
+                            <a href="http://www.goodfood.com.au/good-food/food-news/fraser-short-and-ben-sweeten-to-open-chippendale-restaurant-20141212-125tso.html" title="Fraser Short and Ben Sweeten to open Chippendale restaurant">Fraser Short and Ben Sweeten to open Chippendale restaurant</a>
+                        </li>
+                        <li>
+                            <a href="http://www.goodfood.com.au/good-food/food-news/hunting-the-paleo-beast-what-does-the-caveman-diet-craze-say-about-us-20141215-3mk0p.html" title="What does the paleo diet craze say about us?">What does the paleo diet craze say about us?</a>
+                        </li>
+                        <li>
+                            <a href="http://www.goodfood.com.au/good-food/food-news/just-open-matt-moran-relaunches-opera-bar-sydney-20141210-124faz.html" title="Matt Moran re-launches Opera Bar">Matt Moran re-launches Opera Bar</a>
+                        </li>
+                </ul>
+        </div>
+    </section>
+
+        </div><!-- class: off -->
+        <div class=" off" data-location="Melbourne">
+                
+
+    <section class="foodnews sectionListing" >
+            <a href="/good-food/food-news">
+    <h2 class="sectionHeading">
+        <span>daily bites</span>
+    </h2>
+    </a>
+
+        <div class="cols-1">
+                
+    <article class="leadArticle last">
+        <header>
+            <h3><a href="http://www.goodfood.com.au/good-food/food-news/elwood-croissant-bakery-lune-looks-to-expand-to-northern-suburbs-20141216-125eti.html" title="Cult croissant bakery Lune looks to expand">Cult croissant bakery Lune looks to expand</a></h3>
+        </header>
+        <div class="wof">
+            <p>
+                    <cite>Roslyn Grundy</cite>
+
+                Elwood hole-in-the-wall croissanterie Lune is planning a bigger operation in Melbourne's northside.
+                
+
+            </p>
+        </div>
+    </article><!-- class:leadArticle last -->
+    
+        
+    
+    
+
+                <ul>
+                        <li>
+                            <a href="http://www.goodfood.com.au/good-food/food-news/hunting-the-paleo-beast-what-does-the-caveman-diet-craze-say-about-us-20141215-3mk0p.html" title="What does the paleo diet craze say about us?">What does the paleo diet craze say about us?</a>
+                        </li>
+                        <li>
+                            <a href="http://www.goodfood.com.au/good-food/food-news/just-open-pidapipo-gelateria-settles-into-lygon-street-20141212-125sm4.html" title="Pidapipo gelateria opens on Lygon Street">Pidapipo gelateria opens on Lygon Street</a>
+                        </li>
+                        <li>
+                            <a href="http://www.goodfood.com.au/good-food/food-news/wait-for-gas-soon-over-for-bstilla-cantina-fitzroy-20141211-124zcn.html" title="B'Stilla Cantina (almost) cooking with gas">B'Stilla Cantina (almost) cooking with gas</a>
+                        </li>
+                </ul>
+        </div>
+    </section>
+
+        </div><!-- class: off -->
+        <div class=" off" data-location="Brisbane">
+                
+
+    <section class="foodnews sectionListing" >
+            <a href="/good-food/food-news">
+    <h2 class="sectionHeading">
+        <span>food news</span>
+    </h2>
+    </a>
+
+        <div class="cols-1">
+                
+    <article class="leadArticle last">
+        <header>
+            <h3><a href="http://www.goodfood.com.au/good-food/food-news/hunting-the-paleo-beast-what-does-the-caveman-diet-craze-say-about-us-20141215-3mk0p.html" title="What does the paleo diet craze say about us?">What does the paleo diet craze say about us?</a></h3>
+        </header>
+        <div class="wof">
+            <p>
+                    <cite><a href="http://www.goodfood.com.au/good-food/food-news/by/Larissa-Dubecki" title="Larissa Dubecki">Larissa Dubecki</a></cite>
+
+                Is the popular paleo diet a cult fad, cavemanscaping,  the secret to longevity or cultural nostalgia? Larissa Dubecki investigates.
+                
+    <span class="article-meta">
+        <em class="access">Contains:</em>
+        <a href="http://www.goodfood.com.au/good-food/food-news/hunting-the-paleo-beast-what-does-the-caveman-diet-craze-say-about-us-20141215-3mk0p.html#comments"></a>
+    </span>
+
+            </p>
+        </div>
+    </article><!-- class:leadArticle last -->
+    
+        
+    
+    
+
+                <ul>
+                        <li>
+                            <a href="http://www.goodfood.com.au/good-food/food-news/just-open-hop--pickle-south-bank-brisbane-20141212-125pzt.html" title="Hop &amp; Pickle pub opens at South Bank">Hop &amp; Pickle pub opens at South Bank</a>
+                        </li>
+                        <li>
+                            <a href="http://www.goodfood.com.au/good-food/food-news/the-makers-club-to-host-nosetotail-charcuterie-classes-20141212-125ilh.html" title="The Makers Club to host nose-to-tail charcuterie classes">The Makers Club to host nose-to-tail charcuterie classes</a>
+                        </li>
+                </ul>
+        </div>
+    </section>
+
+        </div><!-- class: off -->
+        <div class=" off" data-location="Canberra">
+                
+
+    <section class="foodnews sectionListing" >
+            <a href="/good-food/food-news">
+    <h2 class="sectionHeading">
+        <span>food news</span>
+    </h2>
+    </a>
+
+        <div class="cols-1">
+                
+    <article class="leadArticle last">
+        <header>
+            <h3><a href="http://www.goodfood.com.au/good-food/food-news/hunting-the-paleo-beast-what-does-the-caveman-diet-craze-say-about-us-20141215-3mk0p.html" title="What does the paleo diet craze say about us?">What does the paleo diet craze say about us?</a></h3>
+        </header>
+        <div class="wof">
+            <p>
+                    <cite><a href="http://www.goodfood.com.au/good-food/food-news/by/Larissa-Dubecki" title="Larissa Dubecki">Larissa Dubecki</a></cite>
+
+                Is the popular paleo diet a cult fad, cavemanscaping,  the secret to longevity or cultural nostalgia? Larissa Dubecki investigates.
+                
+    <span class="article-meta">
+        <em class="access">Contains:</em>
+        <a href="http://www.goodfood.com.au/good-food/food-news/hunting-the-paleo-beast-what-does-the-caveman-diet-craze-say-about-us-20141215-3mk0p.html#comments"></a>
+    </span>
+
+            </p>
+        </div>
+    </article><!-- class:leadArticle last -->
+    
+        
+    
+    
+
+                <ul>
+                        <li>
+                            <a href="http://www.goodfood.com.au/good-food/food-news/morsels-christine-manfield-impressed-by-canberra-scene-20141209-3m65t.html" title="Morsels: Christine Manfield impressed by Canberra scene">Morsels: Christine Manfield impressed by Canberra scene</a>
+                        </li>
+                        <li>
+                            <a href="http://www.goodfood.com.au/good-food/food-news/morsels-akiba-and-the-hamlet--openings-20141209-3m6a3.html" title="Morsels: Akiba and The Hamlet  openings">Morsels: Akiba and The Hamlet  openings</a>
+                        </li>
+                        <li>
+                            <a href="http://www.goodfood.com.au/good-food/food-news/morsels-lilotang-opening-gathers-steam-20141209-3m667.html" title="Morsels: Lilotang opening gathers steam">Morsels: Lilotang opening gathers steam</a>
+                        </li>
+                </ul>
+        </div>
+    </section>
+
+        </div><!-- class: off -->
+
+                            <div class="" data-location="Default">
+                
+
+
+    <section class="eatout sectionListing" >
+            <a href="/good-food/eat-out">
+    <h2 class="sectionHeading">
+        <span>eat out </span>
+    </h2>
+    </a>
+
+        <div class="cols-1 cfix">
+                
+
+    <article class="leadArticle">
+        <header>
+            <div class="score ">
+    
+        16/20
+</div>
+
+            <h3><a href="http://www.goodfood.com.au/good-food/eat-out/review/restaurant/billy-kwong-20141216-3mmok.html" title="Billy Kwong">Billy Kwong</a></h3>
+                    <ul class="details">
+
+
+                <li title="Suburb: Elizabeth Bay" class="first">
+                            <a href="/good-food/search.html?ss=Good Food&type=FoodRestaurant&max=21&location=Elizabeth Bay">Elizabeth Bay</a>
+
+                </li>
+
+                <li title="Cuisine: Chinese" class="" itemprop="servesCuisine">
+                            <a href="/good-food/search.html?ss=Good Food&type=FoodRestaurant&max=21&cuisine=Chinese">Chinese</a>
+
+                </li>
+
+                <li title="Price range: Moderate" class="" itemprop="priceRange">
+                            <a href="/good-food/search.html?ss=Good Food&type=FoodRestaurant&max=21&priceRange=Moderate - (mains $15 - $30)">$$</a>
+
+                </li>
+
+
+
+
+    </ul>
+
+
+        </header>
+        <div class="wof">
+            <p>
+                    <cite><a href="http://www.goodfood.com.au/good-food/eat-out/by/Terry-Durack" title="Terry Durack">Terry Durack</a></cite>
+
+                Billy Kwong's new, grander incarnation in Potts Point ramps up the numbers while maintaining the old high standards.
+                
+    <span class="article-meta">
+        <em class="access">Contains:</em>
+        <a href="http://www.goodfood.com.au/good-food/eat-out/review/restaurant/billy-kwong-20141216-3mmok.html#comments"><span class="icon comments">Total comments</span>1</a>
+    </span>
+
+            </p>
+        </div>
+            <div class="imageLandscape">
+            <a href="http://www.goodfood.com.au/good-food/eat-out/review/restaurant/billy-kwong-20141216-3mmok.html" title="Billy Kwong"><img src="http://images.goodfood.com.au/2014/12/15/6093044/Article%20Lead%20-%20wide641095421277zkimage.related.articleLeadwide.729x410.12638m.png1418618377205.jpg-620x349.jpg" width="620" height="349" alt="Design wise: The "seemingly never-ending, moodily lit space" at the new Billy Kwong." /></a>
+            <p>
+                    <span class="credits">Photo: Sahlan Hayes</span>
+            </p>
+    </div><!-- class:imageLandscape -->
+
+    </article><!-- class:leadArticle -->
+    
+        
+    
+    
+
+                        
+
+    <article class="last">
+        <header>
+            <div class="score ">
+    
+        13/20
+</div>
+
+            <h3><a href="http://www.goodfood.com.au/good-food/eat-out/review/restaurant/meatmaiden-20141216-3mmon.html" title="Meatmaiden">Meatmaiden</a></h3>
+                    <ul class="details">
+
+
+                <li title="Suburb: Melbourne" class="first">
+                            <a href="/good-food/search.html?ss=Good Food&type=FoodRestaurant&max=21&location=Melbourne">Melbourne</a>
+
+                </li>
+
+                <li title="Cuisine: American (US)" class="" itemprop="servesCuisine">
+                            <a href="/good-food/search.html?ss=Good Food&type=FoodRestaurant&max=21&cuisine=American (US)">American (US)</a>
+
+                </li>
+
+                <li title="Price range: Moderate" class="" itemprop="priceRange">
+                            <a href="/good-food/search.html?ss=Good Food&type=FoodRestaurant&max=21&priceRange=Moderate - (mains $15 - $30)">$$</a>
+
+                </li>
+
+
+
+
+    </ul>
+
+
+        </header>
+            <div class="picDesc">
+            <a href="http://www.goodfood.com.au/good-food/eat-out/review/restaurant/meatmaiden-20141216-3mmon.html" title="Meatmaiden"><img src="http://images.goodfood.com.au/2014/12/16/6094697/JM-thumb-meat-20141216075618866411-300x200.jpg" width="300" height="200" alt="Lobster mac and cheese" /></a>
+    </div><!-- class:picDesc -->
+
+        <div class="wof">
+            <p>
+                        <cite>Gemima Cody</cite>
+
+                Sister-venue of Richmond cult-eatery Meatmother serves up some rave-worthy morsels of its own, including this lobster mac 'n' cheese.
+                
+    <span class="article-meta">
+        <em class="access">Contains:</em>
+        <a href="http://www.goodfood.com.au/good-food/eat-out/review/restaurant/meatmaiden-20141216-3mmon.html#comments"></a>
+    </span>
+
+            </p>
+                    <div class="ratingWrap" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+        <div class="cN-rating rValue-20">
+            <em>
+                <span>Rating: <i itemprop="ratingValue">2</i> out of 5 stars</span>
+            </em>
+        </div><!-- class:cN-rating rValue-20 -->
+                <span class="ratingTotal">Reader ratings (<span itemprop="ratingCount">3</span>)</span>
+
+    </div><!-- class:ratingWrap -->
+
+        </div>
+    </article>
+    
+        
+    
+    
+
+        </div><!-- class:cols-1 cfix -->
+    </section>
+
+        </div><!-- class: -->
+        <div class=" off" data-location="Sydney">
+                
+
+
+    <section class="eatout sectionListing" >
+            <a href="/good-food/eat-out">
+    <h2 class="sectionHeading">
+        <span>eat out </span>
+    </h2>
+    </a>
+
+        <div class="cols-1 cfix">
+                
+
+    <article class="leadArticle">
+        <header>
+            <div class="score ">
+    
+        16/20
+</div>
+
+            <h3><a href="http://www.goodfood.com.au/good-food/eat-out/review/restaurant/billy-kwong-20141216-3mmok.html" title="Billy Kwong">Billy Kwong</a></h3>
+                    <ul class="details">
+
+
+                <li title="Suburb: Elizabeth Bay" class="first">
+                            <a href="/good-food/search.html?ss=Good Food&type=FoodRestaurant&max=21&location=Elizabeth Bay">Elizabeth Bay</a>
+
+                </li>
+
+                <li title="Cuisine: Chinese" class="" itemprop="servesCuisine">
+                            <a href="/good-food/search.html?ss=Good Food&type=FoodRestaurant&max=21&cuisine=Chinese">Chinese</a>
+
+                </li>
+
+                <li title="Price range: Moderate" class="" itemprop="priceRange">
+                            <a href="/good-food/search.html?ss=Good Food&type=FoodRestaurant&max=21&priceRange=Moderate - (mains $15 - $30)">$$</a>
+
+                </li>
+
+
+
+
+    </ul>
+
+
+        </header>
+        <div class="wof">
+            <p>
+                    <cite><a href="http://www.goodfood.com.au/good-food/eat-out/by/Terry-Durack" title="Terry Durack">Terry Durack</a></cite>
+
+                Billy Kwong's new, grander incarnation in Potts Point ramps up the numbers while maintaining the old high standards.
+                
+    <span class="article-meta">
+        <em class="access">Contains:</em>
+        <a href="http://www.goodfood.com.au/good-food/eat-out/review/restaurant/billy-kwong-20141216-3mmok.html#comments"><span class="icon comments">Total comments</span>1</a>
+    </span>
+
+            </p>
+        </div>
+            <div class="imageLandscape">
+            <a href="http://www.goodfood.com.au/good-food/eat-out/review/restaurant/billy-kwong-20141216-3mmok.html" title="Billy Kwong"><img src="http://images.goodfood.com.au/2014/12/15/6093044/Article%20Lead%20-%20wide641095421277zkimage.related.articleLeadwide.729x410.12638m.png1418618377205.jpg-620x349.jpg" width="620" height="349" alt="Design wise: The "seemingly never-ending, moodily lit space" at the new Billy Kwong." /></a>
+            <p>
+                    <span class="credits">Photo: Sahlan Hayes</span>
+            </p>
+    </div><!-- class:imageLandscape -->
+
+    </article><!-- class:leadArticle -->
+    
+        
+    
+    
+
+                        
+
+    <article class="last">
+        <header>
+            <div class="score ">
+    
+</div>
+
+            <h3><a href="http://www.goodfood.com.au/good-food/eat-out/review/restaurant/ballers-polpetteria-20141216-3mmp8.html" title="Ballers Polpetteria">Ballers Polpetteria</a></h3>
+                    <ul class="details">
+
+
+                <li title="Suburb: Enmore" class="first">
+                            <a href="/good-food/search.html?ss=Good Food&type=FoodRestaurant&max=21&location=Enmore">Enmore</a>
+
+                </li>
+
+                <li title="Cuisine: Italian" class="" itemprop="servesCuisine">
+                            <a href="/good-food/search.html?ss=Good Food&type=FoodRestaurant&max=21&cuisine=Italian">Italian</a>
+
+                </li>
+
+                <li title="Price range: Cheap" class="" itemprop="priceRange">
+                            <a href="/good-food/search.html?ss=Good Food&type=FoodRestaurant&max=21&priceRange=Cheap - (mains under $15)">$</a>
+
+                </li>
+
+
+
+
+    </ul>
+
+
+        </header>
+            <div class="picDesc">
+            <a href="http://www.goodfood.com.au/good-food/eat-out/review/restaurant/ballers-polpetteria-20141216-3mmp8.html" title="Ballers Polpetteria"><img src="http://images.goodfood.com.au/2014/12/16/6094969/JM-thumb-ballers-20141216083412949598-300x200.jpg" width="300" height="200" alt="Beef meatballs" /></a>
+    </div><!-- class:picDesc -->
+
+        <div class="wof">
+            <p>
+                        <cite>Angie Schiavone</cite>
+
+                At last, just what Sydney needs: a restaurant dedicated to Italian meatballs.
+                
+    <span class="article-meta">
+        <em class="access">Contains:</em>
+        <a href="http://www.goodfood.com.au/good-food/eat-out/review/restaurant/ballers-polpetteria-20141216-3mmp8.html#comments"></a>
+    </span>
+
+            </p>
+                    <div class="ratingWrap" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+        <div class="cN-rating rValue-50">
+            <em>
+                <span>Rating: <i itemprop="ratingValue">5</i> out of 5 stars</span>
+            </em>
+        </div><!-- class:cN-rating rValue-50 -->
+                <span class="ratingTotal">Reader rating (<span itemprop="ratingCount">1</span>)</span>
+
+    </div><!-- class:ratingWrap -->
+
+        </div>
+    </article>
+    
+        
+    
+    
+
+        </div><!-- class:cols-1 cfix -->
+    </section>
+
+        </div><!-- class: off -->
+        <div class=" off" data-location="Melbourne">
+                
+
+
+    <section class="eatout sectionListing" >
+            <a href="/good-food/eat-out">
+    <h2 class="sectionHeading">
+        <span>eat out</span>
+    </h2>
+    </a>
+
+        <div class="cols-1 cfix">
+                
+
+    <article class="leadArticle">
+        <header>
+            <div class="score ">
+    
+        13/20
+</div>
+
+            <h3><a href="http://www.goodfood.com.au/good-food/eat-out/review/restaurant/meatmaiden-20141216-3mmon.html" title="Meatmaiden">Meatmaiden</a></h3>
+                    <ul class="details">
+
+
+                <li title="Suburb: Melbourne" class="first">
+                            <a href="/good-food/search.html?ss=Good Food&type=FoodRestaurant&max=21&location=Melbourne">Melbourne</a>
+
+                </li>
+
+                <li title="Cuisine: American (US)" class="" itemprop="servesCuisine">
+                            <a href="/good-food/search.html?ss=Good Food&type=FoodRestaurant&max=21&cuisine=American (US)">American (US)</a>
+
+                </li>
+
+                <li title="Price range: Moderate" class="" itemprop="priceRange">
+                            <a href="/good-food/search.html?ss=Good Food&type=FoodRestaurant&max=21&priceRange=Moderate - (mains $15 - $30)">$$</a>
+
+                </li>
+
+
+
+
+    </ul>
+
+
+        </header>
+        <div class="wof">
+            <p>
+                        <cite>Gemima Cody</cite>
+
+                Sister-venue of Richmond cult-eatery Meatmother serves up some rave-worthy morsels of its own, including this lobster mac 'n' cheese.
+                
+    <span class="article-meta">
+        <em class="access">Contains:</em>
+        <a href="http://www.goodfood.com.au/good-food/eat-out/review/restaurant/meatmaiden-20141216-3mmon.html#comments"></a>
+    </span>
+
+            </p>
+        </div>
+            <div class="imageLandscape">
+            <a href="http://www.goodfood.com.au/good-food/eat-out/review/restaurant/meatmaiden-20141216-3mmon.html" title="Meatmaiden"><img src="http://images.goodfood.com.au/2014/12/16/6094695/JM-wide-meat-20141216075255299452-620x349.jpg" width="620" height="349" alt="Delightfully cheesy: Lobster mac and cheese." /></a>
+            <p>
+                    <span class="credits">Photo: Patrick Scala</span>
+            </p>
+    </div><!-- class:imageLandscape -->
+
+    </article><!-- class:leadArticle -->
+    
+        
+    
+    
+
+                        
+
+    <article class="last">
+        <header>
+            <div class="score ">
+    
+</div>
+
+            <h3><a href="http://www.goodfood.com.au/good-food/eat-out/review/restaurant/oasis-bakery-20141212-3meqd.html" title="Oasis Bakery">Oasis Bakery</a></h3>
+                    <ul class="details">
+
+
+                <li title="Suburb: Murrumbeena" class="first">
+                            <a href="/good-food/search.html?ss=Good Food&type=FoodRestaurant&max=21&location=Murrumbeena">Murrumbeena</a>
+
+                </li>
+
+                <li title="Cuisine: Middle Eastern" class="" itemprop="servesCuisine">
+                            <a href="/good-food/search.html?ss=Good Food&type=FoodRestaurant&max=21&cuisine=Middle Eastern">Middle Eastern</a>
+
+                </li>
+
+                <li title="Price range: Moderate" class="" itemprop="priceRange">
+                            <a href="/good-food/search.html?ss=Good Food&type=FoodRestaurant&max=21&priceRange=Moderate - (mains $15 - $30)">$$</a>
+
+                </li>
+
+
+
+
+    </ul>
+
+
+        </header>
+            <div class="picDesc">
+            <a href="http://www.goodfood.com.au/good-food/eat-out/review/restaurant/oasis-bakery-20141212-3meqd.html" title="Oasis Bakery"><img src="http://images.goodfood.com.au/2014/12/12/6084450/AS-goodfood-th-20141212122710222471-300x200.jpg" width="300" height="200" alt="The hearty Lebanese breakfast." /></a>
+    </div><!-- class:picDesc -->
+
+        <div class="wof">
+            <p>
+                    <cite><a href="http://www.goodfood.com.au/good-food/eat-out/by/Kylie-Northover" title="Kylie Northover">Kylie Northover</a></cite>
+
+                Breakfast gets healthy slant at the now-legendary Oasis Bakery.
+                
+    <span class="article-meta">
+        <em class="access">Contains:</em>
+        <a href="http://www.goodfood.com.au/good-food/eat-out/review/restaurant/oasis-bakery-20141212-3meqd.html#comments"></a>
+    </span>
+
+            </p>
+                    <div class="ratingWrap" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+        <div class="cN-rating rValue-35">
+            <em>
+                <span>Rating: <i itemprop="ratingValue">3.5</i> out of 5 stars</span>
+            </em>
+        </div><!-- class:cN-rating rValue-35 -->
+                <span class="ratingTotal">Reader ratings (<span itemprop="ratingCount">23</span>)</span>
+
+    </div><!-- class:ratingWrap -->
+
+        </div>
+    </article>
+    
+        
+    
+    
+
+        </div><!-- class:cols-1 cfix -->
+    </section>
+
+        </div><!-- class: off -->
+        <div class=" off" data-location="Brisbane">
+                
+
+
+    <section class="eatout sectionListing" >
+            <a href="/good-food/eat-out">
+    <h2 class="sectionHeading">
+        <span>eat out</span>
+    </h2>
+    </a>
+
+        <div class="cols-1 cfix">
+                
+
+    <article class="leadArticle">
+        <header>
+            <div class="score ">
+    
+        14/20
+</div>
+
+            <h3><a href="http://www.goodfood.com.au/good-food/eat-out/review/restaurant/longtime-restaurant--bar-20141208-3m3sq.html" title="Longtime Restaurant &amp; Bar">Longtime Restaurant &amp; Bar</a></h3>
+                    <ul class="details">
+
+
+                <li title="Suburb: Fortitude Valley" class="first">
+                            <a href="/good-food/search.html?ss=Good Food&type=FoodRestaurant&max=21&location=Fortitude Valley">Fortitude Valley</a>
+
+                </li>
+
+                <li title="Cuisine: Asian" class="" itemprop="servesCuisine">
+                            <a href="/good-food/search.html?ss=Good Food&type=FoodRestaurant&max=21&cuisine=Asian">Asian</a>
+
+                </li>
+
+                <li title="Price range: Moderate" class="" itemprop="priceRange">
+                            <a href="/good-food/search.html?ss=Good Food&type=FoodRestaurant&max=21&priceRange=Moderate - (mains $15 - $30)">$$</a>
+
+                </li>
+
+
+
+
+    </ul>
+
+
+        </header>
+        <div class="wof">
+            <p>
+                    <cite><a href="http://www.goodfood.com.au/good-food/eat-out/by/Natascha-Mirosch" title="Natascha Mirosch">Natascha Mirosch</a></cite>
+
+                For pre or post-town-painting with a group of hungry food-loving friends who don't mind paying for quality, this place is right on the money.
+                
+    <span class="article-meta">
+        <em class="access">Contains:</em>
+        <a href="http://www.goodfood.com.au/good-food/eat-out/review/restaurant/longtime-restaurant--bar-20141208-3m3sq.html#comments"><span class="icon comments">Total comments</span>8</a>
+    </span>
+
+            </p>
+        </div>
+            <div class="imageLandscape">
+            <a href="http://www.goodfood.com.au/good-food/eat-out/review/restaurant/longtime-restaurant--bar-20141208-3m3sq.html" title="Longtime Restaurant &amp; Bar"><img src="http://images.goodfood.com.au/2014/12/08/6070160/Article%20Lead%20-%20wide6359303111v08himage.related.articleLeadwide.729x410.11v0p3.png1418014251180.jpg-620x349.jpg" width="620" height="349" alt="Inside Longtime, Fortitude Valley." /></a>
+            <p>
+                    <span class="credits">Photo: Glenn Hunt</span>
+            </p>
+    </div><!-- class:imageLandscape -->
+
+    </article><!-- class:leadArticle -->
+    
+        
+    
+    
+
+        </div><!-- class:cols-1 cfix -->
+    </section>
+
+        </div><!-- class: off -->
+        <div class=" off" data-location="Canberra">
+                
+
+
+    <section class="eatout sectionListing" >
+            <a href="/good-food/eat-out">
+    <h2 class="sectionHeading">
+        <span>eat out</span>
+    </h2>
+    </a>
+
+        <div class="cols-1 cfix">
+                
+
+    <article class="leadArticle">
+        <header>
+            <div class="score ">
+    
+        15/20
+</div>
+
+            <h3><a href="http://www.goodfood.com.au/good-food/eat-out/review/restaurant/les-bistronomes-20141215-3mlfi.html" title="Les Bistronomes">Les Bistronomes</a></h3>
+                    <ul class="details">
+
+
+                <li title="Suburb: Braddon" class="first">
+                            <a href="/good-food/search.html?ss=Good Food&type=FoodRestaurant&max=21&location=Braddon">Braddon</a>
+
+                </li>
+
+                <li title="Cuisine: French" class="" itemprop="servesCuisine">
+                            <a href="/good-food/search.html?ss=Good Food&type=FoodRestaurant&max=21&cuisine=French">French</a>
+
+                </li>
+
+
+
+
+
+    </ul>
+
+
+        </header>
+        <div class="wof">
+            <p>
+                    <cite><a href="http://www.goodfood.com.au/good-food/eat-out/by/Kirsten-Lawson" title="Kirsten Lawson">Kirsten Lawson</a></cite>
+
+                This is a simple French bistro with elegant cooking and beautiful presentation.
+                
+
+            </p>
+        </div>
+            <div class="imageLandscape">
+            <a href="http://www.goodfood.com.au/good-food/eat-out/review/restaurant/les-bistronomes-20141215-3mlfi.html" title="Les Bistronomes"><img src="http://images.goodfood.com.au/2014/12/15/6093064/ld-w-FWreview-20141215140804935471-620x349.jpg" width="620" height="349" alt="Mousse au chocolate et avocat (chocolate Mousse and avacado) at the Les Bistronomes, Braddon." /></a>
+            <p>
+                    <span class="credits">Photo: Melissa Adams</span>
+            </p>
+    </div><!-- class:imageLandscape -->
+
+    </article><!-- class:leadArticle -->
+    
+        
+    
+    
+
+                        
+
+    <article >
+        <header>
+            <div class="score ">
+    
+        14/20
+</div>
+
+            <h3><a href="http://www.goodfood.com.au/good-food/eat-out/review/restaurant/wood--coal-20141209-3m5h7.html" title="Wood &amp; Coal">Wood &amp; Coal</a></h3>
+                    <ul class="details">
+
+
+                <li title="Suburb: Canberra" class="first">
+                            <a href="/good-food/search.html?ss=Good Food&type=FoodRestaurant&max=21&location=Canberra">Canberra</a>
+
+                </li>
+
+                <li title="Cuisine: Modern Australian" class="" itemprop="servesCuisine">
+                            <a href="/good-food/search.html?ss=Good Food&type=FoodRestaurant&max=21&cuisine=Modern Australian">Modern Australian</a>
+
+                </li>
+
+                <li title="Price range: Expensive" class="" itemprop="priceRange">
+                            <a href="/good-food/search.html?ss=Good Food&type=FoodRestaurant&max=21&priceRange=Expensive - (mains over $30)">$$$</a>
+
+                </li>
+
+
+
+
+    </ul>
+
+
+        </header>
+            <div class="picDesc">
+            <a href="http://www.goodfood.com.au/good-food/eat-out/review/restaurant/wood--coal-20141209-3m5h7.html" title="Wood &amp; Coal"><img src="http://images.goodfood.com.au/2014/12/10/6075678/AS-goodfood-th-20141210090551590104-300x200.jpg" width="300" height="200" alt="Chocolate olive oil sponge cake with blood orange custard and red velvet cheesecake ice-cream." /></a>
+    </div><!-- class:picDesc -->
+
+        <div class="wof">
+            <p>
+                    <cite><a href="http://www.goodfood.com.au/good-food/eat-out/by/Natasha-Rudra" title="Natasha Rudra">Natasha Rudra</a></cite>
+
+                Hello red velvet cheesecake ice-cream! If you like desserts, Wood & Coal is going to be your favourite eatery for a while.
+                
+    <span class="article-meta">
+        <em class="access">Contains:</em>
+        <a href="http://www.goodfood.com.au/good-food/eat-out/review/restaurant/wood--coal-20141209-3m5h7.html#comments"></a>
+    </span>
+
+            </p>
+                    <div class="ratingWrap" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+        <div class="cN-rating rValue-20">
+            <em>
+                <span>Rating: <i itemprop="ratingValue">2</i> out of 5 stars</span>
+            </em>
+        </div><!-- class:cN-rating rValue-20 -->
+                <span class="ratingTotal">Reader ratings (<span itemprop="ratingCount">16</span>)</span>
+
+    </div><!-- class:ratingWrap -->
+
+        </div>
+    </article>
+    
+        
+    
+    
+
+                        
+
+    <article class="last">
+        <header>
+            <div class="score ">
+    
+</div>
+
+            <h3><a href="http://www.goodfood.com.au/good-food/top-10-eat-out/temporada-canberras-restaurant-of-the-year-2014-20141126-11u2vx.html" title="Temporada: Our restaurant of the year 2014">Temporada: Our restaurant of the year 2014</a></h3>
+            
+        </header>
+            <div class="picDesc">
+            <a href="http://www.goodfood.com.au/good-food/top-10-eat-out/temporada-canberras-restaurant-of-the-year-2014-20141126-11u2vx.html" title="Temporada: Canberra's restaurant of the year 2014"><img src="http://images.goodfood.com.au/2014/11/26/6028642/Thumbnail6354921311u3xmimage.related.thumbnail.320x214.11u2vx.png1417481717812.jpg-300x200.jpg" width="300" height="200" alt="Nothing complicated, the food is a happy presentation of excellent, satisfying, generous components." /></a>
+    </div><!-- class:picDesc -->
+
+        <div class="wof">
+            <p>
+                    <cite><a href="http://www.goodfood.com.au/good-food/top-10-eat-out/by/Kirsten-Lawson" title="Kirsten Lawson">Kirsten Lawson</a></cite>
+
+                When Canberra's top chefs combine their talents, the result is a relaxed diner with a fantastic wine list and beautiful but unfussy food.
+                
+
+            </p>
+        </div>
+    </article>
+    
+        
+    
+    
+
+        </div><!-- class:cols-1 cfix -->
+    </section>
+
+        </div><!-- class: off -->
+
+                            <div class="" data-location="Default">
+                
+
+
+    <section class="cook sectionListing" >
+            <a href="/good-food/cook">
+    <h2 class="sectionHeading">
+        <span>cook</span>
+    </h2>
+    </a>
+
+        <div class="cols-1 cfix">
+                
+
+    <article class="leadArticle">
+        <header>
+            <h3><a href="http://www.goodfood.com.au/good-food/christmas-feasts/recipe/buffalo-turkey-with-bacon-burger-stuffing-20141209-3m5h0.html" title="Buffalo turkey with hipster stuffing">Buffalo turkey with hipster stuffing</a></h3>
+                    <ul class="details">
+                <li title="Time: 2 hours +" class="first">
+                        <a href="/good-food/search.html?ss=Good Food&type=FoodRecipe&max=21&cookingTime=2 hours +">2 hours +</a>
+
+                </li>
+
+                <li title="Difficulty: Medium" class="">
+                        <a href="/good-food/search.html?ss=Good Food&type=FoodRecipe&max=21&difficulty=Medium">Medium</a>
+
+                </li>
+
+                <li title="Cuisine: Contemporary" class="" itemprop="recipeCuisine">
+                        <a href="/good-food/search.html?ss=Good Food&type=FoodRecipe&max=21&cuisine=Contemporary">Contemporary</a>
+
+                </li>
+
+
+
+
+
+            <li title="Chef" class="" itemprop="author">
+                    <cite><a href="http://www.goodfood.com.au/good-food/christmas-feasts/by/Adam-Liaw" title="Adam Liaw">Adam Liaw</a></cite>
+
+            </li>
+    </ul>
+
+
+        </header>
+        <div class="wof">
+            <p>
+                Forget the baked potatoes and brussels sprouts. This burger-flavoured stuffing matches with fresh, crisp lettuce, creamy avocado and a zingy blue cheese dressing for a main event that's perfect for an Australian summer Christmas.
+                
+    <span class="article-meta">
+        <em class="access">Contains:</em>
+        <a href="http://www.goodfood.com.au/good-food/christmas-feasts/recipe/buffalo-turkey-with-bacon-burger-stuffing-20141209-3m5h0.html#comments"></a>
+    </span>
+
+            </p>
+        </div>
+            <div class="imageLandscape">
+            <a href="http://www.goodfood.com.au/good-food/christmas-feasts/recipe/buffalo-turkey-with-bacon-burger-stuffing-20141209-3m5h0.html" title="Buffalo turkey with bacon burger stuffing"><img src="http://images.goodfood.com.au/2014/12/09/6072374/JM-wide-turkey-20141209112058735566-620x349.jpg" width="620" height="349" alt="Counterculture feast: It's roast turkey, but not as we usually know it." /></a>
+            <p>
+                    <span class="credits">Photo: Edwina Pickles</span>
+            </p>
+    </div><!-- class:imageLandscape -->
+
+    </article><!-- class:leadArticle -->
+    
+        
+    
+    
+
+                        
+
+    <article class="last">
+        <header>
+            <h3><a href="http://www.goodfood.com.au/good-food/celebration/recipe/karen-martinis-lastminute-christmas-pudding-20141209-3m5e1.html" title="Last-minute Christmas pudding">Last-minute Christmas pudding</a></h3>
+                    <ul class="details">
+                <li title="Time: 2 hours +" class="first">
+                        <a href="/good-food/search.html?ss=Good Food&type=FoodRecipe&max=21&cookingTime=2 hours +">2 hours +</a>
+
+                </li>
+
+                <li title="Difficulty: Medium" class="">
+                        <a href="/good-food/search.html?ss=Good Food&type=FoodRecipe&max=21&difficulty=Medium">Medium</a>
+
+                </li>
+
+                <li title="Cuisine: British" class="" itemprop="recipeCuisine">
+                        <a href="/good-food/search.html?ss=Good Food&type=FoodRecipe&max=21&cuisine=British">British</a>
+
+                </li>
+
+
+
+
+
+            <li title="Chef" class="" itemprop="author">
+                    <cite><a href="http://www.goodfood.com.au/good-food/celebration/by/Karen-Martini" title="Karen Martini">Karen Martini</a></cite>
+
+            </li>
+    </ul>
+
+
+        </header>
+            <div class="picDesc">
+            <a href="http://www.goodfood.com.au/good-food/celebration/recipe/karen-martinis-lastminute-christmas-pudding-20141209-3m5e1.html" title="Karen Martini's last-minute Christmas pudding"><img src="http://images.goodfood.com.au/2014/12/16/6094875/GF_th_martini_pud-20141216073642358574-300x200.jpg" width="300" height="200" alt="Last-minute spiced Christmas pudding." /></a>
+    </div><!-- class:picDesc -->
+
+        <div class="wof">
+            <p>
+                My recipe for Christmas pudding can be made well ahead of time if you like, and the flavour will build in intensity and it will become even more moist. But it really isn't critical; it will still be delicious made on the day.
+                
+    <span class="article-meta">
+        <em class="access">Contains:</em>
+        <a href="http://www.goodfood.com.au/good-food/celebration/recipe/karen-martinis-lastminute-christmas-pudding-20141209-3m5e1.html#comments"></a>
+    </span>
+
+            </p>
+        </div>
+    </article>
+    
+        
+    
+    
+
+        </div><!-- class:cols-1 cfix -->
+    </section>
+
+        </div><!-- class: -->
+        <div class=" off" data-location="Sydney">
+                
+
+
+
+        </div><!-- class: off -->
+        <div class=" off" data-location="Melbourne">
+                
+
+
+
+        </div><!-- class: off -->
+        <div class=" off" data-location="Brisbane">
+                
+
+
+
+        </div><!-- class: off -->
+        <div class=" off" data-location="Canberra">
+                
+
+
+    <section class="cook sectionListing" >
+            <a href="/good-food/cook">
+    <h2 class="sectionHeading">
+        <span>Canberra</span>
+    </h2>
+    </a>
+
+        <div class="cols-1 cfix">
+                
+
+    <article class="leadArticle">
+        <header>
+            <h3><a href="http://www.goodfood.com.au/good-food/cook/emiko-davies-christmas-raspberry-swirl-pavlova-recipe-20141126-11tkvj.html" title="Christmas raspberry swirl pavlova">Christmas raspberry swirl pavlova</a></h3>
+            
+        </header>
+        <div class="wof">
+            <p>
+                Raspberries and the scent of roses make this dessert appealing, writes Emiko Davies.
+                
+
+            </p>
+        </div>
+            <div class="imageLandscape">
+            <a href="http://www.goodfood.com.au/good-food/cook/emiko-davies-christmas-raspberry-swirl-pavlova-recipe-20141126-11tkvj.html" title="Emiko Davies: Christmas raspberry swirl pavlova recipe"><img src="http://images.goodfood.com.au/2014/11/26/6027001/Article%20Lead%20-%20wide6352587111tkn7image.related.articleLeadwide.729x410.11tkvj.png1417493874603.jpg-620x349.jpg" width="620" height="349" alt="Showpiece: Raspberry swirl pavlova for a beautiful Christmas dessert." /></a>
+            <p>
+                    <span class="credits">Photo: Emiko Davies</span>
+            </p>
+    </div><!-- class:imageLandscape -->
+
+    </article><!-- class:leadArticle -->
+    
+        
+    
+    
+
+                        
+
+    <article class="last">
+        <header>
+            <h3><a href="http://www.goodfood.com.au/good-food/cook/diana-lampes-retro-christmas-salmon-mousse-20141125-11tesy.html" title="Retro salmon goes down swimmingly">Retro salmon goes down swimmingly</a></h3>
+            
+        </header>
+            <div class="picDesc">
+            <a href="http://www.goodfood.com.au/good-food/cook/diana-lampes-retro-christmas-salmon-mousse-20141125-11tesy.html" title="Diana Lampe's retro Christmas salmon mousse"><img src="http://images.goodfood.com.au/2014/12/03/6052409/ld-t-FWlampe-20141203092412522172-300x200.jpg" width="300" height="200" alt="<p>" /></a>
+    </div><!-- class:picDesc -->
+
+        <div class="wof">
+            <p>
+                Salmon mousse is the ultimate in retro cuisine, especially when it's served in a fish mould, writes Diana Lampe.
+                
+
+            </p>
+        </div>
+    </article>
+    
+        
+    
+    
+
+        </div><!-- class:cols-1 cfix -->
+    </section>
+
+        </div><!-- class: off -->
+
+                            <div class="" data-location="Default">
+                
+
+
+    <section class="drink sectionListing" >
+            <a href="/good-food/drink">
+    <h2 class="sectionHeading">
+        <span>drink</span>
+    </h2>
+    </a>
+
+        <div class="cols-1 cfix">
+                
+
+    <article class="leadArticle">
+        <header>
+            <h3><a href="http://www.goodfood.com.au/good-food/drink/best-beers-for-summer-20141209-11kbty.html" title="Best beers for summer">Best beers for summer</a></h3>
+        </header>
+        <div class="wof">
+            <p>
+                    <cite>Will Hawkes</cite>
+
+                Summer is the time of year when brewers make an impassioned bid for your beer dollar.
+                
+    <span class="article-meta">
+        <em class="access">Contains:</em>
+        <a href="http://www.goodfood.com.au/good-food/drink/best-beers-for-summer-20141209-11kbty.html#comments"></a>
+    </span>
+
+            </p>
+        </div>
+            <div class="imageLandscape">
+            <a href="http://www.goodfood.com.au/good-food/drink/best-beers-for-summer-20141209-11kbty.html" title="Best beers for summer"><img src="http://images.goodfood.com.au/2014/12/16/6095941/MEGAN-wide-beer-20141216121408478273-620x349.jpg" width="620" height="349" alt="Beer summer" /></a>
+            <p>
+                    <span class="credits">Photo: Arsineh Houspian</span>
+            </p>
+    </div><!-- class:imageLandscape -->
+
+    </article><!-- class:leadArticle -->
+    
+        
+    
+    
+
+                        
+
+    <article class="last">
+            <div class="picDesc">
+            <a href="http://www.goodfood.com.au/good-food/drink/aggregate/huon-hookes-wine-guide-20130205-2dvoh.html" title="Huon Hooke's wine guide"><img src="http://images.goodfood.com.au/2014/08/08/5661529/sm-th-wines-20140808110504914280-300x200.jpg" width="300" height="200" alt="Wine." /></a>
+    </div><!-- class:picDesc -->
+
+        <header>
+            <h3><a href="http://www.goodfood.com.au/good-food/drink/aggregate/huon-hookes-wine-guide-20130205-2dvoh.html" title="Huon Hooke's wine guide">Huon Hooke's wine guide</a></h3>
+        </header>
+        <div class="wof">
+            <p>
+                Huon Hooke's top picks, from bargain buys to top drops for the cellar.
+                
+
+            </p>
+        </div>
+    </article>
+    
+        
+    
+    
+
+        </div><!-- class:cols-1 cfix -->
+    </section>
+
+        </div><!-- class: -->
+        <div class=" off" data-location="Sydney">
+                
+
+
+
+        </div><!-- class: off -->
+        <div class=" off" data-location="Melbourne">
+                
+
+
+
+        </div><!-- class: off -->
+        <div class=" off" data-location="Brisbane">
+                
+
+
+
+        </div><!-- class: off -->
+        <div class=" off" data-location="Canberra">
+                
+
+
+    <section class="drink sectionListing" >
+            <a href="/good-food/drink">
+    <h2 class="sectionHeading">
+        <span>drink</span>
+    </h2>
+    </a>
+
+        <div class="cols-1 cfix">
+                
+
+    <article class="leadArticle">
+        <header>
+            <h3><a href="http://www.goodfood.com.au/good-food/top-10-drink/canberras-top-10-white-wines-of-2014-20141202-11ex4j.html" title="Canberra's top 10 white wines of 2014">Canberra's top 10 white wines of 2014</a></h3>
+        </header>
+        <div class="wof">
+            <p>
+                    <cite><a href="http://www.goodfood.com.au/good-food/top-10-drink/by/Chris-Shanahan" title="Chris Shanahan">Chris Shanahan</a></cite>
+
+                Wine critic Chris Shanahan picks 10 of the best Canberra white wines of 2014.
+                
+
+            </p>
+        </div>
+            <div class="imageLandscape">
+            <a href="http://www.goodfood.com.au/good-food/top-10-drink/canberras-top-10-white-wines-of-2014-20141202-11ex4j.html" title="Canberra's top 10 white wines of 2014"><img src="http://images.goodfood.com.au/2014/12/02/6050240/Top10WhiteWines-2014_1-5-620x349.jpg" width="620" height="349" alt="<p>" /></a>
+    </div><!-- class:imageLandscape -->
+
+    </article><!-- class:leadArticle -->
+    
+        
+    
+    
+
+                        
+
+    <article class="last">
+            <div class="picDesc">
+            <a href="http://www.goodfood.com.au/good-food/top-10-drink/canberras-top-10-red-wines-for-2014-20141202-11syse.html" title="Canberra's top 10 red wines for 2014"><img src="http://images.goodfood.com.au/2014/12/02/6049406/Thumbnail6349724611tkz3image.related.thumbnail.320x214.11syse.png1417501076737.jpg-300x200.jpg" width="300" height="200" alt="Splash of colour: red wine." /></a>
+    </div><!-- class:picDesc -->
+
+        <header>
+            <h3><a href="http://www.goodfood.com.au/good-food/top-10-drink/canberras-top-10-red-wines-for-2014-20141202-11syse.html" title="Canberra's top 10 red wines for 2014">Canberra's top 10 red wines for 2014</a></h3>
+        </header>
+        <div class="wof">
+            <p>
+                Wine critic Chris Shanahan picks 10 of the best Canberra red wines of 2014.
+                
+
+            </p>
+        </div>
+    </article>
+    
+        
+    
+    
+
+        </div><!-- class:cols-1 cfix -->
+    </section>
+
+        </div><!-- class: off -->
+
+                    <div id="adspot-620x225-pos-1" class="ad" style='display:none;'> <script type="text/javascript"> var titan = window.titan || {}; titan.requestAd = titan.requestAd || []; titan.requestAd.push("adspot-620x225-pos-1"); </script> </div>
+                    
+
+    <h3 class="strapHeading">
+            Video
+        <span >
+        </span>
+    </h3>
+
+
+                    
+    <div class="cT-imageMultimedia videoPlayer strapMultimedia " id="video-player-strap" data-assetId="d-3l8hp" data-assetType="VIDEO" data-assetUrl="http://media.goodfood.com.au/food/good-food/perfecting-the-gingerbread-house-6029629.html">
+        <div id="video-player-strap-player" class="videoWrap"></div><!-- id:video-player-strap-player -->
+        <div class="overlay overlayAd"></div><!-- class:overlay overlayAd -->
+    <div class="overlay overlayPostPlay">
+            <a class="previous" href="http://media.goodfood.com.au/">More video</a>
+            <h3>Recommended</h3>
+            <div class="cS-videoGalleryLinks">
+                <ul class="cfix">
+                </ul>
+            </div><!-- class:cS-videoGalleryLinks -->
+            <a class="replay" href="javascript:;">Replay video</a>
+        </div><!-- class:overlay overlayPostPlay -->
+        <div class="fdVideoWof ">
+            <h4>Perfecting the gingerbread house</h4>
+            <p>The key is in the lollies, says master gingerbread house builder Phillippa Grogan. <em>(03:09)</em></p>
+        </div><!-- class:fdVideoWof -->
+    </div><!-- id:video-player-strap -->
+    <div class="featuredVideos">
+            <ul>
+                    <li  data-assetId="d-3jmz2" data-assetType="VIDEO" data-assetUrl="http://media.goodfood.com.au/food/good-food/shooting-chef-guillaume-brahimi-5955086.html">
+                                <a class="play-video " href="http://media.goodfood.com.au/food/good-food/shooting-chef-guillaume-brahimi-5955086.html?exc_from=strap" title="Shooting chef Guillaume Brahimi"><img src="http://images.goodfood.com.au/2014/11/05/5955096/vd-Screen-Shot-2014-11-05-at-11-22-31-am-copy-92x52.jpg" width="92" height="52" alt="Shooting chef Guillaume Brahimi (Video Thumbnail)" /><span class="size-sml">Click to play video</span></a>
+
+                        <p><a href="http://media.goodfood.com.au/food/good-food/shooting-chef-guillaume-brahimi-5955086.html?&exc_from=strap" title="Shooting chef Guillaume Brahimi">Shooting chef Guillaume Brahimi</a> <span>(01:52)</span></p>
+                    </li>
+                    <li  data-assetId="d-3l3u7" data-assetType="VIDEO" data-assetUrl="http://media.goodfood.com.au/food/good-food/making-a-christmas-cake-6023599.html">
+                                <a class="play-video " href="http://media.goodfood.com.au/food/good-food/making-a-christmas-cake-6023599.html?exc_from=strap" title="Making a Christmas cake"><img src="http://images.goodfood.com.au/2014/11/25/6023600/cakethumg169-92x52.jpg" width="92" height="52" alt="Making a Christmas cake (Video Thumbnail)" /><span class="size-sml">Click to play video</span></a>
+
+                        <p><a href="http://media.goodfood.com.au/food/good-food/making-a-christmas-cake-6023599.html?&exc_from=strap" title="How to make a Christmas cake">How to make a Christmas cake</a> <span>(05:06)</span></p>
+                    </li>
+                    <li  data-assetId="d-3k5jv" data-assetType="VIDEO" data-assetUrl="http://media.goodfood.com.au/food/good-food/how-to-cook-a-beef-rib-roast-5979163.html">
+                                <a class="play-video " href="http://media.goodfood.com.au/food/good-food/how-to-cook-a-beef-rib-roast-5979163.html?exc_from=strap" title="How to cook a beef rib roast"><img src="http://images.goodfood.com.au/2014/11/12/5979164/VD-Roast1-92x52.jpg" width="92" height="52" alt="How to cook a roast (Video Thumbnail)" /><span class="size-sml">Click to play video</span></a>
+
+                        <p><a href="http://media.goodfood.com.au/food/good-food/how-to-cook-a-beef-rib-roast-5979163.html?&exc_from=strap" title="How to cook a beef rib roast">How to cook a beef rib roast</a> <span>(02:35)</span></p>
+                    </li>
+                    <li  data-assetId="d-3inr2" data-assetType="VIDEO" data-assetUrl="http://media.goodfood.com.au/food/good-food/making-handmade-tortelloni-5909438.html">
+                                <a class="play-video " href="http://media.goodfood.com.au/food/good-food/making-handmade-tortelloni-5909438.html?exc_from=strap" title="Making hand-made tortelloni"><img src="http://images.goodfood.com.au/2014/10/28/5925926/GF_729_pasta_vid-20141028084135385556-92x52.jpg" width="92" height="52" alt="How to make stuffed pasta at home." /><span class="size-sml">Click to play video</span></a>
+
+                        <p><a href="http://media.goodfood.com.au/food/good-food/making-handmade-tortelloni-5909438.html?&exc_from=strap" title="Making hand-made tortelloni">Making hand-made tortelloni</a> <span>(04:04)</span></p>
+                    </li>
+                    <li  data-assetId="d-3i3yq" data-assetType="VIDEO" data-assetUrl="http://media.goodfood.com.au/food/good-food/how-to-make-okonomiyaki-5883794.html">
+                                <a class="play-video " href="http://media.goodfood.com.au/food/good-food/how-to-make-okonomiyaki-5883794.html?exc_from=strap" title="How to make okonomiyaki"><img src="http://images.goodfood.com.au/2014/10/15/5882203/vd-Okonomiyaki-92x52.jpg" width="92" height="52" alt="How to make okonomiyaki (Video Thumbnail)" /><span class="size-sml">Click to play video</span></a>
+
+                        <p><a href="http://media.goodfood.com.au/food/good-food/how-to-make-okonomiyaki-5883794.html?&exc_from=strap" title="How to make okonomiyaki">How to make okonomiyaki</a> <span>(06:57)</span></p>
+                    </li>
+            </ul>
+    </div><!-- class:featuredVideos -->
+
+
+                    
+
+    <h3 class="strapHeading strapHeadingTV">
+        <a class="main ir" href="http://www.goodfood.com.au/tv" title="TV">TV</a>
+    </h3>
+
+
+                    <?xml version="1.0" encoding="UTF-8"?><div class="cT-weekendStrip weekendStripCompact weekendStripStrap mastheadTVStrip"><div class="cN-story goodfood-tv"><div class="wof"><h3><a href="http://www.goodfood.com.au/tv/Documentary/Jiro-Dreams-of-Sushi-5000020.html">Jiro Dreams of Sushi</a></h3><p><a href="http://www.goodfood.com.au/tv/Documentary/Jiro-Dreams-of-Sushi-5000020.html">The story of Jiro Ono, the world's greatest sushi chef - his drive, his methods and the son fearing his legacy.</a></p></div></div><div class="cN-story goodfood-tv"><div class="wof"><h3><a href="http://www.goodfood.com.au/tv/Food/Show/Whats-Really-In-Our-Food/Chicken-4361301.html">What's In Chicken?</a></h3><p><a href="http://www.goodfood.com.au/tv/Food/Show/Whats-Really-In-Our-Food/Chicken-4361301.html">What hormones and antibiotics are used by chicken farmers and what are the potential risks?</a></p></div></div><div class="cN-story goodfood-tv"><div class="wof"><h3><a href="http://www.goodfood.com.au/tv/Biography/Show/Revealed/Ferran-Adria-4262612.html">Ferran Adria</a></h3><p><a href="http://www.goodfood.com.au/tv/Biography/Show/Revealed/Ferran-Adria-4262612.html">From a lowly dishwasher to the world's best chef - quite a rise...</a></p></div></div></div>
+                </div><!-- id:content -->
+                <div class="aside">
+                    <div id="adspot-300x250-pos-1" class="ad" style='display:none;'> <small>Advertisement</small> <script type="text/javascript"> var titan = window.titan || {}; titan.requestAd = titan.requestAd || []; titan.requestAd.push("adspot-300x250-pos-1"); </script> </div>
+                                <div class="strap quick-links default trackingClick" data-tracking-types="ga" data-tracking-stop-event="true" data-ga-category="RHS" data-ga-action="Quick Links Click" data-location="Default">
+                <ul>
+                        <li class="hat">
+                            <a href="/good-food/search.html?sortBy=lastpublisheddate&order=DESCENDING&ss=Good+Food&type=FoodRestaurant&goodFoodGuideRating=1,2,3">Good Food Guide reviews
+                                    <span class="ratingIcon hat value-1"></span>
+                            </a>
+                        </li>
+                        <li class="food">
+                            <a href="/good-food/search.html?sortBy=lastpublisheddate&order=DESCENDING&ss=Good+Food&type=FoodRestaurant&style=Restaurant">Latest restaurant reviews
+                                    <span class="ratingIcon food value-1"></span>
+                            </a>
+                        </li>
+                        <li class="cup">
+                            <a href="/good-food/search.html?sortBy=lastpublisheddate&order=DESCENDING&ss=Good+Food&type=FoodRestaurant&style=Cafe">Latest cafe reviews
+                                    <span class="ratingIcon cup value-1"></span>
+                            </a>
+                        </li>
+                        <li class="beer">
+                            <a href="/good-food/search.html?sortBy=lastpublisheddate&order=DESCENDING&ss=Good+Food&type=FoodRestaurant&style=Pub">Latest pub reviews
+                                    <span class="ratingIcon beer value-1"></span>
+                            </a>
+                        </li>
+                        <li class="cocktail">
+                            <a href="/good-food/search.html?sortBy=lastpublisheddate&order=DESCENDING&ss=Good+Food&type=FoodRestaurant&style=Bar">Latest bar reviews
+                                    <span class="ratingIcon cocktail value-1"></span>
+                            </a>
+                        </li>
+                </ul>
+            </div>
+            <div class="strap quick-links sydney trackingClick off" data-tracking-types="ga" data-tracking-stop-event="true" data-ga-category="RHS" data-ga-action="Quick Links Click" data-location="Sydney">
+                <ul>
+                        <li class="hat">
+                            <a href="/good-food/search.html?sortBy=lastpublisheddate&order=DESCENDING&ss=Good+Food&type=FoodRestaurant&goodFoodGuideRating=1,2,3&location=NSW">Good Food Guide reviews
+                                    <span class="ratingIcon hat value-1"></span>
+                            </a>
+                        </li>
+                        <li class="food">
+                            <a href="/good-food/search.html?sortBy=lastpublisheddate&order=DESCENDING&ss=Good+Food&type=FoodRestaurant&style=Restaurant&location=NSW">Latest restaurant reviews
+                                    <span class="ratingIcon food value-1"></span>
+                            </a>
+                        </li>
+                        <li class="cup">
+                            <a href="/good-food/search.html?sortBy=lastpublisheddate&order=DESCENDING&ss=Good+Food&type=FoodRestaurant&style=Cafe&location=NSW">Latest cafe reviews
+                                    <span class="ratingIcon cup value-1"></span>
+                            </a>
+                        </li>
+                        <li class="beer">
+                            <a href="/good-food/search.html?sortBy=lastpublisheddate&order=DESCENDING&ss=Good+Food&type=FoodRestaurant&style=Pub&location=NSW">Latest pub reviews
+                                    <span class="ratingIcon beer value-1"></span>
+                            </a>
+                        </li>
+                        <li class="cocktail">
+                            <a href="/good-food/search.html?sortBy=lastpublisheddate&order=DESCENDING&ss=Good+Food&type=FoodRestaurant&style=Bar&location=NSW">Latest bar reviews
+                                    <span class="ratingIcon cocktail value-1"></span>
+                            </a>
+                        </li>
+                </ul>
+            </div>
+            <div class="strap quick-links melbourne trackingClick off" data-tracking-types="ga" data-tracking-stop-event="true" data-ga-category="RHS" data-ga-action="Quick Links Click" data-location="Melbourne">
+                <ul>
+                        <li class="hat">
+                            <a href="/good-food/search.html?sortBy=lastpublisheddate&order=DESCENDING&ss=Good+Food&type=FoodRestaurant&goodFoodGuideRating=1,2,3&location=VIC">Good Food Guide reviews
+                                    <span class="ratingIcon hat value-1"></span>
+                            </a>
+                        </li>
+                        <li class="food">
+                            <a href="/good-food/search.html?sortBy=lastpublisheddate&order=DESCENDING&ss=Good+Food&type=FoodRestaurant&style=Restaurant&location=VIC">Latest restaurant reviews
+                                    <span class="ratingIcon food value-1"></span>
+                            </a>
+                        </li>
+                        <li class="cup">
+                            <a href="/good-food/search.html?sortBy=lastpublisheddate&order=DESCENDING&ss=Good+Food&type=FoodRestaurant&style=Cafe&location=VIC">Latest cafe reviews
+                                    <span class="ratingIcon cup value-1"></span>
+                            </a>
+                        </li>
+                        <li class="beer">
+                            <a href="/good-food/search.html?sortBy=lastpublisheddate&order=DESCENDING&ss=Good+Food&type=FoodRestaurant&style=Pub&location=VIC">Latest pub reviews
+                                    <span class="ratingIcon beer value-1"></span>
+                            </a>
+                        </li>
+                        <li class="cocktail">
+                            <a href="/good-food/search.html?sortBy=lastpublisheddate&order=DESCENDING&ss=Good+Food&type=FoodRestaurant&style=Bar&location=VIC">Latest bar reviews
+                                    <span class="ratingIcon cocktail value-1"></span>
+                            </a>
+                        </li>
+                </ul>
+            </div>
+            <div class="strap quick-links brisbane trackingClick off" data-tracking-types="ga" data-tracking-stop-event="true" data-ga-category="RHS" data-ga-action="Quick Links Click" data-location="Brisbane">
+                <ul>
+                        <li class="hat">
+                            <a href="/good-food/search.html?sortBy=lastpublisheddate&order=DESCENDING&ss=Good+Food&type=FoodRestaurant&goodFoodGuideRating=1,2,3&location=QLD">Good Food Guide reviews
+                                    <span class="ratingIcon hat value-1"></span>
+                            </a>
+                        </li>
+                        <li class="food">
+                            <a href="/good-food/search.html?sortBy=lastpublisheddate&order=DESCENDING&ss=Good+Food&type=FoodRestaurant&style=Restaurant&location=QLD">Latest restaurant reviews
+                                    <span class="ratingIcon food value-1"></span>
+                            </a>
+                        </li>
+                        <li class="cup">
+                            <a href="/good-food/search.html?sortBy=lastpublisheddate&order=DESCENDING&ss=Good+Food&type=FoodRestaurant&style=Cafe&location=QLD">Latest cafe reviews
+                                    <span class="ratingIcon cup value-1"></span>
+                            </a>
+                        </li>
+                        <li class="beer">
+                            <a href="/good-food/search.html?sortBy=lastpublisheddate&order=DESCENDING&ss=Good+Food&type=FoodRestaurant&style=Pub&location=QLD">Latest pub reviews
+                                    <span class="ratingIcon beer value-1"></span>
+                            </a>
+                        </li>
+                        <li class="cocktail">
+                            <a href="/good-food/search.html?sortBy=lastpublisheddate&order=DESCENDING&ss=Good+Food&type=FoodRestaurant&style=Bar&location=QLD">Latest bar reviews
+                                    <span class="ratingIcon cocktail value-1"></span>
+                            </a>
+                        </li>
+                </ul>
+            </div>
+            <div class="strap quick-links canberra trackingClick off" data-tracking-types="ga" data-tracking-stop-event="true" data-ga-category="RHS" data-ga-action="Quick Links Click" data-location="Canberra">
+                <ul>
+                        <li class="hat">
+                            <a href="/good-food/search.html?sortBy=lastpublisheddate&order=DESCENDING&ss=Good+Food&type=FoodRestaurant&goodFoodGuideRating=1,2,3&location=ACT">Good Food Guide reviews
+                                    <span class="ratingIcon hat value-1"></span>
+                            </a>
+                        </li>
+                        <li class="food">
+                            <a href="/good-food/search.html?sortBy=lastpublisheddate&order=DESCENDING&ss=Good+Food&type=FoodRestaurant&style=Restaurant&location=ACT">Latest restaurant reviews
+                                    <span class="ratingIcon food value-1"></span>
+                            </a>
+                        </li>
+                        <li class="cup">
+                            <a href="/good-food/search.html?sortBy=lastpublisheddate&order=DESCENDING&ss=Good+Food&type=FoodRestaurant&style=Cafe&location=ACT">Latest cafe reviews
+                                    <span class="ratingIcon cup value-1"></span>
+                            </a>
+                        </li>
+                        <li class="beer">
+                            <a href="/good-food/search.html?sortBy=lastpublisheddate&order=DESCENDING&ss=Good+Food&type=FoodRestaurant&style=Pub&location=ACT">Latest pub reviews
+                                    <span class="ratingIcon beer value-1"></span>
+                            </a>
+                        </li>
+                        <li class="cocktail">
+                            <a href="/good-food/search.html?sortBy=lastpublisheddate&order=DESCENDING&ss=Good+Food&type=FoodRestaurant&style=Bar&location=ACT">Latest bar reviews
+                                    <span class="ratingIcon cocktail value-1"></span>
+                            </a>
+                        </li>
+                </ul>
+            </div>
+
+                        <div class="strap trackingClick" data-tracking-types="ga" data-tracking-stop-event="true" data-ga-category="RHS" data-ga-action="Competitions Promotions Click">
+        <header>
+            <h3>Festive feasting</h3>
+        </header>
+            <article>
+                <div class="picDesc">
+                            <a href="http://www.goodfood.com.au/good-food/christmas-feasts/aggregate/christmas-feasts-20131114-2xixb.html" title="Christmas feasts"><img src="http://images.goodfood.com.au/2012/12/17/3897240/sm-th360_turkey-20121217175037228837-300x200.jpg" width="300" height="200" alt="Roast turkey with ricotta stuffing." /></a>
+
+                    <h4 class="caption"><a href="http://www.goodfood.com.au/good-food/christmas-feasts/aggregate/christmas-feasts-20131114-2xixb.html">Christmas recipes</a></h4>
+                </div>
+                <p>Turkey, ham, seafood, pudding: these recipes have got you covered.</p>
+            </article>
+            <article>
+                <div class="picDesc">
+                            <a href="http://www.goodfood.com.au/good-food/cook/aggregate/make-your-own-christmas-20141113-3k97o.html" title="Make your own Christmas"><img src="http://images.goodfood.com.au/2011/12/06/2821164/gingerbread_320-300x200.jpg" width="300" height="200" alt="Gingerbread biscuits." /></a>
+
+                    <h4 class="caption"><a href="http://www.goodfood.com.au/good-food/cook/aggregate/make-your-own-christmas-20141113-3k97o.html">Make your own Christmas</a></h4>
+                </div>
+                <p>Festive projects and (edible) homemade gift ideas so you can get crafty this Christmas.</p>
+            </article>
+    </div>
+
+                        <div class="strap cook trackingClick" data-tracking-types="ga" data-tracking-stop-event="true" data-ga-category="RHS" data-ga-action="Recipe Collections Click">
+            <header>
+                <h3>Recipe Collections</h3>
+            </header>
+            <article>
+                    <div class="picDesc">
+            <a href="http://www.goodfood.com.au/good-food/cook/aggregate/salmon-recipes-20141028-3j19e.html" title="Salmon recipes"><img src="http://images.goodfood.com.au/2014/11/07/5964076/sm-art-sashimi-20141107142958440500-300x200.jpg" width="300" height="200" alt="Adam Liaw's salmon oyakodon (salmon and roe rice bowl)." /></a>
+            <h4 class="caption">
+                <a href="http://www.goodfood.com.au/good-food/cook/aggregate/salmon-recipes-20141028-3j19e.html" title="Salmon recipes">Salmon recipes</a>
+            </h4>
+    </div><!-- class:picDesc -->
+
+            </article>
+            <article>
+                    <div class="picDesc">
+            <a href="http://www.goodfood.com.au/good-food/celebration/aggregate/entertaining-at-home-20140415-36pfs.html" title="Entertaining at home"><img src="http://images.goodfood.com.au/2014/11/10/5973494/MEGAN-thumb-can-20141110212153440156-300x200.jpg" width="300" height="200" alt="Thumb" /></a>
+            <h4 class="caption">
+                <a href="http://www.goodfood.com.au/good-food/celebration/aggregate/entertaining-at-home-20140415-36pfs.html" title="Entertaining at home">Entertaining at home</a>
+            </h4>
+    </div><!-- class:picDesc -->
+
+            </article>
+            <a href="/good-food/cook/aggregate/popular-recipe-collections-20121108-28zoc.html" class="btn">View more collections</a>
+    </div>
+
+                            <div class="strap split-col topten trackingClick" data-tracking-types="ga" data-tracking-stop-event="true" data-ga-category="RHS" data-ga-action="Top 10 Click">
+        <header>
+            <h3>Latest top 10</h3>
+        </header>
+                <article>
+                    <div class="picDesc">
+                                <a href="http://www.goodfood.com.au/good-food/top-10-eat-out/sydneys-best-new-burgers-20141030-11dw3n.html" title="Sydney's best new burgers"><img src="http://images.goodfood.com.au/2014/11/04/5950718/sm-th-chicken-20141104092451632689-140x93.jpg" width="140" height="93" alt="The spicy chicken burger at Neil Perry's Burger Project." /></a>
+
+                        <h5 class="caption"><a href="http://www.goodfood.com.au/good-food/top-10-eat-out/sydneys-best-new-burgers-20141030-11dw3n.html">Sydney's best new burgers</a></h5>
+                    </div>
+                    <h4><a href="http://www.goodfood.com.au/good-food/top-10-eat-out/sydneys-best-new-burgers-20141030-11dw3n.html">Sydney's best new burgers</a></h4>
+                </article>
+                <article>
+                    <div class="picDesc">
+                                <a href="http://www.goodfood.com.au/good-food/top-10-eat-out/christine-manfields-favourite-desserts-in-sydney-and-melbourne-20141030-11e4s9.html" title="Christine Manfield's favourite desserts in Sydney and Melbourne"><img src="http://images.goodfood.com.au/2014/11/03/5947974/JM-thumb-manfield-20141103141336301909-140x93.jpg" width="140" height="93" alt="Peanut butter parfai" /></a>
+
+                        <h5 class="caption"><a href="http://www.goodfood.com.au/good-food/top-10-eat-out/christine-manfields-favourite-desserts-in-sydney-and-melbourne-20141030-11e4s9.html">Christine Manfield's favourite desserts in Sydney and Melbourne</a></h5>
+                    </div>
+                    <h4><a href="http://www.goodfood.com.au/good-food/top-10-eat-out/christine-manfields-favourite-desserts-in-sydney-and-melbourne-20141030-11e4s9.html">Favourite desserts in Sydney and Melbourne</a></h4>
+                </article>
+        <a href="/good-food/top-10" class="btn">View More</a>
+        </div>
+
+                            <div class="panel photoGallery cfix" data-location="Default">
+                
+
+    <div class="cS-photoGalleryLinks cfix">
+        <h3 class="strapHeading">Photos</h3>
+        <ul>
+                        
+                        <li>
+                            <a href="http://www.goodfood.com.au/photogallery/good-food/cook/edible-christmas-gift-ideas-20131129-2yfqk.html">
+                                    <img src="http://images.goodfood.com.au/2014/12/01/6045279/GF_th_white_christmas-20141201122340505319-90x60.jpg" width="90" height="60" alt="White Christmas with Turkish delight, macadamias and amaranth."/>
+                            </a>
+                            <p><a href="http://www.goodfood.com.au/photogallery/good-food/cook/edible-christmas-gift-ideas-20131129-2yfqk.html" title="Edible Christmas gift ideas">Edible Christmas gift ideas</a></p>
+                        </li>
+                        
+                        
+                        <li>
+                            <a href="http://www.goodfood.com.au/photogallery/good-food/christmas-gifts/luxury-gift-guide-20141204-3lt8w.html">
+                                    <img src="http://images.goodfood.com.au/2014/12/04/6056545/th-wishlist13-90x60.jpg" width="90" height="60" alt="Wine bottle carrier on bike."/>
+                            </a>
+                            <p><a href="http://www.goodfood.com.au/photogallery/good-food/christmas-gifts/luxury-gift-guide-20141204-3lt8w.html" title="Luxury gift guide">Luxury gift guide</a></p>
+                        </li>
+                        
+                        
+                        <li>
+                            <a href="http://www.goodfood.com.au/photogallery/good-food/cook/takeaway-at-home-20131108-2x5ss.html">
+                                    <img src="http://images.goodfood.com.au/2014/11/14/5988611/sm-th-salt-20141114153529179381-90x60.jpg" width="90" height="60" alt="SALT AND PEPPER SQUID."/>
+                            </a>
+                            <p><a href="http://www.goodfood.com.au/photogallery/good-food/cook/takeaway-at-home-20131108-2x5ss.html" title="Takeaway at home">Takeaway at home</a></p>
+                        </li>
+                        
+                        
+                        <li>
+                            <a href="http://www.goodfood.com.au/photogallery/good-food/cook/simple-salmon-pasta-pairings-20141030-3j8gf.html">
+                                    <img src="http://images.goodfood.com.au/2014/11/07/5963848/SALMONTHUMB-90x60.jpg" width="90" height="60" alt="Salmon"/>
+                            </a>
+                            <p><a href="http://www.goodfood.com.au/photogallery/good-food/cook/simple-salmon-pasta-pairings-20141030-3j8gf.html" title="Simple salmon pasta pairings">Simple salmon pasta pairings</a></p>
+                        </li>
+                        
+                        
+                        <li>
+                            <a href="http://www.goodfood.com.au/photogallery/good-food/cook/cheesetastic-recipes-20141031-3jbf9.html">
+                                    <img src="http://images.goodfood.com.au/2014/10/31/5940269/MEGAN-thumb-cheese-20141031133836938695-90x60.jpg" width="90" height="60" alt="Cheese"/>
+                            </a>
+                            <p><a href="http://www.goodfood.com.au/photogallery/good-food/cook/cheesetastic-recipes-20141031-3jbf9.html" title="Cheese-tastic recipes">Cheese-tastic recipes</a></p>
+                        </li>
+                        
+                        
+                        <li>
+                            <a href="http://www.goodfood.com.au/photogallery/good-food/cook/brilliant-biscuits-20140328-35nh2.html">
+                                    <img src="http://images.goodfood.com.au/2014/10/24/5916619/AS-agoodfood-th-20141024154132226355-90x60.jpg" width="90" height="60" alt="Food. Neil Perry's melting moments with passionfruit butter."/>
+                            </a>
+                            <p><a href="http://www.goodfood.com.au/photogallery/good-food/cook/brilliant-biscuits-20140328-35nh2.html" title="Brilliant biscuits">Brilliant biscuits</a></p>
+                        </li>
+                        
+        </ul>
+    </div><!-- class:cS-photoGalleryLinks cfix -->
+
+        </div><!-- class:panel photoGallery cfix -->
+        <div class="panel photoGallery cfix off" data-location="Sydney">
+                
+
+
+        </div><!-- class:panel photoGallery cfix off -->
+        <div class="panel photoGallery cfix off" data-location="Melbourne">
+                
+
+
+        </div><!-- class:panel photoGallery cfix off -->
+        <div class="panel photoGallery cfix off" data-location="Brisbane">
+                
+
+
+        </div><!-- class:panel photoGallery cfix off -->
+        <div class="panel photoGallery cfix off" data-location="Canberra">
+                
+
+    <div class="cS-photoGalleryLinks cfix">
+        <h3 class="strapHeading">No display name for list 'Good Food Homepage Canberra Photos'</h3>
+        <ul>
+        </ul>
+    </div><!-- class:cS-photoGalleryLinks cfix -->
+
+        </div><!-- class:panel photoGallery cfix off -->
+
+                    <div id="adspot-300x250-pos-2" class="ad" style='display:none;'> <small>Advertisement</small> <script type="text/javascript"> var titan = window.titan || {}; titan.requestAd = titan.requestAd || []; titan.requestAd.push("adspot-300x250-pos-2"); </script> </div>
+                </div><!-- class:aside span-8 last -->
+            </div><!-- class:mainCont innerWrap cfix -->
+            <div class="footer" role="contentinfo">
+    <div class="footerContainer innerWrap cfix">
+        
+
+        <h3 class="strapHeading">Taste & try</h3>
+    <div class="c5 classifieds cfix">
+                <div class="s0 s1">
+                    
+                    
+                    <h2><a href="https://goodfoodgiftcard.com.au/Buy" title="Gift Card Bonus" class="trackingClick" data-tracking-types="ga" data-tracking-stop-event="true" data-ga-action="RainbowStrip Click" data-ga-category="RainbowStrip">Gift Card Bonus</a> </h2>
+                        <div class="puff">
+                                <a href="https://goodfoodgiftcard.com.au/Buy" rel="nofollow" class="trackingClick" data-tracking-types="ga" data-tracking-stop-event="true" data-ga-action="RainbowStrip Click" data-ga-category="RainbowStrip"  >
+    <img src="http://images.goodfood.com.au/2014/12/16/6096093/4468_FFX-Campaign-2_Static_172x115_111214-172x115.jpg" width="172" alt="Gift card bonus"/></a>
+
+                            <h5><a href="https://goodfoodgiftcard.com.au/Buy" rel="nofollow" title="Give the gift of good food - bonus $30 Gift Card!" class="trackingClick" data-tracking-types="ga" data-tracking-stop-event="true" data-ga-action="RainbowStrip Click" data-ga-category="RainbowStrip">Give the gift of good food - bonus $30 Gift Card!</a></h5>
+                        </div><!-- class:puff -->
+                        <ul>
+                        </ul>
+                    
+                </div><!-- class:s0 s1 -->
+                <div class="s0 s2">
+                    
+                    
+                    <h2><a href="/sponsored-content-2/aggregate/the-citibank-dining-program-20140506-37u0x.html#utm_source=goodfood&utm_medium=tastetry&utm_campaign=citi" title="Wine and Dine" class="trackingClick" data-tracking-types="ga" data-tracking-stop-event="true" data-ga-action="RainbowStrip Click" data-ga-category="RainbowStrip">Wine and Dine</a> </h2>
+                        <div class="puff">
+                                <a href="/sponsored-content-2/aggregate/the-citibank-dining-program-20140506-37u0x.html#utm_source=goodfood&utm_medium=tastetry&utm_campaign=citi" rel="nofollow" class="trackingClick" data-tracking-types="ga" data-tracking-stop-event="true" data-ga-action="RainbowStrip Click" data-ga-category="RainbowStrip"  >
+    <img src="http://images.goodfood.com.au/2014/07/28/5631233/citi172x115-172x115.jpg" width="172" alt="Citibank"/></a>
+
+                            <h5><a href="/sponsored-content-2/aggregate/the-citibank-dining-program-20140506-37u0x.html#utm_source=goodfood&utm_medium=tastetry&utm_campaign=citi" rel="nofollow" title="Free wine when you dine, Citibank Dining Program" class="trackingClick" data-tracking-types="ga" data-tracking-stop-event="true" data-ga-action="RainbowStrip Click" data-ga-category="RainbowStrip">Free wine when you dine, Citibank Dining Program</a></h5>
+                        </div><!-- class:puff -->
+                        <ul>
+                        </ul>
+                    
+                </div><!-- class:s0 s2 -->
+                <div class="s0 s3">
+                    
+                    
+                    <h2><a href="https://display.engagesciences.com/display/container/d/d642e48c-aa49-4ff1-87c4-91a2228af127/details?showLikeGate=false" title="Competition" class="trackingClick" data-tracking-types="ga" data-tracking-stop-event="true" data-ga-action="RainbowStrip Click" data-ga-category="RainbowStrip">Competition</a> </h2>
+                        <div class="puff">
+                                <a href="https://display.engagesciences.com/display/container/d/d642e48c-aa49-4ff1-87c4-91a2228af127/details?showLikeGate=false" rel="nofollow" class="trackingClick" data-tracking-types="ga" data-tracking-stop-event="true" data-ga-action="RainbowStrip Click" data-ga-category="RainbowStrip"  >
+    <img src="http://images.goodfood.com.au/2014/11/26/6029840/1_comp-driver-172x115.jpg" width="172" alt="Competition driver"/></a>
+
+                            <h5><a href="https://display.engagesciences.com/display/container/d/d642e48c-aa49-4ff1-87c4-91a2228af127/details?showLikeGate=false" rel="nofollow" title="WIN: A dinner party cooked by Guillaume Brahimi" class="trackingClick" data-tracking-types="ga" data-tracking-stop-event="true" data-ga-action="RainbowStrip Click" data-ga-category="RainbowStrip">WIN: A dinner party cooked by Guillaume Brahimi</a></h5>
+                        </div><!-- class:puff -->
+                        <ul>
+                        </ul>
+                    
+                </div><!-- class:s0 s3 -->
+                <div class="s0 s4">
+                    
+                    
+                    <h2><a href="https://fairfaxmedia.qualtrics.com/SE/?SID=SV_3l82EezV5nG6DhX" title="User Survey" class="trackingClick" data-tracking-types="ga" data-tracking-stop-event="true" data-ga-action="RainbowStrip Click" data-ga-category="RainbowStrip">User Survey</a> </h2>
+                        <div class="puff">
+                                <a href="https://fairfaxmedia.qualtrics.com/SE/?SID=SV_3l82EezV5nG6DhX" rel="nofollow" class="trackingClick" data-tracking-types="ga" data-tracking-stop-event="true" data-ga-action="RainbowStrip Click" data-ga-category="RainbowStrip"  >
+    <img src="http://images.goodfood.com.au/2014/12/09/6072566/foodietile-172x115.jpg" width="172" alt="Survey tile"/></a>
+
+                            <h5><a href="https://fairfaxmedia.qualtrics.com/SE/?SID=SV_3l82EezV5nG6DhX" rel="nofollow" title="WIN: Enter our survey to win an iPad mini!" class="trackingClick" data-tracking-types="ga" data-tracking-stop-event="true" data-ga-action="RainbowStrip Click" data-ga-category="RainbowStrip">WIN: Enter our survey to win an iPad mini!</a></h5>
+                        </div><!-- class:puff -->
+                        <ul>
+                        </ul>
+                    
+                </div><!-- class:s0 s4 -->
+                <div class="s0 s5">
+                    
+                    
+                    <h2><a href="https://membercentre.fairfax.com.au/NewsletterSubscription.aspx?site=gdf" title="Newsletters" class="trackingClick" data-tracking-types="ga" data-tracking-stop-event="true" data-ga-action="RainbowStrip Click" data-ga-category="RainbowStrip">Newsletters</a> </h2>
+                        <div class="puff">
+                                <a href="https://membercentre.fairfax.com.au/NewsletterSubscription.aspx?site=gdf" rel="nofollow" class="trackingClick" data-tracking-types="ga" data-tracking-stop-event="true" data-ga-action="RainbowStrip Click" data-ga-category="RainbowStrip"  >
+    <img src="http://images.goodfood.com.au/2014/07/22/5614548/rainbow-newsletter2-172x115-172x115.jpg" width="172" alt="rainbow-newsletter2-172x115"/></a>
+
+                            <h5><a href="https://membercentre.fairfax.com.au/NewsletterSubscription.aspx?site=gdf" rel="nofollow" title="Sign-up to receive news, recipes and reviews" class="trackingClick" data-tracking-types="ga" data-tracking-stop-event="true" data-ga-action="RainbowStrip Click" data-ga-category="RainbowStrip">Sign-up to receive news, recipes and reviews</a></h5>
+                        </div><!-- class:puff -->
+                        <ul>
+                        </ul>
+                    
+                </div><!-- class:s0 s5 -->
+    </div><!-- class:c5 classifieds cfix -->
+
+        <div id="adspot-728x90_468x60-pos-2" class="ad" style='display:none;'> <script type="text/javascript"> var titan = window.titan || {}; titan.requestAd = titan.requestAd || []; titan.requestAd.push("adspot-728x90_468x60-pos-2"); </script> </div>
+    </div><!-- class:footerContainer innerWrap cfix -->
+    <div class="fContainer cfix">
+        <div class="innerWrap">
+                <div class="fMastheadLinks cfix">
+            <ul >
+                <li class="first"><h5><a href="http://www.goodfood.com.au/good-food/eat-out" title="Eat Out">Eat Out</a></h5></li>
+                        <li >
+                            <a href="/good-food/search.html?ss=Good+Food&max=19&type=FoodRestaurant" title="Reviews">Reviews</a></li>
+                        <li >
+                            <a href="/good-food/eat-out/aggregate/good-food-guides-20121212-2b8wp.html" title="Good Guides">Good Guides</a></li>
+                        <li >
+                            <a href="/good-food/eat-street/aggregate/eat-streets-and-dining-precincts-20140127-31ij6.html" title="Eat Streets">Eat Streets</a></li>
+                        <li >
+                            <a href="/good-food/eat-out/type/Article" title="Latest eat out articles">Latest eat out articles</a></li>
+                        <li >
+                            <a href="/good-food/search.html?ss=Good+Food&max=19&type=FoodRestaurant&text=&location=&cuisine=&priceRange=&features=BYO&publication=" title="BYO">BYO</a></li>
+            </ul>
+            <ul >
+                <li class="first"><h5><a href="http://www.goodfood.com.au/good-food/cook" title="Cook">Cook</a></h5></li>
+                        <li >
+                            <a href="/good-food/search.html?ss=Good+Food&max=19&type=FoodRecipe" title="recipes">recipes</a></li>
+                        <li >
+                            <a href="/good-food/cook/aggregate/popular-recipe-collections-20121108-28zoc.html" title="recipe collections">recipe collections</a></li>
+                        <li >
+                            <a href="/good-food/cook/aggregate/weekly-meal-planners-20130607-2nuhz.html" title="weekly meal plans">weekly meal plans</a></li>
+                        <li >
+                            <a href="/good-food/cook/aggregate/kitchen-basics-20121030-28gsq.html" title="how-to">how-to</a></li>
+                        <li >
+                            <a href="/good-food/cook/type/Article" title="latest cook articles">latest cook articles</a></li>
+            </ul>
+            <ul >
+                <li class="first"><h5><a href="http://www.goodfood.com.au/good-food/drink" title="Drink">Drink</a></h5></li>
+                        <li >
+                            <a href="/good-food/search.html?ss=Good+Food&max=19&type=FoodWine" title="drink reviews">drink reviews</a></li>
+                        <li >
+                            <a href="/good-food/drink/aggregate/beer-20121126-2a2ey.html" title="beer">beer</a></li>
+                        <li >
+                            <a href="/good-food/drink/aggregate/coffee-20130325-2gp95.html" title="coffee">coffee</a></li>
+                        <li >
+                            <a href="http://www.goodfood.com.au/good-food/drink/aggregate/cocktails-20121119-29lqn.html?rand=1396916603085" title="cocktails">cocktails</a></li>
+                        <li >
+                            <a href="/good-food/drink/type/Article" title="latest articles">latest articles</a></li>
+            </ul>
+            <ul class="last">
+                <li class="first"><h5><a href="http://www.goodfood.com.au/good-food/food-news" title="Food News">Food News</a></h5></li>
+                        <li class="off" data-location="Sydney">
+                            <a href="/good-food/food-news/column/short-black" title="Sydney news">Sydney news</a></li>
+                        <li class="off" data-location="Melbourne">
+                            <a href="/good-food/food-news/column/espresso" title="Melbourne news">Melbourne news</a></li>
+                        <li class="off" data-location="Canberra">
+                            <a href="/good-food/food-news/column/morsels" title="Canberra news">Canberra news</a></li>
+                        <li class="off" data-location="Brisbane">
+                            <a href="/good-food/food-news/column/graze" title="Brisbane news">Brisbane news</a></li>
+                        <li >
+                            <a href="/good-food/food-news/" title="Latest articles">Latest articles</a></li>
+                        <li >
+                            <a href="http://www.goodfood.com.au/good-food/food-news/aggregate/food-for-good-20140521-38obz.html" title="Food for Good">Food for Good</a></li>
+            </ul>
+    </div><!-- class:fMastheadLinks cfix -->
+
+                <h3 class="fS-Tagline">Explore all of our sites covering fashion, food, lifestyle and parenting</h3>
+    <ul class="fS-channels cfix">
+            <li class="cTheVine"><a href="http://www.thevine.com.au" title="The Vine">The Vine</a></li>
+            <li class="cDailyLife"><a href="http://www.dailylife.com.au" title="Daily Life">Daily Life</a></li>
+            <li class="cEssentialBaby"><a href="http://www.essentialbaby.com.au" title="Essential Baby">Essential Baby</a></li>
+            <li class="cEssentialKids"><a href="http://www.essentialkids.com.au" title="Essential Kids">Essential Kids</a></li>
+            <li class="cFindABabysitter"><a href="http://www.findababysitter.com.au" title="Find A Babysitter">Find A Babysitter</a></li>
+    </ul>
+
+                <ul class="fSectionLinks cfix">
+            <li ><a href="http://www.goodfood.com.au/contact_us" title="Contact us">Contact us</a></li>
+            <li ><a href="http://www.goodfood.com.au/newsletter" title="Newsletter">Newsletter</a></li>
+            <li ><a href="http://www.goodfood.com.au/faq" title="FAQs">FAQs</a></li>
+            <li ><a href="http://www.goodfood.com.au/advertise_with_us" title="Advertise with us">Advertise with us</a></li>
+            <li ><a href="http://www.fairfax.com.au/privacy.html" title="Privacy statement">Privacy statement</a></li>
+            <li ><a href="http://www.fairfax.com.au/conditions.ac" title="Terms of use">Terms of use</a></li>
+            <li class="last"><a href="http://www.goodfood.com.au/sitemap" title="Sitemap">Sitemap</a></li>
+                <li class="last"><span class="Kampyle" data-kampyleFormId="101301" data-kampyleSiteCode="3499354"><a id="kampylilink" href="http://www.kampyle.com/feedback_form/ff-feedback-form.php?site_code=3499354&lang=en&form_id=101301" target="kampyleWindow">Give Feedback</a></span></li>
+
+    </ul>
+
+            <div class="mh-logo">
+    <a class="ir" href="http://www.goodfood.com.au" title="Good Food">Good Food</a>
+</div><!-- class:mh-logo -->
+        </div><!-- class:innerWrap -->
+    </div><!-- class:fContainer cfix -->
+    <div class="footerLinks">
+    <div class="innerWrap">
+        <a href="http://www.fairfaxdigital.com.au" class="logo">Fairfax Media</a>
+        <div class="botNav">
+            <h3>Our Sites</h3>
+    <ul>
+            <li class="first">
+                <a title="The Sydney Morning Herald" href="http://www.smh.com.au/">The Sydney Morning Herald</a>
+            </li>
+            <li>
+                <a title="The Age" href="http://www.theage.com.au/">The Age</a>
+            </li>
+            <li>
+                <a title="Adzuna" href="http://www.adzuna.com.au">Adzuna</a>
+            </li>
+            <li>
+                <a title="Domain" href="http://www.domain.com.au/">Domain</a>
+            </li>
+            <li>
+                <a title="Drive" href="http://www.drive.com.au/">Drive</a>
+            </li>
+            <li>
+                <a title="RSVP" href="http://www.rsvp.com.au/">RSVP</a>
+            </li>
+            <li>
+                <a title="Essential Baby" href="http://www.essentialbaby.com.au/">Essential Baby</a>
+            </li>
+            <li>
+                <a title="InvestSMART" href="http://www.investsmart.com.au/">InvestSMART</a>
+            </li>
+            <li>
+                <a title="APM" href="http://apm.com.au/">APM</a>
+            </li>
+            <li>
+                <a title="Stayz" href="http://www.stayz.com.au/">Stayz</a>
+            </li>
+            <li>
+                <a title="Weatherzone" href="http://www.weatherzone.com.au/">Weatherzone</a>
+            </li>
+            <li>
+                <a title="TheVine" href="http://www.thevine.com.au/#utm_source=FD&utm_medium=mastheadpuff&utm_campaign=thevineheader">TheVine</a>
+            </li>
+    </ul>
+
+            <h3>Our Partners</h3>
+    <ul>
+            <li class="first">
+                <a title="Buy & Sell" href="http://www.buyandsell.com.au/">Buy & Sell</a>
+            </li>
+            <li>
+                <a title="Cracker" href="http://cracker.com.au/">Cracker</a>
+            </li>
+    </ul>
+
+        </div><!-- class:botNav -->
+        <cite>Copyright &copy; 2014 Fairfax Media</cite>
+    </div><!-- class:innerWrap -->
+</div><!-- class:nN-footerLinks -->
+</div><!-- class:footer -->
+        </div><!-- class:wrap cfix -->
+    </div><!-- class:outerWrap -->
+    <div class="dialogWrap iframeDialog off">
+    <div class="dialogContent main">
+        <iframe frameborder="0" scrolling="no" src=""></iframe>
+    </div><!-- class:dialogContent main -->
+</div><!-- class:dialogWrap iframeDialog -->
+    <div id="subscription-overlay" class="subscription-overlay"
+     data-hagrid-channel-key="SWnR4qLYPK5WPpvHK3mQIQ"
+     data-hagrid-base-url="https://goodfood.myfairfax.com.au"
+     data-hagrid-api-url="https://api.myfairfax.com.au"
+     data-hagrid-proxy-url="/originstatic/hagridproxy-0.9.36.html"
+     data-hagrid-iframe-container-id="loginIframeContainer"
+     data-drm-host=""
+     data-hagrid-member-profile-provider-name="customMemberProfileProvider">
+</div>
+
+            <script type="text/javascript" src="http://resources.goodfood.com.au/common/media-common-1.0/js/fdjsf/output/7.49.1/fd.js/fd_min.js"></script>
+
+            <script type="text/javascript" src="http://resources.goodfood.com.au/common/media-common-1.0/js/fdjsf/output/7.49.1/fd.registrars.goodfood.js/fd.registrars.goodfood_min.js"></script>
+
+    
+<script>
+    var adParameters = {
+        paywall: false
+    };
+    FD.trigger("FDLoadJSSDK", [
+        "",
+        "goodfood.com.au",
+        "http://www.goodfood.com.au",
+        "https://goodfood.myfairfax.com.au",
+        "https://api.myfairfax.com.au",
+        "SWnR4qLYPK5WPpvHK3mQIQ"
+    ]);
+</script>
+    <div data-brandName="goodfood"></div>
+        <script type="text/javascript" src="http://resources.goodfood.com.au/common/media-common-1.0/js/fdjsf/output/7.49.1/fd.videoplayer.js/fd.videoplayer_min.js"></script>
+
+<script type="text/javascript" src="http://resources.goodfood.com.au/common/media-common-1.0/js/fdjsf/jwplayer6/jwplayer.js" ></script>
+<script type="text/javascript">jwplayer.key="3Kw6cxrtDRgcWRtdGLa2YBoPkAlVC9+iy+DgiQ==";</script>
+
+            <script type="text/javascript" src="http://resources.goodfood.com.au/common/media-common-1.0/js/fdjsf/output/7.49.1/fd.registrars.mymasthead.js/fd.registrars.mymasthead_min.js"></script>
+
+    <script type="text/javascript">
+            FD.addVideoPlayer(new FD.VideoPlayer({
+        "adServerUrl": "http://pubads.g.doubleclick.net/gampad/ads?sz=4x1&iu=/6411/vid.smh/food&ciu_szs=300x250&impl=s&gdfp_req=1&env=vp&output=xml_vast2&unviewed_position_start=1&cust_params=channel%3Dfood%26show%3Dgoodfood%26ctype%3Dhomepage%26source%3DFDP&correlator=701531",
+        "assetId": "6029629",
+        "divId": "video-player-strap",
+        "playerId": "video-player-strap-player",
+        "playerType": "Homepage",
+        "postPlay": ""
+    }, {
+        "height": 230,
+        "playlist": [
+    {
+                    "sources": [
+                    {
+                        "bitrate": "804",
+                        "file": "http://mediadownload.f2.com.au/flash/media/2014/11/26/6029629/6029629_high.mp4"
+                    },
+                    {
+                        "bitrate": "553",
+                        "file": "http://mediadownload.f2.com.au/flash/media/2014/11/26/6029629/6029629_ihigh.mp4"
+                    },
+                    {
+                        "bitrate": "526",
+                        "file": "http://mediadownload.f2.com.au/flash/media/2014/11/26/6029629/6029629_mid.mp4"
+                    },
+                    {
+                        "bitrate": "524",
+                        "file": "http://mediadownload.f2.com.au/flash/media/2014/11/26/6029629/6029629_low.mp4"
+                    },
+                    {
+                        "bitrate": "374",
+                        "file": "http://mediadownload.f2.com.au/flash/media/2014/11/26/6029629/6029629_imid.mp4"
+                    },
+                    {
+                        "bitrate": "201",
+                        "file": "http://mediadownload.f2.com.au/flash/media/2014/11/26/6029629/6029629_ilow.mp4"
+                    }
+            ],
+            "image": "http://images.goodfood.com.au/2014/11/26/6029630/gb_wide-408x264.jpg"
+    }
+],
+        "primary": "flash",
+            "advertising": {
+        "client": "googima",
+                "tag": "http://pubads.g.doubleclick.net/gampad/ads?sz=4x1&iu=/6411/vid.smh/food&ciu_szs=300x250&impl=s&gdfp_req=1&env=vp&output=xml_vast2&unviewed_position_start=1&cust_params=channel%3Dfood%26show%3Dgoodfood%26ctype%3Dhomepage%26source%3DFDP&correlator=701531"
+,
+        "companiondiv": {
+            "height": 250,
+            "id": "video-player-companion-ad-mrec",
+            "width": 300
+        }
+    },
+    "sharing": {
+    "code": '<iframe src="http://www.goodfood.com.au/action/externalEmbeddedPlayer?id=d-3l8hp" width="420" height="236" scrolling="no"></iframe>',
+    "link": "http://media.goodfood.com.au/food/good-food/perfecting-the-gingerbread-house-6029629.html"
+    },
+"timeslidertooltipplugin-2": {},
+        "width": 408
+    }, {
+        "ga": {
+    "channel": "Food",
+    "duration": "189",
+    "headline": "Perfecting the gingerbread house",
+    "interval": 10000,
+    "referrer": "",
+    "playerType": "Homepage",
+    "showName": "Good Food"
+}
+,
+        "nielsen": {
+    "brand": "goodfood",
+        "cg": "fairfax-lifestyle",
+    "duration": "189",
+    "interval": 10000,
+    "ou": "video/food/good-food",
+    "vc": "vc-gf-Video_Food-Homepage-Video_Good_Food-Good_Food_Homepage_Video_Section-Tom_McKendrick-6029629-Perfecting_the_gingerbread_house-00:03:09"
+},
+        "collector": {
+    "system": "DCDS",
+    "brand": "goodfood",
+    "section": "Video Food",
+    "assetId": "6029629",
+    "title": "Perfecting the gingerbread house",
+    "assetType": "Video",
+    "assetUrl": "http://media.goodfood.com.au/food/good-food/perfecting-the-gingerbread-house-6029629.html",
+    "category": "Video Good Food",
+    "showName": "Video_Good_Food",
+    "duration": "189033",
+    "videoSource": "FDP",
+    "producer": "Tom McKendrick",
+    "playerType": "Homepage"
+},
+        "sitecatalyst": {
+    "assetId": "6029629",
+    "assetType": "Video",
+    "assetUrl": "http://media.goodfood.com.au/food/good-food/perfecting-the-gingerbread-house-6029629.html",
+    "brand": "goodfood",
+    "category": "Video Good Food",
+    "channelName": "Video_Food",
+    "duration": "189033",
+    "interval": 10000,
+    "producer": "Tom McKendrick",
+    "playerType": "Homepage",
+    "section": "Video Food",
+    "showName": "Video_Good_Food",
+    "system": "DCDS",
+    "title": "Perfecting the gingerbread house",
+    "type":"Video",
+    "videoSource": "FDP",
+    "videoType": "Standard"
+}
+    }));
+
+
+</script>
+    
+    <!-- Google Code for Remarketing tag -->
+<script type="text/javascript">
+    /* <![CDATA[ */
+    var google_conversion_id = 1000148169;
+    var google_conversion_label = "AGnrCMfK5wMQyZn03AM";
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+    /* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+<noscript>
+    <div style="display:inline;">
+        <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1000148169/?value=0&amp;label=AGnrCMfK5wMQyZn03AM&amp;guid=ON&amp;script=0"/>
+    </div>
+</noscript>
+
+<!-- START Google Analytics Tracking -->
+<script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-35764358-1']);
+    _gaq.push(['_setDomainName', '.goodfood.com.au']);
+    _gaq.push(['_addIgnoredRef', 'goodfood.com.au']);
+    _gaq.push(['_setAllowAnchor', true]);
+    _gaq.push(['_setCustomVar', 1, 'Section', 'Home', 3]);
+    _gaq.push(['_setCustomVar', 2, 'Sub-Section', '', 3]);
+    _gaq.push(['_setCustomVar', 3, 'Byline', '', 3]);
+    _gaq.push(['_setCustomVar', 4, 'Page Type', 'Homepage', 3]);
+    _gaq.push(['_setAllowAnchor', true]);
+    _gaq.push(['_setCampaignCookieTimeout', 1209600000]);
+    (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+<!-- END Google Analytics Tracking -->
+
+<!-- START Nielsen Online SiteCensus V6.0 -->
+<!-- COPYRIGHT 2009 Nielsen Online -->
+<script src="//secure-au.imrworldwide.com/v60.js"></script>
+<script>
+    var pvar = {cid:"f2", content:"goodfood-home-index", server:"secure-au"};
+    var trac = nol_t(pvar);
+    trac.record().post();
+    window.s_pageName = "goodfood:index:home";
+</script>
+<noscript>
+    <div>
+        <img src="//secure-au.imrworldwide.com/cgi-bin/m?ci=f2&amp;cg=0&amp;cc=1&amp;ts=noscript" width="1" height="1" alt=""/>
+    </div>
+</noscript>
+    <!--end of if !suppressNielsen -->
+<!-- END Nielsen Online SiteCensus V6.0 -->
+    <script type="text/javascript">
+	(function(FD) {
+		/**
+		 * Initiates the client side asset view tracking component (self executing).
+		 */
+        FD.pingServerWithSuccessCallback("3724484", "Index", "", FD.updateWhiteStrip);
+	})(FD);
+</script>
+
+<!-- FFX analytics stuff -->
+<script>
+    var _fmaq = _fmaq || [];
+        _fmaq.push(["_trackEvent", [
+            ["event", "view"],
+            ["system", "DCDS"],
+            ["site", "goodfood"],
+            ["assetCategory", "Good Food"],
+            ["asset", "3724484"],
+            ["title", "Good Food"],
+            ["assetType", "Index"],
+            ["urlHash", window.location.hash],
+            ["pageType", "Homepage"],
+            ["primaryCategory", ""]
+        ]]);
+
+    var _fma_options = {};
+
+    (function () {
+        var fma_script = document.createElement('script');
+        fma_script.src = 'http://resources.fairfax.com.au/js/track/1.0/track.min.js';
+        fma_script.setAttribute('async', 'true');
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(fma_script, s);
+    })();
+</script>
+    <script type="text/javascript">
+        var cX_ffx_customParameters = cX_ffx_customParameters || {};
+        cX_ffx_customParameters.ffx_contentid = 'dcds_3724484';
+    </script>
+    <div id="cX-root" style="display:none"></div>
+    <script type="text/javascript">
+        var cX = cX || {}; cX.callQueue = cX.callQueue || [];
+        cX.callQueue.push(['setAccountId', '9222289450909507040']);
+        cX.callQueue.push(['setSiteId', '9222289450909507041']);
+        if (cX_ffx_customParameters) {
+            cX.callQueue.push(['setCustomParameters', cX_ffx_customParameters]);
+        }
+        cX.callQueue.push(['sendPageViewEvent']);
+    </script>
+    <script type="text/javascript">
+        (function() { try { var scriptEl = document.createElement('script'); scriptEl.type = 'text/javascript'; scriptEl.async = 'async';
+            scriptEl.src = ('https:' == document.location.protocol) ? 'https://scdn.cxense.com/cx.js' : 'http://cdn.cxense.com/cx.js';
+            var targetEl = document.getElementsByTagName('script')[0]; targetEl.parentNode.insertBefore(scriptEl, targetEl); } catch (e) {};} ());
+    </script>
+
+
+<!-- Adobe Marketing Cloud Tag Management code
+Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+More info available at http://www.adobe.com -->
+<script>
+if(s){
+    s.pageName = "goodfood:Home:::Good Food:3724484"
+    s.prop1 = "goodfood"
+    s.prop2 = "Good Food"
+    s.prop6 = ""
+    s.prop7 = "Index"
+    s.prop8 = "3724484 + Good Food"
+    s.prop31 = ""
+    s.prop32 = "2014-10-22"
+    if (window["FD"]) {
+        if (typeof FD.s_prop24 !== "undefined") {
+            s.prop24 = FD.s_prop24
+        }
+    }
+
+    // OLG tracking
+    if(typeof olgTracking !== "undefined") {
+        if(s.events) {
+            s.events += ",event21";
+        } else {
+            s.events = "event21";
+        }
+        s.eVar22 = s.prop1 + "-" + s.prop2 + "-" + olgTracking.provider + "-" + olgTracking.productType + "-" + olgTracking.location;
+    }
+    s.t();
+}
+</script>
+<!-- End Adobe Marketing Cloud Tag Management code -->
+
+<script>
+if (window["FD"]) {
+    FD.trigger("FDTrackReady");
+}
+</script>
+
+        <!-- Start Apple Auto Affiliate Link Maker script -->
+        <script>var _merchantSettings=_merchantSettings || [];_merchantSettings.push(['AT', '11l8Ma']);(function(){var autolink=document.createElement('script');autolink.type='text/javascript';autolink.async=true; autolink.src='https://autolinkmaker.itunes.apple.com/js/itunes_autolinkmaker.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(autolink, s);})();</script>
+        <!-- End Apple Auto Affiliate Link Maker script -->
+
+        <!-- Start Skimlinks Auto Affiliate Link Maker script -->
+        <script src="http://s.skimresources.com/js/57568X1347960.skimlinks.js"></script>
+        <!-- End Skimlinks Auto Affiliate Link Maker script -->
+
+    <script>
+    function createSocialElement(d, s, id, src) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = src;
+        fjs.parentNode.insertBefore(js, fjs);
+    }
+</script>
+        <div id="fb-root"></div><!-- id:fb-root -->
+        <script>
+            window.fbAsyncInit = function() {
+                 FB.init({appId: '503488889664154', status: true, cookie: true,  xfbml: true});
+            };
+            createSocialElement(document, 'script', 'facebook-jssdk', "//connect.facebook.net/en_GB/all.js#xfbml=1");
+        </script>
+
+
+
+        <script>
+            createSocialElement(document, "script", "twitter-wjs", "//platform.twitter.com/widgets.js");
+        </script>
+
+    <div data-boomerangSegment="132487"></div>
+<script>
+/* Social bar prototype */
+$('ul.social').on('click', '.expand-toggle a',function() {
+    socialWrap = $(this).parents('ul.social');
+    defaultTitle = 'More sharing options';
+    expandedTitle = 'Less sharing options';
+
+    socialWrap.toggleClass('expanded');
+    if (socialWrap.hasClass('expanded')) {
+        $(this).attr('title', expandedTitle);
+        socialWrap.find('.social-right').fadeToggle('fast', function() {
+        socialWrap.find('.expand-show').fadeToggle();
+        });
+    } else {
+        socialWrap.find('.social-right').fadeToggle('fast');
+        socialWrap.find('.expand-show').toggle();
+        $(this).attr('title', defaultTitle);
+    }
+});
+/* END Social bar prototype */
+</script>
+<!-- social media scripts -->
+<script src="//assets.pinterest.com/js/pinit.js"></script>
+
+
+    
+
+ 
+
+            <script type="text/javascript" src="http://resources.goodfood.com.au/common/media-common-1.0/js/fdjsf/output/7.49.1/fd.registrars.images.httppipelining.js/fd.registrars.images.httppipelining_min.js"></script>
+
+    <div id="adspot-interstitial">
+    <script>
+        var titan = window.titan || {};
+        titan.requestAd = titan.requestAd || [];
+        titan.requestAd.push("adspot-interstitial");
+    </script>
+</div>
+    <script type="text/javascript">
+window.setTimeout('new FD.TitanService()', 3000);
+_satellite.pageBottom();
+</script>
+</body>
+</html>

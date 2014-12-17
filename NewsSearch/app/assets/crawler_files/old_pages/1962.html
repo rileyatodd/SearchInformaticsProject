@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+	<title>Yahoo - login</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">	
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="https://s.yimg.com/zz/combo?/sf/assets/mbrlogin/css/pure-0.3.0-min.css&/sf/assets/mbrlogin/css/4/mbr-min.css&/sf/assets/mbrlogin/css/18/mbr-mobile-min.css&/sf/assets/mbrlogin/css/mobile/header/9/header-min.css&/sf/assets/mbrlogin/css/mobile/imapin/2/imapin-min.css&/sf/assets/mbrlogin/css/mobile/login/17/login-min.css&/sf/assets/mbrlogin/css/mobile/forgotpwd/6/forgotpwd-min.css&/sf/assets/mbrlogin/css/mobile/threepa/5/threepa-min.css&/sf/assets/mbrlogin/css/mobile/createacc/5/createacc-min.css&/sf/assets/mbrlogin/css/mobile/footer/1/footer-min.css&/sf/assets/mbrlogin/css/mobile/deviceswitcher/2/deviceswitcher-min.css">
+	</head>
+	<body>
+	<div id="mbr-mobile-login" class="mbr-login mbr-mb ">
+		<script>
+		var MBR_config = {
+			baseSpaceID : "150002880",
+			YWAProjectID : 10001756605956,
+									DocumentName : "Mobile Login",
+			DocumentGroup: "Mobile Login",
+			bouncer_login: "https://login.yahoo.com/config/login?.partner=ycorp&.src=ym&mho=1&.done=https%3A%2F%2Fmail.yahoo.com"
+		};
+		</script>
+		<main role="main">
+		<div class="mbr-main">
+				<header>
+		<div class="mbr-mb-hdr">
+	<div class="header-container">
+				<img src="https://s1.yimg.com/rz/d/yahoo_en-US_f_p_bestfit_2x.png" alt="Yahoo">
+			</div>
+</div>
+		</header>
+						
+		<form method="post" name="mbrMbLogin" id="mbrMbLogin" 
+    action="/m?.src=my&.intl=us&.done=https%3A%2F%2Fadd.my.yahoo.com%2Frss%3Furl%3Dhttp%3A%2F%2Fwww.chron.com%2Frss%2Ffeed%2FBreaking-News-from-Chron-com-319.php" 
+    class="pure-form mbr-mb-login-frm" novalidate>
+    <span class="mbr-error mbr-hide" id="mbr-error" role="alert"></span>
+    <span class="mbr-error mbr-hide" id="nw-error" role="alert">Network connection terminated due to abort or timeout.</span>
+    <fieldset class="pure-group mb-fset">
+        <div class="username-field pure-g ">
+                        <input id="login-username" type="email" 
+            name="username" 
+            class="pure-input-1 " 
+            required="true" aria-required="true" placeholder="Yahoo username" 
+            autocorrect="off" autocomplete="off" autocapitalize="off" 
+            title="Yahoo username"
+            value="">
+            <div class="pure-u-1 mbr-mb-sprite close-icon close-icon-uname mbr-hide"></div>
+        </div>
+
+        <input id="login-passwd" type="password" 
+        class="pure-input-1 " 
+        required="true" aria-required="true" placeholder="Password" 
+        autocorrect="off" autocomplete="off" autocapitalize="off" 
+                name="passwd" title="Password">
+        <div class="pure-u-1 mbr-mb-sprite close-icon close-icon-passwd mbr-hide"></div>
+    </fieldset>
+    <button type="submit" 
+        class="pure-button pure-u-1 pure-button-primary mbr-button-purple" 
+        name="signin" data-rapid_slk="signin" data-rapid_p="3"             id="login-signin">Sign In</button>
+    <input type="hidden" name="_ts" value="1418696077">
+    <input type="hidden" name="_tpa" value="">
+    <input type="hidden" name="_muh" value="">
+    <input type="hidden" name="_crumb" value="">
+    <input type="hidden" name="_uuid" value="r1wvM0vYzx1K">
+    <input type="hidden" name="_seqid" value="2">
+</form>
+
+
+<script>
+    MBR_config.otp_enabled = false;
+    MBR_config.otp_optin = false;
+
+    MBR_config.strings = MBR_config.strings || {
+        placeholder_mobile_number: "Mobile number",
+        placeholder_username : "Yahoo username",
+        sign_in: "Sign In",
+        get_my_passwd: "Send Password",
+        error_username_passwd: "Invalid username/password. Please try again.",
+        error_invalid_passwd: "Invalid Password",
+        error_empty_passwd: "Empty Password",
+
+        end_of_string: "EOS"
+    };
+</script>
+		<div class="mbr-forgotpwd mbr-forgotpwd-separator-x">
+	<a href="https://edit.yahoo.com/mforgot?lang=en-US&intl=us&done=https%3A%2F%2Fadd.my.yahoo.com%2Frss%3Furl%3Dhttp%3A%2F%2Fwww.chron.com%2Frss%2Ffeed%2FBreaking-News-from-Chron-com-319.php&src=my" class="pure-u-1" role="button" data-rapid_slk="recover" data-rapid_p="10">I can't access my account</a>
+</div>
+<div class="mbr-mb-createacc">
+	<button id="createacc" regurl="https://edit.yahoo.com/registration?.lang=en-US&.intl=us&.src=my&.asdk_embedded=0&.done=https%3A%2F%2Fadd.my.yahoo.com%2Frss%3Furl%3Dhttp%3A%2F%2Fwww.chron.com%2Frss%2Ffeed%2FBreaking-News-from-Chron-com-319.php" class="pure-button pure-u-1 mbr-button-blue" href="" data-rapid_slk="signup" data-rapid_p="11">Create Account</button>
+</div>
+<div class="pure-g-r mbr-mb-threepa">
+	<div class="pure-u-1">
+		<fieldset>
+						<legend align="center">OR SIGN IN WITH</legend>
+			<div class="first"><a href="https://mlogin.yahoo.com/w/login/openlogin?idp_name=facebook&.ts=1418696077&.crumb=ID_1_vLZNDau0jbRTQMCHw--&stage=start&.done=https%3A%2F%2Fadd.my.yahoo.com%2Frss%3Furl%3Dhttp%3A%2F%2Fwww.chron.com%2Frss%2Ffeed%2FBreaking-News-from-Chron-com-319.php&.src=my&.intl=us&.lang=en-US" title="Facebook" data-rapid_slk="3pa_fb" data-rapid_p="12">Facebook</a></div>
+			<div class="last"><a href="https://mlogin.yahoo.com/w/login/openlogin?idp_name=google&.ts=1418696077&.crumb=ID_1_vLZNDau0jbRTQMCHw--&stage=start&.done=https%3A%2F%2Fadd.my.yahoo.com%2Frss%3Furl%3Dhttp%3A%2F%2Fwww.chron.com%2Frss%2Ffeed%2FBreaking-News-from-Chron-com-319.php&.src=my&.intl=us&.lang=en-US" title="Google" data-rapid_slk="3pa_google" data-rapid_p"13">Google</a></div>
+					</fieldset>
+	</div>
+</div>
+		</div>
+				<div class="mbr-ds-container">
+			<div id="mbr-ds" class="pure-u-1 mbr-mb-ds">
+	<div class="pure-u-1 links">
+	<a href="/?mbsw=d&.src=my&.intl=us&.done=https%3A%2F%2Fadd.my.yahoo.com%2Frss%3Furl%3Dhttp%3A%2F%2Fwww.chron.com%2Frss%2Ffeed%2FBreaking-News-from-Chron-com-319.php">View desktop version</a>	</div>
+</div>
+		</div>
+				</main>
+		<div class="spin-mask">
+			<div class="center">
+				<div class="sign-in-spinner"></div>
+			</div>
+		</div>
+		<div class="mbr-hide">
+			<audio id="cpt-audio-player" type="audio/mp3" preload="auto"></audio>
+		</div>
+	</div>
+	<script src="https://s.yimg.com/zz/combo?/sf/assets/mbrlogin/js/3/login-yui-3.18.1-combined-min.js&/ss/rapid-3.19.js&/sf/assets/mbrlogin/js/2/mbr-min.js&/sf/assets/mbrlogin/js/1/cache-min.js&/sf/assets/mbrlogin/js/7/mbr-mobile-min.js&/sf/assets/mbrlogin/js/mobile/2/hammer-min.js&/sf/assets/mbrlogin/js/mobile/20/mbr-mainview-min.js&/sf/assets/mbrlogin/js/mobile/login/41/login-min.js&/sf/assets/mbrlogin/js/mobile/createacc/3/createacc-min.js&/sf/assets/mbrlogin/js/mobile/deviceswitcher/1/deviceswitcher-min.js&/sf/assets/mbrlogin/js/common/comscore/1/comscore-min.js"></script>
+<script>
+    YUI().use('node', 'event', function (Y) {
+        Y.on("domready", function() {
+            MBR_config.comscore_config = [{
+                c1: "2",
+                c2: "7241469",
+                c5: "150002880",
+                c7: "https%3A%2F%2Flogin.yahoo.com%2Fm%3F.src%3Dmy%26.intl%3Dus%26.done%3Dhttps%253A%252F%252Fadd.my.yahoo.com%252Frss%253Furl%253Dhttp%253A%252F%252Fwww.chron.com%252Frss%252Ffeed%252FBreaking-News-from-Chron-com-319.php",
+                c14: "-1"
+            }];
+            MBR_config.comscore_beacon();
+        });
+    });
+</script>
+<noscript>
+  <img src="http://b.scorecardresearch.com/p?c1=2&c2=7241469&c7=https%3A%2F%2Flogin.yahoo.com%2Fm%3F.src%3Dmy%26.intl%3Dus%26.done%3Dhttps%253A%252F%252Fadd.my.yahoo.com%252Frss%253Furl%253Dhttp%253A%252F%252Fwww.chron.com%252Frss%252Ffeed%252FBreaking-News-from-Chron-com-319.php&c5=150002880&c14=-1&cv=2.0&cj=1">
+</noscript>
+<!-- spaceId Base: 150002880, Intl: 150002880-->
+	</body>
+</html>

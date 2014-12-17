@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ABC Online Indigenous - Home</title>
+
+<meta name="Description" content="Welcome to ABC Indigenous - the ABC's new portal for Aboriginal and Torres Strait Islander people. The Indigenous portal replaces and upgrades the pre-existing Message Stick gateway. It was developed in consultation with the ABC's Indigenous Programs Unit and with members of the Aboriginal and Torres Strait Islander community." />
+<meta name="Keywords" content="Local Heroes, Message Stick, Speaking Out, Awaye, ABC, Indigenous, Torres Strait Islander, Recipes, TV, Video, Radio, aboriginal, Torres Strait Islander, koori, murri, koorie, nungar, Indigenous" />
+
+
+
+<!--[if lte IE 7]>
+<link href="/indigenous/includes/css/yaml/core/slim_iehacks.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<!-- Feature Slide Show -->
+<link rel="stylesheet" href="/indigenous/includes/css/reskin/screen/jquery.innerfade.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/indigenous/includes/css/yaml/core/slim_base.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/indigenous/includes/css/reskin/screen/content.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/indigenous/includes/css/yaml/print/print_draft.css" type="text/css" media="screen" />
+<!-- jQuery & Plugins -->
+<script src="/includes/scripts/jquery/jquery-1.2.6.js" type="text/javascript"></script>
+<script src="/indigenous/includes/css/yaml/add-ons/accessible-tabs/jquery.tabs.js"	type="text/javascript"></script>
+<script src="/indigenous/includes/css/yaml/add-ons/syncheight/jquery.syncheight.js"	type="text/javascript"></script>
+<script src="/indigenous/includes/css/yaml/add-ons/accessible-tabs/tabs.js"	type="text/javascript"></script>
+<script type="text/javascript" src="/indigenous/includes/jquery.innerfade.js"></script>
+<script type="text/javascript" src="/indigenous/includes/config.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+ $("ul#portfolio-desc li div.slideTxt h1 a").each(function() {
+    var strLink = $(this).attr('href');
+    var flvFormat = strLink.match(".flv");
+	var mp4Format = strLink.match(".mp4");
+    var xmlFormat = strLink.match(".xml");
+    
+    if (mp4Format!=null || flvFormat!=null || xmlFormat!=null) {
+        $(this).css('background','url(/tv/styles/img/sprites.png) no-repeat right 10px');
+    	$(this).css('padding-right','30px');
+	}
+    else {
+    }		
+  });
+});
+</script>
+<style type="text/css" media="all">
+.thumbnail_txt p.reverse { 
+width:auto; 
+height:3.4em;
+overflow:hidden;
+}
+</style>
+
+
+<!-- global nav styles & scripts -->
+<link rel="stylesheet" type="text/css" media="screen, projection" href="http://www.abc.net.au/res/abc/styles/screen.css" />
+<link rel="stylesheet" type="text/css" media="print" href="http://www.abc.net.au/res/abc/styles/print.css" />
+<link rel="stylesheet" type="text/css" media="handheld" href="http://www.abc.net.au/res/abc/styles/handheld.css" />
+<!--[if IE 8]><style type="text/css">@import url('http://www.abc.net.au/res/abc/styles/ie8.css');</style><![endif]-->
+<!--[if IE 7]><style type="text/css">@import url('http://www.abc.net.au/res/abc/styles/ie7.css');</style><![endif]-->
+<!--[if lte IE 6]><style type="text/css">@import url('http://www.abc.net.au/res/abc/styles/ie6.css');</style><![endif]-->
+<script type="text/javascript" src="http://www.abc.net.au/res/libraries/abcjs/abc.js"></script>
+
+</head>
+
+<body>
+
+<!--noindex-->
+	<div id="abcNav">
+		<div id="abcNavWrapper">
+			<form id="abcNavSearch" method="get" action="http://search.abc.net.au/search/search.cgi">
+				<input type="hidden" name="form" value="simple" />
+				<input type="hidden" name="num_ranks" value="20" />
+				<input type="hidden" name="collection" value="abcall" />
+				<label for="abcNavQuery">Search:</label>
+				<input type="text" id="abcNavQuery" name="query" value="Keywords" size="20" maxlength="30" />
+				<input type="submit" id="abcNavSubmit" value=" ABC Search " title="ABC Search" />
+			</form>
+			<ul id="abcNavMenu">
+				<li id="abcNavHome"><a href="http://www.abc.net.au/" title="ABC Home"><img src="http://www.abc.net.au/res/abc/logos/nav_logo.png" alt="ABC Home" width="61" height="16" /></a></li>
+				<li id="abcNavRadio"><a href="http://www.abc.net.au/radio/">Radio</a></li>
+				<li id="abcNavTV"><a href="http://www.abc.net.au/tv/">TV</a></li>
+				<li id="abcNavShop"><a href="http://shop.abc.net.au/">Shop</a></li>
+				<li id="abcNavNews"><a href="http://www.abc.net.au/news/">News</a></li>
+				<li id="abcNavSport"><a href="http://www.abc.net.au/news/sport/">Sport</a></li>
+				<li id="abcNavLocal"><a href="http://www.abc.net.au/local/">Local</a></li>
+				<li id="abcNavKids"><a href="http://www.abc.net.au/children/">Children</a></li>
+				<li id="abcNavScience"><a href="http://www.abc.net.au/science/">Science</a></li>
+				<li id="abcNavEnvironment"><a href="http://www.abc.net.au/environment/">Environment</a></li>
+				<li id="abcNavTopics"><a href="http://www.abc.net.au/more/">more&nbsp;Topics</a></li>
+				<li id="abcNavHelp"><a href="http://www.abc.net.au/help/">help</a></li>
+			</ul>
+		</div>
+	</div>
+<!--endnoindex-->
+
+	<div class="page_margins">
+    	<!-- start header.inc -->
+		<div id="header">
+		<style>#header {position:relative; height:112px}</style>
+				<p>Advice: Aboriginal and Torres Strait Islander viewers are advised that this website may contain images and voices of people who have died.</p>
+					<div class="abc_logo">
+					<img src="/indigenous/images/home/abc_logo.png" alt="ABC Logo"/>
+                    
+				</div>
+				<div class="header_title">
+                    Indigenous
+				</div>
+				<!-- temp xmas break message (disabled) -->
+	<span style="display:none; position:absolute;top:20px;left:50px;color:#ffffff;font-size:12px;padding:0px 10px 2px 10px">ABC Indigenous Gateway would like to thank you for all of your support in 2012. We look forward to bringing you an exciting, new slate of programs in 2013.</span>			
+			</div>
+<!-- end header.inc -->
+
+
+		<div class="page">
+		<!-- start nav.inc -->
+<div id="nav">
+	
+	<div class="hlist">
+		<!-- main navigation: horizontal list -->
+		<ul>
+			<li id="navhome"><a href="/indigenous/default.htm">HOME</a></li>
+			<li id="navnews"><a href="/indigenous/news/all_indigenous/default.htm">NEWS</a></li>
+			<!-- <li id="navopinion"><a href="/indigenous/your_voice/default.htm">OPINION</a></li> -->
+			<li id="navprograms"><a href="/indigenous/programs/default.htm">PROGRAMS</a></li>
+			<li id="navtvvideo"><a href="/indigenous/video/default.htm">VIDEO</a></li>
+			<li id="navradio"><a href="/indigenous/radio/current_affairs.htm">RADIO</a></li>
+			<li id="navfeatures"><a href="/indigenous/special_topics/">SPECIAL TOPICS</a></li>
+			<li id="navyourstories"><a href="/indigenous/your_voice/yourstories/default.htm">YOUR STORIES</a></li>
+			<li id="navartsevents"><a href="/indigenous/arts_events/default.htm">ARTS REVIEWS</a></li>
+			<li id="navmap"><a href="/indigenous/map/default.htm">LANGUAGE MAP</a></li>
+		</ul>
+	</div>
+</div>
+<!-- end nav.inc -->
+										
+										
+										
+		
+        
+        
+			<div class="subcolumns">
+				<div class="content_area_a">
+
+                    <div id="innerfade-holder" class="container_16" >
+                            <div id="slider" class="grid_16">
+                                <div class="grid_10 alpha">
+                                    <ul id="portfolio-desc">
+                                    <!-- general Slide 1-4 txt -->											
+                                    <li>
+<div class="slideTxt">
+<h1><a title="News Online
+" href="http://www.abc.net.au/news/2014-12-11/indigenous-recognition-vote-could-be-delayed-pm-says/5962010">News Online</a></h1>
+<p class="reverse" id="slideIntro1">Prime Minister wants vote on Indigenous constitutional recognition on 50th anniversary of 1967 referendum<br></p>
+</div>
+</li>
+<li>
+<div class="slideTxt">
+<h1><a title="News Online
+" href="http://www.abc.net.au/news/2014-12-12/aboriginal-leaders-question-motive-behind-pms-constitution-push/5964088">News Online</a></h1>
+<p class="reverse" id="slideIntro1">Aboriginal leaders question motives behind PM Tony Abbott's push on Constitution<br></p>
+</div>
+</li>
+<li>
+<div class="slideTxt">
+<h1><a title="News Online
+" href="http://www.abc.net.au/news/2014-12-14/aboriginal-leaders-promote-better-understanding-local-culture/5964934">News Online</a></h1>
+<p class="reverse" id="slideIntro1">Victorian Aboriginal leaders promote better local understanding of culture, history<br></p>
+</div>
+</li>
+<li>
+<div class="slideTxt">
+<h1><a title="News Online
+" href="http://www.abc.net.au/news/2014-12-14/remote-communities-and-industry-gear-up-for-fracking-pr-battle/5966322">News Online</a></h1>
+<p class="reverse" id="slideIntro1">Indigenous groups band together to stop fracking on their land<br></p>
+</div>
+</li>
+
+
+                                    </ul>
+                                        
+                                     <ul id="portfolio">
+                                    <!-- general Slide 1-4 full img -->	
+                                    <li><a href="http://www.abc.net.au/news/2014-12-11/indigenous-recognition-vote-could-be-delayed-pm-says/5962010"><img src="/indigenous/images/transparent1px.gif" title="" caption="" width="800" height="450" style="background:url(http://www.abc.net.au/news/linkableblob/5322628/data/tony-abbott-speaks-at-sa-liberal-launch-data.jpg) #8B7765 no-repeat scroll; -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous;"></a></li>
+<li><a href="http://www.abc.net.au/news/2014-12-12/aboriginal-leaders-question-motive-behind-pms-constitution-push/5964088"><img src="/indigenous/images/transparent1px.gif" title="" caption="" width="800" height="450" style="background:url(http://www.abc.net.au/news/image/5961134-3x4-700x933.jpg) #8B7765 no-repeat scroll; -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous;"></a></li>
+<li><a href="http://www.abc.net.au/news/2014-12-14/aboriginal-leaders-promote-better-understanding-local-culture/5964934"><img src="/indigenous/images/transparent1px.gif" title="" caption="" width="800" height="450" style="background:url(http://www.abc.net.au/news/linkableblob/5965416/data/ngargee-tree-carolyn-brigs-myer-eidelson-data.jpg) #8B7765 no-repeat scroll; -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous;"></a></li>
+<li><a href="http://www.abc.net.au/news/2014-12-14/remote-communities-and-industry-gear-up-for-fracking-pr-battle/5966322"><img src="/indigenous/images/transparent1px.gif" title="" caption="" width="800" height="450" style="background:url(http://www.abc.net.au/news/linkableblob/5966318/data/a-meeting-of-indigenous-people-to-plan-anti-fracking-protests-data.jpg) #8B7765 no-repeat scroll; -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous;"></a></li>
+
+
+                                    </ul>
+                                        
+                                    <ul id="slide_nav">
+                                    <!-- general Slide 1-4 thumb img -->	
+                                    <li class="slide_0">
+<div class="thumbnail_img">
+<img title="Tony Abbott speaks at SA Liberal launch" width="103" height="57" src="/indigenous/images/transparent1px.gif" style="background:url(http://www.abc.net.au/news/image/5322628-1x1-150x150.jpg) #8B7765 no-repeat scroll top left; -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous;" />
+</div>
+<div class="thumbnail_txt">
+<p class="reverse">Prime Minister wants vote on Indigenous constitutional recognition on 50th anniversary of 1967 referendum</p>
+</div>
+</li>
+<li class="slide_1">
+<div class="thumbnail_img">
+<img title="NLC upset over Scullion no show" width="103" height="57" src="/indigenous/images/transparent1px.gif" style="background:url(http://www.abc.net.au/news/image/5961134-1x1-150x150.jpg) #8B7765 no-repeat scroll top left; -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous;" />
+</div>
+<div class="thumbnail_txt">
+<p class="reverse">Aboriginal leaders question motives behind PM Tony Abbott's push on Constitution</p>
+</div>
+</li>
+<li class="slide_2">
+<div class="thumbnail_img">
+<img title="Boon Warrung elder Carolyn Briggs, author Meyer Eidelson at the Ngargee tree" width="103" height="57" src="/indigenous/images/transparent1px.gif" style="background:url(http://www.abc.net.au/news/image/5965416-1x1-150x150.jpg) #8B7765 no-repeat scroll top left; -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous;" />
+</div>
+<div class="thumbnail_txt">
+<p class="reverse">Victorian Aboriginal leaders promote better local understanding of culture, history</p>
+</div>
+</li>
+<li class="slide_3">
+<div class="thumbnail_img">
+<img title="A meeting of Indigenous people to plan anti-fracking protests" width="103" height="57" src="/indigenous/images/transparent1px.gif" style="background:url(http://www.abc.net.au/news/image/5966318-1x1-150x150.jpg) #8B7765 no-repeat scroll top left; -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous;" />
+</div>
+<div class="thumbnail_txt">
+<p class="reverse">Indigenous groups band together to stop fracking on their land</p>
+</div>
+</li>
+
+
+                                    </ul>
+    
+                              </div>
+                                <div class="clear">&nbsp;</div>
+                            </div>
+                    </div>
+				</div>
+			</div>
+
+			<div class="subcolumns">
+             
+                        <div class="c75l content_area_b">
+                        <!-- indigenous news -->	
+                        					<div class="b_title">
+						<h2>Indigenous News</h2>
+					</div>
+
+					<div class="subcolumns">
+
+						<div class="c50l b1">
+
+							<div class="b1_title"></div>
+
+							<div class="b1_content">
+<div class="smallgrey">December 15, 2014 19:06:00</div>
+<div class="pb5 pt5"><a href="http://www.abc.net.au/news/2014-12-15/indigenous-doctors-graduating-in-record-numbers/5968914?site=indigenous&amp;topic=latest" class="orange big">Record number of Indigenous doctors graduate from the University of New South Wales</a></div>
+<div class="tabcont">A tiny percentage of medical practitioners in Australia are Indigenous, however this may not be the case in the future, as a record number of Indigenous doctors graduate at the University of New South Wales.<br><a href="/indigenous/news/default.htm" class="yw">More</a></div>
+
+
+								
+								<h4>News Just In</h4>
+								<ul>
+<li><a href="http://www.abc.net.au/news/2014-12-15/mildura27s-karla-raymond-and-son/5968182?site=indigenous&amp;topic=latest">Mildura's Karla Raymond and son</a></li>
+<li><a href="http://www.abc.net.au/news/2014-12-15/adac-still-waiting-for-access-to-port-augusta/5967554?site=indigenous&amp;topic=latest">ADAC still awaiting access to proposed Port Augusta rehab centre site</a></li>
+<li><a href="http://www.abc.net.au/news/2014-12-15/green-groups-and-aboriginal-land-council-protest-water-licenses/5967686?site=indigenous&amp;topic=latest">Green groups, Northern Land Council protest water allocations ahead of Supreme Court appeal</a></li>
+
+     
+								</ul>
+                               <span class="media article_img">
+                               <a class="media_link" href="/indigenous/news/all_indigenous/default.htm">All Indigenous News</a> 
+                                </span> 
+						
+							</div>
+						</div>
+
+						<div class="c50r b2">
+                		<!-- your voice -->
+						<!-- start opinion.inc -->
+<!-- start opinion.inc -->                      
+
+
+
+
+
+<div class="b2_title"></div>
+
+<div class="b2_content">
+<h4>Opinion</h4>
+
+<a href="http://www.abc.net.au/tv/bigideas/stories/2014/02/14/3943060.htm"><img src="/tv/bigideas/images/transparent1px.gif" height="90" width="160" alt="Leah Purcell: FOXTEL Screenwriters Address" style="background:#000 url(http://www.abc.net.au/tv/bigideas/images/179220035t_m2174236.jpg) center center" /></a>
+
+<h3><a href="http://www.abc.net.au/tv/bigideas/stories/2014/02/14/3943060.htm">Leah Purcell: FOXTEL Screenwriters Address</a></h3>
+<p class="small">Friday 14 February 2014</p>
+<p>As a writer, director and actor Leah Purcell is a compelling storyteller in her delivery of the annual FOXTEL Screenwriters Address. She doesn&#146;t back away from the confronting moments in her life and career; and presents an authentic and humorous story of optimism and resilience.</p>
+<span class="media comments_img"><a class="media_link" href="http://www.abc.net.au/tv/bigideas/stories/2014/02/14/3943060.htm#comments">Read comments </a></span>         
+</div>									
+                       		
+<!-- end opinion.inc --><!-- end opinion.inc -->
+
+
+						</div>
+					</div>
+
+                            
+                        </div>
+                        <div class="c25r teaser_sidebar" style="background: #fff;">
+                        <!-- coming up - sidebar -->	
+                              				
+						<div class="sidebar_content">
+							<a href="http://shop.abc.net.au/"><img src="/indigenous/images/abc_shop_logo_220x32.png" height="32" width="220" alt="ABC Shop" border="0" /></a>
+							<a href="https://shop.abc.net.au/products/redfern-now-4dvd-s1-and-2"><img src="/indigenous/images/shop_redfern_now_220x130_new.jpg" height="130" width="220" alt="Redfern Now" /></a>	
+			
+							<p><strong>REDFERN NOW, SERIES 1 &amp; 2 </strong> <br>is now available as a box set from ABC Shops<br>
+							<a href="https://shop.abc.net.au/products/redfern-now-4dvd-s1-and-2">Buy now &#187;</a></p>
+							<br />							
+						</div>
+
+
+
+                        </div>
+                 
+			</div>
+
+
+			<div class="subcolumns">
+				<div class="content_area_a">
+                	<!-- video tabs-->	
+                						<div class="content_a_title">
+						<h2>Video</h2>
+					</div>
+					<div class="jquery_tabs video_tab">
+					<h3>RECENTLY ADDED |</h3>
+<div class="tab-content">
+<div class="video_content"><a href="/indigenous/video/default.htm?src=http://www.abc.net.au/reslib/201412/r1369123_19298353.mp4&amp;title=Heywire winner Taihla Lavelle-Briggs&amp;autostart=true" class="vidLink" title="Heywire winner Taihla Lavelle-Briggs"><img title="Heywire winner Taihla Lavelle-Briggs" width="100" height="56" src="/indigenous/images/transparent1px.gif" style="background:url(http://www.abc.net.au/reslib/201412/r1368912_19293651.jpg) #8B7765 no-repeat scroll top left; -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous;">Heywire :<br>Heywire winner Taihla Lavelle-Briggs</a></div>
+<div class="video_content"><a href="/indigenous/video/default.htm?src=http://mpegmedia.abc.net.au/news/730/nt/video/201412/730d_RemoteMorgues_0512_1000k.mp4&amp;title=Dying to fix the problem of bush morgues in the Northern Territory&amp;autostart=true" class="vidLink" title="Dying to fix the problem of bush morgues in the Northern Territory"><img title="Dying to fix the problem of bush morgues in the Northern Territory" width="100" height="56" src="/indigenous/images/transparent1px.gif" style="background:url(http://www.abc.net.au/reslib/201412/r1367157_19257908.jpg) #8B7765 no-repeat scroll top left; -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous;">Stateline NT :<br>Dying to fix the problem of bush morgues in the Northern Territory</a></div>
+<div class="video_content"><a href="/indigenous/video/default.htm?src=http://www.abc.net.au/7.30/stories/2014/12/08/4144705-mediarss.xml&amp;title=Remote Aboriginal communities face closure, leaders voice concerns&amp;autostart=true" class="vidLink" title="Remote Aboriginal communities face closure, leaders voice concerns"><img title="Remote Aboriginal communities face closure, leaders voice concerns" width="100" height="56" src="/indigenous/images/transparent1px.gif" style="background:url(http://www.abc.net.au/reslib/201412/r1366315_19239933.jpg) #8B7765 no-repeat scroll top left; -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous;">7.30 :<br>Remote Aboriginal communities face closure, leaders voice concerns</a></div>
+<div class="video_content"><a href="/indigenous/video/default.htm?src=http://mpegmedia.abc.net.au/news/7pm/sa/video/201412/7PMa_IndigHousing_0712_1000k.mp4&amp;title=City housing help for unemployed to move to jobs&amp;autostart=true" class="vidLink" title="City housing help for unemployed to move to jobs"><img title="City housing help for unemployed to move to jobs" width="100" height="56" src="/indigenous/images/transparent1px.gif" style="background:url(http://www.abc.net.au/news/image/5952464-16x9-100x56.jpg) #8B7765 no-repeat scroll top left; -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous;">7pm TV News SA :<br>City housing help for unemployed to move to jobs</a></div>
+<div class="video_content"><a href="/indigenous/video/default.htm?src=http://www.abc.net.au/news/2014-12-07/parks-and-aborigines-to-co-operate-on-jobs/5949666/mediarss.xml?site=news&amp;title=Parks, Aboriginal community cooperate on creating jobs in Tasmanias south-east&amp;autostart=true" class="vidLink" title="Parks, Aboriginal community cooperate on creating jobs in Tasmania's south-east"><img title="Parks, Aboriginal community cooperate on creating jobs in Tasmania's south-east" width="100" height="56" src="/indigenous/images/transparent1px.gif" style="background:url(http://www.abc.net.au/reslib/201412/r1365418_19221727.jpg) #8B7765 no-repeat scroll top left; -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous;">News Online :<br>Parks, Aboriginal community cooperate on creating jobs in Tasmania's south-east</a></div>
+<div class="video_content"><a href="/indigenous/video/default.htm?src=http://www.abc.net.au/lateline/stories/2014/12/05/4143518-mediarss.xml&amp;title=Call for targets to reduce indigenous incarceration&amp;autostart=true" class="vidLink" title="Call for targets to reduce indigenous incarceration"><img title="Call for targets to reduce indigenous incarceration" width="100" height="56" src="/indigenous/images/transparent1px.gif" style="background:url(http://www.abc.net.au/reslib/201412/r1365507_19223034.jpg) #8B7765 no-repeat scroll top left; -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous;">Lateline :<br>Call for targets to reduce indigenous incarceration</a></div>
+<div class="video_content"><a href="/indigenous/video/default.htm?src=http://mpegmedia.abc.net.au/news/730/tas/video/201412/730h_BrunyPartner_0512_1000k.mp4&amp;title=Aboriginal partnership&amp;autostart=true" class="vidLink" title="Aboriginal partnership"><img title="Aboriginal partnership" width="100" height="56" src="/indigenous/images/transparent1px.gif" style="background:url(http://www.abc.net.au/reslib/201412/r1365418_19221727.jpg) #8B7765 no-repeat scroll top left; -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous;">Stateline Tasmania :<br>Aboriginal partnership</a></div>
+</div>
+
+
+                                        <h3>INDIGENOUS</h3>
+<div class="tab-content">
+<div class="video_content"><a href="/indigenous/video/default.htm?src=rtmp://cp44823.edgefcs.net/ondemand/flash/tv/streams/promos/2101_ABC1_88_30_Remake_DS_hi.flv&amp;title=88, premieres Thursday 30 January at 8:30pm, ABC1.&amp;autostart=true" class="vidLink" title="88, premieres Thursday 30 January at 8:30pm, ABC1."><img title="88, premieres Thursday 30 January at 8:30pm, ABC1." width="100" height="56" src="/indigenous/images/transparent1px.gif" style="background:url(http://www.abc.net.au/reslib/201401/r1228645_16176899.gif) #8B7765 no-repeat scroll top left; -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous;">Indigenous :<br>88, premieres Thursday 30 January at 8:30pm, ABC1.</a></div>
+<div class="video_content"><a href="/indigenous/video/default.htm?src=rtmp://cp44823.edgefcs.net/ondemand/flash/tv/streams/promos/1701_ABC1_MysteryRoad_30_DS_hi.flv&amp;title=Mystery Road, premieres Sunday 26 January at 8:30pm, ABC1.&amp;autostart=true" class="vidLink" title="Mystery Road, premieres Sunday 26 January at 8:30pm, ABC1."><img title="Mystery Road, premieres Sunday 26 January at 8:30pm, ABC1." width="100" height="56" src="/indigenous/images/transparent1px.gif" style="background:url(http://www.abc.net.au/reslib/201401/r1228054_16162081.gif) #8B7765 no-repeat scroll top left; -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous;">Indigenous :<br>Mystery Road, premieres Sunday 26 January at 8:30pm, ABC1.</a></div>
+<div class="video_content"><a href="/indigenous/video/default.htm?src=rtmp://cp44823.edgefcs.net/ondemand/flash/tv/streams/indigenous/eltonsmoments_fayeblanch.mp4&amp;title=Eltons Moments - Faye Blanch&amp;autostart=true" class="vidLink" title="Elton's Moments - Faye Blanch"><img title="Elton's Moments - Faye Blanch" width="100" height="56" src="/indigenous/images/transparent1px.gif" style="background:url(http://www.abc.net.au/reslib/201307/r1149701_14396945.gif) #8B7765 no-repeat scroll top left; -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous;">Indigenous :<br>Elton's Moments - Faye Blanch</a></div>
+<div class="video_content"><a href="/indigenous/video/default.htm?src=rtmp://cp44823.edgefcs.net/ondemand/flash/tv/streams/compass/compass_2013_ep19_promo.mp4&amp;title=Compass, Archie Roach, Sunday 7 July at 6:30pm, ABC1.&amp;autostart=true" class="vidLink" title="Compass, Archie Roach, Sunday 7 July at 6:30pm, ABC1."><img title="Compass, Archie Roach, Sunday 7 July at 6:30pm, ABC1." width="100" height="56" src="/indigenous/images/transparent1px.gif" style="background:url(http://www.abc.net.au/reslib/201307/r1139119_14108148.gif) #8B7765 no-repeat scroll top left; -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous;">Indigenous :<br>Compass, Archie Roach, Sunday 7 July at 6:30pm, ABC1.</a></div>
+<div class="video_content"><a href="/indigenous/video/default.htm?src=rtmp://cp44823.edgefcs.net/ondemand/flash/tv/streams/indigenous/eltonsmoments_carl.mp4&amp;title=Eltons Moments - Karl Telfer&amp;autostart=true" class="vidLink" title="Elton's Moments - Karl Telfer"><img title="Elton's Moments - Karl Telfer" width="100" height="56" src="/indigenous/images/transparent1px.gif" style="background:url(http://www.abc.net.au/reslib/201306/r1127125_13855049.gif) #8B7765 no-repeat scroll top left; -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous;">Indigenous :<br>Elton's Moments - Karl Telfer</a></div>
+<div class="video_content"><a href="/indigenous/video/default.htm?src=http://www.abc.net.au/tv/marngrook/xml/20120913.xml&amp;title=Episode 26&amp;autostart=true" class="vidLink" title="Episode 26"><img title="Episode 26" width="100" height="56" src="/indigenous/images/transparent1px.gif" style="background:url(http://www.abc.net.au/tv/marngrook/img/ep/20120913_220x124.jpg) #8B7765 no-repeat scroll top left; -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous;">Marngrook Footy Show :<br>Episode 26</a></div>
+<div class="video_content"><a href="/indigenous/video/default.htm?src=http://www.abc.net.au/tv/marngrook/xml/20120906.xml&amp;title=Episode 25&amp;autostart=true" class="vidLink" title="Episode 25"><img title="Episode 25" width="100" height="56" src="/indigenous/images/transparent1px.gif" style="background:url(http://www.abc.net.au/tv/marngrook/img/ep/20120906_220x124.jpg) #8B7765 no-repeat scroll top left; -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous;">Marngrook Footy Show :<br>Episode 25</a></div>
+</div>
+
+
+					</div>
+				</div>
+			</div>
+            
+			<div class="subcolumns">
+            	<div class="content_area_e">
+                    <div class="c50l e1">
+                        <!-- your stories -->	
+                        <!-- start blog.htm -->
+
+					<div class="e2_title">
+						<h2>Your Stories</h2>
+					</div>
+
+					<div class="e1_content">
+						<div class="e1_img">
+							<a href="http://www.abc.net.au/indigenous/stories/s3877347.htm"><img src="/indigenous/images/transparent1px.gif" height="90" width="160" alt="Redfern Now Special Event" style="background:#000 url(http://www.abc.net.au/indigenous/stories/images/rn_s2_even_m2163150.jpg) center center no-repeat" /></a>
+						</div>
+						<div class="e1_text">
+							<p class="small">Thursday 24 October 2013</p>
+							<h3><a href="http://www.abc.net.au/indigenous/stories/s3877347.htm">Redfern Now Special Event</a></h3>
+							<p>Redfern Celebrates <i>Redfern Now</i> with a special outdoor event on the Block!</p>
+                             
+						</div>
+					</div>
+<!-- end blog.htm -->
+
+                    </div>
+                    <div class="c50r e2">
+                        <!-- arts review -->	
+                        
+
+					<div class="e2_title">
+						<h2>Arts Reviews</h2>
+					</div>
+
+					<div class="e2_content">
+						<div class="e2_img">
+							<a href="http://www.abc.net.au/indigenous/stories/s3740208.htm"><img src="/indigenous/images/transparent1px.gif" height="90" width="160" alt="Warakurna: All the Stories Got into our Minds and Eyes" style="background:#000 url(http://www.abc.net.au/indigenous/stories/images/land_manag_m2133402.jpg) no-repeat top center;" /></a>
+						</div>
+						<div class="e2_text">
+							<p class="small">Monday 18 March 2013</p>
+							<h3><a href="http://www.abc.net.au/indigenous/stories/s3740208.htm">Warakurna: All the Stories Got into our Minds and Eyes</a></h3>
+							<p><i>Warakurna: All the Stories Got into our Minds and Eyes</i> marks the arrival of a new and exciting art movement and it should not to be missed.</p>
+                            <span class="media comments_img"><a class="media_link" href="http://www.abc.net.au/indigenous/stories/s3740208.htm#comments">Read comments <!--#include virtual="/cgi-bin/tmb/topicmessagetotal.pl?b=118&tn=3740208" --></a></span> 
+						</div>
+					</div>
+
+
+                    </div>
+                </div>
+			</div>
+
+
+			<div class="subcolumns">
+            	<div class="content_area_e">
+                    <div class="c50l e1">
+                        <!-- special topics -->	
+                        <!-- start /indigenous/includes/reskin/special_topics.inc bulletin Special Topics Homepage in Site Producer -->
+
+					<div class="e1_title">
+						<h2>Special Topics</h2>
+					</div>
+
+					<div class="e1_content">
+						<div class="e1_img">
+							<a href="/indigenous/features/naidoc/"><img src="http://www.abc.net.au/reslib/201407/r1297983_17728556.jpg" alt="NAIDOC Week 2014" width="160" height="90" /></a>
+						</div>
+						<div class="e1_text">
+							<h3><a href="/indigenous/features/naidoc/">NAIDOC Week</a></h3>
+							<p>The National NAIDOC Committee encourages people across the country to embrace the 2014 National NAIDOC theme – Serving Country: Centenary & Beyond.
+</p>
+						</div>
+					</div>
+
+<!-- end /indigenous/includes/reskin/special_topics.inc -->
+
+                    </div>
+                    <div class="c50r e2">
+                        <!-- language map -->	
+                        
+					<div class="e1_title">
+						<h2>Language Map</h2>
+					</div>
+                    <div class="e2_content">
+						<div class="e2_img">
+							<a href="/indigenous/map/default.htm"><img src="/indigenous/images/thumb_map.gif" alt="language map" width="160" height="90" /></a>
+						</div>
+						<div class="e2_text">
+						<p>The Indigenous Language Map is a representation describing
+							Aboriginal Ausralia. This map indicates only the general locatoin
+							of larger groupings of people which may include smaller groups
+							such as clans, dialects or individual languages in a group.</p>
+						<a href="/indigenous/map/default.htm">Language Map &gt; </a>
+						</div>
+					</div>
+
+                    </div>
+                </div>
+			</div>
+
+			<div class="subcolumns">
+            	<div class="content_area_f">
+                    <div class="c50l" >
+                        <div class="subcolumns">
+                            <div class="c50l e1">
+                            <!-- message board -->	
+                            							<div class="e1_title">
+								<h2>Message Boards</h2>
+							</div>
+
+							<div class="f1_content">
+<h3><a href="http://www2b.abc.net.au/tmb/Client/Message.aspx?b=118&m=1096&ps=20&dm=1&pd=2&am=1096#m1096">Black Comedy</a></h3>
+<p>&#147;Please leave all of your comments about Black Comedy here. :)&#148;</p>
+<p class="small">by ABC (Moderator) <br />3/10/2014 3:47:07 PM</p>
+<a href="http://www2b.abc.net.au/tmb/Client/Board.aspx?b=118">View All Message Board Topics</a>
+							</div>							
+    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c50r" >
+                        <div class="subcolumns">
+                            <div class="c50l f3">
+                            <!-- facebook -->	
+                                                        <div class="f3_title">
+								<h2>Follow Us</h2>
+							</div>
+
+							<div class="f3_content">
+								<div class="f3_img">
+									<a href="https://www.facebook.com/ABCIndigenous"><img src="images/home/facebook.gif" alt="Follow ABC Indigenous on Facebook" style="padding-top:5px" /></a>
+								</div>
+								<div class="f3_img_link">
+									<a href="https://www.facebook.com/ABCIndigenous">Follow ABC Indigenous on Facebook</a>
+								</div>
+								<div class="f3_img">
+									<a href="https://twitter.com/ABCIndigenous"><img src="images/home/twitter.gif" alt="Follow ABC Indigenous on Twitter" style="padding-top:5px" /></a>
+								</div>
+								<div class="f3_img_link">
+									<a href="https://twitter.com/ABCIndigenous">Follow ABC Indigenous on Twitter</a>
+								</div>
+							</div>												
+    
+                            </div>
+                            <div class="c50r f4">
+                            <!--iview -->		
+                            
+							<div class="f4_content">
+                          
+							<div class="iviewPromoLogo"><a href="/iview/"><img src="/indigenous/programs/images/logo_iview_91x27.png" width="91" height="27" alt="iview" /></a></div>
+                             <div class="iview">
+                                <span class="media iview_img">
+                                   <a class="media_link"
+										href="http://www.abc.net.au/iview/#/indigenous">All Indigenous videos</a>
+                                </span> 
+                          	</div>												
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+			</div>
+
+		</div>
+
+	</div>
+    
+	<div id="footer"> 
+		<div class="footer_content">
+           							
+
+			<h2>More ABC Indigenous</h2>
+            <!-- <a class="footer_link"
+				href="http://www.abc.net.au/indigenous/education/default.htm">Resources</a> -->
+			<!-- <a class="footer_link"
+				href="http://www.abc.net.au/indigenous/about/indigenous_employment.htm">ABC
+				Indigenous Employment</a> -->
+            <!-- <a class="footer_link"
+				href="http://www.abc.net.au/indigenous/education/ethics_codes.htm">Ethics
+				and Codes of Conduct</a> -->
+            <a class="footer_link"
+				href="http://www.abc.net.au/indigenous/about/default.htm">About</a>
+			<a class="footer_link"
+				href="http://www.abc.net.au/indigenous/contact/default.htm">Contact</a>
+		</div>	
+	</div>
+    	</div>
+	
+<!--noindex-->
+	<div id="abcFooter">
+		<div id="abcFooterWrapper">
+			<a id="abcFooterLogo" href="http://www.abc.net.au"><img src="http://www.abc.net.au/res/abc/logos/footer_logo.png" width="112" height="34" alt="abc.net.au" /></a>
+			<ul id="abcFooterLinks">
+				<li class="abcFooterFirst"><a href="http://www.abc.net.au/">ABC Home</a></li>
+				<li><a href="http://about.abc.net.au">About the ABC</a></li>
+				<li><a href="http://www.abc.net.au/careers/">Careers</a></li>
+				<li><a href="http://www.abc.net.au/services/">ABC Services</a></li>
+				<li><a href="http://about.abc.net.au/talk-to-the-abc/">ABC Contacts</a></li>
+			</ul>
+			<ul id="abcFooterLegal">
+				<li class="abcFooterFirst"><a href="http://www.abc.net.au/copyright.htm">&#169; 2014 ABC</a></li>
+				<li><a href="http://www.abc.net.au/conditions.htm">Conditions of Use</a></li>
+				<li><a href="http://www.abc.net.au/privacy.htm">Privacy Policy</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="http://www.abc.net.au/res/libraries/stats/abc.stats.js"></script>
+	<noscript>
+		<img alt="dcsimg" id="dcsimg" width="1" height="1" src="//statse.webtrendslive.com/dcsg85fae000004n0vfjpj8oa_9m4q/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=10.2.10&amp;dcssip=www.abc.net.au" />
+	</noscript>
+
+	<!-- START Nielsen Online SiteCensus V6.0 -->
+	<!-- COPYRIGHT 2010 Nielsen Online -->
+	<script type="text/javascript" src="//secure-au.imrworldwide.com/v60.js"></script>
+	<script type="text/javascript">
+		try {
+		  var pvar = { cid: "abc-aust", content: "0", server: "secure-au" };
+		  var trac = nol_t(pvar);
+		  trac.record().post();
+		} catch (er) {
+		  // do nothing
+		}
+	</script>
+	<noscript>
+		<div>
+			<img src="//secure-au.imrworldwide.com/cgi-bin/m?ci=abc-aust&amp;cg=0&amp;cc=1&amp;ts=noscript" width="1" height="1" alt="" />
+		</div>
+	</noscript>
+	<!-- END Nielsen Online SiteCensus V6.0 -->
+
+	<!-- Google Tag Manager -->
+	<script type="text/javascript">
+	// <![CDATA[
+		(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PB2GX');
+	// ]]>
+	</script>
+	<noscript>
+		<iframe src="//www.googletagmanager.com/ns.html?id=GTM-PB2GX" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+	</noscript>
+	<!-- End Google Tag Manager -->
+
+<!--endnoindex-->
+
+</body>
+</html>

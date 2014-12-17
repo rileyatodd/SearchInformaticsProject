@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
+  resources :hits
+
   get 'welcome/index'
+
+  get '/search' => 'application#search'
+
+  post '/crawl' => 'application#crawl'
+
+  post '/index' => 'application#index_pages'
 
   root to: 'welcome#index'
 

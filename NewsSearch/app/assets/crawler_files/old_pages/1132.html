@@ -1,0 +1,952 @@
+<!DOCTYPE html><html><head><script>(function(){(function(){function e(a){this.t={};this.tick=function(a,c,b){var d=void 0!=b?b:(new Date).getTime();this.t[a]=[d,c];if(void 0==b)try{window.console.timeStamp("CSI/"+a)}catch(e){}};this.tick("start",null,a)}var a;window.performance&&(a=window.performance.timing);var f=a?new e(a.responseStart):new e;window.jstiming={Timer:e,load:f};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick("_wtsrt",void 0,c),b.tick("wtsrt_",
+"_wtsrt",d),b.tick("tbsd_","wtsrt_"))}try{a=null,window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick("_tbnd",void 0,window.chrome.csi().startE),b.tick("tbnd_","_tbnd",c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick("_tbnd",void 0,window.external.startE),b.tick("tbnd_","_tbnd",c))),a&&(window.jstiming.pt=a)}catch(g){}})();})();
+</script><title>Google Finance: Stock market quotes, news, currency conversions & more</title><meta name="Description" content="Get real-time stock quotes & charts, financial news, currency conversions, or track your portfolio with Google Finance."><meta http-equiv="X-UA-Compatible" content="IE=10"><link rel="stylesheet" type="text/css" href="/finance/f/finance_us-3578168175.css"><link rel="stylesheet" type="text/css" href="/finance/_/ss/a/ver=-1kzhpkx9j35z4/am=!nhF7v0YMb2iwhB8q/bf=/r=O"><link rel="icon" type="image/vnd.microsoft.icon" href="/finance/favicon.ico"><style>#gbar,#guser{font-size:13px;padding-right:8px;padding-top:4px !important;}#gbar{padding-left:8px;height:22px}#guser{padding-bottom:7px !important;text-align:right}.gbh,.gbd{border-top:1px solid #c9d7f1;font-size:1px}.gbh{height:0;position:absolute;top:24px;width:100%}@media all{.gb1{height:22px;margin-right:.5em;vertical-align:top}#gbar{float:left}}a.gb1,a.gb4{text-decoration:underline !important}a.gb1,a.gb4{color:#00c !important}.gbi .gb4{color:#dd8e27 !important}.gbf .gb4{color:#900 !important}</style><script></script><script>
+      function _rpt() {}
+      function _tck() {}
+    </script><script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-40765809-1', {
+      'allowLinker': true,
+      'cookiePath': '/finance'
+    });
+    ga('send', 'pageview');
+    </script></head><body><div class=fjfe-bodywrapper><div id=fjfe-real-body class=g-doc><input type="text" name="hist_state" id="hist_state" style="display:none;"><iframe id="hist_frame" name="hist_frame" class=invfr tabindex="-1"></iframe><iframe src="/finance/_/js/a/b/rt=h/ver=STIlHaT6MgE.en_US./am=!nhF7v0YMb2iwhB8q/d=0" class=invfr tabindex="-1"></iframe><div id=gbar><nobr><a class=gb1 href="https://www.google.com/webhp?tab=ew">Search</a> <a class=gb1 href="http://www.google.com/imghp?hl=en&tab=ei">Images</a> <a class=gb1 href="http://maps.google.com/maps?hl=en&tab=el">Maps</a> <a class=gb1 href="https://play.google.com/?hl=en&tab=e8">Play</a> <a class=gb1 href="http://www.youtube.com/?tab=e1">YouTube</a> <a class=gb1 href="http://news.google.com/nwshp?hl=en&tab=en">News</a> <a class=gb1 href="https://mail.google.com/mail/?tab=em">Gmail</a> <a class=gb1 href="https://drive.google.com/?tab=eo">Drive</a> <a class=gb1 style="text-decoration:none" href="http://www.google.com/intl/en/options/"><u>More</u> &raquo;</a></nobr></div><div id=guser width=100%><nobr><span id=gbn class=gbi></span><span id=gbf class=gbf></span><span id=gbe></span><a  href="http://www.google.com/support/finance?hl=en" class=gb4>Help</a> | <a target=_top id=gb_70 href="https://accounts.google.com/ServiceLogin?service=finance&passive=1209600&continue=http://www.google.com/finance&followup=http://www.google.com/finance" class=gb4>Sign in</a></nobr></div><div class=gbh style=left:0></div><div class=gbh style=right:0></div><div id=fjfe-click-wrapper><script>
+(function() {
+  var l = window.location;
+  var q = l.search ? l.search.substr(1) : '';
+  var h = l.hash ? l.hash.substr(1) : '';
+  var p = '/finance';
+  var ss = 'stockscreener';
+  var conn = window.history && window.history.pushState ? '/' : '#';
+  if (l.pathname == p + '/' + ss) {
+    if (h) l.href = p + conn + ss + '?' + q + '&' + h;
+  } else if (l.pathname != p && h) {
+    l.href = p + l.hash;
+  }
+  if (h) {
+document.getElementById('fjfe-click-wrapper').style.display = 'none';
+  }
+})();
+</script><div id=gf-head class="g-section g-tpl-75-25 g-split"><div class="g-unit g-first"><div class=fjfe-logo><a href="/finance/?ei=7HOPVKuuCMyiqQH8o4GwAQ"><img src="/finance/f/logo_us-115376669.gif" alt="Google Finance"></a></div><div id=gf-search class=fjfe-search><form method="get" action="/finance" autocomplete="off"><input class=fjfe-searchbox-input name=q type=text tabindex=1 value=""></input><span class=fjfe-searchbox-button-wrapper><span class=fjfe-searchbox-button-wrapper2><input class=fjfe-searchbox-button type=submit tabindex=2 value="Get quotes"></input></span></span><input type=hidden name="ei" value="7HOPVKuuCMyiqQH8o4GwAQ"></input></form></div></div><div class="g-unit fjfe-promo"><div id="ad2-target" class="id-ad2-target"></div></div></div><div class=elastic><div id=app class="g-section g-tpl-left-11p4em"><div class="g-unit g-first"><div id=gf-nav><div class=fjfe-nav-nav><ul class=fjfe-nav id=navmenu><li class="fjfe-nav-selected">Markets<li class=fjfe-nav-item><a href="/finance/market_news?ei=7HOPVKuuCMyiqQH8o4GwAQ"><div>News</div></a><li class=fjfe-nav-item><a href="/finance/portfolio?action=view&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ"><div>Portfolios</div></a><li class=fjfe-nav-item><a href="/finance/stockscreener?ei=7HOPVKuuCMyiqQH8o4GwAQ"><div>Stock screener</div></a><li class=fjfe-nav-item><a href="/finance/domestic_trends?ei=7HOPVKuuCMyiqQH8o4GwAQ"><div>Google Domestic Trends</div></a></ul></div><div class="fjfe-recentquotes fjfe-recentquotes-noquote"><h4>Recent Quotes <span class="fjfe-recentquotes-duration">(<a href="//www.google.com/history/optout?hl=en">30 days</a>)</span></h4><div class=fjfe-recentquotes-noquote-notification>You have no recent quotes</div><div class=fjfe-recentquotes-quotes><div class="fjfe-toggle fjfe-toggle-button"><span class=fjfe-chg-toggle>chg</span> | <span class=fjfe-perc-toggle>%</span></div><div class=fjfe-table-div><table class=fjfe-recentquotes-table id=rq width=100%></table></div></div></div></div></div><div class=g-unit id=gf-viewc><div class=fjfe-content>
+<div class="g-section sfe-break-bottom-13">
+<div class="hdg top appbar-hide"><div class="g-section g-tpl-50-50 g-split">
+<div class="g-unit g-first"><h3>Market summary</h3></div>
+<div class="g-unit">Dec 15 - Markets closed
+</div>
+</div></div>
+</div>
+<div id=reorder class="g-section g-tpl-right-1 id-reorder">
+<div class="g-unit g-first">
+<div class="g-c">
+<div id=ad class=sfe-break-bottom-16>
+<div id=ad-label class="id-ad-label invisible">
+Advertisement</div>
+<div id=ad-target class="id-ad-target ads-300-250"></div>
+</div>
+<div>
+</div>
+<div class=rgt-reorder>
+<div id=portfolios
+>
+<div id=home-portfolios class=id-home-portfolios>
+</div>
+</div><script>_tck('aft');</script>
+<div id=markets
+>
+<div id=markets>
+<div class=hdg><div class=float><h3>World markets</h3></div>
+<div class="gf-reorder-btn SP_menu_button"></div>
+</div>
+<div class=sfe-section>
+<table class=quotes width=100%><tbody><tr>
+<td class=symbol><a href="/finance?q=SHA:000001&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >Shanghai
+<td class=price><span id="ref_7521596_l">2,953.42</span>
+<td class="change"><span class=chg id="ref_7521596_c">+15.25</span> <span class=chg id="ref_7521596_cp">(0.52%)</span><tr>
+<td class=symbol><a href="/finance?q=INDEXNIKKEI:NI225&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >Nikkei 225
+<td class=price><span id="ref_15513676_l">17,099.40</span>
+<td class="change"><span class=chb id="ref_15513676_c">0.00</span> <span class=chb id="ref_15513676_cp">(0.00%)</span><tr>
+<td class=symbol><a href="/finance?q=INDEXHANGSENG:HSI&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >Hang Seng Index
+<td class=price><span id="ref_13414271_l">23,027.85</span>
+<td class="change"><span class=chr id="ref_13414271_c">-221.35</span> <span class=chr id="ref_13414271_cp">(-0.95%)</span><tr>
+<td class=symbol><a href="/finance?q=TPE:TAIEX&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >TSEC
+<td class=price><span id="ref_9947405_l">8,985.63</span>
+<td class="change"><span class=chr id="ref_9947405_c">-41.70</span> <span class=chr id="ref_9947405_cp">(-0.46%)</span><tr>
+<td class=symbol><a href="/finance?q=INDEXFTSE:UKX&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >FTSE 100
+<td class=price><span id="ref_12590587_l">6,182.72</span>
+<td class="change"><span class=chr id="ref_12590587_c">-117.91</span> <span class=chr id="ref_12590587_cp">(-1.87%)</span><tr>
+<td class=symbol><a href="/finance?q=INDEXSTOXX:SX5E&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >EURO STOXX 50
+<td class=price><span id="ref_7354851_l">2,982.90</span>
+<td class="change"><span class=chr id="ref_7354851_c">-84.42</span> <span class=chr id="ref_7354851_cp">(-2.75%)</span><tr>
+<td class=symbol><a href="/finance?q=INDEXEURO:PX1&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >CAC 40
+<td class=price><span id="ref_9237947_l">4,005.38</span>
+<td class="change"><span class=chr id="ref_9237947_c">-103.55</span> <span class=chr id="ref_9237947_cp">(-2.52%)</span><tr>
+<td class=symbol><a href="/finance?q=INDEXTSI:OSPTX&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >S&amp;P TSX
+<td class=price><span id="ref_9291235_l">13,705.14</span>
+<td class="change"><span class=chr id="ref_9291235_c">-26.76</span> <span class=chr id="ref_9291235_cp">(-0.19%)</span><tr>
+<td class=symbol><a href="/finance?q=INDEXASX:XJO&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >S&amp;P/ASX 200
+<td class=price><span id="ref_14240693_l">5,163.30</span>
+<td class="change"><span class=chr id="ref_14240693_c">-22.80</span> <span class=chr id="ref_14240693_cp">(-0.44%)</span><tr>
+<td class=symbol><a href="/finance?q=INDEXBOM:SENSEX&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >BSE Sensex
+<td class=price><span id="ref_15173681_l">27,319.56</span>
+<td class="change"><span class=chr id="ref_15173681_c">-31.12</span> <span class=chr id="ref_15173681_cp">(-0.11%)</span><tr>
+<td class=symbol><a href="/finance?q=TLV:T25&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >TA25
+<td class=price><span id="ref_835285966959493_l">1,478.39</span>
+<td class="change"><span class=chg id="ref_835285966959493_c">+1.56</span> <span class=chg id="ref_835285966959493_cp">(0.11%)</span><tr><tr>
+<td class=symbol><a href="/finance?q=INDEXSWX:SMI&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >SMI
+<td class=price><span id="ref_1052581216806242_l">8,712.82</span>
+<td class="change"><span class=chr id="ref_1052581216806242_c">-182.53</span> <span class=chr id="ref_1052581216806242_cp">(-2.05%)</span><tr>
+<td class=symbol><a href="/finance?q=INDEXVIE:ATX&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >ATX
+<td class=price><span id="ref_1066235873319497_l">2,066.73</span>
+<td class="change"><span class= id="ref_1066235873319497_c"></span><tr>
+<td class=symbol><a href="/finance?q=INDEXBVMF:IBOV&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >IBOVESPA
+<td class=price><span id="ref_851377182412228_l">47,018.68</span>
+<td class="change"><span class=chr id="ref_851377182412228_c">-983.30</span> <span class=chr id="ref_851377182412228_cp">(-2.05%)</span><tr>
+<td class=symbol><a href="/finance?q=INDEXBKK:SET&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >SET
+<td class=price><span id="ref_192906426752897_l">1,478.49</span>
+<td class="change"><span class=chr id="ref_192906426752897_c">-36.46</span> <span class=chr id="ref_192906426752897_cp">(-2.41%)</span><tr>
+<td class=symbol><a href="/finance?q=INDEXIST:XU100&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >BIST100
+<td class=price><span id="ref_456528970194751_l">82,804.43</span>
+<td class="change"><span class=chr id="ref_456528970194751_c">-421.95</span> <span class=chr id="ref_456528970194751_cp">(-0.51%)</span><tr>
+<td class=symbol><a href="/finance?q=INDEXBME:IB&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >IBEX
+<td class=price><span id="ref_1054681020857808_l">9,903.90</span>
+<td class="change"><span class=chr id="ref_1054681020857808_c">-241.10</span> <span class=chr id="ref_1054681020857808_cp">(-2.38%)</span><tr>
+<td class=symbol><a href="/finance?q=WSE:WIG&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >WIG
+<td class=price><span id="ref_698684623076010_l">51,621.14</span>
+<td class="change"><span class=chr id="ref_698684623076010_c">-644.10</span> <span class=chr id="ref_698684623076010_cp">(-1.23%)</span><tr>
+<td class=symbol><a href="/finance?q=TADAWUL:TASI&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >TASI
+<td class=price><span id="ref_1095233500396574_l">7,904.91</span>
+<td class="change"><span class= id="ref_1095233500396574_c"></span><tr>
+<td class=symbol><a href="/finance?q=BCBA:IAR&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >MERVAL
+<td class=price><span id="ref_393322345722481_l">6,971.66</span>
+<td class="change"><span class=chr id="ref_393322345722481_c">-638.40</span> <span class=chr id="ref_393322345722481_cp">(-8.39%)</span>
+</table>
+</div>
+</div>
+</div>
+<div id=currencies
+>
+<div id=currencies>
+<div class=hdg><div class=float><h3>Currencies</h3></div>
+<div class="gf-reorder-btn SP_menu_button"></div>
+</div>
+<div class=sfe-section>
+<table class=quotes width=100%><tbody><tr>
+<td class=symbol><a href="/finance?q=EURUSD&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >EUR/USD</a>
+<td class=price>1.2443
+<td class="change chr">-0.0021 (-0.17%)<tr>
+<td class=symbol><a href="/finance?q=USDJPY&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >USD/JPY</a>
+<td class=price>117.8150
+<td class="change chr">-0.3545 (-0.30%)<tr>
+<td class=symbol><a href="/finance?q=GBPUSD&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >GBP/USD</a>
+<td class=price>1.5644
+<td class="change chr">-0.0080 (-0.51%)<tr>
+<td class=symbol><a href="/finance?q=USDCAD&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >USD/CAD</a>
+<td class=price>1.1656
+<td class="change chg">+0.0091 (0.79%)<tr>
+<td class=symbol><a href="/finance?q=USDHKD&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >USD/HKD</a>
+<td class=price>7.7528
+<td class="change chg">+0.0008 (0.01%)<tr>
+<td class=symbol><a href="/finance?q=USDCNY&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >USD/CNY</a>
+<td class=price>6.1890
+<td class="change chg">+0.0050 (0.08%)<tr>
+<td class=symbol><a href="/finance?q=AUDUSD&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >AUD/USD</a>
+<td class=price>0.8213
+<td class="change chg">+0.0003 (0.04%)
+</table>
+</div>
+</div>
+</div>
+<div id=bonds
+>
+<div id=bonds>
+<div class=hdg><div class=float><h3>Bonds</h3></div>
+<div class="gf-reorder-btn SP_menu_button"></div>
+</div>
+<div class=sfe-section>
+<table class=quotes width=100%><tbody><tr>
+<td class=symbol>3 Month
+<td class=price>0.01%
+<td class="change chb">0.00 (0.00%)<tr>
+<td class=symbol>6 Month
+<td class=price>0.08%
+<td class="change chb">0.00 (0.00%)<tr><tr>
+<td class=symbol>2 Year
+<td class=price>0.58%
+<td class="change chg">+0.01 (1.75%)<tr>
+<td class=symbol>5 Year
+<td class=price>1.57%
+<td class="change chg">+0.02 (1.29%)<tr>
+<td class=symbol>10 Year
+<td class=price>2.12%
+<td class="change chb">0.00 (0.00%)<tr>
+<td class=symbol>30 Year
+<td class=price>2.75%
+<td class="change chr">-0.01 (-0.36%)
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="g-unit">
+<div class="g-c sfe-break-right g-floatfix">
+<div class=sfe-section id=summary>
+<div id=summary-news-story>
+<div class="g-section news">
+<div id=fix-w class="news major">
+<span class=name>
+<a href="http://news.google.com/news/url?sa=T&amp;ct2=us&amp;fd=S&amp;url=http://www.foxbusiness.com/economy-policy/2014/12/15/russian-raises-key-interest-rate-to-17/&amp;cid=52778682556281&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ&amp;usg=AFQjCNFRxkMofLhqgOenNJsgOFG5ayVKfw" rel=nofollow  id=n-hp- >Russia Raises Key Interest Rate to&nbsp;17%</a>
+</span>
+<br>
+<div class=byline>
+<span class=src>Fox Business</span> - <span class=date>1 hour ago</span>
+</div>
+<!-- google_ad_section_end -->
+<div class=snippet>The Russian central bank said it has decided to hike its key interest rate to 17 percent from 10.5 percent. &quot;This decision is aimed at limiting substantially increased rouble depreciation risks and inflation risks,&quot; the central bank said in a statement.</div>
+<!-- google_ad_section_start -->
+<div class=rel-article>
+<a href="http://news.google.com/news/url?sa=T&amp;ct2=us&amp;fd=S&amp;url=http://www.washingtonpost.com/world/europe/as-ukraine-truce-holds-russia-vows-economic-pain/2014/12/15/cf450be2-8483-11e4-abcf-5a3d7b3b20b8_story.html%3Ftid%3Dpm_world_pop&amp;cid=52778682556281&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ&amp;usg=AFQjCNGW06Xc35sUBVFSxI2i5N0gTrQZQw" rel=nofollow  id=n-hp- >As Ukraine truce holds, Russia vows economic pain</a>&nbsp;&nbsp;<span class=byline>
+<span class=src>Washington Post</span>
+</span></div>
+<div class=rel-article>
+<a href="http://news.google.com/news/url?sa=T&amp;ct2=us&amp;fd=S&amp;url=http://www.ft.com/cms/s/0/dc3dcea6-8483-11e4-bae9-00144feabdc0.html&amp;cid=52778682556281&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ&amp;usg=AFQjCNEsw2H5NzKVu0jS1S5C-aBk71tgQg" rel=nofollow  id=n-hp- >Moscow lifts interest rate to 17%</a>&nbsp;&nbsp;<span class=byline>
+<span class=src>Financial Times</span>
+</span></div>
+<div class=rel-article>
+<span class=byline>
+<a href="http://news.google.com/news/url?sa=T&amp;ct2=us&amp;fd=S&amp;url=http://www.reuters.com/article/2014/12/15/us-russia-cbank-rates-idUSKBN0JT2II20141215&amp;cid=52778682556281&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ&amp;usg=AFQjCNHAmNHv66rmRrISfNg9Dwp3sNBplQ" rel=nofollow  class=rel id=n-hp- >Reuters UK</a>&nbsp;&nbsp;
+<a href="http://news.google.com/news/url?sa=T&amp;ct2=us&amp;fd=S&amp;url=http://sputniknews.com/politics/20141215/1015878045.html&amp;cid=52778682556281&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ&amp;usg=AFQjCNFFLPR1jU4OfRUJFmUa1GgVyB-vHg" rel=nofollow  class=rel id=n-hp- >Sputnik International</a>&nbsp;&nbsp;
+<a class=more-rel href="http://news.google.com/news/more?ncl=dU54S4jzxsGrN5M&amp;hl=en&amp;ned=us" rel=nofollow  id=n-r- >Related articles &raquo;</a>
+</span></div>
+</div>
+</div>
+</div>
+<div class=id-summary-chart><div class=sfe-home-chart>
+<div class=ic-chart><a href="/finance?q=INDEXDJX:.DJI,INDEXSP:.INX,INDEXNASDAQ:.IXIC&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" ><img src="/finance/chart?cht=c&amp;q=INDEXDJX:.DJI,INDEXSP:.INX,INDEXNASDAQ:.IXIC&amp;tlf=12h&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" height=130 width=250
+    id=mkt-chart class=id-mkt-chart 
+      onload="_tck('ic')" alt="Market Chart"></a></div>
+</div>
+<table id="sfe-mktsumm">
+<tr>
+<td class=legend><img alt="" class="SP_legend0 legend"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+<td><div class="name bld">
+<a href="/finance?q=INDEXDJX:.DJI&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >Dow Jones</a></div>
+<td class="bld"><span id="ref_983582_l">17,180.84</span>
+<td><span class="bld chr" id="ref_983582_c">-99.99</span>
+<td><span class="chr" id="ref_983582_cp">(-0.58%)</span>
+<tr>
+<td class=legend><img alt="" class="SP_legend1 legend"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+<td><div class="name bld">
+<a href="/finance?q=INDEXSP:.INX&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >S&amp;P 500</a></div>
+<td class="bld"><span id="ref_626307_l">1,989.63</span>
+<td><span class="bld chr" id="ref_626307_c">-12.70</span>
+<td><span class="chr" id="ref_626307_cp">(-0.63%)</span>
+<tr>
+<td class=legend><img alt="" class="SP_legend2 legend"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+<td><div class="name bld">
+<a href="/finance?q=INDEXNASDAQ:.IXIC&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >Nasdaq</a></div>
+<td class="bld"><span id="ref_13756934_l">4,605.16</span>
+<td><span class="bld chr" id="ref_13756934_c">-48.44</span>
+<td><span class="chr" id="ref_13756934_cp">(-1.04%)</span>
+</table>
+</div>
+</div>
+<div class="sfe-section clf"></div>
+<div class=mid-reorder>
+<div id=mk-news
+>
+<div class=hdg>
+<h3>Top stories</h3>
+<div class="gf-reorder-btn SP_menu_button"></div>
+</div>
+<div class="goog-tab-bar hdg id-news-tabs" id=news-tabs>
+<div 
+  class="goog-tab goog-tab-selected"
+>
+<a id=market-news-title class=t><b class=t><b class=t>Market</b></b></a></div>
+</div>
+<div class=goog-tabpane-clear></div>
+<div class="news sfe-section-major id-market-news" id=market-news 
+  
+>
+<div class="g-section g-tpl-right-14 g-floatfix">
+<div class="g-unit g-first">
+<div id=scroll-container></div>
+</div>
+<div class="g-unit">
+<div class="streaming id-market-news-stream" id=market-news-stream>
+<div class=cluster>
+<div>
+<a class=title href="http://news.google.com/news/url?sa=T&amp;ct2=us&amp;fd=S&amp;url=http://www.reuters.com/article/2014/12/15/us-markets-stocks-usa-idUSKBN0JT1AM20141215&amp;cid=52778684500839&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ&amp;usg=AFQjCNGrWIVwDKqFoxoR084_s60bnZiICw" rel=nofollow  id=n-hp- >Wall Street dips in volatile trade; oil prices fall further</a></div>
+<div class=byline>
+<span class=src>Reuters</span>
+<span class=date 
+          tm=1418647661 > - 11 hours ago</span></div>
+<!-- google_ad_section_end -->
+<div class=snippet>NEW YORK (Reuters) - U.S. stocks ended lower in a volatile session on Monday as oil prices extended their selloff, adding to worries about weak global demand.</div>
+<!-- google_ad_section_start -->
+</div>
+<div class=cluster>
+<div>
+<a class=title href="http://news.google.com/news/url?sa=T&amp;ct2=us&amp;fd=S&amp;url=http://www.foxbusiness.com/economy-policy/2014/12/15/new-york-manufacturing-activity-unexpectedly-contracts-in-december/&amp;cid=52778684054421&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ&amp;usg=AFQjCNExFPN_Qbe2SJeziN4KEe-mGyTJuQ" rel=nofollow  id=n-hp- >New York Manufacturing Activity Unexpectedly Contracts in December</a></div>
+<div class=byline>
+<span class=src>Fox Business</span>
+<span class=date 
+          tm=1418650859 > - 10 hours ago</span></div>
+<!-- google_ad_section_end -->
+<div class=snippet>New York manufacturers say business activity shrank for the first time in nearly two years, according to the Federal Reserve Bank of New York&#39;s Empire State Manufacturing Survey released Monday.</div>
+<!-- google_ad_section_start -->
+</div>
+<div class=cluster>
+<div>
+<a class=title href="http://news.google.com/news/url?sa=T&amp;ct2=us&amp;fd=S&amp;url=http://in.reuters.com/article/2014/12/15/us-usa-economy-capital-idINKBN0JT2D320141215&amp;cid=52778684484365&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ&amp;usg=AFQjCNFf5BjL9_p2Qj1oJv82gTkPKIy_Vg" rel=nofollow  id=n-hp- >Foreigners sell long-term US assets in Oct; equity outflows seen</a></div>
+<div class=byline>
+<span class=src>Reuters</span>
+<span class=date 
+          tm=1418678739 > - 2 hours ago</span></div>
+<!-- google_ad_section_end -->
+<div class=snippet>NEW YORK (Reuters) - Foreigners sold long-term U.S. securities in October after making massive purchases the previous month, data from the U.S.</div>
+<!-- google_ad_section_start -->
+</div>
+<div class=cluster>
+<div>
+<a class=title href="http://news.google.com/news/url?sa=T&amp;ct2=us&amp;fd=S&amp;url=http://www.cbsnews.com/news/what-is-the-busiest-mailing-day-of-the-year/%3F&amp;cid=52778683640151&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ&amp;usg=AFQjCNHM6PpKvT3IIuV31ra2ZD65MkaQCQ" rel=nofollow  id=n-hp- >What is the busiest mailing day of the year?</a></div>
+<div class=byline>
+<span class=src>CBS News</span>
+<span class=date 
+          tm=1418683812 > - 1 hour ago</span></div>
+<!-- google_ad_section_end -->
+<div class=snippet>December 15 marked the busiest mailing day of the year as people dispatch holiday cards and presents to friends and relatives across the country.</div>
+<!-- google_ad_section_start -->
+</div>
+<div class=cluster>
+<div>
+<a class=title href="http://news.google.com/news/url?sa=T&amp;ct2=us&amp;fd=S&amp;url=http://www.firstpost.com/world/seattle-police-investigating-threat-close-to-amazon-com-hq-1851389.html&amp;cid=52778684446302&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ&amp;usg=AFQjCNGCoynNmnGLUgc3LkhwVCXNBHD3Ig" rel=nofollow  id=n-hp- >Seattle police investigating threat close to Amazon.com HQ</a></div>
+<div class=byline>
+<span class=src>Firstpost</span>
+<span class=date 
+          tm=1418680995 > - 1 hour ago</span></div>
+<!-- google_ad_section_end -->
+<div class=snippet>SEATTLE (Reuters) - Seattle police said on Monday they are investigating an unspecified threat close to Amazon.com&#39;s headquarters in the South Lake Union neighborhood of the city.</div>
+<!-- google_ad_section_start -->
+</div></div>
+</div>
+</div>
+<div class=section-link><a href="/finance/market_news?ei=7HOPVKuuCMyiqQH8o4GwAQ" >More market news &raquo;
+</a></div>
+</div>
+</div>
+<div id=trend
+>
+<div class=hdg>
+<h3>Trends</h3>
+<div class="gf-reorder-btn SP_menu_button hide"></div>
+</div>
+<div id=trends class="hdg goog-tab-bar id-trends">
+<div 
+  class="goog-tab goog-tab-selected"
+><a
+          id="l_tm_price" class=t><b class=t><b class=t>Price</b></b></a></div>
+<div 
+  class=goog-tab
+><a
+          id="l_tm_mcap" class=t><b class=t><b class=t>Mkt Cap</b></b></a></div>
+<div 
+  class=goog-tab
+><a
+          id="l_tm_volume" class=t><b class=t><b class=t>Vol</b></b></a></div>
+</div>
+<div class=goog-tab-bar-clear></div>
+<div id=topmovers class="id-topmovers sfe-section-major"><div class=g-wrap>
+<div 
+  
+ id="tm_price_0" class="tm_category id-tm_price_0">
+<table cellpadding=3>
+<tr class=colHeader>
+<td class="title chg">Gainers<td class=change>Change
+<td class=mktCap>Mkt Cap
+</tr>
+<tr>
+<td class=symbol>
+<a href="/finance?q=NYSE:FRO&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" title="FRO" >FRO</a>
+<td class=name>
+<a href="/finance?q=NYSE:FRO&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >Frontline Ltd.</a>
+<td class="change chg">27.56%
+<td class=mktCap>1.53B
+<tr>
+<td class=symbol>
+<a href="/finance?q=NASDAQ:CRUS&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" title="CRUS" >CRUS</a>
+<td class=name>
+<a href="/finance?q=NASDAQ:CRUS&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >Cirrus Logic, Inc.</a>
+<td class="change chg">21.87%
+<td class=mktCap>1.20B
+<tr>
+<td class=symbol>
+<a href="/finance?q=NYSE:TLM&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" title="TLM" >TLM</a>
+<td class=name>
+<a href="/finance?q=NYSE:TLM&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >Talisman Energy Inc. (USA)</a>
+<td class="change chg">19.35%
+<td class=mktCap>4.54B
+<tr>
+<td class=symbol>
+<a href="/finance?q=NASDAQ:RVBD&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" title="RVBD" >RVBD</a>
+<td class=name>
+<a href="/finance?q=NASDAQ:RVBD&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >Riverbed Technology, Inc.</a>
+<td class="change chg">8.38%
+<td class=mktCap>2.91B
+<tr>
+<td class=symbol>
+<a href="/finance?q=NYSE:OPK&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" title="OPK" >OPK</a>
+<td class=name>
+<a href="/finance?q=NYSE:OPK&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >Opko Health Inc.</a>
+<td class="change chg">8.31%
+<td class=mktCap>3.55B
+<tr><td style="height:.7em">
+<tr class=colHeader>
+<td class="title chr">Losers<td class=change>Change
+<td class=mktCap>Mkt Cap
+</tr>
+<tr>
+<td class=symbol>
+<a href="/finance?q=NYSE:HTA&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" title="HTA" >HTA</a>
+<td class=name>
+<a href="/finance?q=NYSE:HTA&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >Healthcare Trust Of America Inc</a>
+<td class="change chr">-51.49%
+<td class=mktCap>3.22B
+<tr>
+<td class=symbol>
+<a href="/finance?q=NYSE:CGG&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" title="CGG" >CGG</a>
+<td class=name>
+<a href="/finance?q=NYSE:CGG&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >CGG SA (ADR)</a>
+<td class="change chr">-28.29%
+<td class=mktCap>1.51B
+<tr>
+<td class=symbol>
+<a href="/finance?q=NASDAQ:LINE&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" title="LINE" >LINE</a>
+<td class=name>
+<a href="/finance?q=NASDAQ:LINE&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >Linn Energy LLC</a>
+<td class="change chr">-18.15%
+<td class=mktCap>4.01B
+<tr>
+<td class=symbol>
+<a href="/finance?q=NASDAQ:HABT&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" title="HABT" >HABT</a>
+<td class=name>
+<a href="/finance?q=NASDAQ:HABT&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >Habit Restaurants Inc</a>
+<td class="change chr">-17.19%
+<td class=mktCap>1.06B
+<tr>
+<td class=symbol>
+<a href="/finance?q=NASDAQ:LNCO&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" title="LNCO" >LNCO</a>
+<td class=name>
+<a href="/finance?q=NASDAQ:LNCO&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >LinnCo LLC</a>
+<td class="change chr">-16.95%
+<td class=mktCap>1.43B
+<tr><td style="height:.7em">
+</table>
+<div class=dis>Excludes stocks with mkt cap less than $1B.
+<a href=
+  "//www.google.com/support/finance/bin/answer.py?answer=71891&hl=en-US"
+   class=secondary>Learn more</a></div></div>
+<div 
+  style="display:none"
+ id="tm_mcap_0" class="tm_category id-tm_mcap_0">
+<table cellpadding=3>
+<tr class=colHeader>
+<td class="title chg">Gainers<td class=change>Change
+<td class=mktCap>Mkt Cap
+</tr>
+<tr>
+<td class=symbol>
+<a href="/finance?q=NYSE:ORCL&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" title="ORCL" >ORCL</a>
+<td class=name>
+<a href="/finance?q=NYSE:ORCL&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >Oracle Corporation</a>
+<td class="change chg">2.90%
+<td class=mktCap>177.12B
+<tr>
+<td class=symbol>
+<a href="/finance?q=NYSE:PTR&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" title="PTR" >PTR</a>
+<td class=name>
+<a href="/finance?q=NYSE:PTR&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >PetroChina Company Limited (ADR)</a>
+<td class="change chg">1.45%
+<td class=mktCap>267.09B
+<tr>
+<td class=symbol>
+<a href="/finance?q=NYSE:XOM&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" title="XOM" >XOM</a>
+<td class=name>
+<a href="/finance?q=NYSE:XOM&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >Exxon Mobil Corporation</a>
+<td class="change chg">0.35%
+<td class=mktCap>366.42B
+<tr>
+<td class=symbol>
+<a href="/finance?q=NYSE:ACT&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" title="ACT" >ACT</a>
+<td class=name>
+<a href="/finance?q=NYSE:ACT&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >Actavis plc</a>
+<td class="change chg">1.54%
+<td class=mktCap>68.65B
+<tr>
+<td class=symbol>
+<a href="/finance?q=NYSE:BA&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" title="BA" >BA</a>
+<td class=name>
+<a href="/finance?q=NYSE:BA&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >Boeing Co</a>
+<td class="change chg">1.08%
+<td class=mktCap>86.07B
+<tr><td style="height:.7em">
+<tr class=colHeader>
+<td class="title chr">Losers<td class=change>Change
+<td class=mktCap>Mkt Cap
+</tr>
+<tr>
+<td class=symbol>
+<a href="/finance?q=NASDAQ:AAPL&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" title="AAPL" >AAPL</a>
+<td class=name>
+<a href="/finance?q=NASDAQ:AAPL&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >Apple Inc.</a>
+<td class="change chr">-1.37%
+<td class=mktCap>642.63B
+<tr>
+<td class=symbol>
+<a href="/finance?q=NYSE:PBR.A&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" title="PBR.A" >PBR.A</a>
+<td class=name>
+<a href="/finance?q=NYSE:PBR.A&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >Petroleo Brasileiro Petrobras SA (ADR)</a>
+<td class="change chr">-12.02%
+<td class=mktCap>47.79B
+<tr>
+<td class=symbol>
+<a href="/finance?q=NYSE:PBR&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" title="PBR" >PBR</a>
+<td class=name>
+<a href="/finance?q=NYSE:PBR&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >Petroleo Brasileiro Petrobras SA (ADR)</a>
+<td class="change chr">-11.95%
+<td class=mktCap>47.87B
+<tr>
+<td class=symbol>
+<a href="/finance?q=NYSE:TM&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" title="TM" >TM</a>
+<td class=name>
+<a href="/finance?q=NYSE:TM&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >Toyota Motor Corp (ADR)</a>
+<td class="change chr">-2.40%
+<td class=mktCap>215.75B
+<tr>
+<td class=symbol>
+<a href="/finance?q=NYSE:NVS&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" title="NVS" >NVS</a>
+<td class=name>
+<a href="/finance?q=NYSE:NVS&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >Novartis AG (ADR)</a>
+<td class="change chr">-2.01%
+<td class=mktCap>253.60B
+<tr><td style="height:.7em">
+</table>
+<div class=dis>Excludes stocks with mkt cap less than $1B.
+<a href=
+  "//www.google.com/support/finance/bin/answer.py?answer=71891&hl=en-US"
+   class=secondary>Learn more</a></div></div>
+<div 
+  style="display:none"
+ id="tm_volume_0" class="tm_category id-tm_volume_0">
+<table cellpadding=3>
+<tr class=colHeader>
+<td class="title chg">Leaders<td class=volume>Volume
+<td class=mktCap>Mkt Cap
+</tr>
+<tr>
+<td class=symbol>
+<a href="/finance?q=NYSE:BAC&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" title="BAC" >BAC</a>
+<td class=name>
+<a href="/finance?q=NYSE:BAC&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >Bank of America Corp</a>
+<td class=volume>99.76M
+<td class=mktCap>180.25B
+<tr>
+<td class=symbol>
+<a href="/finance?q=NYSE:PBR&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" title="PBR" >PBR</a>
+<td class=name>
+<a href="/finance?q=NYSE:PBR&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >Petroleo Brasileiro Petrobras SA (ADR)</a>
+<td class=volume>68.50M
+<td class=mktCap>47.87B
+<tr>
+<td class=symbol>
+<a href="/finance?q=NASDAQ:AAPL&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" title="AAPL" >AAPL</a>
+<td class=name>
+<a href="/finance?q=NASDAQ:AAPL&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >Apple Inc.</a>
+<td class=volume>67.13M
+<td class=mktCap>642.63B
+<tr>
+<td class=symbol>
+<a href="/finance?q=NYSE:GE&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" title="GE" >GE</a>
+<td class=name>
+<a href="/finance?q=NYSE:GE&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >General Electric Company</a>
+<td class=volume>63.28M
+<td class=mktCap>249.24B
+<tr>
+<td class=symbol>
+<a href="/finance?q=NASDAQ:SIRI&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" title="SIRI" >SIRI</a>
+<td class=name>
+<a href="/finance?q=NASDAQ:SIRI&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >Sirius XM Holdings Inc.</a>
+<td class=volume>60.82M
+<td class=mktCap>18.74B
+<tr>
+<td class=symbol>
+<a href="/finance?q=NYSEARCA:SPY&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" title="SPY" >SPY</a>
+<td class=name>
+<a href="/finance?q=NYSEARCA:SPY&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >SPDR S&amp;P 500 ETF Trust</a>
+<td class=volume>54.53M
+<td class=mktCap>193.49B
+<tr>
+<td class=symbol>
+<a href="/finance?q=NASDAQ:QQQ&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" title="QQQ" >QQQ</a>
+<td class=name>
+<a href="/finance?q=NASDAQ:QQQ&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >PowerShares QQQ Trust, Series 1 (ETF)</a>
+<td class=volume>52.93M
+<td class=mktCap>41.57B
+<tr>
+<td class=symbol>
+<a href="/finance?q=NYSE:F&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" title="F" >F</a>
+<td class=name>
+<a href="/finance?q=NYSE:F&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >Ford Motor Company</a>
+<td class=volume>47.37M
+<td class=mktCap>57.51B
+<tr>
+<td class=symbol>
+<a href="/finance?q=NASDAQ:ARCP&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" title="ARCP" >ARCP</a>
+<td class=name>
+<a href="/finance?q=NASDAQ:ARCP&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >American Realty Capital Properties Inc</a>
+<td class=volume>43.77M
+<td class=mktCap>8.13B
+<tr>
+<td class=symbol>
+<a href="/finance?q=NYSE:TLM&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" title="TLM" >TLM</a>
+<td class=name>
+<a href="/finance?q=NYSE:TLM&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >Talisman Energy Inc. (USA)</a>
+<td class=volume>38.24M
+<td class=mktCap>4.54B
+<tr><td colspan=3 style="height:.7em">
+</table>
+<div class=dis>Excludes stocks with mkt cap less than $1B.
+<a href=
+  "//www.google.com/support/finance/bin/answer.py?answer=71891&hl=en-US"
+   class=secondary>Learn more</a></div></div>
+</div></div>
+</div>
+<div id=country-widget
+>
+<div class=hdg>
+<div class=float><h3>Sector summary</h3></div>
+<div class="gf-reorder-btn SP_menu_button hide"></div>
+</div>
+<div id=secperf class="id-secperf sfe-section-major">
+<table width="100%" cellpadding=0 cellspacing=0>
+<tr class=colHeader>
+<td style="text-align:left; padding-right:0.5em">Sector</td>
+<td style="padding-right:1em;">Change</td>
+<td style="text-align:center" colspan=2>% down / up</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-right:0.5em"><a href="/finance?catid=TRBC:50&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >Energy</a></td>
+<td style="width:20%; padding-right:1em">
+<span class=chr>-1.51%</span>
+</td>
+<td style="width:40%">
+<table class=bars cellpadding="0" cellspacing="0" width="100%">
+<tr style="height:0.9em">
+<td style="background-color:#FFFFFF; width:13%"></td>
+<td class="chrSectorDark" style="width:61%" title="53% companies in Energy down by more than 2%"></td>
+<td class="chrSectorLight" style="width:26%; border-right:1px #CCB3AB solid" title="23% companies in Energy down between 0% and 2%"></td>
+</tr>
+</table>
+</td>
+<td style="width:20%">
+<table class=bars cellpadding="0" cellspacing="0" width="100%">
+<tr style="height:0.9em">
+<td class="chgSectorLight" style="width:39%;" title="16% companies in Energy are up between 0% and 2%"></td>
+<td class="chgSectorDark" style="width:19%" title="8% companies in Energy are up more than 2%"></td>
+<td style="background-color:#FFFFFF; width:42%"></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-right:0.5em"><a href="/finance?catid=TRBC:51&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >Basic Materials</a></td>
+<td style="width:20%; padding-right:1em">
+<span class=chr>-1.81%</span>
+</td>
+<td style="width:40%">
+<table class=bars cellpadding="0" cellspacing="0" width="100%">
+<tr style="height:0.9em">
+<td style="background-color:#FFFFFF; width:15%"></td>
+<td class="chrSectorDark" style="width:37%" title="32% companies in Basic Materials down by more than 2%"></td>
+<td class="chrSectorLight" style="width:48%; border-right:1px #CCB3AB solid" title="42% companies in Basic Materials down between 0% and 2%"></td>
+</tr>
+</table>
+</td>
+<td style="width:20%">
+<table class=bars cellpadding="0" cellspacing="0" width="100%">
+<tr style="height:0.9em">
+<td class="chgSectorLight" style="width:48%;" title="20% companies in Basic Materials are up between 0% and 2%"></td>
+<td class="chgSectorDark" style="width:14%" title="6% companies in Basic Materials are up more than 2%"></td>
+<td style="background-color:#FFFFFF; width:38%"></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-right:0.5em"><a href="/finance?catid=TRBC:52&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >Industrials</a></td>
+<td style="width:20%; padding-right:1em">
+<span class=chr>-0.41%</span>
+</td>
+<td style="width:40%">
+<table class=bars cellpadding="0" cellspacing="0" width="100%">
+<tr style="height:0.9em">
+<td style="background-color:#FFFFFF; width:27%"></td>
+<td class="chrSectorDark" style="width:23%" title="20% companies in Industrials down by more than 2%"></td>
+<td class="chrSectorLight" style="width:50%; border-right:1px #CCB3AB solid" title="43% companies in Industrials down between 0% and 2%"></td>
+</tr>
+</table>
+</td>
+<td style="width:20%">
+<table class=bars cellpadding="0" cellspacing="0" width="100%">
+<tr style="height:0.9em">
+<td class="chgSectorLight" style="width:70%;" title="29% companies in Industrials are up between 0% and 2%"></td>
+<td class="chgSectorDark" style="width:19%" title="8% companies in Industrials are up more than 2%"></td>
+<td style="background-color:#FFFFFF; width:11%"></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-right:0.5em"><a href="/finance?catid=TRBC:53&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >Cyclical Cons. Goods ...</a></td>
+<td style="width:20%; padding-right:1em">
+<span class=chr>-0.64%</span>
+</td>
+<td style="width:40%">
+<table class=bars cellpadding="0" cellspacing="0" width="100%">
+<tr style="height:0.9em">
+<td style="background-color:#FFFFFF; width:32%"></td>
+<td class="chrSectorDark" style="width:24%" title="21% companies in Cyclical Cons. Goods &amp; Services down by more than 2%"></td>
+<td class="chrSectorLight" style="width:44%; border-right:1px #CCB3AB solid" title="38% companies in Cyclical Cons. Goods &amp; Services down between 0% and 2%"></td>
+</tr>
+</table>
+</td>
+<td style="width:20%">
+<table class=bars cellpadding="0" cellspacing="0" width="100%">
+<tr style="height:0.9em">
+<td class="chgSectorLight" style="width:78%;" title="32% companies in Cyclical Cons. Goods &amp; Services are up between 0% and 2%"></td>
+<td class="chgSectorDark" style="width:21%" title="9% companies in Cyclical Cons. Goods &amp; Services are up more than 2%"></td>
+<td style="background-color:#FFFFFF; width:1%"></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-right:0.5em"><a href="/finance?catid=TRBC:54&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >Non-Cyclical Cons. Goods...</a></td>
+<td style="width:20%; padding-right:1em">
+<span class=chr>-0.83%</span>
+</td>
+<td style="width:40%">
+<table class=bars cellpadding="0" cellspacing="0" width="100%">
+<tr style="height:0.9em">
+<td style="background-color:#FFFFFF; width:24%"></td>
+<td class="chrSectorDark" style="width:17%" title="15% companies in Non-Cyclical Cons. Goods &amp; Services down by more than 2%"></td>
+<td class="chrSectorLight" style="width:59%; border-right:1px #CCB3AB solid" title="51% companies in Non-Cyclical Cons. Goods &amp; Services down between 0% and 2%"></td>
+</tr>
+</table>
+</td>
+<td style="width:20%">
+<table class=bars cellpadding="0" cellspacing="0" width="100%">
+<tr style="height:0.9em">
+<td class="chgSectorLight" style="width:63%;" title="26% companies in Non-Cyclical Cons. Goods &amp; Services are up between 0% and 2%"></td>
+<td class="chgSectorDark" style="width:19%" title="8% companies in Non-Cyclical Cons. Goods &amp; Services are up more than 2%"></td>
+<td style="background-color:#FFFFFF; width:18%"></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-right:0.5em"><a href="/finance?catid=TRBC:55&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >Financials</a></td>
+<td style="width:20%; padding-right:1em">
+<span class=chr>-0.99%</span>
+</td>
+<td style="width:40%">
+<table class=bars cellpadding="0" cellspacing="0" width="100%">
+<tr style="height:0.9em">
+<td style="background-color:#FFFFFF; width:24%"></td>
+<td class="chrSectorDark" style="width:13%" title="12% companies in Financials down by more than 2%"></td>
+<td class="chrSectorLight" style="width:63%; border-right:1px #CCB3AB solid" title="55% companies in Financials down between 0% and 2%"></td>
+</tr>
+</table>
+</td>
+<td style="width:20%">
+<table class=bars cellpadding="0" cellspacing="0" width="100%">
+<tr style="height:0.9em">
+<td class="chgSectorLight" style="width:70%;" title="29% companies in Financials are up between 0% and 2%"></td>
+<td class="chgSectorDark" style="width:9%" title="4% companies in Financials are up more than 2%"></td>
+<td style="background-color:#FFFFFF; width:21%"></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-right:0.5em"><a href="/finance?catid=TRBC:56&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >Healthcare</a></td>
+<td style="width:20%; padding-right:1em">
+<span class=chr>-1.34%</span>
+</td>
+<td style="width:40%">
+<table class=bars cellpadding="0" cellspacing="0" width="100%">
+<tr style="height:0.9em">
+<td style="background-color:#FFFFFF; width:13%"></td>
+<td class="chrSectorDark" style="width:47%" title="41% companies in Healthcare down by more than 2%"></td>
+<td class="chrSectorLight" style="width:40%; border-right:1px #CCB3AB solid" title="35% companies in Healthcare down between 0% and 2%"></td>
+</tr>
+</table>
+</td>
+<td style="width:20%">
+<table class=bars cellpadding="0" cellspacing="0" width="100%">
+<tr style="height:0.9em">
+<td class="chgSectorLight" style="width:43%;" title="18% companies in Healthcare are up between 0% and 2%"></td>
+<td class="chgSectorDark" style="width:14%" title="6% companies in Healthcare are up more than 2%"></td>
+<td style="background-color:#FFFFFF; width:43%"></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-right:0.5em"><a href="/finance?catid=TRBC:57&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >Technology</a></td>
+<td style="width:20%; padding-right:1em">
+<span class=chr>-0.88%</span>
+</td>
+<td style="width:40%">
+<table class=bars cellpadding="0" cellspacing="0" width="100%">
+<tr style="height:0.9em">
+<td style="background-color:#FFFFFF; width:25%"></td>
+<td class="chrSectorDark" style="width:23%" title="20% companies in Technology down by more than 2%"></td>
+<td class="chrSectorLight" style="width:52%; border-right:1px #CCB3AB solid" title="45% companies in Technology down between 0% and 2%"></td>
+</tr>
+</table>
+</td>
+<td style="width:20%">
+<table class=bars cellpadding="0" cellspacing="0" width="100%">
+<tr style="height:0.9em">
+<td class="chgSectorLight" style="width:68%;" title="28% companies in Technology are up between 0% and 2%"></td>
+<td class="chgSectorDark" style="width:17%" title="7% companies in Technology are up more than 2%"></td>
+<td style="background-color:#FFFFFF; width:15%"></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-right:0.5em"><a href="/finance?catid=TRBC:58&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >Telecommunications Servi...</a></td>
+<td style="width:20%; padding-right:1em">
+<span class=chr>-0.82%</span>
+</td>
+<td style="width:40%">
+<table class=bars cellpadding="0" cellspacing="0" width="100%">
+<tr style="height:0.9em">
+<td style="background-color:#FFFFFF; width:25%"></td>
+<td class="chrSectorDark" style="width:32%" title="28% companies in Telecommunications Services down by more than 2%"></td>
+<td class="chrSectorLight" style="width:43%; border-right:1px #CCB3AB solid" title="37% companies in Telecommunications Services down between 0% and 2%"></td>
+</tr>
+</table>
+</td>
+<td style="width:20%">
+<table class=bars cellpadding="0" cellspacing="0" width="100%">
+<tr style="height:0.9em">
+<td class="chgSectorLight" style="width:70%;" title="29% companies in Telecommunications Services are up between 0% and 2%"></td>
+<td class="chgSectorDark" style="width:14%" title="6% companies in Telecommunications Services are up more than 2%"></td>
+<td style="background-color:#FFFFFF; width:16%"></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-right:0.5em"><a href="/finance?catid=TRBC:59&amp;ei=7HOPVKuuCMyiqQH8o4GwAQ" >Utilities</a></td>
+<td style="width:20%; padding-right:1em">
+<span class=chr>-1.30%</span>
+</td>
+<td style="width:40%">
+<table class=bars cellpadding="0" cellspacing="0" width="100%">
+<tr style="height:0.9em">
+<td style="background-color:#FFFFFF; width:1%"></td>
+<td class="chrSectorDark" style="width:29%" title="25% companies in Utilities down by more than 2%"></td>
+<td class="chrSectorLight" style="width:70%; border-right:1px #CCB3AB solid" title="61% companies in Utilities down between 0% and 2%"></td>
+</tr>
+</table>
+</td>
+<td style="width:20%">
+<table class=bars cellpadding="0" cellspacing="0" width="100%">
+<tr style="height:0.9em">
+<td class="chgSectorLight" style="width:31%;" title="13% companies in Utilities are up between 0% and 2%"></td>
+<td class="chgSectorDark" style="width:2%" title="1% companies in Utilities are up more than 2%"></td>
+<td style="background-color:#FFFFFF; width:67%"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div></div><div id=gf-foot><div id=fjfe-edition-links class=fjfe-footer-links>Google Finance Beta available in: <a href="http://www.google.com.hk/finance?ei=7HOPVKuuCMyiqQH8o4GwAQ" class="fjfe-edition-link">Hong Kong</a> - <a href="http://www.google.ca/finance?ei=7HOPVKuuCMyiqQH8o4GwAQ" class="fjfe-edition-link">Canada</a> - <a href="http://www.google.com/finance?ei=7HOPVKuuCMyiqQH8o4GwAQ" class="fjfe-edition-link">U.S.</a> - <a href="http://www.google.com.hk/finance?hl=zh-CN&ei=7HOPVKuuCMyiqQH8o4GwAQ" class="fjfe-edition-link">China</a> - <a href="http://www.google.co.uk/finance?ei=7HOPVKuuCMyiqQH8o4GwAQ" class="fjfe-edition-link">U.K.</a></div><p class=fjfe-footer-disclaimer>Information is provided "as is" and solely for informational purposes, not for trading purposes or advice, and may be delayed.<br>To see all exchange delays, please <a href="http://www.google.com/intl/en/googlefinance/disclaimer/?ei=7HOPVKuuCMyiqQH8o4GwAQ" class="fjfe-secondary-link fjfe-no-sticky-params"> see disclaimer</a>.</p><div class=fjfe-footer-links>&copy;2014 Google - <a href="http://www.google.com?hl=en&ei=7HOPVKuuCMyiqQH8o4GwAQ">Google Home</a> - <a href="http://googlefinanceblog.blogspot.com?ei=7HOPVKuuCMyiqQH8o4GwAQ">Blog</a> - <a href="http://support.google.com/finance?hl=en&ei=7HOPVKuuCMyiqQH8o4GwAQ">Help</a> - <a href="http://support.google.com/finance?ctx=report&hl=en&ei=7HOPVKuuCMyiqQH8o4GwAQ">Report a Problem</a> - <a href="http://www.google.com/intl/en/policies/privacy/?ei=7HOPVKuuCMyiqQH8o4GwAQ">Privacy Policy</a> - <a href="http://www.google.com/intl/en/policies/terms/?ei=7HOPVKuuCMyiqQH8o4GwAQ">Terms of Service</a></div></div><script>var _cleardot = 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';
+    var google = google || {};
+    google.finance = google.finance || {};
+    google.finance.gce =false;</script><script src="/finance/f/sfe-opt-1002729011.js"></script><script>
+      _regOnLoad = function(f) {
+        if (document.readyState == 'complete') {
+          f && f();
+        } else {
+          // Window.attachEvent() for IE8 and below compatability.
+          var addEventFunction = window.attachEvent ||
+              window.addEventListener || function(ignored, f) { f(); };
+          var event = window.attachEvent ? 'onload' : 'load';
+          f && addEventFunction(event, f);
+        }
+      };
+    
+      google.finance.renderRecentQuotes = function() {};
+    </script>
+<script>
+var _prefs=_prefs||{};_prefs.hash="";
+_prefs.promo=_prefs.promo||{};
+_prefs.home_tabs=_prefs.home_tabs||{};
+_prefs.home=_prefs.home||{};
+_prefs.home["sorder"] = 'MPTC-WAFB';
+function initPage() {
+google.MiniPortfolios.setHiddenPids(
+"",
+"");
+google.finance.data.home = google.finance.data.home || {};
+google.finance.data.home.tmExch = [];
+google.finance.common.listenToForm('pform');
+google.finance.onHomeLoad();
+}
+var _chartConfigObject;
+var _cleardot;
+var _companyName;
+var _eventid = '7HOPVKuuCMyiqQH8o4GwAQ';
+var _expid;
+var _external_target;
+var _localDomain = 'www.google.com';
+var _minZoomDays;
+var _minZoomDaysNoIntraDay;
+var _prefs;
+var _ticker;
+var _urlSuffix;
+var google = google || {};
+google.finance = google.finance || {};
+google.finance.data = {common:{rq:{ct:""},up:"chg",down:"chr",linktargetInternal:"",hash:"",dfp:"ad-g.doubleclick.net/adi/com.gf.home/default;dcopt=ist;myd=ad;sz=300x250;tile=1",streaming:[{cid:"983582",s:".DJI",e:"INDEXDJX"},{cid:"626307",s:".INX",e:"INDEXSP"},{cid:"13756934",s:".IXIC",e:"INDEXNASDAQ"},{cid:"7521596",s:"000001",e:"SHA"},{cid:"15513676",s:"NI225",e:"INDEXNIKKEI"},{cid:"13414271",s:"HSI",e:"INDEXHANGSENG"},{cid:"9947405",s:"TAIEX",e:"TPE"},{cid:"12590587",s:"UKX",e:"INDEXFTSE"},{cid:"7354851",s:"SX5E",e:"INDEXSTOXX"},{cid:"9237947",s:"PX1",e:"INDEXEURO"},{cid:"9291235",s:"OSPTX",e:"INDEXTSI"},{cid:"14240693",s:"XJO",e:"INDEXASX"},{cid:"15173681",s:"SENSEX",e:"INDEXBOM"},{cid:"835285966959493",s:"T25",e:"TLV"},{cid:"542029859096076",s:"KOSPI",e:"INDEXKRX"},{cid:"1052581216806242",s:"SMI",e:"INDEXSWX"},{cid:"1066235873319497",s:"ATX",e:"INDEXVIE"},{cid:"851377182412228",s:"IBOV",e:"INDEXBVMF"},{cid:"192906426752897",s:"SET",e:"INDEXBKK"},{cid:"456528970194751",s:"XU100",e:"INDEXIST"},{cid:"1054681020857808",s:"IB",e:"INDEXBME"},{cid:"698684623076010",s:"WIG",e:"WSE"},{cid:"1095233500396574",s:"TASI",e:"TADAWUL"},{cid:"393322345722481",s:"IAR",e:"BCBA"}]},home:{widescreen_width:1290},stickyUrlArgs:"\u0026ei=7HOPVKuuCMyiqQH8o4GwAQ"};
+google.finance.data.numberFormat = [{'threshold':1000000, 'symbol':'M'}, {'threshold':1000000000,'symbol':'B'}, {'threshold':1000000000000,'symbol':'T'}] ;
+_setStickyUrlParams("ei=7HOPVKuuCMyiqQH8o4GwAQ");
+if (_s_Store) {
+_s_Store._allowMatchAdvancedSearch = true;
+var _fieldToDisplayNameMap = {GrossMargin:"Gross margin&nbsp;(%)",Return1Week:"1w return",Return156Week:"156w return",NextYearEPS:"Next year EPS",LTDebtToAssetsYear:"LT debt/assets (Recent&nbsp;yr)&nbsp;(%)",RevenueGrowthRate5Years:"5y revenue growth rate",EarningsAfterTaxes:"Earnings after taxes",DividendPerShare:"Div per share",MarketCap:"Market cap",NetProfitMarginPercent:"Net profit margin&nbsp;(%)",Float:"Float",EarningsBeforeTaxes:"Earnings before taxes",QuotePercChange:"Quote change&nbsp;(%)",TotalDebtToEquityYear:"Total debt/equity (Recent&nbsp;yr)&nbsp;(%)",TotalDebtToCapitalQuarter:"Total debt/capital (Recent&nbsp;qtr)&nbsp;(%)",LTDebtToCapitalQuarter:"LT debt/capital (Recent&nbsp;qtr)&nbsp;(%)",EPSGrowthRate10Years:"10y EPS growth rate",Beta:"Beta",ReturnOnAssetsPTM:"Return on assets (PTM)&nbsp;(%)",CapitalGain:"Capital gain",BetaDown:"Beta down from RAS",IncomeDividend:"Income dividend",RevenueGrowthRate10Years:"10y revenue growth rate",MarketCapShareBasis:"Market cap share basis",IAD:"Div rate indicated annual",Return4Week:"4w return",Price150DayAverage:"150d avg price",EPSGrowthRate5Years:"5y EPS growth rate",ReturnOnAssetsTTM:"Return on assets (TTM)&nbsp;(%)",TotalDebtToAssetsYear:"Total debt/assets (Recent&nbsp;yr)&nbsp;(%)",Volume:"Volume",DividendRecentQuarter:"Div recent quarter",CurrentRatioYear:"Current ratio",Low52Week:"52w low",ExpenseRatio:"Expense ratio",Price13WeekPercChange:"13w&nbsp;price change&nbsp;(%)",Price1DayPercChange:"1d&nbsp;price change&nbsp;(%)",ReturnOnEquity5Years:"Return on equity (5&nbsp;yr&nbsp;avg)&nbsp;(%)",TotalDebtToCapitalYear:"Total debt/capital (Recent&nbsp;yr)&nbsp;(%)",TotalDebtToAssetsQuarter:"Total debt/assets (Recent&nbsp;qtr)&nbsp;(%)",NavChange:"Nav change",OperatingMargin:"Operating margin&nbsp;(%)",DPSRecentYear:"Div per share (Recent&nbsp;yr)",ANI:"Earnings after taxes (Recent&nbsp;yr)",AverageVolume:"Average volume",High52Week:"52w high",Return13Week:"13w return",PriceToCashFlowPerShare:"Price to cash flow per share",ATAXRATE:"Tax rate (Recent&nbsp;yr)",Price26WeekPercChange:"26w&nbsp;price change&nbsp;(%)",QuoteChange:"Quote change",NetIncomeChangePerc:"Net income change&nbsp;(%)",ReturnOnInvestment5Years:"Return on investment (5&nbsp;yr&nbsp;avg)&nbsp;(%)",PE:"P/E ratio",ReturnOnInvestmentYear:"Return on investment (Recent&nbsp;yr)&nbsp;(%)",Price200DayAverage:"200d avg price",DividendNextQuarter:"Div next quarter",EBITD:"EBITDA",PriceYTDPercChange:"YTD&nbsp;price change&nbsp;(%)",ReturnOnInvestmentTTM:"Return on investment (TTM)&nbsp;(%)",NavChangePercent:"Nav change&nbsp;(%)",EBITDMargin:"EBITDA margin&nbsp;(%)",LTDebtToEquityQuarter:"LT debt/equity (Recent&nbsp;qtr)&nbsp;(%)",BetaRAS:"Beta from RAS",PriceSales:"Price to sales",NetAssets:"Net assets",ReturnOnEquityTTM:"Return on equity (TTM)&nbsp;(%)",CashPerShareYear:"Cash/share",ReturnOnAssets5Years:"Return on assets (5&nbsp;yr&nbsp;avg)&nbsp;(%)",ReturnDay:"1d return",Return52Week:"52w return",ForwardPE1Year:"1y fwd P/E",NetIncomeGrowthRate5Years:"5y net income growth rate",DividendYield:"Div yield&nbsp;(%)",Dividend:"Div from cash flow",BetaUp:"Beta up from RAS",LTDebtToCapitalYear:"LT debt/capital (Recent&nbsp;yr)&nbsp;(%)",nprice:"Price from RAS",Return260Week:"260w return",ReturnOnEquityQuarter:"Return on equity (Recent&nbsp;qtr)&nbsp;(%)",ACOGS:"Cost of goods sold",LTDebtToAssetsQuarter:"LT debt/assets (Recent&nbsp;qtr)&nbsp;(%)",PriceToBook:"Price to book",LTDebtToEquityYear:"LT debt/equity (Recent&nbsp;yr)&nbsp;(%)",ReturnYTD:"Return YTD",ReturnOnEquityYear:"Return on equity (Recent&nbsp;yr)&nbsp;(%)",ReturnOnAssetsQuarter:"Return on assets (Recent&nbsp;qtr)&nbsp;(%)",TotalDebtToEquityQuarter:"Total debt/equity (Recent&nbsp;qtr)&nbsp;(%)",NavPrior:"Nav prior",AINTCOV:"Interest coverage",EPS:"EPS",ReturnOnInvestmentQuarter:"Return on investment (Recent&nbsp;qtr)&nbsp;(%)",QuoteLast:"Last price",Price50DayAverage:"50d avg price",Price4WeekPercChange:"4w&nbsp;price change&nbsp;(%)",ReturnOnAssetsYear:"Return on assets (Recent&nbsp;yr)&nbsp;(%)",MarketCapRAS:"Mkt cap from RAS",Price52WeekPercChange:"52w&nbsp;price change&nbsp;(%)",ShortInterestRatioPercent:"Short interest ratio&nbsp;(%)",InstitutionalPercentHeld:"Institutional percent held",BookValuePerShareYear:"Book value/share",ReturnOnEquityPTM:"Return on equity (PTM)&nbsp;(%)"};
+_s_Store._asStore._addStrings(_fieldToDisplayNameMap);
+}
+if (_s_Store) {
+_s_Store._allowMultipleInBox = true;
+}
+_regOnLoad(initPage);
+</script></div></div><script>var googlefinance = {i: ["f.b.id","",null,0,"RV\u003d:ED\u003dus",0,null,["f.b.cf","STIlHaT6MgE.en_US.",0],[],0,[],"7HOPVKuuCMyiqQH8o4GwAQ","www.google.com","moSbpneBmBFh8Ky7ZMlyQDz8k08:1418687469150",1]}; GF_domReady = 1;</script></body></html>

@@ -1,0 +1,345 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="apple-itunes-app" content="app-id=401778175">
+
+	<title>ABC iview</title>
+	<meta name="Title" content="ABC iview">
+	<meta name="Description" content="iview is catch-up and more from ABC TV">
+	<meta name="Keywords" content="Dr Who, Gruen Transfer, Hollowmen, Q and A, Echo Beach, ABC News, catch up, news, kazam, docs, arts,internet television, itv, full screen video, playback, abc video, video on demand">
+
+<meta name="Date" content="23/07/2009">
+<meta name="Language" content="English">
+<meta name="Publisher" content="Australian Broadcasting Corporation">
+<meta name="Publisher" content="(SCHEME=URL)http://www.abc.net.au/iview/">
+<meta name="Rights" content="Copyright 2008 Australian Broadcasting Corporation. Other rights may be held as detailed in text. www.abc.net.au/common/copyrigh.htm">
+<meta name="ABC-DateReversed" content="20090723">
+<meta name="ABC-Gateway" content="TV">
+<meta name="ABC-Site" content="TV Gateway">
+<meta name="Creator" content="(SCHEME=EMAIL)iview@your.abc.net.au">
+<meta name="Creator" content="(SCHEME=URL)http://www.abc.net.au/iview/">
+<meta name="ABC-ResourceType" content="0">
+<meta name="Generator" content="SiteProducer/XML/Flash">
+<meta name="verify-v1" content="uDH4TqpCuS6zUOUiDiCtF27GWV2l/Ro/XMFaWHw2fhc=">
+<meta name="viewport" content="width=500,maximum-scale=1.0">
+
+<script language="javascript" type="text/javascript">
+	var url = false;
+</script>
+
+
+
+<link rel="SHORTCUT ICON" href="http://www.abc.net.au/iview/images/iview.ico">
+<link rel="alternate" href="http://tviview.abc.net.au/iview/rss/recent.xml" title="Recently on iView" type="application/rss+xml">
+<script type="text/javascript" src="http://www.abc.net.au/includes/webtrends/playback1.js"></script>
+<script type="text/javascript" src="http://www.abc.net.au/includes/webtrends/playback2.js"></script>
+<script type="text/javascript" src="js/swfobject_2.2.js"></script>
+<script type="text/javascript" src="js/swfaddress_2.4.js"></script>
+<script type="text/javascript" src="js/swfmacmousewheel2.js"></script>
+<script type="text/javascript">
+
+var redirectURL = "http://iview.abc.net.au/" + document.location.search;
+
+if (navigator.userAgent.indexOf("PLAYSTATION") != -1) {
+
+	// redirectURL = "http://www.abc.net.au/iview/ps3.htm";
+	redirectURL = false;
+
+} else if (/MSIE\s([\d.]+)/.test(navigator.userAgent)) {
+
+	var version = new Number(RegExp.$1);
+	if (version <= 8) {
+		// redirectURL = "http://www.abc.net.au/iview/ps3.htm";
+		redirectURL = false;
+	}
+
+} else {
+
+	if (location.hash) {
+		url = document.location.hash.substring(2);
+	}
+	if (url != false) {
+
+		if (url.indexOf("series/2303988") == 0) {
+			// fix for old Four Corners series ID that isn't in iview DB
+			redirectURL = "http://iview.abc.net.au/redirect/legacy/?url=series/Four%20Corners";
+		} else {
+			redirectURL = "http://iview.abc.net.au/redirect/legacy/?url=" + url;
+		}
+	}
+}
+
+if (redirectURL != false) {
+	document.location.href = redirectURL;
+}
+
+function getSWF(id) {
+	if (navigator.appName.indexOf("Microsoft") != -1) {
+		return window[id];
+	} else {
+		return document[id];
+	}
+}
+function onRemoteEvent(code) {
+	var swf = getSWF("iView");
+	if (code==0x0D) {
+		swf.onRemoteCall("OK");
+	} else if (code==0xFA) {
+		swf.onRemoteCall("PLAY");
+	} else if (code==0x13) {
+		swf.onRemoteCall("PAUSE");
+	} else if (code==0x27) {
+		swf.onRemoteCall("RIGHT");
+	} else if (code==0x25) {
+		swf.onRemoteCall("LEFT");
+	} else if (code==0x26) {
+		swf.onRemoteCall("UP");
+	} else if (code==0x28) {
+		swf.onRemoteCall("DOWN");
+	} else if (code==0xA6) {
+		swf.onRemoteCall("BACK");
+	}
+}
+function createCookie(name,value,days) {
+	if (days) {
+		var date = new Date();
+		date.setTime(date.getTime()+(days*24*60*60*1000));
+		var expires = "; expires="+date.toGMTString();
+	}
+	else var expires = "";
+	document.cookie = name+"="+value+expires+"; path=/";
+}
+function getParam(id) {
+	var arr = window.location.search.substr(1).split("&");
+	for (var i=0; i<arr.length; i++) {
+		if (arr[i].substr(0, id.length) == id) {
+			return arr[i].substr(id.length+1)
+		}
+	}
+	return "";
+}
+function trace(str) { if (window.console) console.log(str);	}
+function launchApp() {
+	createCookie('iViewIsInstalled', 'true', 365);
+	window.location = 'iview://';
+}
+function checkBrowser() {
+	if (navigator.userAgent.match(/iPad/i)) {
+		var path = "iview://";
+		if (self.document.location.hash.substring(1).length) {
+			path += self.document.location.hash.substring(2);
+		}
+		if (console) {
+			console.log ("iPad deep link: " + path);
+		}
+		document.getElementById("ipad").style.display = "block";
+		document.getElementById("ipad").innerHTML = '<div style="height: 280px; background: url(images/ipadiphone_bg_middle.png) 50% 3em no-repeat; font: 100%/150% Helvetica, Arial, sans-serif; color: #FFF; position: relative;"><a class="appstore" style="position: absolute; bottom: 0; left: 0; text-indent: -2000px; height: 46px; width: 179px; background: url(images/ipadiphone_button_appstore.png) top left no-repeat;" href="http://itunes.apple.com/au/app/abc-iview/id401778175?mt=8#">App Store</a><a onclick="launchApp(); return false;" class="launch" style="position: absolute; bottom: 0; right: 0; text-indent: -2000px; height: 46px; width: 179px; background: url(images/ipad_button_launch.png) top left no-repeat;" href="' + path + '">Launch iview</a></div>';
+		document.body.style.backgroundImage = "url(images/ipad_bg.png)";
+	} else if (navigator.userAgent.match(/iPhone/i)) {
+		document.getElementById("warningCopy").innerHTML = "<a href='http://itunes.com/apps/abciview'>Download iview now</a>.";
+		document.getElementById("warningTitle1").style.display = "none";
+		document.getElementById("warningTitle2").style.display = "none";
+		document.body.style.backgroundImage = "url(images/ipad_bg.png)";
+	} else if (navigator.userAgent.match(/iPod/i)) {
+		document.getElementById("warningCopy").innerHTML = "<a href='http://itunes.com/apps/abciview'>Download iview now</a>.";
+		document.getElementById("warningTitle1").style.display = "none";
+		document.getElementById("warningTitle2").style.display = "none";
+		document.body.style.backgroundImage = "url(images/ipad_bg.png)";
+	}
+}
+var params = {
+	quality: "high", scale: "noscale",
+	devicefont: "false", allowscriptaccess: "always",
+	allowFullScreen: "true", bgcolor: "#000000",
+	align: "middle", play: "false",	loop: "false",
+	SeamlessTabbing: "false"
+	};
+if (getParam('wmode')!="") params.wmode = getParam('wmode');
+
+
+var version = "390";
+
+var isPS3 = false;
+if (navigator.userAgent.indexOf("PLAYSTATION") != -1) {
+	isPS3 = true;
+	version = "383";
+} else if (navigator.userAgent.indexOf("Android") != -1) {
+	isPS3 = true;
+	version = "383";
+}
+
+
+
+function onEmbedResult(e) {
+	if (!e.success && !navigator.userAgent.match(/iPad/i)) {
+		document.getElementById("warningBlock").style.display = "block";
+		document.body.style.backgroundImage = "url(images/ipad_bg.png)";
+	}
+}
+if (getParam('series')) document.location.href="#/series/"+getParam('series');
+swfobject.embedSWF('iview_' + version +'.swf', 'website', '100%', '100%', '9.0.45', 'js/expressinstall.swf', {a:getParam('a'),d:getParam('d'),isPS3:isPS3}, params, {id: "website"}, onEmbedResult);
+if (swfmacmousewheel) swfmacmousewheel.registerObject("website");
+</script>
+<style type="text/css">
+html {
+	height: 100%;
+	overflow: hidden;
+	}
+body {
+	background: #000 repeat-x;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	color: #FFF;
+	font: 76%/140% Helvetica,Arial,sans-serif;
+	}
+h1 {
+	text-indent: -2000px;
+	height: 50px;
+	width: 150px;
+	margin: 20px auto 40px auto;
+	background: url(images/ipad_iview_logo.png) top left no-repeat;
+	}
+h2 {
+	font-size: 120%;
+	font-weight: bold;
+	margin: 15px 0;
+	}
+p {
+	margin: 0 0 15px 0;
+	}
+#website {
+
+	}
+#notice {
+	width: 400px;
+	margin: 0 auto;
+	padding: 10px;
+	}
+a { font-weight: bold; }
+a:link { color:#18C2BE; text-decoration:none; }
+a:visited { color:#18C2BE; text-decoration:none; }
+a:hover { color:#18C2BE; text-decoration:underline; }
+a.external, a.external:visited {
+	background:url(images/icon_external.gif) no-repeat right 2px;
+	padding:0px 12px 0px 0px;
+	margin-right:1px
+	}
+.warning {
+	padding: 5px 10px;
+	margin: 10px 0;
+	background: #262626;
+	}
+.warning h3 {
+	color: #FF0;
+	margin: 5px 0 10px 0;
+	padding: 0 0 0 25px;
+	font-size: 120%;
+	background: url(images/icon_warning.png) no-repeat;
+	}
+.warning p {
+	margin: 0 0 5px 0;
+	}
+.recent a {
+	font-weight: bold;
+	}
+.recent ul {
+	margin: 10px;
+	padding: 0;
+	}
+.recent li {
+	margin: 5px 0 5px 15px;
+	}
+.recent small {
+	font-size: 90%;
+	color: #999;
+	}
+.sitemap {
+	display: none;
+	}
+.footer {
+	text-align: right;
+	position: absolute;
+	top: .8em;
+	right: .8em;
+	}
+</style>
+</head>
+<body scroll="no">
+<div id="website">
+	<div id="notice">
+		<h1>ABC iview</h1>
+		
+		<p><strong>ABC iview</strong> lets you catch up on the best of ABC TV. Watch your favourite programs in full screen at a time that suits you. Most shows are available to watch for 14 days and new programs are added every day.<br><br>
+		Download the ABC iview app below to watch on iPad, iPhone or iPod Touch, over Wi-Fi and 3G. Please refer to the <a href="http://www.abc.net.au/tv/iview/faq.htm#iphone2">iview website FAQs</a> for important information regarding data consumption.
+</p>
+		<div id="ipad" style="position: relative;"></div>
+        <div id="warningBlock" class="warning" style="display:none">
+        	<h3 id="warningTitle1">WARNING</h3>
+	        <p id="warningCopy">Your browser does not seem to be supported. iview requires <a class="external" href="http://get.adobe.com/flashplayer/">Adobe Flash Player 11.7</a> and above, and Javascript to be enabled.</p>
+		</div>
+		<noscript>
+			 <div class="warning">
+				<h3 id="warningTitle2">WARNING</h3>
+				<p id="warningCopy">Your browser does not seem to be compatible with iview. iview requires <a class="external" href="http://get.adobe.com/flashplayer/">Adobe Flash Player 11.7</a> and above, and Javascript to be enabled.</p>
+			</div>
+		</noscript>
+	</div>
+	<div class="sitemap"><ul>
+
+<!-- trailers -->
+<li><a href="/iview/?series=3368988" id="3368988" title="1381988925">Trailer: Sunday Best</a></li>
+<li><a href="/iview/?series=3471893" id="3471893" title="1369719723">Trailer: Catalyst</a></li>
+<li><a href="/iview/?series=3683337" id="3683337" title="1360018768">Trailer: Good Game</a></li>
+<li><a href="/iview/?series=3696289" id="3696289" title="1368694477">Trailer: Four Corners</a></li>
+<li><a href="/iview/?series=3700330" id="3700330" title="1367996065">Trailer: Australian Story</a></li>
+<li><a href="/iview/?series=3701658" id="3701658" title="1375859559">Trailer: Foreign Correspondent</a></li>
+<li><a href="/iview/?series=3723424" id="3723424" title="1368517026">Trailer: Doctor Who Series 7</a></li>
+<li><a href="/iview/?series=3829929" id="3829929" title="1382587538">Trailer: Miss Fisher's Murder Mysteries Series 2</a></li>
+<li><a href="/iview/?series=3836709" id="3836709" title="1377745726">Trailer: Alan Carr: Chatty Man Series 11</a></li>
+<li><a href="/iview/?series=3837856" id="3837856" title="1378452087">Trailer: Scott & Bailey Series 3</a></li>
+<li><a href="/iview/?series=3842072" id="3842072" title="1378362411">Trailer: Gruen Planet Series 3</a></li>
+<li><a href="/iview/?series=3845693" id="3845693" title="1382074774">Trailer: Serangoon Road</a></li>
+<li><a href="/iview/?series=3848538" id="3848538" title="1381385080">Trailer: Tractor Monkeys Series 2</a></li>
+<li><a href="/iview/?series=3854707" id="3854707" title="1382074472">Trailer: Kakadu</a></li>
+<li><a href="/iview/?series=3856945" id="3856945" title="1382074233">Trailer: Redesign My Brain</a></li>
+<li><a href="/iview/?series=3859285" id="3859285" title="1380524248">Trailer: Breaking Bad Series 5</a></li>
+<li><a href="/iview/?series=3860760" id="3860760" title="1380688027">Trailer: The Undateables Series 2</a></li>
+<li><a href="/iview/?series=3862591" id="3862591" title="1382913748">Trailer: Ja'mie: Private School Girl</a></li>
+<li><a href="/iview/?series=3866184" id="3866184" title="1381366536">Trailer: Whitechapel Series 4</a></li>
+<li><a href="/iview/?series=3870646" id="3870646" title="1381964253">Trailer: Autopsy On A Dream</a></li>
+<li><a href="/iview/?series=3870649" id="3870649" title="1382586768">Trailer: The Art Of Australia</a></li>
+<li><a href="/iview/?series=3870654" id="3870654" title="1382671757">Trailer: #7DaysLater</a></li>
+<li><a href="/iview/?series=3872298" id="3872298" title="1382071795">Trailer: A Different Breed</a></li>
+<li><a href="/iview/?series=3873652" id="3873652" title="1382334350">Trailer: My New Hand</a></li>
+<li><a href="/iview/?series=3873659" id="3873659" title="1382334942">Trailer: Redfern Now Series 2</a></li>
+<li><a href="/iview/?series=3876221" id="3876221" title="1382584833">Trailer: Paul Kelly: Stories of Me</a></li>
+<li><a href="/iview/?series=3876228" id="3876228" title="1382675353">Trailer: Luther Series 3</a></li>
+<li><a href="/iview/?series=3876239" id="3876239" title="1382586019">Trailer: Doctor Who 50th Anniversary Special</a></li>
+<li><a href="/iview/?series=3877146" id="3877146" title="1382677070">Trailer: Desperately Hungry Housewives</a></li>
+<li><a href="/iview/?series=3877195" id="3877195" title="1382674698">Trailer: The Search For The Ocean's Super Predator</a></li>
+<li><a href="/iview/?series=3878131" id="3878131" title="1382913554">Trailer: The Sunnyboy</a></li>
+<li><a href="/iview/?series=3878151" id="3878151" title="1382914829">Trailer: The Kids With No Memory</a></li>
+
+
+
+</ul>
+</div>
+	<p class="footer"><a href="http://www.abc.net.au/tv/iview/" class="more">More Info</a> &middot; <a href="http://www.abc.net.au/tv/iview/faq.htm">FAQ</a> &middot; <a href="http://www2b.abc.net.au/tmb/Client/Board.aspx?b=98">Feedback</a></p>
+</div>
+<script type="text/javascript">
+checkBrowser();
+</script>
+<!-- START Nielsen Online SiteCensus V6.0
+<script type="text/javascript" src="http://secure-au.imrworldwide.com/v60.js"></script>
+<script type="text/javascript">
+ var pvar = { cid: "abc-aust", content: "0", server: "secure-au" };
+ var trac = nol_t(pvar);
+ trac.record().post();
+</script>
+<noscript><div><img src="//secure-au.imrworldwide.com/cgi-bin/m?ci=abc-aust&amp;cg=0&amp;cc=1&amp;ts=noscript" width="1" height="1" alt="" /></div></noscript>
+ END Nielsen Online SiteCensus V6.0 -->
+</body>
+</html>

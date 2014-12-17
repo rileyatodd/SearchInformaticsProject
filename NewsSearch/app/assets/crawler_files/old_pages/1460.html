@@ -1,0 +1,1681 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<!-- /lavoztx/base.html v4 -->
+	<script src="http://epmgaa.media.lionheartdms.com/static/common/scripts/cookieControl.js"></script>
+<script>
+var mobileOptOut = getCookie('mobileOptOut');
+var deviceWidth = window.screen.width;
+var deviceType = '';
+var domainURL = document.domain;
+var currentDomain = '';
+
+if (deviceWidth >= 960) 		{ deviceType = 'desktop' }
+else if (deviceWidth >= 768) 	{ deviceType = 'tablet'; }
+else 							{ deviceType = 'mobile'; }
+
+if (domainURL.indexOf('m.') == 0) 		{ currentDomain = 'mobile'; }
+else if (domainURL.indexOf('t.') == 0) 	{ currentDomain = 'tablet'; }
+else 									{ currentDomain = 'desktop'; }
+
+if (currentDomain == 'desktop') {
+	if (mobileOptOut == null || mobileOptOut == "") {
+		if (deviceType == 'mobile') {
+			window.location = 'http://m.lavoztx.com/';
+		} else if (deviceType == 'tablet') {
+			window.location = 'http://t.lavoztx.com/';
+		}
+	}
+}
+
+function viewFullSite() {
+	setCookie('mobileOptOut', 'true', '1', '/', '.lavoztx.com', '' );
+	window.location = 'http://lavoztx.com/';
+}
+</script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="msvalidate.01" content="ED540F9D73DCA1D4EE74802D83584794" />
+    <title> La Voz de Houston | Noticias de Houston y Texas</title>
+    <meta name="google-site-verification" content="_nH4dPxLqILRrwmUQCFXjDrY9C8-LRvt6uE9pQ9eV5k" />
+    
+    
+	<meta http-equiv="Content-Type" content="dallas local news, north texas news, fort worth news, dallas texas news, texas newspapers, fort worth local news; charset=utf-8">
+    <meta name="description" content="La Voz de Houston es el periódico en Español del Houston Chronicle que ofrece a sus lectores noticias locales, nacionales e internacionales."/>
+    <meta name="keywords" content="noticias Houston y Texas, noticias locales, entretenimiento, la buena sazón, tecnología, deportes, Copa Davis, NFL, noticias Estados Unidos, noticias américa latina, noticias del mundo, Elección Presidencial 2012”>" />
+	
+
+    
+
+    <link rel="stylesheet" href="http://epmghispanic.media.lionheartdms.com/static/epmg/stylesheets/common.css" type="text/css" media="screen" charset="utf-8">
+<link rel="stylesheet" href="http://epmghispanic.media.lionheartdms.com/static/epmg/stylesheets/all.css" type="text/css" media="screen" charset="utf-8">
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans|Paytone+One' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="http://epmghispanic.media.lionheartdms.com/static/epmg/stylesheets/jquery.fancybox-1.3.4.css" media="all">
+<link rel="stylesheet" href="http://epmghispanic.media.lionheartdms.com/static/epmg/stylesheets/anythingslider.css">
+<link rel="stylesheet" href="http://epmghispanic.media.lionheartdms.com/static/_global/_css/galleria.classic.min.css">
+<!--<link rel="stylesheet" href="http://epmghispanic.media.lionheartdms.com/static/ellington_defaults/2.3.0/min.css" type="text/css" media="screen">-->
+
+
+<!--[if lt IE 7]>
+    <link rel="stylesheet" type="text/css" href="css/lt7.css" />
+    <script type="text/javascript" src="js/ie-hover.js"></script>
+<![endif]-->
+    
+	<link rel="stylesheet" href="http://epmghispanic.media.lionheartdms.com/static/lavoz/styles/lavoz.css" type="text/css" media="screen" charset="utf-8">
+	<link rel="shortcut icon" href="http://epmghispanic.media.lionheartdms.com/static/lavoz/images/lavoz_favicon.png">
+	<link rel="stylesheet" href="http://epmghispanic.media.lionheartdms.com/static/epmg/stylesheets/twitter_widget.css" type="text/css" media="screen" charset="utf-8">
+	<link href="http://cdn.onescreen.net/os/static/widgets/assets/css/widgets.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://epmgaa.media.lionheartdms.com/static/_global/_css/sidebar_styles.css">
+
+    
+    
+    
+    
+    
+    
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://epmghispanic.media.lionheartdms.com/static/ellington_defaults/javascript/jquery.ui.js"></script>
+<script type="text/javascript" src="http://epmghispanic.media.lionheartdms.com/static/ellington_defaults/javascript/jquery.media.js"></script>
+
+<script type="text/javascript" src="http://epmghispanic.media.lionheartdms.com/static/ellington_defaults/javascript/jquery.carousel.js"></script>
+<script type="text/javascript" src="http://epmghispanic.media.lionheartdms.com/static/ellington_defaults/javascript/jquery.defaults.js"></script>
+<!--<script type="text/javascript" src="http://epmghispanic.media.lionheartdms.com/static/ellington_defaults/2.3.0/min.js"></script>-->
+
+
+
+<script type="text/javascript" src="http://epmghispanic.media.lionheartdms.com/static/ellington_defaults/javascript/lib/data.js"></script>
+<script type="text/javascript" src="http://epmghispanic.media.lionheartdms.com/static/ellington_defaults/javascript/lib/shapes.js"></script>
+
+
+<script type="text/javascript" src="http://epmghispanic.media.lionheartdms.com/static/ellington_defaults/javascript/swfobject.js"></script>
+<script type="text/javascript" src="http://epmghispanic.media.lionheartdms.com/static/ellington_defaults/javascript/flash.js"></script>
+<script type="text/javascript" src="http://epmghispanic.media.lionheartdms.com/static/ellington_defaults/javascript/audioplayer.js"></script>
+
+<script type="text/javascript" src="http://epmghispanic.media.lionheartdms.com/static/ellington_defaults/javascript/wmd/showdown.js"></script>
+<script type="text/javascript" src="http://epmghispanic.media.lionheartdms.com/static/ellington_defaults/javascript/wmd/wmd.js"></script>
+<script type="text/javascript" src="http://epmghispanic.media.lionheartdms.com/static/ellington_defaults/javascript/oembed_preview.js"></script>
+<script type="text/javascript" src="http://epmghispanic.media.lionheartdms.com/static/ellington_defaults/javascript/wmd/embed_toolbar.js"></script>
+
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script type="text/javascript" src="http://psf.pointroll.com/pointroll/script/psf.js"></script>
+
+
+
+<script type='text/javascript' src='http://rt.magnazia.com/serve/10155'></script>
+
+
+<script type="text/javascript" src="http://epmghispanic.media.lionheartdms.com/static/_global/_js/galleria-1.2.5.min.js"></script>
+
+<script>
+// AdTech adgroupid header
+var curDateTime = new Date();
+var offset = -(curDateTime.getTimezoneOffset());
+if (offset > 0) { offset = "+" + offset; }
+window.adgroupid = Math.round(Math.random() * 1000);
+
+// AdTech dynamic ad tagging
+var adtech_kw = [];
+var adtech_kw_unique = [];
+var adtech_kw_unique_tl = [];
+var adtech_key = '';
+var adtech_str = '';
+
+var adtech_kw_str = '';
+var adtech_kw_str_log = '';
+var adtech_pg_type = '';
+var http_host = 'lavoztx.com';
+var current_url = '/';
+var site_domain = 'lavoztx.com';
+
+
+
+	
+		if (current_url == '/') {
+			if (http_host == "dev.aldiatx.beta.lionheartdms.com") {
+				adtech_pg_type = "Home Dev";
+				adtech_kw[0] = 'home-dev';
+			} else {
+				adtech_pg_type = "Home";
+				adtech_kw[0] = 'home';
+			}
+		} else if (current_url.indexOf('/games/') > -1 || current_url.indexOf('/comics/') > -1 || current_url.indexOf('/puzzles/') > -1 || current_url.indexOf('/horoscopes/') > -1 || current_url.indexOf('/crosswords/') > -1 || current_url.indexOf('/sudoku/') > -1 || current_url.indexOf('/news/entertainment/humor/comics/') > -1 || current_url.indexOf('/news/entertainment/puzzles/') > -1 || current_url.indexOf('/news/entertainment/horoscopes/') > -1) {
+			adtech_pg_type = "Games";
+			adtech_kw[0] = 'games';
+		} else if (current_url.indexOf('/weblogs/') > -1) {
+			adtech_pg_type = "Weblogs";
+			adtech_kw[0] = 'weblogs';
+		} else if (current_url.indexOf('/contests/') > -1) {
+			adtech_pg_type = "Contests";
+			adtech_kw[0] = 'contests';
+		} else if (current_url.indexOf('/events/') > -1) {
+			adtech_pg_type = "Events";
+			adtech_kw[0] = 'events';
+		} else if (current_url.indexOf('/photos/galleries/') > -1) {
+			adtech_pg_type = "Photo Gallery";
+			adtech_kw[0] = 'photogallery';
+		} else {
+			adtech_pg_type = "ROS";
+			adtech_kw[0] = 'ros';
+		}
+	
+
+
+// Filter out duplicates		//adtech_kw_unique = adtech_kw.slice(0);
+adtech_kw_unique = adtech_kw.filter(function(elem, pos) {
+    return adtech_kw.indexOf(elem) == pos;
+});
+
+
+// Cat array elements into one string
+for (i = 0; adtech_kw_unique.length > i; i++) {
+	adtech_kw_unique_tl[i] = adtech_kw_unique[i].replace(/\/.*/, '');
+	adtech_kw_unique[i] = adtech_kw_unique[i].replace(/.*\//g, '');
+	adtech_kw_str += '+' + adtech_kw_unique[i];
+}
+
+// Filter out duplicates		//adtech_kw_unique = adtech_kw.slice(0);
+adtech_kw_unique = adtech_kw_unique.filter(function(elem, pos) {
+    return adtech_kw_unique.indexOf(elem) == pos;
+});
+
+adtech_kw_str = adtech_kw_str.substr(1);
+adtech_kw_str_log = adtech_kw_str.replace(/\+/g, ', ');
+
+
+
+
+	if (current_url == '/') {
+		adtech_key = 'home';
+	} else if (current_url.indexOf('/games/') > -1) {
+		adtech_key = 'games';
+	} else if (current_url.indexOf('/weblogs/') > -1) {
+		adtech_key = 'weblogs';
+	} else if (current_url.indexOf('/contests/') > -1) {
+		adtech_key = 'contests';
+	} else if (current_url.indexOf('/videos/') > -1) {
+		adtech_key = 'videos';
+	} else if (current_url.indexOf('/photos/') > -1) {
+		adtech_key = 'photos';
+	}
+
+
+if (adtech_key.length == 0) { 
+	adtech_key = "ros";
+}
+
+// reconstruct adtech_str to look like: {"comunidad":"lhdlatino.com"}
+adtech_str = '{"' + adtech_key + '":"' + adtech_key + '"}';
+
+
+
+if (window.console) {
+	console.log('AdTech Page Type: ' + adtech_pg_type);
+	console.log('AdTech Keywords: ' + adtech_kw_str);
+	console.log('AdTech Key/Val (mobile): ' + adtech_key);
+	//console.log('AdTech Keywords [display]: ' + adtech_kw_str_log);
+	console.log('AdTech Keywords[TL]: ' + adtech_kw_unique_tl);
+}
+</script>
+
+<!-- Quantcast Tag -->
+<script type="text/javascript">
+var _qevents = _qevents || [];
+
+(function() {
+var elem = document.createElement('script');
+elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+elem.async = true;
+elem.type = "text/javascript";
+var scpt = document.getElementsByTagName('script')[0];
+scpt.parentNode.insertBefore(elem, scpt);
+})();
+
+_qevents.push({
+qacct:"p-HTKJ5NTRWkG1u",
+labels:"Hispanic"
+});
+</script>
+
+<noscript>
+<div style="display:none;">
+<img src="//pixel.quantserve.com/pixel/p-HTKJ5NTRWkG1u.gif?labels=Hispanic" border="0" height="1" width="1" alt="Quantcast"/>
+</div>
+</noscript>
+<!-- End Quantcast tag -->
+
+
+
+
+
+
+
+
+    <!-- GLOBAL_SCRIPTS -->
+
+
+	<!-- AA Platform -->
+	
+	
+	<!-- Hispanic Platform -->
+	
+	<script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-53471cc81d66483d"></script>
+	
+	
+	<!-- Senior Platform -->
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="http://epmghispanic.media.lionheartdms.com/static/ellington_defaults/javascript/swfobject.js"></script>
+<script type="text/javascript" src="http://epmghispanic.media.lionheartdms.com/static/ellington_defaults/javascript/flash.js"></script>
+<script type="text/javascript" src="http://epmghispanic.media.lionheartdms.com/static/ellington_defaults/javascript/audioplayer.js"></script>
+
+
+
+
+
+
+    
+    <!-- GA PUB ID -->
+	<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-38107028-1']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+	</script>
+
+	
+<!-- ga_universal v3 -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-42581983-15', 'auto');
+ga('require', 'displayfeatures');
+ga('send', 'pageview');
+
+
+ga('create', 'UA-43200412-1', 'auto', {'name': 'masterProfile'});
+ga('masterProfile.require', 'displayfeatures');
+ga('masterProfile.send', 'pageview');
+
+
+
+
+
+
+
+
+</script>
+
+    
+	<script src="//static.getclicky.com/js" type="text/javascript"></script>
+	<script type="text/javascript">try{ clicky.init(66610395); }catch(e){}</script>
+
+	<!-- Begin comScore Tag --> <script> var _comscore = _comscore || []; _comscore.push({ c1: "2", c2: "14446176" }); (function() { var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true; s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js"; el.parentNode.insertBefore(s, el); })(); </script> <noscript> <img src="http://b.scorecardresearch.com/p?c1=2&c2=14446176&cv=2.0&cj=1" /> </noscript> <!-- End comScore Tag -->
+    
+    <script type="text/javascript">var switchTo5x=true;</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript" src="http://s.sharethis.com/loader.js"></script>
+    <script type="text/javascript" src="http://aps.hearstnp.com/scripts/loadAds.js?ver=2.0"></script>
+	<script type="text/javascript" src="http://epmghispanic.media.lionheartdms.com/static/epmg/javascript/ui_tabber.js"></script>
+
+    
+    
+     <!--slider script -->
+    <script src="http://epmghispanic.media.lionheartdms.com/static/epmg/javascript/jquery.anythingslider.js"></script>
+    <script>
+        // DOM Ready
+        $(function(){
+            $('#slider').anythingSlider();
+        });
+    </script>
+    <!-- AnythingSlider initialization -->
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    
+
+    
+</head>
+
+<body class="" id="id_body">
+
+	<div id="adblock_1x1_ad_1">
+		<div id="adblock_1x1_ad_1_inner">
+			
+			<!--JavaScript Tag // Tag for network 5417: epmg360.com // Website: lavoztx.com // Page: Dynamic ROS // Placement: lavoztx_Dynamic_ROS_1x1_HEAD (3102233) // created at: Feb 5, 2014 8:02:58 PM-->
+			<script language="javascript">
+			<!--
+			var curDateTime = new Date(); 
+			var offset = -(curDateTime.getTimezoneOffset()); 
+			if (offset > 0) { offset = "+" + offset; }
+	
+			if (window.adgroupid == undefined) {
+				window.adgroupid = Math.round(Math.random() * 1000);
+			}
+			document.write('<scr'+'ipt language="javascript1.1" src="http://adserver.adtechus.com/addyn/3.0/5417.1/3102233/0/16/ADTECH;loc=100;target=_blank;alias=;key=' + adtech_kw_str + ';grp='+window.adgroupid+';misc='+new Date().getTime()+';aduho='+offset+'"></scri'+'pt>');
+			//-->
+			</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5417.1/3102233/0/16/ADTECH;loc=300;alias=;key=key1+key2+key3+key4;misc=" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5417.1/3102233/0/16/ADTECH;loc=300;alias=;key=key1+key2+key3+key4;misc=" border="0" width="1" height="1"></a></noscript>
+			<!-- End of JavaScript Tag -->
+			
+		</div>
+	</div>
+
+	<div id="container">
+        <header>
+        	<div class="ad-box left">
+				<div id="adblock_header_ad_1">
+					<div id="adblock_header_ad_1_inner">
+						
+						<!--JavaScript Tag // Tag for network 5417: epmg360.com // Website: lavoztx.com // Page: Dynamic ROS // Placement: lavoztx_Dynamic_ROS_ATF_728x90 (3102234) // created at: Feb 5, 2014 8:02:58 PM-->
+						<script language="javascript">
+						<!--
+						var curDateTime = new Date(); 
+						var offset = -(curDateTime.getTimezoneOffset()); 
+						if (offset > 0) { offset = "+" + offset; }
+				
+						if (window.adgroupid == undefined) {
+							window.adgroupid = Math.round(Math.random() * 1000);
+						}
+						document.write('<scr'+'ipt language="javascript1.1" src="http://adserver.adtechus.com/addyn/3.0/5417.1/3102234/0/225/ADTECH;loc=100;target=_blank;alias=;key=' + adtech_kw_str + ';grp='+window.adgroupid+';misc='+new Date().getTime()+';aduho='+offset+'"></scri'+'pt>');
+						//-->
+						</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5417.1/3102234/0/225/ADTECH;loc=300;alias=;key=key1+key2+key3+key4;misc=" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5417.1/3102234/0/225/ADTECH;loc=300;alias=;key=key1+key2+key3+key4;misc=" border="0" width="728" height="90"></a></noscript>
+						<!-- End of JavaScript Tag -->
+						
+					</div>
+				</div>
+            </div>
+            <div class="ad-box-right right">
+				<div id="adblock_header_ad_2">
+					<div id="adblock_header_ad_2_inner">
+						
+						<!--JavaScript Tag // Tag for network 5417: epmg360.com // Website: lavoztx.com // Page: Dynamic ROS // Placement: lavoztx_Dynamic_ROS_ATF_230x90 (3102232) // created at: Feb 5, 2014 8:02:58 PM-->
+						<script language="javascript">
+						<!--
+						var curDateTime = new Date(); 
+						var offset = -(curDateTime.getTimezoneOffset()); 
+						if (offset > 0) { offset = "+" + offset; }
+				
+						if (window.adgroupid == undefined) {
+							window.adgroupid = Math.round(Math.random() * 1000);
+						}
+						document.write('<scr'+'ipt language="javascript1.1" src="http://adserver.adtechus.com/addyn/3.0/5417.1/3102232/0/1816/ADTECH;loc=100;target=_blank;alias=;key=' + adtech_kw_str + ';grp='+window.adgroupid+';misc='+new Date().getTime()+';aduho='+offset+'"></scri'+'pt>');
+						//-->
+						</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5417.1/3102232/0/1816/ADTECH;loc=300;alias=;key=key1+key2+key3+key4;misc=" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5417.1/3102232/0/1816/ADTECH;loc=300;alias=;key=key1+key2+key3+key4;misc=" border="0" width="230" height="90"></a></noscript>
+						<!-- End of JavaScript Tag -->
+						
+					</div>
+				</div>
+            </div>
+
+            <div class="clear"></div>
+
+        	<div class="header-section">
+                <div class="left">
+                	<a href="/"><img id="main_logo" src="http://epmghispanic.media.lionheartdms.com/static/lavoz/images/logo_lavoztx_new.png" alt="Lavoz TX" border="0"></a>
+                </div>
+                <div class="masthead">
+                    
+                </div>
+            	<div class="header-box">
+                    <div class="clear"></div>
+                	
+
+					<div class="right marT10">
+				        <div class="marR10 left">
+				            <form action="/search/" class="search">
+				            <fieldset>
+				            <legend class="hidden">Search form</legend>
+				            <div class="text">
+				            <input type="text" name="q" value="">
+				            </div>
+				            <input type="submit" value="Búsqueda" class="submit">
+				            </fieldset>
+				            </form>
+				        </div>
+				        <ul class="login-box left">
+				            <li><a href="/accounts/login/">Ingresar</a></li>
+				            <li class="last"><a href="/accounts/register/">Registro</a></li>
+				            <div class="clear"></div>
+				        </ul>
+				        <div class="clear"></div>
+				    </div>
+				
+				    <div class="clear"></div>
+				
+				    <div class="right marT10">
+				        <div class="date-weather left marR20">
+				            6:22 p.m., 12/15/2014 |
+				            
+				            70&deg; <img src="http://epmghispanic.media.lionheartdms.com/static/ellington_defaults/images/weather/small/cloudy.gif" height="20" width="20" />
+				            
+				        </div>
+				        <ul class="social-networks left">
+				            <li><a class="icn a" href="https://www.facebook.com/lavoztx" target="_blank">Facebook</a></li>
+				             <li><a class="icn twitter" href="https://twitter.com/lavozhouston" target="_blank">Twitter</a></li>
+				            <li><a class="icn rss" href="/rss/headlines/">RSS</a></li>
+				        </ul>
+				        <div class="clear"></div>
+				    </div>
+               	</div>
+                <div class="clear"></div>
+            </div>
+		</header>
+        <div class="clear"></div>
+        
+        
+	    <nav>
+	        <ul class="nav-tab">
+	            <li class="rounded-corner"><a href="/busqueda-local/">B&uacute;squeda Local</a></li>
+	            <li class="drop"><a href="/news/tuvidamasfacil/">Tu Vida M&aacute;s F&aacute;cil</a>
+	                <ul class="menu">
+	                    <li><a href="/news/tuvidamasfacil/autos/">Autos</a></li>
+	                    <li><a href="/news/tuvidamasfacil/empleo/">Empleos</a></li>
+	                    <li><a href="/news/tuvidamasfacil/bienesraices/">Bienes Ra&iacute;ces</a></li>
+	                    <li><a href="/news/tuvidamasfacil/decoracion/">Decoraci&oacute;n</a></li>
+	                </ul>
+	            </li>
+	            
+	            <li class="drop"><a href="#">Promociones</a>
+	                <ul class="menu">
+	                    <li><a href="/events/">Calendario</a></li>
+	                    <li><a href="/news/fotos/">Fotos</a></li>
+	                    <li><a href="/contests/">Concursos</a></li>
+	                </ul>
+	            </li>
+	        </ul>
+	
+	        <ul class="left">
+	            <li><a href="/" id="active">Inicio</a></li>
+	            <li class="drop">
+	            	<a href="/news/houston-texas/" >Houston y Texas</a>
+	                <ul class="menu">
+	                	<li><a href="/news/houston-texas/entre-nosotros/">Entre Nosotros</a></li>
+	                    <li><a href="/news/houston-texas/guia-de-huracanes/">Gu&iacute;a de Huracanes</a></li>
+	                    <li><a href="/news/houston-texas/entre-mujeres/">Entre Mujeres</a></li>
+	                </ul>
+	            </li>
+	            <li class="drop">
+	            	<a href="/news/entretenimiento/" >Entretenimiento</a>
+	                <ul class="menu">
+	                    <li><a href="/news/entretenimiento/nuevos-talentos/">Nuevos Talentos</a></li>
+	                    <li><a href="/news/entretenimiento/rodeo-2014/">Rodeo 2014</a></li>
+	                    <li><a href="/news/entretenimiento/sxsw-2014/">SXSW 2014</a></li>                    
+	                </ul>
+	            </li>
+	            <li class="drop">
+	            <a href="/news/deportes/" >Deportes</a>
+	            <ul class="menu">
+	                	<li><a href="/news/deportes/dynamo/">Dynamo</a></li>
+	                    <li><a href="/news/deportes/rockets/">Rockets</a></li>
+	                    <li><a href="/news/deportes/texans/">Texans</a></li>
+	                    <li><a href="/news/deportes/astros/">Astros</a></li>
+	                    <li><a href="/news/deportes/futbol-mexicano/">Fútbol mexicano</a></li>
+	                    
+	                    <li><a href="/news/deportes/mundial-2014/">Mundial 2014</a></li>
+	                </ul>
+	            </li>
+	
+	            <li class="drop">
+		            <a href="/news/estilo-de-vida/" >Estilo de vida</a>
+		            <ul class="menu">
+	                    <li><a href="/news/estilo-de-vida/mujer/">Mujer</a></li>
+	                    <li><a href="/news/estilo-de-vida/saber-vivir/">Saber vivir</a></li>
+	                    <li><a href="/news/estilo-de-vida/come-y-corre/">Come y corre</a></li>
+	                    <li><a href="/news/estilo-de-vida/la-buena-sazon/">La buena sazón</a></li>
+	                    <li><a href="/news/estilo-de-vida/cuestion-de-trabajo/">Cuestión de trabajo</a></li>
+	                    <li><a href="/news/estilo-de-vida/cuestion-de-dinero/">Cuestión de dinero</a></li>
+	                    <li><a href="/news/tecnomania/tecnomaniaco/"> El Tecnomaníaco</a></li>
+	                    <li><a href="/news/tecnomania/videogamer/">El Videogamer</a></li>
+	                    <li><a href="http://pyme.lavoztx.com">PyMe</a></li>
+	                </ul>
+	            </li>
+	
+	            <li class="drop">
+	            	<a href="/news/estados-unidos/" >Estados Unidos</a>
+	            	<ul class="menu">
+	            		<li><a href="/news/obamacare/">Obamacare</a></li>
+	            	</ul>
+	            </li>
+	            <li><a href="/news/america-latina/" >América Latina</a></li>
+	            <li><a href="/news/opinion/" >Opini&oacute;n</a></li>
+	            
+	            <li><a href="/news/droz-drroizen/">Dr. Oz y Dr. Roizen</a></li>
+			</ul>
+	
+	        <div class="clear"></div>
+		</nav>
+        
+        
+		<div id="adblock_1x1_ad_2">
+			<div id="adblock_1x1_ad_2_inner">
+				
+				<!--JavaScript Tag // Tag for network 5417: epmg360.com // Website: lavoztx.com // Page: Dynamic ROS // Placement: lavoztx_Dynamic_ROS_1x1_NAV (3102235) // created at: Feb 5, 2014 8:02:58 PM-->
+				<script language="javascript">
+				<!--
+				var curDateTime = new Date(); 
+				var offset = -(curDateTime.getTimezoneOffset()); 
+				if (offset > 0) { offset = "+" + offset; }
+		
+				if (window.adgroupid == undefined) {
+					window.adgroupid = Math.round(Math.random() * 1000);
+				}
+				document.write('<scr'+'ipt language="javascript1.1" src="http://adserver.adtechus.com/addyn/3.0/5417.1/3102235/0/16/ADTECH;loc=100;target=_blank;alias=;key=' + adtech_kw_str + ';grp='+window.adgroupid+';misc='+new Date().getTime()+';aduho='+offset+'"></scri'+'pt>');
+				//-->
+				</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5417.1/3102235/0/16/ADTECH;loc=300;alias=;key=key1+key2+key3+key4;misc=" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5417.1/3102235/0/16/ADTECH;loc=300;alias=;key=key1+key2+key3+key4;misc=" border="0" width="1" height="1"></a></noscript>
+				<!-- End of JavaScript Tag -->
+				
+			</div>
+		</div>
+        
+        <div id="container_inner">
+        
+	   		<section>
+	            <div id="content" class="left">
+	            	
+	            	
+
+ 
+    <!-- carousel -->
+    
+    <div class="carousel">
+        <div class="carousel-holder">
+            <ul>
+                
+                    <li class="active">
+                    	<a href="/news/2014/dec/15/termina-toma-de-rehenes-en-cafe-de-sydney-con-asal/"><img src="http://epmghispanic.media.lionheartdms.com/img/photos/2014/12/15/Sydney_r670x300.jpg?a9fb96ce3cf4f61818d078830d60af1cf92c57e2" width="670" height="300" alt="" ></a>
+                    	<div class="description-box">
+                    		<p>Termina toma de rehenes en café de Sydney tras más de 16 horas</p>
+                    	</div>
+                    </li>
+                
+                    <li class="active">
+                    	<a href="/news/2014/dec/12/texas-y-harris-los-mayores-receptores-de-ninos-ind/"><img src="http://epmghispanic.media.lionheartdms.com/img/croppedphotos/2014/12/12/Foto_cropeada_r670x300.jpg?a9fb96ce3cf4f61818d078830d60af1cf92c57e2" width="670" height="300" alt="" ></a>
+                    	<div class="description-box">
+                    		<p>Texas y Harris, los mayores receptores de niños indocumentados sin acompañante</p>
+                    	</div>
+                    </li>
+                
+                    <li class="active">
+                    	<a href="/news/2014/dec/12/amenaza-de-capitan-contra-hispanos-reaviva-preocup/"><img src="http://epmghispanic.media.lionheartdms.com/img/croppedphotos/2014/12/12/20120726_thursday_0726_NdlT_018_r670x300.JPG?a9fb96ce3cf4f61818d078830d60af1cf92c57e2" width="670" height="300" alt="" ></a>
+                    	<div class="description-box">
+                    		<p>Amenaza de capitán contra hispanos reaviva  preocupación por agresividad contra minorías</p>
+                    	</div>
+                    </li>
+                
+                    <li class="active">
+                    	<a href="/news/2014/dec/11/duelo-trae-houston-sus-canciones-de-navidad/"><img src="http://epmghispanic.media.lionheartdms.com/img/croppedphotos/2014/12/11/Duelo_Ellington_r670x300.jpg?a9fb96ce3cf4f61818d078830d60af1cf92c57e2" width="670" height="300" alt="" ></a>
+                    	<div class="description-box">
+                    		<p>Duelo trae a Houston sus canciones de Navidad</p>
+                    	</div>
+                    </li>
+                
+                    <li class="active">
+                    	<a href="/news/2014/dec/15/real-madrid-quiere-coronar-ano-inolvidable-en-mund/"><img src="http://epmghispanic.media.lionheartdms.com/img/croppedphotos/2014/12/15/RealMadridFIFA_copy_r670x300.jpg?a9fb96ce3cf4f61818d078830d60af1cf92c57e2" width="670" height="300" alt="" ></a>
+                    	<div class="description-box">
+                    		<p>Real Madrid quiere coronar “año inolvidable” en Mundial de Clubes</p>
+                    	</div>
+                    </li>
+                
+            </ul>
+        </div>
+        <ul class="switcher">
+            
+            <li>
+                <img src="http://epmghispanic.media.lionheartdms.com/img/photos/2014/12/15/Sydney_r133x78.jpg?9442bc4597cd3bec2ee97d1404de1e0e0e9cb520" alt="" >
+                <a href="/news/2014/dec/15/termina-toma-de-rehenes-en-cafe-de-sydney-con-asal/">&nbsp;</a>
+            </li>
+            
+            <li>
+                <img src="http://epmghispanic.media.lionheartdms.com/img/croppedphotos/2014/12/12/Foto_cropeada_r133x78.jpg?9442bc4597cd3bec2ee97d1404de1e0e0e9cb520" alt="" >
+                <a href="/news/2014/dec/12/texas-y-harris-los-mayores-receptores-de-ninos-ind/">&nbsp;</a>
+            </li>
+            
+            <li>
+                <img src="http://epmghispanic.media.lionheartdms.com/img/croppedphotos/2014/12/12/20120726_thursday_0726_NdlT_018_r133x78.JPG?9442bc4597cd3bec2ee97d1404de1e0e0e9cb520" alt="" >
+                <a href="/news/2014/dec/12/amenaza-de-capitan-contra-hispanos-reaviva-preocup/">&nbsp;</a>
+            </li>
+            
+            <li>
+                <img src="http://epmghispanic.media.lionheartdms.com/img/croppedphotos/2014/12/11/Duelo_Ellington_r133x78.jpg?9442bc4597cd3bec2ee97d1404de1e0e0e9cb520" alt="" >
+                <a href="/news/2014/dec/11/duelo-trae-houston-sus-canciones-de-navidad/">&nbsp;</a>
+            </li>
+            
+            <li>
+                <img src="http://epmghispanic.media.lionheartdms.com/img/croppedphotos/2014/12/15/RealMadridFIFA_copy_r133x78.jpg?9442bc4597cd3bec2ee97d1404de1e0e0e9cb520" alt="" >
+                <a href="/news/2014/dec/15/real-madrid-quiere-coronar-ano-inolvidable-en-mund/">&nbsp;</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+
+
+
+    <div class="clear"></div> 
+    
+    
+    <article class="content-box marT20 maB10">    
+        <div class="heading-box">
+            <h2><a href="/news/houston-texas/"><span>HOUSTON Y TEXAS</span></a></h2>
+        </div>
+        <ul class="bucket_list">
+        	
+            
+            
+
+<li>
+    
+    <div >
+        <a href="/news/2014/dec/12/texas-y-harris-los-mayores-receptores-de-ninos-ind/"><img src="http://epmghispanic.media.lionheartdms.com/img/croppedphotos/2014/12/12/Foto_cropeada_r210x150.jpg?dc4c3905ef850bfa4c05c5242a24113820ea9cec" alt="Un grupo de inmigrantes indocumentados procedentes de Centroamérica espera a ser transportado desde la frontera por agentes de la Patrulla Fronteriza de Estados Unidos en julio de 2014. " width="210" height="150" ></a>
+    </div>
+    
+    <div class="clear"></div>
+    <div class="content">
+        <h3><a href="/news/2014/dec/12/texas-y-harris-los-mayores-receptores-de-ninos-ind/">Texas y Harris, los mayores receptores de niños indocumentados sin acompañante</a></h3>
+		<p>Texas es el estado donde más indocumentados menores de 18 años han sido reubicados en ...<a href="/news/2014/dec/12/texas-y-harris-los-mayores-receptores-de-ninos-ind/">leer más &rarr;</a></p>
+    </div>
+    <div class="clear"></div>
+</li>
+
+            
+            
+
+<li>
+    
+    <div >
+        <a href="/news/2014/dec/12/amenaza-de-capitan-contra-hispanos-reaviva-preocup/"><img src="http://epmghispanic.media.lionheartdms.com/img/croppedphotos/2014/12/12/20120726_thursday_0726_NdlT_018_r210x150.JPG?dc4c3905ef850bfa4c05c5242a24113820ea9cec" alt="El capitán Lary Batiste, en imagen de archivo, ha sido transferido a tareas administrativas y está bajo investigación por amenazas de muerte a chicos latinos. " width="210" height="150" ></a>
+    </div>
+    
+    <div class="clear"></div>
+    <div class="content">
+        <h3><a href="/news/2014/dec/12/amenaza-de-capitan-contra-hispanos-reaviva-preocup/">Amenaza de capitán contra hispanos reaviva  preocupación por agresividad contra minorías</a></h3>
+		<p>Las amenazas de un capitán del Departamento de Bomberos de Houston dirigidas a los padres ...<a href="/news/2014/dec/12/amenaza-de-capitan-contra-hispanos-reaviva-preocup/">leer más &rarr;</a></p>
+    </div>
+    <div class="clear"></div>
+</li>
+
+            
+            
+
+<li>
+    
+    <div >
+        <a href="/news/2014/dec/11/los-indocumentados-que-quedan-fuera-del-decreto-de/"><img src="http://epmghispanic.media.lionheartdms.com/img/croppedphotos/2014/12/11/Foto_cropeada_r210x150.jpg?dc4c3905ef850bfa4c05c5242a24113820ea9cec" alt="José Gutiérrez es un inmigrante indocumentado de El Salvador. Debido a que no califica para ninguno de los programas del decreto de Obama, no podrá beneficiarse de la orden ejecutiva del presidente." width="210" height="150" ></a>
+    </div>
+    
+    <div class="clear"></div>
+    <div class="content">
+        <h3><a href="/news/2014/dec/11/los-indocumentados-que-quedan-fuera-del-decreto-de/">Los indocumentados que quedan fuera del decreto de inmigración</a></h3>
+		<p>Mientras más de cinco millones de indocumentados celebran la posibilidad de evitar la deportación y ...<a href="/news/2014/dec/11/los-indocumentados-que-quedan-fuera-del-decreto-de/">leer más &rarr;</a></p>
+    </div>
+    <div class="clear"></div>
+</li>
+
+            
+        </ul>
+      
+        <div class="clear"></div>
+    </article> 
+     
+    <div class="clear"></div> 
+    
+    <article class="content-box marT20 maB10">          
+        <div class="heading-box">
+            <h2><a href="/news/entretenimiento/"><span>ENTRETENIMIENTO</span></a></h2>
+        </div>
+         <ul class="bucket_list">
+        	
+            
+            
+
+<li>
+    
+    <div >
+        <a href="/news/2014/dec/11/kate-del-castillo-protagoniza-duenos-del-paraiso-p/"><img src="http://epmghispanic.media.lionheartdms.com/img/croppedphotos/2014/12/11/Kate_Ellington_r210x150.jpg?dc4c3905ef850bfa4c05c5242a24113820ea9cec" alt="La actriz mexicana Kate del Castillo, en su papel como la narcotraficante Anastasia Cardona, es la protagonista de la nueva serie de Telemundo ‘Dueños del Paraíso’. " width="210" height="150" ></a>
+    </div>
+    
+    <div class="clear"></div>
+    <div class="content">
+        <h3><a href="/news/2014/dec/11/kate-del-castillo-protagoniza-duenos-del-paraiso-p/">Kate del Castillo protagoniza ‘Dueños del paraíso’ por Telemundo en enero</a></h3>
+		<p>Kate del Castillo regresa a la televisión con uno de los papeles que mejor se ...<a href="/news/2014/dec/11/kate-del-castillo-protagoniza-duenos-del-paraiso-p/">leer más &rarr;</a></p>
+    </div>
+    <div class="clear"></div>
+</li>
+
+            
+            
+
+<li>
+    
+    <div >
+        <a href="/news/2014/dec/11/duelo-trae-houston-sus-canciones-de-navidad/"><img src="http://epmghispanic.media.lionheartdms.com/img/croppedphotos/2014/12/11/Duelo_Ellington_r210x150.jpg?dc4c3905ef850bfa4c05c5242a24113820ea9cec" alt="El grupo texano de música norteña Duelo, fiel a su costumbre de ser punta de lanza, lanzó un disco de música navideña en su estilo musical. " width="210" height="150" ></a>
+    </div>
+    
+    <div class="clear"></div>
+    <div class="content">
+        <h3><a href="/news/2014/dec/11/duelo-trae-houston-sus-canciones-de-navidad/">Duelo trae a Houston sus canciones de Navidad</a></h3>
+		<p>Hacer un disco con canciones navideñas clásicas, pasadas por el tamiz de la música norteña, ...<a href="/news/2014/dec/11/duelo-trae-houston-sus-canciones-de-navidad/">leer más &rarr;</a></p>
+    </div>
+    <div class="clear"></div>
+</li>
+
+            
+            
+
+<li>
+    
+    <div >
+        <a href="/news/2014/dec/08/saul-hernandez-vuelve-probar-en-solitario/"><img src="http://epmghispanic.media.lionheartdms.com/img/croppedphotos/2014/12/08/saul_3_r210x150.jpg?dc4c3905ef850bfa4c05c5242a24113820ea9cec" alt="Saúl Hernández, durante su concierto con Caifanes, en junio de 2012.
+" width="210" height="150" ></a>
+    </div>
+    
+    <div class="clear"></div>
+    <div class="content">
+        <h3><a href="/news/2014/dec/08/saul-hernandez-vuelve-probar-en-solitario/">Saúl Hernández vuelve a probar en solitario</a></h3>
+		<p>Sus canciones con los grupos Caifanes o Jaguares están en la memoria colectiva de miles ...<a href="/news/2014/dec/08/saul-hernandez-vuelve-probar-en-solitario/">leer más &rarr;</a></p>
+    </div>
+    <div class="clear"></div>
+</li>
+
+            
+        </ul>
+        <div class="clear"></div>  
+    </article>
+    
+  
+    <div class="clear"></div> 
+    
+    <article class="content-box marT20 maB10">    
+        <div class="heading-box">
+            <h2><a href="/news/deportes/"><span>DEPORTES</span></a></h2>
+        </div>
+        <ul class="bucket_list">
+        	
+            
+            
+
+<li>
+    
+    <div >
+        <a href="/news/2014/dec/15/mexicano-gutierrez-sera-piloto-suplente-de-ferrari/"><img src="http://epmghispanic.media.lionheartdms.com/img/photos/2012/12/14/002_1_r210x150.jpg?dc4c3905ef850bfa4c05c5242a24113820ea9cec" alt="El piloto mexicano Esteban Gutiérrez." width="210" height="150" ></a>
+    </div>
+    
+    <div class="clear"></div>
+    <div class="content">
+        <h3><a href="/news/2014/dec/15/mexicano-gutierrez-sera-piloto-suplente-de-ferrari/">Mexicano Gutiérrez será piloto suplente de Ferrari</a></h3>
+		<p>Ferrari contrató al mexicano Esteban Gutiérrez como su piloto suplente, a cargo de la puesta ...<a href="/news/2014/dec/15/mexicano-gutierrez-sera-piloto-suplente-de-ferrari/">leer más &rarr;</a></p>
+    </div>
+    <div class="clear"></div>
+</li>
+
+            
+            
+
+<li>
+    
+    <div >
+        <a href="/news/2014/dec/15/real-madrid-chocara-con-shalke-en-la-liga-de-campe/"><img src="http://epmghispanic.media.lionheartdms.com/img/croppedphotos/2014/12/15/RealMadridSorteo_copy_r210x150.jpg?dc4c3905ef850bfa4c05c5242a24113820ea9cec" alt="El ex jugador alemán Karl-Heinz Riedle muestra una papeleta con el nombre del Real Madrid durante el sorteo de los octavos de final de la Liga de Campeones el lunes 15 de diciembre de 2014 en Nyon, Suiza." width="210" height="150" ></a>
+    </div>
+    
+    <div class="clear"></div>
+    <div class="content">
+        <h3><a href="/news/2014/dec/15/real-madrid-chocara-con-shalke-en-la-liga-de-campe/">Real Madrid chocará con Shalke en la Liga de Campeones </a></h3>
+		<p>El actual campeón de Europa, el Real Madrid, se enfrentará al Schalke en la fase ...<a href="/news/2014/dec/15/real-madrid-chocara-con-shalke-en-la-liga-de-campe/">leer más &rarr;</a></p>
+    </div>
+    <div class="clear"></div>
+</li>
+
+            
+            
+
+<li>
+    
+    <div >
+        <a href="/news/2014/dec/15/aguirre-acusado-formalmente-de-amano-de-partido/"><img src="http://epmghispanic.media.lionheartdms.com/img/croppedphotos/2014/12/15/JavierAguirre_t750x550_copy_r210x150.jpg?dc4c3905ef850bfa4c05c5242a24113820ea9cec" alt="El mexicano Javier Aguirre, entrenador de la selección japonesa." width="210" height="150" ></a>
+    </div>
+    
+    <div class="clear"></div>
+    <div class="content">
+        <h3><a href="/news/2014/dec/15/aguirre-acusado-formalmente-de-amano-de-partido/">Aguirre, acusado formalmente de amaño de partido</a></h3>
+		<p>El técnico mexicano Javier Aguirre, el jugador argentino Leo Ponzio y los urugayos Carlos Diogo ...<a href="/news/2014/dec/15/aguirre-acusado-formalmente-de-amano-de-partido/">leer más &rarr;</a></p>
+    </div>
+    <div class="clear"></div>
+</li>
+
+            
+        </ul>
+        <div class="clear"></div> 
+    </article> 
+     
+    <div class="clear"></div>
+    
+    <article class="content-box marT20 maB10">          
+        <div class="heading-box">
+            <h2><a href="/news/estilo-de-vida/"><span>ESTILO DE VIDA</span></a></h2>
+        </div>
+        <ul class="bucket_list">
+            
+            
+            
+
+<li>
+    
+    <div >
+        <a href="/news/2014/dec/10/tres-consejos-para-no-acumular-deudas-en-la-tempor/"><img src="http://epmghispanic.media.lionheartdms.com/img/croppedphotos/2014/12/10/dinero_r210x150.jpg?dc4c3905ef850bfa4c05c5242a24113820ea9cec" alt="Establece un presupuesto para las compras que harás esta temporada." width="210" height="150" ></a>
+    </div>
+    
+    <div class="clear"></div>
+    <div class="content">
+        <h3><a href="/news/2014/dec/10/tres-consejos-para-no-acumular-deudas-en-la-tempor/">Tres consejos para no acumular deudas en la temporada navideña</a></h3>
+		<p>Usar tarjetas de crédito para hacer las compras de Navidad puede ser tentador, especialmente si ...<a href="/news/2014/dec/10/tres-consejos-para-no-acumular-deudas-en-la-tempor/">leer más &rarr;</a></p>
+    </div>
+    <div class="clear"></div>
+</li>
+
+            
+            
+
+<li>
+    
+    <div >
+        <a href="/news/2014/dec/10/como-evitar-los-calambres-en-las-piernas/"><img src="http://epmghispanic.media.lionheartdms.com/img/croppedphotos/2014/12/10/piernas_r210x150.jpg?dc4c3905ef850bfa4c05c5242a24113820ea9cec" alt="Los dolorosos calambres en las piernas pueden combatirse." width="210" height="150" ></a>
+    </div>
+    
+    <div class="clear"></div>
+    <div class="content">
+        <h3><a href="/news/2014/dec/10/como-evitar-los-calambres-en-las-piernas/">Cómo evitar los calambres en las piernas</a></h3>
+		<p>¿Sabías que casi todos los bailarines sufren de calambres en las piernas y que los ...<a href="/news/2014/dec/10/como-evitar-los-calambres-en-las-piernas/">leer más &rarr;</a></p>
+    </div>
+    <div class="clear"></div>
+</li>
+
+            
+            
+
+<li>
+    
+    <div >
+        <a href="/news/2014/dec/10/compras-en-la-web-con-pronta-entrega/"><img src="http://epmghispanic.media.lionheartdms.com/img/croppedphotos/2014/12/10/Envios_r210x150.jpg?dc4c3905ef850bfa4c05c5242a24113820ea9cec" alt="Un empleado ordena paquetes en un centro de Amazon.com, en Phoenix, Arizona." width="210" height="150" ></a>
+    </div>
+    
+    <div class="clear"></div>
+    <div class="content">
+        <h3><a href="/news/2014/dec/10/compras-en-la-web-con-pronta-entrega/">Compras hechas en Internet tendrán pronta entrega</a></h3>
+		<p>El sueño de quienes lo dejan todo para después puede hacerse realidad en esta temporada ...<a href="/news/2014/dec/10/compras-en-la-web-con-pronta-entrega/">leer más &rarr;</a></p>
+    </div>
+    <div class="clear"></div>
+</li>
+
+            
+        </ul>
+        <div class="clear"></div>  
+    </article> 
+     
+    <div class="clear"></div>
+    
+    <article class="content-box marT20 maB10">          
+        <div class="heading-box">
+            <h2><a href="/news/estados-unidos/"><span>ESTADOS UNIDOS</span></a></h2>
+        </div>
+        <ul class="bucket_list">
+        	
+            
+            
+
+<li>
+    
+    <div >
+        <a href="/news/2014/dec/11/george-w-bush-engano-al-pais-senador/"><img src="http://epmghispanic.media.lionheartdms.com/img/croppedphotos/2014/12/11/Boehner_r210x150.jpg?dc4c3905ef850bfa4c05c5242a24113820ea9cec" alt="ohn Boehner, presidente de la Cámara de Representantes, realiza la que podría ser su última conferencia de prensa en la 113era Legislatura, el jueves 11 de diciembre de 2014, en el Capitolio, en Washington. " width="210" height="150" ></a>
+    </div>
+    
+    <div class="clear"></div>
+    <div class="content">
+        <h3><a href="/news/2014/dec/11/george-w-bush-engano-al-pais-senador/">George W. Bush engañó al país: Senador</a></h3>
+		<p>El presidente de la Comisión de Servicios Armados del Senado proporcionó el jueves nueva información ...<a href="/news/2014/dec/11/george-w-bush-engano-al-pais-senador/">leer más &rarr;</a></p>
+    </div>
+    <div class="clear"></div>
+</li>
+
+            
+            
+
+<li>
+    
+    <div >
+        <a href="/news/2014/dec/11/obama-firmara-sanciones-venezolanos/"><img src="http://epmghispanic.media.lionheartdms.com/img/croppedphotos/2014/12/11/obama_r210x150.jpg?dc4c3905ef850bfa4c05c5242a24113820ea9cec" alt="El presidente Barack Obama planea firmar el proyecto de ley aprobado por el Congreso para sancionar a funcionarios venezolanos acusados de violar derechos humanos." width="210" height="150" ></a>
+    </div>
+    
+    <div class="clear"></div>
+    <div class="content">
+        <h3><a href="/news/2014/dec/11/obama-firmara-sanciones-venezolanos/">Obama firmará sanciones a venezolanos</a></h3>
+		<p>La Casa Blanca informó el jueves que el presidente Barack Obama planea firmar el proyecto ...<a href="/news/2014/dec/11/obama-firmara-sanciones-venezolanos/">leer más &rarr;</a></p>
+    </div>
+    <div class="clear"></div>
+</li>
+
+            
+            
+
+<li>
+    
+    <div >
+        <a href="/news/2014/dec/11/director-de-la-cia-responde-acusaciones-de-tortura/"><img src="http://epmghispanic.media.lionheartdms.com/img/croppedphotos/2014/12/11/CIA_r210x150.jpg?dc4c3905ef850bfa4c05c5242a24113820ea9cec" alt="John Brennan, director de la CIA, hace una pausa durante una conferencia de prensa en la sede de la agencia de inteligencia en Langley, Virginia, el jueves 11 de diciembre de 2014." width="210" height="150" ></a>
+    </div>
+    
+    <div class="clear"></div>
+    <div class="content">
+        <h3><a href="/news/2014/dec/11/director-de-la-cia-responde-acusaciones-de-tortura/">Director de la CIA responde a acusaciones de tortura</a></h3>
+		<p>En respuesta a un informe del Senado sobre torturas aplicadas por la CIA, el director ...<a href="/news/2014/dec/11/director-de-la-cia-responde-acusaciones-de-tortura/">leer más &rarr;</a></p>
+    </div>
+    <div class="clear"></div>
+</li>
+
+            
+        </ul>
+        <div class="clear"></div>  
+    </article>
+ 
+    <div class="clear"></div> 
+    
+    <article class="content-box marT20 maB10">          
+        <div class="heading-box">
+            <h2><a href="/news/america-latina/"><span>América Latina</span></a></h2>
+        </div>
+        <ul class="bucket_list">
+        	
+            
+            
+
+<li>
+    
+    <div >
+        <a href="/news/2014/dec/11/mexico-presenta-reglas-para-explorar-crudo/"><img src="http://epmghispanic.media.lionheartdms.com/img/croppedphotos/2014/12/11/Mexico_r210x150.jpg?dc4c3905ef850bfa4c05c5242a24113820ea9cec" alt="Plataforma petrolera en México." width="210" height="150" ></a>
+    </div>
+    
+    <div class="clear"></div>
+    <div class="content">
+        <h3><a href="/news/2014/dec/11/mexico-presenta-reglas-para-explorar-crudo/">México presenta reglas para explorar crudo</a></h3>
+		<p>El gobierno de México presentó el jueves las reglas que permitirán a empresas nacionales y ...<a href="/news/2014/dec/11/mexico-presenta-reglas-para-explorar-crudo/">leer más &rarr;</a></p>
+    </div>
+    <div class="clear"></div>
+</li>
+
+            
+            
+
+<li>
+    
+    <div >
+        <a href="/news/2014/dec/04/el-presidente-mexicano-visita-estado-de-desapareci/"><img src="http://epmghispanic.media.lionheartdms.com/img/croppedphotos/2014/12/04/Mexico_r210x150.jpg?dc4c3905ef850bfa4c05c5242a24113820ea9cec" alt="El presidente mexicano Enrique Peña Nieto habla en la residencia presidencial de los Pinos, Ciudad de México, 3 de diciembre de 2014. Peña Nieto visitó el jueves 4 de diciembre de 2014 el convulsionado estado sureño de Guerrero por primera vez desde la desaparición hace más de dos meses de 43 estudiantes, que provocó la mayor crisis de los dos primeros años de su sexenio. " width="210" height="150" ></a>
+    </div>
+    
+    <div class="clear"></div>
+    <div class="content">
+        <h3><a href="/news/2014/dec/04/el-presidente-mexicano-visita-estado-de-desapareci/">El presidente mexicano visita estado de desaparecidos</a></h3>
+		<p>El presidente mexicano Enrique Peña Nieto visitó el jueves el convulsionado estado sureño de Guerrero ...<a href="/news/2014/dec/04/el-presidente-mexicano-visita-estado-de-desapareci/">leer más &rarr;</a></p>
+    </div>
+    <div class="clear"></div>
+</li>
+
+            
+            
+
+<li>
+    
+    <div >
+        <a href="/news/2014/dec/04/van-15-muertes-en-argentina-ligadas-futbol-en-2014/"><img src="http://epmghispanic.media.lionheartdms.com/img/croppedphotos/2014/12/04/Argentina_r210x150.jpg?dc4c3905ef850bfa4c05c5242a24113820ea9cec" alt="Un aficionado del River Plate sostiene una bengala mientras se sostiene de pie sobre la malla que divide al público de las canchas durante un partido de semifinales de la Copa Sudamericana ante Boca Juniors en Buenos Aires, Argentina, el jueves 27 de noviembre de 2014. El grupo Salvemos al Fútbol reportó el jueves 4 de diciembre que en 2014 se han registrado 15 muertes relacionadas con el fútbol en Argentina. " width="210" height="150" ></a>
+    </div>
+    
+    <div class="clear"></div>
+    <div class="content">
+        <h3><a href="/news/2014/dec/04/van-15-muertes-en-argentina-ligadas-futbol-en-2014/">Van 15 muertes en Argentina ligadas a fútbol en 2014</a></h3>
+		<p>La muerte del defensor Franco Nieto al recibir una golpiza y una pedrada en la ...<a href="/news/2014/dec/04/van-15-muertes-en-argentina-ligadas-futbol-en-2014/">leer más &rarr;</a></p>
+    </div>
+    <div class="clear"></div>
+</li>
+
+            
+        </ul>
+        <div class="clear"></div> 
+    </article>
+    
+    <div class="clear"></div>
+    
+    <article class="content-box marT20 maB10">          
+        <div class="heading-box">
+            <h2><a href="/news/mundo/"><span>MUNDO</span></a></h2>
+        </div>
+        <ul class="bucket_list">
+        	
+            
+            
+
+<li>
+    
+    <div >
+        <a href="/news/2014/dec/15/termina-toma-de-rehenes-en-cafe-de-sydney-con-asal/"><img src="http://epmghispanic.media.lionheartdms.com/img/photos/2014/12/15/Sydney_r210x150.jpg?dc4c3905ef850bfa4c05c5242a24113820ea9cec" alt="Un grupo de paramédicos australianos retira a un rehén herido durante el enfrentamiento entre la policía y el hombre que tomó un café con todos sus ocupantes en el distrito de negocios de Sydney, el 16 de diciembre de 2014. La policía asaltó el café donde el hombre armado retenía a clietnes y trabajadores y donde colgó una pancarta con un mensaje de contenido islámico. 
+" width="210" height="150" ></a>
+    </div>
+    
+    <div class="clear"></div>
+    <div class="content">
+        <h3><a href="/news/2014/dec/15/termina-toma-de-rehenes-en-cafe-de-sydney-con-asal/">Termina toma de rehenes en café de Sydney tras más de 16 horas</a></h3>
+		<p>Un grupo de policías bien armados irrumpió en una cafetería en Sydney temprano en la ...<a href="/news/2014/dec/15/termina-toma-de-rehenes-en-cafe-de-sydney-con-asal/">leer más &rarr;</a></p>
+    </div>
+    <div class="clear"></div>
+</li>
+
+            
+            
+
+<li>
+    
+    <div >
+        <a href="/news/2014/dec/04/fuerzas-de-eeuu-tienen-inmunidad-en-irak/"><img src="http://epmghispanic.media.lionheartdms.com/img/croppedphotos/2014/12/04/embajador_r210x150.jpg?dc4c3905ef850bfa4c05c5242a24113820ea9cec" alt="Stuart E. Jones, embajador de Estados Unidos en Irak, en una entrevista con The Associated Press en Bahdad, Irak, el jueves 4 de dociembre de 2014. " width="210" height="150" ></a>
+    </div>
+    
+    <div class="clear"></div>
+    <div class="content">
+        <h3><a href="/news/2014/dec/04/fuerzas-de-eeuu-tienen-inmunidad-en-irak/">Fuerzas de EE.UU. tienen inmunidad en Irak</a></h3>
+		<p>Las fuerzas estadounidenses gozarán de inmunidad y de otros privilegios en Irak donde ayudan a ...<a href="/news/2014/dec/04/fuerzas-de-eeuu-tienen-inmunidad-en-irak/">leer más &rarr;</a></p>
+    </div>
+    <div class="clear"></div>
+</li>
+
+            
+            
+
+<li>
+    
+    <div >
+        <a href="/news/2014/dec/04/ebola-practicas-riesgosas-contagian-mas/"><img src="http://epmghispanic.media.lionheartdms.com/img/croppedphotos/2014/12/04/EBOLA_r210x150.jpg?dc4c3905ef850bfa4c05c5242a24113820ea9cec" alt="En esta imagen del 2 de diciembre del 2014, el médico ugandés Michael Mawanda, que contrajo ébola mientras trabajaba en un hospital en Sierra Leona, habla con la AP en Kampala, Uganda, a su regreso de Alemania donde recibió tratamiento médico. El Dr. Mawanda dijo que observó algunos comportamientos inquietantes cuando estaba en Sierra Leona contribuyendo a la lucha contra la epidemia del ébola, incluso a familiares que retiraban a pacientes del hospital donde trabajaba." width="210" height="150" ></a>
+    </div>
+    
+    <div class="clear"></div>
+    <div class="content">
+        <h3><a href="/news/2014/dec/04/ebola-practicas-riesgosas-contagian-mas/">Ébola, prácticas riesgosas contagian a más</a></h3>
+		<p>El doctor Michael Mawanda observó algunos comportamientos inquietantes cuando luchaba en Sierra Leona contra la ...<a href="/news/2014/dec/04/ebola-practicas-riesgosas-contagian-mas/">leer más &rarr;</a></p>
+    </div>
+    <div class="clear"></div>
+</li>
+
+            
+        </ul>
+        <div class="clear"></div> 
+    </article> 
+     
+    <div class="clear"></div>
+    
+    <article class="content-box marT20 maB10">          
+        <div class="heading-box">
+            <h2><a href="/news/estados-unidos/"><span>OPINI&oacute;N</span></a></h2>
+        </div>
+        <ul class="bucket_list">
+            
+            
+            
+
+<li>
+    
+    <div >
+        <a href="/news/2014/oct/11/california-supera-texas-en-los-resultados-del-exam/"><img src="http://epmghispanic.media.lionheartdms.com/img/photos/2014/04/09/examen_r210x150.jpg?dc4c3905ef850bfa4c05c5242a24113820ea9cec" alt="Un estudiante tomando un examen. " width="210" height="150" ></a>
+    </div>
+    
+    <div class="clear"></div>
+    <div class="content">
+        <h3><a href="/news/2014/oct/11/california-supera-texas-en-los-resultados-del-exam/">Opinión: California supera a Texas en los resultados del examen SAT</a></h3>
+		<p>Los estudiantes de Texas alcanzaron nuevos resultados mínimos con sus calificaciones en matemática en el ...<a href="/news/2014/oct/11/california-supera-texas-en-los-resultados-del-exam/">leer más &rarr;</a></p>
+    </div>
+    <div class="clear"></div>
+</li>
+
+            
+            
+
+<li>
+    
+    <div >
+        <a href="/news/2014/jul/02/opinion-obama-tiene-que-usar-su-autoridad-para-enm/"><img src="http://epmghispanic.media.lionheartdms.com/img/photos/2014/07/02/editorial_r210x150.jpg?dc4c3905ef850bfa4c05c5242a24113820ea9cec" alt="Inmigrantes detenidos en una cárcel del Departamento de Inmigración y Aduanas (ICE)." width="210" height="150" ></a>
+    </div>
+    
+    <div class="clear"></div>
+    <div class="content">
+        <h3><a href="/news/2014/jul/02/opinion-obama-tiene-que-usar-su-autoridad-para-enm/">Opinión: Obama tiene que usar su autoridad para enmendar un sistema de inmigración deteriorado</a></h3>
+		<p>Con las decenas de miles de niños inmigrantes desesperados que procedentes de Centroamérica llegan a ...<a href="/news/2014/jul/02/opinion-obama-tiene-que-usar-su-autoridad-para-enm/">leer más &rarr;</a></p>
+    </div>
+    <div class="clear"></div>
+</li>
+
+            
+            
+
+<li>
+    
+    <div >
+        <a href="/news/2014/jun/24/opinion-la-plataforma-politica-republicana-serviri/"><img src="http://epmghispanic.media.lionheartdms.com/img/photos/2013/12/30/Austin_r210x150.jpg?dc4c3905ef850bfa4c05c5242a24113820ea9cec" alt="Foto de archivo del Capitolio de Texas, ubicado en el centro de Austin. " width="210" height="150" ></a>
+    </div>
+    
+    <div class="clear"></div>
+    <div class="content">
+        <h3><a href="/news/2014/jun/24/opinion-la-plataforma-politica-republicana-serviri/">Opinión: la plataforma política republicana serviría de punto de partida a la Convención Demócrata</a></h3>
+		<p>Cuando los demócratas de Texas se reúnan esta semana para su gran reunión política, conformarán ...<a href="/news/2014/jun/24/opinion-la-plataforma-politica-republicana-serviri/">leer más &rarr;</a></p>
+    </div>
+    <div class="clear"></div>
+</li>
+
+            
+        </ul>
+        <div class="clear"></div>  
+    </article>
+    
+    <div class="clear"></div>
+
+     
+    <div class="content-section">
+        <h4>Galería de fotos</h4>
+        <ul class="photos-list">
+            
+            <li><a href="/photos/galleries/2014/dec/04/veracruz-mexico/"><img src="http://epmghispanic.media.lionheartdms.com/img/photos/2014/12/04/49216_10_t150x100.jpg?1db4b251cc863dc696fdc8c66b01e2ffdf9ace40" alt="" ></a>
+            Turismo en Veracruz, México</li>
+            
+            <li><a href="/photos/galleries/2014/dec/04/labiales-en-rojo/"><img src="http://epmghispanic.media.lionheartdms.com/img/photos/2014/12/04/Fashion-Red_Lipstick.JPEG-03a40_t150x100.JPG?1db4b251cc863dc696fdc8c66b01e2ffdf9ace40" alt="" ></a>
+            Labiales en rojo</li>
+            
+            <li><a href="/photos/galleries/2014/nov/20/protestas-en-mexico/"><img src="http://epmghispanic.media.lionheartdms.com/img/photos/2014/11/20/204962742_t150x100.JPG?1db4b251cc863dc696fdc8c66b01e2ffdf9ace40" alt="" ></a>
+            Protestas en México</li>
+            
+            <li><a href="/photos/galleries/2014/oct/18/cuadros-son-la-nueva-moda/"><img src="http://epmghispanic.media.lionheartdms.com/img/photos/2014/10/17/65360_life_1Q4_t150x100.JPG?1db4b251cc863dc696fdc8c66b01e2ffdf9ace40" alt="" ></a>
+            Cuadros son la nueva moda</li>
+            
+        </ul>
+        <div class="mas"><a href="/photos/">Ver más fotos &rsaquo;</a></div>
+    </div>
+    
+     
+     <div class="clear"></div> 
+    
+    <article class="content-box marT20 maB10">  
+        <div class="heading-box">
+            <h2><a href="#"><span>VIDEOS</span></a></h2>
+        </div>
+        <div style="width: 582px;" class="center marT20">
+        	<iframe src="http://embed.newsinc.com/Inline590/iframe.html?wid=14442&freewheel=91235&sitesection=lavozdehouston_nws_non_sec" height="590" width="582" frameborder="no" scrolling="no" noresize marginwidth="0px" marginheight="0px"></iframe>
+        </div>
+    </article>
+    
+    <div class="clear"></div>
+    
+     
+    
+    <div class="clear"></div>
+    
+    
+    
+    
+     <div class="clear"></div>
+     
+    
+
+	            </div>
+	        </section>
+	        
+	        <section id="sidebar" class="right">
+	        
+	
+	            <aside class="ad">
+					<div id="adblock_sidebar_ad_1">
+						<div id="adblock_sidebar_ad_1_inner">
+							
+							<!--JavaScript Tag // Tag for network 5417: epmg360.com // Website: lavoztx.com // Page: Dynamic ROS // Placement: lavoztx_Dynamic_ROS_ATF_300x250 (3102231) // created at: Feb 5, 2014 8:02:58 PM-->
+							<script language="javascript">
+							<!--
+							var curDateTime = new Date(); 
+							var offset = -(curDateTime.getTimezoneOffset()); 
+							if (offset > 0) { offset = "+" + offset; }
+					
+							if (window.adgroupid == undefined) {
+								window.adgroupid = Math.round(Math.random() * 1000);
+							}
+							document.write('<scr'+'ipt language="javascript1.1" src="http://adserver.adtechus.com/addyn/3.0/5417.1/3102231/0/170/ADTECH;loc=100;target=_blank;alias=;key=' + adtech_kw_str + ';grp='+window.adgroupid+';misc='+new Date().getTime()+';aduho='+offset+'"></scri'+'pt>');
+							//-->
+							</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5417.1/3102231/0/170/ADTECH;loc=300;alias=;key=key1+key2+key3+key4;misc=" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5417.1/3102231/0/170/ADTECH;loc=300;alias=;key=key1+key2+key3+key4;misc=" border="0" width="300" height="250"></a></noscript>
+							<!-- End of JavaScript Tag -->
+							
+						</div>
+					</div>
+	            </aside>
+	
+	            <div class="clear"></div>
+	            
+                
+                
+                <div class="marB20">
+                	<div class="sidebar-title"><h4><span>Contenido especial</span></h4></div>
+	            </div>         
+				
+	            
+		            <div class="marB20">
+				        <a href="/news/estilo-de-vida/come-y-corre/" title="Obamacare"><img src="http://epmghispanic.media.lionheartdms.com/static/lavoz/images/food_trucks-300x250.jpg" border="0"></a>
+				    </div>
+	
+		            <div class="marB20">
+		            	<a href="/news/estados-unidos/la-crisis-de-los-menores-centroamericanos-en-la-frontera/"><img src="http://epmghispanic.media.lionheartdms.com/static/lavoz/images/frontera-300x250.jpg" align="absmiddle" width="300" height="100" /></a>
+		            </div>
+	
+		            <div class="clear"></div>
+		
+					<!-- Begin YaSabe Form -->
+					<div id="ys-sb-widget-container">
+					<script type="text/javascript">
+					var ys_sb_config = {
+					partner: 'lavoztx',
+					where: 'Houston, TX',
+					                widget_url: '',
+					                home_url: 'http://lavoztx.com/busqueda-local/'
+					}
+					</script>
+					<script type="text/javascript" src="http://widget.yasabe.com/min/g=sb-widget&v=2.0"></script>
+					</div>
+					<div class="clear"></div>
+					<!-- End YaSabe Form -->
+				
+					<!-- test 91 -->
+	
+
+	<div class="video_sidebar">
+	    <h4>
+	        <span class="left">Videos</span>
+	        <span class="ngl_video right"><a href="/video/" class="ngl_video_btn btn-rounded">Ver más videos &rsaquo;</a></span><div class="clear"></div>
+	    </h4>
+	</div>
+	
+	<script src='http://cdn.onescreen.net/os/static/apps/s/_onescreen.js'></script>
+	<div id='os_dmp_embed_sidebar'></div>
+	
+	
+		
+		
+		
+			
+		
+	    
+	    
+	    
+	    
+	    
+	    
+
+		
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+		
+		
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+			<script>com.onescreen.widgets.load('3689-13c8c6b9030f45491742b31b69067e64', 'os_dmp_embed_sidebar');</script>
+		
+	
+		
+		
+	
+	<div class="clear"></div>
+	<div class="mas"><a href="/videos/">Ver más videos &rsaquo;</a></div>
+
+		
+					
+					<div class="clear"></div>
+		
+		            <aside class="ad2 marT20">
+						<div id="adblock_sidebar_ad_2">
+							<div id="adblock_sidebar_ad_2_inner">
+								
+								<!--JavaScript Tag // Tag for network 5417: epmg360.com // Website: lavoztx.com // Page: Dynamic ROS // Placement: lavoztx_Dynamic_ROS_ATF_300x250 (3102231) // created at: Feb 5, 2014 8:02:58 PM-->
+								<script language="javascript">
+								<!--
+								var curDateTime = new Date(); 
+								var offset = -(curDateTime.getTimezoneOffset()); 
+								if (offset > 0) { offset = "+" + offset; }
+						
+								if (window.adgroupid == undefined) {
+									window.adgroupid = Math.round(Math.random() * 1000);
+								}
+								document.write('<scr'+'ipt language="javascript1.1" src="http://adserver.adtechus.com/addyn/3.0/5417.1/3102231/0/170/ADTECH;loc=100;target=_blank;alias=;key=' + adtech_kw_str + ';grp='+window.adgroupid+';misc='+new Date().getTime()+';aduho='+offset+'"></scri'+'pt>');
+								//-->
+								</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5417.1/3102231/0/170/ADTECH;loc=300;alias=;key=key1+key2+key3+key4;misc=" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5417.1/3102231/0/170/ADTECH;loc=300;alias=;key=key1+key2+key3+key4;misc=" border="0" width="300" height="250"></a></noscript>
+								<!-- End of JavaScript Tag -->
+								
+							</div>
+						</div>
+		            </aside>
+		
+				
+					
+	            <div class="clear"></div>
+	
+	            <div id="pshared-5min" class="marT10">
+					<script type="text/javascript" src="http://pshared.5min.com/Scripts/PlayerSeed.js?sid=1651&width=300&height=350&videoGroupID=165522&relatedMode=2"></script>
+				</div>
+				
+				<div class="clear"></div>
+			
+			    <ul class="tabs">
+			        <li><a href="#tab1">Facebook</a></li>
+			        <li><a href="#tab2">Twitter</a></li>
+			        <!--<li><a href="#tab3">Google+</a></li>-->
+			    </ul>
+			
+			    <div class="tab_container marB20">
+			        <div id="tab1" class="tab_content">
+			           <iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Flavoztx&amp;width=290&amp;colorscheme=light&amp;connections=10&amp;stream=true&amp;header=true&amp;height=587" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:290px; height:587px;" allowTransparency="true"></iframe>
+			        </div>
+			        <div id="tab2" class="tab_content">
+			           <a class="twitter-timeline" width="300" href="https://twitter.com/lavozhouston" data-widget-id="368036694777282560">Tweets by @lavozhouston</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			        </div>
+			        <div id="tab3" class="tab_content">
+			        	<iframe frameborder="0" border="0" cellspacing="0" src="http://stream.pluswidget.com/google-plus-widget/iframe/102155214979334066903/?width=300&height=500&shell_bg=333&shell_text=fff&shell_links=4D90FE&post_bg=1e456d&post_text=fff&post_links=4D90FE&scroll_bg=1e456d&scroll_handle_text=aaa" width="300" height="500"></iframe>
+			        </div>
+			    </div>
+			
+			    <div class="clear"></div>
+			
+				
+					
+					<div class="">
+					<a href="http://lavoztx.com/documents/2013/jun/02/guia-de-huracanes/" title="Especial Gu&iacute;a de huracanes"><img src="http://epmghispanic.media.lionheartdms.com/static/lavoz/images/PhotoGuiadeHuracanes.jpg" border="0"></a>
+					</div>
+					
+					<aside class="current_edition">
+					<img src="http://epmghispanic.media.lionheartdms.com/static/epmg/images/icon-latest-edition.png" alt="Edicion Impresa" align="absmiddle" class="marL5 marR5" ><a href="http://lavoztx.com/documents/sets/edicion-impresa">Edici&oacute;n Impresa</a>
+					</aside>
+		
+					<aside class="calendar_events">
+					<img src="http://epmghispanic.media.lionheartdms.com/static/epmg/images/icon-calendar.png" alt="Calendario de Eventos" align="absmiddle" class="marL5 marR5" ><a href="/events/">Calendario de Eventos</a>
+					</aside>
+		
+		           <div class="clear"></div>
+	                
+		            <div class="marT20">
+		            	<div class="sidebar-title"><h4><span>Últimas Noticias</span></h4></div>
+	               		
+
+
+
+
+
+
+<div id="sidebar_latest_stories">
+	
+	<a href="/news/2014/dec/15/mexicano-gutierrez-sera-piloto-suplente-de-ferrari/">
+	    <h3>Mexicano Gutiérrez será piloto suplente de Ferrari</h3>
+	    <div>
+	        
+		        <div class="sidebar_latest_stories_img">
+			        <img src="http://epmghispanic.media.lionheartdms.com/img/photos/2012/12/14/002_1_r134x110.jpg?825898cd2d4473e420df4307ea30fec006e24f59" alt="El piloto mexicano Esteban Gutiérrez.">
+			    </div>
+		    
+		    <div class="sidebar_latest_stories_tease">Ferrari contrató al mexicano Esteban Gutiérrez como su piloto suplente, a cargo de la puesta a punto de los autos ...</div>
+		    <div class="clear"></div>
+	    </div>
+	</a>
+	
+	<a href="/news/2014/dec/15/termina-toma-de-rehenes-en-cafe-de-sydney-con-asal/">
+	    <h3>Termina toma de rehenes en café de Sydney tras más de 16 horas</h3>
+	    <div>
+	        
+		        <div class="sidebar_latest_stories_img">
+			        <img src="http://epmghispanic.media.lionheartdms.com/img/photos/2014/12/15/Sydney_r134x110.jpg?825898cd2d4473e420df4307ea30fec006e24f59" alt="Un grupo de paramédicos australianos retira a un rehén herido durante el enfrentamiento entre la policía y el hombre que tomó un café con todos sus ocupantes en el distrito de negocios de Sydney, el 16 de diciembre de 2014. La policía asaltó el café donde el hombre armado retenía a clietnes y trabajadores y donde colgó una pancarta con un mensaje de contenido islámico. 
+">
+			    </div>
+		    
+		    <div class="sidebar_latest_stories_tease">Un grupo de policías bien armados irrumpió en una cafetería en Sydney temprano en la mañana y puso fin a ...</div>
+		    <div class="clear"></div>
+	    </div>
+	</a>
+	
+	<a href="/news/2014/dec/15/real-madrid-chocara-con-shalke-en-la-liga-de-campe/">
+	    <h3>Real Madrid chocará con Shalke en la Liga de Campeones </h3>
+	    <div>
+	        
+		        <div class="sidebar_latest_stories_img">
+			        <img src="http://epmghispanic.media.lionheartdms.com/img/croppedphotos/2014/12/15/RealMadridSorteo_copy_r134x110.jpg?825898cd2d4473e420df4307ea30fec006e24f59" alt="El ex jugador alemán Karl-Heinz Riedle muestra una papeleta con el nombre del Real Madrid durante el sorteo de los octavos de final de la Liga de Campeones el lunes 15 de diciembre de 2014 en Nyon, Suiza.">
+			    </div>
+		    
+		    <div class="sidebar_latest_stories_tease">El actual campeón de Europa, el Real Madrid, se enfrentará al Schalke en la fase de octavos de final de ...</div>
+		    <div class="clear"></div>
+	    </div>
+	</a>
+	
+	<a href="/news/2014/dec/15/aguirre-acusado-formalmente-de-amano-de-partido/">
+	    <h3>Aguirre, acusado formalmente de amaño de partido</h3>
+	    <div>
+	        
+		        <div class="sidebar_latest_stories_img">
+			        <img src="http://epmghispanic.media.lionheartdms.com/img/croppedphotos/2014/12/15/JavierAguirre_t750x550_copy_r134x110.jpg?825898cd2d4473e420df4307ea30fec006e24f59" alt="El mexicano Javier Aguirre, entrenador de la selección japonesa.">
+			    </div>
+		    
+		    <div class="sidebar_latest_stories_tease">El técnico mexicano Javier Aguirre, el jugador argentino Leo Ponzio y los urugayos Carlos Diogo y Christian Stuani figuran entre ...</div>
+		    <div class="clear"></div>
+	    </div>
+	</a>
+	
+	<a href="/news/2014/dec/15/colts-derrotan-los-texans-y-ganan-titulo-de-divisi/">
+	    <h3>Colts derrotan a los Texans y ganan título de división</h3>
+	    <div>
+	        
+		        <div class="sidebar_latest_stories_img">
+			        <img src="http://epmghispanic.media.lionheartdms.com/img/croppedphotos/2014/12/15/TexansFitzpatrick_copy_r134x110.jpg?825898cd2d4473e420df4307ea30fec006e24f59" alt="El quarterback titular de los Texans, Ryan Fitzpatrick, sufrió una lesión de la pierna izquierda y se retiró en el segundo cuarto en Indianápolis.">
+			    </div>
+		    
+		    <div class="sidebar_latest_stories_tease">Andrew Luck lanzó dos pases de touchdown y los Colts de Indianápolis conquistaron el título de la División Sur de ...</div>
+		    <div class="clear"></div>
+	    </div>
+	</a>
+	
+	<a href="/news/2014/dec/15/america-festeja-como-campeon-del-apertura-en-mexic/">
+	    <h3>América festeja como campeón del Apertura en México</h3>
+	    <div>
+	        
+		        <div class="sidebar_latest_stories_img">
+			        <img src="http://epmghispanic.media.lionheartdms.com/img/croppedphotos/2014/12/15/FutMexicoAguilas_copy_r134x110.jpg?825898cd2d4473e420df4307ea30fec006e24f59" alt="El América festeja la conquista del duodécimo título en su historia luego de imponerse a los Tigres en la vuelta de la final, el domingo 14 de diciembre de 2014.">
+			    </div>
+		    
+		    <div class="sidebar_latest_stories_tease">Con goles del ecuatoriano Michael Arroyo, el paraguayo Pablo Aguilar y Oribe Peralta, un inspirado América se convirtió en el ...</div>
+		    <div class="clear"></div>
+	    </div>
+	</a>
+	
+	<a href="/news/2014/dec/15/real-madrid-quiere-coronar-ano-inolvidable-en-mund/">
+	    <h3>Real Madrid quiere coronar “año inolvidable” en Mundial de Clubes</h3>
+	    <div>
+	        
+		        <div class="sidebar_latest_stories_img">
+			        <img src="http://epmghispanic.media.lionheartdms.com/img/croppedphotos/2014/12/15/RealMadridFIFA_copy_r134x110.jpg?825898cd2d4473e420df4307ea30fec006e24f59" alt="El &quot;Chicharito&quot; Javier Hernández (derecha, arriba) y otros jugadores del Real Madrid haciendo trotes durante el entrenamiento del 15 de diciembre en Rabat, Marruecos, con miras al choque contra Cruz Azul por las semifinales de la Copa Mundial de Clubes.">
+			    </div>
+		    
+		    <div class="sidebar_latest_stories_tease">Para el técnico de Real Madrid Carlo Ancelotti, ganar la Copa Mundial de Clubes sería el broche de oro para ...</div>
+		    <div class="clear"></div>
+	    </div>
+	</a>
+	
+	<a href="/news/2014/dec/12/texas-y-harris-los-mayores-receptores-de-ninos-ind/">
+	    <h3>Texas y Harris, los mayores receptores de niños indocumentados sin acompañante</h3>
+	    <div>
+	        
+		        <div class="sidebar_latest_stories_img">
+			        <img src="http://epmghispanic.media.lionheartdms.com/img/croppedphotos/2014/12/12/Foto_cropeada_r134x110.jpg?825898cd2d4473e420df4307ea30fec006e24f59" alt="Un grupo de inmigrantes indocumentados procedentes de Centroamérica espera a ser transportado desde la frontera por agentes de la Patrulla Fronteriza de Estados Unidos en julio de 2014. ">
+			    </div>
+		    
+		    <div class="sidebar_latest_stories_tease">Texas es el estado donde más indocumentados menores de 18 años han sido reubicados en el último año fiscal, incluidos ...</div>
+		    <div class="clear"></div>
+	    </div>
+	</a>
+	
+</div>
+	               	</div>
+               	
+				
+	        
+	        </section>
+	
+	    	<div class="clear"></div>
+	
+	         <div class="footer_ad">
+				<div id="adblock_footer_ad_1">
+					<div id="adblock_footer_ad_1_inner">
+						
+						<!--JavaScript Tag // Tag for network 5417: epmg360.com // Website: lavoztx.com // Page: Dynamic ROS // Placement: lavoztx_Dynamic_ROS_BTF_728x90 (3102229) // created at: Feb 5, 2014 8:02:58 PM-->
+						<script language="javascript">
+						<!--
+						var curDateTime = new Date(); 
+						var offset = -(curDateTime.getTimezoneOffset()); 
+						if (offset > 0) { offset = "+" + offset; }
+				
+						if (window.adgroupid == undefined) {
+							window.adgroupid = Math.round(Math.random() * 1000);
+						}
+						document.write('<scr'+'ipt language="javascript1.1" src="http://adserver.adtechus.com/addyn/3.0/5417.1/3102229/0/225/ADTECH;loc=100;target=_blank;alias=;key=' + adtech_kw_str + ';grp='+window.adgroupid+';misc='+new Date().getTime()+';aduho='+offset+'"></scri'+'pt>');
+						//-->
+						</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5417.1/3102229/0/225/ADTECH;loc=300;alias=;key=key1+key2+key3+key4;misc=" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5417.1/3102229/0/225/ADTECH;loc=300;alias=;key=key1+key2+key3+key4;misc=" border="0" width="728" height="90"></a></noscript>
+						<!-- End of JavaScript Tag -->
+						
+					</div>
+				</div>
+
+	        </div>
+	
+	
+	    </div>
+	</div>
+
+    
+    <footer>
+        <div class="col990 marT20 marB20 center">
+           <div class="col316 left marR20 footer_links">
+           		<h2 class="content-title"><span><a href="#">Secciones</a></span></h2>
+			    <ul>
+			        <li><a href="/">Inicio</a></li>
+			        <li><a href="/news/houston-texas/">Houston y Texas</a></li>
+			        <li><a href="/news/america-latina/">América Latina</a></li>
+			        <li><a href="/news/entretenimiento/">Entretenimiento</a></li>
+			        <li><a href="/quienes-somos/">&iquest;Qui&eacute;nes somos?</a></li>
+			        <li><a href="/news/deportes/">Deportes</a></li>
+			        <li><a href="/news/estados-unidos/">Estados Unidos</a></li>
+			        <li><a href="http://lavoztx.com/documents/2012/nov/16/terminos-y-condiciones-del-sitio-web/">Terminos y condiciones del sitio web</a></li>
+			        <li><a href="http://lavoztx.com/documents/2012/nov/16/politica-de-privacidad/" target="_blank">Privacy Policy</a></li>
+			        <li><a href="http://www.chron.com" target="_blank">Chron.com</a></li>
+			    </ul>
+            </div>
+
+            <div class="col316 left marR20">
+                
+                    <h2 class="content-title"><span><a href="/photos/">Fotos</a></span></h2>
+                    
+                    <ul>
+                        
+                        <li class="footer-photos"><a href="/photos/2014/dec/15/173236/"><img src="http://epmghispanic.media.lionheartdms.com/img/photos/2014/12/15/arbol_cortado_r100x90.jpg?035a5fbbe9fcff08344bb3920764cb17b184979d" alt="" title="El diseñador Brian Patrick Flynn sugiere árboles blancos ..."></a></li>
+                        
+                        <li class="footer-photos"><a href="/photos/2014/dec/15/173235/"><img src="http://epmghispanic.media.lionheartdms.com/img/photos/2014/12/15/TREE_DECORATOR_1_r100x90.JPG?035a5fbbe9fcff08344bb3920764cb17b184979d" alt="" title="Un árbol de Navidad cubierto de hombres de ..."></a></li>
+                        
+                        <li class="footer-photos"><a href="/photos/2014/dec/15/173234/"><img src="http://epmghispanic.media.lionheartdms.com/img/photos/2014/12/15/Homes-Designer-Christmas_Trees.JPEG-09c33_r100x90.JPG?035a5fbbe9fcff08344bb3920764cb17b184979d" alt="" title="Para el diseñador Brian Patrick Flynn, un árbol ..."></a></li>
+                        
+                        <li class="footer-photos"><a href="/photos/2014/dec/15/173233/"><img src="http://epmghispanic.media.lionheartdms.com/img/photos/2014/12/15/Hkg10120911_r100x90.JPG?035a5fbbe9fcff08344bb3920764cb17b184979d" alt="" title="Las ideas para un árbol de Navidad pueden ..."></a></li>
+                        
+                        <li class="footer-photos"><a href="/photos/2014/dec/15/173231/"><img src="http://epmghispanic.media.lionheartdms.com/img/photos/2014/12/15/Homes-Designer-Christmas_Trees.JPEG-06fc2_r100x90.JPG?035a5fbbe9fcff08344bb3920764cb17b184979d" alt="" title="En esta foto, el diseñador Brian Patrick Flynn ..."></a></li>
+                        
+                        <li class="footer-photos"><a href="/photos/2014/dec/15/173230/"><img src="http://epmghispanic.media.lionheartdms.com/img/photos/2014/12/15/Homes-Right-Christmas_Trees.JPEG-0df30_r100x90.JPG?035a5fbbe9fcff08344bb3920764cb17b184979d" alt="" title="El diseñador Brian Patrick Flynn creó estas esculturas ..."></a></li>
+                        
+                        <li class="footer-photos"><a href="/photos/2014/dec/15/173229/"><img src="http://epmghispanic.media.lionheartdms.com/img/photos/2014/12/15/Homes-Designer-Christmas_Trees.JPEG-0e9af_r100x90.JPG?035a5fbbe9fcff08344bb3920764cb17b184979d" alt="" title="Esta foto muestra cómo el diseñador Brian Patrick ..."></a></li>
+                        
+                        <li class="footer-photos"><a href="/photos/2014/dec/15/173228/"><img src="http://epmghispanic.media.lionheartdms.com/img/photos/2014/12/15/snowman48045748_L_r100x90.JPG?035a5fbbe9fcff08344bb3920764cb17b184979d" alt="" title="Un hombre de nieve para el árbol de ..."></a></li>
+                        
+                        <li class="footer-photos"><a href="/photos/2014/dec/15/173227/"><img src="http://epmghispanic.media.lionheartdms.com/img/photos/2014/12/15/Fotolia_1096015_L_r100x90.JPG?035a5fbbe9fcff08344bb3920764cb17b184979d" alt="" title="Una estrella navideña, en blanco."></a></li>
+                        
+                    </ul>
+                
+            </div>
+
+            <div class="col316 left"></div>
+
+            <div class="clear"></div>
+
+        </div>
+
+        <div class="clear"></div>
+
+        <div id="lhd_footer">
+	<div id="lhd_footer_server">
+		+
+	</div>
+
+	
+		<div id="lhd_footer_inner">
+			<div id="lhd_footer_left">
+				<span>&copy; 2014 Lavoz TX</span>
+			</div>
+
+			<div id="lhd_footer_center">
+				Impulsado por <a href="http://www.lionheartdigital.com/" target="_blank"><img src="http://epmghispanic.media.lionheartdms.com/static/_global/_images/lionheart_logo_footer.png"></a>
+			</div>
+
+			<div id="lhd_footer_right">
+				
+					<a href="/privacy-policy/">Pol&iacute;tica de Privacidad</a>
+				
+			</div>
+		</div>
+	
+</div> 
+
+        <div class="clear"></div>
+    </footer>
+    
+
+    <script type="text/javascript" src="http://epmghispanic.media.lionheartdms.com/static/epmg/javascript/jquery.main.js"></script>
+	<script type="text/javascript" src="http://www.chron.com/js/omniture/analyticsconfig.js"></script>
+	<script type="text/javascript" src="http://www.chron.com/js/hdn/omniture/s_code.js"></script>
+    <script type="text/javascript" src="http://www.chron.com/js/hdn/omniture/analytics3p.js"></script>
+    <script type="text/javascript" src="http://extras.chron.com/js/omniture/lavoz.js"></script>
+
+</body>
+</html>

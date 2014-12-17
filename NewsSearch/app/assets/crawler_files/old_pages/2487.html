@@ -1,0 +1,2039 @@
+<!DOCTYPE html>
+<!--[if lte IE 7]> <html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/" class="ie7 lte8 lte9 " lang="en-au"> <![endif]-->
+<!--[if IE 8]> <html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/" class="ie8 lte8 lte9 " lang="en-au"> <![endif]-->
+<!--[if IE 9]> <html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/" class="ie9 lte9 " lang="en-au"> <![endif]-->
+<!--[if gt IE 9]><!--><html lang="en-au" class=""><!--<![endif]-->
+
+<head>
+        <script type="text/javascript">
+        var mDomains = ["smh.com.au", "theage.com.au", "watoday.com.au", "brisbanetimes.com.au", "canberratimes.com.au",
+            "essentialkids.com.au", "essentialbaby.com.au", "dailylife.com.au", "businessday.com.au","goodfood.com.au"]
+        if (exists(mDomains, function(substring) {return contains(document.domain, substring)})
+                && isSmartPhone(navigator.userAgent) && !contains(document.cookie, "iphone_redirect=false")) {
+            var currentLocation = document.location.href;
+            if (!contains(currentLocation, "/lifestyle/cuisine") && !contains(currentLocation, "/business/markets")) {
+                if (contains(currentLocation, "www.")) {
+                    currentLocation = currentLocation.replace("www.", "m.");
+                    window.location = currentLocation;
+                }
+                if (contains(currentLocation, "media.")) {
+                    currentLocation = currentLocation.replace("media.", "m.media.");
+                    window.location = currentLocation;
+                }
+            }
+        }
+
+        /**
+         * Returns a <code>Boolean</code> indicating whether or not the user agent represents a smart phone.
+         *
+         * @param userAgent User agent to test.
+         * @return True if the user agent represents a smart phone; otherwise false.
+         */
+        function isSmartPhone(userAgent) {
+            return ((matchesSmartPhoneUserAgentRegularExpressions(userAgent)) &&
+                    (!matchesTabletUserAgentRegularExpressions(userAgent)));
+        }
+
+        /**
+         * Returns a <code>Boolean</code> indicating whether or not the specified user agent represents a smart phone.
+         * If any of the regular expressions are updated then they should be updated in
+         * <code>SmartPhoneHelper.java</code>.
+         *
+         * @param userAgent User agent to test.
+         * @return True if the user agent represents a smart phone; otherwise false.
+         */
+        function matchesSmartPhoneUserAgentRegularExpressions(userAgent) {
+            var smartPhoneUserAgentRegularExpressions = ["^Mozilla/5.0.*iPhone.*", "^Mozilla/5.0.*iPod.*",
+                "^Mozilla/5.0.*Android [1-3].*", "^Mozilla/5.0.*SymbianOS/9.*", "^Mozilla/5.0.*Symbian/3.*",
+                "^Mozilla/5.0.*Mobile Safari/.*5[2-3][0-9].*", ".*Dolfin/[1-2].[0-9].*", "^Mozilla/[4-5].0.*Windows Phone OS 7.[0-5].*", "^Opera/9.*Android; Opera Mini.*"];
+            return userAgentMatchesAnyOf(userAgent, smartPhoneUserAgentRegularExpressions);
+        }
+
+        /**
+         * Returns a <code>Boolean</code> indicating whether or not the specified user agent represents a tablet. If any
+         * of the regular expressions are updated then they should be updated in <code>SmartPhoneHelper.java</code>.
+         *
+         * @param userAgent User agent to test.
+         * @return True if the user agent represents a tablet; otherwise false.
+         */
+        function matchesTabletUserAgentRegularExpressions(userAgent) {
+            var tableUserAgentRegularExpressions = ["^Mozilla/5.0.*iPad.*", "^Mozilla/5.0.*GT-P1000.*",
+                "^Mozilla/5.0.*GT-P7500.*", "^Mozilla/5.0.*MZ601.*", "^Mozilla/5.0.*Transformer TF101.*"];
+            return userAgentMatchesAnyOf(userAgent, tableUserAgentRegularExpressions);
+        }
+
+        /**
+         * Determines whether any of the elements match the predicate
+         *
+         * @param elements a collection of elements to check
+         * @param predicate function taking a single element and returning true when that element matches, false otherwise
+         * @return {Boolean}
+         */
+        function exists(elements, predicate) {
+            var index = 0;
+            for (; index < elements.length; index++) {
+                if (predicate(elements[index])) {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        /**
+         * Determines whether {string} contains {substring}
+         *
+         * @param string
+         * @param substring
+         * @return {Boolean}
+         */
+        function contains(string, substring) {
+            return string.indexOf(substring) != -1
+        }
+
+        /**
+         * Determines whether the user agent matches any of the expressions defined by {patterns}
+         *
+         * @param userAgent the User Agent value of the browser
+         * @param patterns the expression patterns to match against
+         * @return {Boolean}
+         */
+        function userAgentMatchesAnyOf(userAgent, patterns) {
+            if ((userAgent) && (userAgent.length > 0)) {
+                return exists(patterns, function(pattern) {return userAgent.match(pattern)})
+            }
+            return false;
+        }
+    </script>
+
+    <title>Daily Life - Women, Fashion, Food, Sex and the Economy</title>
+    <script type="text/javascript">
+var titanEnabled = true;
+
+var digitalData = {
+    page: {
+        pageInfo: {
+            pageID: '2921627',
+            pageName: 'Daily Life Home Page Index',
+            brand: 'dailylife',
+            generator: 'DC',
+            author: '',
+            effectiveDate: '2014-02-16T18:39:32Z',
+            issueDate: '2012-01-27T22:29:23Z',
+            sysEnv: 'desktop'
+        },
+        category: {
+            pageType: 'Homepage',
+            primaryCategory: 'home',
+            subCategory1: '',
+            subCategory2: '',
+            subCategory3: '',
+            subCategory4: ''
+        },
+        social: {
+            fbAppIdForGA: '233408706727435'
+        }
+    },
+    titan: {
+        adSite: 'DAILYLIFE',
+        adZone: 'home',
+        adExclusions: [],
+        adKeyValues: {
+            csub: 'visitor',
+            cat: 'home',
+            ctype: 'homepage'
+        },
+        adSlots: ['adspot-60x20-pos-1','adspot-360x40-pos-3','adspot-100x20-pos-1','adspot-300x250-pos-1','adspot-300x250-pos-2','adspot-728x90_468x60-pos-2']
+    },
+    user: [
+        {
+            profile: {
+                membershipType: 'visitor'
+            }
+        }
+    ],
+    version: '1.0',
+    events: []
+};
+</script>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="content-language" content="en" />
+<meta http-equiv="imagetoolbar" content="no" />
+    <link rel="canonical" href="http://www.dailylife.com.au/"/>
+    <link rel="alternate" media="only screen and (max-width: 640px)" href="http://m.dailylife.com.au/"/>
+<meta name="robots" content="noarchive,noodp,index" />
+<meta name="robots" content="ACAP allow-index" />
+<meta name="robots" content="ACAP allow-follow" />
+<meta name="robots" content="ACAP disallow-preserve" />
+<meta name="robots" content="ACAP allow-present prohibited-modification=annotation" />
+<meta name="description" content="An intelligent mix of news, opinion, food , fashion, beauty, health, travel, work and relationships. From politics to personal style, Daily Life.com.au – News tailored for you." />
+<meta name="keywords" content="news, opinion, food , fashion, beauty, health, travel, work, relationships" />
+<meta name="news_keywords" content="" />
+
+<meta name="cXenseParse:ffx-assetid" content="2921627"/>
+<meta name="cXenseParse:ffx-assettype" content="index"/>
+
+
+
+
+
+                <link rel="stylesheet" type="text/css" media="screen,print" href="http://resources.dailylife.com.au/common/media-common-1.0/css/output/7.49.1/common.skin.dailylife.css/common.skin.dailylife_min.css" />
+
+
+                <link rel="stylesheet" type="text/css" media="screen,print" href="http://resources.dailylife.com.au/common/media-common-1.0/css/output/7.49.1/skin.promotions.css/skin.promotions_min.css" />
+
+<link rel="shortcut icon" href="favicon.ico"/>
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@DailyLifeAU">
+
+<meta property="og:title" content="Daily Life Home Page Index"/>
+<meta property="og:description" content=""/>
+<meta property="og:site_name" content="Daily Life"/>
+<meta property="og:type" content="article"/> 
+<meta property="og:url" content="http://www.dailylife.com.au/"/>
+<meta property="og:image" content="http://resources.dailylife.com.au/dailylife/media-common-1.0/images/logo_for_fb.jpg"/>
+    <meta property="fb:app_id" content="233408706727435"/>
+
+    <link href="https://plus.google.com/102285152587969480237" rel="Publisher"/>
+
+
+    <meta property="og:image" content="http://resources.dailylife.com.au/dailylife/2011-11/images/logo_for_fb.jpg"/>
+    <script src="//assets.adobedtm.com/7d5ea80d054b96730162d0905d59678c4d2bf30c/satelliteLib-fc35eab6559a121532bab25bb77b90e6a30892b9.js"></script>
+</head>
+<body class="dl index">
+    <script type="text/javascript">
+// <![CDATA[
+	document.body.className += " scriptable";
+// ]]>
+</script>
+
+    <!-- Accessibility: Unobstrusive skip links: -->
+<a class="skipLink" href="#nav">Skip to navigation</a>
+<a class="skipLink" href="#content">Skip to content</a>
+    <div class="outerWrap">
+        <div class="wrap cfix">
+            <div class="nN-whiteStrip">
+    <ul class="linksLeft">
+                    <li id="whiteStrip-time">Tuesday, 16 December 2014</li>
+        <li><a href="http://www.thevine.com.au/">The Vine</a></li>
+        <li><a href="http://www.goodfood.com.au/">Good Food</a></li>
+        <li><a href="http://www.essentialbaby.com.au/">Essential Baby</a></li>
+        <li class="last"><a href="http://www.essentialkids.com.au/">Essential Kids</a></li>
+    </ul>
+    <a class="logo" href="http://www.fairfax.com.au/" onClick="trackCode(this,'ws-top');">Fairfax Media</a>
+    <ul class="linksRight">
+        <li><a href="http://smh.com.au/" onClick="trackCode(this,'ws-top');">News</a></li>
+        <li><a href="http://www.domain.com.au/" onClick="trackCode(this,'ws-top');">Domain</a></li>
+        <li><a href="http://drive.com.au/" onClick="trackCode(this,'ws-top');">Drive</a></li>
+        <li><a href="http://www.adzuna.com.au" onClick="trackCode(this,'ws-top');">Jobs</a></li>
+        <li><a href="http://www.rsvp.com.au/" onClick="trackCode(this,'ws-top');">RSVP</a></li>
+        <li><a href="http://www.stayz.com.au" onClick="trackCode(this,'ws-top');">Stayz</a></li>
+        <li class="hasDropdown last">
+            <a href="javascript:;">More</a>
+            <ul>
+                <li><a onClick="trackCode(this,'ws-top');" href="http://www.essentialbaby.com.au/">Essential Baby</a></li>
+                <li><a onClick="trackCode(this,'ws-top');" href="http://www.essentialkids.com.au/">Essential Kids</a></li>
+                <li><a onClick="trackCode(this,'ws-top');" href="http://www.stayz.com.au/">Stayz</a></li>
+                <li><a onClick="trackCode(this,'ws-top');" href="http://www.tradingroom.com.au/">Trading Room</a></li>
+                <li><a onClick="trackCode(this,'ws-top');" href="http://www.weatherzone.com.au/">WeatherZone</a></li>
+                <li><a onClick="trackCode(this,'ws-top');" href="http://membercentre.fairfax.com.au/">Member Centre</a></li>
+                <li class="last"><a onClick="trackCode(this,'ws-top');" href="http://www.fairfax.com.au/?s_rid=WS:smh:top">More sites &raquo;</a></li>
+            </ul>
+        </li>
+    </ul>
+</div><!-- class:nN-whiteStrip -->
+            <div class="header cfix" role="banner">
+                <h1 style="background-color:#5ebb68"><a href="/" title="Daily Life">Daily Life</a></h1>
+                <div>
+    <div class="cN-popupWeather">
+        <div class="popupContent">
+            <h3>Personalise your weather</h3>
+            <p class="text">Enter your postcode or suburb for local weather.</p>
+            <p class="error">The weather is currently unavailable for this suburb</p>
+            <form action="" method="post">
+                <fieldset>
+                    <label class="access" for="postcode">Input postcode or suburb</label>
+                    <input type="text" class="input jsKeywordSuggest ui-autocomplete-input" id="postcode" name="postcode" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true">
+                    <input type="submit" class="submit" value="Go">
+                </fieldset>
+            </form>
+            <a class="close" title="Close popup" href="javascript:;">Close</a>
+        </div><!-- class:popupContent -->
+    </div><!-- class:cN-popupWeather -->
+</div>
+<div>
+    <div class="mN-weather" data-weather-domain="weather.dailylife.com.au" data-personalise="true">
+        <div class="weather-wrap">
+                    <div class="icon w4">Weather maps and forecasts Sydney Australia</div><!-- class:icon w4 -->
+                    <p class="temps temp-now">Now <em>24&deg;</em></p>
+                    <p class="temps temp-max" data-ismax="true">
+                        Max <em>28&deg;</em>
+                                            </p>
+                    <div>
+                        <p class="first"><strong>Sydney</strong> <span>[<a href="javascript:;">change</a>]</span></p>
+                        <p class="forecast">Mostly cloudy</p>
+                    </div>
+            <div id="adspot-60x20-pos-1" class="ad" style='display:none;'> <small>Powered by</small> <script type="text/javascript"> var titan = window.titan || {}; titan.requestAd = titan.requestAd || []; titan.requestAd.push("adspot-60x20-pos-1"); </script> </div>
+        </div><!-- class:weather-wrap -->
+    </div><!-- class:mN-weather -->
+</div>
+
+                <div class="mT-socialLinks">
+    <ul>
+        <li class="twitter"><a href="https://twitter.com/#!/DailyLifeAu" target="_blank">Follow us on Twitter</a></li>
+        <li class="newsletter"><a href="http://www.dailylife.com.au/newsletters.html">Sign up to our newsletter</a></li>
+        <li class="facebook"><a href="https://www.facebook.com/pages/Daily-Life/144226982353442" target="_blank">Become a fan on Facebook</a></li>
+    </ul>
+    <p>Follow our conversation</p>
+</div><!-- class:mT-socialLinks -->
+                    <ul id="nav" role="navigation" >
+                <li class="selected nav-1 home">
+                    <a href="http://www.dailylife.com.au/" title="Home">Home</a>
+                </li>
+                <li class=" nav-2 hasSubNav hasDropdown ">
+                    <a href="http://www.dailylife.com.au/news-and-views" title="News &amp; Views">News &amp; Views</a>
+
+                            <div class="ddown col-2 ">
+                                        <div>
+                                            <h4></h4>
+                                            <ul>
+                                                        <li>
+                                                            <a href="/news-and-views/news-features" title="News Features">News Features</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/news-and-views/opinion" title="Opinion">Opinion</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/news-and-views/culture" title="Popular Culture">Popular Culture</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="http://www.dailylife.com.au/news-and-views/take-action" title="Take Action">Take Action</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="http://www.dailylife.com.au/dl-women-of-the-year" title="Women of the Year">Women of the Year</a>
+                                                        </li>
+                                                        <li class="more">
+                                                            <a href="http://www.dailylife.com.au/aaw" title="All About Women">All About Women</a>
+                                                        </li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <small>Featured</small>                                            
+                                                        <div class="cN-story">
+                        <a href="http://www.dailylife.com.au/news-and-views/dl-opinion/illridewithyou-is-helping-attacks-on-it-are-not-20141216-1281fh.html" title="#I'llRideWithYou is helping, attacks on it are not"><img src="http://images.dailylife.com.au/2014/12/16/6095469/Thumbnail64200509128076image.related.StepOutsThumbnail.360x240.1281fh.png1418690884703.jpg-140x93.jpg" width="140" height="93" alt="#illridewithyou: online users continue to tweet their support for the local Muslim community." /></a>
+
+    <div class="wof">
+        <h3>
+                <a href="http://www.dailylife.com.au/news-and-views/dl-opinion/illridewithyou-is-helping-attacks-on-it-are-not-20141216-1281fh.html" title="#I'llRideWithYou is helping, attacks on it are not">#I'llRideWithYou is helping, attacks on it are not</a>
+        </h3>        
+    </div>
+</div><!-- class:cN-story -->
+                                                                                                                                                
+                                        </div>
+                            </div><!-- class:ddown -->
+                </li>
+                <li class=" nav-3 hasSubNav hasDropdown ">
+                    <a href="http://www.dailylife.com.au/life-and-love" title="Life &amp; Love">Life &amp; Love</a>
+
+                            <div class="ddown col-2 ">
+                                        <div>
+                                            <h4></h4>
+                                            <ul>
+                                                        <li>
+                                                            <a href="/life-and-love/work-and-money" title="Work &amp; Money">Work &amp; Money</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/life-and-love/parenting-and-families" title="Parenting &amp; Families">Parenting &amp; Families</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/life-and-love/love-sex-and-relationships" title="Love, sex &amp; Relationships">Love, sex &amp; Relationships</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/life-and-love/real-life" title="Real Life">Real Life</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="http://www.dailylife.com.au/life-and-love/horoscopes" title="Horoscopes">Horoscopes</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/life-and-love/travel" title="Travel">Travel</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/life-and-love/home" title="Home">Home</a>
+                                                        </li>
+                                                        <li class="more">
+                                                            <a href="/life-and-love/weddings" title="Weddings">Weddings</a>
+                                                        </li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <small>Featured</small>                                            
+                                                        <div class="cN-story">
+                        <a href="http://www.dailylife.com.au/life-and-love/real-life/we-need-a-positive-guide-to-grieving-20141215-127l6v.html" title="We need a positive guide to grieving"><img src="http://images.dailylife.com.au/2014/12/15/6093239/Thumbnail64179463127l5cimage.related.StepOutsThumbnail.360x240.127l6v.png1418620375651.jpg-140x93.jpg" width="140" height="93" alt="No one would want you to compound your grief any further, least of all the person you’ve loved and lost." /></a>
+
+    <div class="wof">
+        <h3>
+                <a href="http://www.dailylife.com.au/life-and-love/real-life/we-need-a-positive-guide-to-grieving-20141215-127l6v.html" title="We need a positive guide to grieving">We need a positive guide to grieving</a>
+        </h3>        
+    </div>
+</div><!-- class:cN-story -->
+                                                                                                                                                
+                                        </div>
+                            </div><!-- class:ddown -->
+                </li>
+                <li class=" nav-4 hasSubNav hasDropdown ">
+                    <a href="http://www.dailylife.com.au/health-and-fitness" title="Health &amp; Fitness">Health &amp; Fitness</a>
+
+                            <div class="ddown col-2 ">
+                                        <div>
+                                            <h4></h4>
+                                            <ul>
+                                                        <li>
+                                                            <a href="/health-and-fitness/nutrition" title="Nutrition">Nutrition</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/health-and-fitness/fitness" title="Fitness">Fitness</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/health-and-fitness/wellbeing" title="Wellbeing">Wellbeing</a>
+                                                        </li>
+                                                        <li class="more">
+                                                            <a href="/health-and-fitness/sport" title="Sport">Sport</a>
+                                                        </li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <small>Featured</small>                                            
+                                                        <div class="cN-story">
+                        <a href="http://www.dailylife.com.au/health-and-fitness/dl-wellbeing/male-author-launches-bizarre-tell-a-friend-theyre-chubby-day-20141214-126swa.html" title="Male author launches bizarre 'Tell a Friend They're Chubby Day'"><img src="http://images.dailylife.com.au/2014/12/14/6089789/Thumbnail64142794126syhimage.related.StepOutsThumbnail.360x240.126swa.png1418522417762.jpg-140x93.jpg" width="140" height="93" alt="Steve Miller" /></a>
+
+    <div class="wof">
+        <h3>
+                <a href="http://www.dailylife.com.au/health-and-fitness/dl-wellbeing/male-author-launches-bizarre-tell-a-friend-theyre-chubby-day-20141214-126swa.html" title="Male author launches bizarre 'Tell a Friend They're Chubby Day'">Male author launches bizarre 'Tell a Friend They're Chubby Day'</a>
+        </h3>        
+    </div>
+</div><!-- class:cN-story -->
+                                                                                                                                                
+                                        </div>
+                            </div><!-- class:ddown -->
+                </li>
+                <li class=" nav-5 hasSubNav hasDropdown ">
+                    <a href="http://www.dailylife.com.au/food" title="Food">Food</a>
+
+                            <div class="ddown col-2 ">
+                                        <div>
+                                            <h4></h4>
+                                            <ul>
+                                                        <li>
+                                                            <a href="/food/food-features" title="Food Features">Food Features</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/food/food-blogs" title="Food Blogs">Food Blogs</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/food/celebrity-chefs" title="Celebrity Chefs">Celebrity Chefs</a>
+                                                        </li>
+                                                        <li class="more">
+                                                            <a href="http://www.dailylife.com.au/food/recipes/search" title="Recipe search">Recipe search</a>
+                                                        </li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <small>Featured</small>                                            
+                                                        <div class="cN-story">
+                        <a href="http://www.dailylife.com.au/dl-food/celebrity-chefs/bill-grangers-best-canapes-and-drinks-20141214-3miud.html" title="Bill Granger's best canapes and drinks"><img src="http://images.dailylife.com.au/2014/12/14/6089690/Bill_TN21-140x93.jpg" width="140" height="93" alt="Bill_TN21" /></a>
+
+    <div class="wof">
+        <h3>
+                <a href="http://www.dailylife.com.au/dl-food/celebrity-chefs/bill-grangers-best-canapes-and-drinks-20141214-3miud.html" title="Bill Granger's best canapes and drinks">Bill Granger's best canapes and drinks</a>
+        </h3>        
+    </div>
+</div><!-- class:cN-story -->
+                                                                                                                                                
+                                        </div>
+                            </div><!-- class:ddown -->
+                </li>
+                <li class=" nav-6 hasSubNav hasDropdown ">
+                    <a href="http://www.dailylife.com.au/fashion" title="Fashion">Fashion</a>
+
+                            <div class="ddown col-2 ">
+                                        <div>
+                                            <h4></h4>
+                                            <ul>
+                                                        <li>
+                                                            <a href="/fashion/fashion-coverage" title="Fashion Coverage">Fashion Coverage</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/fashion/fashion-trends" title="Fashion Trends">Fashion Trends</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="http://shop.dailylife.com.au" title="Shopping">Shopping</a>
+                                                        </li>
+                                                        <li class="more">
+                                                            <a href="/fashion/fashion-week" title="Fashion Week">Fashion Week</a>
+                                                        </li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <small>Featured</small>                                            
+                                                        <div class="cN-story">
+                        <a href="http://www.dailylife.com.au/dl-fashion/fashion-trends/20-purrfect-presents-for-the-cat-ladies-in-our-lives-20141216-3mndh.html" title="20 purr-fect presents for the cat ladies in our lives"><img src="http://images.dailylife.com.au/2014/12/16/6095576/tm-161414706-140x93.jpg" width="140" height="93" alt="LOS ANGELES, CA - FEBRUARY 10:  Taylor Swift and Lena Dunham attend  the 55th Annual GRAMMY Awards at STAPLES Center on February 10, 2013 in Los Angeles, California.  (Photo by Kevin Mazur/WireImage)" /></a>
+
+    <div class="wof">
+        <h3>
+                <a href="http://www.dailylife.com.au/dl-fashion/fashion-trends/20-purrfect-presents-for-the-cat-ladies-in-our-lives-20141216-3mndh.html" title="20 purr-fect presents for the cat ladies in our lives">20 purr-fect presents for the cat ladies in our lives</a>
+        </h3>        
+    </div>
+</div><!-- class:cN-story -->
+                                                                                                                                                
+                                        </div>
+                            </div><!-- class:ddown -->
+                </li>
+                <li class=" nav-7 hasSubNav hasDropdown ">
+                    <a href="http://www.dailylife.com.au/beauty" title="Beauty">Beauty</a>
+
+                            <div class="ddown col-2 right">
+                                        <div>
+                                            <h4></h4>
+                                            <ul>
+                                                        <li>
+                                                            <a href="/beauty/makeup" title="Makeup">Makeup</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/beauty/hair" title="Hair">Hair</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/beauty/skincare-and-anti-aging" title="Skincare &amp; Anti-aging">Skincare &amp; Anti-aging</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/beauty/beauty-trends" title="Beauty Trends">Beauty Trends</a>
+                                                        </li>
+                                                        <li class="more">
+                                                            <a href="/beauty/product-reviews" title="Product Reviews">Product Reviews</a>
+                                                        </li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <small>Featured</small>                                            
+                                                        <div class="cN-story">
+                        <a href="http://www.dailylife.com.au/dl-beauty/skincare-and-anti-aging/is-your-sunscreen-as-safe-as-it-says-it-is-20141215-127fv1.html" title="Is your sunscreen as safe as it says it is?"><img src="http://images.dailylife.com.au/2014/12/15/6092499/Thumbnail64172557127fywimage.related.StepOutsThumbnail.360x240.127fv1.png1418612239126.jpg-140x93.jpg" width="140" height="93" alt="Slipping, slopping and slapping might not prevent sunburn and ageing after all, as a study has found many sunscreens fail to live up to the claims on their labels." /></a>
+
+    <div class="wof">
+        <h3>
+                <a href="http://www.dailylife.com.au/dl-beauty/skincare-and-anti-aging/is-your-sunscreen-as-safe-as-it-says-it-is-20141215-127fv1.html" title="Is your sunscreen as safe as it says it is?">Is your sunscreen as safe as it says it is?</a>
+        </h3>        
+    </div>
+</div><!-- class:cN-story -->
+                                                                                                                                                
+                                        </div>
+                            </div><!-- class:ddown -->
+                </li>
+                <li class=" nav-8 hasSubNav hasDropdown ">
+                    <a href="http://www.dailylife.com.au/people" title="People">People</a>
+
+                            <div class="ddown col-2 right">
+                                        <div>
+                                            <h4></h4>
+                                            <ul>
+                                                        <li>
+                                                            <a href="/people/celebrity-news" title="Celebrity News">Celebrity News</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/people/interviews" title="Interviews">Interviews</a>
+                                                        </li>
+                                                        <li class="more">
+                                                            <a href="http://www.dailylife.com.au/dl-people/entertainment" title="Entertainment">Entertainment</a>
+                                                        </li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <small>Featured</small>                                            
+                                                        <div class="cN-story">
+                        <a href="http://www.dailylife.com.au/dl-people/celebrity-news/illridewithyou-continues-trending-worldwide-highlighting-support-for-muslim-australians-20141216-12808y.html" title="#IllRideWithYou continues trending worldwide, highlighting support for Muslim Australians"><img src="http://images.dailylife.com.au/2014/12/16/6095569/Illride_TN-140x93.jpg" width="140" height="93" alt="Illride_TN" /></a>
+
+    <div class="wof">
+        <h3>
+                <a href="http://www.dailylife.com.au/dl-people/celebrity-news/illridewithyou-continues-trending-worldwide-highlighting-support-for-muslim-australians-20141216-12808y.html" title="#IllRideWithYou continues trending worldwide, highlighting support for Muslim Australians">#IllRideWithYou continues trending worldwide, highlighting support for Muslim Australians</a>
+        </h3>        
+    </div>
+</div><!-- class:cN-story -->
+                                                                                                                                                
+                                        </div>
+                            </div><!-- class:ddown -->
+                </li>
+    </ul>
+
+            </div><!-- class:header cfix -->
+            <div id="adspot-940x250-pos-1" class="ad" style='display:none;'> <script type="text/javascript"> var titan = window.titan || {}; titan.requestAd = titan.requestAd || []; titan.requestAd.push("adspot-940x250-pos-1"); </script> </div>
+            <div id="content" class="span-16" role="main">
+                <div class="push-0 span-360px last">
+                    
+
+<div class="cT-heroRotator dailylifeRotator portraitRotator" data-nonRandomStart="true">
+        <ul>
+                
+                <li class="tab">
+                    <div class="wof">
+                        <h3><a href="http://www.dailylife.com.au/news-and-views/dl-opinion/illridewithyou-is-helping-attacks-on-it-are-not-20141216-1281fh.html" title="#I'llRideWithYou is helping, attacks on it are not" >#I'llRideWithYou is helping, attacks on it are not</a></h3>
+                        <p>We should never wait for the opportunity to speak out in support of others. Here's why.</p>
+                        
+                            
+    <p class="comments">
+            <a href="http://www.dailylife.com.au/news-and-views/dl-opinion/illridewithyou-is-helping-attacks-on-it-are-not-20141216-1281fh.html#comments"><span>0</span></a>
+    </p>
+
+                        <a class="readMore" href="http://www.dailylife.com.au/news-and-views/dl-opinion/illridewithyou-is-helping-attacks-on-it-are-not-20141216-1281fh.html">Read more</a>
+                    </div><!-- class:wof -->
+                            <a href="http://www.dailylife.com.au/news-and-views/dl-opinion/illridewithyou-is-helping-attacks-on-it-are-not-20141216-1281fh.html" title="#I'llRideWithYou is helping, attacks on it are not"><img src="http://images.dailylife.com.au/2014/12/16/6095471/HeroRotator64200509128076image.related.StepOutsDailyLifeHeroRotator.360x427.1281fh.png1418690884703.jpg-360x427.jpg" width="360" height="427" alt="#illridewithyou: online users continue to tweet their support for the local Muslim community." /></a>
+
+                </li>
+                
+                
+                <li class="tab">
+                    <div class="wof">
+                        <h3><a href="http://www.dailylife.com.au/life-and-love/real-life/we-need-a-positive-guide-to-grieving-20141215-127l6v.html" title="We need a positive guide to grieving" >We need a positive guide to grieving</a></h3>
+                        <p>Our bodies and minds are much better equipped to deal with grief than we might imagine.</p>
+                        
+                            
+
+                        <a class="readMore" href="http://www.dailylife.com.au/life-and-love/real-life/we-need-a-positive-guide-to-grieving-20141215-127l6v.html">Read more</a>
+                    </div><!-- class:wof -->
+                            <a href="http://www.dailylife.com.au/life-and-love/real-life/we-need-a-positive-guide-to-grieving-20141215-127l6v.html" title="We need a positive guide to grieving"><img src="http://images.dailylife.com.au/2014/12/15/6093238/HeroRotator64179463127l5cimage.related.StepOutsDailyLifeHeroRotator.360x427.127l6v.png1418620375651.jpg-360x427.jpg" width="360" height="427" alt="No one would want you to compound your grief any further, least of all the person you’ve loved and lost." /></a>
+
+                </li>
+                
+                
+                <li class="tab">
+                    <div class="wof">
+                        <h3><a href="http://www.dailylife.com.au/health-and-fitness/dl-wellbeing/male-author-launches-bizarre-tell-a-friend-theyre-chubby-day-20141214-126swa.html" title="'Tell a Friend They're Chubby Day'" >'Tell a Friend They're Chubby Day'</a></h3>
+                        <p>Male author thinks we should tell friends they've piled on the pounds to kick-start their 'journey' to being slim.</p>
+                        
+                            
+
+                        <a class="readMore" href="http://www.dailylife.com.au/health-and-fitness/dl-wellbeing/male-author-launches-bizarre-tell-a-friend-theyre-chubby-day-20141214-126swa.html">Read more</a>
+                    </div><!-- class:wof -->
+                            <a href="http://www.dailylife.com.au/health-and-fitness/dl-wellbeing/male-author-launches-bizarre-tell-a-friend-theyre-chubby-day-20141214-126swa.html" title="Male author launches bizarre 'Tell a Friend They're Chubby Day'"><img src="http://images.dailylife.com.au/2014/12/14/6089788/HeroRotator64142794126syhimage.related.StepOutsDailyLifeHeroRotator.360x427.126swa.png1418522417762.jpg-360x427.jpg" width="360" height="427" alt="Steve Miller" /></a>
+
+                </li>
+                
+                
+                <li class="tab">
+                    <div class="wof">
+                        <h3><a href="http://www.dailylife.com.au/news-and-views/dl-opinion/who-has-the-right-to-tell-a-survivors-story-20141215-127iq1.html" title="Who has the right to tell a survivor's story?" >Who has the right to tell a survivor's story?</a></h3>
+                        <p>Lena Dunham has been forced to amend her memoir to protect the identity of the man sexually assaulted her. But why?</p>
+                        
+                            
+
+                        <a class="readMore" href="http://www.dailylife.com.au/news-and-views/dl-opinion/who-has-the-right-to-tell-a-survivors-story-20141215-127iq1.html">Read more</a>
+                    </div><!-- class:wof -->
+                            <a href="http://www.dailylife.com.au/news-and-views/dl-opinion/who-has-the-right-to-tell-a-survivors-story-20141215-127iq1.html" title="Who has the right to tell a survivor's story?"><img src="http://images.dailylife.com.au/2014/12/15/6092889/HeroRotator64176265124o71image.related.StepOutsDailyLifeHeroRotator.360x427.127iq1.png1418616670389.jpg-360x427.jpg" width="360" height="427" alt="Lena Dunham has been forced to amend her memoir to protect the identity of the man sexually assaulted her. " /></a>
+
+                </li>
+                
+                
+                <li class="tab">
+                    <div class="wof">
+                        <h3><a href="http://www.dailylife.com.au/news-and-views/dl-opinion/why-its-essential-to-remember-black-female-victims-of-police-brutality-20141215-127gqc.html" title="The black female victims of police brutality" >The black female victims of police brutality</a></h3>
+                        <p>"What recent cases demonstrate is that age, gender, and non-criminality is no safeguard from the danger of being killed or brutalised while black."</p>
+                        
+                            
+
+                        <a class="readMore" href="http://www.dailylife.com.au/news-and-views/dl-opinion/why-its-essential-to-remember-black-female-victims-of-police-brutality-20141215-127gqc.html">Read more</a>
+                    </div><!-- class:wof -->
+                            <a href="http://www.dailylife.com.au/news-and-views/dl-opinion/why-its-essential-to-remember-black-female-victims-of-police-brutality-20141215-127gqc.html" title="Why it's essential to remember black female victims of police brutality"><img src="http://images.dailylife.com.au/2014/12/15/6092580/HeroRotator64173684127gp7image.related.StepOutsDailyLifeHeroRotator.360x427.127gqc.png1418612881344.jpg-360x427.jpg" width="360" height="427" alt="Protest." /></a>
+
+                </li>
+                
+                
+                <li class="tab">
+                    <div class="wof">
+                        <h3><a href="http://www.dailylife.com.au/dl-fashion/fashion-coverage/if-you8217re-going-to-spend-a-fortune-this-christmas-spend-it-on-ethically-sound-products-20141215-127gic.html" title="If you're going to spend a fortune at Xmas..." >If you're going to spend a fortune at Xmas...</a></h3>
+                        <p>Spend it on ethically sound products, here's five ways to do it.</p>
+                        
+                            
+
+                        <a class="readMore" href="http://www.dailylife.com.au/dl-fashion/fashion-coverage/if-you8217re-going-to-spend-a-fortune-this-christmas-spend-it-on-ethically-sound-products-20141215-127gic.html">Read more</a>
+                    </div><!-- class:wof -->
+                            <a href="http://www.dailylife.com.au/dl-fashion/fashion-coverage/if-you8217re-going-to-spend-a-fortune-this-christmas-spend-it-on-ethically-sound-products-20141215-127gic.html" title="If you&#8217;re going to spend a fortune this Christmas, spend it on ethically sound products"><img src="http://images.dailylife.com.au/2014/12/15/6094220/HeroRotator64173396127gjoimage.related.StepOutsDailyLifeHeroRotator.360x427.127gic.png1418677055296.jpg-360x427.jpg" width="360" height="427" alt="Punjammies" /></a>
+
+                </li>
+                
+        </ul>
+</div><!-- class:cT-heroRotator -->
+
+
+                    <div id="adspot-360x40-pos-3" class="ad" style='display:none;'> <small>Advertisement</small> <script type="text/javascript"> var titan = window.titan || {}; titan.requestAd = titan.requestAd || []; titan.requestAd.push("adspot-360x40-pos-3"); </script> </div>
+                    
+
+        
+            <h3 class="cT-strapHeading">Raspberry <em>pavlova</em></h3>
+        <div class="cN-storyImageLead media-image">
+            <div class="media">
+                        <a href="http://www.dailylife.com.au/dl-food/food-features/christmas-raspberry-swirl-pavlova-20141215-3ml84.html" title="Christmas raspberry swirl pavlova"><img src="http://images.dailylife.com.au/2014/12/15/6093055/pav_TN-360x240.jpg" width="360" height="240" alt="pav_TN" /></a>
+
+                
+            </div><!-- class:media -->
+            <div class="wof">
+                <h3><a href="http://www.dailylife.com.au/dl-food/food-features/christmas-raspberry-swirl-pavlova-20141215-3ml84.html" title="Christmas raspberry swirl pavlova" >Christmas raspberry swirl pavlova</a></h3>
+                <p>Raspberries and the scent of roses make this Christmas dessert even more appealing.</p>
+                
+                <div class="cN-social cfix">
+    <iframe class="socialBtn fb-button" scrolling="no" frameborder="0" allowTransparency="yes" src="http://www.facebook.com/plugins/like.php?href=http%3a%2f%2fwww.dailylife.com.au%2fdl-food%2ffood-features%2fchristmas-raspberry-swirl-pavlova-20141215-3ml84.html&amp;layout=button_count&amp;show_faces=false&amp;width=85&amp;action=recommend&amp;colorscheme=light&amp;height=21" width="100%" height="300"></iframe>
+    <iframe class="socialBtn twitter-button" allowtransparency="true" frameborder="0" scrolling="no" class="twitter-share-button twitter-count-horizontal" title="Twitter For Websites: Tweet Button" src="http://platform.twitter.com/widgets/tweet_button.html#_=1318890910829&count=horizontal&id=twitter_tweet_button_0&lang=en&original_referer=http%3A%2F%2Fwww.dailylife.com.au&text=Christmas raspberry swirl pavlova&url=http%3a%2f%2fwww.dailylife.com.au%2fdl-food%2ffood-features%2fchristmas-raspberry-swirl-pavlova-20141215-3ml84.html&via=DailyLifeAU"></iframe>
+    
+</div><!-- class:cN-social cfix -->
+            </div><!-- class:wof -->
+        </div><!-- class:cN-storyImageLead media-image -->
+        
+        
+            <h3 class="cT-strapHeading">Home of the <em>week</em></h3>
+        <div class="cN-storyImageLead media-image">
+            <div class="media">
+                        <a href="http://www.dailylife.com.au/life-and-love/dl-home/a-home-made-for-christmas-entertaining-20141215-3ml2v.html" title="A home made for Christmas entertaining"><img src="http://images.dailylife.com.au/2014/12/15/6092603/Home_Thumb-360x240.jpg" width="360" height="240" alt="<i></i>" /></a>
+
+                
+            </div><!-- class:media -->
+            <div class="wof">
+                <h3><a href="http://www.dailylife.com.au/life-and-love/dl-home/a-home-made-for-christmas-entertaining-20141215-3ml2v.html" title="A home made for Christmas entertaining" >A home made for Christmas entertaining</a></h3>
+                <p>Chef and restaurateur Karen Martini invites us into her home as she gears up for her family Christmas.</p>
+                
+                <div class="cN-social cfix">
+    <iframe class="socialBtn fb-button" scrolling="no" frameborder="0" allowTransparency="yes" src="http://www.facebook.com/plugins/like.php?href=http%3a%2f%2fwww.dailylife.com.au%2flife-and-love%2fdl-home%2fa-home-made-for-christmas-entertaining-20141215-3ml2v.html&amp;layout=button_count&amp;show_faces=false&amp;width=85&amp;action=recommend&amp;colorscheme=light&amp;height=21" width="100%" height="300"></iframe>
+    <iframe class="socialBtn twitter-button" allowtransparency="true" frameborder="0" scrolling="no" class="twitter-share-button twitter-count-horizontal" title="Twitter For Websites: Tweet Button" src="http://platform.twitter.com/widgets/tweet_button.html#_=1318890910829&count=horizontal&id=twitter_tweet_button_0&lang=en&original_referer=http%3A%2F%2Fwww.dailylife.com.au&text=A home made for Christmas entertaining&url=http%3a%2f%2fwww.dailylife.com.au%2flife-and-love%2fdl-home%2fa-home-made-for-christmas-entertaining-20141215-3ml2v.html&via=DailyLifeAU"></iframe>
+    
+</div><!-- class:cN-social cfix -->
+            </div><!-- class:wof -->
+        </div><!-- class:cN-storyImageLead media-image -->
+        
+        
+            <h3 class="cT-strapHeading">New <em>study</em></h3>
+        <div class="cN-storyImageLead media-image">
+            <div class="media">
+                        <a href="http://www.dailylife.com.au/dl-beauty/skincare-and-anti-aging/is-your-sunscreen-as-safe-as-it-says-it-is-20141215-127fv1.html" title="Is your sunscreen as safe as it says it is?"><img src="http://images.dailylife.com.au/2014/12/15/6092499/Thumbnail64172557127fywimage.related.StepOutsThumbnail.360x240.127fv1.png1418612239126.jpg-360x240.jpg" width="360" height="240" alt="Slipping, slopping and slapping might not prevent sunburn and ageing after all, as a study has found many sunscreens fail to live up to the claims on their labels." /></a>
+
+                
+            </div><!-- class:media -->
+            <div class="wof">
+                <h3><a href="http://www.dailylife.com.au/dl-beauty/skincare-and-anti-aging/is-your-sunscreen-as-safe-as-it-says-it-is-20141215-127fv1.html" title="Is your sunscreen as safe as it says it is?" >Is your sunscreen as safe as it says it is?</a></h3>
+                <p>Slipping, slopping and slapping might not prevent sunburn and ageing after all.</p>
+                
+                <div class="cN-social cfix">
+    <iframe class="socialBtn fb-button" scrolling="no" frameborder="0" allowTransparency="yes" src="http://www.facebook.com/plugins/like.php?href=http%3a%2f%2fwww.dailylife.com.au%2fdl-beauty%2fskincare-and-anti-aging%2fis-your-sunscreen-as-safe-as-it-says-it-is-20141215-127fv1.html&amp;layout=button_count&amp;show_faces=false&amp;width=85&amp;action=recommend&amp;colorscheme=light&amp;height=21" width="100%" height="300"></iframe>
+    <iframe class="socialBtn twitter-button" allowtransparency="true" frameborder="0" scrolling="no" class="twitter-share-button twitter-count-horizontal" title="Twitter For Websites: Tweet Button" src="http://platform.twitter.com/widgets/tweet_button.html#_=1318890910829&count=horizontal&id=twitter_tweet_button_0&lang=en&original_referer=http%3A%2F%2Fwww.dailylife.com.au&text=Is your sunscreen as safe as it says it is?&url=http%3a%2f%2fwww.dailylife.com.au%2fdl-beauty%2fskincare-and-anti-aging%2fis-your-sunscreen-as-safe-as-it-says-it-is-20141215-127fv1.html&via=DailyLifeAU"></iframe>
+        <p class="comments">
+            <a href="http://www.dailylife.com.au/dl-beauty/skincare-and-anti-aging/is-your-sunscreen-as-safe-as-it-says-it-is-20141215-127fv1.html#comments"></a>
+    </p>
+
+</div><!-- class:cN-social cfix -->
+            </div><!-- class:wof -->
+        </div><!-- class:cN-storyImageLead media-image -->
+        
+        
+            <h3 class="cT-strapHeading">Travel: <em>Vietnam</em></h3>
+        <div class="cN-storyImageLead media-image">
+            <div class="media">
+                        <a href="http://www.dailylife.com.au/life-and-love/dl-travel/ho-chi-minh-city-a-city-for-coffee-lovers-20141215-3mlmv.html" title="Ho Chi Minh City, a city for coffee lovers"><img src="http://images.dailylife.com.au/2014/12/15/6093320/Viet_Thumb-360x240.jpg" width="360" height="240" alt="<i></i>" /></a>
+
+                
+            </div><!-- class:media -->
+            <div class="wof">
+                <h3><a href="http://www.dailylife.com.au/life-and-love/dl-travel/ho-chi-minh-city-a-city-for-coffee-lovers-20141215-3mlmv.html" title="Ho Chi Minh City, a city for coffee lovers" >Ho Chi Minh City, a city for coffee lovers</a></h3>
+                <p>Vietnam's traditional 'ca phe sua da' - literally, "coffee, milk, ice" - is more than just a delicous drink, finds Nicola Graydon.</p>
+                
+                <div class="cN-social cfix">
+    <iframe class="socialBtn fb-button" scrolling="no" frameborder="0" allowTransparency="yes" src="http://www.facebook.com/plugins/like.php?href=http%3a%2f%2fwww.dailylife.com.au%2flife-and-love%2fdl-travel%2fho-chi-minh-city-a-city-for-coffee-lovers-20141215-3mlmv.html&amp;layout=button_count&amp;show_faces=false&amp;width=85&amp;action=recommend&amp;colorscheme=light&amp;height=21" width="100%" height="300"></iframe>
+    <iframe class="socialBtn twitter-button" allowtransparency="true" frameborder="0" scrolling="no" class="twitter-share-button twitter-count-horizontal" title="Twitter For Websites: Tweet Button" src="http://platform.twitter.com/widgets/tweet_button.html#_=1318890910829&count=horizontal&id=twitter_tweet_button_0&lang=en&original_referer=http%3A%2F%2Fwww.dailylife.com.au&text=Ho Chi Minh City, a city for coffee lovers&url=http%3a%2f%2fwww.dailylife.com.au%2flife-and-love%2fdl-travel%2fho-chi-minh-city-a-city-for-coffee-lovers-20141215-3mlmv.html&via=DailyLifeAU"></iframe>
+    
+</div><!-- class:cN-social cfix -->
+            </div><!-- class:wof -->
+        </div><!-- class:cN-storyImageLead media-image -->
+        
+        
+            <h3 class="cT-strapHeading">Bill <em>Granger</em></h3>
+        <div class="cN-storyImageLead media-image">
+            <div class="media">
+                        <a href="http://www.dailylife.com.au/dl-food/celebrity-chefs/bill-grangers-best-canapes-and-drinks-20141214-3miud.html" title="Bill Granger's best canapes and drinks"><img src="http://images.dailylife.com.au/2014/12/14/6089690/Bill_TN21-360x240.jpg" width="360" height="240" alt="Bill_TN21" /></a>
+
+                
+            </div><!-- class:media -->
+            <div class="wof">
+                <h3><a href="http://www.dailylife.com.au/dl-food/celebrity-chefs/bill-grangers-best-canapes-and-drinks-20141214-3miud.html" title="Bill Granger's best canapes and drinks" >Bill Granger's best canapes and drinks</a></h3>
+                <p>Inviting friends over for an aperitif? A bowl of nuts just won't cut it. Instead, try these moreish canapes.</p>
+                
+                <div class="cN-social cfix">
+    <iframe class="socialBtn fb-button" scrolling="no" frameborder="0" allowTransparency="yes" src="http://www.facebook.com/plugins/like.php?href=http%3a%2f%2fwww.dailylife.com.au%2fdl-food%2fcelebrity-chefs%2fbill-grangers-best-canapes-and-drinks-20141214-3miud.html&amp;layout=button_count&amp;show_faces=false&amp;width=85&amp;action=recommend&amp;colorscheme=light&amp;height=21" width="100%" height="300"></iframe>
+    <iframe class="socialBtn twitter-button" allowtransparency="true" frameborder="0" scrolling="no" class="twitter-share-button twitter-count-horizontal" title="Twitter For Websites: Tweet Button" src="http://platform.twitter.com/widgets/tweet_button.html#_=1318890910829&count=horizontal&id=twitter_tweet_button_0&lang=en&original_referer=http%3A%2F%2Fwww.dailylife.com.au&text=Bill Granger's best canapes and drinks&url=http%3a%2f%2fwww.dailylife.com.au%2fdl-food%2fcelebrity-chefs%2fbill-grangers-best-canapes-and-drinks-20141214-3miud.html&via=DailyLifeAU"></iframe>
+    
+</div><!-- class:cN-social cfix -->
+            </div><!-- class:wof -->
+        </div><!-- class:cN-storyImageLead media-image -->
+        
+        
+            <h3 class="cT-strapHeading">Online <em>shopping</em></h3>
+        <div class="cN-storyImageLead media-image">
+            <div class="media">
+                        <a href="http://www.dailylife.com.au/dl-fashion/fashion-coverage/what-you-need-to-know-about-buying-online-from-us-retailers-20141212-125r09.html" title="What you need to know about buying online from US retailers"><img src="http://images.dailylife.com.au/2014/12/12/6084416/Thumbnail64093689125rftimage.related.StepOutsThumbnail.360x240.125r09.png1418347882586.jpg-360x240.jpg" width="360" height="240" alt=""Australia is finally joining the big kids, but there are other brands the US has that we'd love to see hanging in our wardrobes."" /></a>
+
+                
+            </div><!-- class:media -->
+            <div class="wof">
+                <h3><a href="http://www.dailylife.com.au/dl-fashion/fashion-coverage/what-you-need-to-know-about-buying-online-from-us-retailers-20141212-125r09.html" title="What you need to know about buying online from US retailers" >What you need to know about buying online from US retailers</a></h3>
+                <p>COS. Sephora. Forever 21. Uniqlo. Australia is finally joining the big kids, but there are other brands the US has that we&#8217;d love to see hanging in our wardrobes.</p>
+                
+                <div class="cN-social cfix">
+    <iframe class="socialBtn fb-button" scrolling="no" frameborder="0" allowTransparency="yes" src="http://www.facebook.com/plugins/like.php?href=http%3a%2f%2fwww.dailylife.com.au%2fdl-fashion%2ffashion-coverage%2fwhat-you-need-to-know-about-buying-online-from-us-retailers-20141212-125r09.html&amp;layout=button_count&amp;show_faces=false&amp;width=85&amp;action=recommend&amp;colorscheme=light&amp;height=21" width="100%" height="300"></iframe>
+    <iframe class="socialBtn twitter-button" allowtransparency="true" frameborder="0" scrolling="no" class="twitter-share-button twitter-count-horizontal" title="Twitter For Websites: Tweet Button" src="http://platform.twitter.com/widgets/tweet_button.html#_=1318890910829&count=horizontal&id=twitter_tweet_button_0&lang=en&original_referer=http%3A%2F%2Fwww.dailylife.com.au&text=What you need to know about buying online from US retailers&url=http%3a%2f%2fwww.dailylife.com.au%2fdl-fashion%2ffashion-coverage%2fwhat-you-need-to-know-about-buying-online-from-us-retailers-20141212-125r09.html&via=DailyLifeAU"></iframe>
+    
+</div><!-- class:cN-social cfix -->
+            </div><!-- class:wof -->
+        </div><!-- class:cN-storyImageLead media-image -->
+        
+
+
+                </div><!-- class:push-0 span-360px last -->
+                <div class="sidebar span-240px">
+                    <!-- cN-linkList -->
+    <div class="cN-linkList">
+        
+        
+        <h3>Top <em>stories</em></h3>
+        <ol>
+                        <li class="cfix">
+                                <a href="http://www.dailylife.com.au/life-and-love/parenting-and-families/yumi-stynes-looking-at-that-photo-of-my-daughter-now-i-could-cry-20141209-123nqj.html"  title="Yumi Stynes: "looking at that photo of my daughter now, I could cry""><img src="http://images.dailylife.com.au/2014/12/09/6074695/Thumbnail6399613912351bimage.related.StepOutsThumbnail.360x240.123nqj.png1418119773619.jpg-90x60.jpg" width="90" alt="Yumi Stynes and daughter Mercy at the <i>Paddington Bear</i> premiere." /></a>
+
+                            <p><a href="http://www.dailylife.com.au/life-and-love/parenting-and-families/yumi-stynes-looking-at-that-photo-of-my-daughter-now-i-could-cry-20141209-123nqj.html">Yumi Stynes: "looking at that photo of my daughter now, I could cry"</a></p>
+                        </li>
+                        <li class="cfix">
+                                <a href="http://www.dailylife.com.au/news-and-views/dl-opinion/you-need-to-know-about-the-ugly-girls-club-20141204-120b9t.html"  title="You need to know about the Ugly Girls Club"><img src="http://images.dailylife.com.au/2014/12/04/6058526/Thumbnail63840017120dbbimage.related.StepOutsThumbnail.360x240.120b9t.png1417755872537.jpg-90x60.jpg" width="90" alt="The 'Ugly Girls Club', images via Facebook.  " /></a>
+
+                            <p><a href="http://www.dailylife.com.au/news-and-views/dl-opinion/you-need-to-know-about-the-ugly-girls-club-20141204-120b9t.html">You need to know about the Ugly Girls Club</a></p>
+                        </li>
+                        <li class="cfix">
+                                <a href="http://www.dailylife.com.au/news-and-views/dl-culture/meet-indias-new-comic-superhero-priya-the-rape-survivor-20141209-123362.html"  title="Meet India's new comic superhero: Priya the rape survivor"><img src="http://images.dailylife.com.au/2014/12/09/6072131/Thumbnail63969482123384image.related.StepOutsThumbnail.360x240.123362.png1418080127683.jpg-90x60.jpg" width="90" alt="Priya, the rape survivor, sitting on top of a tiger in the comic " /></a>
+
+                            <p><a href="http://www.dailylife.com.au/news-and-views/dl-culture/meet-indias-new-comic-superhero-priya-the-rape-survivor-20141209-123362.html">Meet India's new comic superhero: Priya the rape survivor</a></p>
+                        </li>
+        </ol>
+        
+    </div>
+<!-- class:cN-linkList -->
+
+                    
+
+        <div class="cN-storyHeadlineQuote">
+                    <a href="http://www.dailylife.com.au/news-and-views/dl-opinion/illridewithyou-is-helping-attacks-on-it-are-not-20141216-1281fh.html" title="#I'llRideWithYou is helping, attacks on it are not"><img src="http://images.dailylife.com.au/2013/01/10/3942721/Jenna-price-TN-90x90.jpg" width="90" height="90" alt="Jenna Price" /></a>
+
+            <h3><a href="http://www.dailylife.com.au/news-and-views/dl-opinion/illridewithyou-is-helping-attacks-on-it-are-not-20141216-1281fh.html" title="#I'llRideWithYou" >#I'llRideWithYou</a></h3>
+            <blockquote>
+                <p><a href="http://www.dailylife.com.au/news-and-views/dl-opinion/illridewithyou-is-helping-attacks-on-it-are-not-20141216-1281fh.html" title="#I'llRideWithYou">It's not up to anyone to issue that invite to speak for decency, it's up for all of us to know what's wrong.</a><span>&nbsp;</span></p>
+                    <cite><a href="http://www.dailylife.com.au/news-and-views/dl-opinion/illridewithyou-is-helping-attacks-on-it-are-not-20141216-1281fh.html">Jenna Price</a></cite>
+            </blockquote>
+            
+            <div class="cN-social cfix">
+    <iframe class="socialBtn fb-button" scrolling="no" frameborder="0" allowTransparency="yes" src="http://www.facebook.com/plugins/like.php?href=http%3a%2f%2fwww.dailylife.com.au%2fnews-and-views%2fdl-opinion%2fillridewithyou-is-helping-attacks-on-it-are-not-20141216-1281fh.html&amp;layout=button_count&amp;show_faces=false&amp;width=85&amp;action=recommend&amp;colorscheme=light&amp;height=21" width="100%" height="300"></iframe>
+    <iframe class="socialBtn twitter-button" allowtransparency="true" frameborder="0" scrolling="no" class="twitter-share-button twitter-count-horizontal" title="Twitter For Websites: Tweet Button" src="http://platform.twitter.com/widgets/tweet_button.html#_=1318890910829&count=horizontal&id=twitter_tweet_button_0&lang=en&original_referer=http%3A%2F%2Fwww.dailylife.com.au&text=#I'llRideWithYou is helping, attacks on it are not&url=http%3a%2f%2fwww.dailylife.com.au%2fnews-and-views%2fdl-opinion%2fillridewithyou-is-helping-attacks-on-it-are-not-20141216-1281fh.html&via=DailyLifeAU"></iframe>
+        <p class="comments">
+            <a href="http://www.dailylife.com.au/news-and-views/dl-opinion/illridewithyou-is-helping-attacks-on-it-are-not-20141216-1281fh.html#comments"></a>
+    </p>
+
+</div><!-- class:cN-social cfix -->
+        </div><!-- class:cN-storyHeadlineQuote -->
+        <div class="cN-storyHeadlineQuote">
+                    <a href="http://www.dailylife.com.au/life-and-love/real-life/we-need-a-positive-guide-to-grieving-20141215-127l6v.html" title="We need a positive guide to grieving"><img src="http://images.dailylife.com.au/2012/02/14/3037542/DL-Clementine-Ford127x127-90x90.jpg" width="90" height="90" alt="Clementine Ford." /></a>
+
+            <h3><a href="http://www.dailylife.com.au/life-and-love/real-life/we-need-a-positive-guide-to-grieving-20141215-127l6v.html" title="We need a positive guide to grieving" >We need a positive guide to grieving</a></h3>
+            <blockquote>
+                <p><a href="http://www.dailylife.com.au/life-and-love/real-life/we-need-a-positive-guide-to-grieving-20141215-127l6v.html" title="We need a positive guide to grieving">Our bodies and minds are much better equipped to deal with grief than we might imagine.</a><span>&nbsp;</span></p>
+                    <cite><a href="http://www.dailylife.com.au/life-and-love/real-life/we-need-a-positive-guide-to-grieving-20141215-127l6v.html">Clementine Ford</a></cite>
+            </blockquote>
+            
+            <div class="cN-social cfix">
+    <iframe class="socialBtn fb-button" scrolling="no" frameborder="0" allowTransparency="yes" src="http://www.facebook.com/plugins/like.php?href=http%3a%2f%2fwww.dailylife.com.au%2flife-and-love%2freal-life%2fwe-need-a-positive-guide-to-grieving-20141215-127l6v.html&amp;layout=button_count&amp;show_faces=false&amp;width=85&amp;action=recommend&amp;colorscheme=light&amp;height=21" width="100%" height="300"></iframe>
+    <iframe class="socialBtn twitter-button" allowtransparency="true" frameborder="0" scrolling="no" class="twitter-share-button twitter-count-horizontal" title="Twitter For Websites: Tweet Button" src="http://platform.twitter.com/widgets/tweet_button.html#_=1318890910829&count=horizontal&id=twitter_tweet_button_0&lang=en&original_referer=http%3A%2F%2Fwww.dailylife.com.au&text=We need a positive guide to grieving&url=http%3a%2f%2fwww.dailylife.com.au%2flife-and-love%2freal-life%2fwe-need-a-positive-guide-to-grieving-20141215-127l6v.html&via=DailyLifeAU"></iframe>
+    
+</div><!-- class:cN-social cfix -->
+        </div><!-- class:cN-storyHeadlineQuote -->
+        <div class="cN-storyHeadlineQuote">
+                    <a href="http://www.dailylife.com.au/news-and-views/dl-opinion/when-actresses-are-praised-for-going-ugly-in-a-film-role-20141214-126t4y.html" title="When actresses are praised for 'going ugly' in a film role"><img src="http://images.dailylife.com.au/2012/02/14/3037616/DL-Natalie-Reilly127x127-90x90.jpg" width="90" height="90" alt="Natalie Reilly" /></a>
+
+            <h3><a href="http://www.dailylife.com.au/news-and-views/dl-opinion/when-actresses-are-praised-for-going-ugly-in-a-film-role-20141214-126t4y.html" title="Praising actresses who 'go ugly' for a film role" >Praising actresses who 'go ugly' for a film role</a></h3>
+            <blockquote>
+                <p><a href="http://www.dailylife.com.au/news-and-views/dl-opinion/when-actresses-are-praised-for-going-ugly-in-a-film-role-20141214-126t4y.html" title="Praising actresses who 'go ugly' for a film role">It's been called 'pulling a Theron', when actresses go the full ugly in a bid for Oscar.</a><span>&nbsp;</span></p>
+                    <cite><a href="http://www.dailylife.com.au/news-and-views/dl-opinion/when-actresses-are-praised-for-going-ugly-in-a-film-role-20141214-126t4y.html">Natalie Reilly</a></cite>
+            </blockquote>
+            
+            <div class="cN-social cfix">
+    <iframe class="socialBtn fb-button" scrolling="no" frameborder="0" allowTransparency="yes" src="http://www.facebook.com/plugins/like.php?href=http%3a%2f%2fwww.dailylife.com.au%2fnews-and-views%2fdl-opinion%2fwhen-actresses-are-praised-for-going-ugly-in-a-film-role-20141214-126t4y.html&amp;layout=button_count&amp;show_faces=false&amp;width=85&amp;action=recommend&amp;colorscheme=light&amp;height=21" width="100%" height="300"></iframe>
+    <iframe class="socialBtn twitter-button" allowtransparency="true" frameborder="0" scrolling="no" class="twitter-share-button twitter-count-horizontal" title="Twitter For Websites: Tweet Button" src="http://platform.twitter.com/widgets/tweet_button.html#_=1318890910829&count=horizontal&id=twitter_tweet_button_0&lang=en&original_referer=http%3A%2F%2Fwww.dailylife.com.au&text=When actresses are praised for 'going ugly' in a film role&url=http%3a%2f%2fwww.dailylife.com.au%2fnews-and-views%2fdl-opinion%2fwhen-actresses-are-praised-for-going-ugly-in-a-film-role-20141214-126t4y.html&via=DailyLifeAU"></iframe>
+    
+</div><!-- class:cN-social cfix -->
+        </div><!-- class:cN-storyHeadlineQuote -->
+        <div class="cN-storyHeadlineQuote">
+                    <a href="http://www.dailylife.com.au/life-and-love/real-life/what-your-frenemies-are-doing-to-your-health-20141212-125qzz.html" title="What your frenemies are doing to your health"><img src="http://images.dailylife.com.au/2013/11/13/4920906/AliceWilliams-90x90.jpg" width="90" height="90" alt="AliceWilliams" /></a>
+
+            <h3><a href="http://www.dailylife.com.au/life-and-love/real-life/what-your-frenemies-are-doing-to-your-health-20141212-125qzz.html" title="What your frenemies are doing to your health" >What your frenemies are doing to your health</a></h3>
+            <blockquote>
+                <p><a href="http://www.dailylife.com.au/life-and-love/real-life/what-your-frenemies-are-doing-to-your-health-20141212-125qzz.html" title="What your frenemies are doing to your health">Why do frenemies cause more damage than so-called Horrible Bosses?</a><span>&nbsp;</span></p>
+                    <cite><a href="http://www.dailylife.com.au/life-and-love/real-life/what-your-frenemies-are-doing-to-your-health-20141212-125qzz.html">Alice Williams </a></cite>
+            </blockquote>
+            
+            <div class="cN-social cfix">
+    <iframe class="socialBtn fb-button" scrolling="no" frameborder="0" allowTransparency="yes" src="http://www.facebook.com/plugins/like.php?href=http%3a%2f%2fwww.dailylife.com.au%2flife-and-love%2freal-life%2fwhat-your-frenemies-are-doing-to-your-health-20141212-125qzz.html&amp;layout=button_count&amp;show_faces=false&amp;width=85&amp;action=recommend&amp;colorscheme=light&amp;height=21" width="100%" height="300"></iframe>
+    <iframe class="socialBtn twitter-button" allowtransparency="true" frameborder="0" scrolling="no" class="twitter-share-button twitter-count-horizontal" title="Twitter For Websites: Tweet Button" src="http://platform.twitter.com/widgets/tweet_button.html#_=1318890910829&count=horizontal&id=twitter_tweet_button_0&lang=en&original_referer=http%3A%2F%2Fwww.dailylife.com.au&text=What your frenemies are doing to your health&url=http%3a%2f%2fwww.dailylife.com.au%2flife-and-love%2freal-life%2fwhat-your-frenemies-are-doing-to-your-health-20141212-125qzz.html&via=DailyLifeAU"></iframe>
+    
+</div><!-- class:cN-social cfix -->
+        </div><!-- class:cN-storyHeadlineQuote -->
+        <div class="cN-storyHeadlineQuote">
+                    <a href="http://www.dailylife.com.au/life-and-love/parenting-and-families/yumi-stynes-looking-at-that-photo-of-my-daughter-now-i-could-cry-20141209-123nqj.html" title="Yumi Stynes: "looking at that photo of my daughter now, I could cry""><img src="http://images.dailylife.com.au/2014/12/10/6076852/Yumi_TN-90x90.jpg" width="90" height="90" alt="Yumi_TN" /></a>
+
+            <h3><a href="http://www.dailylife.com.au/life-and-love/parenting-and-families/yumi-stynes-looking-at-that-photo-of-my-daughter-now-i-could-cry-20141209-123nqj.html" title=""Looking at that photo of my daughter, I could cry"" >"Looking at that photo of my daughter, I could cry"</a></h3>
+            <blockquote>
+                <p><a href="http://www.dailylife.com.au/life-and-love/parenting-and-families/yumi-stynes-looking-at-that-photo-of-my-daughter-now-i-could-cry-20141209-123nqj.html" title=""Looking at that photo of my daughter, I could cry"">I'm not in possession of the required sh--- to give to defend my decision to dress my daughter in nothing but a nappy.</a><span>&nbsp;</span></p>
+                    <cite><a href="http://www.dailylife.com.au/life-and-love/parenting-and-families/yumi-stynes-looking-at-that-photo-of-my-daughter-now-i-could-cry-20141209-123nqj.html">Yumi Stynes</a></cite>
+            </blockquote>
+            
+            <div class="cN-social cfix">
+    <iframe class="socialBtn fb-button" scrolling="no" frameborder="0" allowTransparency="yes" src="http://www.facebook.com/plugins/like.php?href=http%3a%2f%2fwww.dailylife.com.au%2flife-and-love%2fparenting-and-families%2fyumi-stynes-looking-at-that-photo-of-my-daughter-now-i-could-cry-20141209-123nqj.html&amp;layout=button_count&amp;show_faces=false&amp;width=85&amp;action=recommend&amp;colorscheme=light&amp;height=21" width="100%" height="300"></iframe>
+    <iframe class="socialBtn twitter-button" allowtransparency="true" frameborder="0" scrolling="no" class="twitter-share-button twitter-count-horizontal" title="Twitter For Websites: Tweet Button" src="http://platform.twitter.com/widgets/tweet_button.html#_=1318890910829&count=horizontal&id=twitter_tweet_button_0&lang=en&original_referer=http%3A%2F%2Fwww.dailylife.com.au&text=Yumi Stynes: "looking at that photo of my daughter now, I could cry"&url=http%3a%2f%2fwww.dailylife.com.au%2flife-and-love%2fparenting-and-families%2fyumi-stynes-looking-at-that-photo-of-my-daughter-now-i-could-cry-20141209-123nqj.html&via=DailyLifeAU"></iframe>
+    
+</div><!-- class:cN-social cfix -->
+        </div><!-- class:cN-storyHeadlineQuote -->
+        <div class="cN-storyHeadlineQuote">
+                    <a href="http://www.dailylife.com.au/life-and-love/parenting-and-families/dear-mark-latham-mothers-are-not-the-natural-enemy-of-stayathome-dads-20141210-123o2n.html" title="Dear Mark Latham, mothers are not the natural enemy of stay-at-home dads"><img src="http://images.dailylife.com.au/2014/03/21/5281052/Andie2-90x90.jpg" width="90" height="90" alt="Andie2" /></a>
+
+            <h3><a href="http://www.dailylife.com.au/life-and-love/parenting-and-families/dear-mark-latham-mothers-are-not-the-natural-enemy-of-stayathome-dads-20141210-123o2n.html" title="Mark Latham's attack on female journalists" >Mark Latham's attack on female journalists</a></h3>
+            <blockquote>
+                <p><a href="http://www.dailylife.com.au/life-and-love/parenting-and-families/dear-mark-latham-mothers-are-not-the-natural-enemy-of-stayathome-dads-20141210-123o2n.html" title="Mark Latham's attack on female journalists">It takes determination for a person to muster that much anxiety towards a self-reflective account of mothering.</a><span>&nbsp;</span></p>
+                    <cite><a href="http://www.dailylife.com.au/life-and-love/parenting-and-families/dear-mark-latham-mothers-are-not-the-natural-enemy-of-stayathome-dads-20141210-123o2n.html">Andie Fox</a></cite>
+            </blockquote>
+            
+            <div class="cN-social cfix">
+    <iframe class="socialBtn fb-button" scrolling="no" frameborder="0" allowTransparency="yes" src="http://www.facebook.com/plugins/like.php?href=http%3a%2f%2fwww.dailylife.com.au%2flife-and-love%2fparenting-and-families%2fdear-mark-latham-mothers-are-not-the-natural-enemy-of-stayathome-dads-20141210-123o2n.html&amp;layout=button_count&amp;show_faces=false&amp;width=85&amp;action=recommend&amp;colorscheme=light&amp;height=21" width="100%" height="300"></iframe>
+    <iframe class="socialBtn twitter-button" allowtransparency="true" frameborder="0" scrolling="no" class="twitter-share-button twitter-count-horizontal" title="Twitter For Websites: Tweet Button" src="http://platform.twitter.com/widgets/tweet_button.html#_=1318890910829&count=horizontal&id=twitter_tweet_button_0&lang=en&original_referer=http%3A%2F%2Fwww.dailylife.com.au&text=Dear Mark Latham, mothers are not the natural enemy of stay-at-home dads&url=http%3a%2f%2fwww.dailylife.com.au%2flife-and-love%2fparenting-and-families%2fdear-mark-latham-mothers-are-not-the-natural-enemy-of-stayathome-dads-20141210-123o2n.html&via=DailyLifeAU"></iframe>
+    
+</div><!-- class:cN-social cfix -->
+        </div><!-- class:cN-storyHeadlineQuote -->
+        <div class="cN-storyHeadlineQuote">
+                    <a href="http://www.dailylife.com.au/news-and-views/dl-culture/meet-the-sisters-of-invention--just-dont-call-them-inspirational-20141209-123axz.html" title="Meet The Sisters Of Invention - just don't call them "inspirational""><img src="http://images.dailylife.com.au/2012/02/16/3046721/DL-Clem-Bastow-90x90.jpg" width="90" height="90" alt="Clem Bastow" /></a>
+
+            <h3><a href="http://www.dailylife.com.au/news-and-views/dl-culture/meet-the-sisters-of-invention--just-dont-call-them-inspirational-20141209-123axz.html" title="Sisters of Invention" >Sisters of Invention</a></h3>
+            <blockquote>
+                <p><a href="http://www.dailylife.com.au/news-and-views/dl-culture/meet-the-sisters-of-invention--just-dont-call-them-inspirational-20141209-123axz.html" title="Sisters of Invention">Ordinarily, when we look for diversity in popular culture, it's pretty safe to say we don't direct our eyes and ears to the pop charts</a><span>&nbsp;</span></p>
+                    <cite><a href="http://www.dailylife.com.au/news-and-views/dl-culture/meet-the-sisters-of-invention--just-dont-call-them-inspirational-20141209-123axz.html">Clem Bastow</a></cite>
+            </blockquote>
+            
+            <div class="cN-social cfix">
+    <iframe class="socialBtn fb-button" scrolling="no" frameborder="0" allowTransparency="yes" src="http://www.facebook.com/plugins/like.php?href=http%3a%2f%2fwww.dailylife.com.au%2fnews-and-views%2fdl-culture%2fmeet-the-sisters-of-invention--just-dont-call-them-inspirational-20141209-123axz.html&amp;layout=button_count&amp;show_faces=false&amp;width=85&amp;action=recommend&amp;colorscheme=light&amp;height=21" width="100%" height="300"></iframe>
+    <iframe class="socialBtn twitter-button" allowtransparency="true" frameborder="0" scrolling="no" class="twitter-share-button twitter-count-horizontal" title="Twitter For Websites: Tweet Button" src="http://platform.twitter.com/widgets/tweet_button.html#_=1318890910829&count=horizontal&id=twitter_tweet_button_0&lang=en&original_referer=http%3A%2F%2Fwww.dailylife.com.au&text=Meet The Sisters Of Invention - just don't call them "inspirational"&url=http%3a%2f%2fwww.dailylife.com.au%2fnews-and-views%2fdl-culture%2fmeet-the-sisters-of-invention--just-dont-call-them-inspirational-20141209-123axz.html&via=DailyLifeAU"></iframe>
+    
+</div><!-- class:cN-social cfix -->
+        </div><!-- class:cN-storyHeadlineQuote -->
+        <div class="cN-storyHeadlineQuote">
+                    <a href="http://www.dailylife.com.au/news-and-views/dl-opinion/what-fuels-the-fierce-media-obsession-with-feminisms-failures-20141209-123mc2.html" title="What fuels the fierce media obsession with feminism's failures?"><img src="http://images.dailylife.com.au/2013/04/23/4214746/Ruby_127-90x90.jpg" width="90" height="90" alt="Ruby_127" /></a>
+
+            <h3><a href="http://www.dailylife.com.au/news-and-views/dl-opinion/what-fuels-the-fierce-media-obsession-with-feminisms-failures-20141209-123mc2.html" title="The obsession with feminism's failures" >The obsession with feminism's failures</a></h3>
+            <blockquote>
+                <p><a href="http://www.dailylife.com.au/news-and-views/dl-opinion/what-fuels-the-fierce-media-obsession-with-feminisms-failures-20141209-123mc2.html" title="The obsession with feminism's failures">Because women's behaviour is expected to be morally "better" than men's, we tend to get criticised far more harshly for the same behaviour.</a><span>&nbsp;</span></p>
+                    <cite><a href="http://www.dailylife.com.au/news-and-views/dl-opinion/what-fuels-the-fierce-media-obsession-with-feminisms-failures-20141209-123mc2.html">Ruby Hamad</a></cite>
+            </blockquote>
+            
+            <div class="cN-social cfix">
+    <iframe class="socialBtn fb-button" scrolling="no" frameborder="0" allowTransparency="yes" src="http://www.facebook.com/plugins/like.php?href=http%3a%2f%2fwww.dailylife.com.au%2fnews-and-views%2fdl-opinion%2fwhat-fuels-the-fierce-media-obsession-with-feminisms-failures-20141209-123mc2.html&amp;layout=button_count&amp;show_faces=false&amp;width=85&amp;action=recommend&amp;colorscheme=light&amp;height=21" width="100%" height="300"></iframe>
+    <iframe class="socialBtn twitter-button" allowtransparency="true" frameborder="0" scrolling="no" class="twitter-share-button twitter-count-horizontal" title="Twitter For Websites: Tweet Button" src="http://platform.twitter.com/widgets/tweet_button.html#_=1318890910829&count=horizontal&id=twitter_tweet_button_0&lang=en&original_referer=http%3A%2F%2Fwww.dailylife.com.au&text=What fuels the fierce media obsession with feminism's failures?&url=http%3a%2f%2fwww.dailylife.com.au%2fnews-and-views%2fdl-opinion%2fwhat-fuels-the-fierce-media-obsession-with-feminisms-failures-20141209-123mc2.html&via=DailyLifeAU"></iframe>
+    
+</div><!-- class:cN-social cfix -->
+        </div><!-- class:cN-storyHeadlineQuote -->
+        <div class="cN-storyHeadlineQuote">
+                    <a href="http://www.dailylife.com.au/news-and-views/dl-opinion/rolling-stone-no-apology-can-undo-the-damage-they-have-done-20141208-122o2v.html" title="Rolling Stone: no apology can undo the damage they have done"><img src="http://images.dailylife.com.au/2014/12/09/6071864/1_Jane_Gilmore_TNt-90x90.jpg" width="90" height="90" alt="1_Jane_Gilmore_TNt" /></a>
+
+            <h3><a href="http://www.dailylife.com.au/news-and-views/dl-opinion/rolling-stone-no-apology-can-undo-the-damage-they-have-done-20141208-122o2v.html" title="Rolling Stone: no apology can undo the damage" >Rolling Stone: no apology can undo the damage</a></h3>
+            <blockquote>
+                <p><a href="http://www.dailylife.com.au/news-and-views/dl-opinion/rolling-stone-no-apology-can-undo-the-damage-they-have-done-20141208-122o2v.html" title="Rolling Stone: no apology can undo the damage">Their mistake was not in commissioning, writing or publishing an article about rape.</a><span>&nbsp;</span></p>
+                    <cite><a href="http://www.dailylife.com.au/news-and-views/dl-opinion/rolling-stone-no-apology-can-undo-the-damage-they-have-done-20141208-122o2v.html">Jane Gilmore</a></cite>
+            </blockquote>
+            
+            <div class="cN-social cfix">
+    <iframe class="socialBtn fb-button" scrolling="no" frameborder="0" allowTransparency="yes" src="http://www.facebook.com/plugins/like.php?href=http%3a%2f%2fwww.dailylife.com.au%2fnews-and-views%2fdl-opinion%2frolling-stone-no-apology-can-undo-the-damage-they-have-done-20141208-122o2v.html&amp;layout=button_count&amp;show_faces=false&amp;width=85&amp;action=recommend&amp;colorscheme=light&amp;height=21" width="100%" height="300"></iframe>
+    <iframe class="socialBtn twitter-button" allowtransparency="true" frameborder="0" scrolling="no" class="twitter-share-button twitter-count-horizontal" title="Twitter For Websites: Tweet Button" src="http://platform.twitter.com/widgets/tweet_button.html#_=1318890910829&count=horizontal&id=twitter_tweet_button_0&lang=en&original_referer=http%3A%2F%2Fwww.dailylife.com.au&text=Rolling Stone: no apology can undo the damage they have done&url=http%3a%2f%2fwww.dailylife.com.au%2fnews-and-views%2fdl-opinion%2frolling-stone-no-apology-can-undo-the-damage-they-have-done-20141208-122o2v.html&via=DailyLifeAU"></iframe>
+        <p class="comments">
+            <a href="http://www.dailylife.com.au/news-and-views/dl-opinion/rolling-stone-no-apology-can-undo-the-damage-they-have-done-20141208-122o2v.html#comments"></a>
+    </p>
+
+</div><!-- class:cN-social cfix -->
+        </div><!-- class:cN-storyHeadlineQuote -->
+
+                    
+
+
+
+                    
+
+        <div class="cN-storyImageLead media-image">
+            <div class="media">
+                        <a href="http://www.dailylife.com.au/aaw" title="All About Women"><img src="http://images.dailylife.com.au/2014/12/09/6073003/tm-AAW15__DAILY_LIFE_360x240_1-200x133.jpg" width="200" height="133" alt="AAW" /></a>
+
+            </div><!-- class:media -->
+            <div class="wof">
+                
+                    <h4>Buy tickets</h4>
+                <h3><a href="http://www.dailylife.com.au/aaw" title="All About Women" >All About Women</a></h3>
+                <p>All About Women festival returns next year on 8 March. The program will be bursting with world-class  thinkers including  Elizabeth Gilbert,  Roxane Gay, Germaine Greer, Annabel Crabb, Rosie Batty and more.<span>&nbsp;</span></p>
+                
+                <div class="cN-social cfix">
+    <iframe class="socialBtn fb-button" scrolling="no" frameborder="0" allowTransparency="yes" src="http://www.facebook.com/plugins/like.php?href=http%3a%2f%2fwww.dailylife.com.au%2faaw&amp;layout=button_count&amp;show_faces=false&amp;width=85&amp;action=recommend&amp;colorscheme=light&amp;height=21" width="100%" height="300"></iframe>
+    <iframe class="socialBtn twitter-button" allowtransparency="true" frameborder="0" scrolling="no" class="twitter-share-button twitter-count-horizontal" title="Twitter For Websites: Tweet Button" src="http://platform.twitter.com/widgets/tweet_button.html#_=1318890910829&count=horizontal&id=twitter_tweet_button_0&lang=en&original_referer=http%3A%2F%2Fwww.dailylife.com.au&text=All About Women&url=http%3a%2f%2fwww.dailylife.com.au%2faaw&via=DailyLifeAU"></iframe>
+    
+</div><!-- class:cN-social cfix -->
+            </div><!-- class:wof -->
+                
+
+
+        </div><!-- class:cN-storyImageLead media-image -->
+        <div class="cN-storyImageLead media-image">
+            <div class="media">
+                        <a href="http://www.dailylife.com.au/news-and-views/take-action?rand=1394226907282" title="Find out more about SMH and Daily Life's #ShineALight campaign."><img src="http://images.dailylife.com.au/2014/03/08/5243038/tm-ShineALightThumb-200x133.jpg" width="200" height="133" alt="Shine a light" /></a>
+
+            </div><!-- class:media -->
+            <div class="wof">
+                
+                    <h4>Our campaign</h4>
+                <h3><a href="http://www.dailylife.com.au/news-and-views/take-action?rand=1394226907282" title="Find out more about SMH and Daily Life's #ShineALight campaign." >Find out more about SMH and Daily Life's #ShineALight campaign.</a></h3>
+                <p>For every high-profile case in the news, another victim dies in shrouded in silence.<span>&nbsp;</span></p>
+                
+                <div class="cN-social cfix">
+    <iframe class="socialBtn fb-button" scrolling="no" frameborder="0" allowTransparency="yes" src="http://www.facebook.com/plugins/like.php?href=http%3a%2f%2fwww.dailylife.com.au%2fnews-and-views%2ftake-action%3frand%3d1394226907282&amp;layout=button_count&amp;show_faces=false&amp;width=85&amp;action=recommend&amp;colorscheme=light&amp;height=21" width="100%" height="300"></iframe>
+    <iframe class="socialBtn twitter-button" allowtransparency="true" frameborder="0" scrolling="no" class="twitter-share-button twitter-count-horizontal" title="Twitter For Websites: Tweet Button" src="http://platform.twitter.com/widgets/tweet_button.html#_=1318890910829&count=horizontal&id=twitter_tweet_button_0&lang=en&original_referer=http%3A%2F%2Fwww.dailylife.com.au&text=Find out more about SMH and Daily Life's #ShineALight campaign.&url=http%3a%2f%2fwww.dailylife.com.au%2fnews-and-views%2ftake-action%3frand%3d1394226907282&via=DailyLifeAU"></iframe>
+    
+</div><!-- class:cN-social cfix -->
+            </div><!-- class:wof -->
+                
+
+
+        </div><!-- class:cN-storyImageLead media-image -->
+
+                </div><!-- class:sidebar span-240px -->
+                <div class="cN-multimediaGroup cfix">
+    <h3>Photo <em>Galleries</em></h3>
+    <ul class="cN-tabBox accessibleTab">
+        <li class="tab1 selected">
+            <h4><a href="javascript:;">Most recent</a></h4>
+            <div class="cfix">
+                <ul>
+                <li  data-assetId="d-3mndm" data-assetType="PHOTOGALLERY" data-assetUrl="http://www.dailylife.com.au/photogallery/dl-fashion/fashion-trends/20-purrfect-presents-for-the-cat-ladies-in-our-lives-20141216-3mndm.html">
+                        <a href="http://www.dailylife.com.au/photogallery/dl-fashion/fashion-trends/20-purrfect-presents-for-the-cat-ladies-in-our-lives-20141216-3mndm.html"  title="20 purr-fect presents for the cat ladies in our lives"><img src="http://images.dailylife.com.au/2014/12/16/6095576/tm-161414706-90x60.jpg" width="90" alt="LOS ANGELES, CA - FEBRUARY 10:  Taylor Swift and Lena Dunham attend  the 55th Annual GRAMMY Awards at STAPLES Center on February 10, 2013 in Los Angeles, California.  (Photo by Kevin Mazur/WireImage)" /></a>
+
+                <p><a href="http://www.dailylife.com.au/photogallery/dl-fashion/fashion-trends/20-purrfect-presents-for-the-cat-ladies-in-our-lives-20141216-3mndm.html">20 purr-fect presents for the cat ladies in our lives</a></p>                
+            </li>
+            <li  data-assetId="d-3kva4" data-assetType="PHOTOGALLERY" data-assetUrl="http://www.dailylife.com.au/photogallery/supported-content-2/daily-life-2014-beauty-gift-guide-20141121-3kva4.html">
+                        <a href="http://www.dailylife.com.au/photogallery/supported-content-2/daily-life-2014-beauty-gift-guide-20141121-3kva4.html"  title="Daily Life 2014 Beauty Gift Guide"><img src="http://images.dailylife.com.au/2014/12/16/6095328/tm-gal-port-Babe-20Body-20Souffl-2B-C2-AE_WILD-20DAISY_Open-20Lid-20copy-496x620-90x60.jpg" width="90" alt="beauty" /></a>
+
+                <p><a href="http://www.dailylife.com.au/photogallery/supported-content-2/daily-life-2014-beauty-gift-guide-20141121-3kva4.html">Daily Life 2014 Beauty Gift Guide</a></p>                
+            </li>
+            <li  data-assetId="d-3mltq" data-assetType="PHOTOGALLERY" data-assetUrl="http://www.dailylife.com.au/photogallery/dl-fashion/the-best-celebrity-weddings-of-2014-20141215-3mltq.html">
+                        <a href="http://www.dailylife.com.au/photogallery/dl-fashion/the-best-celebrity-weddings-of-2014-20141215-3mltq.html"  title="The best celebrity weddings of 2014"><img src="http://images.dailylife.com.au/2014/12/15/6093568/tm-The-really-Final-Shot-2-90x60.jpg" width="90" alt="Celeb weddings" /></a>
+
+                <p><a href="http://www.dailylife.com.au/photogallery/dl-fashion/the-best-celebrity-weddings-of-2014-20141215-3mltq.html">The best celebrity weddings of 2014</a></p>                
+            </li>
+            <li  data-assetId="d-1xb41" data-assetType="PHOTOGALLERY" data-assetUrl="http://www.dailylife.com.au/photogallery/life-and-love/real-life/home-of-the-week-20120420-1xb41.html">
+                        <a href="http://www.dailylife.com.au/photogallery/life-and-love/real-life/home-of-the-week-20120420-1xb41.html"  title="Home of the week"><img src="http://images.dailylife.com.au/2012/11/20/3809585/tn2home-90x60.jpg" width="90" alt="The ground-floor Sydney apartment of Alex Zabotto-Bentley (pictured at the kitchen table) of AZBcreative.
+SHD SUNDAY LIFE Picture by JENNIFER SOO SLIFE121118" /></a>
+
+                <p><a href="http://www.dailylife.com.au/photogallery/life-and-love/real-life/home-of-the-week-20120420-1xb41.html">Home of the week</a></p>                
+            </li>
+            <li  data-assetId="d-3mkvv" data-assetType="PHOTOGALLERY" data-assetUrl="http://www.dailylife.com.au/photogallery/dl-fashion/five-great-fair-trade-gifts-to-give-someone-you-love-this-christmas-20141215-3mkvv.html">
+                        <a href="http://www.dailylife.com.au/photogallery/dl-fashion/five-great-fair-trade-gifts-to-give-someone-you-love-this-christmas-20141215-3mkvv.html"  title="Five great fair trade gifts to give someone you love this Christmas"><img src="http://images.dailylife.com.au/2014/12/15/6092351/gal-land-IPP-90x60.jpg" width="90" alt="Punjammies are PJs or (daywear!) made by women freed from forced prostitution and seeking to rebuild their lives. Buy them at <a href=“http://changemerchants.com.au”>Change Merchants</a>" /></a>
+
+                <p><a href="http://www.dailylife.com.au/photogallery/dl-fashion/five-great-fair-trade-gifts-to-give-someone-you-love-this-christmas-20141215-3mkvv.html">Five great fair trade gifts to give someone you love this Christmas</a></p>                
+            </li>
+            <li  data-assetId="d-2g28j" data-assetType="PHOTOGALLERY" data-assetUrl="http://www.dailylife.com.au/photogallery/dl-people/dl-entertainment/stars-of-the-90s--then-and-now-20130314-2g28j.html">
+                        <a href="http://www.dailylife.com.au/photogallery/dl-people/dl-entertainment/stars-of-the-90s--then-and-now-20130314-2g28j.html"  title="Stars of the '90s - then and now"><img src="http://images.dailylife.com.au/2014/12/13/6088447/90s_TN1-90x60.jpg" width="90" alt="90s_TN1" /></a>
+
+                <p><a href="http://www.dailylife.com.au/photogallery/dl-people/dl-entertainment/stars-of-the-90s--then-and-now-20130314-2g28j.html">Stars of the '90s - then and now</a></p>                
+            </li>
+</ul>
+
+            </div>
+        </li>
+        <li class="tab2 last">
+            <h4><a href="javascript:;">Most viewed</a></h4>
+            <div class="cfix">
+                <ul>
+                <li  data-assetId="d-3lwbb" data-assetType="PHOTOGALLERY" data-assetUrl="http://www.dailylife.com.au/photogallery/dl-people/dl-entertainment/the-best-movie-sex-scenes-for-women-20141205-3lwbb.html">
+                        <a href="http://www.dailylife.com.au/photogallery/dl-people/dl-entertainment/the-best-movie-sex-scenes-for-women-20141205-3lwbb.html"  title="The best movie sex scenes for women"><img src="http://images.dailylife.com.au/2014/12/13/6087579/BlackSwan_TN-90x60.jpg" width="90" alt="BlackSwan_TN" /></a>
+
+                <p><a href="http://www.dailylife.com.au/photogallery/dl-people/dl-entertainment/the-best-movie-sex-scenes-for-women-20141205-3lwbb.html">The best movie sex scenes for women</a></p>                
+            </li>
+            <li  data-assetId="d-3mgot" data-assetType="PHOTOGALLERY" data-assetUrl="http://www.dailylife.com.au/photogallery/dl-people/dl-entertainment/great-moments-in-celebrity-sideeye-20141212-3mgot.html">
+                        <a href="http://www.dailylife.com.au/photogallery/dl-people/dl-entertainment/great-moments-in-celebrity-sideeye-20141212-3mgot.html"  title="Great moments in celebrity side-eye"><img src="http://images.dailylife.com.au/2014/12/12/6084116/tm-Kate-Middleton-Northside-Center-For-Child-Development-New-York-December-2014-90x60.jpg" width="90" alt="NEW YORK, NY - DECEMBER 08:  Catherine, Duchess of Cambridge, helps to wrap Christmas presents during a visit with Chirlane McCray, the first lady of New York, to the Northside Center for Child Development on December 8, 2014 in New York City. The royal couple are on an official three-day visit to New York with Prince William also due to meet President Barack Obama in Washington D.C today.  (Photo by Mark Stewart - Pool/Getty Images)" /></a>
+
+                <p><a href="http://www.dailylife.com.au/photogallery/dl-people/dl-entertainment/great-moments-in-celebrity-sideeye-20141212-3mgot.html">Great moments in celebrity side-eye</a></p>                
+            </li>
+            <li  data-assetId="d-39ut5" data-assetType="PHOTOGALLERY" data-assetUrl="http://www.dailylife.com.au/photogallery/health-and-fitness/dl-wellbeing/famous-women-speaking-truths-on-body-image-and-self-love-20140610-39ut5.html">
+                        <a href="http://www.dailylife.com.au/photogallery/health-and-fitness/dl-wellbeing/famous-women-speaking-truths-on-body-image-and-self-love-20140610-39ut5.html"  title="Famous women speaking truths on body image and self love"><img src="http://images.dailylife.com.au/2014/09/15/5774496/tm-456919595_10-90x60.jpg" width="90" alt="NEW YORK, NY - DECEMBER 15:  Actress Amy Poehler attends the "Anchorman 2: The Legend Continues" premiere, sponsored by Buffalo David Bitton, on December 15, 2013 in New York City.  (Photo by Cindy Ord/Getty Images for Buffalo David Bitton)" /></a>
+
+                <p><a href="http://www.dailylife.com.au/photogallery/health-and-fitness/dl-wellbeing/famous-women-speaking-truths-on-body-image-and-self-love-20140610-39ut5.html">Famous women speaking truths on body image and self love</a></p>                
+            </li>
+            <li  data-assetId="d-3jupb" data-assetType="PHOTOGALLERY" data-assetUrl="http://www.dailylife.com.au/photogallery/life-and-love/parenting-and-families/19-baby-animals-that-won-our-hearts-this-year-20141107-3jupb.html">
+                        <a href="http://www.dailylife.com.au/photogallery/life-and-love/parenting-and-families/19-baby-animals-that-won-our-hearts-this-year-20141107-3jupb.html"  title="19 baby animals that won our hearts this year"><img src="http://images.dailylife.com.au/2014/12/11/6081581/Thumbnail64019526124y3kimage.related.thumbnail.320x214.1245s6.png1418267380033.jpg-90x60.jpg" width="90" alt="Wombat joey Chloe at Taronga Zoo
+" /></a>
+
+                <p><a href="http://www.dailylife.com.au/photogallery/life-and-love/parenting-and-families/19-baby-animals-that-won-our-hearts-this-year-20141107-3jupb.html">19 baby animals that won our hearts this year</a></p>                
+            </li>
+            <li  data-assetId="d-2g28j" data-assetType="PHOTOGALLERY" data-assetUrl="http://www.dailylife.com.au/photogallery/dl-people/dl-entertainment/stars-of-the-90s--then-and-now-20130314-2g28j.html">
+                        <a href="http://www.dailylife.com.au/photogallery/dl-people/dl-entertainment/stars-of-the-90s--then-and-now-20130314-2g28j.html"  title="Stars of the '90s - then and now"><img src="http://images.dailylife.com.au/2014/12/13/6088447/90s_TN1-90x60.jpg" width="90" alt="90s_TN1" /></a>
+
+                <p><a href="http://www.dailylife.com.au/photogallery/dl-people/dl-entertainment/stars-of-the-90s--then-and-now-20130314-2g28j.html">Stars of the '90s - then and now</a></p>                
+            </li>
+            <li  data-assetId="d-2rmml" data-assetType="PHOTOGALLERY" data-assetUrl="http://www.dailylife.com.au/photogallery/dl-beauty/the-15-most-iconic-little-black-dresses-20130809-2rmml.html">
+                        <a href="http://www.dailylife.com.au/photogallery/dl-beauty/the-15-most-iconic-little-black-dresses-20130809-2rmml.html"  title="The 15 most iconic little black dresses"><img src="http://images.dailylife.com.au/2013/08/09/4648356/tm-Annex-20--20Hepburn-2C-20Audrey-20-Breakfast-20at-20Tiffany-s-_14-90x60.jpg" width="90" alt="AUdrey Hepburn" /></a>
+
+                <p><a href="http://www.dailylife.com.au/photogallery/dl-beauty/the-15-most-iconic-little-black-dresses-20130809-2rmml.html">The 15 most iconic little black dresses</a></p>                
+            </li>
+</ul>
+
+            </div><!-- class:cfix -->
+        </li>
+    </ul>
+</div><!-- class:cN-multimediaGroup cfix -->
+
+
+    <h3 class="cT-strapHeading strapHeadingTV">
+        <a class="main" href="http://www.dailylife.com.au/tv" >Daily Life TV</a>
+            <span>
+                            <a href="/tv/popular" >Popular</a>
+                            <a href="/tv/recently-added" >Recent</a>
+                            <a class="last" href="/tv/genre" >Genres</a>
+            </span>
+    </h3>
+
+
+<?xml version="1.0" encoding="UTF-8"?><div class="cT-weekendStrip weekendStripCompact weekendStripStrap mastheadTVStrip"><div class="cN-story dailylife-tv"><div class="wof"><h3><a href="http://www.dailylife.com.au/tv/Environment/Seed-Hunter-5000318.html">Seed Hunter</a></h3><p><a href="http://www.dailylife.com.au/tv/Environment/Seed-Hunter-5000318.html">Meet the Indiana Jones of the plant world, who unearths rare wild seeds that may help solve a future global food shortage.</a></p></div></div><div class="cN-story dailylife-tv"><div class="wof"><h3><a href="http://www.dailylife.com.au/tv/Period-Drama/Show/The-Mayor-Of-Casterbridge/The-Mayor-Of-Casterbridge---Part-1-5000312.html">Mayor of Casterbridge</a></h3><p><a href="http://www.dailylife.com.au/tv/Period-Drama/Show/The-Mayor-Of-Casterbridge/The-Mayor-Of-Casterbridge---Part-1-5000312.html">The Mayor of Casterbridge's wife and daughter return home, after he sold them to a passing sailor 18 years earlier.</a></p></div></div><div class="cN-story dailylife-tv"><div class="wof"><h3><a href="http://www.dailylife.com.au/tv/Food/Show/Food--What-Goes-In-Your-Basket/Sour-On-Sugar-5000307.html">Sour On Sugar</a></h3><p><a href="http://www.dailylife.com.au/tv/Food/Show/Food--What-Goes-In-Your-Basket/Sour-On-Sugar-5000307.html">Exposes the food manufacturers guilty of filling our processed foods with sugar. Plus, are cheap cuts of beef actually tastier?</a></p></div></div></div>
+
+
+<h3 class="cT-strapHeading"><a class="main" href="/food">Food</a>
+    <div id="adspot-100x20-pos-1" class="ad" style='display:none;'> <script type="text/javascript"> var titan = window.titan || {}; titan.requestAd = titan.requestAd || []; titan.requestAd.push("adspot-100x20-pos-1"); </script> </div>
+</h3>
+<div class="cS-browseWidget">
+    <div class="browseOptions">
+        <h4>Browse Recipes</h4>
+        <form action="/food/recipes/search" id="searchRecipesForm" method="get">
+            <fieldset>
+                <legend>Browse Recipes</legend>
+                <ol>
+                    <li class="formElDefaultText">
+                        <label for="frmTextfield">Search recipes:</label>
+                        <input type="text" placeholder="Enter ingredients or recipe name" name="text" value="">
+                    </li>
+
+                    <li class="last"><span class="btn"><input type="submit" value="Search" class="button"></span></li>
+                </ol>
+            </fieldset>
+        </form>
+    </div>
+</div>
+
+
+        
+
+            </div><!-- id:content -->
+            <div class="aside span-8 last" role="complementary">
+                    <div class="cN-searchBox cfix">
+        <form action="http://www.dailylife.com.au/execute_search.html" method="get">
+            <h2>Search dailylife:</h2>
+            <label for="search">
+                <input type="text" name="text" id="search" placeholder='Search here...' onfocus="this.value='';" />
+            </label>
+            <h3>Search in:</h3>
+            <ul id="ddown" class="ddown">
+                <li><a class="selected" href="#">Daily Life</a>
+                    <div class="srch-wrap">
+                        <div></div>
+                        <ul class="cfix">
+                                <li class="first"><a href="#">Daily Life</a></li>
+                        </ul>
+                    </div><!-- class:srch-wrap -->
+                </li>
+            </ul>
+            <input type="hidden" name="ss" value="Daily Life" />
+            <input type="submit" class="btnSubmit" value="Search" />
+        </form>
+    </div><!-- class:cN-searchBox cfix -->
+
+                <div id="adspot-300x250-pos-1" class="ad" style='display:none;'> <small>Advertisement</small> <script type="text/javascript"> var titan = window.titan || {}; titan.requestAd = titan.requestAd || []; titan.requestAd.push("adspot-300x250-pos-1"); </script> </div>
+                
+
+    <h3 class="cT-strapHeading">Daily <em>People</em></h3>
+        <div class="cN-storyHeadlineLead cfix">
+            <h3><a href="http://www.dailylife.com.au/dl-people/celebrity-news/illridewithyou-continues-trending-worldwide-highlighting-support-for-muslim-australians-20141216-12808y.html" title="#IllRideWithYou continues trending worldwide, highlighting support for Muslim Australians" >#IllRideWithYou continues trending worldwide, highlighting support for Muslim Australians</a></h3>
+                    <a href="http://www.dailylife.com.au/dl-people/celebrity-news/illridewithyou-continues-trending-worldwide-highlighting-support-for-muslim-australians-20141216-12808y.html" title="#IllRideWithYou continues trending worldwide, highlighting support for Muslim Australians"><img src="http://images.dailylife.com.au/2014/12/16/6095569/Illride_TN-140x93.jpg" width="140" height="93" alt="Illride_TN" /></a>
+
+            <p>International tweeters join campaign, show their support in the fight against anti-Muslim backlash.</p>
+            
+            <div class="cN-social cfix">
+    <iframe class="socialBtn fb-button" scrolling="no" frameborder="0" allowTransparency="yes" src="http://www.facebook.com/plugins/like.php?href=http%3a%2f%2fwww.dailylife.com.au%2fdl-people%2fcelebrity-news%2fillridewithyou-continues-trending-worldwide-highlighting-support-for-muslim-australians-20141216-12808y.html&amp;layout=button_count&amp;show_faces=false&amp;width=85&amp;action=recommend&amp;colorscheme=light&amp;height=21" width="100%" height="300"></iframe>
+    <iframe class="socialBtn twitter-button" allowtransparency="true" frameborder="0" scrolling="no" class="twitter-share-button twitter-count-horizontal" title="Twitter For Websites: Tweet Button" src="http://platform.twitter.com/widgets/tweet_button.html#_=1318890910829&count=horizontal&id=twitter_tweet_button_0&lang=en&original_referer=http%3A%2F%2Fwww.dailylife.com.au&text=#IllRideWithYou continues trending worldwide, highlighting support for Muslim Australians&url=http%3a%2f%2fwww.dailylife.com.au%2fdl-people%2fcelebrity-news%2fillridewithyou-continues-trending-worldwide-highlighting-support-for-muslim-australians-20141216-12808y.html&via=DailyLifeAU"></iframe>
+    
+</div><!-- class:cN-social cfix -->
+        </div><!-- class:cN-storyHeadlineLead cfix -->
+        <div class="cN-storyHeadlineLead cfix">
+            <h3><a href="http://www.dailylife.com.au/news-and-views/news-features/illridewithyou-is-the-antidote-to-racist-commentary-we-all-need-tonight-20141215-127rpz.html" title="#IllRideWithYou is the antidote to racist commentary we all need tonight" >#IllRideWithYou is the antidote to racist commentary we all need tonight</a></h3>
+                    <a href="http://www.dailylife.com.au/news-and-views/news-features/illridewithyou-is-the-antidote-to-racist-commentary-we-all-need-tonight-20141215-127rpz.html" title="#IllRideWithYou is the antidote to racist commentary we all need tonight"><img src="http://images.dailylife.com.au/2014/12/15/6094338/Thumbnail64187927127rumimage.related.StepOutsThumbnail.360x240.127rpz.png1418638977220.jpg-140x93.jpg" width="140" height="93" alt="Cover of this afternoon's Daily Telegraph." /></a>
+
+            <p>A good news story on a very dark day.</p>
+            
+            <div class="cN-social cfix">
+    <iframe class="socialBtn fb-button" scrolling="no" frameborder="0" allowTransparency="yes" src="http://www.facebook.com/plugins/like.php?href=http%3a%2f%2fwww.dailylife.com.au%2fnews-and-views%2fnews-features%2fillridewithyou-is-the-antidote-to-racist-commentary-we-all-need-tonight-20141215-127rpz.html&amp;layout=button_count&amp;show_faces=false&amp;width=85&amp;action=recommend&amp;colorscheme=light&amp;height=21" width="100%" height="300"></iframe>
+    <iframe class="socialBtn twitter-button" allowtransparency="true" frameborder="0" scrolling="no" class="twitter-share-button twitter-count-horizontal" title="Twitter For Websites: Tweet Button" src="http://platform.twitter.com/widgets/tweet_button.html#_=1318890910829&count=horizontal&id=twitter_tweet_button_0&lang=en&original_referer=http%3A%2F%2Fwww.dailylife.com.au&text=#IllRideWithYou is the antidote to racist commentary we all need tonight&url=http%3a%2f%2fwww.dailylife.com.au%2fnews-and-views%2fnews-features%2fillridewithyou-is-the-antidote-to-racist-commentary-we-all-need-tonight-20141215-127rpz.html&via=DailyLifeAU"></iframe>
+    
+</div><!-- class:cN-social cfix -->
+        </div><!-- class:cN-storyHeadlineLead cfix -->
+        <div class="cN-storyHeadlineLead cfix">
+            <h3><a href="http://www.dailylife.com.au/dl-people/dl-entertainment/jennifer-aniston-calls-career-before-family-comments-insulting-and-ignorant-20141216-1287m8.html" title="Jennifer Aniston calls 'career before family' comments "insulting and ignorant"." >Jennifer Aniston calls 'career before family' comments "insulting and ignorant".</a></h3>
+                    <a href="http://www.dailylife.com.au/dl-people/dl-entertainment/jennifer-aniston-calls-career-before-family-comments-insulting-and-ignorant-20141216-1287m8.html" title="Jennifer Aniston calls 'career before family' comments "insulting and ignorant"."><img src="http://images.dailylife.com.au/2014/12/16/6096307/Thumbnail6420852811mi9eimage.related.StepOutsThumbnail.360x240.1287m8.png1418697230443.jpg-140x93.jpg" width="140" height="93" alt="Jennifer Aniston." /></a>
+
+            <p>"There's all sorts of reasons why children aren't in people's lives, and no-one has the right to assume. It's quite rude, insulting, and ignorant."</p>
+            
+            <div class="cN-social cfix">
+    <iframe class="socialBtn fb-button" scrolling="no" frameborder="0" allowTransparency="yes" src="http://www.facebook.com/plugins/like.php?href=http%3a%2f%2fwww.dailylife.com.au%2fdl-people%2fdl-entertainment%2fjennifer-aniston-calls-career-before-family-comments-insulting-and-ignorant-20141216-1287m8.html&amp;layout=button_count&amp;show_faces=false&amp;width=85&amp;action=recommend&amp;colorscheme=light&amp;height=21" width="100%" height="300"></iframe>
+    <iframe class="socialBtn twitter-button" allowtransparency="true" frameborder="0" scrolling="no" class="twitter-share-button twitter-count-horizontal" title="Twitter For Websites: Tweet Button" src="http://platform.twitter.com/widgets/tweet_button.html#_=1318890910829&count=horizontal&id=twitter_tweet_button_0&lang=en&original_referer=http%3A%2F%2Fwww.dailylife.com.au&text=Jennifer Aniston calls 'career before family' comments "insulting and ignorant".&url=http%3a%2f%2fwww.dailylife.com.au%2fdl-people%2fdl-entertainment%2fjennifer-aniston-calls-career-before-family-comments-insulting-and-ignorant-20141216-1287m8.html&via=DailyLifeAU"></iframe>
+        <p class="comments">
+            <a href="http://www.dailylife.com.au/dl-people/dl-entertainment/jennifer-aniston-calls-career-before-family-comments-insulting-and-ignorant-20141216-1287m8.html#comments"></a>
+    </p>
+
+</div><!-- class:cN-social cfix -->
+        </div><!-- class:cN-storyHeadlineLead cfix -->
+        <div class="cN-storyHeadlineLead cfix">
+            <h3><a href="http://www.dailylife.com.au/dl-people/dl-entertainment/watch-cate-blanchett-natalie-portman-and-christian-bale-in-the-trailer-for-knight-of-cups-20141216-1281oa.html" title="Watch Cate Blanchett, Natalie Portman and Christian Bale in the trailer for 'Knight Of Cups'" >Watch Cate Blanchett, Natalie Portman and Christian Bale in the trailer for 'Knight Of Cups'</a></h3>
+                    <a href="http://www.dailylife.com.au/dl-people/dl-entertainment/watch-cate-blanchett-natalie-portman-and-christian-bale-in-the-trailer-for-knight-of-cups-20141216-1281oa.html" title="Watch Cate Blanchett, Natalie Portman and Christian Bale in the trailer for 'Knight Of Cups'"><img src="http://images.dailylife.com.au/2014/12/16/6095600/Thumbnail642008261282c0image.related.StepOutsThumbnail.360x240.1281oa.png1418688465803.jpg-140x93.jpg" width="140" height="93" alt="Bale." /></a>
+
+            <p>Director/writer Terrence Malick sets his poetic sights on Hollywood decadence.</p>
+            
+            <div class="cN-social cfix">
+    <iframe class="socialBtn fb-button" scrolling="no" frameborder="0" allowTransparency="yes" src="http://www.facebook.com/plugins/like.php?href=http%3a%2f%2fwww.dailylife.com.au%2fdl-people%2fdl-entertainment%2fwatch-cate-blanchett-natalie-portman-and-christian-bale-in-the-trailer-for-knight-of-cups-20141216-1281oa.html&amp;layout=button_count&amp;show_faces=false&amp;width=85&amp;action=recommend&amp;colorscheme=light&amp;height=21" width="100%" height="300"></iframe>
+    <iframe class="socialBtn twitter-button" allowtransparency="true" frameborder="0" scrolling="no" class="twitter-share-button twitter-count-horizontal" title="Twitter For Websites: Tweet Button" src="http://platform.twitter.com/widgets/tweet_button.html#_=1318890910829&count=horizontal&id=twitter_tweet_button_0&lang=en&original_referer=http%3A%2F%2Fwww.dailylife.com.au&text=Watch Cate Blanchett, Natalie Portman and Christian Bale in the trailer for 'Knight Of Cups'&url=http%3a%2f%2fwww.dailylife.com.au%2fdl-people%2fdl-entertainment%2fwatch-cate-blanchett-natalie-portman-and-christian-bale-in-the-trailer-for-knight-of-cups-20141216-1281oa.html&via=DailyLifeAU"></iframe>
+    
+</div><!-- class:cN-social cfix -->
+        </div><!-- class:cN-storyHeadlineLead cfix -->
+        <div class="cN-storyHeadlineLead cfix">
+            <h3><a href="http://www.dailylife.com.au/news-and-views/news-features/saudi-arabian-woman-arrested-after-dressingup-as-a-man-to-watch-football-match-20141216-1280h1.html" title="Saudi Arabian woman arrested after dressing-up as a man to watch football match" >Saudi Arabian woman arrested after dressing-up as a man to watch football match</a></h3>
+                    <a href="http://www.dailylife.com.au/news-and-views/news-features/saudi-arabian-woman-arrested-after-dressingup-as-a-man-to-watch-football-match-20141216-1280h1.html" title="Saudi Arabian woman arrested after dressing-up as a man to watch football match"><img src="http://images.dailylife.com.au/2014/12/16/6095295/Thumbnail641992691280emimage.related.StepOutsThumbnail.360x240.1280h1.png1418684614292.jpg-140x93.jpg" width="140" height="93" alt="A woman has allegedly been arrested for watching a football match in Saudi Arabia." /></a>
+
+            <p>Police have confirmed that a woman, filmed sitting alone in the Al-Jawhara stadium on footage posted to YouTube, was seen and identified to the authorities.</p>
+            
+            <div class="cN-social cfix">
+    <iframe class="socialBtn fb-button" scrolling="no" frameborder="0" allowTransparency="yes" src="http://www.facebook.com/plugins/like.php?href=http%3a%2f%2fwww.dailylife.com.au%2fnews-and-views%2fnews-features%2fsaudi-arabian-woman-arrested-after-dressingup-as-a-man-to-watch-football-match-20141216-1280h1.html&amp;layout=button_count&amp;show_faces=false&amp;width=85&amp;action=recommend&amp;colorscheme=light&amp;height=21" width="100%" height="300"></iframe>
+    <iframe class="socialBtn twitter-button" allowtransparency="true" frameborder="0" scrolling="no" class="twitter-share-button twitter-count-horizontal" title="Twitter For Websites: Tweet Button" src="http://platform.twitter.com/widgets/tweet_button.html#_=1318890910829&count=horizontal&id=twitter_tweet_button_0&lang=en&original_referer=http%3A%2F%2Fwww.dailylife.com.au&text=Saudi Arabian woman arrested after dressing-up as a man to watch football match&url=http%3a%2f%2fwww.dailylife.com.au%2fnews-and-views%2fnews-features%2fsaudi-arabian-woman-arrested-after-dressingup-as-a-man-to-watch-football-match-20141216-1280h1.html&via=DailyLifeAU"></iframe>
+    
+</div><!-- class:cN-social cfix -->
+        </div><!-- class:cN-storyHeadlineLead cfix -->
+        <div class="cN-storyHeadlineLead cfix">
+            <h3><a href="http://www.dailylife.com.au/news-and-views/news-features/japanese-restaurant-bans-couples-on-christmas-eve-to-stop-single-customers-feeling-lonely-20141215-1277pf.html" title="Japanese restaurant bans couples on Christmas Eve to stop single customers feeling lonely" >Japanese restaurant bans couples on Christmas Eve to stop single customers feeling lonely</a></h3>
+                    <a href="http://www.dailylife.com.au/news-and-views/news-features/japanese-restaurant-bans-couples-on-christmas-eve-to-stop-single-customers-feeling-lonely-20141215-1277pf.html" title="Japanese restaurant bans couples on Christmas Eve to stop single customers feeling lonely"><img src="http://images.dailylife.com.au/2014/12/15/6091421/Thumbnail641619871277mbimage.related.StepOutsThumbnail.360x240.1277pf.png1418598386433.jpg-140x93.jpg" width="140" height="93" alt="A hand-written message in the Tokyo restaurant advises couples could also cause staff 'severe emotional trauma'." /></a>
+
+            <p>A hand-written message in the Tokyo restaurant advises couples could also cause staff 'severe emotional trauma'.</p>
+            
+            <div class="cN-social cfix">
+    <iframe class="socialBtn fb-button" scrolling="no" frameborder="0" allowTransparency="yes" src="http://www.facebook.com/plugins/like.php?href=http%3a%2f%2fwww.dailylife.com.au%2fnews-and-views%2fnews-features%2fjapanese-restaurant-bans-couples-on-christmas-eve-to-stop-single-customers-feeling-lonely-20141215-1277pf.html&amp;layout=button_count&amp;show_faces=false&amp;width=85&amp;action=recommend&amp;colorscheme=light&amp;height=21" width="100%" height="300"></iframe>
+    <iframe class="socialBtn twitter-button" allowtransparency="true" frameborder="0" scrolling="no" class="twitter-share-button twitter-count-horizontal" title="Twitter For Websites: Tweet Button" src="http://platform.twitter.com/widgets/tweet_button.html#_=1318890910829&count=horizontal&id=twitter_tweet_button_0&lang=en&original_referer=http%3A%2F%2Fwww.dailylife.com.au&text=Japanese restaurant bans couples on Christmas Eve to stop single customers feeling lonely&url=http%3a%2f%2fwww.dailylife.com.au%2fnews-and-views%2fnews-features%2fjapanese-restaurant-bans-couples-on-christmas-eve-to-stop-single-customers-feeling-lonely-20141215-1277pf.html&via=DailyLifeAU"></iframe>
+    
+</div><!-- class:cN-social cfix -->
+        </div><!-- class:cN-storyHeadlineLead cfix -->
+        <div class="cN-storyHeadlineLead cfix">
+            <h3><a href="http://www.dailylife.com.au/dl-people/dl-entertainment/watch-beyonces-11minute-short-film-about-feminism-family-and-fame-20141215-1276dv.html" title="Watch Beyonce's 11-minute short film about feminism, family and fame" >Watch Beyonce's 11-minute short film about feminism, family and fame</a></h3>
+                    <a href="http://www.dailylife.com.au/dl-people/dl-entertainment/watch-beyonces-11minute-short-film-about-feminism-family-and-fame-20141215-1276dv.html" title="Watch Beyonce's 11-minute short film about feminism, family and fame"><img src="http://images.dailylife.com.au/2014/12/15/6091373/Thumbnail641602751276djimage.related.StepOutsThumbnail.360x240.1276dv.png1418596189822.jpg-140x93.jpg" width="140" height="93" alt="Beyonce." /></a>
+
+            <p>Beyonce: the gift that keeps on giving.</p>
+            
+            <div class="cN-social cfix">
+    <iframe class="socialBtn fb-button" scrolling="no" frameborder="0" allowTransparency="yes" src="http://www.facebook.com/plugins/like.php?href=http%3a%2f%2fwww.dailylife.com.au%2fdl-people%2fdl-entertainment%2fwatch-beyonces-11minute-short-film-about-feminism-family-and-fame-20141215-1276dv.html&amp;layout=button_count&amp;show_faces=false&amp;width=85&amp;action=recommend&amp;colorscheme=light&amp;height=21" width="100%" height="300"></iframe>
+    <iframe class="socialBtn twitter-button" allowtransparency="true" frameborder="0" scrolling="no" class="twitter-share-button twitter-count-horizontal" title="Twitter For Websites: Tweet Button" src="http://platform.twitter.com/widgets/tweet_button.html#_=1318890910829&count=horizontal&id=twitter_tweet_button_0&lang=en&original_referer=http%3A%2F%2Fwww.dailylife.com.au&text=Watch Beyonce's 11-minute short film about feminism, family and fame&url=http%3a%2f%2fwww.dailylife.com.au%2fdl-people%2fdl-entertainment%2fwatch-beyonces-11minute-short-film-about-feminism-family-and-fame-20141215-1276dv.html&via=DailyLifeAU"></iframe>
+    
+</div><!-- class:cN-social cfix -->
+        </div><!-- class:cN-storyHeadlineLead cfix -->
+        <div class="cN-storyHeadlineLead cfix">
+            <h3><a href="http://www.dailylife.com.au/news-and-views/news-features/men-are-more-likely-than-women-to-be-idiots-20141215-1278h1.html" title="Men are more likely than women to be idiots*" >Men are more likely than women to be idiots*</a></h3>
+                    <a href="http://www.dailylife.com.au/news-and-views/news-features/men-are-more-likely-than-women-to-be-idiots-20141215-1278h1.html" title="Men are more likely than women to be idiots*"><img src="http://images.dailylife.com.au/2014/12/15/6091472/Thumbnail641629811278fsimage.related.StepOutsThumbnail.360x240.1278h1.png1418677019742.jpg-140x93.jpg" width="140" height="93" alt="BMJ's mock study: Men are more likely than women to be idiots" /></a>
+
+            <p>*so says a mock study by the British Medical Journal.</p>
+            
+            <div class="cN-social cfix">
+    <iframe class="socialBtn fb-button" scrolling="no" frameborder="0" allowTransparency="yes" src="http://www.facebook.com/plugins/like.php?href=http%3a%2f%2fwww.dailylife.com.au%2fnews-and-views%2fnews-features%2fmen-are-more-likely-than-women-to-be-idiots-20141215-1278h1.html&amp;layout=button_count&amp;show_faces=false&amp;width=85&amp;action=recommend&amp;colorscheme=light&amp;height=21" width="100%" height="300"></iframe>
+    <iframe class="socialBtn twitter-button" allowtransparency="true" frameborder="0" scrolling="no" class="twitter-share-button twitter-count-horizontal" title="Twitter For Websites: Tweet Button" src="http://platform.twitter.com/widgets/tweet_button.html#_=1318890910829&count=horizontal&id=twitter_tweet_button_0&lang=en&original_referer=http%3A%2F%2Fwww.dailylife.com.au&text=Men are more likely than women to be idiots*&url=http%3a%2f%2fwww.dailylife.com.au%2fnews-and-views%2fnews-features%2fmen-are-more-likely-than-women-to-be-idiots-20141215-1278h1.html&via=DailyLifeAU"></iframe>
+    
+</div><!-- class:cN-social cfix -->
+        </div><!-- class:cN-storyHeadlineLead cfix -->
+        <div class="cN-storyHeadlineLead cfix">
+            <h3><a href="http://www.dailylife.com.au/dl-people/dl-entertainment/miss-world-2014-feminist-protest-against-beauty-contest-falls-flat-thanks-to-cold-weather-20141215-12757h.html" title="Miss World 2014: feminist protest against beauty contest falls flat thanks to 'cold weather'" >Miss World 2014: feminist protest against beauty contest falls flat thanks to 'cold weather'</a></h3>
+                    <a href="http://www.dailylife.com.au/dl-people/dl-entertainment/miss-world-2014-feminist-protest-against-beauty-contest-falls-flat-thanks-to-cold-weather-20141215-12757h.html" title="Miss World 2014: feminist protest against beauty contest falls flat thanks to 'cold weather'"><img src="http://images.dailylife.com.au/2014/12/15/6091206/Thumbnail6415874912758himage.related.StepOutsThumbnail.360x240.12757h.png1418592999813.jpg-140x93.jpg" width="140" height="93" alt="Feminists gather outside London's ExCel in protest against Miss World. " /></a>
+
+            <p>Organisers blame weather and Christmas as only five women show up in London to protest against annual pageant</p>
+            
+            <div class="cN-social cfix">
+    <iframe class="socialBtn fb-button" scrolling="no" frameborder="0" allowTransparency="yes" src="http://www.facebook.com/plugins/like.php?href=http%3a%2f%2fwww.dailylife.com.au%2fdl-people%2fdl-entertainment%2fmiss-world-2014-feminist-protest-against-beauty-contest-falls-flat-thanks-to-cold-weather-20141215-12757h.html&amp;layout=button_count&amp;show_faces=false&amp;width=85&amp;action=recommend&amp;colorscheme=light&amp;height=21" width="100%" height="300"></iframe>
+    <iframe class="socialBtn twitter-button" allowtransparency="true" frameborder="0" scrolling="no" class="twitter-share-button twitter-count-horizontal" title="Twitter For Websites: Tweet Button" src="http://platform.twitter.com/widgets/tweet_button.html#_=1318890910829&count=horizontal&id=twitter_tweet_button_0&lang=en&original_referer=http%3A%2F%2Fwww.dailylife.com.au&text=Miss World 2014: feminist protest against beauty contest falls flat thanks to 'cold weather'&url=http%3a%2f%2fwww.dailylife.com.au%2fdl-people%2fdl-entertainment%2fmiss-world-2014-feminist-protest-against-beauty-contest-falls-flat-thanks-to-cold-weather-20141215-12757h.html&via=DailyLifeAU"></iframe>
+    
+</div><!-- class:cN-social cfix -->
+        </div><!-- class:cN-storyHeadlineLead cfix -->
+        <div class="cN-storyHeadlineLead cfix">
+            <h3><a href="http://www.dailylife.com.au/dl-people/dl-entertainment/parks-and-rec-cast-say-goodbye-from-the-set-of-their-final-ever-episode-20141215-1274qp.html" title="Parks And Rec cast say goodbye from the set of their final ever episode" >Parks And Rec cast say goodbye from the set of their final ever episode</a></h3>
+                    <a href="http://www.dailylife.com.au/dl-people/dl-entertainment/parks-and-rec-cast-say-goodbye-from-the-set-of-their-final-ever-episode-20141215-1274qp.html" title="Parks And Rec cast say goodbye from the set of their final ever episode"><img src="http://images.dailylife.com.au/2014/12/15/6091177/Thumbnail641581451274pvimage.related.StepOutsThumbnail.360x240.1274qp.png1418591499496.jpg-140x93.jpg" width="140" height="93" alt="Parks And Rec." /></a>
+
+            <p>With a whole bunch of teary behind-the-scenes photos. Tissues at the ready.</p>
+            
+            <div class="cN-social cfix">
+    <iframe class="socialBtn fb-button" scrolling="no" frameborder="0" allowTransparency="yes" src="http://www.facebook.com/plugins/like.php?href=http%3a%2f%2fwww.dailylife.com.au%2fdl-people%2fdl-entertainment%2fparks-and-rec-cast-say-goodbye-from-the-set-of-their-final-ever-episode-20141215-1274qp.html&amp;layout=button_count&amp;show_faces=false&amp;width=85&amp;action=recommend&amp;colorscheme=light&amp;height=21" width="100%" height="300"></iframe>
+    <iframe class="socialBtn twitter-button" allowtransparency="true" frameborder="0" scrolling="no" class="twitter-share-button twitter-count-horizontal" title="Twitter For Websites: Tweet Button" src="http://platform.twitter.com/widgets/tweet_button.html#_=1318890910829&count=horizontal&id=twitter_tweet_button_0&lang=en&original_referer=http%3A%2F%2Fwww.dailylife.com.au&text=Parks And Rec cast say goodbye from the set of their final ever episode&url=http%3a%2f%2fwww.dailylife.com.au%2fdl-people%2fdl-entertainment%2fparks-and-rec-cast-say-goodbye-from-the-set-of-their-final-ever-episode-20141215-1274qp.html&via=DailyLifeAU"></iframe>
+    
+</div><!-- class:cN-social cfix -->
+        </div><!-- class:cN-storyHeadlineLead cfix -->
+
+                <div class="panel">
+    <h3 class="cN-strapHeading">Daily <em>discussions</em></h3>
+    <ul class="cN-tabBox accessibleTab discussions">
+        <li class="tab1 selected">
+            <div>
+                <div class="cN-linkList">
+                    <ol>
+                            <li><a href="http://www.dailylife.com.au/news-and-views/news-features/tony-abbott-plays-the-gender-card-on-morning-tv-20141212-125ii9.html" title="Tony Abbott 'plays the gender card' on morning TV">Tony Abbott 'plays the gender card' on morning TV</a></li>
+                    </ol>
+                </div><!-- class:cN-linkList -->
+            </div>
+        </li>
+    </ul>
+</div><!-- class:panel -->
+
+                
+
+    <div class="cS-latestVideo">
+        <h3>Video</h3>
+        <div class="media-video">
+            <div class="videoWrap">
+                        <a href="http://media.dailylife.com.au/national/selections/what-is-it-like-to-be-a-hobbit-dwarf-6078841.html" class="play-video" title="What is it like to be a Hobbit 'dwarf'?">
+        <img  src="http://images.dailylife.com.au/2014/12/11/6078842/vd-hobbit-408x264.jpg" width="300" height="170" alt="What is it like to be a Hobbit 'dwarf'? (Video Thumbnail)"/>
+            <span class="size-lrg">
+                    Click to play video
+            </span>
+        </a>
+
+            </div><!-- class:videoWrap -->
+            <div class="fdVideoWof">
+                <h4>What is it like to be a Hobbit 'dwarf'?</h4>
+                <p>New Zealand actor William Kircher talks about his role as Bifur outside The Hobbit premiere in Los Angeles. </p>
+            </div><!-- class:fdVideoWof -->
+            <ul>
+                        <li >
+                                    <a class="play-video " href="http://media.dailylife.com.au/news/world-news/malala-accepts-joint-nobel-prize-6078846.html" title="Malala accepts joint Nobel prize"><img src="http://images.dailylife.com.au/2014/12/11/6078848/vd-nobel-92x52.jpg" width="92" height="52" alt="Norway's King Harald (R) speaks to Nobel Peace Prize laureates Kailash Satyarthi (2nd L) and Malala Yousafzai during the Nobel Peace Prize awards ceremony at the City Hall in Oslo December 10, 2014. Pakistani teenager Yousafzai, shot by the Taliban for refusing to quit school, and Indian activist Satyarthi received their Nobel Peace Prizes on Wednesday after two days of celebration honouring their work for children's rights.         REUTERS/Suzanne Plunkett (NORWAY  - Tags: SOCIETY ROYALS)" /><span class="size-sml">Click to play video</span></a>
+
+                            <p><a href="http://media.dailylife.com.au/news/world-news/malala-accepts-joint-nobel-prize-6078846.html">Malala accepts joint Nobel prize</a></p>
+                        </li>
+                        <li  class="last">
+                                    <a class="play-video " href="http://media.dailylife.com.au/national/selections/now-spain-bans-uber--who-next-6078659.html" title="Now Spain bans Uber – who next?"><img src="http://images.dailylife.com.au/2014/12/11/6078660/vd-uber1-92x52.jpg" width="92" height="52" alt="The logo of car-sharing service app Uber on a smartphone in front of a taxi is seen in this photo illustration taken in Madrid on December 10, 2014. A Madrid judge has ordered U.S.-based online car booking company Uber to cease operations in Spain, the latest ban on the popular service. Taxi drivers around the world consider Uber unfairly bypasses local licensing and safety regulations by using the internet to put drivers in touch with passengers.  REUTERS/Sergio Perez  (SPAIN - Tags: LAW TRANSPORT SCIENCE TECHNOLOGY BUSINESS TELECOMS LOGO)" /><span class="size-sml">Click to play video</span></a>
+
+                            <p><a href="http://media.dailylife.com.au/national/selections/now-spain-bans-uber--who-next-6078659.html">Now Spain bans Uber – who next?</a></p>
+                        </li>
+                        <li >
+                                    <a class="play-video " href="http://media.dailylife.com.au/national/selections/ebola-fighters-named-person-of-the-year-6078864.html" title="Ebola fighters named 'person of the year'"><img src="http://images.dailylife.com.au/2014/12/11/6078865/vd-time-92x52.jpg" width="92" height="52" alt="The covers of the December 10, 2014 issue of TIME magazine is shown in this handout photo provided by Time December 10, 2014. The magazine named those fighting Ebola its 2014 "Person of the Year", applauding the work of medical relief teams, doctors, nurses, ambulance drivers and burial teams working in western Africa, where an outbreak of the virus has killed thousands. The magazine pictured five people on its covers, including: Dr. Jerry Brown, a Liberian surgeon; Salome Karwah, an Ebola survivor whose parents died from the disease; and Dr. Kent Brantly, an American missionary who became infected while in Liberia. REUTERS/TIME/Handout via Reuters  (UNITED STATES - Tags: MEDIA TPX IMAGES OF THE DAY HEALTH DISASTER) ATTENTION EDITORS - THIS PICTURE WAS PROVIDED BY A THIRD PARTY. FOR EDITORIAL USE ONLY. NOT FOR SALE FOR MARKETING OR ADVERTISING CAMPAIGNS. THIS PICTURE IS DISTRIBUTED EXACTLY AS RECEIVED BY REUTERS, AS A SERVICE TO CLIENTS. NO SALES. NO ARCHIVES" /><span class="size-sml">Click to play video</span></a>
+
+                            <p><a href="http://media.dailylife.com.au/national/selections/ebola-fighters-named-person-of-the-year-6078864.html">Ebola fighters named 'person of the year'</a></p>
+                        </li>
+            </ul>
+        </div><!-- class:media-video -->
+    </div><!-- cS-latestVideo -->
+
+                
+
+    <div class="cS-horoscopes">
+        <h3>Horoscopes</h3>
+            <img src="http://images.dailylife.com.au/2012/02/13/3034714/kellifox-100x145-100x145.jpg" width="100" alt="Kelli Fox" />
+
+                <ul>
+                <li class="aries"><a href="http://www.dailylife.com.au/life-and-love/dl-horoscopes/aries-20120128-1qmh0.html">Aries</a></li>
+                <li class="taurus"><a href="http://www.dailylife.com.au/life-and-love/dl-horoscopes/taurus-20120128-1qmgx.html">Taurus</a></li>
+                <li class="gemini"><a href="http://www.dailylife.com.au/life-and-love/dl-horoscopes/gemini-20120128-1qmh3.html">Gemini</a></li>
+                <li class="cancer"><a href="http://www.dailylife.com.au/life-and-love/dl-horoscopes/cancer-20120128-1qmh5.html">Cancer</a></li>
+                <li class="leo"><a href="http://www.dailylife.com.au/life-and-love/dl-horoscopes/leo-20120128-1qmh2.html">Leo</a></li>
+                <li class="virgo"><a href="http://www.dailylife.com.au/life-and-love/dl-horoscopes/virgo-20080101-1qmgv.html">Virgo</a></li>
+                </ul>
+                <ul>
+                <li class="libra"><a href="http://www.dailylife.com.au/life-and-love/dl-horoscopes/libra-20120128-1qmh4.html">Libra</a></li>
+                <li class="scorpio"><a href="http://www.dailylife.com.au/life-and-love/dl-horoscopes/scorpio-20120128-1qmh1.html">Scorpio</a></li>
+                <li class="sagittarius"><a href="http://www.dailylife.com.au/life-and-love/dl-horoscopes/sagittarius-20120128-1qmgw.html">Sagittarius</a></li>
+                <li class="capricorn"><a href="http://www.dailylife.com.au/life-and-love/dl-horoscopes/capricorn-20120128-1qmgy.html">Capricorn</a></li>
+                <li class="aquarius"><a href="http://www.dailylife.com.au/life-and-love/dl-horoscopes/aquarius-20120128-1qmh6.html">Aquarius</a></li>
+                <li class="pisces"><a href="http://www.dailylife.com.au/life-and-love/dl-horoscopes/pisces-20120128-1qmgz.html">Pisces</a></li>
+                </ul>
+    </div><!-- class:cS-horoscopes -->
+
+                
+
+    <div class="cS-storyImageLeadRotator rotator recipeIdeas accessibleRotator cfix">
+        <h3>Recipe ideas</h3>
+            <div class="cN-storyImageLead media-image tab1 selected">
+                        <div class="media">
+<a title="Roast carrot and quinoa salad " href="http://www.dailylife.com.au/food/recipes/roast-carrot-and-quinoa-salad-20130923-2u9i3.html" > <img src="http://images.dailylife.com.au/2013/09/23/4770018/GF_th_camorra_quinoa-20130923081447870740-300x200.jpg" width="300" alt="Quinoa salad with roast carrot and almonds."/> </a>    </div>
+
+                <div class="wof">
+                    <h3><a href="http://www.dailylife.com.au/food/recipes/roast-carrot-and-quinoa-salad-20130923-2u9i3.html" title="Roast carrot and quinoa salad ">Roast carrot and quinoa salad </a></h3>
+                </div><!-- class:wof -->
+            </div><!-- class:cN-storyImageLead media-image tab1 selected -->
+            <div class="cN-storyImageLead media-image tab2">
+                        <div class="media">
+<a title="Spaghetti with garlic, pangrattato and olive oil" href="http://www.dailylife.com.au/food/recipes/spaghetti-with-garlic-pangrattato-and-olive-oil-20130909-2tfl8.html" > <img src="http://images.dailylife.com.au/2013/09/05/4720981/GF_th_Perry_Spaghetti-300x200.jpg" width="300" alt="Spaghetti with pangrattato."/> </a>    </div>
+
+                <div class="wof">
+                    <h3><a href="http://www.dailylife.com.au/food/recipes/spaghetti-with-garlic-pangrattato-and-olive-oil-20130909-2tfl8.html" title="Spaghetti with garlic, pangrattato and olive oil">Spaghetti with garlic, pangrattato and olive oil</a></h3>
+                </div><!-- class:wof -->
+            </div><!-- class:cN-storyImageLead media-image tab2 -->
+            <div class="cN-storyImageLead media-image tab3">
+                        <div class="media">
+<a title="Chocolate hazelnut roulade " href="http://www.dailylife.com.au/food/recipes/chocolate-hazelnut-roulade-20130923-2u9gb.html" > <img src="http://images.dailylife.com.au/2013/09/23/4771206/lg---Chocolate-hazelnut-roulade-thumb-300x200.jpg" width="300" alt="Food. Neil Perry's chocolate hazelnut roulade. SMH GOOD WEEKEND Picture by WILLIAM MEPPEM GW130921"/> </a>    </div>
+
+                <div class="wof">
+                    <h3><a href="http://www.dailylife.com.au/food/recipes/chocolate-hazelnut-roulade-20130923-2u9gb.html" title="Chocolate hazelnut roulade ">Chocolate hazelnut roulade </a></h3>
+                </div><!-- class:wof -->
+            </div><!-- class:cN-storyImageLead media-image tab3 -->
+            <div class="cN-storyImageLead media-image tab4">
+                        <div class="media">
+<a title="Strawberry galette" href="http://www.dailylife.com.au/food/recipes/strawberry-galette-20130916-2ttn9.html" > <img src="http://images.dailylife.com.au/2013/09/10/4734156/GF_th_martini_galette-20130910092046110901-300x200.jpg" width="300" alt="Strawberry galette (tart)."/> </a>    </div>
+
+                <div class="wof">
+                    <h3><a href="http://www.dailylife.com.au/food/recipes/strawberry-galette-20130916-2ttn9.html" title="Strawberry galette">Strawberry galette</a></h3>
+                </div><!-- class:wof -->
+            </div><!-- class:cN-storyImageLead media-image tab4 -->
+            <div class="cN-storyImageLead media-image tab5">
+                        <div class="media">
+<a title="Salmon rillettes" href="http://www.dailylife.com.au/food/recipes/salmon-rillettes-20130909-2tfg4.html" > <img src="http://images.dailylife.com.au/2013/09/09/4731614/sm-th-salmon-20130909101147178224-300x200.jpg" width="300" alt="Smoked Salmon."/> </a>    </div>
+
+                <div class="wof">
+                    <h3><a href="http://www.dailylife.com.au/food/recipes/salmon-rillettes-20130909-2tfg4.html" title="Salmon rillettes">Salmon rillettes</a></h3>
+                </div><!-- class:wof -->
+            </div><!-- class:cN-storyImageLead media-image tab5 -->
+            <div class="cN-storyImageLead media-image tab6">
+                        <div class="media">
+<a title="Stuffed eggplant with black bean sauce" href="http://www.dailylife.com.au/food/recipes/stuffed-eggplant-with-black-bean-sauce-20130917-2tvyx.html" > <img src="http://images.dailylife.com.au/2013/09/16/4750447/GF_th_Perry_eggplant-300x200.jpg" width="300" alt="Stuffed eggplant with black bean sauce."/> </a>    </div>
+
+                <div class="wof">
+                    <h3><a href="http://www.dailylife.com.au/food/recipes/stuffed-eggplant-with-black-bean-sauce-20130917-2tvyx.html" title="Stuffed eggplant with black bean sauce">Stuffed eggplant with black bean sauce</a></h3>
+                </div><!-- class:wof -->
+            </div><!-- class:cN-storyImageLead media-image tab6 -->
+            <div class="cN-storyImageLead media-image tab7">
+                        <div class="media">
+<a title="Summer pudding" href="http://www.dailylife.com.au/food/recipes/summer-pudding-20131101-2wrfc.html" > <img src="http://images.dailylife.com.au/2013/11/01/4887692/Murdoch%20Recipe%20Thumbnail-300x200.jpg" width="300" alt="Murdoch Recipe Thumbnail"/> </a>    </div>
+
+                <div class="wof">
+                    <h3><a href="http://www.dailylife.com.au/food/recipes/summer-pudding-20131101-2wrfc.html" title="Summer pudding">Summer pudding</a></h3>
+                </div><!-- class:wof -->
+            </div><!-- class:cN-storyImageLead media-image tab7 -->
+            <div class="cN-storyImageLead media-image tab8">
+                        <div class="media">
+<a title="Espresso coffee bars" href="http://www.dailylife.com.au/food/recipes/espresso-coffee-bars-20131101-2wrfz.html" > <img src="http://images.dailylife.com.au/2013/11/01/4887739/Murdoch%20Recipe%20Thumbnail-300x200.jpg" width="300" alt="Murdoch Recipe Thumbnail"/> </a>    </div>
+
+                <div class="wof">
+                    <h3><a href="http://www.dailylife.com.au/food/recipes/espresso-coffee-bars-20131101-2wrfz.html" title="Espresso coffee bars">Espresso coffee bars</a></h3>
+                </div><!-- class:wof -->
+            </div><!-- class:cN-storyImageLead media-image tab8 -->
+            <div class="cN-storyImageLead media-image tab9">
+                        <div class="media">
+<a title="Apple and fruit cake" href="http://www.dailylife.com.au/food/recipes/apple-and-fruit-cake-20131101-2wrfv.html" > <img src="http://images.dailylife.com.au/2013/11/01/4887731/Murdoch%20Recipe%20Thumbnail-300x200.jpg" width="300" alt="Murdoch Recipe Thumbnail"/> </a>    </div>
+
+                <div class="wof">
+                    <h3><a href="http://www.dailylife.com.au/food/recipes/apple-and-fruit-cake-20131101-2wrfv.html" title="Apple and fruit cake">Apple and fruit cake</a></h3>
+                </div><!-- class:wof -->
+            </div><!-- class:cN-storyImageLead media-image tab9 -->
+            <div class="cN-storyImageLead media-image tab10">
+                        <div class="media">
+<a title="Modern nicoise salad" href="http://www.dailylife.com.au/food/recipes/modern-nicoise-salad-20131101-2wrfg.html" > <img src="http://images.dailylife.com.au/2013/11/01/4887700/Murdoch%20Recipe%20Thumbnail-300x200.jpg" width="300" alt="Murdoch Recipe Thumbnail"/> </a>    </div>
+
+                <div class="wof">
+                    <h3><a href="http://www.dailylife.com.au/food/recipes/modern-nicoise-salad-20131101-2wrfg.html" title="Modern nicoise salad">Modern nicoise salad</a></h3>
+                </div><!-- class:wof -->
+            </div><!-- class:cN-storyImageLead media-image tab10 -->
+        <ul>
+            <li class="previous">
+                <a href="javascript:;">Prev</a>
+            </li>
+            <li class="next last">
+                <a href="javascript:;">Next</a>
+            </li>
+        </ul>
+    </div><!-- class:cS-storyImageLeadRotator rotator cfix -->
+
+                <!-- Facebook Activity Feed -->
+<!-- facebook page needs to be set up for the domain dailylife.com.au -->
+<fb:activity site="www.dailylife.com.au" width="300" height="315" header="true" recommendations="true" border_color="#15bed5"></fb:activity>
+<!-- //Facebook Activity Feed -->
+                <div id="adspot-300x250-pos-2" class="ad" style='display:none;'> <small>Advertisement</small> <script type="text/javascript"> var titan = window.titan || {}; titan.requestAd = titan.requestAd || []; titan.requestAd.push("adspot-300x250-pos-2"); </script> </div>
+                <div id="adspot-1x8-pos-1" class="ad adSpot-textBoxGraphicRight cfix" style='display:none;'> <script type="text/javascript"> var titan = window.titan || {}; titan.requestAd = titan.requestAd || []; titan.requestAd.push("adspot-1x8-pos-1"); </script> </div>
+            </div><!-- class:aside span-8 last -->
+            <div class="shopStyle-container cfix">
+        
+
+        <div class="cN-storyImageLead media-image">
+            <div class="media">
+                        <a class="more-photos " href="http://www.dailylife.com.au/photogallery/dl-fashion/fashion-coverage/the-look-of-the-day-sizzle-reel-20120307-1ujzh.html" title="The look of the day sizzle reel"><img src="http://images.dailylife.com.au/2014/07/11/5588358/th-tilda-200x133.jpg" width="200" height="133" alt="BERLIN, GERMANY - JULY 10:  Tilda Swinton attends the Roshi Porkar show during the Mercedes-Benz Fashion Week Spring/Summer 2015 at Erika Hess Eisstadion on July 10, 2014 in Berlin, Germany.  (Photo by Luca Teuchmann/Getty Images for IMG)" /><span class="size-med">Click for more photos</span></a>
+
+            </div><!-- class:media -->
+            <div class="wof">
+                
+                    <h4>Daily Style</h4>
+                <h3><a href="http://www.dailylife.com.au/photogallery/dl-fashion/fashion-coverage/the-look-of-the-day-sizzle-reel-20120307-1ujzh.html" title="The look of the day sizzle reel" >The look of the day sizzle reel</a></h3>
+                <p>It's our very own little black book of looks of the day. Each day we'll add our favourite look to the album and will hopefully end up with a gallery of beautiful, inspiring, bonkers and envy-inducing looks.<span>&nbsp;</span></p>
+                
+                <div class="cN-social cfix">
+    <iframe class="socialBtn fb-button" scrolling="no" frameborder="0" allowTransparency="yes" src="http://www.facebook.com/plugins/like.php?href=http%3a%2f%2fwww.dailylife.com.au%2fphotogallery%2fdl-fashion%2ffashion-coverage%2fthe-look-of-the-day-sizzle-reel-20120307-1ujzh.html&amp;layout=button_count&amp;show_faces=false&amp;width=85&amp;action=recommend&amp;colorscheme=light&amp;height=21" width="100%" height="300"></iframe>
+    <iframe class="socialBtn twitter-button" allowtransparency="true" frameborder="0" scrolling="no" class="twitter-share-button twitter-count-horizontal" title="Twitter For Websites: Tweet Button" src="http://platform.twitter.com/widgets/tweet_button.html#_=1318890910829&count=horizontal&id=twitter_tweet_button_0&lang=en&original_referer=http%3A%2F%2Fwww.dailylife.com.au&text=&url=http%3a%2f%2fwww.dailylife.com.au%2fphotogallery%2fdl-fashion%2ffashion-coverage%2fthe-look-of-the-day-sizzle-reel-20120307-1ujzh.html&via=DailyLifeAU"></iframe>
+    
+</div><!-- class:cN-social cfix -->
+            </div><!-- class:wof -->
+        </div><!-- class:cN-storyImageLead media-image -->
+
+    <!-- edit query string:
+    &fts=Witchery%20Tops - search term
+    &cat=Any - category (womens-clothes, handbags, womens-shoes, kids-and-baby, living, mens-clothes, womens-beauty)
+    -->
+    <div class="shopStyle-widget num-5">
+        <iframe width="700" scrolling="no" height="244" frameborder="0" src="http://widget.shopstyle.com.au/widget?pid=uid5284-3648278-39&amp;fts=Black sweater&amp;cat=Any&amp;width=4&amp;height=1&amp;border=0&amp;footer=0" name="shopstyle_search"></iframe>
+        <div class="widget-footer">
+            <div class="category">
+                <a href="http://shop.dailylife.com.au/browse?fts=Black sweater">Black sweater</a>
+            </div><!-- class:category -->
+            <div class="logo"><a href="http://widget.shopstyle.com.au" style="border:0">
+                <img alt="ShopStyle" src="http://resources.shopstyle.com/im/widget/ShopStyleLogo_powered.png"></a>
+            </div><!-- class:logo -->
+        </div><!-- class:widget-footer -->
+    </div><!-- class:shopStyle-widget num-5 -->
+</div><!-- class:shopStyle-container cfix -->
+            <!-- Footer section links -->
+
+<div class="footer" role="contentinfo">
+<div class="footerContainer cfix">
+<div class="fMastheadLinks cfix">
+    <!-- Footer section links -->
+        <ul >
+            <li class="first"><h5><a href="http://www.dailylife.com.au/news-and-views" title="News &amp; Views">News &amp; Views</a></h5></li>
+
+                    <li><a href="/news-and-views/news-features" title="News Features">News Features</a></li>
+                    <li><a href="/news-and-views/opinion" title="Opinion">Opinion</a></li>
+                    <li><a href="/news-and-views/culture" title="Popular Culture">Popular Culture</a></li>
+                    <li><a href="http://www.dailylife.com.au/news-and-views/take-action" title="Take Action">Take Action</a></li>
+                    <li><a href="http://www.dailylife.com.au/dl-women-of-the-year" title="Women of the Year">Women of the Year</a></li>
+                    <li><a href="http://www.dailylife.com.au/aaw" title="All About Women">All About Women</a></li>
+        </ul>
+        <ul >
+            <li class="first"><h5><a href="http://www.dailylife.com.au/life-and-love" title="Life &amp; Love">Life &amp; Love</a></h5></li>
+
+                    <li><a href="/life-and-love/work-and-money" title="Work &amp; Money">Work &amp; Money</a></li>
+                    <li><a href="/life-and-love/parenting-and-families" title="Parenting &amp; Families">Parenting &amp; Families</a></li>
+                    <li><a href="/life-and-love/love-sex-and-relationships" title="Love, sex &amp; Relationships">Love, sex &amp; Relationships</a></li>
+                    <li><a href="/life-and-love/real-life" title="Real Life">Real Life</a></li>
+                    <li><a href="http://www.dailylife.com.au/life-and-love/horoscopes" title="Horoscopes">Horoscopes</a></li>
+                    <li><a href="/life-and-love/travel" title="Travel">Travel</a></li>
+                    <li><a href="/life-and-love/home" title="Home">Home</a></li>
+                    <li><a href="/life-and-love/weddings" title="Weddings">Weddings</a></li>
+        </ul>
+        <ul >
+            <li class="first"><h5><a href="http://www.dailylife.com.au/health-and-fitness" title="Health &amp; Fitness">Health &amp; Fitness</a></h5></li>
+
+                    <li><a href="/health-and-fitness/nutrition" title="Nutrition">Nutrition</a></li>
+                    <li><a href="/health-and-fitness/fitness" title="Fitness">Fitness</a></li>
+                    <li><a href="/health-and-fitness/wellbeing" title="Wellbeing">Wellbeing</a></li>
+                    <li><a href="/health-and-fitness/sport" title="Sport">Sport</a></li>
+        </ul>
+        <ul >
+            <li class="first"><h5><a href="http://www.dailylife.com.au/food" title="Food">Food</a></h5></li>
+
+                    <li><a href="/food/food-features" title="Food Features">Food Features</a></li>
+                    <li><a href="/food/food-blogs" title="Food Blogs">Food Blogs</a></li>
+                    <li><a href="/food/celebrity-chefs" title="Celebrity Chefs">Celebrity Chefs</a></li>
+                    <li><a href="http://www.dailylife.com.au/food/recipes/search" title="Recipe search">Recipe search</a></li>
+        </ul>
+        <ul >
+            <li class="first"><h5><a href="http://www.dailylife.com.au/fashion" title="Fashion">Fashion</a></h5></li>
+
+                    <li><a href="/fashion/fashion-coverage" title="Fashion Coverage">Fashion Coverage</a></li>
+                    <li><a href="/fashion/fashion-trends" title="Fashion Trends">Fashion Trends</a></li>
+                    <li><a href="http://shop.dailylife.com.au" title="Shopping">Shopping</a></li>
+                    <li><a href="/fashion/fashion-week" title="Fashion Week">Fashion Week</a></li>
+        </ul>
+        <ul >
+            <li class="first"><h5><a href="http://www.dailylife.com.au/beauty" title="Beauty">Beauty</a></h5></li>
+
+                    <li><a href="/beauty/makeup" title="Makeup">Makeup</a></li>
+                    <li><a href="/beauty/hair" title="Hair">Hair</a></li>
+                    <li><a href="/beauty/skincare-and-anti-aging" title="Skincare &amp; Anti-aging">Skincare &amp; Anti-aging</a></li>
+                    <li><a href="/beauty/beauty-trends" title="Beauty Trends">Beauty Trends</a></li>
+                    <li><a href="/beauty/product-reviews" title="Product Reviews">Product Reviews</a></li>
+        </ul>
+        <ul class="last">
+            <li class="first"><h5><a href="http://www.dailylife.com.au/people" title="People">People</a></h5></li>
+
+                    <li><a href="/people/celebrity-news" title="Celebrity News">Celebrity News</a></li>
+                    <li><a href="/people/interviews" title="Interviews">Interviews</a></li>
+                    <li><a href="http://www.dailylife.com.au/dl-people/entertainment" title="Entertainment">Entertainment</a></li>
+        </ul>
+
+</div>
+<h3 class="fS-Tagline">Explore our fashion, food, lifestyle and parenting sites</h3>
+<ul class="fS-channels">
+    <li class="cTheVine">
+        <a href="http://www.thevine.com.au/">The Vine</a>
+    </li>
+    <li class="cLifeStyle">
+        <a href="http://www.smh.com.au/lifestyle">Life &amp; Style</a>
+    </li>
+     <li class="cGoodFood">
+        <a href="http://www.goodfood.com.au">Cusine</a>
+    </li>
+    <li class="cEssentialBaby">
+        <a href="http://www.essentialbaby.com.au">Essential Baby</a>
+    </li>
+    <li class="cEssentialKids">
+        <a href="http://www.essentialkids.com.au">Essential Kids</a>
+    </li>
+    <li class="cFindABabysitter">
+        <a href="http://www.findababysitter.com.au">Find a Babysitter</a>
+    </li>
+</ul>
+</div>
+
+<div id="adspot-728x90_468x60-pos-2" class="ad" style='display:none;'> <script type="text/javascript"> var titan = window.titan || {}; titan.requestAd = titan.requestAd || []; titan.requestAd.push("adspot-728x90_468x60-pos-2"); </script> </div>
+
+<ul class="fSectionLinks cfix">
+    <li><a href="http://www.dailylife.com.au/about_us.html" title="About Us">About us</a></li>
+    <li><a href="http://www.dailylife.com.au/contact_us.html" title="Contact Us">Contact us</a></li>
+    <li><a href="http://www.dailylife.com.au/newsletters.html">Newsletters</a></li>
+
+    <li><a href="http://www.dailylife.com.au/advertise_with_us.html">Advertise with us</a></li>
+    <li><a href="http://www.fairfax.com.au/privacy.html" title="Privacy Statement">Privacy statement</a></li>
+    <li><a href="http://www.fairfax.com.au/conditions.ac" title="Terms of Use">Terms of use</a></li>
+    <!-- feedback via Kampyle -->
+            <li class="last"><span class="Kampyle" data-kampyleFormId="101291" data-kampyleSiteCode="3499354"><a id="kampylilink" href="http://www.kampyle.com/feedback_form/ff-feedback-form.php?site_code=3499354&lang=en&form_id=101291" target="kampyleWindow">Give Feedback</a></span></li>
+
+</ul>
+<div class="nN-footerLinks">
+	<a href="http://www.fairfaxdigital.com.au" class="logo">Fairfax Media</a>
+	<div>
+        <h3>Our Sites</h3>
+    <ul>
+            <li class="first">
+                <a title="The Sydney Morning Herald" href="http://www.smh.com.au/">The Sydney Morning Herald</a>
+            </li>
+            <li>
+                <a title="The Age" href="http://www.theage.com.au/">The Age</a>
+            </li>
+            <li>
+                <a title="Adzuna" href="http://www.adzuna.com.au">Adzuna</a>
+            </li>
+            <li>
+                <a title="Domain" href="http://www.domain.com.au/">Domain</a>
+            </li>
+            <li>
+                <a title="Drive" href="http://www.drive.com.au/">Drive</a>
+            </li>
+            <li>
+                <a title="RSVP" href="http://www.rsvp.com.au/">RSVP</a>
+            </li>
+            <li>
+                <a title="Essential Baby" href="http://www.essentialbaby.com.au/">Essential Baby</a>
+            </li>
+            <li>
+                <a title="InvestSMART" href="http://www.investsmart.com.au/">InvestSMART</a>
+            </li>
+            <li>
+                <a title="APM" href="http://apm.com.au/">APM</a>
+            </li>
+            <li>
+                <a title="Stayz" href="http://www.stayz.com.au/">Stayz</a>
+            </li>
+            <li>
+                <a title="Weatherzone" href="http://www.weatherzone.com.au/">Weatherzone</a>
+            </li>
+            <li>
+                <a title="TheVine" href="http://www.thevine.com.au/#utm_source=FD&utm_medium=mastheadpuff&utm_campaign=thevineheader">TheVine</a>
+            </li>
+    </ul>
+
+        <h3>Our Partners</h3>
+    <ul>
+            <li class="first">
+                <a title="Buy & Sell" href="http://www.buyandsell.com.au/">Buy & Sell</a>
+            </li>
+            <li>
+                <a title="Cracker" href="http://cracker.com.au/">Cracker</a>
+            </li>
+    </ul>
+
+    </div>
+    <cite>Copyright &copy; 2014 Fairfax Media</cite>
+</div>
+</div>
+
+        </div><!-- class:wrap cfix -->
+    </div><!-- class:outerWrap -->
+    <div id="subscription-overlay" class="subscription-overlay"
+     data-hagrid-channel-key="FfM6pY7bcDXz83_CIPIjkQ"
+     data-hagrid-base-url="https://dailylife.myfairfax.com.au"
+     data-hagrid-api-url="https://api.myfairfax.com.au"
+     data-hagrid-proxy-url="/originstatic/hagridproxy-0.9.36.html"
+     data-hagrid-iframe-container-id="loginIframeContainer"
+     data-drm-host=""
+     data-hagrid-member-profile-provider-name="customMemberProfileProvider">
+</div>
+
+            <script type="text/javascript" src="http://resources.dailylife.com.au/common/media-common-1.0/js/fdjsf/output/7.49.1/fd.js/fd_min.js"></script>
+
+            <script type="text/javascript" src="http://resources.dailylife.com.au/common/media-common-1.0/js/fdjsf/output/7.49.1/fd.registrars.dailylife.js/fd.registrars.dailylife_min.js"></script>
+
+    
+    
+            <script type="text/javascript" src="http://resources.dailylife.com.au/common/media-common-1.0/js/fdjsf/output/7.49.1/fd.registrars.js/fd.registrars_min.js"></script>
+
+    
+<script>
+    var adParameters = {
+        paywall: false
+    };
+    FD.trigger("FDLoadJSSDK", [
+        "",
+        "dailylife.com.au",
+        "http://www.dailylife.com.au",
+        "https://dailylife.myfairfax.com.au",
+        "https://api.myfairfax.com.au",
+        "FfM6pY7bcDXz83_CIPIjkQ"
+    ]);
+</script>
+    <div data-brandName="dailylife"></div>
+        <script type="text/javascript" src="http://resources.dailylife.com.au/common/media-common-1.0/js/fdjsf/output/7.49.1/fd.videoplayer.js/fd.videoplayer_min.js"></script>
+
+<script type="text/javascript" src="http://resources.dailylife.com.au/common/media-common-1.0/js/fdjsf/jwplayer6/jwplayer.js" ></script>
+<script type="text/javascript">jwplayer.key="3Kw6cxrtDRgcWRtdGLa2YBoPkAlVC9+iy+DgiQ==";</script>
+
+    <script type="text/javascript">
+            FD.addVideoPlayer(new FD.VideoPlayer({
+        "adServerUrl": "http://pubads.g.doubleclick.net/gampad/ads?sz=4x1&iu=/6411/vid.smh/entertainment&ciu_szs=300x250&impl=s&gdfp_req=1&env=vp&output=xml_vast2&unviewed_position_start=1&cust_params=channel%3Dentertainment%26show%3Dentertainmentnews%26ctype%3Dhomepage%26source%3DFDP&correlator=293542",
+        "assetId": "6078841",
+        "divId": "video-player-index-strap",
+        "playerId": "video-player-strap-player",
+        "playerType": "Homepage",
+        "postPlay": ""
+    }, {
+        "height": 170,
+        "playlist": [
+    {
+                    "sources": [
+                    {
+                        "bitrate": "796",
+                        "file": "http://mediadownload.f2.com.au/flash/media/2014/12/11/6078841/6078841_high.mp4"
+                    },
+                    {
+                        "bitrate": "549",
+                        "file": "http://mediadownload.f2.com.au/flash/media/2014/12/11/6078841/6078841_ihigh.mp4"
+                    },
+                    {
+                        "bitrate": "517",
+                        "file": "http://mediadownload.f2.com.au/flash/media/2014/12/11/6078841/6078841_mid.mp4"
+                    },
+                    {
+                        "bitrate": "515",
+                        "file": "http://mediadownload.f2.com.au/flash/media/2014/12/11/6078841/6078841_low.mp4"
+                    },
+                    {
+                        "bitrate": "367",
+                        "file": "http://mediadownload.f2.com.au/flash/media/2014/12/11/6078841/6078841_imid.mp4"
+                    },
+                    {
+                        "bitrate": "196",
+                        "file": "http://mediadownload.f2.com.au/flash/media/2014/12/11/6078841/6078841_ilow.mp4"
+                    }
+            ],
+            "image": "http://images.dailylife.com.au/2014/12/11/6078842/vd-hobbit-408x264.jpg"
+    }
+],
+        "primary": "flash",
+            "advertising": {
+        "client": "googima",
+                "tag": "http://pubads.g.doubleclick.net/gampad/ads?sz=4x1&iu=/6411/vid.smh/entertainment&ciu_szs=300x250&impl=s&gdfp_req=1&env=vp&output=xml_vast2&unviewed_position_start=1&cust_params=channel%3Dentertainment%26show%3Dentertainmentnews%26ctype%3Dhomepage%26source%3DFDP&correlator=293542"
+,
+        "companiondiv": {
+            "height": 250,
+            "id": "video-player-companion-ad-mrec",
+            "width": 300
+        }
+    },
+    "sharing": {
+    "code": '<iframe src="http://www.dailylife.com.au/action/externalEmbeddedPlayer?id=d-3magp" width="420" height="236" scrolling="no"></iframe>',
+    "link": "http://media.dailylife.com.au/entertainment/entertainment-news/what-is-it-like-to-be-a-hobbit-dwarf-6078841.html"
+    },
+"timeslidertooltipplugin-2": {},
+        "width": 300
+    }, {
+        "ga": {
+    "channel": "Entertainment",
+    "duration": "169",
+    "headline": "What is it like to be a Hobbit dwarf?",
+    "interval": 10000,
+    "referrer": "",
+    "playerType": "Homepage",
+    "showName": "Entertainment News"
+}
+,
+        "nielsen": {
+    "brand": "dailylife",
+        "cg": "fairfax-entertainment",
+        "c6": "c36",
+    "duration": "169",
+    "interval": 10000,
+    "ou": "video/entertainment/entertainment-news",
+    "vc": "vc-mm-Video_Entertainment-Homepage-Video_Entertainment_News-Daily_Life_Home_Page_Aside_Video_List-Rachael_Jones-6078841-What_is_it_like_to_be_a_Hobbit_dwarf?-00:02:49"
+},
+        "collector": {
+    "system": "DCDS",
+    "brand": "dailylife",
+    "section": "Video Entertainment",
+    "assetId": "6078841",
+    "title": "What is it like to be a Hobbit 'dwarf'?",
+    "assetType": "Video",
+    "assetUrl": "http://media.dailylife.com.au/national/selections/what-is-it-like-to-be-a-hobbit-dwarf-6078841.html",
+    "category": "Video Entertainment News",
+    "showName": "Video_Entertainment_News",
+    "duration": "169044",
+    "videoSource": "FDP",
+    "producer": "Rachael Jones",
+    "playerType": "Homepage"
+},
+        "sitecatalyst": {
+    "assetId": "6078841",
+    "assetType": "Video",
+    "assetUrl": "http://media.dailylife.com.au/national/selections/what-is-it-like-to-be-a-hobbit-dwarf-6078841.html",
+    "brand": "dailylife",
+    "category": "Video Entertainment News",
+    "channelName": "Video_Entertainment",
+    "duration": "169044",
+    "interval": 10000,
+    "producer": "Rachael Jones",
+    "playerType": "Homepage",
+    "section": "Video Entertainment",
+    "showName": "Video_Entertainment_News",
+    "system": "DCDS",
+    "title": "What is it like to be a Hobbit 'dwarf'?",
+    "type":"Video",
+    "videoSource": "FDP",
+    "videoType": "Standard"
+}
+    }));
+
+
+</script>
+    
+    
+<!-- START Google Analytics Tracking -->
+<script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-22700242-23']);
+    _gaq.push(['_setDomainName', '.dailylife.com.au']);
+    _gaq.push(['_addIgnoredRef', 'dailylife.com.au']);
+    _gaq.push(['_setAllowAnchor', true]);
+    _gaq.push(['_setCustomVar', 1, 'Section', '', 3]);
+    _gaq.push(['_setCustomVar', 2, 'Sub-Section', '', 3]);
+    _gaq.push(['_setCustomVar', 3, 'Byline', '', 3]);
+    _gaq.push(['_setCustomVar', 4, 'Page Type', 'Homepage', 3]);
+    _gaq.push(['_setAllowAnchor', true]);
+    _gaq.push(['_setCampaignCookieTimeout', 1209600000]);
+    (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+<!-- END Google Analytics Tracking -->
+
+<!-- START Nielsen Online SiteCensus V6.0 -->
+<!-- COPYRIGHT 2009 Nielsen Online -->
+<script src="//secure-au.imrworldwide.com/v60.js"></script>
+<script>
+    var pvar = {cid:"f2", content:"dailylife-undefined-index", server:"secure-au"};
+    var trac = nol_t(pvar);
+    trac.record().post();
+    window.s_pageName = "dailylife:index:undefined";
+</script>
+<noscript>
+    <div>
+        <img src="//secure-au.imrworldwide.com/cgi-bin/m?ci=f2&amp;cg=0&amp;cc=1&amp;ts=noscript" width="1" height="1" alt=""/>
+    </div>
+</noscript>
+    <!--end of if !suppressNielsen -->
+<!-- END Nielsen Online SiteCensus V6.0 -->
+    <script type="text/javascript">
+	(function(FD) {
+		/**
+		 * Initiates the client side asset view tracking component (self executing).
+		 */
+        FD.pingServerWithSuccessCallback("2921627", "Index", "", FD.updateWhiteStrip);
+	})(FD);
+</script>
+
+<!-- FFX analytics stuff -->
+<script>
+    var _fmaq = _fmaq || [];
+        _fmaq.push(["_trackEvent", [
+            ["event", "view"],
+            ["system", "DCDS"],
+            ["site", "dailylife"],
+            ["assetCategory", "Daily Life"],
+            ["asset", "2921627"],
+            ["title", "Daily Life Home Page Index"],
+            ["assetType", "Index"],
+            ["urlHash", window.location.hash]        ]]);
+
+    var _fma_options = {};
+
+    (function () {
+        var fma_script = document.createElement('script');
+        fma_script.src = 'http://resources.fairfax.com.au/js/track/1.0/track.min.js';
+        fma_script.setAttribute('async', 'true');
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(fma_script, s);
+    })();
+</script>
+    <script type="text/javascript">
+        var cX_ffx_customParameters = cX_ffx_customParameters || {};
+        cX_ffx_customParameters.ffx_contentid = 'dcds_2921627';
+    </script>
+    <div id="cX-root" style="display:none"></div>
+    <script type="text/javascript">
+        var cX = cX || {}; cX.callQueue = cX.callQueue || [];
+        cX.callQueue.push(['setAccountId', '9222289450909507082']);
+        cX.callQueue.push(['setSiteId', '9222289450909507083']);
+        if (cX_ffx_customParameters) {
+            cX.callQueue.push(['setCustomParameters', cX_ffx_customParameters]);
+        }
+        cX.callQueue.push(['sendPageViewEvent']);
+    </script>
+    <script type="text/javascript">
+        (function() { try { var scriptEl = document.createElement('script'); scriptEl.type = 'text/javascript'; scriptEl.async = 'async';
+            scriptEl.src = ('https:' == document.location.protocol) ? 'https://scdn.cxense.com/cx.js' : 'http://cdn.cxense.com/cx.js';
+            var targetEl = document.getElementsByTagName('script')[0]; targetEl.parentNode.insertBefore(scriptEl, targetEl); } catch (e) {};} ());
+    </script>
+
+
+<!-- Adobe Marketing Cloud Tag Management code
+Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+More info available at http://www.adobe.com -->
+<script>
+if(s){
+    s.pageName = "dailylife::::Daily Life Home Page Index:2921627"
+    s.prop1 = "dailylife"
+    s.prop2 = "Daily Life"
+    s.prop6 = ""
+    s.prop7 = "Index"
+    s.prop8 = "2921627 + Daily Life Home Page Index"
+    s.prop31 = ""
+    s.prop32 = ""
+    if (window["FD"]) {
+        if (typeof FD.s_prop24 !== "undefined") {
+            s.prop24 = FD.s_prop24
+        }
+    }
+
+    // OLG tracking
+    if(typeof olgTracking !== "undefined") {
+        if(s.events) {
+            s.events += ",event21";
+        } else {
+            s.events = "event21";
+        }
+        s.eVar22 = s.prop1 + "-" + s.prop2 + "-" + olgTracking.provider + "-" + olgTracking.productType + "-" + olgTracking.location;
+    }
+    s.t();
+}
+</script>
+<!-- End Adobe Marketing Cloud Tag Management code -->
+
+<script>
+if (window["FD"]) {
+    FD.trigger("FDTrackReady");
+}
+</script>
+
+        <!-- Start Apple Auto Affiliate Link Maker script -->
+        <script>var _merchantSettings=_merchantSettings || [];_merchantSettings.push(['AT', '11l8Ma']);(function(){var autolink=document.createElement('script');autolink.type='text/javascript';autolink.async=true; autolink.src='https://autolinkmaker.itunes.apple.com/js/itunes_autolinkmaker.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(autolink, s);})();</script>
+        <!-- End Apple Auto Affiliate Link Maker script -->
+
+        <!-- Start Skimlinks Auto Affiliate Link Maker script -->
+        <script src="http://s.skimresources.com/js/57568X1347951.skimlinks.js"></script>
+        <!-- End Skimlinks Auto Affiliate Link Maker script -->
+
+    <script>
+    function createSocialElement(d, s, id, src) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = src;
+        fjs.parentNode.insertBefore(js, fjs);
+    }
+</script>
+        <div id="fb-root"></div><!-- id:fb-root -->
+        <script>
+            window.fbAsyncInit = function() {
+                 FB.init({appId: '233408706727435', status: true, cookie: true,  xfbml: true});
+            };
+            createSocialElement(document, 'script', 'facebook-jssdk', "//connect.facebook.net/en_GB/all.js#xfbml=1");
+        </script>
+
+
+
+        <script>
+            createSocialElement(document, "script", "twitter-wjs", "//platform.twitter.com/widgets.js");
+        </script>
+
+    <div data-boomerangSegment="132487"></div>
+<script>
+/* Social bar prototype */
+$('ul.social').on('click', '.expand-toggle a',function() {
+    socialWrap = $(this).parents('ul.social');
+    defaultTitle = 'More sharing options';
+    expandedTitle = 'Less sharing options';
+
+    socialWrap.toggleClass('expanded');
+    if (socialWrap.hasClass('expanded')) {
+        $(this).attr('title', expandedTitle);
+        socialWrap.find('.social-right').fadeToggle('fast', function() {
+        socialWrap.find('.expand-show').fadeToggle();
+        });
+    } else {
+        socialWrap.find('.social-right').fadeToggle('fast');
+        socialWrap.find('.expand-show').toggle();
+        $(this).attr('title', defaultTitle);
+    }
+});
+/* END Social bar prototype */
+</script>
+<!-- social media scripts -->
+<script src="//assets.pinterest.com/js/pinit.js"></script>
+
+
+    
+
+ 
+    <script type="text/javascript" src="http://secure-au.imrworldwide.com/cgi-bin/j?ci=rj0121-caltrate&amp;se=1&amp;te=0"> </script>
+
+            <script type="text/javascript" src="http://resources.dailylife.com.au/common/media-common-1.0/js/fdjsf/output/7.49.1/fd.registrars.images.httppipelining.js/fd.registrars.images.httppipelining_min.js"></script>
+
+    <div id="adspot-interstitial">
+    <script>
+        var titan = window.titan || {};
+        titan.requestAd = titan.requestAd || [];
+        titan.requestAd.push("adspot-interstitial");
+    </script>
+</div>
+    <script type="text/javascript">
+window.setTimeout('new FD.TitanService()', 3000);
+_satellite.pageBottom();
+</script>
+</body>
+</html>

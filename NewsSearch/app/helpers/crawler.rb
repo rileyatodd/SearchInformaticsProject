@@ -49,7 +49,7 @@ def find_links(page)
           next
         end
         canonical = URI.join(base, link.uri.path.to_s).to_s
-      rescue URI::InvalidURIError
+      rescue URI::InvalidURIError, URI::InvalidComponentError
         next
       end
     end
@@ -66,7 +66,8 @@ def process_link(link, dir, spamCalc, index)
   page = retrieve_page(link)
   if page
     fileName = index.to_s + '.html'
-    page.save(dir + fileName)
+    path = File.join(dir, fileName)
+    page.save(path.to_s)
     scoreAndFilename = []
     score = spamCalc.evaluate_document(page.body)
     scoreAndFilename.push(score)
@@ -88,15 +89,13 @@ class SpamCalculator
   @s = {}
   @n = {}
 
-  def initialize
+  def initialize(known_spam_file, known_nonspam_file)
     # Here is where you can put initialization code that you only need
     #  to run once. For instance, you'll probably want to load in the
     #  training files (known spam and non-spam documents) here!
 
-    spam = "../part1/documents/known_spam.txt"
-    notSpam = "../part1/documents/known_notspam.txt"
-    @s = count_occurrences(clean_string_list(read_file_into_list(spam)))
-    @n = count_occurrences(clean_string_list(read_file_into_list(notSpam)))
+    @s = count_occurrences(clean_string_list(read_file_into_list(known_spam_file)))
+    @n = count_occurrences(clean_string_list(read_file_into_list(known_nonspam_file)))
 
   end
 
@@ -152,6 +151,7 @@ class SpamCalculator
         score += Math.log(@s[word]) - Math.log(@n[word])
       end
     end
+    score = score / Math.log(d.size)
     return score
   end
 
@@ -163,8 +163,8 @@ end
 #   ruby crawl.rb seed_url max_pages output_directory algorithm
 #
 
-def traverse_links(seed_url, max_pages, output_dir, algo)
-  spamCalc = SpamCalculator.new
+def traverse_links(seed_url, max_pages, output_dir, algo, spam_path, nonspam_path)
+  spamCalc = SpamCalculator.new(spam_path, nonspam_path)
   #contains [link, spamScore] arrays for the sake of bestfirst
   links_to_visit = []
   links_to_visit.push([seed_url, 0])
@@ -178,6 +178,9 @@ def traverse_links(seed_url, max_pages, output_dir, algo)
     time_of_last_get = Time.now.to_i
     link = links_to_visit.pop[0]
     puts "link: " + link
+    if $index[link]
+      next
+    end
     process_results = process_link(link, output_dir, spamCalc, pages_visited)
     if !process_results
       puts "error retrieving page at " + link
@@ -207,7 +210,9 @@ def traverse_links(seed_url, max_pages, output_dir, algo)
         links_to_visit.sort_by!{|item| -item[1]}
     end
   end
-  output = File.new("index.dat", "w+")
+  path_to_index_file = File.join(output_dir + '../index.dat').to_s
+  puts path_to_index_file
+  output = File.new(path_to_index_file, "w+")
   for key in $index.keys
     scoreAndFilename = $index[key]
     output_line = scoreAndFilename[1] + "\t" + scoreAndFilename[0].to_s + "\t" + key + "\n"
